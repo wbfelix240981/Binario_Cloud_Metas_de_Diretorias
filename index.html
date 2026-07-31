@@ -64,19 +64,15 @@
 
   .ring-card{
     background:linear-gradient(180deg,var(--panel-hi),var(--panel)); border:1px solid var(--border-hi); border-radius:18px;
-    padding:22px; display:flex; align-items:center; gap:20px;
+    padding:22px; display:flex; align-items:center; justify-content:center; gap:20px;
   }
-  .ring-wrap{position:relative; width:112px; height:112px; flex:none;}
-  .ring-wrap svg{transform:rotate(-90deg);}
+  .ring-wrap{position:relative; width:132px; height:132px; flex:none;}
+  .ring-wrap svg{transform:rotate(-90deg); width:132px; height:132px;}
   .ring-bg{fill:none; stroke:var(--border); stroke-width:9;}
   .ring-fg{fill:none; stroke:var(--cyan); stroke-width:9; stroke-linecap:round; transition:stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1);}
   .ring-num{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column;}
-  .ring-num b{font-family:var(--disp); font-size:26px; font-weight:700;}
-  .ring-num small{font-family:var(--mono); font-size:9px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.08em;}
-  .ring-legend{display:flex; flex-direction:column; gap:7px; font-family:var(--mono); font-size:12px;}
-  .ring-legend .li{display:flex; align-items:center; gap:8px; color:var(--text-dim);}
-  .ring-legend .sw{width:8px; height:8px; border-radius:2px; flex:none;}
-  .ring-legend b{color:var(--text); font-weight:600;}
+  .ring-num b{font-family:var(--disp); font-size:30px; font-weight:700;}
+  .ring-num small{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.08em;}
 
   /* KPI strip */
   .kpis{max-width:1180px; margin:0 auto; padding:0 28px 36px; display:grid; grid-template-columns:repeat(5,1fr); gap:12px;}
@@ -406,7 +402,6 @@
             </svg>
             <div class="ring-num"><b id="ringPct">0%</b><small>concluído</small></div>
           </div>
-          <div class="ring-legend" id="ringLegend"></div>
         </div>
       </div>
     </div>
@@ -1851,14 +1846,6 @@ function renderRing(project){
     ringFg.style.strokeDashoffset = (CIRC*(1-overallPct/100)).toFixed(1);
   });
   document.getElementById('ringPct').textContent = overallPct+'%';
-  document.getElementById('ringLegend').innerHTML = `
-    <div class="li"><span class="sw" style="background:var(--green)"></span><b>${metaCounts.shipped}</b>&nbsp;concluídas</div>
-    <div class="li"><span class="sw" style="background:var(--blue)"></span><b>${metaCounts['in progress']}</b>&nbsp;em andamento</div>
-    <div class="li"><span class="sw" style="background:var(--violet)"></span><b>${metaCounts['in test']}</b>&nbsp;em teste</div>
-    <div class="li"><span class="sw" style="background:var(--orange)"></span><b>${metaCounts['in review']}</b>&nbsp;em revisão</div>
-    <div class="li"><span class="sw" style="background:var(--amber)"></span><b>${metaCounts['in planning']}</b>&nbsp;planejamento</div>
-    <div class="li"><span class="sw" style="background:var(--red)"></span><b>${metaCounts.blocked}</b>&nbsp;bloqueadas</div>
-    <div class="li"><span class="sw" style="background:var(--slate)"></span><b>${metaCounts.backlog}</b>&nbsp;não iniciadas</div>`;
 
   document.getElementById('kpiStrip').innerHTML = `
     <div class="kpi"><div class="k-num">${project.metas.length}</div><div class="k-label">Metas estratégicas</div></div>
@@ -1990,9 +1977,6 @@ function renderBoardRing(project){
     ringFg.style.strokeDashoffset = (CIRC*(1-overallPct/100)).toFixed(1);
   });
   document.getElementById('ringPct').textContent = overallPct+'%';
-  document.getElementById('ringLegend').innerHTML = Object.entries(ROADMAP_STATUS_META).map(([key,meta])=>
-    `<div class="li"><span class="sw" style="background:${meta.color}"></span><b>${counts[key]||0}</b>&nbsp;${meta.label.toLowerCase()}</div>`
-  ).join('');
 
   document.getElementById('kpiStrip').innerHTML = `
     <div class="kpi"><div class="k-num">${tasks.length}</div><div class="k-label">Itens no backlog</div></div>
