@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metas 2026 · Binário Cloud</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAEOUlEQVR4nKWYa2hURxTH/+dyS8zGmM3dxEQCiVITJaa29oNWUSyWUkF8VIgNyiqoqKjER6vYVlpL1dqWBEXEBygiWBTrC+uLJYIKQf2QDyKiaR4YjclGJQpCSYI7/bB37zzuzL48cPfOzD0z57dnzpm5cynglDGAQHDFK4hChvYMhHk/RgXbAyGmkOgAsiVibleSmmQ4gs11BEVSjZKGJRWYYIipuno422dAZ1DtmJaQpsiSwtm8gzxFObuva03Env+LoQP1GTAxwUmqh2U4WwbRTYcydm6+BG0WkxeEZ5I9BlsPksSInaOJKZ2QbFcHobTZGYGohgAMHzEcZaNGoSA/H73RKHqiLzA0OCioMn8/r0nOYFvWU7ykExbzihvWrsSun7+XHkf7XuDEqbM4efpvtLV36qeJBA8JYBbPoDRAACDGACLs/eNXHwgAlIwsxpb6NWiO/IOG3TswrqoyPq0kZirxyysSLD0IAbF3ehiLMGZ0OVYuW5yUORAYhtXLwzh2sBGlJSP5uEQKHAezeHcBhIB3LU16K0NDqKtdkBRElI9rqnH0QANy83Lh97oMZvkU3Gpk7Sw4nfd8Hor1tgMAeqN9aQPNnD4VR/b9KRgQL26Y8oormOoVgPA2Gjf6pKsbXc+eSYPPXhiWwAGgdsEcbN20DtVVY41QX86vQ/PdFrebkGUUr1qStia1K8rLMGPaFO+S/pzwD89cuILwqno8bG0zwsyb85WXQAwEpqS6JmZ8PAbxKz163I6dv+8z9vji8xngcQIXjEP5YyYtGgVcyJCLVyO43XxP26u6aixyhn0gdpSguGey2ZmJB6EpLFUpDAbVQTwoy6edLg/JEIlISP42BwSDBYa9jTQwKSQQCGhaNfuPQZyCEa4a+aCsdAYQpSjkKG8a4k6cepy+l6+U9zdey9gzRSEn1UwklafdPQBPag7EY0Z8X00+WF4gF6UlRVmBtHd2YXCAv17IfpRihgGIIRGEp85eNA46+dNJABiYRB4vT5o4AdOnTdb2a+voUPTjq0yibEnPhEqk6aYRZu+eHfjko2pfe2lJMX74dr2x3+lzl7Tt3pIg7U3CWhMsLMT9O01wfOsClyPHT+L85WsAgPGVlVixtA4146u0ug8eteKzWXO1z7wU8MO4BSJs37YZ2zauM8JkIj/91ojG/Ye1EAmxzE8Zdu5pxKGjJ94b5Nyla2jYf1haFnV5omSTcHeL3/34C/46c/69QMKrNyTRYACLX5RXXM68nVQ6SSSmLn7fumk9lixaiA/HVGQGsir9Ax+H4RRGIACo/Xo+loe/gRNyEAoGEXKC+G9gAP39b9D/+jWePO1G5MZNXL9xC897ommDxGGKypnxdCABGXTcOpOrWYnNwABGIO+TiHCwYoD3qUQs+06GyvLOSBugKWH4AMLYWiC4BzLxc4ayW3tNLCvn/A83iy8+3r4GUwAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080b10; --bg2:#0f1520; --panel:#141c29; --panel-hi:#1b2534; --border:#2a374a; --border-hi:#3c4f68;
+    --text:#f3f6fa; --text-dim:#c3cee0; --text-mute:#8a9ab0;
+    --cyan:#2dd9f5; --cyan-dim:#0d3d49;
+    --green:#4ade9c; --green-dim:#123527;
+    --blue:#4cc3fb; --blue-dim:#10324a;
+    --amber:#ffc65c; --amber-dim:#3a2907;
+    --violet:#b79bfb; --violet-dim:#2a2148;
+    --orange:#ff9052; --orange-dim:#3a2110;
+    --slate:#8695a8; --slate-dim:#212c3b;
+    --red:#ff8585;
+    --mono:'JetBrains Mono',monospace; --disp:'Space Grotesk',sans-serif; --body:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; color-scheme:dark;}
+  html, body{background:#0a0e14 !important;}
+  html,body{overflow-x:hidden; max-width:100%;}
+  body{
+    margin:0;
+    background-color:#0a0e14 !important;
+    background-image:
+      radial-gradient(1100px 600px at 85% -10%, #0e2733 0%, transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, #171029 0%, transparent 55%);
+    background-repeat:no-repeat;
+    min-height:100vh;
+    color:var(--text); font-family:var(--body); -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--cyan); color:#03181c;}
+
+  /* Topbar */
+  .topbar{
+    position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px; background:rgba(10,14,20,.82); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);
+  }
+  .tb-left{display:flex; align-items:center; gap:10px;}
+  .tb-mark{height:34px; display:flex; align-items:center; justify-content:center;}
+  .tb-mark img{height:100%; width:auto; object-fit:contain; display:block; border-radius:6px;}
+  .tb-title{font-family:var(--mono); font-size:13px; color:var(--text-dim); letter-spacing:.03em;}
+  .tb-title b{color:var(--text); font-weight:600;}
+  .tb-right{display:flex; align-items:center; gap:18px; font-family:var(--mono); font-size:12px; color:var(--text-mute);}
+  .tb-live{display:flex; align-items:center; gap:6px;}
+  .dot-live{width:6px; height:6px; border-radius:50%; background:var(--green); box-shadow:0 0 0 3px var(--green-dim); animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+  /* Hero */
+  .hero{padding:64px 28px 40px; max-width:1180px; margin:0 auto;}
+  .hero-eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan); margin-bottom:14px; display:flex; align-items:center; gap:10px;}
+  .hero-eyebrow::before{content:''; width:22px; height:1px; background:var(--cyan);}
+  .hero-grid{display:grid; grid-template-columns:1.3fr .8fr; gap:40px; align-items:end;}
+  .hero-title{font-family:var(--disp); font-weight:600; font-size:clamp(30px,4.2vw,50px); line-height:1.08; margin:0 0 16px; letter-spacing:-.01em;}
+  .hero-title span{color:var(--cyan);}
+  .hero-sub{color:var(--text-dim); font-size:15px; line-height:1.6; max-width:52ch; margin:0;}
+
+  .ring-card{
+    background:linear-gradient(180deg,var(--panel-hi),var(--panel)); border:1px solid var(--border-hi); border-radius:18px;
+    padding:22px; display:flex; align-items:center; gap:20px;
+  }
+  .ring-wrap{position:relative; width:112px; height:112px; flex:none;}
+  .ring-wrap svg{transform:rotate(-90deg);}
+  .ring-bg{fill:none; stroke:var(--border); stroke-width:9;}
+  .ring-fg{fill:none; stroke:var(--cyan); stroke-width:9; stroke-linecap:round; transition:stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1);}
+  .ring-num{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column;}
+  .ring-num b{font-family:var(--disp); font-size:26px; font-weight:700;}
+  .ring-num small{font-family:var(--mono); font-size:9px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.08em;}
+  .ring-legend{display:flex; flex-direction:column; gap:7px; font-family:var(--mono); font-size:12px;}
+  .ring-legend .li{display:flex; align-items:center; gap:8px; color:var(--text-dim);}
+  .ring-legend .sw{width:8px; height:8px; border-radius:2px; flex:none;}
+  .ring-legend b{color:var(--text); font-weight:600;}
+
+  /* KPI strip */
+  .kpis{max-width:1180px; margin:0 auto; padding:0 28px 36px; display:grid; grid-template-columns:repeat(5,1fr); gap:12px;}
+  .kpi{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px;}
+  .kpi .k-num{font-family:var(--disp); font-size:26px; font-weight:700;}
+  .kpi .k-label{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.06em; margin-top:2px;}
+  .kpi.c-shipped .k-num{color:var(--green);}
+  .kpi.c-progress .k-num{color:var(--blue);}
+  .kpi.c-planning .k-num{color:var(--violet);}
+  .kpi.c-backlog .k-num{color:var(--slate);}
+
+  /* Controls */
+  .controls{max-width:1180px; margin:0 auto; padding:0 28px 20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+  .search{position:relative; flex:1; min-width:220px; max-width:340px;}
+  .search input{
+    width:100%; background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:10px 12px 10px 34px;
+    color:var(--text); font-family:var(--body); font-size:13.5px; outline:none; transition:border-color .15s;
+    -webkit-appearance:none; appearance:none; -webkit-text-fill-color:var(--text); caret-color:var(--cyan);
+  }
+  .search input::placeholder{color:var(--text-mute); opacity:1;}
+  .search input:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 1000px var(--panel) inset; -webkit-text-fill-color:var(--text);
+  }
+  .search input:focus{border-color:var(--cyan);}
+  .search svg{position:absolute; left:11px; top:50%; transform:translateY(-50%); color:var(--text-mute);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-family:var(--mono); font-size:11px; padding:6px 12px; border-radius:999px; border:1px solid var(--border);
+    background:var(--panel); color:var(--text-dim); cursor:pointer; user-select:none; transition:.15s;
+  }
+  .chip:hover{border-color:var(--border-hi); color:var(--text);}
+  .chip.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+
+  /* Metas list */
+  .metas{max-width:1180px; margin:0 auto; padding:0 28px 60px; display:flex; flex-direction:column; gap:14px;}
+  .meta-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; transition:border-color .15s;}
+  .meta-card:hover{border-color:var(--border-hi);}
+  .meta-head{display:grid; grid-template-columns:56px 1fr auto 190px 30px; align-items:center; gap:16px; padding:16px 18px; cursor:pointer;}
+  .meta-num{font-family:var(--mono); font-size:11px; color:var(--text-mute);}
+  .meta-num b{display:block; font-family:var(--disp); font-size:20px; color:var(--cyan); font-weight:700;}
+  .meta-name{min-width:0;}
+  .meta-name .n1{font-family:var(--disp); font-weight:600; font-size:15.5px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .meta-name .n2{font-family:var(--mono); font-size:11px; color:var(--text-mute); margin-top:3px; display:flex; gap:6px; flex-wrap:wrap;}
+  .tag{padding:2px 7px; border-radius:5px; font-size:9.5px; text-transform:uppercase; letter-spacing:.03em; background:var(--panel-hi); border:1px solid var(--border-hi); color:var(--text-dim);}
+  .badge{font-family:var(--mono); font-size:10.5px; font-weight:600; padding:5px 10px; border-radius:7px; white-space:nowrap; text-transform:uppercase; letter-spacing:.02em; text-align:center;}
+  .b-shipped{color:var(--green); background:var(--green-dim); border:1px solid #14523f;}
+  .b-progress{color:var(--blue); background:var(--blue-dim); border:1px solid #0f4560;}
+  .b-review{color:var(--orange); background:var(--orange-dim); border:1px solid #5c3419;}
+  .b-test{color:var(--violet); background:var(--violet-dim); border:1px solid #3d2f66;}
+  .b-planning{color:var(--amber); background:var(--amber-dim); border:1px solid #5c4110;}
+  .b-backlog{color:var(--slate); background:var(--slate-dim); border:1px solid #2a3444;}
+
+  .meta-bar{display:flex; align-items:center; gap:10px;}
+  .bar-track{flex:1; height:6px; border-radius:99px; background:var(--border); overflow:hidden;}
+  .bar-fill{height:100%; border-radius:99px; background:linear-gradient(90deg,var(--cyan),var(--green));}
+  .bar-pct{font-family:var(--mono); font-size:11.5px; color:var(--text-dim); width:36px; text-align:right;}
+
+  .chev{color:var(--text-mute); transition:transform .2s;}
+  .meta-card.open .chev{transform:rotate(180deg);}
+
+  .meta-body{max-height:0; overflow:hidden; transition:max-height .3s ease;}
+  .meta-body-in{padding:0 18px 20px; border-top:1px solid var(--border);}
+  .meta-detail{
+    font-family:var(--mono); font-size:12px; color:var(--text-dim); line-height:1.7; background:var(--bg2);
+    border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:16px 0; white-space:pre-wrap;
+  }
+  .meta-detail b{color:var(--cyan);}
+  .meta-toggle-detail{
+    font-family:var(--mono); font-size:10.5px; color:var(--text-mute); cursor:pointer; margin-top:14px; display:inline-flex;
+    align-items:center; gap:5px; text-transform:uppercase; letter-spacing:.05em;
+  }
+  .meta-toggle-detail:hover{color:var(--cyan);}
+
+  .fases-label{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.07em; margin:16px 0 8px;}
+  .fase-row{display:grid; grid-template-columns:26px 1fr auto 150px 16px auto; align-items:center; gap:12px; padding:10px 12px; border-radius:10px; background:var(--bg2); border:1px solid var(--border); margin-bottom:0; transition:border-color .15s;}
+  .fase-wrap{margin-bottom:7px;}
+  .fase-row:hover{border-color:var(--border-hi);}
+  .fase-idx{font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+  .fase-name{font-size:13px; color:var(--text);}
+  .fase-name small{display:block; font-family:var(--mono); font-size:10.5px; color:var(--text-mute); margin-top:2px;}
+  .fase-assignee{font-family:var(--mono); font-size:11px; color:var(--text-mute); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .fase-link{color:var(--text-mute); display:flex;}
+  .fase-link:hover{color:var(--cyan);}
+  .fase-row.has-ativ{cursor:pointer;}
+  .fase-row.has-ativ:hover{border-color:var(--cyan);}
+  .ativ-chev{color:var(--text-mute); transition:transform .2s; flex:none;}
+  .fase-wrap.open .ativ-chev{transform:rotate(180deg); color:var(--cyan);}
+  .ativ-list{margin:2px 0 10px 38px; padding:4px 0 4px 14px; border-left:2px solid var(--border-hi); display:flex; flex-direction:column; gap:6px;}
+  .ativ-row{display:flex; align-items:center; gap:9px; font-size:12px; color:var(--text-dim); padding:2px 0;}
+  .ativ-dot{width:7px; height:7px; border-radius:50%; flex:none;}
+  .ativ-name{flex:1; min-width:0;}
+  .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
+  .ativ-status{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; white-space:nowrap;}
+  @keyframes blinkRed{0%,100%{background:rgba(255,90,90,.10); box-shadow:0 0 0 rgba(255,90,90,0);}50%{background:rgba(255,60,60,.35); box-shadow:0 0 10px rgba(255,60,60,.35);}}
+  .ativ-row.atrasada{animation:blinkRed 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
+  .ativ-row.atrasada .ativ-dot{animation:blinkRed 1.1s ease-in-out infinite; background:var(--red) !important;}
+  .ativ-row.atrasada .ativ-name{color:#ffb3b3; font-weight:600;}
+  .ativ-row.atrasada .ativ-status{color:#ffb3b3; font-weight:700;}
+
+  .crit-section{max-width:1180px; margin:0 auto; padding:0 28px 70px;}
+  .crit-title{font-family:var(--disp); font-size:20px; font-weight:600; margin:0 0 6px;}
+  .crit-sub{font-family:var(--mono); font-size:12px; color:var(--text-mute); margin:0 0 20px;}
+  .crit-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .crit-card{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 20px;}
+  .crit-card h4{font-family:var(--disp); font-size:14.5px; margin:0 0 12px; display:flex; align-items:center; gap:8px;}
+  .crit-card h4 .sw{width:8px; height:8px; border-radius:2px;}
+  .crit-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px;}
+  .crit-list li{display:flex; align-items:flex-start; gap:9px; font-size:12.5px; color:var(--text-dim); line-height:1.5;}
+  .crit-list li .cb{width:14px; height:14px; border-radius:4px; border:1.5px solid var(--slate); flex:none; margin-top:2px;}
+
+  footer{max-width:1180px; margin:0 auto; padding:24px 28px 50px; border-top:1px solid var(--border); font-family:var(--mono); font-size:11px; color:var(--text-mute); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+  footer a{color:var(--text-mute);}
+
+  @media (max-width:900px){
+    .hero{padding:48px 20px 28px;}
+    .hero-grid{grid-template-columns:1fr; gap:26px;}
+    .ring-card{padding:18px;}
+    .kpis{grid-template-columns:repeat(2,1fr); padding:0 20px 28px;}
+    .controls{padding:0 20px 16px;}
+    .crit-section{padding:0 20px 50px;}
+    .metas{padding:0 20px 50px;}
+  }
+
+  @media (max-width:640px){
+    .topbar{padding:12px 16px;}
+    .tb-title{font-size:11.5px;}
+    .tb-right{gap:10px; font-size:10.5px;}
+    .tb-right #tb-date{display:none;}
+
+    .hero{padding:36px 16px 24px;}
+    .hero-eyebrow{font-size:10.5px; margin-bottom:10px;}
+    .hero-sub{font-size:13.5px;}
+    .ring-card{flex-direction:column; align-items:flex-start; gap:16px;}
+    .ring-wrap{width:96px; height:96px;}
+    .ring-wrap svg{width:96px; height:96px;}
+
+    .kpis{grid-template-columns:repeat(2,1fr); gap:10px; padding:0 16px 24px;}
+    .kpi{padding:12px 14px;}
+    .kpi .k-num{font-size:21px;}
+
+    .controls{flex-direction:column; align-items:stretch; padding:0 16px 16px; gap:12px;}
+    .search{max-width:none;}
+    .chips{gap:6px;}
+    .chip{font-size:10.5px; padding:7px 11px;}
+
+    .metas{padding:0 16px 50px; gap:10px;}
+    .meta-card{border-radius:14px;}
+    .meta-head{
+      grid-template-columns:1fr auto; column-gap:10px; row-gap:8px; padding:14px;
+    }
+    .meta-num{grid-column:1; order:1;}
+    .meta-name{grid-column:1/-1; order:2;}
+    .meta-head > .badge{order:3; justify-self:start;}
+    .meta-bar{grid-column:1/-1; order:4;}
+    .chev{order:3; justify-self:end; align-self:start;}
+    .meta-name .n1{white-space:normal; font-size:14.5px;}
+
+    .meta-body-in{padding:0 14px 16px;}
+    .fases-label{font-size:10px; line-height:1.5;}
+    .fase-row{
+      grid-template-columns:1fr auto; row-gap:6px; padding:11px;
+    }
+    .fase-idx{display:none;}
+    .fase-name{grid-column:1/-1; order:1;}
+    .fase-assignee{order:2; font-size:10.5px;}
+    .fase-row .badge{order:3;}
+    .ativ-chev{order:4;}
+    .fase-link{order:5; justify-self:end;}
+    .ativ-list{margin-left:0;}
+
+    .crit-section{padding:0 16px 50px;}
+    .crit-title{font-size:17px;}
+    .crit-grid{grid-template-columns:1fr; gap:10px;}
+    .crit-card{padding:15px 16px;}
+
+    footer{padding:20px 16px 40px; flex-direction:column;}
+  }
+
+  .page-nav{max-width:1180px; margin:14px auto 0; padding:0 28px; display:flex; gap:10px;}
+  .page-nav a{font-family:var(--mono); font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--border); background:var(--panel); color:var(--text-dim); text-decoration:none; transition:.15s;}
+  .page-nav a:hover{border-color:var(--border-hi); color:var(--text);}
+  .page-nav a.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+  @media (max-width:640px){.page-nav{padding:0 16px; margin-top:10px;}}
+  .b-blocked{color:var(--red); background:rgba(255,90,90,.12); border:1px solid #5c1f1f;}
+
+  /* ===== Folder tabs (duas diretorias sobrepostas, como no rascunho) ===== */
+  .folder-outer{max-width:1180px; margin:30px auto 0; padding:0 28px;}
+  .folder-tabs{display:flex; align-items:flex-end; position:relative; z-index:2;}
+  .folder-tab{
+    --tc:var(--cyan); --tc-dim:var(--cyan-dim);
+    position:relative; cursor:pointer; user-select:none;
+    padding:14px 22px 15px; margin-right:6px;
+    border:2px solid var(--tc); border-bottom:none;
+    border-radius:16px 16px 0 0;
+    background:linear-gradient(180deg, var(--panel-hi), var(--panel));
+    color:var(--text-dim);
+    font-family:var(--mono); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+    display:flex; align-items:center; gap:9px;
+    transition:transform .22s ease, opacity .22s ease, color .2s ease, box-shadow .2s ease;
+    z-index:1; opacity:.6; transform:translateY(6px);
+  }
+  .folder-tab:last-child{margin-right:0;}
+  .folder-tab .f-dot{width:8px; height:8px; border-radius:50%; background:var(--tc); flex:none; box-shadow:0 0 0 3px var(--tc-dim);}
+  .folder-tab .f-name{color:var(--text); font-family:var(--disp); font-size:13.5px; text-transform:none; letter-spacing:0; font-weight:600; white-space:nowrap;}
+  .folder-tab .f-role{display:block; font-size:9.5px; color:var(--text-mute); font-weight:600; margin-top:1px; white-space:nowrap;}
+  .folder-tab:hover{opacity:.85;}
+  .folder-tab.active{
+    z-index:3; opacity:1; transform:translateY(0);
+    box-shadow:0 -10px 24px -10px var(--tc-dim);
+  }
+  .folder-panel{
+    position:relative; z-index:2;
+    border:2px solid var(--panel-active, var(--cyan));
+    border-radius:0 20px 20px 20px;
+    background:radial-gradient(1100px 500px at 90% -10%, rgba(45,217,245,.07) 0%, transparent 60%), var(--bg2);
+    padding:8px 0 4px;
+    transition:border-color .25s ease;
+  }
+  .folder-panel .hero{padding-top:40px;}
+  @media (max-width:900px){
+    .folder-outer{padding:0 20px;}
+  }
+  @media (max-width:640px){
+    .folder-outer{padding:0 16px; margin-top:20px;}
+    .folder-tabs{flex-wrap:wrap; row-gap:6px;}
+    .folder-tab{padding:10px 13px 11px; margin-right:5px; border-radius:12px 12px 0 0;}
+    .folder-tab .f-role{display:none;}
+    .folder-tab .f-name{font-size:12px;}
+    .folder-panel{border-radius:0 14px 14px 14px;}
+  }
+
+  /* ===== RoadMap board (Kanban) ===== */
+  .board{
+    display:grid; grid-auto-flow:column; grid-auto-columns:270px;
+    gap:14px; overflow-x:auto; padding:4px 28px 26px;
+    max-width:1180px; margin:0 auto;
+    scrollbar-width:thin; scrollbar-color:var(--border-hi) transparent;
+  }
+  .board::-webkit-scrollbar{height:8px;}
+  .board::-webkit-scrollbar-thumb{background:var(--border-hi); border-radius:8px;}
+  .board-col{
+    background:var(--panel); border:1px solid var(--border); border-radius:14px;
+    display:flex; flex-direction:column; min-height:80px; max-height:640px;
+  }
+  .board-col-head{
+    display:flex; align-items:center; gap:8px; padding:13px 14px 11px;
+    border-bottom:1px solid var(--border); font-family:var(--mono); font-size:11.5px;
+    font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--text-dim);
+    position:sticky; top:0; background:var(--panel); border-radius:14px 14px 0 0;
+  }
+  .board-col-head .bc-dot{width:8px; height:8px; border-radius:50%; flex:none;}
+  .board-col-head .bc-count{margin-left:auto; background:var(--panel-hi); color:var(--text-mute); border-radius:999px; padding:1px 8px; font-size:10.5px;}
+  .board-col-body{padding:10px; display:flex; flex-direction:column; gap:9px; overflow-y:auto;}
+  .board-card{
+    background:var(--panel-hi); border:1px solid var(--border); border-radius:11px;
+    padding:11px 12px; transition:.15s; position:relative;
+  }
+  .board-card:hover{border-color:var(--border-hi); transform:translateY(-1px);}
+  .board-card .bc-name{font-family:var(--body); font-size:12.5px; color:var(--text); line-height:1.42; margin-bottom:9px;}
+  .board-card .bc-foot{display:flex; align-items:center; justify-content:space-between; gap:8px;}
+  .board-card .bc-avatars{display:flex;}
+  .board-card .bc-av{
+    width:20px; height:20px; border-radius:50%; background:var(--panel); border:2px solid var(--panel-hi);
+    display:flex; align-items:center; justify-content:center; font-size:8.5px; font-weight:700; color:var(--text);
+    margin-left:-6px; flex:none;
+  }
+  .board-card .bc-av:first-child{margin-left:0;}
+  .board-card a.bc-link{color:var(--text-mute); display:flex; opacity:.7; transition:.15s;}
+  .board-card a.bc-link:hover{color:var(--text); opacity:1;}
+  .board-empty{padding:22px 12px; text-align:center; color:var(--text-mute); font-size:11.5px; font-family:var(--mono);}
+  @media (max-width:640px){
+    .board{padding:4px 16px 20px; grid-auto-columns:230px;}
+  }
+
+</style>
+</head>
+<body style="background:#0a0e14; margin:0;">
+
+<div class="topbar">
+  <div class="tb-left">
+    <div class="tb-mark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABFCAYAAACRzK44AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABgySURBVHhe3V15fFXF2X7m3CwkxCSEJUEWRRCVQqnW4reWopVFcaHiUqxarS27KHUD68baWvxUtGpFxSpaN5ai4gYqIsi+E7YQQhKyk9zc9c6d5f3+uCH3nHOTQAj4az/PJ8x958y8886ZM+edmXsuUZIkicagACIRPWQjaLZFqBuYMV3+/QsRNlwtkR1D4ZmEjmOCiZIswkypYPqH1A0x2XVVR2pk/AcwR+lK0rHhCBCI1pJPabbG6YAb5oiVthyUG656pmCC0n85nCsVadIsEP0Sowig0Q67CiL/SgO0HmviqOCg6o9GDNYISHdOOQKHEWiwwAUS0AFNiQ6QAL4xQKMPIuWAU5hPXLg63sA5lyFdsW24LzHabuToECERxSECqSkiRBuR2jLbMPwD6BMf5pyI43JophSQcxBtMjzLUQtg2oIWyxiEXFjb5MdwpRBEFotAQFyzyaB0wiJVJyMIRVY1B23HJLkFJSyaZrMd3QvDOZepIbDGZxEG6nMfE4ZGDdYw1KsraVay3H2CCURTlIHIwnD5MbgsVp+AQBZQTSE+GhpbNE2JCB2P4BLRyYfmzgpeeuIgLPGDygmK8GqEUJl0Iw+h+rijKMkIrvKBMO5hrLGcyDDH7xhvAK0jpYMOzZUVSG5hifsphptQLgy1LP4m1IzeAFCA6rH088A4K6yTxCIahrSepJoajr45KB+hRh+Km80RtuJ8WYQZ04HZEdSdVwXTahYBJ+0kT0A05NKY6uRRFmqUZpJb2FZ31XZmWxyGTgyYu0y9Q+VfAeC2dAQjkMTMEMnpP4bIO1oUsTlJH9QUiCmOSLuGSxQmEREOD0cRjFMkKoItTqTp/hnkBkJFk0oolqDBFUgkcSguMOtA3+FonJ+3zRq77gAAAABJRU5ErkJggg==" alt="Binário Cloud"></div>
+    <span class="tb-title"><b id="tbTitleName">Metas 2026</b> · Binário Cloud</span>
+  </div>
+  <div class="tb-right">
+    <div class="tb-live"><span class="dot-live"></span> Sincronizado com ClickUp</div>
+    <span id="tb-date"></span>
+  </div>
+</div>
+
+<div class="folder-outer">
+  <div class="folder-tabs" id="tabBar">
+    <div class="folder-tab" data-tab="rafael" style="--tc:var(--cyan); --tc-dim:var(--cyan-dim);">
+      <span class="f-dot"></span>
+      <span>
+        <span class="f-name">Rafael Alves</span>
+        <span class="f-role">Diretoria Engenharia &amp; Operações</span>
+      </span>
+    </div>
+    <div class="folder-tab" data-tab="tiago" style="--tc:var(--orange); --tc-dim:var(--orange-dim);">
+      <span class="f-dot"></span>
+      <span>
+        <span class="f-name">Tiago Oliveira</span>
+        <span class="f-role">Diretoria Produto &amp; Inovação</span>
+      </span>
+    </div>
+    <div class="folder-tab" data-tab="roadmap" style="--tc:var(--violet); --tc-dim:var(--violet-dim);">
+      <span class="f-dot"></span>
+      <span>
+        <span class="f-name">RoadMap</span>
+        <span class="f-role">Backlog técnico &amp; melhorias</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="folder-panel" id="folderPanel">
+    <div class="hero">
+      <div class="hero-eyebrow" id="heroEyebrow">Painel de acompanhamento</div>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title" id="heroTitle"></h1>
+        </div>
+        <div class="ring-card">
+          <div class="ring-wrap">
+            <svg width="112" height="112" viewBox="0 0 112 112">
+              <circle class="ring-bg" cx="56" cy="56" r="48"></circle>
+              <circle class="ring-fg" id="ringFg" cx="56" cy="56" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"></circle>
+            </svg>
+            <div class="ring-num"><b id="ringPct">0%</b><small>concluído</small></div>
+          </div>
+          <div class="ring-legend" id="ringLegend"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpis" id="kpiStrip"></div>
+
+    <div class="controls">
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="searchInput" placeholder="Buscar meta ou fase…">
+      </div>
+      <div class="chips" id="statusChips"></div>
+    </div>
+
+    <div id="metasSection">
+      <div class="metas" id="metasList"></div>
+
+      <div class="crit-section" id="critSection">
+        <h3 class="crit-title">Critérios de sucesso adicionais</h3>
+        <p class="crit-sub">Itens do backlog geral sem fases detalhadas — critérios de aceite do trimestre.</p>
+        <div class="crit-grid" id="critGrid"></div>
+      </div>
+    </div>
+
+    <div id="roadmapSection" style="display:none;">
+      <div class="board" id="roadmapBoard"></div>
+    </div>
+
+    <footer>
+      <span>Fonte: ClickUp · Lista <a id="footerSourceLink" href="#" target="_blank">—</a></span>
+      <span id="tb-gen"></span>
+    </footer>
+  </div>
+</div>
+
+<script>
+// ================= DADOS =================
+const ROADMAP_TASKS = [
+  {
+    "id": "86ajtjqck",
+    "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajtjqck"
+  },
+  {
+    "id": "86ajtjew3",
+    "name": "Bug de permissão, tenho acesso ao Admin, porém pela console não consigo criar projeto no dominio comercial.binario.cloud",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajtjew3"
+  },
+  {
+    "id": "86ajtj8ee",
+    "name": "Análise: criação de menu configurador de automação BCP 3.0",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajtj8ee"
+  },
+  {
+    "id": "86ajtj7v1",
+    "name": "Análise: criação de menu IA BCP 3.0",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajtj7v1"
+  },
+  {
+    "id": "86ajtgv7h",
+    "name": "Melhorar o permissionamento do S3 via console BCP — clientes questionam sobre granularidade",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajtgv7h"
+  },
+  {
+    "id": "86ajmv68h",
+    "name": "Ajustar processo de deletar POC de White Label",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajmv68h"
+  },
+  {
+    "id": "86ajjnbmx",
+    "name": "Flavors — abas vazias",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ajjnbmx"
+  },
+  {
+    "id": "86ajjmp5y",
+    "name": "Barra de escolha de página está perdendo a padronização",
+    "status": "em andamento",
+    "assignees": [
+      "Tiago Oliveira",
+      "Gabriel Sezana"
+    ],
+    "url": "https://app.clickup.com/t/86ajjmp5y"
+  },
+  {
+    "id": "86ajjmk9d",
+    "name": "Configuração de Rede",
+    "status": "revisando",
+    "assignees": [
+      "Tiago Oliveira",
+      "Gabriel Sezana"
+    ],
+    "url": "https://app.clickup.com/t/86ajjmk9d"
+  },
+  {
+    "id": "86ajjmh24",
+    "name": "Criação de disco na criação da instância",
+    "status": "revisando",
+    "assignees": [
+      "Tiago Oliveira",
+      "Gabriel Sezana"
+    ],
+    "url": "https://app.clickup.com/t/86ajjmh24"
+  },
+  {
+    "id": "86ahqbx3f",
+    "name": "Billing por domínio dentro do BCP",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahqbx3f"
+  },
+  {
+    "id": "86ahqbwyc",
+    "name": "Billing no BCP API",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahqbwyc"
+  },
+  {
+    "id": "86ahpyjdy",
+    "name": "Definição dos módulos do BCP (ex: BCOS, PaaS, Cost Management, Observabilidade)",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahpyjdy"
+  },
+  {
+    "id": "86ahpy2tp",
+    "name": "Definição sobre aviso",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahpy2tp"
+  },
+  {
+    "id": "86ahpb6x2",
+    "name": "Precificação do Storware",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahpb6x2"
+  },
+  {
+    "id": "86ahhuc3n",
+    "name": "Ajustar na calculadora o Serviços Gerenciados para faturar por % e não mais por componentes",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahhuc3n"
+  },
+  {
+    "id": "86ahavjx2",
+    "name": "Criação de uma nova aba na calculadora para ambientes grandes (> 50 VMs)",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ahavjx2"
+  },
+  {
+    "id": "86ah9yj6c",
+    "name": "Faltou o item de monitoramento de disco no BCP (observabilidade)",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86ah9yj6c"
+  },
+  {
+    "id": "86af7fpaq",
+    "name": "Solução de Backup Binário Cloud (VBR sim ou não)",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86af7fpaq"
+  },
+  {
+    "id": "86af7f81p",
+    "name": "Calculadora Database Instance (MySQL e PostgreSQL)",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86af7f81p"
+  },
+  {
+    "id": "86af4m845",
+    "name": "Remover Syspass do BCP",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86af4m845"
+  },
+  {
+    "id": "86af2w3xw",
+    "name": "Nova demanda — N8N em PaaS",
+    "status": "aberto",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86af2w3xw"
+  },
+  {
+    "id": "86aewz6dm",
+    "name": "Falha — gestão de billing em tempo real",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86aewz6dm"
+  },
+  {
+    "id": "86aea8y0t",
+    "name": "Implantar — Backup via Storware",
+    "status": "fechado",
+    "assignees": [
+      "Tiago Oliveira"
+    ],
+    "url": "https://app.clickup.com/t/86aea8y0t"
+  }
+];
+
+const RAFAEL_METAS = [
+ {
+  "num": 1,
+  "id": "86ajra8z4",
+  "status": "shipped",
+  "due": 1785481200000,
+  "name": "Concluir a implantação da ClaudIA no atendimento ao Suporte",
+  "short": "ClaudIA no Suporte",
+  "assignee": "Rafael Alves",
+  "tags": [
+   "atender muito bem / 100% de satisfação",
+   "eficiência operacional"
+  ],
+  "detail": "Meta de operacionalizar a ClaudIA (assistente de IA) no fluxo de atendimento do Suporte, cobrindo desde o kickoff até o encerramento com automação de troubleshooting.",
+  "fases": [
+   {
+    "n": "Kickoff",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1770879600000,
+    "id": "86af4agzn",
+    "ativ": []
+   },
+   {
+    "n": "Fase 6 - Refinamento",
+    "status": "in review",
+    "assignee": "Diogo Lerison",
+    "due": 1780038000000,
+    "id": "86ah28c3t",
+    "ativ": [
+     {
+      "n": "Dashboard de telemetria da ClaudIA",
+      "status": "shipped",
+      "due": 1778655600000
+     },
+     {
+      "n": "Estudo de RL",
+      "status": "shipped",
+      "due": 1778828400000
+     },
+     {
+      "n": "Planejamento de melhorias",
+      "status": "shipped",
+      "due": 1778828400000
+     },
+     {
+      "n": "Criação da apresentação do MVP para o Board",
+      "status": "shipped",
+      "due": 1778655600000
+     },
+     {
+      "n": "Encerramento dos chamados por inatividade ou feedback do cliente",
+      "status": "shipped",
+      "due": 1779433200000
+     },
+     {
+      "n": "Checklist de informações mínimas",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Implementar sistema no srv da nuvem.",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Cobrar melhoria da documentação tecnica",
+      "status": "shipped",
+      "due": 1780038000000
+     },
+     {
+      "n": "Levantamento de chamados reais para reinforcement da IA",
+      "status": "shipped",
+      "due": 1778655600000
+     },
+     {
+      "n": "Mapeamento de informações sobre o cliente",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Levantamento de configuração znuny homolog",
+      "status": "shipped",
+      "due": 1779778800000
+     },
+     {
+      "n": "Levantamento de IDs de serviço znuny prod.",
+      "status": "shipped",
+      "due": 1779865200000
+     },
+     {
+      "n": "Atualização do guia de categorização",
+      "status": "shipped",
+      "due": 1779951600000
+     },
+     {
+      "n": "Correção do bug de Classificação",
+      "status": "shipped",
+      "due": 1779865200000
+     },
+     {
+      "n": "Levantamento de informação sobre BD",
+      "status": "shipped",
+      "due": 1779951600000
+     },
+     {
+      "n": "Novas funcionalidades Telemetria",
+      "status": "shipped",
+      "due": 1780038000000
+     },
+     {
+      "n": "Refinamento da Classificação.",
+      "status": "shipped",
+      "due": 1780038000000
+     }
+    ]
+   },
+   {
+    "n": "Fase 7 - Implementação no ambiente de produção",
+    "status": "in progress",
+    "assignee": "Vinicius / Gustavo",
+    "due": null,
+    "id": "86aj0vz5y",
+    "ativ": [
+     {
+      "n": "Redirecionar ClaudIA para znuny prod.",
+      "status": "shipped",
+      "due": 1780642800000
+     },
+     {
+      "n": "Inicio de produção assistida",
+      "status": "shipped",
+      "due": 1782802800000
+     },
+     {
+      "n": "Testes e validação.",
+      "status": "shipped",
+      "due": 1783062000000
+     },
+     {
+      "n": "Ajuste de SLA",
+      "status": "shipped",
+      "due": 1781852400000
+     },
+     {
+      "n": "Correção de erros",
+      "status": "shipped",
+      "due": 1782802800000
+     },
+     {
+      "n": "Fim-a-Fim de duvidas tratadas pela Claudia",
+      "status": "shipped",
+      "due": 1783494000000
+     },
+     {
+      "n": "Edição - Documentos",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Correção das Filas Claudia",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Gerar Dashboard de métricas para tomada de decisão",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenvolvimento de sistema de releases e deploy",
+      "status": "shipped",
+      "due": 1783494000000
+     },
+     {
+      "n": "Implementação de Busca Rápida no Dashboard",
+      "status": "shipped",
+      "due": 1783926000000
+     },
+     {
+      "n": "Otimização do ambiente de dashboard e processamento dos tickets",
+      "status": "shipped",
+      "due": 1783580400000
+     },
+     {
+      "n": "Melhorias do Ambiente de métricas do Dashboard",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Implementação de métricas do RL e incremento de dashboard",
+      "status": "shipped",
+      "due": 1784098800000
+     },
+     {
+      "n": "Correção das respostas para encaminhamentos",
+      "status": "shipped",
+      "due": 1784098800000
+     },
+     {
+      "n": "Correção - Encaminhamento",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "BUGFIX: Dashboard update",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Adicionar custo real no dashboard",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "Fase 8 - Implementação de segurança no ambiente",
+    "status": "in progress",
+    "assignee": "Rafael Alves / Diogo Lerison",
+    "due": 1784271600000,
+    "id": "86af4ah6x",
+    "ativ": [
+     {
+      "n": "Análise de riscos para segurança e implantação",
+      "status": "shipped",
+      "due": 1781852400000
+     },
+     {
+      "n": "Criar/definir banco de dados para a Cláudia",
+      "status": "shipped",
+      "due": 1782889200000
+     },
+     {
+      "n": "Definir modelo de backup da ClaudIA",
+      "status": "shipped",
+      "due": 1783926000000
+     }
+    ]
+   },
+   {
+    "n": "Fase 9 - Automação de Troubleshooting",
+    "status": "backlog",
+    "assignee": "Diogo Lerison",
+    "due": 1782457200000,
+    "id": "86agg5xnc",
+    "ativ": [
+     {
+      "n": "Definição dos chamados a serem resolvidos",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "Fase 10 - Encerramento",
+    "status": "backlog",
+    "assignee": "Diogo Lerison",
+    "due": 1784876400000,
+    "id": "86ah4ze5b",
+    "ativ": []
+   }
+  ]
+ },
+ {
+  "num": 2,
+  "id": "86ajra8z1",
+  "status": "shipped",
+  "due": 1782802800000,
+  "name": "Concluir a migração dos clientes da Cloud 2.0 para a Cloud 3.0",
+  "short": "Migração Clientes 2.0 > 3.0",
+  "assignee": "Rafael Alves",
+  "tags": [
+   "migração",
+   "modernização tecnológica"
+  ],
+  "detail": "Meta de nível executivo que consolida o resultado da migração de clientes entre gerações de cloud (detalhamento técnico acompanhado na meta de Desmobilização 2.0).",
+  "fases": []
+ },
+ {
+  "num": 3,
+  "id": "86ajra8yz",
+  "status": "shipped",
+  "due": 1785481200000,
+  "name": "Entregar a Plataforma de Observabilidade da BCloud 3.0",
+  "short": "Plataforma de Observabilidade da BCloud 3.0",
+  "assignee": "Rafael Alves",
+  "tags": [
+   "sustentando o crescimento do negócio"
+  ],
+  "detail": "Meta executiva de consolidação da plataforma de observabilidade da nova geração de cloud (BCloud 3.0).",
+  "fases": []
+ },
+ {
+  "num": 4,
+  "id": "86ajra8yu",
+  "status": "backlog",
+  "due": 1798700400000,
+  "name": "Garantir disponibilidade e SLA de atendimento ao cliente",
+  "short": "Disponibilidade e atendimento ao cliente",
+  "assignee": "Rafael Alves",
+  "tags": [
+   "garantia sla",
+   "eficiência operacional"
+  ],
+  "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
+  "fases": []
+ },
+ {
+  "num": 5,
+  "id": "86afcphgx",
+  "status": "in progress",
+  "due": 1798700400000,
+  "name": "Automatizar instalação do BC Box com base nos testes realizados",
+  "short": "BC Box – Automação de instalação do BCP",
+  "assignee": "Leonardo Gomes Jorge Gonçalez",
+  "tags": [
+   "sustentando o crescimento do negócio",
+   "eficiência operacional"
+  ],
+  "detail": "Objetivo: reduzir esforço manual e tempo de implantação do BC Box.\nEntregáveis: resultados dos testes UOL registrados, escopo de automação definido, automação dos componentes prioritários, documentação do processo, comparação antes/depois do tempo de implantação.\nMétrica de sucesso: redução do tempo de instalação, redução de etapas manuais, repetibilidade da instalação.\nCritério de aceite: instalação automatizada com evidência de ganho operacional.\nRisco principal: ausência de documentação suficiente da etapa de teste.",
+  "fases": [
+   {
+    "n": "FASE01 - Teste do Beta na UOL",
+    "status": "shipped",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": 1773990000000,
+    "id": "86ag1nr2u",
+    "ativ": [
+     {
+      "n": "Configuração inicial da vm do bc-box",
+      "status": "shipped",
+      "due": 1772434800000
+     },
+     {
+      "n": "Configuração do yaml central",
+      "status": "shipped",
+      "due": 1772607600000
+     },
+     {
+      "n": "Rodar préchecks",
+      "status": "shipped",
+      "due": 1772607600000
+     },
+     {
+      "n": "Instalação da primeira versão",
+      "status": "shipped",
+      "due": 1772780400000
+     },
+     {
+      "n": "Ajustes do yaml",
+      "status": "shipped",
+      "due": 1773385200000
+     },
+     {
+      "n": "Aplicação do reconfigure",
+      "status": "shipped",
+      "due": 1773385200000
+     },
+     {
+      "n": "Ajustes manuais",
+      "status": "shipped",
+      "due": 1773990000000
+     }
+    ]
+   },
+   {
+    "n": "FASE 02 - Aplicação de melhorias coletadas no Projeto UOL",
+    "status": "shipped",
+    "assignee": "Vitor Ribeiro",
+    "due": 1776409200000,
+    "id": "86ag1nrvz",
+    "ativ": [
+     {
+      "n": "Host de deploy local",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "A senha de acesso criptografada",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Alterar skyline de proxy para console",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "O Skyline customizado com rota nginx para cada serviço",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Serviços específicos para adicionar (Magnum, Trove)",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Tunnings do SO",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Instalar o CEPH",
+    "status": "in review",
+    "assignee": "Vitor Ribeiro / Vinicius Afonso Oliveira",
+    "due": 1788159600000,
+    "id": "86ag1ntg8",
+    "ativ": [
+     {
+      "n": "Instalar monitors",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Instalar storage nodes",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Configurar OSDs",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Configurar pools",
+      "status": "in review",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Instalar Storware",
+    "status": "in progress",
+    "assignee": "Vitor Ribeiro / Nathan de Moraes Valim Francisco",
+    "due": 1790751600000,
+    "id": "86ag1nu17",
+    "ativ": [
+     {
+      "n": "Definição do modelo a ser instalado",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Pré configuração dos servidores",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Automação dos comandos de instalação",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Integração com as APIs Openstack",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Integração com Ceph Openstack",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Integração com repositório",
+      "status": "in progress",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE05 - Instalação do Sistema de Observabilidade",
+    "status": "in progress",
+    "assignee": "Vitor Ribeiro / Ayrton Marinho",
+    "due": 1796022000000,
+    "id": "86ag1nup2",
+    "ativ": []
+   },
+   {
+    "n": "FASE06 - Melhorias skyline (Fora da meta BC-Box)",
+    "status": "backlog",
+    "assignee": "Vitor Ribeiro / Ayrton Marinho",
+    "due": 1798700400000,
+    "id": "86ag1nvn5",
+    "ativ": [
+     {
+      "n": "Personalização dos logos",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 6,
+  "id": "86afcpgzp",
+  "status": "in progress",
+  "due": 1796022000000,
+  "name": "Concluir migração do legado de backup e descomissionar ambiente antigo",
+  "short": "Migração Ceph (EC → Réplica) e descomissionamento do legado",
+  "assignee": "Leonardo Gomes Jorge Gonçalez",
+  "tags": [
+   "eficiência operacional",
+   "garantia sla",
+   "sustentando o crescimento do negócio",
+   "higiene de infraestrutura"
+  ],
+  "detail": "Objetivo: encerrar dependência do ambiente legado com segurança operacional, consolidando a infraestrutura de armazenamento de backup em arquitetura Ceph Replica (migrando de Ceph Erasure Code).\nEntregáveis: chegada e validação dos discos, migração das réplicas do CEF para REC, validação de integridade pós-migração, plano de rollback, descomissionamento do legado.\nCritério de aceite: legado descomissionado e operação validada.\nRisco principal: atraso de insumo físico ou falha na validação pós-migração.",
+  "fases": [
+   {
+    "n": "FASE01 - Planejamento",
+    "status": "shipped",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1770361200000,
+    "id": "86ag5vn7n",
+    "ativ": [
+     {
+      "n": "Elaboração do Diagnóstico Técnico - Ceph",
+      "status": "shipped",
+      "due": 1768806000000
+     },
+     {
+      "n": "Montagem do plano de Migração",
+      "status": "shipped",
+      "due": 1770361200000
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Ajustes do Ambiente",
+    "status": "shipped",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1789110000000,
+    "id": "86ag5vnj3",
+    "ativ": [
+     {
+      "n": "Garantir a chegada dos discos adquiridos em 2025",
+      "status": "shipped",
+      "due": 1780642800000
+     },
+     {
+      "n": "Fase 3",
+      "status": "shipped",
+      "due": 1775286000000
+     },
+     {
+      "n": "Fase 4",
+      "status": "shipped",
+      "due": 1773212400000
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Migração dos backups",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1788937200000,
+    "id": "86ag5vnnu",
+    "ativ": [
+     {
+      "n": "Migrar do EC para replicated com controle",
+      "status": "shipped",
+      "due": 1785481200000
+     },
+     {
+      "n": "Remoção do node 05",
+      "status": "shipped",
+      "due": 1785135600000
+     },
+     {
+      "n": "Migrar para o cluster novo e mover storages conforme esvaziamos",
+      "status": "in progress",
+      "due": 1788937200000
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Descomissionamento ambiente antigo",
+    "status": "backlog",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1790751600000,
+    "id": "86ag5vp15",
+    "ativ": [
+     {
+      "n": "Remoção dos últimos nodes do cluster",
+      "status": "backlog",
+      "due": 1789110000000
+     },
+     {
+      "n": "Adição dos nodes no novo cluster",
+      "status": "backlog",
+      "due": 1790751600000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 7,
+  "id": "86afcpfhb",
+  "status": "in progress",
+  "due": 1798700400000,
+  "name": "Concluir migração técnica da Cloud 2 para Cloud 3",
+  "short": "Desmobilização 2.0",
+  "assignee": "Leonardo Gomes Jorge Gonçalez",
+  "tags": [
+   "eficiência operacional",
+   "sustentando o crescimento do negócio",
+   "modernização tecnológica",
+   "higiene de infraestrutura"
+  ],
+  "detail": "Objetivo: transferir workloads e infraestrutura da Cloud 2 para a Cloud 3 com previsibilidade e segurança.\nMeta: ≤100 VMs remanescentes na Cloud 2.0.\nEntregáveis: cronograma consolidado, migração dos nós físicos, migração dos IPs, migração das VMs, validação final e plano de encerramento.\nCritério de aceite: migração concluída com validação operacional.\nRisco principal: responsabilidade compartilhada sem dono executivo claro.",
+  "fases": [
+   {
+    "n": "FASE01 - Quantidade de VMs cloud 2.0 com a evolução do Projeto",
+    "status": "shipped",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1782802800000,
+    "id": "86afcx00k",
+    "ativ": [
+     {
+      "n": "Medir quantidade de VMs restantes na 2.0 - FEV",
+      "status": "shipped",
+      "due": 1772262000000
+     },
+     {
+      "n": "Medir quantidade de VMs restantes na 2.0 - MAR",
+      "status": "shipped",
+      "due": 1774940400000
+     },
+     {
+      "n": "Medir quantidade de VMs restantes na 2.0 - ABR",
+      "status": "shipped",
+      "due": 1777532400000
+     },
+     {
+      "n": "Medir quantidade de VMs restantes na 2.0 - MAI",
+      "status": "shipped",
+      "due": 1780210800000
+     },
+     {
+      "n": "Medir quantidade de VMs restantes na 2.0 - JUN",
+      "status": "shipped",
+      "due": 1782802800000
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Migração de Nodes",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1798700400000,
+    "id": "86afzddfh",
+    "ativ": [
+     {
+      "n": "br-sp-02-node01",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "br-sp-02-node02",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "br-sp-02-node03",
+      "status": "shipped",
+      "due": 1775545200000
+     },
+     {
+      "n": "br-sp-02-node04",
+      "status": "shipped",
+      "due": 1783666800000
+     },
+     {
+      "n": "br-sp-02-node05",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "br-sp-02-node06",
+      "status": "blocked",
+      "due": 1790751600000
+     },
+     {
+      "n": "br-sp-02-node07",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "br-sp-02-node08",
+      "status": "in planning",
+      "due": 1786690800000
+     },
+     {
+      "n": "br-sp-02-node09",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "br-sp-02-node10",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "br-sp-02-node15",
+      "status": "in progress",
+      "due": 1786086000000
+     },
+     {
+      "n": "br-sp-02-node16",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "br-sp-02-node17",
+      "status": "blocked",
+      "due": 1790751600000
+     },
+     {
+      "n": "br-sp-02-node18",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "br-sp-02-node19",
+      "status": "in planning",
+      "due": 1786690800000
+     },
+     {
+      "n": "br-sp-02-node20",
+      "status": "in progress",
+      "due": 1786086000000
+     },
+     {
+      "n": "br-sp-02-node21",
+      "status": "shipped",
+      "due": 1786690800000
+     },
+     {
+      "n": "br-sp-02-node22",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "br-sp-02-node23",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "srv-win-01",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "srv-win-02",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "srv-win-03",
+      "status": "blocked",
+      "due": 1790751600000
+     },
+     {
+      "n": "srv-win-04",
+      "status": "blocked",
+      "due": 1790751600000
+     },
+     {
+      "n": "srv-win-05",
+      "status": "shipped",
+      "due": 1784012400000
+     },
+     {
+      "n": "srv-win-06",
+      "status": "shipped",
+      "due": 1769756400000
+     },
+     {
+      "n": "srv-win-07",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "srv-win-08",
+      "status": "blocked",
+      "due": 1793343600000
+     },
+     {
+      "n": "srv-dentaluni-01",
+      "status": "shipped",
+      "due": 1777618800000
+     },
+     {
+      "n": "srv-oracle-gimba-01",
+      "status": "shipped",
+      "due": 1777014000000
+     },
+     {
+      "n": "srv-oracle-gimba-02",
+      "status": "shipped",
+      "due": 1777014000000
+     },
+     {
+      "n": "srv-oracle-gimba-03",
+      "status": "shipped",
+      "due": 1777014000000
+     },
+     {
+      "n": "srv-oracle-gimba-04",
+      "status": "shipped",
+      "due": 1777014000000
+     },
+     {
+      "n": "srv-oraclenode-01",
+      "status": "blocked",
+      "due": null
+     },
+     {
+      "n": "srv-oraclenode-02",
+      "status": "blocked",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE 03 - Migração de Bloco de IPs",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1798700400000,
+    "id": "86afzde05",
+    "ativ": [
+     {
+      "n": "45.225.25.0/24",
+      "status": "blocked",
+      "due": null
+     },
+     {
+      "n": "45.225.26.0/24",
+      "status": "blocked",
+      "due": null
+     },
+     {
+      "n": "45.225.27.0/24",
+      "status": "blocked",
+      "due": null
+     },
+     {
+      "n": "200.218.224.0/24",
+      "status": "blocked",
+      "due": null
+     },
+     {
+      "n": "200.218.225.0/24",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 8,
+  "id": "86afcpbtq",
+  "status": "in progress",
+  "due": 1798700400000,
+  "name": "Elevar disponibilidade e capacidade operacional da infraestrutura cloud no trimestre",
+  "short": "Disponibilidade Ambiente - Nuvem",
+  "assignee": "Leonardo Gomes Jorge Gonçalez",
+  "tags": [
+   "garantia sla",
+   "eficiência operacional"
+  ],
+  "detail": "Objetivo: aumentar resiliência, visibilidade e capacidade da infraestrutura de nuvem, garantindo disponibilidade de 99,982% (BCP | DataCenter).\nEntregáveis: plano trimestral de expansão documentado, melhorias de resiliência, dashboards operacionais atualizados, plano de backup de serviços críticos revisado, atualizações críticas aplicadas.\nCritério de aceite: plano executado, evidências registradas e indicadores publicados.\nRisco principal: conflito com demandas paralelas de migração e operação.",
+  "fases": [
+   {
+    "n": "FASE01 - Organização ambientes",
+    "status": "shipped",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1775199600000,
+    "id": "86ag5vr5b",
+    "ativ": [
+     {
+      "n": "Sistema de Inventário - NetBox",
+      "status": "shipped",
+      "due": 1772175600000
+     },
+     {
+      "n": "Criação de caderno de melhorias (Rede/Infra/Ceph)",
+      "status": "shipped",
+      "due": 1775199600000
+     },
+     {
+      "n": "Plano de Expansão de Infraestrutura - a cada 3 meses",
+      "status": "shipped",
+      "due": 1775199600000
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Melhoria da Resiliência",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1788159600000,
+    "id": "86ag5vtnu",
+    "ativ": [
+     {
+      "n": "Melhorias no monitoramento e dashboards",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Melhoria Whitelabel",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Plano de backup - Serviços internos de produção",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Aplicar plano de melhorias",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Testes de resiliência no ambiente de homologação",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Soluções de Apoio",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1793343600000,
+    "id": "86ag5vw3d",
+    "ativ": [
+     {
+      "n": "Aplicação do Rally no BCP 3.0",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Verificar a nova versão do skyline",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Capacidade dentro do BCP",
+    "status": "in progress",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "due": 1798700400000,
+    "id": "86afcr3n8",
+    "ativ": [
+     {
+      "n": "Capacidade - Linux",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Capacidade - Windows",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Capacidade de Storage - NVME",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Capacidade de Storage - HDD",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Capacidade de Storage - BACKUP",
+      "status": "in review",
+      "due": null
+     }
+    ]
+   }
+  ]
+ }
+];
+
+const TIAGO_METAS = [
+{num:1, id:"86afcpha5", status:"in progress", due:1780210800000,
+ name:"Validação e entrada da solução de backup (BC-Backup) em produção", short:"Nova solução de Backup — BC-Backup",
+ assignee:"Nathan de Moraes Valim Francisco", tags:["evolução da plataforma de nuvem","modernização tecnológica"],
+ detail:"Objetivo: concluir avaliação da solução Storware + BCOS e preparar pilotos com clientes, substituindo o Veeam.\nEntregáveis: testes de QA/backup/restore, tutoriais técnicos, 5 clientes piloto definidos, relatório técnico de validação, decisão formal sobre produção/licenciamento.\nCritério de aceite: solução validada e próxima etapa aprovada.\nRisco principal: avançar para produção sem comparação estratégica adequada.",
+ fases:[
+  {n:"FASE01 — Instalar Ambiente Produtivo", status:"shipped", assignee:"Nathan", due:null, id:"86afcrut0", ativ:[{n:"Instalar Galera",status:"shipped",due:null},{n:"Instalar controller",status:"shipped",due:null},{n:"instalar repositório",status:"shipped",due:null},{n:"conectar ceph de backup",status:"shipped",due:null},{n:"validar features",status:"shipped",due:null},{n:"gerar frontend personalizado",status:"shipped",due:null}]},
+  {n:"FASE02 — Ajustar frontend BCOS", status:"shipped", assignee:"Nathan", due:null, id:"86afjfc80", ativ:[{n:"Tradução",status:"shipped",due:null},{n:"Opção \\\"enable file system\\\"",status:"shipped",due:null},{n:"Correção de bugs visuais",status:"shipped",due:null}]},
+  {n:"FASE03 — Esteira QA", status:"in progress", assignee:"Nathan", due:null, id:"86ag5ua03", ativ:[{n:"Criar plano de teste - Equipe BinarioNet",status:"shipped",due:null},{n:"Criar videos tutoriais para a equipe Suporte - N1/N2",status:"shipped",due:null},{n:"Contratar licenças junto ao Fornecedor - Storware",status:"in review",due:null},{n:"Definir precificação",status:"in progress",due:null},{n:"Subir SKU na Calculadora",status:"backlog",due:null},{n:"Definir 5 primeiro Clientes",status:"in progress",due:null},{n:"Subir documentação - ClaudIA",status:"shipped",due:null},{n:"Disponibilização da FAQ",status:"shipped",due:null}]}
+ ]},
+{num:2, id:"86afcphpj", status:"in progress", due:1777532400000,
+ name:"Segurança e evolução do BCP", short:"BCP — Segurança",
+ assignee:"Guilherme Lopes", tags:["evolução da plataforma de nuvem","eficiência operacional"],
+ detail:"Objetivo: aumentar segurança e confiabilidade do acesso à plataforma (calculadora e Console) com MFA e validação reforçada.\nEntregáveis: MFA implementado, validação por token, nova tela de validação de acesso, testes de uso e segurança.\nCritério de aceite: funcionalidade disponível, validada e documentada.\nRisco principal: competição com outras entregas de produto.",
+ fases:[
+  {n:"FASE01 — Validação de sessão", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86ag1nywn", ativ:[{n:"Definição de codificação de token de acesso",status:"shipped",due:null},{n:"Definição do tempo de vida do acesso gerado",status:"shipped",due:null}]},
+  {n:"FASE02 — Canal de geração de links para clientes", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86ag1nywb", ativ:[{n:"Criar view no BCAPI para a geração de links",status:"shipped",due:null},{n:"Desenvolvimento de API para geração de tokens de acesso a calculadora",status:"shipped",due:null}]},
+  {n:"FASE03 — Identificador de acesso (Central/Console)", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86ag1nywv", ativ:[{n:"Desenvolvimento do encode/decoder de token de acesso",status:"shipped",due:null},{n:"Inserir na calculadora o envio deste token de acesso para a validação",status:"shipped",due:null}]},
+  {n:"FASE04 — Redirecionamento sem sessão válida", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86ag1nyx6", ativ:[{n:"Desenvolver o redirecionamento",status:"shipped",due:null},{n:"Criar página indicando com contato com a equipe comercial",status:"shipped",due:null}]},
+  {n:"FASE05 — Habilitar MFA no BCP", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86ag1nyxf", ativ:[{n:"Desenvolver tema de ativação do mfa na central do usuário",status:"shipped",due:null},{n:"Mecanismo de validação de token de acesso",status:"shipped",due:null},{n:"Desenvolvimento de tela de validação de acesso após o login",status:"shipped",due:null}]},
+  {n:"FASE06 — Esteira QA", status:"backlog", assignee:"Guilherme Lopes", due:null, id:"86ag4t18m", ativ:[{n:"Criação de esteira do módulo",status:"backlog",due:null},{n:"Testes e validações do produto",status:"backlog",due:null},{n:"Geração de documentação da operação",status:"backlog",due:null},{n:"Geração de FAQ para o cliente",status:"backlog",due:null},{n:"Passagem para produção",status:"backlog",due:null},{n:"Apresentação para a diretoria da Empresa",status:"backlog",due:null},{n:"Implementação do módulo no BC-BOX",status:"backlog",due:null}]}
+ ]},
+{num:3, id:"86afcphue", status:"in progress", due:1788159600000,
+ name:"Módulo Financeiro do BCP", short:"BCP — Módulo Financeiro",
+ assignee:"Guilherme Lopes", tags:["evolução da plataforma de nuvem"],
+ detail:"Objetivo: disponibilizar visibilidade de precificação no fluxo de criação de VMs, com custos em tempo real.\nEntregáveis: integração da precificação, exibição de custos em tempo real, testes funcionais, validação com stakeholders.\nCritério de aceite: módulo funcionando conforme cenário definido.\nRisco principal: inconsistência entre cálculo e exibição.",
+ fases:[
+  {n:"FASE01 — Extrato de Consumo em tempo real", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86afct8bu", ativ:[{n:"Montagem da tela de consumo em tempo real",status:"shipped",due:null},{n:"Criação de endpoint de consumo de tempo real - skyline",status:"shipped",due:null},{n:"Integração da tela de consumo com BCAPI",status:"shipped",due:null},{n:"Ajustes dos parametros da API de consumo (filtragem por projeto)",status:"shipped",due:null},{n:"Deploy da solução em produção",status:"shipped",due:null}]},
+  {n:"FASE02 — Precificação na criação de VM", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86afct7za", ativ:[{n:"Exposição dos preços da calculadora por API no skyline",status:"shipped",due:null},{n:"Construção de tela para consumo API de preços",status:"shipped",due:null},{n:"Filtragem de SKUs ausentes",status:"shipped",due:null},{n:"validação em ambiente sandbox",status:"shipped",due:null}]},
+  {n:"FASE03 — Rateio de Notas Fiscais", status:"shipped", assignee:"Guilherme Lopes", due:null, id:"86afct8e7", ativ:[{n:"Entendimento com o time financeiro sobre o rateio",status:"shipped",due:null},{n:"Proposta de rateio automatizado pelo BCAPI",status:"shipped",due:null},{n:"Desenvolvimento da tela de rateio BCAPI",status:"shipped",due:null},{n:"Apresentação da estrutura para o time financeiro",status:"shipped",due:null},{n:"testes em ambiente de desenvolvimento",status:"shipped",due:null},{n:"Deploy em ambiente de produção",status:"shipped",due:null}]},
+  {n:"FASE04 — Faturamento PAAS | SAAS", status:"in planning", assignee:"Guilherme Lopes", due:null, id:"86afct8jh", ativ:[{n:"Estudo do Faturamento atual",status:"backlog",due:null},{n:"Estudo do funcionamento do SaaS",status:"shipped",due:null},{n:"Validação da criação de PaaS no consumo",status:"in progress",due:null},{n:"Desenvolvimento de API consumo PaaS/SaaS",status:"in progress",due:null},{n:"Integração da API no sistema de faturamento atual",status:"backlog",due:null},{n:"Cadastro dos SKUs na calculadora",status:"backlog",due:null},{n:"Cadastro dos SKUs no ERP",status:"backlog",due:null},{n:"testes em ambiente de desenvolvimento",status:"backlog",due:null},{n:"teste de integração com ERP",status:"backlog",due:null}]},
+  {n:"FASE05 — Esteira QA", status:"backlog", assignee:"Guilherme Lopes", due:null, id:"86ag5uhzf", ativ:[{n:"Aplicação das roles de serviço da ferramenta",status:"backlog",due:null},{n:"Criação de esteira do módulo",status:"backlog",due:null},{n:"Testes e validações do produto",status:"backlog",due:null},{n:"Geração de documentação da operação",status:"backlog",due:null},{n:"Geração de FAQ para o cliente",status:"backlog",due:null},{n:"Passagem para produção",status:"backlog",due:null},{n:"Apresentação para o Board da Empresa",status:"backlog",due:null},{n:"Apresentação para o comercial",status:"backlog",due:null},{n:"Implementação do módulo no BC-BOX",status:"backlog",due:null},{n:"Precificação do produto",status:"backlog",due:null}]}
+ ]},
+{num:4, id:"86afctd22", status:"in progress", due:1788159600000,
+ name:"BCOS / Observabilidade como módulo do BCP", short:"BCP — Módulo Observabilidade",
+ assignee:"Nathan de Moraes Valim Francisco", tags:["evolução da plataforma de nuvem","eficiência operacional"],
+ detail:"Objetivo: evoluir o BCP com um módulo próprio de observabilidade (capacidade e alertas).\nEntregáveis: painel inicial do módulo, visão de capacidade, alertas priorizados, escopo funcional documentado.\nCritério de aceite: painel e visão mínima publicados para validação.\nRisco principal: tentar transformar tudo em produto antes de validar o mínimo viável.",
+ fases:[
+  {n:"FASE01 — Coletar informações de VM", status:"shipped", assignee:"Nathan", due:null, id:"86ag1p3rg", ativ:[{n:"Ver quais coletas já possuimos",status:"shipped",due:1773990000000},{n:"Gerar estrutura do que precisamos coletar",status:"shipped",due:1773990000000},{n:"Gerar exporter das coletas restantes",status:"shipped",due:1796022000000},{n:"Ajustar o fluxo de ingestão no click",status:"shipped",due:1774594800000}]},
+  {n:"FASE02 — Conexão Prometheus / BCOS", status:"shipped", assignee:"Nathan", due:null, id:"86ag1p51p", ativ:[{n:"Gerar API para exportar os dados do Click",status:"shipped",due:1775718000000},{n:"Montagem da área de Visão no FrontEnd",status:"shipped",due:1776409200000},{n:"Analise da possibilidade do cliente personalizar dashboards",status:"shipped",due:1775545200000},{n:"Integração da API X Telas",status:"shipped",due:1777532400000}]},
+  {n:"FASE03 — Monitoramento de VM no painel cliente (BCOS)", status:"in progress", assignee:"Nathan", due:1784876400000, id:"86afctdgt", ativ:[{n:"Expor informações por API restrita por projeto para o cliente",status:"shipped",due:null},{n:"Adição de intervalo de tempo na tela de gráficos",status:"shipped",due:1779433200000},{n:"Geração de alertas para os dados coletados no painel",status:"in progress",due:1784876400000},{n:"Criação/Adequação da tela de Alertas",status:"in progress",due:1784876400000},{n:"Recomendações de utilização por IA",status:"backlog",due:1786086000000}]},
+  {n:"FASE04 — Administrativo — Saúde do Ambiente", status:"backlog", assignee:"Nathan", due:null, id:"86afcwtz3", ativ:[{n:"Visão de Capacity da nuvem",status:"backlog",due:1787727600000},{n:"Visão de Top usage VMs",status:"backlog",due:1787727600000},{n:"Visão de Top usage compute nodes",status:"backlog",due:1787727600000},{n:"Visão de discos mais utilizados",status:"backlog",due:1787727600000},{n:"Visão tráfego de rede dos computes",status:"backlog",due:1787727600000},{n:"Geração de alertas administrativo",status:"backlog",due:1787727600000},{n:"Recomendação de IA para o gestor da empresa",status:"backlog",due:1787727600000}]},
+  {n:"FASE05 — Esteira de QA", status:"backlog", assignee:"Nathan", due:null, id:"86ag4q559", ativ:[{n:"Aplicação das roles de serviço da ferramenta",status:"backlog",due:1787900400000},{n:"Criação de esteira do módulo",status:"backlog",due:1787900400000},{n:"Testes e validações do produto",status:"in progress",due:1787900400000},{n:"Geração de documentação da operação",status:"shipped",due:1778050800000},{n:"Geração de FAQ para o cliente",status:"shipped",due:1778223600000},{n:"Passagem para produção",status:"in progress",due:1788159600000},{n:"Passagem de bastão Operação",status:"in progress",due:1788159600000},{n:"Apresentação para o Board da Empresa",status:"backlog",due:1788159600000},{n:"Apresentação para o comercial",status:"backlog",due:1788159600000},{n:"Implementação do módulo no BC-BOX",status:"backlog",due:null},{n:"Precificação do produto",status:"backlog",due:1787900400000},{n:"Plano de evolução para novas versões",status:"backlog",due:1788159600000}]}
+ ]},
+{num:5, id:"86afcphwr", status:"in planning", due:1798700400000,
+ name:"Evolução de UX do BCP", short:"BCP — UX",
+ assignee:"Guilherme Lopes", tags:["evolução da plataforma de nuvem"],
+ detail:"Refatoração de BCOS, BC-API e Calculadora.\nObjetivo: melhorar experiência do usuário e percepção de valor da plataforma.\nEntregáveis: proposta visual revisada, tour guiado, newsletter/página de comunicação, validação do novo fluxo principal.\nCritério de aceite: fluxo principal revisado e elementos de onboarding implementados.\nRisco principal: UX perder prioridade frente às urgências técnicas.",
+ fases:[
+  {n:"FASE01 — Refatoração identidade visual", status:"backlog", assignee:"—", due:null, id:"86afct9fr", ativ:[]},
+  {n:"FASE02 — Product Tour (Tour BCOS, Tooltip)", status:"backlog", assignee:"—", due:null, id:"86afct9nj", ativ:[]},
+  {n:"FASE03 — Newsletter (Home do BCOS)", status:"backlog", assignee:"—", due:null, id:"86afct9xj", ativ:[]},
+  {n:"FASE04 — Mapeamento das APIs do console atual", status:"backlog", assignee:"—", due:null, id:"86ag1p795", ativ:[]},
+  {n:"FASE05 — Frontend consumindo APIs na nova identidade", status:"backlog", assignee:"—", due:null, id:"86ag1p7x1", ativ:[]},
+  {n:"FASE06 — Identidade visual do BCP CLI", status:"backlog", assignee:"—", due:null, id:"86ag1p8m4", ativ:[]},
+  {n:"FASE07 — Expor visões por API (ex. Consumo)", status:"backlog", assignee:"—", due:null, id:"86ag1p9gh", ativ:[]},
+  {n:"FASE08 — Esteira QA", status:"backlog", assignee:"—", due:null, id:"86ag5umm7", ativ:[{n:"Aplicação das roles de serviço da ferramenta",status:"backlog",due:null},{n:"Criação de esteira do módulo",status:"backlog",due:null},{n:"Testes e validações do produto",status:"backlog",due:null},{n:"Geração de documentação da operação",status:"backlog",due:null},{n:"Geração de FAQ para o cliente",status:"backlog",due:null},{n:"Passagem para produção",status:"backlog",due:null},{n:"Apresentação para o Board da Empresa",status:"backlog",due:null},{n:"Apresentação para o comercial",status:"backlog",due:null},{n:"Implementação do módulo no BC-BOX",status:"backlog",due:null},{n:"Precificação do produto",status:"backlog",due:null}]}
+ ]}
+];
+
+const STATUS_META = {
+  'backlog':    {label:'Não iniciado', cls:'b-backlog',  color:'var(--slate)'},
+  'in planning':{label:'Planejamento', cls:'b-planning', color:'var(--amber)'},
+  'in progress':{label:'Em andamento', cls:'b-progress', color:'var(--blue)'},
+  'in test':    {label:'Em teste',     cls:'b-test',     color:'var(--violet)'},
+  'in review':  {label:'Em revisão',   cls:'b-review',   color:'var(--orange)'},
+  'blocked':    {label:'Bloqueada',    cls:'b-blocked',  color:'var(--red)'},
+  'shipped':    {label:'Concluído',    cls:'b-shipped',  color:'var(--green)'}
+};
+const STATUS_WEIGHT = {'backlog':0,'in planning':0,'in progress':0,'in test':0,'in review':0,'blocked':0,'shipped':1};
+
+// Status do board RoadMap — cores oficiais configuradas na lista do ClickUp
+const ROADMAP_STATUS_META = {
+  'aberto':             {label:'Aberto',             color:'#8d8d8d'},
+  'em andamento':       {label:'Em andamento',       color:'#0091ff'},
+  'revisando':          {label:'Revisando',          color:'#e16b16'},
+  'rejeitada':          {label:'Rejeitada',          color:'#b660e0'},
+  'aguardando retorno': {label:'Aguardando retorno', color:'#ffc53d'},
+  'impedimento':        {label:'Impedimento',        color:'#d33d44'},
+  'entregue':           {label:'Entregue',           color:'#1090e0'},
+  'fechado':            {label:'Fechado',            color:'#008844'}
+};
+const ROADMAP_DONE_STATUSES = ['entregue','fechado'];
+
+function fmtDate(ms){
+  if(!ms) return '—';
+  const d = new Date(Number(ms));
+  return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+}
+
+const CRITERIOS = {
+  "Solução de Backup em produção": ["Material técnico-comercial simples e vendável já disponível no Q1","Definição clara de RPO e RTO","Testes reais de restore executados e documentados","Garantia de que a nova arquitetura de backup esteja efetivamente em produção"],
+  "Higiene de infraestrutura": ["Nenhum ativo parado ou subutilizado ao final do Q1/2026","Auditoria integral do parque instalado: hardware comprado x instalado x operacional","Normalização completa do ambiente até o final do trimestre","Mapeamento e correção das máquinas marcadas como \"disabled\", com identificação de causa raiz"]
+};
+
+const PROJECTS = {
+  rafael: {
+    label: 'Rafael Alves',
+    tbTitle: 'Metas de Operações 2026',
+    eyebrow: 'Painel de acompanhamento · Operações · Rafael Alves',
+    heroHtml: 'Metas Diretoria<br>Engenharia e <span>Operações</span>',
+    metas: RAFAEL_METAS,
+    criterios: CRITERIOS,
+    sourceLabel: 'Metas de Operações',
+    sourceUrl: 'https://app.clickup.com/3080406/v/l/li/901328012510?pr=3250370',
+    color: 'var(--cyan)'
+  },
+  tiago: {
+    label: 'Tiago Oliveira',
+    tbTitle: 'Meta P&D 2026',
+    eyebrow: 'Painel de acompanhamento · P&D · Tiago Oliveira',
+    heroHtml: 'Metas de Pesquisa &<br><span>Desenvolvimento</span> 2026',
+    metas: TIAGO_METAS,
+    criterios: CRITERIOS,
+    sourceLabel: 'Meta P&D 2026',
+    sourceUrl: 'https://app.clickup.com/3080406/v/l/6-901323683841-1',
+    color: 'var(--orange)'
+  },
+  roadmap: {
+    type: 'board',
+    label: 'RoadMap',
+    tbTitle: 'RoadMap · Binário Cloud',
+    eyebrow: 'Painel de acompanhamento · Backlog técnico',
+    heroHtml: '<span>RoadMap</span><br>Técnico & Melhorias',
+    tasks: ROADMAP_TASKS,
+    sourceLabel: 'RoadMap',
+    sourceUrl: 'https://app.clickup.com/3080406/v/l/6-901323996843-1',
+    color: 'var(--violet)'
+  }
+};
+
+let activeTab = 'rafael';
+let activeStatus = 'all';
+
+function metaProgress(m){
+  if(m.status==='shipped') return 1;
+  if(!m.fases.length) return STATUS_WEIGHT[m.status] || 0;
+  const w = m.fases.reduce((s,f)=>s+STATUS_WEIGHT[f.status],0);
+  return w/m.fases.length;
+}
+function metaOverdueCount(m){
+  const now = Date.now();
+  let n = 0;
+  m.fases.forEach(f=>(f.ativ||[]).forEach(a=>{
+    if(a.due && a.due < now && a.status !== 'shipped') n++;
+  }));
+  return n;
+}
+
+function badge(status){
+  const s = STATUS_META[status];
+  return `<span class="badge ${s.cls}">${s.label}</span>`;
+}
+
+const chipDefs = [['all','Todas'],['backlog','Não iniciado'],['in planning','Planejamento'],['in progress','Em andamento'],['in test','Em teste'],['in review','Em revisão'],['blocked','Bloqueada'],['shipped','Concluído']];
+const roadmapChipDefs = [['all','Todas'], ...Object.entries(ROADMAP_STATUS_META).map(([k,v])=>[k,v.label])];
+const chipsEl = document.getElementById('statusChips');
+function buildChips(){
+  chipsEl.innerHTML = '';
+  const isBoard = PROJECTS[activeTab].type==='board';
+  const defs = isBoard ? roadmapChipDefs : chipDefs;
+  defs.forEach(([key,label])=>{
+    const el = document.createElement('div');
+    el.className = 'chip'+(key===activeStatus?' active':'');
+    el.textContent = label;
+    el.dataset.key = key;
+    el.onclick = ()=>{ activeStatus = key; [...chipsEl.children].forEach(c=>c.classList.toggle('active', c===el)); isBoard ? renderBoard() : renderMetas(); };
+    chipsEl.appendChild(el);
+  });
+}
+
+function renderRing(project){
+  const allFases = project.metas.flatMap(m=>m.fases);
+
+  // contagem por status a nível de META (não de fase) — bate com o total de "metas estratégicas"
+  const metaCounts = {shipped:0,'in progress':0,'in review':0,'in test':0,'in planning':0,blocked:0,backlog:0};
+  project.metas.forEach(m=>metaCounts[m.status]++);
+
+  // % geral = média do progresso de cada meta (metaProgress já trata metas com e sem fases)
+  const sumProgress = project.metas.reduce((s,m)=>s+metaProgress(m),0);
+  const overallPct = project.metas.length ? Math.round((sumProgress/project.metas.length)*100) : 0;
+
+  const CIRC = 2*Math.PI*48;
+  const ringFg = document.getElementById('ringFg');
+  ringFg.style.strokeDasharray = CIRC.toFixed(1);
+  ringFg.style.strokeDashoffset = CIRC.toFixed(1);
+  requestAnimationFrame(()=>{
+    ringFg.style.strokeDashoffset = (CIRC*(1-overallPct/100)).toFixed(1);
+  });
+  document.getElementById('ringPct').textContent = overallPct+'%';
+  document.getElementById('ringLegend').innerHTML = `
+    <div class="li"><span class="sw" style="background:var(--green)"></span><b>${metaCounts.shipped}</b>&nbsp;concluídas</div>
+    <div class="li"><span class="sw" style="background:var(--blue)"></span><b>${metaCounts['in progress']}</b>&nbsp;em andamento</div>
+    <div class="li"><span class="sw" style="background:var(--violet)"></span><b>${metaCounts['in test']}</b>&nbsp;em teste</div>
+    <div class="li"><span class="sw" style="background:var(--orange)"></span><b>${metaCounts['in review']}</b>&nbsp;em revisão</div>
+    <div class="li"><span class="sw" style="background:var(--amber)"></span><b>${metaCounts['in planning']}</b>&nbsp;planejamento</div>
+    <div class="li"><span class="sw" style="background:var(--red)"></span><b>${metaCounts.blocked}</b>&nbsp;bloqueadas</div>
+    <div class="li"><span class="sw" style="background:var(--slate)"></span><b>${metaCounts.backlog}</b>&nbsp;não iniciadas</div>`;
+
+  document.getElementById('kpiStrip').innerHTML = `
+    <div class="kpi"><div class="k-num">${project.metas.length}</div><div class="k-label">Metas estratégicas</div></div>
+    <div class="kpi"><div class="k-num">${allFases.length}</div><div class="k-label">Fases mapeadas</div></div>
+    <div class="kpi c-shipped"><div class="k-num">${metaCounts.shipped}</div><div class="k-label">Concluídas</div></div>
+    <div class="kpi c-progress"><div class="k-num">${metaCounts['in progress']}</div><div class="k-label">Em andamento</div></div>
+    <div class="kpi c-backlog"><div class="k-num">${metaCounts.backlog}</div><div class="k-label">Não iniciadas</div></div>`;
+}
+
+function renderMetas(){
+  const project = PROJECTS[activeTab];
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const list = document.getElementById('metasList');
+  list.innerHTML = '';
+  project.metas.forEach(m=>{
+    const fasesFiltered = m.fases.filter(f=>{
+      const matchStatus = activeStatus==='all' || f.status===activeStatus;
+      const matchQ = !q || m.name.toLowerCase().includes(q) || f.n.toLowerCase().includes(q) || m.short.toLowerCase().includes(q);
+      return matchStatus && matchQ;
+    });
+    if(q && fasesFiltered.length===0 && !m.name.toLowerCase().includes(q) && !m.short.toLowerCase().includes(q)) return;
+    if(activeStatus!=='all' && fasesFiltered.length===0 && m.status!==activeStatus) return;
+
+    const pct = Math.round(metaProgress(m)*100);
+    const overdueCount = metaOverdueCount(m);
+    const card = document.createElement('div');
+    card.className = 'meta-card' + (overdueCount>0 ? ' meta-atrasada' : '');
+    card.innerHTML = `
+      <div class="meta-head">
+        <div class="meta-num">META<b>${String(m.num).padStart(2,'0')}</b></div>
+        <div class="meta-name">
+          <div class="n1">${m.short}</div>
+          <div class="n2">${m.tags.map(t=>`<span class="tag">${t}</span>`).join('')}${overdueCount>0?`<span class="overdue-pill">⚠ ${overdueCount} atrasada${overdueCount>1?'s':''}</span>`:''}</div>
+        </div>
+        ${badge(m.status)}
+        <div class="meta-bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-pct">${pct}%</div></div>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="meta-body">
+        <div class="meta-body-in">
+          <div class="fases-label">Fases (${m.fases.length}) · responsável ${m.assignee} · prazo ${fmtDate(m.due)}</div>
+          ${(fasesFiltered.length?fasesFiltered:m.fases).map((f,i)=>`
+            <div class="fase-wrap">
+              <div class="fase-row${f.ativ&&f.ativ.length?' has-ativ':''}">
+                <div class="fase-idx">${String(i+1).padStart(2,'0')}</div>
+                <div class="fase-name">${f.n}${f.ativ&&f.ativ.length?`<small>${f.ativ.length} atividade(s) — toque para ver</small>`:''}</div>
+                <div class="fase-assignee">${f.assignee||'—'}</div>
+                ${badge(f.status)}
+                ${f.ativ&&f.ativ.length?'<svg class="ativ-chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>':'<span></span>'}
+                <a class="fase-link" href="https://app.clickup.com/t/${f.id}" target="_blank" title="Abrir no ClickUp">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                </a>
+              </div>
+              ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:none">
+                ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped';return `<div class="ativ-row${od?' atrasada':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span></div>`;}).join('')}
+              </div>`:''}
+            </div>`).join('')}
+          <div class="meta-toggle-detail">▸ Ver ficha completa da meta</div>
+          <div class="meta-detail" style="display:none">${m.detail}</div>
+        </div>
+      </div>`;
+    const head = card.querySelector('.meta-head');
+    const body = card.querySelector('.meta-body');
+    head.addEventListener('click', ()=>{
+      const isOpen = card.classList.toggle('open');
+      body.style.maxHeight = isOpen ? body.scrollHeight+'px' : '0px';
+    });
+    const toggleDetail = card.querySelector('.meta-toggle-detail');
+    toggleDetail.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const det = card.querySelector('.meta-detail');
+      const show = det.style.display === 'none';
+      det.style.display = show ? 'block' : 'none';
+      toggleDetail.textContent = (show?'▾':'▸') + ' Ver ficha completa da meta';
+      if(card.classList.contains('open')) body.style.maxHeight = body.scrollHeight+'px';
+    });
+    card.querySelectorAll('.fase-row.has-ativ').forEach(row=>{
+      row.addEventListener('click', (e)=>{
+        if(e.target.closest('.fase-link')) return;
+        const wrap = row.closest('.fase-wrap');
+        const al = wrap.querySelector('.ativ-list');
+        const show = al.style.display === 'none';
+        al.style.display = show ? 'flex' : 'none';
+        wrap.classList.toggle('open', show);
+        if(card.classList.contains('open')) body.style.maxHeight = body.scrollHeight+'px';
+      });
+    });
+    list.appendChild(card);
+  });
+}
+
+function renderCriterios(project){
+  const critGrid = document.getElementById('critGrid');
+  critGrid.innerHTML = '';
+  const critColors = {'Solução de Backup em produção':'var(--blue)','Higiene de infraestrutura':'var(--red)'};
+  Object.entries(project.criterios).forEach(([title,items])=>{
+    const card = document.createElement('div');
+    card.className = 'crit-card';
+    card.innerHTML = `<h4><span class="sw" style="background:${critColors[title]||'var(--cyan)'}"></span>${title}</h4>
+      <ul class="crit-list">${items.map(i=>`<li><span class="cb"></span>${i}</li>`).join('')}</ul>`;
+    critGrid.appendChild(card);
+  });
+}
+
+// ================= ROADMAP (board) =================
+function initials(name){
+  return name.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+}
+function avColor(name){
+  let h = 0;
+  for(let i=0;i<name.length;i++) h = name.charCodeAt(i) + ((h<<5)-h);
+  return `hsl(${h%360},55%,45%)`;
+}
+
+function renderBoardRing(project){
+  const tasks = project.tasks;
+  const counts = {};
+  Object.keys(ROADMAP_STATUS_META).forEach(k=>counts[k]=0);
+  tasks.forEach(t=>{ if(counts[t.status]===undefined) counts[t.status]=0; counts[t.status]++; });
+
+  const doneCount = tasks.filter(t=>ROADMAP_DONE_STATUSES.includes(t.status)).length;
+  const overallPct = tasks.length ? Math.round((doneCount/tasks.length)*100) : 0;
+
+  const CIRC = 2*Math.PI*48;
+  const ringFg = document.getElementById('ringFg');
+  ringFg.style.strokeDasharray = CIRC.toFixed(1);
+  ringFg.style.strokeDashoffset = CIRC.toFixed(1);
+  requestAnimationFrame(()=>{
+    ringFg.style.strokeDashoffset = (CIRC*(1-overallPct/100)).toFixed(1);
+  });
+  document.getElementById('ringPct').textContent = overallPct+'%';
+  document.getElementById('ringLegend').innerHTML = Object.entries(ROADMAP_STATUS_META).map(([key,meta])=>
+    `<div class="li"><span class="sw" style="background:${meta.color}"></span><b>${counts[key]||0}</b>&nbsp;${meta.label.toLowerCase()}</div>`
+  ).join('');
+
+  document.getElementById('kpiStrip').innerHTML = `
+    <div class="kpi"><div class="k-num">${tasks.length}</div><div class="k-label">Itens no backlog</div></div>
+    <div class="kpi"><div class="k-num">${counts['aberto']||0}</div><div class="k-label">Em aberto</div></div>
+    <div class="kpi c-progress"><div class="k-num">${(counts['em andamento']||0)+(counts['revisando']||0)}</div><div class="k-label">Em andamento / revisão</div></div>
+    <div class="kpi"><div class="k-num">${counts['impedimento']||0}</div><div class="k-label">Impedimentos</div></div>
+    <div class="kpi c-shipped"><div class="k-num">${doneCount}</div><div class="k-label">Concluídos</div></div>`;
+}
+
+function renderBoard(){
+  const project = PROJECTS.roadmap;
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const board = document.getElementById('roadmapBoard');
+  board.innerHTML = '';
+
+  const statusKeys = activeStatus==='all' ? Object.keys(ROADMAP_STATUS_META) : [activeStatus];
+
+  statusKeys.forEach(statusKey=>{
+    const meta = ROADMAP_STATUS_META[statusKey];
+    const tasks = project.tasks.filter(t=>t.status===statusKey && (!q || t.name.toLowerCase().includes(q)));
+    if(activeStatus==='all' && tasks.length===0) return; // esconde colunas vazias só na visão "Todas"
+
+    const col = document.createElement('div');
+    col.className = 'board-col';
+    col.innerHTML = `
+      <div class="board-col-head">
+        <span class="bc-dot" style="background:${meta.color}"></span>
+        <span>${meta.label}</span>
+        <span class="bc-count">${tasks.length}</span>
+      </div>
+      <div class="board-col-body">
+        ${tasks.length ? tasks.map(t=>`
+          <div class="board-card">
+            <div class="bc-name">${t.name}</div>
+            <div class="bc-foot">
+              <div class="bc-avatars">
+                ${t.assignees.map(a=>`<span class="bc-av" style="background:${avColor(a)}" title="${a}">${initials(a)}</span>`).join('')}
+              </div>
+              <a class="bc-link" href="${t.url}" target="_blank" title="Abrir no ClickUp">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>`).join('') : '<div class="board-empty">Sem itens</div>'}
+      </div>`;
+    board.appendChild(col);
+  });
+}
+
+function selectTab(tab){
+  activeTab = tab;
+  activeStatus = 'all';
+  document.getElementById('searchInput').value = '';
+  const project = PROJECTS[tab];
+  const isBoard = project.type === 'board';
+  [...document.querySelectorAll('.folder-tab')].forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
+  document.getElementById('folderPanel').style.setProperty('--panel-active', project.color);
+  document.getElementById('tbTitleName').textContent = project.tbTitle;
+  document.getElementById('heroEyebrow').textContent = project.eyebrow;
+  document.getElementById('heroTitle').innerHTML = project.heroHtml;
+  document.getElementById('footerSourceLink').textContent = project.sourceLabel;
+  document.getElementById('footerSourceLink').href = project.sourceUrl;
+  document.getElementById('searchInput').placeholder = isBoard ? 'Buscar item do roadmap…' : 'Buscar meta ou fase…';
+  document.getElementById('metasSection').style.display = isBoard ? 'none' : '';
+  document.getElementById('roadmapSection').style.display = isBoard ? '' : 'none';
+  buildChips();
+  if(isBoard){
+    renderBoardRing(project);
+    renderBoard();
+  } else {
+    renderRing(project);
+    renderMetas();
+    renderCriterios(project);
+  }
+}
+
+document.querySelectorAll('.folder-tab').forEach(btn=>{
+  btn.addEventListener('click', ()=>selectTab(btn.dataset.tab));
+});
+document.getElementById('searchInput').addEventListener('input', ()=>{
+  PROJECTS[activeTab].type==='board' ? renderBoard() : renderMetas();
+});
+
+selectTab('rafael');
+
+// footer / topbar dates
+const now = new Date();
+document.getElementById('tb-date').textContent = now.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+document.getElementById('tb-gen').textContent = 'Gerado em '+now.toLocaleString('pt-BR');
+</script>
+</body>
+</html>
