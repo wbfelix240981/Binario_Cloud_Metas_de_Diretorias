@@ -83,6 +83,8 @@
   .kpi.c-progress .k-num{color:var(--blue);}
   .kpi.c-planning .k-num{color:var(--violet);}
   .kpi.c-backlog .k-num{color:var(--slate);}
+  .kpi.kpi-muted{background:transparent; border-style:dashed;}
+  .kpi.kpi-muted .k-num{color:var(--text-mute); font-size:20px;}
 
   /* Controls */
   .controls{max-width:1180px; margin:0 auto; padding:0 28px 20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
@@ -1611,10 +1613,10 @@ function renderRing(project){
 
   document.getElementById('kpiStrip').innerHTML = `
     <div class="kpi"><div class="k-num">${project.metas.length}</div><div class="k-label">Metas estratégicas</div></div>
-    <div class="kpi"><div class="k-num">${allFases.length}</div><div class="k-label">Fases mapeadas</div></div>
-    <div class="kpi c-shipped"><div class="k-num">${metaCounts.shipped}</div><div class="k-label">Concluídas</div></div>
-    <div class="kpi c-progress"><div class="k-num">${metaCounts['in progress']}</div><div class="k-label">Em andamento</div></div>
-    <div class="kpi c-backlog"><div class="k-num">${metaCounts.backlog}</div><div class="k-label">Não iniciadas</div></div>`;
+    <div class="kpi c-shipped"><div class="k-num">${metaCounts.shipped}</div><div class="k-label">Metas concluídas</div></div>
+    <div class="kpi c-progress"><div class="k-num">${metaCounts['in progress']}</div><div class="k-label">Metas em andamento</div></div>
+    <div class="kpi c-backlog"><div class="k-num">${metaCounts.backlog}</div><div class="k-label">Metas não iniciadas</div></div>
+    <div class="kpi kpi-muted"><div class="k-num">${allFases.length}</div><div class="k-label">Fases mapeadas (detalhe)</div></div>`;
 }
 
 function renderMetas(){
