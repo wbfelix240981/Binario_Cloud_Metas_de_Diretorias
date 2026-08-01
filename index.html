@@ -465,7 +465,7 @@
     <div class="controls">
       <div class="search">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        <input id="searchInput" placeholder="Buscar meta…">
+        <input id="searchInput" placeholder="Buscar meta ou fase…">
       </div>
       <div class="chips" id="statusChips"></div>
     </div>
@@ -1600,7 +1600,6 @@ const PROJECTS = {
 let activeTab = 'rafael';
 let activeStatus = 'all';
 let detailStatusFilter = 'all';
-let detailSearchQuery = '';
 
 function metaProgress(m){
   if(m.status==='shipped') return 1;
@@ -1674,7 +1673,7 @@ function renderMetas(){
   list.innerHTML = '';
   project.metas.forEach(m=>{
     const matchStatus = activeStatus==='all' || m.status===activeStatus;
-    const matchQ = !q || m.name.toLowerCase().includes(q) || m.short.toLowerCase().includes(q);
+    const matchQ = !q || m.name.toLowerCase().includes(q) || m.short.toLowerCase().includes(q) || m.fases.some(f=>f.n.toLowerCase().includes(q));
     if(!matchStatus || !matchQ) return;
 
     const pct = Math.round(metaProgress(m)*100);
@@ -1800,7 +1799,7 @@ function selectTab(tab){
   document.getElementById('heroTitle').innerHTML = project.heroHtml;
   document.getElementById('footerSourceLink').textContent = project.sourceLabel;
   document.getElementById('footerSourceLink').href = project.sourceUrl;
-  document.getElementById('searchInput').placeholder = isBoard ? 'Buscar item do roadmap…' : 'Buscar meta…';
+  document.getElementById('searchInput').placeholder = isBoard ? 'Buscar item do roadmap…' : 'Buscar meta ou fase…';
   document.getElementById('metasSection').style.display = isBoard ? 'none' : '';
   document.getElementById('roadmapSection').style.display = isBoard ? '' : 'none';
   buildChips();
@@ -1852,12 +1851,7 @@ function renderMetaDetailPage(tab, num){
     else ativCounts.naoIniciada++;
   });
 
-  const q = detailSearchQuery.trim().toLowerCase();
-  const fasesFiltered = meta.fases.filter(f=>{
-    const matchStatus = detailStatusFilter==='all' || f.status===detailStatusFilter;
-    const matchQ = !q || f.n.toLowerCase().includes(q) || (f.ativ||[]).some(a=>a.n.toLowerCase().includes(q));
-    return matchStatus && matchQ;
-  });
+  const fasesFiltered = detailStatusFilter==='all' ? meta.fases : meta.fases.filter(f=>f.status===detailStatusFilter);
 
   const fasesHtml = fasesFiltered.length ? fasesFiltered.map((f)=>{
     const i = meta.fases.indexOf(f);
@@ -1876,17 +1870,12 @@ function renderMetaDetailPage(tab, num){
       ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:flex">
         ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span></div>`;}).join('')}
       </div>`:''}
-    </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase encontrada com esse filtro/busca.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
+    </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
 
   const detailChipDefs = [['all','Todas'],['backlog','Não iniciado'],['in planning','Planejamento'],['in progress','Em andamento'],['in test','Em teste'],['in review','Em revisão'],['blocked','Bloqueada'],['shipped','Concluído']];
-  const detailChipsHtml = meta.fases.length ? `<div class="chips" style="margin-bottom:0;">${detailChipDefs.map(([key,label])=>
+  const detailChipsHtml = meta.fases.length ? `<div class="chips" style="margin-bottom:18px;">${detailChipDefs.map(([key,label])=>
     `<div class="chip${detailStatusFilter===key?' active':''}" onclick="setDetailFilter('${tab}',${num},'${key}')">${label}</div>`
   ).join('')}</div>` : '';
-  const detailSearchHtml = meta.fases.length ? `
-    <div class="search" style="max-width:320px; margin-bottom:14px;">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input id="detailSearchInput" placeholder="Buscar fase ou atividade…" value="${detailSearchQuery.replace(/"/g,'&quot;')}">
-    </div>` : '';
 
   const CIRC = 2*Math.PI*48;
   const offset = (CIRC*(1-pct/100)).toFixed(1);
@@ -1927,25 +1916,12 @@ function renderMetaDetailPage(tab, num){
         </div>` : ''}
 
         <h3 class="detail-fases-title">Fases da meta</h3>
-        ${detailSearchHtml}
         ${detailChipsHtml}
-        <div style="height:16px;"></div>
         ${fasesHtml}
 
         ${meta.detail?`<div class="detail-text"><h4>Ficha completa da meta</h4>${meta.detail}</div>`:''}
       </div>
     </div>`;
-
-  const searchEl = document.getElementById('detailSearchInput');
-  if(searchEl){
-    searchEl.addEventListener('input', (e)=>{
-      const cursor = e.target.selectionStart;
-      detailSearchQuery = e.target.value;
-      renderMetaDetailPage(tab, num);
-      const newEl = document.getElementById('detailSearchInput');
-      if(newEl){ newEl.focus(); newEl.setSelectionRange(cursor, cursor); }
-    });
-  }
 }
 
 function setDetailFilter(tab, num, status){
@@ -1956,7 +1932,6 @@ function setDetailFilter(tab, num, status){
 function showDetailPage(tab, num){
   if(activeTab !== tab) selectTab(tab);
   detailStatusFilter = 'all';
-  detailSearchQuery = '';
   document.querySelector('.folder-outer').style.display = 'none';
   const view = document.getElementById('metaDetailView');
   view.style.display = 'block';
