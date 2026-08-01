@@ -118,7 +118,11 @@
     padding:2px 9px; white-space:nowrap;
   }
   .meta-card:hover{border-color:var(--border-hi);}
-  .meta-head{display:grid; grid-template-columns:56px 1fr auto 190px 34px 30px; align-items:center; gap:16px; padding:16px 18px; cursor:pointer;}
+  .meta-head{display:grid; grid-template-columns:56px 1fr auto 190px 30px; align-items:center; gap:16px; padding:16px 18px; cursor:pointer;}
+  .meta-card-link{cursor:pointer; transition:border-color .15s, transform .15s;}
+  .meta-card-link:hover{border-color:var(--cyan); transform:translateY(-1px);}
+  .meta-card-link:hover .chev-open{color:var(--cyan); transform:translateX(3px);}
+  .chev-open{transition:transform .15s, color .15s; color:var(--text-mute);}
   .meta-num{font-family:var(--mono); font-size:11px; color:var(--text-mute);}
   .meta-num b{display:block; font-family:var(--disp); font-size:20px; color:var(--cyan); font-weight:700;}
   .meta-name{min-width:0;}
@@ -1678,7 +1682,7 @@ function renderMetas(){
     const pct = Math.round(metaProgress(m)*100);
     const overdueCount = metaOverdueCount(m);
     const card = document.createElement('div');
-    card.className = 'meta-card' + (overdueCount>0 ? ' meta-atrasada' : '');
+    card.className = 'meta-card meta-card-link' + (overdueCount>0 ? ' meta-atrasada' : '');
     card.innerHTML = `
       <div class="meta-head">
         <div class="meta-num">META<b>${String(m.num).padStart(2,'0')}</b></div>
@@ -1688,59 +1692,10 @@ function renderMetas(){
         </div>
         ${badge(m.status)}
         <div class="meta-bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-pct">${pct}%</div></div>
-        <a class="meta-openpage" href="#/meta/${activeTab}/${m.num}" title="Abrir página desta meta" onclick="event.stopPropagation()">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-        </a>
-        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-      </div>
-      <div class="meta-body">
-        <div class="meta-body-in">
-          <div class="fases-label">Fases (${m.fases.length}) · responsável ${m.assignee} · prazo ${fmtDate(m.due)}</div>
-          ${(fasesFiltered.length?fasesFiltered:m.fases).map((f,i)=>`
-            <div class="fase-wrap">
-              <div class="fase-row${f.ativ&&f.ativ.length?' has-ativ':''}">
-                <div class="fase-idx">${String(i+1).padStart(2,'0')}</div>
-                <div class="fase-name">${f.n}${f.ativ&&f.ativ.length?`<small>${f.ativ.length} atividade(s) — toque para ver</small>`:''}</div>
-                <div class="fase-assignee">${f.assignee||'—'}</div>
-                ${badge(f.status)}
-                ${f.ativ&&f.ativ.length?'<svg class="ativ-chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>':'<span></span>'}
-                <a class="fase-link" href="https://app.clickup.com/t/${f.id}" target="_blank" title="Abrir no ClickUp">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-                </a>
-              </div>
-              ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:none">
-                ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span></div>`;}).join('')}
-              </div>`:''}
-            </div>`).join('')}
-          <div class="meta-toggle-detail">▸ Ver ficha completa da meta</div>
-          <div class="meta-detail" style="display:none">${m.detail}</div>
-        </div>
+        <svg class="chev chev-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
       </div>`;
-    const head = card.querySelector('.meta-head');
-    const body = card.querySelector('.meta-body');
-    head.addEventListener('click', ()=>{
-      const isOpen = card.classList.toggle('open');
-      body.style.maxHeight = isOpen ? body.scrollHeight+'px' : '0px';
-    });
-    const toggleDetail = card.querySelector('.meta-toggle-detail');
-    toggleDetail.addEventListener('click', (e)=>{
-      e.stopPropagation();
-      const det = card.querySelector('.meta-detail');
-      const show = det.style.display === 'none';
-      det.style.display = show ? 'block' : 'none';
-      toggleDetail.textContent = (show?'▾':'▸') + ' Ver ficha completa da meta';
-      if(card.classList.contains('open')) body.style.maxHeight = body.scrollHeight+'px';
-    });
-    card.querySelectorAll('.fase-row.has-ativ').forEach(row=>{
-      row.addEventListener('click', (e)=>{
-        if(e.target.closest('.fase-link')) return;
-        const wrap = row.closest('.fase-wrap');
-        const al = wrap.querySelector('.ativ-list');
-        const show = al.style.display === 'none';
-        al.style.display = show ? 'flex' : 'none';
-        wrap.classList.toggle('open', show);
-        if(card.classList.contains('open')) body.style.maxHeight = body.scrollHeight+'px';
-      });
+    card.addEventListener('click', ()=>{
+      location.hash = '#/meta/'+activeTab+'/'+m.num;
     });
     list.appendChild(card);
   });
