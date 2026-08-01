@@ -1,871 +1,871 @@
 [
-  {
-    "num": 1,
-    "id": "86afcpha5",
-    "status": "in progress",
-    "due": 1780210800000,
-    "name": "Validação e entrada da solução de backup (BC-Backup) em produção",
-    "short": "Nova solução de Backup — BC-Backup",
+ {
+  "num": 1,
+  "id": "86afcpha5",
+  "status": "in progress",
+  "due": 1780210800000,
+  "name": "Validação e entrada da solução de backup (BC-Backup) em produção",
+  "short": "Nova solução de Backup — BC-Backup",
+  "assignee": "Nathan de Moraes Valim Francisco",
+  "tags": [
+   "evolução da plataforma de nuvem",
+   "modernização tecnológica"
+  ],
+  "detail": "Objetivo: concluir avaliação da solução Storware + BCOS e preparar pilotos com clientes, substituindo o Veeam.\nEntregáveis: testes de QA/backup/restore, tutoriais técnicos, 5 clientes piloto definidos, relatório técnico de validação, decisão formal sobre produção/licenciamento.\nCritério de aceite: solução validada e próxima etapa aprovada.\nRisco principal: avançar para produção sem comparação estratégica adequada.",
+  "fases": [
+   {
+    "n": "FASE01 - Instalar Ambiente Produtivo",
+    "status": "shipped",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "tags": [
-      "evolução da plataforma de nuvem",
-      "modernização tecnológica"
-    ],
-    "detail": "Objetivo: concluir avaliação da solução Storware + BCOS e preparar pilotos com clientes, substituindo o Veeam.\nEntregáveis: testes de QA/backup/restore, tutoriais técnicos, 5 clientes piloto definidos, relatório técnico de validação, decisão formal sobre produção/licenciamento.\nCritério de aceite: solução validada e próxima etapa aprovada.\nRisco principal: avançar para produção sem comparação estratégica adequada.",
-    "fases": [
-      {
-        "n": "FASE01 — Instalar Ambiente Produtivo",
-        "status": "shipped",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86afcrut0",
-        "ativ": [
-          {
-            "n": "Instalar Galera",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Instalar controller",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "instalar repositório",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "conectar ceph de backup",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "validar features",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "gerar frontend personalizado",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE02 — Ajustar frontend BCOS",
-        "status": "shipped",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86afjfc80",
-        "ativ": [
-          {
-            "n": "Tradução",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Opção \\\"enable file system\\\"",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Correção de bugs visuais",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE03 — Esteira QA",
-        "status": "in progress",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86ag5ua03",
-        "ativ": [
-          {
-            "n": "Criar plano de teste - Equipe BinarioNet",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Criar videos tutoriais para a equipe Suporte - N1/N2",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Contratar licenças junto ao Fornecedor - Storware",
-            "status": "in review",
-            "due": null
-          },
-          {
-            "n": "Definir precificação",
-            "status": "in progress",
-            "due": null
-          },
-          {
-            "n": "Subir SKU na Calculadora",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Definir 5 primeiro Clientes",
-            "status": "in progress",
-            "due": null
-          },
-          {
-            "n": "Subir documentação - ClaudIA",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Disponibilização da FAQ",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      }
+    "due": null,
+    "id": "86afcrut0",
+    "ativ": [
+     {
+      "n": "Instalar Galera",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Instalar controller",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "instalar repositório",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "conectar ceph de backup",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "validar features",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "gerar frontend personalizado",
+      "status": "shipped",
+      "due": null
+     }
     ]
-  },
-  {
-    "num": 2,
-    "id": "86afcphpj",
-    "status": "in progress",
-    "due": 1777532400000,
-    "name": "Segurança e evolução do BCP",
-    "short": "BCP — Segurança",
-    "assignee": "Guilherme Lopes",
-    "tags": [
-      "evolução da plataforma de nuvem",
-      "eficiência operacional"
-    ],
-    "detail": "Objetivo: aumentar segurança e confiabilidade do acesso à plataforma (calculadora e Console) com MFA e validação reforçada.\nEntregáveis: MFA implementado, validação por token, nova tela de validação de acesso, testes de uso e segurança.\nCritério de aceite: funcionalidade disponível, validada e documentada.\nRisco principal: competição com outras entregas de produto.",
-    "fases": [
-      {
-        "n": "FASE01 — Validação de sessão",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag1nywn",
-        "ativ": [
-          {
-            "n": "Definição de codificação de token de acesso",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Definição do tempo de vida do acesso gerado",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE02 — Canal de geração de links para clientes",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag1nywb",
-        "ativ": [
-          {
-            "n": "Criar view no BCAPI para a geração de links",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Desenvolvimento de API para geração de tokens de acesso a calculadora",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE03 — Identificador de acesso (Central/Console)",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag1nywv",
-        "ativ": [
-          {
-            "n": "Desenvolvimento do encode/decoder de token de acesso",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Inserir na calculadora o envio deste token de acesso para a validação",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE04 — Redirecionamento sem sessão válida",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag1nyx6",
-        "ativ": [
-          {
-            "n": "Desenvolver o redirecionamento",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Criar página indicando com contato com a equipe comercial",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE05 — Habilitar MFA no BCP",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag1nyxf",
-        "ativ": [
-          {
-            "n": "Desenvolver tema de ativação do mfa na central do usuário",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Mecanismo de validação de token de acesso",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Desenvolvimento de tela de validação de acesso após o login",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE06 — Esteira QA",
-        "status": "backlog",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag4t18m",
-        "ativ": [
-          {
-            "n": "Criação de esteira do módulo",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Testes e validações do produto",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de documentação da operação",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de FAQ para o cliente",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Passagem para produção",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Apresentação para a diretoria da Empresa",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Implementação do módulo no BC-BOX",
-            "status": "backlog",
-            "due": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "num": 3,
-    "id": "86afcphue",
-    "status": "in progress",
-    "due": 1788159600000,
-    "name": "Módulo Financeiro do BCP",
-    "short": "BCP — Módulo Financeiro",
-    "assignee": "Guilherme Lopes",
-    "tags": [
-      "evolução da plataforma de nuvem"
-    ],
-    "detail": "Objetivo: disponibilizar visibilidade de precificação no fluxo de criação de VMs, com custos em tempo real.\nEntregáveis: integração da precificação, exibição de custos em tempo real, testes funcionais, validação com stakeholders.\nCritério de aceite: módulo funcionando conforme cenário definido.\nRisco principal: inconsistência entre cálculo e exibição.",
-    "fases": [
-      {
-        "n": "FASE01 — Extrato de Consumo em tempo real",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86afct8bu",
-        "ativ": [
-          {
-            "n": "Montagem da tela de consumo em tempo real",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Criação de endpoint de consumo de tempo real - skyline",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Integração da tela de consumo com BCAPI",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Ajustes dos parametros da API de consumo (filtragem por projeto)",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Deploy da solução em produção",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE02 — Precificação na criação de VM",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86afct7za",
-        "ativ": [
-          {
-            "n": "Exposição dos preços da calculadora por API no skyline",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Construção de tela para consumo API de preços",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Filtragem de SKUs ausentes",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "validação em ambiente sandbox",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE03 — Rateio de Notas Fiscais",
-        "status": "shipped",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86afct8e7",
-        "ativ": [
-          {
-            "n": "Entendimento com o time financeiro sobre o rateio",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Proposta de rateio automatizado pelo BCAPI",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Desenvolvimento da tela de rateio BCAPI",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Apresentação da estrutura para o time financeiro",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "testes em ambiente de desenvolvimento",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Deploy em ambiente de produção",
-            "status": "shipped",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE04 — Faturamento PAAS | SAAS",
-        "status": "in planning",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86afct8jh",
-        "ativ": [
-          {
-            "n": "Estudo do Faturamento atual",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Estudo do funcionamento do SaaS",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Validação da criação de PaaS no consumo",
-            "status": "in progress",
-            "due": null
-          },
-          {
-            "n": "Desenvolvimento de API consumo PaaS/SaaS",
-            "status": "in progress",
-            "due": null
-          },
-          {
-            "n": "Integração da API no sistema de faturamento atual",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Cadastro dos SKUs na calculadora",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Cadastro dos SKUs no ERP",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "testes em ambiente de desenvolvimento",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "teste de integração com ERP",
-            "status": "backlog",
-            "due": null
-          }
-        ]
-      },
-      {
-        "n": "FASE05 — Esteira QA",
-        "status": "backlog",
-        "assignee": "Guilherme Lopes",
-        "due": null,
-        "id": "86ag5uhzf",
-        "ativ": [
-          {
-            "n": "Aplicação das roles de serviço da ferramenta",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Criação de esteira do módulo",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Testes e validações do produto",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de documentação da operação",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de FAQ para o cliente",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Passagem para produção",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Apresentação para o Board da Empresa",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Apresentação para o comercial",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Implementação do módulo no BC-BOX",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Precificação do produto",
-            "status": "backlog",
-            "due": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "num": 4,
-    "id": "86afctd22",
-    "status": "in progress",
-    "due": 1788159600000,
-    "name": "BCOS / Observabilidade como módulo do BCP",
-    "short": "BCP — Módulo Observabilidade",
+   },
+   {
+    "n": "FASE02 - Ajustar frontend BCOS",
+    "status": "shipped",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "tags": [
-      "evolução da plataforma de nuvem",
-      "eficiência operacional"
-    ],
-    "detail": "Objetivo: evoluir o BCP com um módulo próprio de observabilidade (capacidade e alertas).\nEntregáveis: painel inicial do módulo, visão de capacidade, alertas priorizados, escopo funcional documentado.\nCritério de aceite: painel e visão mínima publicados para validação.\nRisco principal: tentar transformar tudo em produto antes de validar o mínimo viável.",
-    "fases": [
-      {
-        "n": "FASE01 — Coletar informações de VM",
-        "status": "shipped",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86ag1p3rg",
-        "ativ": [
-          {
-            "n": "Ver quais coletas já possuimos",
-            "status": "shipped",
-            "due": 1773990000000
-          },
-          {
-            "n": "Gerar estrutura do que precisamos coletar",
-            "status": "shipped",
-            "due": 1773990000000
-          },
-          {
-            "n": "Gerar exporter das coletas restantes",
-            "status": "shipped",
-            "due": 1796022000000
-          },
-          {
-            "n": "Ajustar o fluxo de ingestão no click",
-            "status": "shipped",
-            "due": 1774594800000
-          }
-        ]
-      },
-      {
-        "n": "FASE02 — Conexão Prometheus / BCOS",
-        "status": "shipped",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86ag1p51p",
-        "ativ": [
-          {
-            "n": "Gerar API para exportar os dados do Click",
-            "status": "shipped",
-            "due": 1775718000000
-          },
-          {
-            "n": "Montagem da área de Visão no FrontEnd",
-            "status": "shipped",
-            "due": 1776409200000
-          },
-          {
-            "n": "Analise da possibilidade do cliente personalizar dashboards",
-            "status": "shipped",
-            "due": 1775545200000
-          },
-          {
-            "n": "Integração da API X Telas",
-            "status": "shipped",
-            "due": 1777532400000
-          }
-        ]
-      },
-      {
-        "n": "FASE03 — Monitoramento de VM no painel cliente (BCOS)",
-        "status": "in progress",
-        "assignee": "Nathan",
-        "due": 1784876400000,
-        "id": "86afctdgt",
-        "ativ": [
-          {
-            "n": "Expor informações por API restrita por projeto para o cliente",
-            "status": "shipped",
-            "due": null
-          },
-          {
-            "n": "Adição de intervalo de tempo na tela de gráficos",
-            "status": "shipped",
-            "due": 1779433200000
-          },
-          {
-            "n": "Geração de alertas para os dados coletados no painel",
-            "status": "in progress",
-            "due": 1784876400000
-          },
-          {
-            "n": "Criação/Adequação da tela de Alertas",
-            "status": "in progress",
-            "due": 1784876400000
-          },
-          {
-            "n": "Recomendações de utilização por IA",
-            "status": "backlog",
-            "due": 1786086000000
-          }
-        ]
-      },
-      {
-        "n": "FASE04 — Administrativo — Saúde do Ambiente",
-        "status": "backlog",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86afcwtz3",
-        "ativ": [
-          {
-            "n": "Visão de Capacity da nuvem",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Visão de Top usage VMs",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Visão de Top usage compute nodes",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Visão de discos mais utilizados",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Visão tráfego de rede dos computes",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Geração de alertas administrativo",
-            "status": "backlog",
-            "due": 1787727600000
-          },
-          {
-            "n": "Recomendação de IA para o gestor da empresa",
-            "status": "backlog",
-            "due": 1787727600000
-          }
-        ]
-      },
-      {
-        "n": "FASE05 — Esteira de QA",
-        "status": "backlog",
-        "assignee": "Nathan",
-        "due": null,
-        "id": "86ag4q559",
-        "ativ": [
-          {
-            "n": "Aplicação das roles de serviço da ferramenta",
-            "status": "backlog",
-            "due": 1787900400000
-          },
-          {
-            "n": "Criação de esteira do módulo",
-            "status": "backlog",
-            "due": 1787900400000
-          },
-          {
-            "n": "Testes e validações do produto",
-            "status": "in progress",
-            "due": 1787900400000
-          },
-          {
-            "n": "Geração de documentação da operação",
-            "status": "shipped",
-            "due": 1778050800000
-          },
-          {
-            "n": "Geração de FAQ para o cliente",
-            "status": "shipped",
-            "due": 1778223600000
-          },
-          {
-            "n": "Passagem para produção",
-            "status": "in progress",
-            "due": 1788159600000
-          },
-          {
-            "n": "Passagem de bastão Operação",
-            "status": "in progress",
-            "due": 1788159600000
-          },
-          {
-            "n": "Apresentação para o Board da Empresa",
-            "status": "backlog",
-            "due": 1788159600000
-          },
-          {
-            "n": "Apresentação para o comercial",
-            "status": "backlog",
-            "due": 1788159600000
-          },
-          {
-            "n": "Implementação do módulo no BC-BOX",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Precificação do produto",
-            "status": "backlog",
-            "due": 1787900400000
-          },
-          {
-            "n": "Plano de evolução para novas versões",
-            "status": "backlog",
-            "due": 1788159600000
-          }
-        ]
-      }
+    "due": null,
+    "id": "86afjfc80",
+    "ativ": [
+     {
+      "n": "Tradução",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Opção \"enable file system\"",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Correção de bugs visuais",
+      "status": "shipped",
+      "due": null
+     }
     ]
-  },
-  {
-    "num": 5,
-    "id": "86afcphwr",
+   },
+   {
+    "n": "FASE03 - Esteira QA",
+    "status": "in progress",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": null,
+    "id": "86ag5ua03",
+    "ativ": [
+     {
+      "n": "Criar plano de teste - Equipe BinarioNet",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Criar videos tutoriais para a equipe Suporte - N1/N2",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Contratar licenças junto ao Fornecedor - Storware",
+      "status": "in review",
+      "due": null
+     },
+     {
+      "n": "Definir precificação",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Subir SKU na Calculadora",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Definir 5 primeiro Clientes",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Subir documentação - ClaudIA",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Disponibilização da FAQ",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 2,
+  "id": "86afcphpj",
+  "status": "in progress",
+  "due": 1777532400000,
+  "name": "Segurança e evolução do BCP",
+  "short": "BCP — Segurança",
+  "assignee": "Guilherme Lopes",
+  "tags": [
+   "evolução da plataforma de nuvem",
+   "eficiência operacional"
+  ],
+  "detail": "Objetivo: aumentar segurança e confiabilidade do acesso à plataforma (calculadora e Console) com MFA e validação reforçada.\nEntregáveis: MFA implementado, validação por token, nova tela de validação de acesso, testes de uso e segurança.\nCritério de aceite: funcionalidade disponível, validada e documentada.\nRisco principal: competição com outras entregas de produto.",
+  "fases": [
+   {
+    "n": "FASE01 - Desenvolver mecanismo de validação de sessão",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag1nywn",
+    "ativ": [
+     {
+      "n": "Definição de codificação de token de acesso",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Definição do tempo de vida do acesso gerado",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Gerar canal para geração de links para potenciais clientes",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag1nywb",
+    "ativ": [
+     {
+      "n": "Criar view no BCAPI para a geração de links",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenvolvimento de API para geração de tokens de acesso a calculadora",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Envio de identificador de acesso nas plataformas Central e Console",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag1nywv",
+    "ativ": [
+     {
+      "n": "Desenvolvimento do encode/decoder de token de acesso",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Inserir na calculadora o envio deste token de acesso para a validação",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Redirecionamento para clientes que tentam acessar a calculadora sem sessão válida",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag1nyx6",
+    "ativ": [
+     {
+      "n": "Desenvolver o redirecionamento",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Criar página indicando com contato com a equipe comercial",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE05 - Habilitar MFA no BCP",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag1nyxf",
+    "ativ": [
+     {
+      "n": "Desenvolver tema de ativação do mfa na central do usuário",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Mecanismo de validação de token de acesso",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenvolvimento de tela de validação de acesso após o login",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE06 - Esteira QA",
+    "status": "backlog",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag4t18m",
+    "ativ": [
+     {
+      "n": "Criação de esteira do módulo",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Testes e validações do produto",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de documentação da operação",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de FAQ para o cliente",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Passagem para produção",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Apresentação para a diretoria da Empresa",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Implementação do módulo no BC-BOX",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 3,
+  "id": "86afcphue",
+  "status": "in progress",
+  "due": 1788159600000,
+  "name": "Módulo Financeiro do BCP",
+  "short": "BCP — Módulo Financeiro",
+  "assignee": "Guilherme Lopes",
+  "tags": [
+   "evolução da plataforma de nuvem"
+  ],
+  "detail": "Objetivo: disponibilizar visibilidade de precificação no fluxo de criação de VMs, com custos em tempo real.\nEntregáveis: integração da precificação, exibição de custos em tempo real, testes funcionais, validação com stakeholders.\nCritério de aceite: módulo funcionando conforme cenário definido.\nRisco principal: inconsistência entre cálculo e exibição.",
+  "fases": [
+   {
+    "n": "FASE01 - Extrato de Consumo - em tempo Real",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86afct8bu",
+    "ativ": [
+     {
+      "n": "Montagem da tela de consumo em tempo real",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Criação de endpoint de consumo de tempo real - skyline",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Integração da tela de consumo com BCAPI",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Ajustes dos parametros da API de consumo(filtragem de dados por projeto)",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Deploy da solução em produção",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Integrar precificação no momento da criação de VM",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86afct7za",
+    "ativ": [
+     {
+      "n": "Exposição dos preços da calculadora por API no skyline",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Construção de tela para consumo API de preços",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Filtragem de SKU's ausentes",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "validação em ambiente sandbox",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Rateio de Notas Fiscais",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86afct8e7",
+    "ativ": [
+     {
+      "n": "Entendimento com o time financeiro sobre o rateio",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Proposta de rateio automatizado pelo BCAPI",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenvolvimento da tela de rateio BCAPI",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Apresentação da estrutura para o time financeiro",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "testes em ambiente de desenvolvimento",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Deploy em ambiente de produção",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Faturamento - PAAS|SAAS",
     "status": "in planning",
-    "due": 1798700400000,
-    "name": "Evolução de UX do BCP",
-    "short": "BCP — UX",
     "assignee": "Guilherme Lopes",
-    "tags": [
-      "evolução da plataforma de nuvem"
-    ],
-    "detail": "Refatoração de BCOS, BC-API e Calculadora.\nObjetivo: melhorar experiência do usuário e percepção de valor da plataforma.\nEntregáveis: proposta visual revisada, tour guiado, newsletter/página de comunicação, validação do novo fluxo principal.\nCritério de aceite: fluxo principal revisado e elementos de onboarding implementados.\nRisco principal: UX perder prioridade frente às urgências técnicas.",
-    "fases": [
-      {
-        "n": "FASE01 — Refatoração identidade visual",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86afct9fr",
-        "ativ": []
-      },
-      {
-        "n": "FASE02 — Product Tour (Tour BCOS, Tooltip)",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86afct9nj",
-        "ativ": []
-      },
-      {
-        "n": "FASE03 — Newsletter (Home do BCOS)",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86afct9xj",
-        "ativ": []
-      },
-      {
-        "n": "FASE04 — Mapeamento das APIs do console atual",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86ag1p795",
-        "ativ": []
-      },
-      {
-        "n": "FASE05 — Frontend consumindo APIs na nova identidade",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86ag1p7x1",
-        "ativ": []
-      },
-      {
-        "n": "FASE06 — Identidade visual do BCP CLI",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86ag1p8m4",
-        "ativ": []
-      },
-      {
-        "n": "FASE07 — Expor visões por API (ex. Consumo)",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86ag1p9gh",
-        "ativ": []
-      },
-      {
-        "n": "FASE08 — Esteira QA",
-        "status": "backlog",
-        "assignee": "—",
-        "due": null,
-        "id": "86ag5umm7",
-        "ativ": [
-          {
-            "n": "Aplicação das roles de serviço da ferramenta",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Criação de esteira do módulo",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Testes e validações do produto",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de documentação da operação",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Geração de FAQ para o cliente",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Passagem para produção",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Apresentação para o Board da Empresa",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Apresentação para o comercial",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Implementação do módulo no BC-BOX",
-            "status": "backlog",
-            "due": null
-          },
-          {
-            "n": "Precificação do produto",
-            "status": "backlog",
-            "due": null
-          }
-        ]
-      }
+    "due": null,
+    "id": "86afct8jh",
+    "ativ": [
+     {
+      "n": "Estudo do Faturamento atual",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Estudo do funcionamento do SaaS",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Validação da criação de PaaS no consumo",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Desenvolvimento de API consumo PaaS/SaaS",
+      "status": "in progress",
+      "due": null
+     },
+     {
+      "n": "Integração da API no sistema de faturamento atual",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Cadastro dos SKU's na calculadora",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Cadastro dos SKU's no ERP",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "testes em ambiente de desenvolvimento",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "teste de integração com ERP",
+      "status": "backlog",
+      "due": null
+     }
     ]
-  }
+   },
+   {
+    "n": "FASE05 - Esteira QA",
+    "status": "backlog",
+    "assignee": "Guilherme Lopes",
+    "due": null,
+    "id": "86ag5uhzf",
+    "ativ": [
+     {
+      "n": "Aplicação das roles de serviço da ferramenta",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Criação de esteira do módulo",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Testes e validações do produto",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de documentação da operação",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de FAQ para o cliente",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Passagem para produção",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Apresentação para o Board da Empresa",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Apresentação para o comercial",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Implementação do módulo no BC-BOX",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Precificação do produto",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 4,
+  "id": "86afctd22",
+  "status": "in progress",
+  "due": 1788159600000,
+  "name": "BCOS / Observabilidade como módulo do BCP",
+  "short": "BCP — Módulo Observabilidade",
+  "assignee": "Nathan de Moraes Valim Francisco",
+  "tags": [
+   "evolução da plataforma de nuvem",
+   "eficiência operacional"
+  ],
+  "detail": "Objetivo: evoluir o BCP com um módulo próprio de observabilidade (capacidade e alertas).\nEntregáveis: painel inicial do módulo, visão de capacidade, alertas priorizados, escopo funcional documentado.\nCritério de aceite: painel e visão mínima publicados para validação.\nRisco principal: tentar transformar tudo em produto antes de validar o mínimo viável.",
+  "fases": [
+   {
+    "n": "FASE01 -Coletar informações De VM",
+    "status": "shipped",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": null,
+    "id": "86ag1p3rg",
+    "ativ": [
+     {
+      "n": "Ver quais coletas já possuimos",
+      "status": "shipped",
+      "due": 1773990000000
+     },
+     {
+      "n": "Gerar estrutura do que precisamos coletar",
+      "status": "shipped",
+      "due": 1773990000000
+     },
+     {
+      "n": "Gerar exporter das coletas restantes",
+      "status": "shipped",
+      "due": 1796022000000
+     },
+     {
+      "n": "Ajustar o fluxo de ingestão no click",
+      "status": "shipped",
+      "due": 1774594800000
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Conexão Prometheus / BCOS",
+    "status": "shipped",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": null,
+    "id": "86ag1p51p",
+    "ativ": [
+     {
+      "n": "Gerar API para exportar os dados do Click",
+      "status": "shipped",
+      "due": 1775718000000
+     },
+     {
+      "n": "Montagem da área de Visão no FrontEnd",
+      "status": "shipped",
+      "due": 1776409200000
+     },
+     {
+      "n": "Analise da possibilidade do cliente Personalizar os seus dashboards",
+      "status": "shipped",
+      "due": 1775545200000
+     },
+     {
+      "n": "Integração da API X Telas",
+      "status": "shipped",
+      "due": 1777532400000
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Monitoramento de VM no painel cliente (BCOS)",
+    "status": "in progress",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": 1784876400000,
+    "id": "86afctdgt",
+    "ativ": [
+     {
+      "n": "Expor informações por API Restrita por projeto para o cliente também",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Adicao de intervalo de tempo na tela de graficos",
+      "status": "shipped",
+      "due": 1779433200000
+     },
+     {
+      "n": "Geração de alertas para os dados coletados no painel",
+      "status": "in progress",
+      "due": 1784876400000
+     },
+     {
+      "n": "Criação/Adequação da tela de Alertas",
+      "status": "in progress",
+      "due": 1784876400000
+     },
+     {
+      "n": "Recomendações de utilização por IA",
+      "status": "backlog",
+      "due": 1786086000000
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - Administrativo - Saúde Ambiente",
+    "status": "backlog",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": 1787727600000,
+    "id": "86afcwtz3",
+    "ativ": [
+     {
+      "n": "Visão de Capacity da nuvem",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Visão de Top usage VMS",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Visão de Top usage compute nodes",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Visão de discos mais utilizados",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Visão tráfego de rede dos computes",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Geração de alertas administrativo",
+      "status": "backlog",
+      "due": 1787727600000
+     },
+     {
+      "n": "Recomendação de IA para o gestor da empresa",
+      "status": "backlog",
+      "due": 1787727600000
+     }
+    ]
+   },
+   {
+    "n": "FASE05 - Esteira de QA",
+    "status": "backlog",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": 1788159600000,
+    "id": "86ag4q559",
+    "ativ": [
+     {
+      "n": "Aplicação das roles de serviço da ferramenta",
+      "status": "backlog",
+      "due": 1787900400000
+     },
+     {
+      "n": "Criação de esteira do módulo",
+      "status": "backlog",
+      "due": 1787900400000
+     },
+     {
+      "n": "Testes e validações do produto",
+      "status": "in progress",
+      "due": 1787900400000
+     },
+     {
+      "n": "Geração de documentação da operação",
+      "status": "shipped",
+      "due": 1778050800000
+     },
+     {
+      "n": "Geração de FAQ para o cliente",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Passagem para produção",
+      "status": "in progress",
+      "due": 1788159600000
+     },
+     {
+      "n": "Passagem de bastão Operacao",
+      "status": "in progress",
+      "due": 1788159600000
+     },
+     {
+      "n": "Apresentação para o Board da Empresa",
+      "status": "backlog",
+      "due": 1788159600000
+     },
+     {
+      "n": "Apresentação para o comercial",
+      "status": "backlog",
+      "due": 1788159600000
+     },
+     {
+      "n": "Implementação do módulo no BC-BOX",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Precificação do produto",
+      "status": "backlog",
+      "due": 1787900400000
+     },
+     {
+      "n": "Plano de evolução para novas versões",
+      "status": "backlog",
+      "due": 1788159600000
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "num": 5,
+  "id": "86afcphwr",
+  "status": "in planning",
+  "due": 1798700400000,
+  "name": "Evolução de UX do BCP",
+  "short": "BCP — UX",
+  "assignee": "Guilherme Lopes",
+  "tags": [
+   "evolução da plataforma de nuvem"
+  ],
+  "detail": "Refatoração de BCOS, BC-API e Calculadora.\nObjetivo: melhorar experiência do usuário e percepção de valor da plataforma.\nEntregáveis: proposta visual revisada, tour guiado, newsletter/página de comunicação, validação do novo fluxo principal.\nCritério de aceite: fluxo principal revisado e elementos de onboarding implementados.\nRisco principal: UX perder prioridade frente às urgências técnicas.",
+  "fases": [
+   {
+    "n": "FASE01 - Refatoração identidade visual",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86afct9fr",
+    "ativ": []
+   },
+   {
+    "n": "FASE02 - Product Tour (Tour BCOS, Tooltip)",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86afct9nj",
+    "ativ": []
+   },
+   {
+    "n": "FASE03 - Newsletter - (Home do BCOS)",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86afct9xj",
+    "ativ": []
+   },
+   {
+    "n": "FASE04 - Mapeamento das API's do console atual",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ag1p795",
+    "ativ": []
+   },
+   {
+    "n": "FASE05 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ag1p7x1",
+    "ativ": []
+   },
+   {
+    "n": "FASE06 - Identidade visual para o BCP CLI",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ag1p8m4",
+    "ativ": []
+   },
+   {
+    "n": "FASE07 - Expor visões por API (Ex: Consumo)",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ag1p9gh",
+    "ativ": []
+   },
+   {
+    "n": "FASE08 - Esteira QA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ag5umm7",
+    "ativ": [
+     {
+      "n": "Aplicação das roles de serviço da ferramenta",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Criação de esteira do módulo",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Testes e validações do produto",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de documentação da operação",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Geração de FAQ para o cliente",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Passagem para produção",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Apresentação para o Board da Empresa",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Apresentação para o comercial",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Implementação do módulo no BC-BOX",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Precificação do produto",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   }
+  ]
+ }
 ]
