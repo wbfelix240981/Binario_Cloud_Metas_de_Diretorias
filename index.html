@@ -1599,6 +1599,7 @@ const PROJECTS = {
 
 let activeTab = 'rafael';
 let activeStatus = 'all';
+let detailStatusFilter = 'all';
 
 function metaProgress(m){
   if(m.status==='shipped') return 1;
@@ -1671,13 +1672,9 @@ function renderMetas(){
   const list = document.getElementById('metasList');
   list.innerHTML = '';
   project.metas.forEach(m=>{
-    const fasesFiltered = m.fases.filter(f=>{
-      const matchStatus = activeStatus==='all' || f.status===activeStatus;
-      const matchQ = !q || m.name.toLowerCase().includes(q) || f.n.toLowerCase().includes(q) || m.short.toLowerCase().includes(q);
-      return matchStatus && matchQ;
-    });
-    if(q && fasesFiltered.length===0 && !m.name.toLowerCase().includes(q) && !m.short.toLowerCase().includes(q)) return;
-    if(activeStatus!=='all' && fasesFiltered.length===0 && m.status!==activeStatus) return;
+    const matchStatus = activeStatus==='all' || m.status===activeStatus;
+    const matchQ = !q || m.name.toLowerCase().includes(q) || m.short.toLowerCase().includes(q) || m.fases.some(f=>f.n.toLowerCase().includes(q));
+    if(!matchStatus || !matchQ) return;
 
     const pct = Math.round(metaProgress(m)*100);
     const overdueCount = metaOverdueCount(m);
@@ -1854,7 +1851,11 @@ function renderMetaDetailPage(tab, num){
     else ativCounts.naoIniciada++;
   });
 
-  const fasesHtml = meta.fases.length ? meta.fases.map((f,i)=>`
+  const fasesFiltered = detailStatusFilter==='all' ? meta.fases : meta.fases.filter(f=>f.status===detailStatusFilter);
+
+  const fasesHtml = fasesFiltered.length ? fasesFiltered.map((f)=>{
+    const i = meta.fases.indexOf(f);
+    return `
     <div class="fase-wrap open">
       <div class="fase-row${f.ativ&&f.ativ.length?' has-ativ':''}" style="cursor:default;">
         <div class="fase-idx">${String(i+1).padStart(2,'0')}</div>
@@ -1869,7 +1870,12 @@ function renderMetaDetailPage(tab, num){
       ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:flex">
         ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span></div>`;}).join('')}
       </div>`:''}
-    </div>`).join('') : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`;
+    </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
+
+  const detailChipDefs = [['all','Todas'],['backlog','Não iniciado'],['in planning','Planejamento'],['in progress','Em andamento'],['in test','Em teste'],['in review','Em revisão'],['blocked','Bloqueada'],['shipped','Concluído']];
+  const detailChipsHtml = meta.fases.length ? `<div class="chips" style="margin-bottom:18px;">${detailChipDefs.map(([key,label])=>
+    `<div class="chip${detailStatusFilter===key?' active':''}" onclick="setDetailFilter('${tab}',${num},'${key}')">${label}</div>`
+  ).join('')}</div>` : '';
 
   const CIRC = 2*Math.PI*48;
   const offset = (CIRC*(1-pct/100)).toFixed(1);
@@ -1910,6 +1916,7 @@ function renderMetaDetailPage(tab, num){
         </div>` : ''}
 
         <h3 class="detail-fases-title">Fases da meta</h3>
+        ${detailChipsHtml}
         ${fasesHtml}
 
         ${meta.detail?`<div class="detail-text"><h4>Ficha completa da meta</h4>${meta.detail}</div>`:''}
@@ -1917,8 +1924,14 @@ function renderMetaDetailPage(tab, num){
     </div>`;
 }
 
+function setDetailFilter(tab, num, status){
+  detailStatusFilter = status;
+  renderMetaDetailPage(tab, parseInt(num,10));
+}
+
 function showDetailPage(tab, num){
   if(activeTab !== tab) selectTab(tab);
+  detailStatusFilter = 'all';
   document.querySelector('.folder-outer').style.display = 'none';
   const view = document.getElementById('metaDetailView');
   view.style.display = 'block';
