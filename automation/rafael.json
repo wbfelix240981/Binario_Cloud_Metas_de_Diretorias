@@ -1,0 +1,746 @@
+[
+  {
+    "num": 1,
+    "id": "86ajra8z4",
+    "status": "shipped",
+    "due": 1785481200000,
+    "name": "Concluir a implantação da ClaudIA no atendimento ao Suporte",
+    "short": "ClaudIA no Suporte",
+    "assignee": "Rafael Alves",
+    "tags": [
+      "atender muito bem / 100% de satisfação",
+      "eficiência operacional"
+    ],
+    "detail": "Meta de operacionalizar a ClaudIA (assistente de IA) no fluxo de atendimento do Suporte, cobrindo desde o kickoff até o encerramento com automação de troubleshooting.",
+    "fases": []
+  },
+  {
+    "num": 2,
+    "id": "86ajra8z1",
+    "status": "shipped",
+    "due": 1782802800000,
+    "name": "Concluir a migração dos clientes da Cloud 2.0 para a Cloud 3.0",
+    "short": "Migração Clientes 2.0 > 3.0",
+    "assignee": "Rafael Alves",
+    "tags": [
+      "migração",
+      "modernização tecnológica"
+    ],
+    "detail": "Meta de nível executivo que consolida o resultado da migração de clientes entre gerações de cloud (detalhamento técnico acompanhado na meta de Desmobilização 2.0).",
+    "fases": []
+  },
+  {
+    "num": 3,
+    "id": "86ajra8yz",
+    "status": "shipped",
+    "due": 1785481200000,
+    "name": "Entregar a Plataforma de Observabilidade da BCloud 3.0",
+    "short": "Plataforma de Observabilidade da BCloud 3.0",
+    "assignee": "Rafael Alves",
+    "tags": [
+      "sustentando o crescimento do negócio"
+    ],
+    "detail": "Meta executiva de consolidação da plataforma de observabilidade da nova geração de cloud (BCloud 3.0).",
+    "fases": []
+  },
+  {
+    "num": 4,
+    "id": "86ajra8yu",
+    "status": "backlog",
+    "due": 1798700400000,
+    "name": "Garantir disponibilidade e SLA de atendimento ao cliente",
+    "short": "Disponibilidade e atendimento ao cliente",
+    "assignee": "Rafael Alves",
+    "tags": [
+      "garantia sla",
+      "eficiência operacional"
+    ],
+    "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
+    "fases": []
+  },
+  {
+    "num": 5,
+    "id": "86afcphgx",
+    "status": "in progress",
+    "due": 1798700400000,
+    "name": "Automatizar instalação do BC Box com base nos testes realizados",
+    "short": "BC Box – Automação de instalação do BCP",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "tags": [
+      "sustentando o crescimento do negócio",
+      "eficiência operacional"
+    ],
+    "detail": "Objetivo: reduzir esforço manual e tempo de implantação do BC Box.\nEntregáveis: resultados dos testes UOL registrados, escopo de automação definido, automação dos componentes prioritários, documentação do processo, comparação antes/depois do tempo de implantação.\nMétrica de sucesso: redução do tempo de instalação, redução de etapas manuais, repetibilidade da instalação.\nCritério de aceite: instalação automatizada com evidência de ganho operacional.\nRisco principal: ausência de documentação suficiente da etapa de teste.",
+    "fases": [
+      {
+        "n": "FASE01 - Teste do Beta na UOL",
+        "status": "shipped",
+        "assignee": "Nathan de Moraes Valim Francisco",
+        "due": 1773990000000,
+        "id": "86ag1nr2u",
+        "ativ": [
+          {
+            "n": "Configuração inicial da vm do bc-box",
+            "status": "shipped",
+            "due": 1772434800000
+          },
+          {
+            "n": "Configuração do yaml central",
+            "status": "shipped",
+            "due": 1772607600000
+          },
+          {
+            "n": "Rodar préchecks",
+            "status": "shipped",
+            "due": 1772607600000
+          },
+          {
+            "n": "Instalação da primeira versão",
+            "status": "shipped",
+            "due": 1772780400000
+          },
+          {
+            "n": "Ajustes do yaml",
+            "status": "shipped",
+            "due": 1773385200000
+          },
+          {
+            "n": "Aplicação do reconfigure",
+            "status": "shipped",
+            "due": 1773385200000
+          },
+          {
+            "n": "Ajustes manuais",
+            "status": "shipped",
+            "due": 1773990000000
+          }
+        ]
+      },
+      {
+        "n": "FASE 02 - Aplicação de melhorias coletadas no Projeto UOL",
+        "status": "shipped",
+        "assignee": "Vitor Ribeiro",
+        "due": 1776409200000,
+        "id": "86ag1nrvz",
+        "ativ": [
+          {
+            "n": "Host de deploy local",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "A senha de acesso criptografada",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Alterar skyline de proxy para console",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "O Skyline customizado com rota nginx para cada serviço",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Serviços específicos para adicionar (Magnum, Trove)",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Tunnings do SO",
+            "status": "shipped",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE03 - Instalar o CEPH",
+        "status": "in review",
+        "assignee": "Vitor Ribeiro / Vinicius Afonso Oliveira",
+        "due": 1788159600000,
+        "id": "86ag1ntg8",
+        "ativ": [
+          {
+            "n": "Instalar monitors",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Instalar storage nodes",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Configurar OSDs",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Configurar pools",
+            "status": "in review",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE04 - Instalar Storware",
+        "status": "in progress",
+        "assignee": "Vitor Ribeiro / Nathan de Moraes Valim Francisco",
+        "due": 1790751600000,
+        "id": "86ag1nu17",
+        "ativ": [
+          {
+            "n": "Definição do modelo a ser instalado",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Pré configuração dos servidores",
+            "status": "in progress",
+            "due": null
+          },
+          {
+            "n": "Automação dos comandos de instalação",
+            "status": "in progress",
+            "due": null
+          },
+          {
+            "n": "Integração com as APIs Openstack",
+            "status": "in progress",
+            "due": null
+          },
+          {
+            "n": "Integração com Ceph Openstack",
+            "status": "in progress",
+            "due": null
+          },
+          {
+            "n": "Integração com repositório",
+            "status": "in progress",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE05 - Instalação do Sistema de Observabilidade",
+        "status": "in progress",
+        "assignee": "Vitor Ribeiro / Ayrton Marinho",
+        "due": 1796022000000,
+        "id": "86ag1nup2",
+        "ativ": []
+      },
+      {
+        "n": "FASE06 - Melhorias skyline (Fora da meta BC-Box)",
+        "status": "backlog",
+        "assignee": "Vitor Ribeiro / Ayrton Marinho",
+        "due": 1798700400000,
+        "id": "86ag1nvn5",
+        "ativ": [
+          {
+            "n": "Personalização dos logos",
+            "status": "backlog",
+            "due": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "id": "86afcpgzp",
+    "status": "in progress",
+    "due": 1796022000000,
+    "name": "Concluir migração do legado de backup e descomissionar ambiente antigo",
+    "short": "Migração Ceph (EC → Réplica) e descomissionamento do legado",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "tags": [
+      "eficiência operacional",
+      "garantia sla",
+      "sustentando o crescimento do negócio",
+      "higiene de infraestrutura"
+    ],
+    "detail": "Objetivo: encerrar dependência do ambiente legado com segurança operacional, consolidando a infraestrutura de armazenamento de backup em arquitetura Ceph Replica (migrando de Ceph Erasure Code).\nEntregáveis: chegada e validação dos discos, migração das réplicas do CEF para REC, validação de integridade pós-migração, plano de rollback, descomissionamento do legado.\nCritério de aceite: legado descomissionado e operação validada.\nRisco principal: atraso de insumo físico ou falha na validação pós-migração.",
+    "fases": [
+      {
+        "n": "FASE01 - Planejamento",
+        "status": "shipped",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1770361200000,
+        "id": "86ag5vn7n",
+        "ativ": [
+          {
+            "n": "Elaboração do Diagnóstico Técnico - Ceph",
+            "status": "shipped",
+            "due": 1768806000000
+          },
+          {
+            "n": "Montagem do plano de Migração",
+            "status": "shipped",
+            "due": 1770361200000
+          }
+        ]
+      },
+      {
+        "n": "FASE02 - Ajustes do Ambiente",
+        "status": "shipped",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1789110000000,
+        "id": "86ag5vnj3",
+        "ativ": [
+          {
+            "n": "Garantir a chegada dos discos adquiridos em 2025",
+            "status": "shipped",
+            "due": 1780642800000
+          },
+          {
+            "n": "Fase 3",
+            "status": "shipped",
+            "due": 1775286000000
+          },
+          {
+            "n": "Fase 4",
+            "status": "shipped",
+            "due": 1773212400000
+          }
+        ]
+      },
+      {
+        "n": "FASE03 - Migração dos backups",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1788937200000,
+        "id": "86ag5vnnu",
+        "ativ": [
+          {
+            "n": "Migrar do EC para replicated com controle",
+            "status": "shipped",
+            "due": 1785481200000
+          },
+          {
+            "n": "Remoção do node 05",
+            "status": "shipped",
+            "due": 1785135600000
+          },
+          {
+            "n": "Migrar para o cluster novo e mover storages conforme esvaziamos",
+            "status": "in progress",
+            "due": 1788937200000
+          }
+        ]
+      },
+      {
+        "n": "FASE04 - Descomissionamento ambiente antigo",
+        "status": "backlog",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1790751600000,
+        "id": "86ag5vp15",
+        "ativ": [
+          {
+            "n": "Remoção dos últimos nodes do cluster",
+            "status": "backlog",
+            "due": 1789110000000
+          },
+          {
+            "n": "Adição dos nodes no novo cluster",
+            "status": "backlog",
+            "due": 1790751600000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "id": "86afcpfhb",
+    "status": "in progress",
+    "due": 1798700400000,
+    "name": "Concluir migração técnica da Cloud 2 para Cloud 3",
+    "short": "Desmobilização 2.0",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "tags": [
+      "eficiência operacional",
+      "sustentando o crescimento do negócio",
+      "modernização tecnológica",
+      "higiene de infraestrutura"
+    ],
+    "detail": "Objetivo: transferir workloads e infraestrutura da Cloud 2 para a Cloud 3 com previsibilidade e segurança.\nMeta: ≤100 VMs remanescentes na Cloud 2.0.\nEntregáveis: cronograma consolidado, migração dos nós físicos, migração dos IPs, migração das VMs, validação final e plano de encerramento.\nCritério de aceite: migração concluída com validação operacional.\nRisco principal: responsabilidade compartilhada sem dono executivo claro.",
+    "fases": [
+      {
+        "n": "FASE01 - Quantidade de VMs cloud 2.0 com a evolução do Projeto",
+        "status": "shipped",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1782802800000,
+        "id": "86afcx00k",
+        "ativ": [
+          {
+            "n": "Medir quantidade de VMs restantes na 2.0 - FEV",
+            "status": "shipped",
+            "due": 1772262000000
+          },
+          {
+            "n": "Medir quantidade de VMs restantes na 2.0 - MAR",
+            "status": "shipped",
+            "due": 1774940400000
+          },
+          {
+            "n": "Medir quantidade de VMs restantes na 2.0 - ABR",
+            "status": "shipped",
+            "due": 1777532400000
+          },
+          {
+            "n": "Medir quantidade de VMs restantes na 2.0 - MAI",
+            "status": "shipped",
+            "due": 1780210800000
+          },
+          {
+            "n": "Medir quantidade de VMs restantes na 2.0 - JUN",
+            "status": "shipped",
+            "due": 1782802800000
+          }
+        ]
+      },
+      {
+        "n": "FASE02 - Migração de Nodes",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1798700400000,
+        "id": "86afzddfh",
+        "ativ": [
+          {
+            "n": "br-sp-02-node01",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "br-sp-02-node02",
+            "status": "shipped",
+            "due": 1778223600000
+          },
+          {
+            "n": "br-sp-02-node03",
+            "status": "shipped",
+            "due": 1775545200000
+          },
+          {
+            "n": "br-sp-02-node04",
+            "status": "shipped",
+            "due": 1783666800000
+          },
+          {
+            "n": "br-sp-02-node05",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "br-sp-02-node06",
+            "status": "blocked",
+            "due": 1790751600000
+          },
+          {
+            "n": "br-sp-02-node07",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "br-sp-02-node08",
+            "status": "in planning",
+            "due": 1786690800000
+          },
+          {
+            "n": "br-sp-02-node09",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "br-sp-02-node10",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "br-sp-02-node15",
+            "status": "in progress",
+            "due": 1786086000000
+          },
+          {
+            "n": "br-sp-02-node16",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "br-sp-02-node17",
+            "status": "blocked",
+            "due": 1790751600000
+          },
+          {
+            "n": "br-sp-02-node18",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "br-sp-02-node19",
+            "status": "in planning",
+            "due": 1786690800000
+          },
+          {
+            "n": "br-sp-02-node20",
+            "status": "in progress",
+            "due": 1786086000000
+          },
+          {
+            "n": "br-sp-02-node21",
+            "status": "shipped",
+            "due": 1786690800000
+          },
+          {
+            "n": "br-sp-02-node22",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "br-sp-02-node23",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "srv-win-01",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "srv-win-02",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "srv-win-03",
+            "status": "blocked",
+            "due": 1790751600000
+          },
+          {
+            "n": "srv-win-04",
+            "status": "blocked",
+            "due": 1790751600000
+          },
+          {
+            "n": "srv-win-05",
+            "status": "shipped",
+            "due": 1784012400000
+          },
+          {
+            "n": "srv-win-06",
+            "status": "shipped",
+            "due": 1769756400000
+          },
+          {
+            "n": "srv-win-07",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "srv-win-08",
+            "status": "blocked",
+            "due": 1793343600000
+          },
+          {
+            "n": "srv-dentaluni-01",
+            "status": "shipped",
+            "due": 1777618800000
+          },
+          {
+            "n": "srv-oracle-gimba-01",
+            "status": "shipped",
+            "due": 1777014000000
+          },
+          {
+            "n": "srv-oracle-gimba-02",
+            "status": "shipped",
+            "due": 1777014000000
+          },
+          {
+            "n": "srv-oracle-gimba-03",
+            "status": "shipped",
+            "due": 1777014000000
+          },
+          {
+            "n": "srv-oracle-gimba-04",
+            "status": "shipped",
+            "due": 1777014000000
+          },
+          {
+            "n": "srv-oraclenode-01",
+            "status": "blocked",
+            "due": null
+          },
+          {
+            "n": "srv-oraclenode-02",
+            "status": "blocked",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE 03 - Migração de Bloco de IPs",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1798700400000,
+        "id": "86afzde05",
+        "ativ": [
+          {
+            "n": "45.225.25.0/24",
+            "status": "blocked",
+            "due": null
+          },
+          {
+            "n": "45.225.26.0/24",
+            "status": "blocked",
+            "due": null
+          },
+          {
+            "n": "45.225.27.0/24",
+            "status": "blocked",
+            "due": null
+          },
+          {
+            "n": "200.218.224.0/24",
+            "status": "blocked",
+            "due": null
+          },
+          {
+            "n": "200.218.225.0/24",
+            "status": "shipped",
+            "due": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "id": "86afcpbtq",
+    "status": "in progress",
+    "due": 1798700400000,
+    "name": "Elevar disponibilidade e capacidade operacional da infraestrutura cloud no trimestre",
+    "short": "Disponibilidade Ambiente - Nuvem",
+    "assignee": "Leonardo Gomes Jorge Gonçalez",
+    "tags": [
+      "garantia sla",
+      "eficiência operacional"
+    ],
+    "detail": "Objetivo: aumentar resiliência, visibilidade e capacidade da infraestrutura de nuvem, garantindo disponibilidade de 99,982% (BCP | DataCenter).\nEntregáveis: plano trimestral de expansão documentado, melhorias de resiliência, dashboards operacionais atualizados, plano de backup de serviços críticos revisado, atualizações críticas aplicadas.\nCritério de aceite: plano executado, evidências registradas e indicadores publicados.\nRisco principal: conflito com demandas paralelas de migração e operação.",
+    "fases": [
+      {
+        "n": "FASE01 - Organização ambientes",
+        "status": "shipped",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1775199600000,
+        "id": "86ag5vr5b",
+        "ativ": [
+          {
+            "n": "Sistema de Inventário - NetBox",
+            "status": "shipped",
+            "due": 1772175600000
+          },
+          {
+            "n": "Criação de caderno de melhorias (Rede/Infra/Ceph)",
+            "status": "shipped",
+            "due": 1775199600000
+          },
+          {
+            "n": "Plano de Expansão de Infraestrutura - a cada 3 meses",
+            "status": "shipped",
+            "due": 1775199600000
+          }
+        ]
+      },
+      {
+        "n": "FASE02 - Melhoria da Resiliência",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1788159600000,
+        "id": "86ag5vtnu",
+        "ativ": [
+          {
+            "n": "Melhorias no monitoramento e dashboards",
+            "status": "in progress",
+            "due": null
+          },
+          {
+            "n": "Melhoria Whitelabel",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Plano de backup - Serviços internos de produção",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Aplicar plano de melhorias",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Testes de resiliência no ambiente de homologação",
+            "status": "shipped",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE03 - Soluções de Apoio",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1793343600000,
+        "id": "86ag5vw3d",
+        "ativ": [
+          {
+            "n": "Aplicação do Rally no BCP 3.0",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Verificar a nova versão do skyline",
+            "status": "shipped",
+            "due": null
+          }
+        ]
+      },
+      {
+        "n": "FASE04 - Capacidade dentro do BCP",
+        "status": "in progress",
+        "assignee": "Leonardo Gomes Jorge Gonçalez",
+        "due": 1798700400000,
+        "id": "86afcr3n8",
+        "ativ": [
+          {
+            "n": "Capacidade - Linux",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Capacidade - Windows",
+            "status": "shipped",
+            "due": null
+          },
+          {
+            "n": "Capacidade de Storage - NVME",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Capacidade de Storage - HDD",
+            "status": "in review",
+            "due": null
+          },
+          {
+            "n": "Capacidade de Storage - BACKUP",
+            "status": "in review",
+            "due": null
+          }
+        ]
+      }
+    ]
+  }
+]

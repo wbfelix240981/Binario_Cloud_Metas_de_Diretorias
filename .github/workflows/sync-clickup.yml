@@ -1,0 +1,45 @@
+name: Sincronizar com ClickUp
+
+on:
+  schedule:
+    # Horários em UTC (Brasília = UTC-3): 06h, 12h e 20h de Brasília
+    - cron: '0 9 * * *'
+    - cron: '0 15 * * *'
+    - cron: '0 23 * * *'
+  workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sincronizar dados do ClickUp
+        id: sync
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+        run: python3 automation/sync_clickup.py
+
+      - name: Reconstruir index.html
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          node automation/build.js
+          cp publish_out/index.html index.html
+
+      - name: Commit e push (se algo mudou)
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name "ClickUp Sync Bot"
+          git config user.email "actions@github.com"
+          git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json
+          git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp [skip ci]"
+          git push
