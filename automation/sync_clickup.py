@@ -77,8 +77,20 @@ def to_ms(due_date):
     return int(due_date) if due_date else None
 
 
+# Algumas listas do ClickUp usam status customizados em português (ex.: lista do Rafael:
+# "aberto", "em andamento", "fechado"...), outras usam o vocabulário padrão do ClickUp,
+# já em inglês (ex.: lista do Tiago: "backlog", "in progress", "in planning", "shipped"...).
+# Por isso o mapeamento reconhece os dois casos.
+VALID_INTERNAL_STATUSES = {
+    "backlog", "in planning", "in progress", "in test", "in review", "blocked", "shipped"
+}
+
+
 def map_status(raw_status):
-    return STATUS_MAP.get(raw_status.strip().lower(), "backlog")
+    raw = raw_status.strip().lower()
+    if raw in VALID_INTERNAL_STATUSES:
+        return raw
+    return STATUS_MAP.get(raw, "backlog")
 
 
 def build_activity(t):

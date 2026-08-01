@@ -1,223 +1,223 @@
 [
-  {
-    "id": "86ajtjqck",
-    "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
-    "status": "em andamento",
-    "assignees": [
-      "Tiago Oliveira",
-      "Leonardo Gonçalez"
-    ],
-    "url": "https://app.clickup.com/t/86ajtjqck"
-  },
-  {
-    "id": "86ajtjew3",
-    "name": "Bug de permissão, tenho acesso ao Admin, porém pela console não consigo criar projeto no dominio comercial.binario.cloud",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ajtjew3"
-  },
-  {
-    "id": "86ajtj8ee",
-    "name": "Análise: criação de menu configurador de automação BCP 3.0",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ajtj8ee"
-  },
-  {
-    "id": "86ajtj7v1",
-    "name": "Análise: criação de menu IA BCP 3.0",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ajtj7v1"
-  },
-  {
-    "id": "86ajtgv7h",
-    "name": "Melhorar o permissionamento do S3 via console BCP — clientes questionam sobre granularidade",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ajtgv7h"
-  },
-  {
-    "id": "86ajmv68h",
-    "name": "Ajustar processo de deletar POC de White Label",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ajmv68h"
-  },
-  {
-    "id": "86ajjnbmx",
-    "name": "Flavors — abas vazias",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira",
-      "Leonardo Gonçalez"
-    ],
-    "url": "https://app.clickup.com/t/86ajjnbmx"
-  },
-  {
-    "id": "86ajjmp5y",
-    "name": "Barra de escolha de página está perdendo a padronização",
-    "status": "em andamento",
-    "assignees": [
-      "Tiago Oliveira",
-      "Gabriel Sezana"
-    ],
-    "url": "https://app.clickup.com/t/86ajjmp5y"
-  },
-  {
-    "id": "86ajjmk9d",
-    "name": "Configuração de Rede",
-    "status": "revisando",
-    "assignees": [
-      "Tiago Oliveira",
-      "Gabriel Sezana"
-    ],
-    "url": "https://app.clickup.com/t/86ajjmk9d"
-  },
-  {
-    "id": "86ajjmh24",
-    "name": "Criação de disco na criação da instância",
-    "status": "revisando",
-    "assignees": [
-      "Tiago Oliveira",
-      "Gabriel Sezana"
-    ],
-    "url": "https://app.clickup.com/t/86ajjmh24"
-  },
-  {
-    "id": "86ahqbx3f",
-    "name": "Billing por domínio dentro do BCP",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahqbx3f"
-  },
-  {
-    "id": "86ahqbwyc",
-    "name": "Billing no BCP API",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahqbwyc"
-  },
-  {
-    "id": "86ahpyjdy",
-    "name": "Definição dos módulos do BCP (ex: BCOS, PaaS, Cost Management, Observabilidade)",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahpyjdy"
-  },
-  {
-    "id": "86ahpy2tp",
-    "name": "Definição sobre aviso",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahpy2tp"
-  },
-  {
-    "id": "86ahpb6x2",
-    "name": "Precificação do Storware",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahpb6x2"
-  },
-  {
-    "id": "86ahhuc3n",
-    "name": "Ajustar na calculadora o Serviços Gerenciados para faturar por % e não mais por componentes",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahhuc3n"
-  },
-  {
-    "id": "86ahavjx2",
-    "name": "Criação de uma nova aba na calculadora para ambientes grandes (> 50 VMs)",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ahavjx2"
-  },
-  {
-    "id": "86ah9yj6c",
-    "name": "Faltou o item de monitoramento de disco no BCP (observabilidade)",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86ah9yj6c"
-  },
-  {
-    "id": "86af7fpaq",
-    "name": "Solução de Backup Binário Cloud (VBR sim ou não)",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86af7fpaq"
-  },
-  {
-    "id": "86af7f81p",
-    "name": "Calculadora Database Instance (MySQL e PostgreSQL)",
-    "status": "aberto",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86af7f81p"
-  },
-  {
-    "id": "86af4m845",
-    "name": "Remover Syspass do BCP",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86af4m845"
-  },
-  {
-    "id": "86af2w3xw",
-    "name": "Nova demanda — N8N em PaaS",
-    "status": "revisando",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86af2w3xw"
-  },
-  {
-    "id": "86aewz6dm",
-    "name": "Falha — gestão de billing em tempo real",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86aewz6dm"
-  },
-  {
-    "id": "86aea8y0t",
-    "name": "Implantar — Backup via Storware",
-    "status": "fechado",
-    "assignees": [
-      "Tiago Oliveira"
-    ],
-    "url": "https://app.clickup.com/t/86aea8y0t"
-  }
+ {
+  "id": "86ajtjqck",
+  "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
+  "status": "em andamento",
+  "assignees": [
+   "Tiago Gomes de Oliveira",
+   "Leonardo Gomes Jorge Gonçalez"
+  ],
+  "url": "https://app.clickup.com/t/86ajtjqck"
+ },
+ {
+  "id": "86ajtjew3",
+  "name": "Bug de permissão, tenho acesso ao Admin, porém pela console não consigo criar projeto no dominio comercial.binario.cloud",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajtjew3"
+ },
+ {
+  "id": "86ajtj8ee",
+  "name": "Analise Criação de menu configurador de automação BCP 3.0",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajtj8ee"
+ },
+ {
+  "id": "86ajtj7v1",
+  "name": "Analise Criação de menu IA BCP 3.0",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajtj7v1"
+ },
+ {
+  "id": "86ajtgv7h",
+  "name": "Melhorar o permissionamento do S3 via console BCP, clientes questionam sobre granularidade",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajtgv7h"
+ },
+ {
+  "id": "86ajmv68h",
+  "name": "Ajustar processo de deletar POC de White Label",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajmv68h"
+ },
+ {
+  "id": "86ajjnbmx",
+  "name": "Flavors - abas vazias",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira",
+   "Leonardo Gomes Jorge Gonçalez"
+  ],
+  "url": "https://app.clickup.com/t/86ajjnbmx"
+ },
+ {
+  "id": "86ajjmp5y",
+  "name": "Barra de escolha de pagina está perdendo a padronização",
+  "status": "em andamento",
+  "assignees": [
+   "Tiago Gomes de Oliveira",
+   "Gabriel Sezana"
+  ],
+  "url": "https://app.clickup.com/t/86ajjmp5y"
+ },
+ {
+  "id": "86ajjmk9d",
+  "name": "Configuração de Rede",
+  "status": "revisando",
+  "assignees": [
+   "Tiago Gomes de Oliveira",
+   "Gabriel Sezana"
+  ],
+  "url": "https://app.clickup.com/t/86ajjmk9d"
+ },
+ {
+  "id": "86ajjmh24",
+  "name": "Criação de disco na criação da instancia",
+  "status": "revisando",
+  "assignees": [
+   "Tiago Gomes de Oliveira",
+   "Gabriel Sezana"
+  ],
+  "url": "https://app.clickup.com/t/86ajjmh24"
+ },
+ {
+  "id": "86ahqbx3f",
+  "name": "Billing por dominio dentro do BCP",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahqbx3f"
+ },
+ {
+  "id": "86ahqbwyc",
+  "name": "Billing no BCP API",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahqbwyc"
+ },
+ {
+  "id": "86ahpyjdy",
+  "name": "Definição dos Modulos do BCP (Ex; BCOS, PaaS, Cost Management, Observabilidade)",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahpyjdy"
+ },
+ {
+  "id": "86ahpy2tp",
+  "name": "Definição Sobre Aviso",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahpy2tp"
+ },
+ {
+  "id": "86ahpb6x2",
+  "name": "Precificação do Storware",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahpb6x2"
+ },
+ {
+  "id": "86ahhuc3n",
+  "name": "Ajustar na calculadora o Serviços Gerenciados para que possamos faturar o cliente por % e não mais por Componentes",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahhuc3n"
+ },
+ {
+  "id": "86ahavjx2",
+  "name": "Criação de uma nova Aba na Calculadora para Ambientes Grandes > 50 VM",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ahavjx2"
+ },
+ {
+  "id": "86ah9yj6c",
+  "name": "Faltou o item de monitoramento de disco no BCP (observ)",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ah9yj6c"
+ },
+ {
+  "id": "86af7fpaq",
+  "name": "Solução de Backup Binario Cloud (VBR sim ou Não)",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86af7fpaq"
+ },
+ {
+  "id": "86af7f81p",
+  "name": "Calculadora Database Instance (MySql e PostgreSQL)",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86af7f81p"
+ },
+ {
+  "id": "86af4m845",
+  "name": "Remover Syspass do BCP",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86af4m845"
+ },
+ {
+  "id": "86af2w3xw",
+  "name": "Nova demanda - N8N em PasS",
+  "status": "revisando",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86af2w3xw"
+ },
+ {
+  "id": "86aewz6dm",
+  "name": "Falha - Gestão de billing em tempo real",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86aewz6dm"
+ },
+ {
+  "id": "86aea8y0t",
+  "name": "Implantar - Backup via Storware",
+  "status": "fechado",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86aea8y0t"
+ }
 ]
