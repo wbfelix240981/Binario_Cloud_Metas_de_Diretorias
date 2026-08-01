@@ -2,9 +2,10 @@ name: Sincronizar com ClickUp
 
 on:
   schedule:
-    # Horários em UTC (Brasília = UTC-3): 06h, 12h e 20h de Brasília
+    # Horários em UTC (Brasília = UTC-3): 06h, 12h, 15h (teste) e 20h de Brasília
     - cron: '0 9 * * *'
     - cron: '0 15 * * *'
+    - cron: '0 18 * * *'
     - cron: '0 23 * * *'
   workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
 
