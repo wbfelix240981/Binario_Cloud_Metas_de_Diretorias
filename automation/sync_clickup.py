@@ -234,6 +234,14 @@ def main():
     else:
         print("  -> sem mudanças")
 
+    # Grava o horário real desta checagem (independente de ter mudado algo),
+    # para o site mostrar "Atualizado em" fiel à última sincronização de verdade.
+    import datetime
+    now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    with open(os.path.join(DIR, "last_sync.json"), "w", encoding="utf-8") as f:
+        json.dump({"last_sync_utc": now_iso}, f)
+        f.write("\n")
+
     gh_output = os.environ.get("GITHUB_OUTPUT")
     if gh_output:
         with open(gh_output, "a") as f:
