@@ -40,5 +40,5 @@ jobs:
           git config user.name "ClickUp Sync Bot"
           git config user.email "actions@github.com"
           git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json
-          git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp [skip ci]"
+          git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp"
           git push
