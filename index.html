@@ -2618,6 +2618,7 @@ function selectTab(tab){
   document.getElementById('footerSourceLink').textContent = project.sourceLabel;
   document.getElementById('footerSourceLink').href = project.sourceUrl;
   document.getElementById('searchInput').placeholder = isBoard ? 'Buscar item do roadmap…' : 'Buscar meta ou fase…';
+  document.querySelector('.controls .search').style.display = isBoard ? '' : 'none';
   document.getElementById('metasSection').style.display = isBoard ? 'none' : '';
   document.getElementById('roadmapSection').style.display = isBoard ? '' : 'none';
   buildChips();
