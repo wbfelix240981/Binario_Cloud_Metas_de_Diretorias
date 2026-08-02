@@ -46,7 +46,7 @@
  {
   "num": 4,
   "id": "86ajra8yu",
-  "status": "backlog",
+  "status": "in progress",
   "due": 1798700400000,
   "name": "Garantir disponibilidade e SLA de atendimento ao cliente",
   "short": "Disponibilidade e atendimento ao cliente",
@@ -56,7 +56,146 @@
    "eficiência operacional"
   ],
   "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
-  "fases": []
+  "fases": [
+   {
+    "n": "99,983% de disponibilidade mes a mes",
+    "status": "in progress",
+    "assignee": "Rafael Alves",
+    "due": null,
+    "id": "86ajutt1m",
+    "ativ": [
+     {
+      "n": "Janeiro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Fevereiro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Março",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Abril",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Maio",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Junho",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Julho",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Agosto",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Setembro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Outubro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Novembro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Dezembro",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "SLA acima de 95% de atendimento ao cliente mes a mes",
+    "status": "in progress",
+    "assignee": "Rafael Alves",
+    "due": null,
+    "id": "86ajutt23",
+    "ativ": [
+     {
+      "n": "Janeiro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Fevereiro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Março",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Abril",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Maio",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Junho",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Julho",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Agosto",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Setembro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Outubro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Novembro",
+      "status": "backlog",
+      "due": null
+     },
+     {
+      "n": "Dezembro",
+      "status": "backlog",
+      "due": null
+     }
+    ]
+   }
+  ]
  },
  {
   "num": 5,
