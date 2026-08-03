@@ -582,10 +582,16 @@ let activeTab = 'rafael';
 let activeStatus = 'all';
 let detailStatusFilter = 'all';
 
+function faseProgress(f){
+  if(f.status==='shipped') return 1;
+  if(!f.ativ || !f.ativ.length) return STATUS_WEIGHT[f.status] || 0;
+  const shipped = f.ativ.filter(a=>a.status==='shipped').length;
+  return shipped/f.ativ.length;
+}
 function metaProgress(m){
   if(m.status==='shipped') return 1;
   if(!m.fases.length) return STATUS_WEIGHT[m.status] || 0;
-  const w = m.fases.reduce((s,f)=>s+STATUS_WEIGHT[f.status],0);
+  const w = m.fases.reduce((s,f)=>s+faseProgress(f),0);
   return w/m.fases.length;
 }
 function metaOverdueCount(m){
