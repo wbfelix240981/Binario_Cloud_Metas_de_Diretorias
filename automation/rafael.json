@@ -41,7 +41,141 @@
    "sustentando o crescimento do negócio"
   ],
   "detail": "Meta executiva de consolidação da plataforma de observabilidade da nova geração de cloud (BCloud 3.0).",
-  "fases": []
+  "fases": [
+   {
+    "n": "Fase 1 - Início do Projeto",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1770015600000,
+    "id": "86ajuz7qk",
+    "ativ": [
+     {
+      "n": "Data de Kickoff",
+      "status": "shipped",
+      "due": 1768460400000
+     },
+     {
+      "n": "Avaliação tecnica",
+      "status": "shipped",
+      "due": 1770015600000
+     }
+    ]
+   },
+   {
+    "n": "Fase 2 - Onboarding da Equipe do Projeto",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1770015600000,
+    "id": "86ajuz7qq",
+    "ativ": [
+     {
+      "n": "Criação da SQuad",
+      "status": "shipped",
+      "due": 1770015600000
+     },
+     {
+      "n": "Definição de Papeis e responsabilidade",
+      "status": "shipped",
+      "due": 1770015600000
+     }
+    ]
+   },
+   {
+    "n": "Fase 3 - Planejamento",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": null,
+    "id": "86ajuz7ug",
+    "ativ": [
+     {
+      "n": "Mapear Serviços do OpenStack ",
+      "status": "shipped",
+      "due": 1771657200000
+     },
+     {
+      "n": "Definir plano de discovery",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenho da arquitetura As Is",
+      "status": "shipped",
+      "due": 1770274800000
+     },
+     {
+      "n": "Desenho da arquitetura ToBe",
+      "status": "shipped",
+      "due": 1770274800000
+     },
+     {
+      "n": "Definir estratégia de integração e/ou migração",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Inventario de cliente Gerenciados",
+      "status": "shipped",
+      "due": 1782198000000
+     }
+    ]
+   },
+   {
+    "n": "Fase 4 - Preparação",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": null,
+    "id": "86ajv32c2",
+    "ativ": [
+     {
+      "n": "Definir visão de cockpit",
+      "status": "shipped",
+      "due": 1774940400000
+     },
+     {
+      "n": "Instalar e configurar  Prometheus + Grafana",
+      "status": "shipped",
+      "due": 1773471600000
+     }
+    ]
+   },
+   {
+    "n": "Fase 5 - Execução",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": null,
+    "id": "86ajuz7qm",
+    "ativ": [
+     {
+      "n": "Configurar integrações e Cockipit",
+      "status": "shipped",
+      "due": 1780470000000
+     },
+     {
+      "n": "Painel de visualização do monitoramento - MVP",
+      "status": "shipped",
+      "due": 1783321200000
+     },
+     {
+      "n": "Configuração do Novo Firewall",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Configuração - Alarmística",
+      "status": "shipped",
+      "due": null
+     }
+    ]
+   },
+   {
+    "n": "Fase 6 - Encerramento",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1782802800000,
+    "id": "86ajuz7qp",
+    "ativ": []
+   }
+  ]
  },
  {
   "num": 4,

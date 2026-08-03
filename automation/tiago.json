@@ -100,12 +100,12 @@
      },
      {
       "n": "Definir precificação",
-      "status": "in progress",
+      "status": "shipped",
       "due": null
      },
      {
       "n": "Subir SKU na Calculadora",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      },
      {
@@ -250,37 +250,37 @@
     "ativ": [
      {
       "n": "Criação de esteira do módulo",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      },
      {
       "n": "Testes e validações do produto",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      },
      {
       "n": "Geração de documentação da operação",
       "status": "backlog",
-      "due": null
+      "due": 1785913200000
      },
      {
       "n": "Geração de FAQ para o cliente",
       "status": "backlog",
-      "due": null
+      "due": 1785913200000
      },
      {
       "n": "Passagem para produção",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      },
      {
       "n": "Apresentação para a diretoria da Empresa",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      },
      {
       "n": "Implementação do módulo no BC-BOX",
-      "status": "backlog",
+      "status": "shipped",
       "due": null
      }
     ]
@@ -609,17 +609,17 @@
      {
       "n": "Geração de alertas para os dados coletados no painel",
       "status": "in progress",
-      "due": 1784876400000
+      "due": 1786086000000
      },
      {
       "n": "Criação/Adequação da tela de Alertas",
       "status": "in progress",
-      "due": 1784876400000
+      "due": 1786086000000
      },
      {
       "n": "Recomendações de utilização por IA",
       "status": "backlog",
-      "due": 1786086000000
+      "due": 1787900400000
      }
     ]
    },
