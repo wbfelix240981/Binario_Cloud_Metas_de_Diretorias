@@ -143,6 +143,9 @@ def sync_metas_file(json_path, list_id, extra_allowed_names=None):
             print(f"AVISO: meta '{meta['short']}' não encontrada no ClickUp (mantendo dado anterior)", file=sys.stderr)
             continue
 
+        # Captura ANTES de qualquer atualização, pra não perder o vínculo se o nome mudar nesta mesma rodada.
+        is_forced_simple = meta["short"] in FORCE_SIMPLE_100
+
         if meta.get("id") != live["id"]:
             meta["id"] = live["id"]
             changed = True
@@ -151,7 +154,12 @@ def sync_metas_file(json_path, list_id, extra_allowed_names=None):
         new_due = to_ms(live.get("due_date"))
         new_assignee = assignee_name(live)
         new_tags = [tag["name"] for tag in live.get("tags", [])]
+        new_short = live["name"]
 
+        if meta.get("short") != new_short:
+            print(f"NOME MUDOU: '{meta['short']}' -> '{new_short}'", file=sys.stderr)
+            meta["short"] = new_short
+            changed = True
         if meta.get("status") != new_status:
             meta["status"] = new_status
             changed = True
@@ -166,7 +174,7 @@ def sync_metas_file(json_path, list_id, extra_allowed_names=None):
             changed = True
 
         # Regra de negócio: metas forçadas a 100%/sem fases (ex.: ClaudIA no Suporte)
-        if meta["short"] in FORCE_SIMPLE_100:
+        if is_forced_simple:
             if meta.get("status") != "shipped" or meta.get("fases") != []:
                 meta["status"] = "shipped"
                 meta["fases"] = []

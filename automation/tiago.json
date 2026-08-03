@@ -5,7 +5,7 @@
   "status": "in progress",
   "due": 1780210800000,
   "name": "Validação e entrada da solução de backup (BC-Backup) em produção",
-  "short": "Nova solução de Backup — BC-Backup",
+  "short": "Nova solução de Backup - BC-Backup",
   "assignee": "Nathan de Moraes Valim Francisco",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -133,7 +133,7 @@
   "status": "in progress",
   "due": 1777532400000,
   "name": "Segurança e evolução do BCP",
-  "short": "BCP — Segurança",
+  "short": "BCP - Segurança",
   "assignee": "Guilherme Lopes",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -293,7 +293,7 @@
   "status": "in progress",
   "due": 1788159600000,
   "name": "Módulo Financeiro do BCP",
-  "short": "BCP — Módulo Financeiro",
+  "short": "BCP - Modulo Financeiro",
   "assignee": "Guilherme Lopes",
   "tags": [
    "evolução da plataforma de nuvem"
@@ -523,7 +523,7 @@
   "status": "in progress",
   "due": 1788159600000,
   "name": "BCOS / Observabilidade como módulo do BCP",
-  "short": "BCP — Módulo Observabilidade",
+  "short": "BCP - Modulo Observabilidade",
   "assignee": "Nathan de Moraes Valim Francisco",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -744,7 +744,7 @@
   "status": "in planning",
   "due": 1798700400000,
   "name": "Evolução de UX do BCP",
-  "short": "BCP — UX",
+  "short": "BCP - UX",
   "assignee": "Guilherme Lopes",
   "tags": [
    "evolução da plataforma de nuvem"
