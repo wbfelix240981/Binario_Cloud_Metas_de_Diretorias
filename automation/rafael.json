@@ -195,68 +195,68 @@
     "n": "99,982% de disponibilidade mes a mes",
     "status": "in progress",
     "assignee": "Rafael Alves",
-    "due": null,
+    "due": 1798700400000,
     "id": "86ajutt1m",
     "ativ": [
      {
       "n": "Janeiro",
       "status": "shipped",
-      "due": null
+      "due": 1769842800000
      },
      {
       "n": "Fevereiro",
       "status": "shipped",
-      "due": null
+      "due": 1772262000000
      },
      {
       "n": "Março",
       "status": "shipped",
-      "due": null
+      "due": 1774940400000
      },
      {
       "n": "Abril",
       "status": "shipped",
-      "due": null
+      "due": 1777532400000
      },
      {
       "n": "Maio",
       "status": "shipped",
-      "due": null
+      "due": 1780210800000
      },
      {
       "n": "Junho",
       "status": "shipped",
-      "due": null
+      "due": 1782802800000
      },
      {
       "n": "Julho",
       "status": "shipped",
-      "due": null
+      "due": 1785481200000
      },
      {
       "n": "Agosto",
-      "status": "backlog",
-      "due": null
+      "status": "in progress",
+      "due": 1788159600000
      },
      {
       "n": "Setembro",
       "status": "backlog",
-      "due": null
+      "due": 1790751600000
      },
      {
       "n": "Outubro",
       "status": "backlog",
-      "due": null
+      "due": 1793430000000
      },
      {
       "n": "Novembro",
       "status": "backlog",
-      "due": null
+      "due": 1796022000000
      },
      {
       "n": "Dezembro",
       "status": "backlog",
-      "due": null
+      "due": 1798700400000
      }
     ]
    },
@@ -264,68 +264,68 @@
     "n": "SLA acima de 95% de atendimento ao cliente mes a mes",
     "status": "in progress",
     "assignee": "Rafael Alves",
-    "due": null,
+    "due": 1798700400000,
     "id": "86ajutt23",
     "ativ": [
      {
       "n": "Janeiro",
       "status": "shipped",
-      "due": null
+      "due": 1769842800000
      },
      {
       "n": "Fevereiro",
       "status": "shipped",
-      "due": null
+      "due": 1772262000000
      },
      {
       "n": "Março",
       "status": "shipped",
-      "due": null
+      "due": 1774940400000
      },
      {
       "n": "Abril",
       "status": "shipped",
-      "due": null
+      "due": 1777532400000
      },
      {
       "n": "Maio",
       "status": "shipped",
-      "due": null
+      "due": 1780210800000
      },
      {
       "n": "Junho",
       "status": "shipped",
-      "due": null
+      "due": 1782802800000
      },
      {
       "n": "Julho",
       "status": "shipped",
-      "due": null
+      "due": 1785481200000
      },
      {
       "n": "Agosto",
-      "status": "backlog",
-      "due": null
+      "status": "in progress",
+      "due": 1788159600000
      },
      {
       "n": "Setembro",
       "status": "backlog",
-      "due": null
+      "due": 1790751600000
      },
      {
       "n": "Outubro",
       "status": "backlog",
-      "due": null
+      "due": 1793430000000
      },
      {
       "n": "Novembro",
       "status": "backlog",
-      "due": null
+      "due": 1796022000000
      },
      {
       "n": "Dezembro",
       "status": "backlog",
-      "due": null
+      "due": 1798700400000
      }
     ]
    }
