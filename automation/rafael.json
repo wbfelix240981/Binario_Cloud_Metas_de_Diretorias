@@ -192,7 +192,7 @@
   "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
   "fases": [
    {
-    "n": "99,983% de disponibilidade mes a mes",
+    "n": "99,982% de disponibilidade mes a mes",
     "status": "in progress",
     "assignee": "Rafael Alves",
     "due": null,
