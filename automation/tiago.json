@@ -291,7 +291,7 @@
   "num": 3,
   "id": "86afcphue",
   "status": "in progress",
-  "due": 1788159600000,
+  "due": 1796022000000,
   "name": "Módulo Financeiro do BCP",
   "short": "BCP - Modulo Financeiro",
   "assignee": "Guilherme Lopes",
@@ -521,7 +521,7 @@
   "num": 4,
   "id": "86afctd22",
   "status": "in progress",
-  "due": 1788159600000,
+  "due": 1790751600000,
   "name": "BCOS / Observabilidade como módulo do BCP",
   "short": "BCP - Modulo Observabilidade",
   "assignee": "Nathan de Moraes Valim Francisco",
@@ -593,7 +593,7 @@
     "n": "FASE03 - Monitoramento de VM no painel cliente (BCOS)",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1784876400000,
+    "due": 1787900400000,
     "id": "86afctdgt",
     "ativ": [
      {
@@ -745,7 +745,7 @@
   "due": 1798700400000,
   "name": "Evolução de UX do BCP",
   "short": "BCP - UX",
-  "assignee": "Guilherme Lopes",
+  "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
   "tags": [
    "evolução da plataforma de nuvem"
   ],
