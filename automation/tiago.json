@@ -741,10 +741,10 @@
  {
   "num": 5,
   "id": "86afcphwr",
-  "status": "in planning",
-  "due": 1798700400000,
+  "status": "in progress",
+  "due": 1796022000000,
   "name": "Evolução de UX do BCP",
-  "short": "BCP - UX",
+  "short": "BCP - UX (Reformulação identidade visual)",
   "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
   "tags": [
    "evolução da plataforma de nuvem"
@@ -760,7 +760,7 @@
     "ativ": []
    },
    {
-    "n": "FASE02 - Product Tour (Tour BCOS, Tooltip)",
+    "n": "FASE02 - Product Tour (Tour BCP, Tooltip)",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -768,7 +768,7 @@
     "ativ": []
    },
    {
-    "n": "FASE03 - Newsletter - (Home do BCOS)",
+    "n": "FASE03 - Newsletter - (Home do BCP)",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -776,7 +776,15 @@
     "ativ": []
    },
    {
-    "n": "FASE04 - Mapeamento das API's do console atual",
+    "n": "FASE04-Analytics para audiência de plataforma",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajvzkhd",
+    "ativ": []
+   },
+   {
+    "n": "FASE05 - Mapeamento das API's do console atual",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -784,7 +792,7 @@
     "ativ": []
    },
    {
-    "n": "FASE05 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
+    "n": "FASE06 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -792,7 +800,7 @@
     "ativ": []
    },
    {
-    "n": "FASE06 - Identidade visual para o BCP CLI",
+    "n": "FASE07 - Identidade visual para o BCP CLI",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -800,7 +808,7 @@
     "ativ": []
    },
    {
-    "n": "FASE07 - Expor visões por API (Ex: Consumo)",
+    "n": "FASE08 - Expor visões por API (Ex: Consumo)",
     "status": "backlog",
     "assignee": "—",
     "due": null,
@@ -808,7 +816,7 @@
     "ativ": []
    },
    {
-    "n": "FASE08 - Esteira QA",
+    "n": "FASE09 - Esteira QA",
     "status": "backlog",
     "assignee": "—",
     "due": null,
