@@ -1,5 +1,14 @@
 [
  {
+  "id": "86ajvxt1p",
+  "name": "Está correto esse valor do Win 11 - R$418,00 vCPUs/mês vs Win Server - R$64,68 vCPUs/mês",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajvxt1p"
+ },
+ {
   "id": "86ajtjqck",
   "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
   "status": "em andamento",
