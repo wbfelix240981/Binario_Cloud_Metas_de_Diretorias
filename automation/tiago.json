@@ -273,7 +273,7 @@
     "n": "FASE06 - Esteira QA",
     "status": "in review",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1785999600000,
     "id": "86ag4t18m",
     "ativ": [
      {
@@ -290,13 +290,13 @@
      },
      {
       "n": "Geração de documentação da operação",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1785913200000,
       "id": "86ag4t2v4"
      },
      {
       "n": "Geração de FAQ para o cliente",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1785913200000,
       "id": "86ag4t2vu"
      },
@@ -667,7 +667,7 @@
     ]
    },
    {
-    "n": "FASE03 - Monitoramento de VM no painel cliente (BCOS)",
+    "n": "FASE03 - Monitoramento de VM no painel cliente (BCP)",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1787900400000,
