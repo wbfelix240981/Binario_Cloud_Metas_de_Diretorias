@@ -986,5 +986,57 @@
     ]
    }
   ]
+ },
+ {
+  "num": 6,
+  "id": "86ajvr7d5",
+  "status": "in progress",
+  "due": 1785567600000,
+  "name": "Estruturar o Marketplace de IA como catálogo de soluções inteligentes integradas ao BCP",
+  "short": "Marketplace IA",
+  "assignee": "Tiago Gomes de Oliveira",
+  "tags": [],
+  "detail": "Objetivo: criar um marketplace dentro do BCP com soluções de Inteligência Artificial prontas para uso pelos clientes.\nStatus: em andamento, ainda sem fases detalhadas cadastradas no ClickUp.",
+  "fases": [],
+  "excludeFromIndex": true
+ },
+ {
+  "num": 7,
+  "id": "86ajvr6zn",
+  "status": "in progress",
+  "due": 1787295600000,
+  "name": "Estruturar o BCP-Multicloud para gerenciamento centralizado de ambientes de nuvem pública, privada e híbrida",
+  "short": "BCP - Módulo Multicloud",
+  "assignee": "Tiago Gomes de Oliveira / Guilherme Lopes",
+  "tags": [],
+  "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de conectar, inventariar, monitorar e administrar recursos distribuídos entre diferentes provedores de nuvem (AWS, Azure e BCOS/OpenStack no escopo inicial), com experiência unificada de operação.\nEntregáveis: cadastro de provedores, descoberta automática de recursos, inventário consolidado, painel único de administração, pesquisa global de recursos.\nCritério de aceite: módulo disponível no BCP com AWS, Azure e BCOS integrados, recursos sincronizados automaticamente e MVP validado por Produto, Engenharia e Operações.\nPrazo final: 21 de agosto de 2026.\nRisco principal: transformar o módulo em uma plataforma completa de orquestração multicloud antes de validar a camada básica de inventário e sincronização.",
+  "fases": [],
+  "excludeFromIndex": true
+ },
+ {
+  "num": 8,
+  "id": "86ajw0v6q",
+  "status": "in planning",
+  "due": 1792479600000,
+  "name": "Estruturar o SAAS - BC Datalake",
+  "short": "SAAS - BC Datalake",
+  "assignee": "Tiago Gomes de Oliveira",
+  "tags": [],
+  "detail": "Objetivo: estruturar uma solução de Datalake como serviço (SaaS) dentro do portfólio do BCP.\nStatus: em planejamento, ainda sem fases detalhadas cadastradas no ClickUp.",
+  "fases": [],
+  "excludeFromIndex": true
+ },
+ {
+  "num": 9,
+  "id": "86ajvr811",
+  "status": "in planning",
+  "due": 1797318000000,
+  "name": "Estruturar o BC-Migration para descoberta, planejamento e migração assistida de workloads para o BCP",
+  "short": "BCP - Migration",
+  "assignee": "Tiago Gomes de Oliveira",
+  "tags": [],
+  "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de identificar ambientes de origem, inventariar workloads, avaliar compatibilidade e executar migrações assistidas para a plataforma BCP (escopo inicial: VMware, on-premises, outros OpenStack, BCOS 2.0, KVM, Red Hat e Canonical).\nEntregáveis: painel do BC-Migration no BCP, descoberta automática de infraestrutura, classificação de workloads por complexidade, avaliação de compatibilidade, geração de plano de migração por ondas, fluxo de migração assistida.\nCritério de aceite: módulo acessível no BCP, descoberta automática funcionando, pelo menos uma VM migrada com sucesso em ambiente controlado, documentação publicada e MVP validado por Produto, Engenharia, SRE e Operações.\nPrazo final: 15 de dezembro de 2026.\nRisco principal: tentar transformar o módulo em uma plataforma universal de migração antes de validar o fluxo mínimo de descoberta, inventário, planejamento e execução assistida.",
+  "fases": [],
+  "excludeFromIndex": true
  }
 ]
