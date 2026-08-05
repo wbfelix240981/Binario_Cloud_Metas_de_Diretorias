@@ -30,7 +30,7 @@
  {
   "id": "86ajtjew3",
   "name": "Bug de permissão, tenho acesso ao Admin, porém pela console não consigo criar projeto no dominio comercial.binario.cloud",
-  "status": "aberto",
+  "status": "fechado",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -59,7 +59,8 @@
   "name": "Melhorar o permissionamento do S3 via console BCP, clientes questionam sobre granularidade",
   "status": "aberto",
   "assignees": [
-   "Tiago Gomes de Oliveira"
+   "Tiago Gomes de Oliveira",
+   "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajtgv7h"
  },

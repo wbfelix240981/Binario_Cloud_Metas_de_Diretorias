@@ -404,7 +404,7 @@
   "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
   "fases": [
    {
-    "n": "Meta 99,982% de disponibilidade ano  - Disponibilidade média (jan–jun): 99,983%",
+    "n": "Meta 99,982% de disponibilidade ano  - Disponibilidade média (jan–jul): 99,984%",
     "status": "in progress",
     "assignee": "Rafael Alves",
     "due": 1798700400000,
@@ -447,8 +447,8 @@
       "id": "86ajutt81"
      },
      {
-      "n": "Julho",
-      "status": "in review",
+      "n": "Julho - Medição: 99,993%",
+      "status": "shipped",
       "due": 1785481200000,
       "id": "86ajutt87"
      },
@@ -528,8 +528,8 @@
       "id": "86ajutt93"
      },
      {
-      "n": "Julho",
-      "status": "in review",
+      "n": "Julho - Medição: 95%",
+      "status": "shipped",
       "due": 1785481200000,
       "id": "86ajutt94"
      },
