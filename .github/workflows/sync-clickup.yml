@@ -2,8 +2,10 @@ name: Sincronizar com ClickUp
 
 on:
   schedule:
-    # TEMPORÁRIO: de hora em hora, até a automação externa (VM/cron-job.org) ficar pronta
-    - cron: '0 * * * *'
+    # ATENÇÃO: 10 em 10 minutos — risco real de estourar o limite gratuito
+    # de minutos do GitHub Actions (~2.000 min/mês). Pedido explícito do usuário,
+    # ciente do risco (ver conversa de 05/08/2026).
+    - cron: '*/10 * * * *'
   workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
 
 permissions:
