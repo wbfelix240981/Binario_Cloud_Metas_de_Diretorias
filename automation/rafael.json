@@ -52,7 +52,7 @@
    {
     "n": "Fase 3 - Planejamento",
     "status": "shipped",
-    "assignee": "Rafael Alves / Diogo Lerison",
+    "assignee": "Diogo Lerison / Rafael Alves",
     "due": 1774249200000,
     "id": "86af4ah39",
     "ativ": [
@@ -103,7 +103,7 @@
    {
     "n": "Fase 4 - Preparação",
     "status": "shipped",
-    "assignee": "Rafael Alves / Diogo Lerison",
+    "assignee": "Diogo Lerison / Rafael Alves",
     "due": 1777532400000,
     "id": "86af4ahga",
     "ativ": [
@@ -136,7 +136,7 @@
    {
     "n": "Fase 5 - Execução (MVP)",
     "status": "shipped",
-    "assignee": "Rafael Alves / Diogo Lerison",
+    "assignee": "Diogo Lerison / Rafael Alves",
     "due": 1778482800000,
     "id": "86af4ah87",
     "ativ": [
@@ -248,12 +248,14 @@
      {
       "n": "Data de Kickoff",
       "status": "shipped",
-      "due": 1768460400000
+      "due": 1768460400000,
+      "id": "86ajuz7rg"
      },
      {
       "n": "Avaliação tecnica",
       "status": "shipped",
-      "due": 1770015600000
+      "due": 1770015600000,
+      "id": "86ajuz7rh"
      }
     ]
    },
@@ -267,12 +269,14 @@
      {
       "n": "Criação da SQuad",
       "status": "shipped",
-      "due": 1770015600000
+      "due": 1770015600000,
+      "id": "86ajuz7rc"
      },
      {
       "n": "Definição de Papeis e responsabilidade",
       "status": "shipped",
-      "due": 1770015600000
+      "due": 1770015600000,
+      "id": "86ajuz7rd"
      }
     ]
    },
@@ -286,32 +290,38 @@
      {
       "n": "Mapear Serviços do OpenStack ",
       "status": "shipped",
-      "due": 1771657200000
+      "due": 1771657200000,
+      "id": "86ajuz7x4"
      },
      {
       "n": "Definir plano de discovery",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ajuz7x5"
      },
      {
       "n": "Desenho da arquitetura As Is",
       "status": "shipped",
-      "due": 1770274800000
+      "due": 1770274800000,
+      "id": "86ajuz7y5"
      },
      {
       "n": "Desenho da arquitetura ToBe",
       "status": "shipped",
-      "due": 1770274800000
+      "due": 1770274800000,
+      "id": "86ajuz7yd"
      },
      {
       "n": "Definir estratégia de integração e/ou migração",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ajuz7zv"
      },
      {
       "n": "Inventario de cliente Gerenciados",
       "status": "shipped",
-      "due": 1782198000000
+      "due": 1782198000000,
+      "id": "86ajuz801"
      }
     ]
    },
@@ -325,12 +335,14 @@
      {
       "n": "Definir visão de cockpit",
       "status": "shipped",
-      "due": 1774940400000
+      "due": 1774940400000,
+      "id": "86ajuz7vm"
      },
      {
       "n": "Instalar e configurar  Prometheus + Grafana",
       "status": "shipped",
-      "due": 1773471600000
+      "due": 1773471600000,
+      "id": "86ajuz7ty"
      }
     ]
    },
@@ -344,22 +356,26 @@
      {
       "n": "Configurar integrações e Cockipit",
       "status": "shipped",
-      "due": 1780470000000
+      "due": 1780470000000,
+      "id": "86ajuz7rf"
      },
      {
       "n": "Painel de visualização do monitoramento - MVP",
       "status": "shipped",
-      "due": 1783321200000
+      "due": 1783321200000,
+      "id": "86ajuz7vh"
      },
      {
       "n": "Configuração do Novo Firewall",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ajuz7x3"
      },
      {
       "n": "Configuração - Alarmística",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ajuz7y2"
      }
     ]
    },
@@ -397,62 +413,74 @@
      {
       "n": "Janeiro",
       "status": "shipped",
-      "due": 1769842800000
+      "due": 1769842800000,
+      "id": "86ajutt7f"
      },
      {
       "n": "Fevereiro",
       "status": "shipped",
-      "due": 1772262000000
+      "due": 1772262000000,
+      "id": "86ajutt7h"
      },
      {
       "n": "Março",
       "status": "shipped",
-      "due": 1774940400000
+      "due": 1774940400000,
+      "id": "86ajutt7m"
      },
      {
       "n": "Abril",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86ajutt7q"
      },
      {
       "n": "Maio",
       "status": "shipped",
-      "due": 1780210800000
+      "due": 1780210800000,
+      "id": "86ajutt7w"
      },
      {
       "n": "Junho",
       "status": "shipped",
-      "due": 1782802800000
+      "due": 1782802800000,
+      "id": "86ajutt81"
      },
      {
       "n": "Julho",
       "status": "shipped",
-      "due": 1785481200000
+      "due": 1785481200000,
+      "id": "86ajutt87"
      },
      {
       "n": "Agosto",
       "status": "in progress",
-      "due": 1788159600000
+      "due": 1788159600000,
+      "id": "86ajutt8c"
      },
      {
       "n": "Setembro",
       "status": "backlog",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86ajutt8d"
      },
      {
       "n": "Outubro",
       "status": "backlog",
-      "due": 1793430000000
+      "due": 1793430000000,
+      "id": "86ajutt8e"
      },
      {
       "n": "Novembro",
       "status": "backlog",
-      "due": 1796022000000
+      "due": 1796022000000,
+      "id": "86ajutt8f"
      },
      {
       "n": "Dezembro",
       "status": "backlog",
-      "due": 1798700400000
+      "due": 1798700400000,
+      "id": "86ajutt8g"
      }
     ]
    },
@@ -466,62 +494,74 @@
      {
       "n": "Janeiro",
       "status": "shipped",
-      "due": 1769842800000
+      "due": 1769842800000,
+      "id": "86ajutt8w"
      },
      {
       "n": "Fevereiro",
       "status": "shipped",
-      "due": 1772262000000
+      "due": 1772262000000,
+      "id": "86ajutt8y"
      },
      {
       "n": "Março",
       "status": "shipped",
-      "due": 1774940400000
+      "due": 1774940400000,
+      "id": "86ajutt90"
      },
      {
       "n": "Abril",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86ajutt91"
      },
      {
       "n": "Maio",
       "status": "shipped",
-      "due": 1780210800000
+      "due": 1780210800000,
+      "id": "86ajutt92"
      },
      {
       "n": "Junho",
       "status": "shipped",
-      "due": 1782802800000
+      "due": 1782802800000,
+      "id": "86ajutt93"
      },
      {
       "n": "Julho",
       "status": "shipped",
-      "due": 1785481200000
+      "due": 1785481200000,
+      "id": "86ajutt94"
      },
      {
       "n": "Agosto",
       "status": "in progress",
-      "due": 1788159600000
+      "due": 1788159600000,
+      "id": "86ajutt97"
      },
      {
       "n": "Setembro",
       "status": "backlog",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86ajutt98"
      },
      {
       "n": "Outubro",
       "status": "backlog",
-      "due": 1793430000000
+      "due": 1793430000000,
+      "id": "86ajutt99"
      },
      {
       "n": "Novembro",
       "status": "backlog",
-      "due": 1796022000000
+      "due": 1796022000000,
+      "id": "86ajutt9b"
      },
      {
       "n": "Dezembro",
       "status": "backlog",
-      "due": 1798700400000
+      "due": 1798700400000,
+      "id": "86ajutt9c"
      }
     ]
    }
@@ -551,37 +591,44 @@
      {
       "n": "Configuração inicial da vm do bc-box",
       "status": "shipped",
-      "due": 1772434800000
+      "due": 1772434800000,
+      "id": "86agq9cpk"
      },
      {
       "n": "Configuração do yaml central",
       "status": "shipped",
-      "due": 1772607600000
+      "due": 1772607600000,
+      "id": "86agq9ddy"
      },
      {
       "n": "Rodar préchecks",
       "status": "shipped",
-      "due": 1772607600000
+      "due": 1772607600000,
+      "id": "86agq9dxj"
      },
      {
       "n": "instalação da primeira versão",
       "status": "shipped",
-      "due": 1772780400000
+      "due": 1772780400000,
+      "id": "86agq9e8h"
      },
      {
       "n": "ajustes do yaml",
       "status": "shipped",
-      "due": 1773385200000
+      "due": 1773385200000,
+      "id": "86agq9edx"
      },
      {
       "n": "aplicação do reconfigure",
       "status": "shipped",
-      "due": 1773385200000
+      "due": 1773385200000,
+      "id": "86agq9ekr"
      },
      {
       "n": "ajustes manuais",
       "status": "shipped",
-      "due": 1773990000000
+      "due": 1773990000000,
+      "id": "86agq9er3"
      }
     ]
    },
@@ -595,32 +642,38 @@
      {
       "n": "Host de deploy local",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqbzzr"
      },
      {
       "n": "A senha de acesso criptografada",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqc005"
      },
      {
       "n": "Alterar skyline de proxy para console",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqc00t"
      },
      {
       "n": "O Skyline customizado com rota nginx para cada serviço",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqc010"
      },
      {
       "n": "Serviços específicos para adicionar (Magnum, Trove)",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqc01d"
      },
      {
       "n": "Tunnings do SO",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqc022"
      }
     ]
    },
@@ -634,22 +687,26 @@
      {
       "n": "Instalar monitors",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86aha6ry4"
      },
      {
       "n": "Instalar storage nodes",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86aha6t0y"
      },
      {
       "n": "configurar osd's",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86aha6t5k"
      },
      {
       "n": "configurar pool's",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86aha6t87"
      }
     ]
    },
@@ -663,32 +720,38 @@
      {
       "n": "Definição do modelo a ser instalado",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agqcff6"
      },
      {
       "n": "Pre configuração dos servidores",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86agqcgne"
      },
      {
       "n": "Automacao dos comandos de instalacao",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86agqch17"
      },
      {
       "n": "Integracao com as APIs Openstack",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86agqcj1r"
      },
      {
       "n": "Integracao com Ceph Openstack",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86agqcjhq"
      },
      {
       "n": "Integracao com repositorio",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86agqcjt9"
      }
     ]
    },
@@ -710,7 +773,8 @@
      {
       "n": "Personalização dos logos",
       "status": "backlog",
-      "due": null
+      "due": null,
+      "id": "86ag5uvvz"
      }
     ]
    }
@@ -742,12 +806,14 @@
      {
       "n": "Elaboração do Diagnostico Tecnico - Ceph",
       "status": "shipped",
-      "due": 1768806000000
+      "due": 1768806000000,
+      "id": "86afzdfap"
      },
      {
       "n": "Montagem do plano de Migração",
       "status": "shipped",
-      "due": 1770361200000
+      "due": 1770361200000,
+      "id": "86afzdegz"
      }
     ]
    },
@@ -761,17 +827,20 @@
      {
       "n": "Garantir a chegada do discos adquiridos em 2025",
       "status": "shipped",
-      "due": 1780642800000
+      "due": 1780642800000,
+      "id": "86afzdggw"
      },
      {
       "n": "Fase 3",
       "status": "shipped",
-      "due": 1775286000000
+      "due": 1775286000000,
+      "id": "86afzdmk8"
      },
      {
       "n": "Fase 4",
       "status": "shipped",
-      "due": 1773212400000
+      "due": 1773212400000,
+      "id": "86afzdnuv"
      }
     ]
    },
@@ -785,17 +854,20 @@
      {
       "n": "Migrar do EC para replicated com controle",
       "status": "shipped",
-      "due": 1785481200000
+      "due": 1785481200000,
+      "id": "86afzdqtq"
      },
      {
       "n": "Remoção do node 05",
       "status": "shipped",
-      "due": 1785135600000
+      "due": 1785135600000,
+      "id": "86agqrkbv"
      },
      {
       "n": "Migrar para o cluster novo e mover storages conforme esvaziamos",
       "status": "in progress",
-      "due": 1788937200000
+      "due": 1788937200000,
+      "id": "86afzdqjm"
      }
     ]
    },
@@ -809,12 +881,14 @@
      {
       "n": "Remoção dos últimos nodes do cluster",
       "status": "backlog",
-      "due": 1789110000000
+      "due": 1789110000000,
+      "id": "86ag6zd62"
      },
      {
       "n": "Adição dos nodes no novo cluster",
       "status": "backlog",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86ag6zdfd"
      }
     ]
    }
@@ -846,27 +920,32 @@
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - FEV",
       "status": "shipped",
-      "due": 1772262000000
+      "due": 1772262000000,
+      "id": "86agc86fv"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - MAR",
       "status": "shipped",
-      "due": 1774940400000
+      "due": 1774940400000,
+      "id": "86agca0x4"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - ABR",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86agca11d"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - MAI",
       "status": "shipped",
-      "due": 1780210800000
+      "due": 1780210800000,
+      "id": "86agca15q"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - JUN",
       "status": "shipped",
-      "due": 1782802800000
+      "due": 1782802800000,
+      "id": "86agca18w"
      }
     ]
    },
@@ -880,172 +959,206 @@
      {
       "n": "br-sp-02-node01",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc8787"
      },
      {
       "n": "br-sp-02-node02",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86agc87a4"
      },
      {
       "n": "br-sp-02-node03",
       "status": "shipped",
-      "due": 1775545200000
+      "due": 1775545200000,
+      "id": "86agc87c9"
      },
      {
       "n": "br-sp-02-node04",
       "status": "shipped",
-      "due": 1783666800000
+      "due": 1783666800000,
+      "id": "86agc87e8"
      },
      {
       "n": "br-sp-02-node05",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc87g8"
      },
      {
       "n": "br-sp-02-node06",
       "status": "blocked",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86agc87hj"
      },
      {
       "n": "br-sp-02-node07",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc87k3"
      },
      {
       "n": "br-sp-02-node08",
       "status": "in planning",
-      "due": 1786690800000
+      "due": 1786690800000,
+      "id": "86agc87n9"
      },
      {
       "n": "br-sp-02-node09",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc87pw"
      },
      {
       "n": "br-sp-02-node10",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc87t5"
      },
      {
       "n": "br-sp-02-node15",
       "status": "in progress",
-      "due": 1786086000000
+      "due": 1786086000000,
+      "id": "86agc87wx"
      },
      {
       "n": "br-sp-02-node16",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc87z1"
      },
      {
       "n": "br-sp-02-node17",
       "status": "blocked",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86agc881a"
      },
      {
       "n": "br-sp-02-node18",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc8845"
      },
      {
       "n": "br-sp-02-node19",
       "status": "in planning",
-      "due": 1786690800000
+      "due": 1786690800000,
+      "id": "86agc885p"
      },
      {
       "n": "br-sp-02-node20",
       "status": "in progress",
-      "due": 1786086000000
+      "due": 1786086000000,
+      "id": "86agc887m"
      },
      {
       "n": "br-sp-02-node21",
       "status": "shipped",
-      "due": 1786690800000
+      "due": 1786690800000,
+      "id": "86agc888z"
      },
      {
       "n": "br-sp-02-node22",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc88ar"
      },
      {
       "n": "br-sp-02-node23",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc9v8z"
      },
      {
       "n": "srv-win-01",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc8ud0"
      },
      {
       "n": "srv-win-02",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc8utt"
      },
      {
       "n": "srv-win-03",
       "status": "blocked",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86agc8uvh"
      },
      {
       "n": "srv-win-04",
       "status": "blocked",
-      "due": 1790751600000
+      "due": 1790751600000,
+      "id": "86agc8uxd"
      },
      {
       "n": "srv-win-05",
       "status": "shipped",
-      "due": 1784012400000
+      "due": 1784012400000,
+      "id": "86agc8uz0"
      },
      {
       "n": "srv-win-06",
       "status": "shipped",
-      "due": 1769756400000
+      "due": 1769756400000,
+      "id": "86agc8v07"
      },
      {
       "n": "srv-win-07",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc8v1h"
      },
      {
       "n": "srv-win-08",
       "status": "blocked",
-      "due": 1793343600000
+      "due": 1793343600000,
+      "id": "86agc8v3a"
      },
      {
       "n": "srv-dentaluni-01",
       "status": "shipped",
-      "due": 1777618800000
+      "due": 1777618800000,
+      "id": "86agc9wfu"
      },
      {
       "n": "srv-oracle-gimba-01",
       "status": "shipped",
-      "due": 1777014000000
+      "due": 1777014000000,
+      "id": "86agc9x78"
      },
      {
       "n": "srv-oracle-gimba-02",
       "status": "shipped",
-      "due": 1777014000000
+      "due": 1777014000000,
+      "id": "86agc9x9h"
      },
      {
       "n": "srv-oracle-gimba-03",
       "status": "shipped",
-      "due": 1777014000000
+      "due": 1777014000000,
+      "id": "86agc9xbw"
      },
      {
       "n": "srv-oracle-gimba-04",
       "status": "shipped",
-      "due": 1777014000000
+      "due": 1777014000000,
+      "id": "86agc9xeb"
      },
      {
       "n": "srv-oraclenode-01",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86ahapc09"
      },
      {
       "n": "srv-oraclenode-02",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86ahapc0v"
      }
     ]
    },
@@ -1059,27 +1172,32 @@
      {
       "n": "45.225.25.0/24",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86agc8tfd"
      },
      {
       "n": "45.225.26.0/24",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86agc8tmm"
      },
      {
       "n": "45.225.27.0/24",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86agc8u1f"
      },
      {
       "n": "200.218.224.0/24",
       "status": "blocked",
-      "due": null
+      "due": null,
+      "id": "86agca8rv"
      },
      {
       "n": "200.218.225.0/24",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agca92t"
      }
     ]
    }
@@ -1091,7 +1209,7 @@
   "status": "in progress",
   "due": 1798700400000,
   "name": "Elevar disponibilidade e capacidade operacional da infraestrutura cloud no trimestre",
-  "short": "Melhorias no Ambiente - Nuvem",
+  "short": "Melhorias no Ambiente - Nuvem !",
   "assignee": "Leonardo Gomes Jorge Gonçalez",
   "tags": [
    "garantia sla",
@@ -1109,17 +1227,20 @@
      {
       "n": "Sistema de Inventário - NetBox",
       "status": "shipped",
-      "due": 1772175600000
+      "due": 1772175600000,
+      "id": "86afcrg76"
      },
      {
       "n": "Criação de caderno de melhorias (Rede/Infra/Ceph)",
       "status": "shipped",
-      "due": 1775199600000
+      "due": 1775199600000,
+      "id": "86afcrhmn"
      },
      {
       "n": "Plano de Expansão de Infraestrutura - a cada 3 meses",
       "status": "shipped",
-      "due": 1775199600000
+      "due": 1775199600000,
+      "id": "86afcrn42"
      }
     ]
    },
@@ -1133,27 +1254,32 @@
      {
       "n": "Melhorias no monitoramento e dashboards",
       "status": "in progress",
-      "due": null
+      "due": null,
+      "id": "86afcqdfv"
      },
      {
       "n": "Melhoria Whitelabel",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ag1mmh5"
      },
      {
       "n": "Plano de backup Serviços internos de produção",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ag1mh6e"
      },
      {
       "n": "Aplicar plano de melhorias",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ag1mb05"
      },
      {
       "n": "Testes de resiliência no ambiente de homologação",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86ag1mp1r"
      }
     ]
    },
@@ -1167,12 +1293,14 @@
      {
       "n": "Aplicação do Rally no bcp 3.0",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86ag1mu9p"
      },
      {
       "n": "verificar a nova versão do skyline",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86agc8zmr"
      }
     ]
    },
@@ -1186,27 +1314,32 @@
      {
       "n": "Capacidade - Linux",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86afcr47w"
      },
      {
       "n": "Capacidade - Windows",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86afcr4qb"
      },
      {
       "n": "Capacidade de Storage - NVME",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86afcr5u7"
      },
      {
       "n": "Capacidade de Storage - HDD",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86afcr6df"
      },
      {
       "n": "Capacidade de Storage - BACKUP",
       "status": "in review",
-      "due": null
+      "due": null,
+      "id": "86agc954t"
      }
     ]
    }
