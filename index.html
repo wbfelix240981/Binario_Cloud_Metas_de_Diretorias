@@ -181,6 +181,8 @@
   .ativ-name{flex:1; min-width:0;}
   .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
   .ativ-status{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; white-space:nowrap;}
+  .ativ-link{color:var(--text-mute); display:flex; align-items:center; opacity:.6; transition:.15s; flex:none; margin-left:4px;}
+  .ativ-link:hover{color:var(--cyan); opacity:1;}
   @keyframes blinkRed{0%,100%{background:rgba(255,90,90,.10); box-shadow:0 0 0 rgba(255,90,90,0);}50%{background:rgba(255,60,60,.35); box-shadow:0 0 10px rgba(255,60,60,.35);}}
   .ativ-row.atrasada{animation:blinkRed 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
   .ativ-row.atrasada .ativ-dot{animation:blinkRed 1.1s ease-in-out infinite; background:var(--red) !important;}
@@ -759,7 +761,8 @@ const RAFAEL_METAS = [
      {
       "n": "Escopo",
       "status": "shipped",
-      "due": 1770879600000
+      "due": 1770879600000,
+      "id": "86af4ah06"
      }
     ]
    },
@@ -773,12 +776,14 @@ const RAFAEL_METAS = [
      {
       "n": "SQuad",
       "status": "shipped",
-      "due": 1770879600000
+      "due": 1770879600000,
+      "id": "86af4ah1c"
      },
      {
       "n": "Definição de Papeis e respsoabilidade",
       "status": "shipped",
-      "due": 1770879600000
+      "due": 1770879600000,
+      "id": "86af4ah1w"
      }
     ]
    },
@@ -792,37 +797,44 @@ const RAFAEL_METAS = [
      {
       "n": "Acesso ao ambiente",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86af4d4yr"
      },
      {
       "n": "Maiores Ofensores CCOE",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86af4ah3j"
      },
      {
       "n": "Desenho da arquitetura",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86af4ah51"
      },
      {
       "n": "Estudar estimativa de automatização",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86afxat0c"
      },
      {
       "n": "Estudar o botão de identificar chamado sua retirada",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86afxatp3"
      },
      {
       "n": "Estudar botar de TS e seus scripts",
       "status": "shipped",
-      "due": null
+      "due": null,
+      "id": "86afxb00w"
      },
      {
       "n": "Mapear do fluxo do e-mail até o ticket",
       "status": "shipped",
-      "due": 1774594800000
+      "due": 1774594800000,
+      "id": "86afyhj6n"
      }
     ]
    },
@@ -836,22 +848,26 @@ const RAFAEL_METAS = [
      {
       "n": "Preparo do ambiente de homologação",
       "status": "shipped",
-      "due": 1774594800000
+      "due": 1774594800000,
+      "id": "86agf9fxh"
      },
      {
       "n": "Identificação e classificação automatica",
       "status": "shipped",
-      "due": 1777014000000
+      "due": 1777014000000,
+      "id": "86agf9upp"
      },
      {
       "n": "Validar amostras classificadas pela IA",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86agg4g63"
      },
      {
       "n": "Fim da Fase 4 - Preparação",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86ah4y8g6"
      }
     ]
    },
@@ -865,57 +881,68 @@ const RAFAEL_METAS = [
      {
       "n": "Bateria inicial de testes de interceptação",
       "status": "shipped",
-      "due": 1775026800000
+      "due": 1775026800000,
+      "id": "86agfapfa"
      },
      {
       "n": "Iniciar o processo de primeira resposta automática",
       "status": "shipped",
-      "due": 1777532400000
+      "due": 1777532400000,
+      "id": "86agg5jzj"
      },
      {
       "n": "Troubleshooting com base documental",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86agjgqgu"
      },
      {
       "n": "Correção de erro ao abrir chamados",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcggkr"
      },
      {
       "n": "Desativação de resposta automáticas do znunny",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcggx2"
      },
      {
       "n": "Refinamento na estruturação do texto de resposta",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcgh74"
      },
      {
       "n": "Criação do guia de categorização",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcghfv"
      },
      {
       "n": "Correção de fuso horário para corrigir encerramento do chamado",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcghxa"
      },
      {
       "n": "Configuração do portal",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcgj0k"
      },
      {
       "n": "Validação do funcionamento de chamados abertos pelo portal",
       "status": "shipped",
-      "due": 1778223600000
+      "due": 1778223600000,
+      "id": "86ahcgjac"
      },
      {
       "n": "Fim da Fase 5 - Entrega do MVP",
       "status": "shipped",
-      "due": 1778482800000
+      "due": 1778482800000,
+      "id": "86agjcwev"
      }
     ]
    }
@@ -3165,7 +3192,7 @@ function renderMetaDetailPage(tab, num){
         </a>
       </div>
       ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:flex">
-        ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span></div>`;}).join('')}
+        ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;}).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
 

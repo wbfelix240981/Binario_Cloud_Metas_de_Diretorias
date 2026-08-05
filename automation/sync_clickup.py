@@ -100,6 +100,7 @@ def build_activity(t):
         "n": t["name"],
         "status": map_status(t["status"]["status"]),
         "due": to_ms(t.get("due_date")),
+        "id": t["id"],
     }
 
 
