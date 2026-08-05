@@ -404,51 +404,51 @@
   "detail": "Meta executiva de garantia de SLA e disponibilidade — detalhamento técnico acompanhado na meta de Disponibilidade Ambiente-Nuvem.",
   "fases": [
    {
-    "n": "99,982% de disponibilidade mes a mes",
+    "n": "Meta 99,982% de disponibilidade ano  - Disponibilidade média (jan–jun): 99,983%",
     "status": "in progress",
     "assignee": "Rafael Alves",
     "due": 1798700400000,
     "id": "86ajutt1m",
     "ativ": [
      {
-      "n": "Janeiro",
+      "n": "Janeiro - Medição: 99,960%",
       "status": "shipped",
       "due": 1769842800000,
       "id": "86ajutt7f"
      },
      {
-      "n": "Fevereiro",
+      "n": "Fevereiro - Medição: 99,980%",
       "status": "shipped",
       "due": 1772262000000,
       "id": "86ajutt7h"
      },
      {
-      "n": "Março",
+      "n": "Março - Medição: 99,986%",
       "status": "shipped",
       "due": 1774940400000,
       "id": "86ajutt7m"
      },
      {
-      "n": "Abril",
+      "n": "Abril - Medição: 99,989%",
       "status": "shipped",
       "due": 1777532400000,
       "id": "86ajutt7q"
      },
      {
-      "n": "Maio",
+      "n": "Maio - Medição: 99,989%",
       "status": "shipped",
       "due": 1780210800000,
       "id": "86ajutt7w"
      },
      {
-      "n": "Junho",
+      "n": "Junho - Medição: 99,991%",
       "status": "shipped",
       "due": 1782802800000,
       "id": "86ajutt81"
      },
      {
       "n": "Julho",
-      "status": "shipped",
+      "status": "in review",
       "due": 1785481200000,
       "id": "86ajutt87"
      },
@@ -485,51 +485,51 @@
     ]
    },
    {
-    "n": "SLA acima de 95% de atendimento ao cliente mes a mes",
+    "n": "SLA >= 95% de atendimento ao cliente",
     "status": "in progress",
     "assignee": "Rafael Alves",
     "due": 1798700400000,
     "id": "86ajutt23",
     "ativ": [
      {
-      "n": "Janeiro",
+      "n": "Janeiro - Medição: 95%",
       "status": "shipped",
       "due": 1769842800000,
       "id": "86ajutt8w"
      },
      {
-      "n": "Fevereiro",
+      "n": "Fevereiro - Medição: 95%",
       "status": "shipped",
       "due": 1772262000000,
       "id": "86ajutt8y"
      },
      {
-      "n": "Março",
+      "n": "Março - Medição: 97%",
       "status": "shipped",
       "due": 1774940400000,
       "id": "86ajutt90"
      },
      {
-      "n": "Abril",
+      "n": "Abril - Medição: 99%",
       "status": "shipped",
       "due": 1777532400000,
       "id": "86ajutt91"
      },
      {
-      "n": "Maio",
+      "n": "Maio - Medição: 99%",
       "status": "shipped",
       "due": 1780210800000,
       "id": "86ajutt92"
      },
      {
-      "n": "Junho",
+      "n": "Junho - Medição: 97,5%",
       "status": "shipped",
       "due": 1782802800000,
       "id": "86ajutt93"
      },
      {
       "n": "Julho",
-      "status": "shipped",
+      "status": "in review",
       "due": 1785481200000,
       "id": "86ajutt94"
      },
