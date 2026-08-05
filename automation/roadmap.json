@@ -20,10 +20,9 @@
  {
   "id": "86ajtjqck",
   "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
-  "status": "em andamento",
+  "status": "revisando",
   "assignees": [
-   "Tiago Gomes de Oliveira",
-   "Leonardo Gomes Jorge Gonçalez"
+   "Rodney Botelho"
   ],
   "url": "https://app.clickup.com/t/86ajtjqck"
  },
@@ -217,7 +216,7 @@
   "name": "Nova demanda - N8N em PasS",
   "status": "revisando",
   "assignees": [
-   "Tiago Gomes de Oliveira"
+   "Rafael Alves"
   ],
   "url": "https://app.clickup.com/t/86af2w3xw"
  },
