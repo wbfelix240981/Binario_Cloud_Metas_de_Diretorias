@@ -1,21 +1,34 @@
 #!/usr/bin/env python3
 """
 Sincroniza os dados (Rafael, Tiago, RoadMap) com o ClickUp.
-Roda via GitHub Actions 3x ao dia (06h/12h/20h de Brasília).
+Roda via GitHub Actions (agendamento configurável) ou manualmente.
 
-Regra de preservação:
-- Campos CURADOS à mão (num, short, name, detail em cada meta) NUNCA são sobrescritos.
-- Campos DINÂMICOS (status, due, assignee, tags, fases/atividades) são sempre
-  substituídos pelo estado atual do ClickUp.
-- Casamento de cada meta com sua tarefa no ClickUp é feito primeiro por "id"
-  salvo no JSON; se não encontrar (tarefa recriada no ClickUp, troca de id),
-  cai para casamento por nome (campo "short"), e o novo id é regravado no JSON.
+O que É sincronizado automaticamente (fiel ao ClickUp), APENAS para as
+metas que já estão mapeadas no painel:
+- Status de cada meta, fase e atividade
+- Nome de exibição (short) de cada meta
+- Responsável, prazo, tags
+- Fases e atividades (reconstruídas do zero a cada checagem, com IDs
+  pra permitir o link direto "abrir no ClickUp" em cada atividade)
+- EXCLUSÃO: se uma meta mapeada sumir da lista do ClickUp, ela é removida
+- Metas sem plano de fases ficam marcadas para não distorcer o índice
+  geral (excludeFromIndex), e voltam a contar assim que ganharem fases
+
+O que NÃO é feito automaticamente:
+- INCLUSÃO de metas novas: tarefas que aparecem na lista do ClickUp mas
+  ainda não estão mapeadas NÃO viram metas sozinhas — o script só avisa
+  nos logs que existem. Uma meta nova só entra no painel quando pedida
+  explicitamente (usar markdown_to_detail() pra gerar a ficha resumida
+  a partir da descrição do ClickUp nesse momento).
+- O campo "name" (descrição curada mais longa) e o "detail" de metas
+  já existentes nunca são sobrescritos automaticamente.
 """
 import json
 import os
 import re
 import sys
 import time
+import datetime
 import urllib.request
 import urllib.error
 
@@ -40,14 +53,20 @@ STATUS_MAP = {
     "em teste": "in test",
 }
 
+VALID_INTERNAL_STATUSES = {
+    "backlog", "in planning", "in progress", "in test", "in review", "blocked", "shipped"
+}
+
 # Metas que devem SEMPRE aparecer como 100% concluído, sem fases detalhadas,
 # independente do que o ClickUp mostrar (regra de negócio definida manualmente).
-# (vazio: a meta ClaudIA no Suporte saiu dessa lista em 05/08/2026 — passou a ter
-# estrutura de fases real e detalhada no ClickUp, igual às demais metas)
 FORCE_SIMPLE_100 = set()
 
-# Status usados no board do RoadMap (mantidos como o texto original em pt-BR, sem mapear)
-ROADMAP_STATUS_PASSTHROUGH = True
+# Nomes de tarefas que NUNCA devem virar metas automaticamente numa lista,
+# mesmo que apareçam nela — tipicamente itens que já pertencem a outra
+# diretoria e aparecem duplicados por engano em outra lista do ClickUp.
+EXCLUDE_NAMES_BY_LIST = {
+    TIAGO_LIST_ID: {"ClaudIA no Suporte", "Observabilidade de BCloud 3.0"},
+}
 
 
 def api_get(path):
@@ -79,15 +98,6 @@ def to_ms(due_date):
     return int(due_date) if due_date else None
 
 
-# Algumas listas do ClickUp usam status customizados em português (ex.: lista do Rafael:
-# "aberto", "em andamento", "fechado"...), outras usam o vocabulário padrão do ClickUp,
-# já em inglês (ex.: lista do Tiago: "backlog", "in progress", "in planning", "shipped"...).
-# Por isso o mapeamento reconhece os dois casos.
-VALID_INTERNAL_STATUSES = {
-    "backlog", "in planning", "in progress", "in test", "in review", "blocked", "shipped"
-}
-
-
 def map_status(raw_status):
     raw = raw_status.strip().lower()
     if raw in VALID_INTERNAL_STATUSES:
@@ -116,6 +126,94 @@ def build_phase(ph_full):
     }
 
 
+def build_fases_for_task(task_id):
+    """Busca e reconstrói as fases + atividades de uma tarefa (meta) do zero."""
+    full = api_get(f"/task/{task_id}?include_subtasks=true")
+    new_fases = []
+    for ph in full.get("subtasks", []):
+        if ph.get("name", "").strip().lower() == "dummy":
+            continue
+        if ph.get("subtasks_count", 0) > 0:
+            ph_full = api_get(f"/task/{ph['id']}?include_subtasks=true")
+        else:
+            ph_full = ph
+        new_fases.append(build_phase(ph_full))
+    return new_fases
+
+
+def markdown_to_detail(md_text, fallback_status_label):
+    """Gera uma ficha resumida (campo 'detail') a partir da descrição em markdown
+    de uma tarefa nova do ClickUp. Extrai as seções mais relevantes quando existem
+    (Objetivo, Entregáveis, Critério de aceite, Prazo final, Risco principal);
+    se a descrição não tiver esse padrão, usa um resumo simples."""
+    if not md_text or not md_text.strip():
+        return f"Status: {fallback_status_label}, ainda sem fases detalhadas cadastradas no ClickUp."
+
+    def clean(s):
+        s = re.sub(r"\*\*(.*?)\*\*", r"\1", s)
+        s = re.sub(r"^#+\s*", "", s, flags=re.M)
+        s = re.sub(r"^\*\s+", "", s, flags=re.M)
+        s = re.sub(r"[ \t]+", " ", s)
+        return s.strip()
+
+    secoes_desejadas = [
+        ("Objetivo", "objetivo"),
+        ("Entregáveis", "entregáveis"),
+        ("Prazo final", "prazo final"),
+        ("Critério de aceite", "critério de aceite"),
+        ("Risco principal", "risco principal"),
+    ]
+    linhas = md_text.split("\n")
+    partes = []
+    atual_titulo = None
+    atual_conteudo = []
+
+    def flush():
+        if atual_titulo and atual_conteudo:
+            linhas_limpas = [re.sub(r"^[\*\-]\s+", "", clean(l)) for l in atual_conteudo if l.strip()]
+            texto = "; ".join(l.rstrip(";.") for l in linhas_limpas if l)
+            if len(texto) > 400:
+                texto = texto[:400].rsplit(" ", 1)[0] + "…"
+            partes.append(f"{atual_titulo}: {texto}.")
+
+    for linha in linhas:
+        titulo_encontrado = None
+        linha_s = linha.strip()
+        resto_mesma_linha = ""
+        for label, _ in secoes_desejadas:
+            padrao_heading = rf"^#+\s*\d*\\?\.?\s*{re.escape(label)}"
+            padrao_bold = rf"^\*\*\s*{re.escape(label)}\s*:?\s*\*\*"
+            if re.match(padrao_heading, linha_s, re.I):
+                titulo_encontrado = label
+                break
+            if re.match(padrao_bold, linha_s, re.I):
+                titulo_encontrado = label
+                resto_mesma_linha = re.sub(padrao_bold, "", linha_s, flags=re.I).strip()
+                break
+        if titulo_encontrado:
+            flush()
+            atual_titulo = titulo_encontrado
+            atual_conteudo = [resto_mesma_linha] if resto_mesma_linha else []
+        elif atual_titulo:
+            if linha.strip().startswith("#"):
+                flush()
+                atual_titulo = None
+                atual_conteudo = []
+            elif re.match(r"^[\*\-_\s]{3,}$", linha.strip()):
+                pass  # linha de separador horizontal (* * *, ---), ignora
+            else:
+                atual_conteudo.append(linha.strip())
+    flush()
+
+    if partes:
+        return "\n".join(partes)
+
+    texto = clean(md_text)
+    if len(texto) > 500:
+        texto = texto[:500].rsplit(" ", 1)[0] + "…"
+    return texto
+
+
 def find_live_task(live_tasks, meta):
     """Casa uma meta salva com a tarefa viva do ClickUp: por id, senão por nome."""
     for t in live_tasks:
@@ -125,28 +223,33 @@ def find_live_task(live_tasks, meta):
     for t in live_tasks:
         if t["name"].strip().lower() == short_lower:
             return t
-    # match parcial (contém) como último recurso
     for t in live_tasks:
         if short_lower in t["name"].strip().lower() or t["name"].strip().lower() in short_lower:
             return t
     return None
 
 
-def sync_metas_file(json_path, list_id, extra_allowed_names=None):
-    """Sincroniza um arquivo de metas (rafael.json ou tiago.json) com uma lista do ClickUp."""
+def sync_metas_file(json_path, list_id):
+    """Sincroniza um arquivo de metas (rafael.json ou tiago.json) com uma lista do ClickUp.
+    Cobre: status, nome, inclusão de metas novas, exclusão de metas removidas,
+    fases/atividades, e a flag excludeFromIndex para metas sem plano de fases."""
     with open(json_path, encoding="utf-8") as f:
         metas = json.load(f)
 
     live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
+    exclude_names = {n.lower() for n in EXCLUDE_NAMES_BY_LIST.get(list_id, set())}
 
     changed = False
+    matched_live_ids = set()
+
+    # 1) Atualiza metas já existentes
     for meta in metas:
         live = find_live_task(live_tasks, meta)
         if not live:
             print(f"AVISO: meta '{meta['short']}' não encontrada no ClickUp (mantendo dado anterior)", file=sys.stderr)
             continue
 
-        # Captura ANTES de qualquer atualização, pra não perder o vínculo se o nome mudar nesta mesma rodada.
+        matched_live_ids.add(live["id"])
         is_forced_simple = meta["short"] in FORCE_SIMPLE_100
 
         if meta.get("id") != live["id"]:
@@ -176,29 +279,57 @@ def sync_metas_file(json_path, list_id, extra_allowed_names=None):
             meta["tags"] = new_tags
             changed = True
 
-        # Regra de negócio: metas forçadas a 100%/sem fases (ex.: ClaudIA no Suporte)
         if is_forced_simple:
             if meta.get("status") != "shipped" or meta.get("fases") != []:
                 meta["status"] = "shipped"
                 meta["fases"] = []
                 changed = True
+            meta.pop("excludeFromIndex", None)
             continue
 
-        # Reconstrói fases + atividades a partir do estado atual do ClickUp
-        full = api_get(f"/task/{live['id']}?include_subtasks=true")
-        new_fases = []
-        for ph in full.get("subtasks", []):
-            if ph.get("name", "").strip().lower() == "dummy":
-                continue
-            if ph.get("subtasks_count", 0) > 0:
-                ph_full = api_get(f"/task/{ph['id']}?include_subtasks=true")
-            else:
-                ph_full = ph
-            new_fases.append(build_phase(ph_full))
-
+        new_fases = build_fases_for_task(live["id"])
         if meta.get("fases") != new_fases:
             meta["fases"] = new_fases
             changed = True
+
+        # Metas sem plano de fases não distorcem o índice geral, até ganharem um plano
+        should_exclude = (len(meta["fases"]) == 0 and meta["status"] != "shipped")
+        if should_exclude and not meta.get("excludeFromIndex"):
+            meta["excludeFromIndex"] = True
+            changed = True
+        elif not should_exclude and meta.get("excludeFromIndex"):
+            meta.pop("excludeFromIndex")
+            changed = True
+
+    # 2) Remove metas que sumiram do ClickUp (exclusão)
+    antes = len(metas)
+    ainda_existentes = []
+    for meta in metas:
+        live = find_live_task(live_tasks, meta)
+        if live:
+            ainda_existentes.append(meta)
+        else:
+            print(f"REMOVIDA: meta '{meta['short']}' não existe mais na lista do ClickUp", file=sys.stderr)
+    if len(ainda_existentes) != antes:
+        metas = ainda_existentes
+        changed = True
+
+    # 3) Tarefas novas na lista NÃO são incluídas automaticamente — só entram
+    #    quando pedidas explicitamente. Aqui só avisamos que existem, pra ficar
+    #    visível nos logs da sincronização.
+    known_ids = {m.get("id") for m in metas}
+    known_short_lower = {m["short"].strip().lower() for m in metas}
+    exclude_names_lower = exclude_names
+    for t in live_tasks:
+        if t["id"] in known_ids:
+            continue
+        if t["name"].strip().lower() in known_short_lower:
+            continue
+        if t["name"].strip().lower() in exclude_names_lower:
+            continue
+        if not t.get("due_date"):
+            continue
+        print(f"INFO: tarefa nova na lista, ainda NÃO incluída no painel (peça explicitamente se quiser): '{t['name']}'", file=sys.stderr)
 
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(metas, f, ensure_ascii=False, indent=1)
@@ -257,9 +388,6 @@ def main():
     else:
         print("  -> sem mudanças")
 
-    # Grava o horário real desta checagem (independente de ter mudado algo),
-    # para o site mostrar "Atualizado em" fiel à última sincronização de verdade.
-    import datetime
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
     with open(os.path.join(DIR, "last_sync.json"), "w", encoding="utf-8") as f:
         json.dump({"last_sync_utc": now_iso}, f)
