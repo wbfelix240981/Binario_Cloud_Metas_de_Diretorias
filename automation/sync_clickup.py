@@ -42,7 +42,9 @@ STATUS_MAP = {
 
 # Metas que devem SEMPRE aparecer como 100% concluído, sem fases detalhadas,
 # independente do que o ClickUp mostrar (regra de negócio definida manualmente).
-FORCE_SIMPLE_100 = {"ClaudIA no Suporte"}
+# (vazio: a meta ClaudIA no Suporte saiu dessa lista em 05/08/2026 — passou a ter
+# estrutura de fases real e detalhada no ClickUp, igual às demais metas)
+FORCE_SIMPLE_100 = set()
 
 # Status usados no board do RoadMap (mantidos como o texto original em pt-BR, sem mapear)
 ROADMAP_STATUS_PASSTHROUGH = True

@@ -12,7 +12,178 @@
    "eficiência operacional"
   ],
   "detail": "Meta de operacionalizar a ClaudIA (assistente de IA) no fluxo de atendimento do Suporte, cobrindo desde o kickoff até o encerramento com automação de troubleshooting.",
-  "fases": []
+  "fases": [
+   {
+    "n": "Fase 1 - Início do Projeto",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1770879600000,
+    "id": "86af4agza",
+    "ativ": [
+     {
+      "n": "Escopo",
+      "status": "shipped",
+      "due": 1770879600000
+     }
+    ]
+   },
+   {
+    "n": "Fase 2 - Onboarding",
+    "status": "shipped",
+    "assignee": "Rafael Alves",
+    "due": 1770879600000,
+    "id": "86af4ah0y",
+    "ativ": [
+     {
+      "n": "SQuad",
+      "status": "shipped",
+      "due": 1770879600000
+     },
+     {
+      "n": "Definição de Papeis e respsoabilidade",
+      "status": "shipped",
+      "due": 1770879600000
+     }
+    ]
+   },
+   {
+    "n": "Fase 3 - Planejamento",
+    "status": "shipped",
+    "assignee": "Rafael Alves / Diogo Lerison",
+    "due": 1774249200000,
+    "id": "86af4ah39",
+    "ativ": [
+     {
+      "n": "Acesso ao ambiente",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Maiores Ofensores CCOE",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Desenho da arquitetura",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Estudar estimativa de automatização",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Estudar o botão de identificar chamado sua retirada",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Estudar botar de TS e seus scripts",
+      "status": "shipped",
+      "due": null
+     },
+     {
+      "n": "Mapear do fluxo do e-mail até o ticket",
+      "status": "shipped",
+      "due": 1774594800000
+     }
+    ]
+   },
+   {
+    "n": "Fase 4 - Preparação",
+    "status": "shipped",
+    "assignee": "Rafael Alves / Diogo Lerison",
+    "due": 1777532400000,
+    "id": "86af4ahga",
+    "ativ": [
+     {
+      "n": "Preparo do ambiente de homologação",
+      "status": "shipped",
+      "due": 1774594800000
+     },
+     {
+      "n": "Identificação e classificação automatica",
+      "status": "shipped",
+      "due": 1777014000000
+     },
+     {
+      "n": "Validar amostras classificadas pela IA",
+      "status": "shipped",
+      "due": 1777532400000
+     },
+     {
+      "n": "Fim da Fase 4 - Preparação",
+      "status": "shipped",
+      "due": 1777532400000
+     }
+    ]
+   },
+   {
+    "n": "Fase 5 - Execução (MVP)",
+    "status": "shipped",
+    "assignee": "Rafael Alves / Diogo Lerison",
+    "due": 1778482800000,
+    "id": "86af4ah87",
+    "ativ": [
+     {
+      "n": "Bateria inicial de testes de interceptação",
+      "status": "shipped",
+      "due": 1775026800000
+     },
+     {
+      "n": "Iniciar o processo de primeira resposta automática",
+      "status": "shipped",
+      "due": 1777532400000
+     },
+     {
+      "n": "Troubleshooting com base documental",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Correção de erro ao abrir chamados",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Desativação de resposta automáticas do znunny",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Refinamento na estruturação do texto de resposta",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Criação do guia de categorização",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Correção de fuso horário para corrigir encerramento do chamado",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Configuração do portal",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Validação do funcionamento de chamados abertos pelo portal",
+      "status": "shipped",
+      "due": 1778223600000
+     },
+     {
+      "n": "Fim da Fase 5 - Entrega do MVP",
+      "status": "shipped",
+      "due": 1778482800000
+     }
+    ]
+   }
+  ]
  },
  {
   "num": 2,
