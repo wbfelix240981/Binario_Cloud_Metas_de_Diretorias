@@ -244,62 +244,68 @@ def sync_metas_file(json_path, list_id):
 
     # 1) Atualiza metas já existentes
     for meta in metas:
-        live = find_live_task(live_tasks, meta)
-        if not live:
-            print(f"AVISO: meta '{meta['short']}' não encontrada no ClickUp (mantendo dado anterior)", file=sys.stderr)
-            continue
+        try:
+            live = find_live_task(live_tasks, meta)
+            if not live:
+                print(f"AVISO: meta '{meta['short']}' não encontrada no ClickUp (mantendo dado anterior)", file=sys.stderr)
+                continue
 
-        matched_live_ids.add(live["id"])
-        is_forced_simple = meta["short"] in FORCE_SIMPLE_100
+            matched_live_ids.add(live["id"])
+            is_forced_simple = meta["short"] in FORCE_SIMPLE_100
 
-        if meta.get("id") != live["id"]:
-            meta["id"] = live["id"]
-            changed = True
-
-        new_status = map_status(live["status"]["status"])
-        new_due = to_ms(live.get("due_date"))
-        new_assignee = assignee_name(live)
-        new_tags = [tag["name"] for tag in live.get("tags", [])]
-        new_short = live["name"]
-
-        if meta.get("short") != new_short:
-            print(f"NOME MUDOU: '{meta['short']}' -> '{new_short}'", file=sys.stderr)
-            meta["short"] = new_short
-            changed = True
-        if meta.get("status") != new_status:
-            meta["status"] = new_status
-            changed = True
-        if meta.get("due") != new_due:
-            meta["due"] = new_due
-            changed = True
-        if meta.get("assignee") != new_assignee:
-            meta["assignee"] = new_assignee
-            changed = True
-        if meta.get("tags") != new_tags and new_tags:
-            meta["tags"] = new_tags
-            changed = True
-
-        if is_forced_simple:
-            if meta.get("status") != "shipped" or meta.get("fases") != []:
-                meta["status"] = "shipped"
-                meta["fases"] = []
+            if meta.get("id") != live["id"]:
+                meta["id"] = live["id"]
                 changed = True
-            meta.pop("excludeFromIndex", None)
+
+            new_status = map_status(live["status"]["status"])
+            new_due = to_ms(live.get("due_date"))
+            new_assignee = assignee_name(live)
+            new_tags = [tag["name"] for tag in live.get("tags", [])]
+            new_short = live["name"]
+
+            if meta.get("short") != new_short:
+                print(f"NOME MUDOU: '{meta['short']}' -> '{new_short}'", file=sys.stderr)
+                meta["short"] = new_short
+                changed = True
+            if meta.get("status") != new_status:
+                meta["status"] = new_status
+                changed = True
+            if meta.get("due") != new_due:
+                meta["due"] = new_due
+                changed = True
+            if meta.get("assignee") != new_assignee:
+                meta["assignee"] = new_assignee
+                changed = True
+            if meta.get("tags") != new_tags and new_tags:
+                meta["tags"] = new_tags
+                changed = True
+
+            if is_forced_simple:
+                if meta.get("status") != "shipped" or meta.get("fases") != []:
+                    meta["status"] = "shipped"
+                    meta["fases"] = []
+                    changed = True
+                meta.pop("excludeFromIndex", None)
+                continue
+
+            new_fases = build_fases_for_task(live["id"])
+            if meta.get("fases") != new_fases:
+                meta["fases"] = new_fases
+                changed = True
+
+            # Metas sem plano de fases não distorcem o índice geral, até ganharem um plano
+            should_exclude = (len(meta["fases"]) == 0 and meta["status"] != "shipped")
+            if should_exclude and not meta.get("excludeFromIndex"):
+                meta["excludeFromIndex"] = True
+                changed = True
+            elif not should_exclude and meta.get("excludeFromIndex"):
+                meta.pop("excludeFromIndex")
+                changed = True
+
+        except Exception as e:
+            print(f"ERRO ao sincronizar a meta '{meta.get('short','?')}': {type(e).__name__}: {e} "
+                  f"(pulando esta meta, mantendo dado anterior, seguindo com as demais)", file=sys.stderr)
             continue
-
-        new_fases = build_fases_for_task(live["id"])
-        if meta.get("fases") != new_fases:
-            meta["fases"] = new_fases
-            changed = True
-
-        # Metas sem plano de fases não distorcem o índice geral, até ganharem um plano
-        should_exclude = (len(meta["fases"]) == 0 and meta["status"] != "shipped")
-        if should_exclude and not meta.get("excludeFromIndex"):
-            meta["excludeFromIndex"] = True
-            changed = True
-        elif not should_exclude and meta.get("excludeFromIndex"):
-            meta.pop("excludeFromIndex")
-            changed = True
 
     # 2) Remove metas que sumiram do ClickUp (exclusão)
     antes = len(metas)
@@ -366,27 +372,40 @@ def sync_roadmap_file(json_path, list_id):
 
 def main():
     any_changed = False
+    houve_erro = False
 
     print("Sincronizando Rafael...")
-    if sync_metas_file(os.path.join(DIR, "rafael.json"), RAFAEL_LIST_ID):
-        print("  -> rafael.json atualizado")
-        any_changed = True
-    else:
-        print("  -> sem mudanças")
+    try:
+        if sync_metas_file(os.path.join(DIR, "rafael.json"), RAFAEL_LIST_ID):
+            print("  -> rafael.json atualizado")
+            any_changed = True
+        else:
+            print("  -> sem mudanças")
+    except Exception as e:
+        print(f"ERRO GERAL ao sincronizar Rafael: {type(e).__name__}: {e} (mantendo rafael.json anterior)", file=sys.stderr)
+        houve_erro = True
 
     print("Sincronizando Tiago...")
-    if sync_metas_file(os.path.join(DIR, "tiago.json"), TIAGO_LIST_ID):
-        print("  -> tiago.json atualizado")
-        any_changed = True
-    else:
-        print("  -> sem mudanças")
+    try:
+        if sync_metas_file(os.path.join(DIR, "tiago.json"), TIAGO_LIST_ID):
+            print("  -> tiago.json atualizado")
+            any_changed = True
+        else:
+            print("  -> sem mudanças")
+    except Exception as e:
+        print(f"ERRO GERAL ao sincronizar Tiago: {type(e).__name__}: {e} (mantendo tiago.json anterior)", file=sys.stderr)
+        houve_erro = True
 
     print("Sincronizando RoadMap...")
-    if sync_roadmap_file(os.path.join(DIR, "roadmap.json"), ROADMAP_LIST_ID):
-        print("  -> roadmap.json atualizado")
-        any_changed = True
-    else:
-        print("  -> sem mudanças")
+    try:
+        if sync_roadmap_file(os.path.join(DIR, "roadmap.json"), ROADMAP_LIST_ID):
+            print("  -> roadmap.json atualizado")
+            any_changed = True
+        else:
+            print("  -> sem mudanças")
+    except Exception as e:
+        print(f"ERRO GERAL ao sincronizar RoadMap: {type(e).__name__}: {e} (mantendo roadmap.json anterior)", file=sys.stderr)
+        houve_erro = True
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
     with open(os.path.join(DIR, "last_sync.json"), "w", encoding="utf-8") as f:
@@ -397,6 +416,10 @@ def main():
     if gh_output:
         with open(gh_output, "a") as f:
             f.write(f"changed={'true' if any_changed else 'false'}\n")
+
+    if houve_erro:
+        print("ATENÇÃO: houve erro em pelo menos uma fonte, mas o restante foi sincronizado normalmente "
+              "(o job NÃO falha por completo, pra garantir que o que deu certo seja publicado).", file=sys.stderr)
 
     print("CHANGED=" + ("true" if any_changed else "false"))
 
