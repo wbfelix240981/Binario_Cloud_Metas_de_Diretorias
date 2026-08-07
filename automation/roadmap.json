@@ -1,5 +1,14 @@
 [
  {
+  "id": "86ajxgg74",
+  "name": "Poder adicionar o perfil load-balancer pela console do BCP (Admin",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajxgg74"
+ },
+ {
   "id": "86ajwevzf",
   "name": "Apresentar a Arquitetura de Segurança da Nossa Nuvem Publica (Muitos clientes questionam sobre)",
   "status": "aberto",
