@@ -35,6 +35,24 @@ import urllib.error
 TOKEN = os.environ["CLICKUP_API_TOKEN"]
 BASE = "https://api.clickup.com/api/v2"
 DIR = os.path.dirname(os.path.abspath(__file__))
+ERROR_LOG_PATH = os.path.join(DIR, "sync_errors.log")
+
+
+def log_error(contexto, exc):
+    """Grava o erro num arquivo que é commitado junto com os dados, já que os
+    logs brutos do GitHub Actions não são fáceis de consultar depois. Mantém
+    só as últimas 50 entradas para o arquivo não crescer indefinidamente."""
+    import traceback
+    ts = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    entrada = f"[{ts}] {contexto}\n{traceback.format_exc()}\n{'-'*70}\n"
+    linhas_antigas = ""
+    if os.path.exists(ERROR_LOG_PATH):
+        with open(ERROR_LOG_PATH, encoding="utf-8") as f:
+            linhas_antigas = f.read()
+    blocos = (linhas_antigas + entrada).split('-'*70 + "\n")
+    blocos = [b for b in blocos if b.strip()][-50:]
+    with open(ERROR_LOG_PATH, "w", encoding="utf-8") as f:
+        f.write(('-'*70 + "\n").join(blocos) + ('-'*70 + "\n" if blocos else ""))
 
 RAFAEL_LIST_ID = "901328012510"
 TIAGO_LIST_ID = "901323683841"
@@ -305,6 +323,7 @@ def sync_metas_file(json_path, list_id):
         except Exception as e:
             print(f"ERRO ao sincronizar a meta '{meta.get('short','?')}': {type(e).__name__}: {e} "
                   f"(pulando esta meta, mantendo dado anterior, seguindo com as demais)", file=sys.stderr)
+            log_error(f"meta '{meta.get('short','?')}' (id={meta.get('id')}) na lista {list_id}", e)
             continue
 
     # 2) Remove metas que sumiram do ClickUp (exclusão)
@@ -383,6 +402,7 @@ def main():
             print("  -> sem mudanças")
     except Exception as e:
         print(f"ERRO GERAL ao sincronizar Rafael: {type(e).__name__}: {e} (mantendo rafael.json anterior)", file=sys.stderr)
+        log_error("Rafael (geral)", e)
         houve_erro = True
 
     print("Sincronizando Tiago...")
@@ -394,6 +414,7 @@ def main():
             print("  -> sem mudanças")
     except Exception as e:
         print(f"ERRO GERAL ao sincronizar Tiago: {type(e).__name__}: {e} (mantendo tiago.json anterior)", file=sys.stderr)
+        log_error("Tiago (geral)", e)
         houve_erro = True
 
     print("Sincronizando RoadMap...")
@@ -405,6 +426,7 @@ def main():
             print("  -> sem mudanças")
     except Exception as e:
         print(f"ERRO GERAL ao sincronizar RoadMap: {type(e).__name__}: {e} (mantendo roadmap.json anterior)", file=sys.stderr)
+        log_error("RoadMap (geral)", e)
         houve_erro = True
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
