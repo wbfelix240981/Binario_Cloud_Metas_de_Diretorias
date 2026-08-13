@@ -687,14 +687,14 @@
      },
      {
       "n": "Geração de alertas para os dados coletados no painel",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1786086000000,
       "id": "86ag4q1e7"
      },
      {
       "n": "Criação/Adequação da tela de Alertas",
       "status": "in progress",
-      "due": 1786086000000,
+      "due": 1787900400000,
       "id": "86ah4ck30"
      },
      {
@@ -826,7 +826,7 @@
      {
       "n": "Precificação do produto",
       "status": "backlog",
-      "due": 1787900400000,
+      "due": 1790751600000,
       "id": "86ag4qxhv"
      },
      {
