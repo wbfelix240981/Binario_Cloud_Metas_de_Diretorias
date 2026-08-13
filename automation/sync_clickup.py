@@ -383,27 +383,67 @@ def sync_metas_file(json_path, list_id):
 
 
 def sync_roadmap_file(json_path, list_id):
-    """Sincroniza o roadmap.json (lista flat, sem fases) com o ClickUp."""
+    """Sincroniza o roadmap.json (lista flat, sem fases) com o ClickUp.
+
+    IMPORTANTE (corrigido em 13/08/2026): a busca da lista às vezes retorna
+    um item a menos numa chamada específica, de forma intermitente e sem
+    causa raiz identificada (não é paginação — já testado e não resolveu).
+    Por segurança, um item só é removido de verdade depois de ficar ausente
+    em 3 checagens seguidas (~3h) — uma única falha pontual não remove nada,
+    evitando o efeito 'item some e volta' a cada rodada.
+    """
     with open(json_path, encoding="utf-8") as f:
         old_tasks = json.load(f)
 
     live_tasks = api_get_all_tasks(list_id)
+    live_by_id = {t["id"]: t for t in live_tasks}
+    known_ids = {t["id"] for t in old_tasks}
 
+    changed = False
     new_tasks = []
-    for t in live_tasks:
-        new_tasks.append({
-            "id": t["id"],
-            "name": t["name"],
-            "status": t["status"]["status"].strip().lower(),
-            "assignees": [a["username"] for a in t.get("assignees", [])] or [],
-            "url": f"https://app.clickup.com/t/{t['id']}",
-        })
 
-    changed = old_tasks != new_tasks
-    if changed:
-        with open(json_path, "w", encoding="utf-8") as f:
-            json.dump(new_tasks, f, ensure_ascii=False, indent=1)
-            f.write("\n")
+    for task in old_tasks:
+        live = live_by_id.get(task["id"])
+        if live:
+            novo = {
+                "id": live["id"],
+                "name": live["name"],
+                "status": live["status"]["status"].strip().lower(),
+                "assignees": [a["username"] for a in live.get("assignees", [])] or [],
+                "url": f"https://app.clickup.com/t/{live['id']}",
+            }
+            if {k: v for k, v in task.items() if k != "_missing_count"} != novo:
+                changed = True
+            novo["_missing_count"] = 0
+            new_tasks.append(novo)
+        else:
+            faltas = task.get("_missing_count", 0) + 1
+            if faltas >= 3:
+                print(f"REMOVIDO do RoadMap (ausente em {faltas} checagens seguidas): '{task['name']}'", file=sys.stderr)
+                changed = True
+                continue
+            task["_missing_count"] = faltas
+            new_tasks.append(task)
+
+    for t in live_tasks:
+        if t["id"] not in known_ids:
+            new_tasks.append({
+                "id": t["id"],
+                "name": t["name"],
+                "status": t["status"]["status"].strip().lower(),
+                "assignees": [a["username"] for a in t.get("assignees", [])] or [],
+                "url": f"https://app.clickup.com/t/{t['id']}",
+                "_missing_count": 0,
+            })
+            changed = True
+            print(f"INCLUÍDO no RoadMap: '{t['name']}'", file=sys.stderr)
+
+    if new_tasks != old_tasks:
+        changed = True
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(new_tasks, f, ensure_ascii=False, indent=1)
+        f.write("\n")
 
     return changed
 
