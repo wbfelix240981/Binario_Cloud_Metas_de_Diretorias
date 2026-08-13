@@ -107,6 +107,25 @@ def api_get(path):
     raise RuntimeError(f"Falha ao buscar {url}: {last_err}")
 
 
+def api_get_all_tasks(list_id, extra_params=""):
+    """Busca TODAS as tarefas de uma lista, paginando corretamente.
+    Bug corrigido em 13/08/2026: a API do ClickUp pagina os resultados
+    (não retorna tudo numa página só quando a lista cresce); sem paginar,
+    o último item da lista ficava intermitentemente de fora."""
+    todas = []
+    page = 0
+    while True:
+        resp = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true&page={page}{extra_params}")
+        pagina_tasks = resp.get("tasks", [])
+        todas.extend(pagina_tasks)
+        if resp.get("last_page", True) or not pagina_tasks:
+            break
+        page += 1
+        if page > 20:  # trava de segurança contra loop infinito
+            break
+    return todas
+
+
 def assignee_name(task):
     names = [a["username"] for a in task.get("assignees", [])]
     return " / ".join(names) if names else "—"
@@ -254,7 +273,7 @@ def sync_metas_file(json_path, list_id):
     with open(json_path, encoding="utf-8") as f:
         metas = json.load(f)
 
-    live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
+    live_tasks = api_get_all_tasks(list_id)
     exclude_names = {n.lower() for n in EXCLUDE_NAMES_BY_LIST.get(list_id, set())}
 
     changed = False
@@ -368,7 +387,7 @@ def sync_roadmap_file(json_path, list_id):
     with open(json_path, encoding="utf-8") as f:
         old_tasks = json.load(f)
 
-    live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
+    live_tasks = api_get_all_tasks(list_id)
 
     new_tasks = []
     for t in live_tasks:
