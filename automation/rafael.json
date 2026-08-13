@@ -223,7 +223,536 @@
    "modernização tecnológica"
   ],
   "detail": "Meta de nível executivo que consolida o resultado da migração de clientes entre gerações de cloud (detalhamento técnico acompanhado na meta de Desmobilização 2.0).",
-  "fases": []
+  "fases": [
+   {
+    "n": "Binario NET",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyrzx",
+    "ativ": []
+   },
+   {
+    "n": "APTU TECNOLOGIA DA INFORMACAO LTDA - Projeto 1",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt05",
+    "ativ": []
+   },
+   {
+    "n": "CARLSONS PRODUTOS INDUSTRIAIS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt0h",
+    "ativ": []
+   },
+   {
+    "n": "NAUTIKA - INDUSTRIA BRASILEIRA DE INFLAVEIS NAUTIKA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt15",
+    "ativ": []
+   },
+   {
+    "n": "FORCE-LINE INDUSTRIA E COMERCIO DE COMPONENTES ELETRONICOS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt22",
+    "ativ": []
+   },
+   {
+    "n": "CARTELLONE DO BRASIL LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt2k",
+    "ativ": []
+   },
+   {
+    "n": "CASCATINHA COUNTRY CLUB",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt37",
+    "ativ": []
+   },
+   {
+    "n": "CORUMBA CONCESSOES S.A.",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt4f",
+    "ativ": []
+   },
+   {
+    "n": "NOVODENTE S/A",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt69",
+    "ativ": []
+   },
+   {
+    "n": "FIT GESTAO E TECNOLOGIA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt74",
+    "ativ": []
+   },
+   {
+    "n": "SHOEBIZ COMERCIO DE CALCADOS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt84",
+    "ativ": []
+   },
+   {
+    "n": "RK PARTNERS ASSESSORIA FINANCEIRA LTDA.",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyt99",
+    "ativ": []
+   },
+   {
+    "n": "EDUDATA INFORMATICA S/S LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytb5",
+    "ativ": []
+   },
+   {
+    "n": "OUROPAK COMERCIO DE EMBALAGENS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytcr",
+    "ativ": []
+   },
+   {
+    "n": "RACCONECT - G C DA SILVA SOLUCOES EM TI - JX COMERCIAL IMPORTACAO E EXPORTACAO LTDA.",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyte2",
+    "ativ": []
+   },
+   {
+    "n": "DIGITAL WORK COMPUTER SERVICE COMERCIAL EIRELI .",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytfm",
+    "ativ": []
+   },
+   {
+    "n": "ASSEGUROU CORRETORA DE SEGUROS LTDA - Oinsurance",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytgn",
+    "ativ": []
+   },
+   {
+    "n": "RBXSOFT CORPORATION INFORMATICA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytjh",
+    "ativ": []
+   },
+   {
+    "n": "BESIMPLE - CLEBER DE LUCA 27716851837",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytm0",
+    "ativ": []
+   },
+   {
+    "n": "TRUCK PARTICIPACOES LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytq7",
+    "ativ": []
+   },
+   {
+    "n": "BEST SMART NEGOCIO E TECNOLOGIA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytt4",
+    "ativ": []
+   },
+   {
+    "n": "PROTECTA - COPLATEX INDUSTRIA E COMERCIO DE TECIDOS S.A",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzytv5",
+    "ativ": []
+   },
+   {
+    "n": "WITEC - IT SOLUTIONS SERVICOS DE INFORMATICA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyty3",
+    "ativ": []
+   },
+   {
+    "n": "PROMOFARMA - ORGANIZACAO FARMACEUTICA NAKANO LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyu08",
+    "ativ": []
+   },
+   {
+    "n": "VIA CAPITALIZACAO S/A - APLUB",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyu2m",
+    "ativ": []
+   },
+   {
+    "n": "FERNANDES E OTA ADVOGADOS ASSOCIADOS",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyu5z",
+    "ativ": []
+   },
+   {
+    "n": "COASA CONTABILIDADE LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyu7p",
+    "ativ": []
+   },
+   {
+    "n": "PEDREIRA UM VALEMIX - P1 PARTICIPACOES LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyu8x",
+    "ativ": []
+   },
+   {
+    "n": "REFRIO - PLATLOG IMPORTACAO, LOGISTICA E DISTRIBUICAO LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuau",
+    "ativ": []
+   },
+   {
+    "n": "LEBON PRODUTOS QUIMICOS FARMACEUTICOS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyucp",
+    "ativ": []
+   },
+   {
+    "n": "MEXTRA ENGENHARIA EXTRATIVA DE METAIS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyudu",
+    "ativ": []
+   },
+   {
+    "n": "CGVINC. INCORPORACOES E VENDAS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyugc",
+    "ativ": []
+   },
+   {
+    "n": "DAILYTECH LATINO AMERICA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuj0",
+    "ativ": []
+   },
+   {
+    "n": "PIRES E GONCALVES ADVOGADOS ASSOCIADOS",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuk6",
+    "ativ": []
+   },
+   {
+    "n": "UDSP - ASSOCIAÇÃO EDUCACIONAL SOCIAL DO BRASIL(ANTIGA UNIORKA CUIABA SOLUCOES PARA INTERNET LTDA)",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyume",
+    "ativ": []
+   },
+   {
+    "n": "MARAVILHA COMERCIO DE LIVROS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyup3",
+    "ativ": []
+   },
+   {
+    "n": "UNION LAB - UL QUIMICA E CIENTIFICA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyur1",
+    "ativ": []
+   },
+   {
+    "n": "MAC FER INDUSTRIA E COMERCIO LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuug",
+    "ativ": []
+   },
+   {
+    "n": "J RUFINUS DIESEL LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuxq",
+    "ativ": []
+   },
+   {
+    "n": "NC SOLUCOES E SERVICOS DE INFORMATICA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuym",
+    "ativ": []
+   },
+   {
+    "n": "VACC - PATINE CAMPANER & ASSOCIADOS SERVICOS CONTABEIS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyuzz",
+    "ativ": []
+   },
+   {
+    "n": "TRANS GOBBI TRANSPORTES RODOVIARIOS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyv1h",
+    "ativ": []
+   },
+   {
+    "n": "FIPE - FUNDACAO INSTITUTO DE PESQUISAS ECONOMICAS",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyv33",
+    "ativ": []
+   },
+   {
+    "n": "NAVIRAI - MUNICIPIO DE NAVIRAI",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyv4g",
+    "ativ": []
+   },
+   {
+    "n": "MONTE AZUL - Trajeto Monte Azul",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyv5w",
+    "ativ": []
+   },
+   {
+    "n": "SAGA ENGENHARIA LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyv82",
+    "ativ": []
+   },
+   {
+    "n": "AUTOMALOGICA SISTEMAS PARA AUTOMACAO SA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvcd",
+    "ativ": []
+   },
+   {
+    "n": "MBM SOFTWARE SOLUTIONS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvg7",
+    "ativ": []
+   },
+   {
+    "n": "B B DISTRIBUIDORA DE CARNES LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvmz",
+    "ativ": []
+   },
+   {
+    "n": "GIMBA - SUPRICORP SUPRIMENTOS LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvqk",
+    "ativ": []
+   },
+   {
+    "n": "SOPREMA - DENVER IMPERMEABILIZANTES, INDUSTRIA E COMERCIO LTDA",
+    "status": "shipped",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvu9",
+    "ativ": []
+   },
+   {
+    "n": "QoS (Projeto 1)",
+    "status": "in progress",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyvyq",
+    "ativ": []
+   },
+   {
+    "n": "ZANTHUS - COMERCIO E SERVICOS LTDA",
+    "status": "in progress",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyw16",
+    "ativ": []
+   },
+   {
+    "n": "QoS (Projeto 2)",
+    "status": "in progress",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyw3w",
+    "ativ": []
+   },
+   {
+    "n": "PIRAMIDAL - NOVA PIRAMIDAL THERMOPLASTICS S.A.",
+    "status": "in progress",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzywez",
+    "ativ": []
+   },
+   {
+    "n": "PRUMO ENGENHARIA EIRELI",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzuqt5",
+    "ativ": []
+   },
+   {
+    "n": "NETZA - PROMOCOES E EVENTOS LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyw6c",
+    "ativ": []
+   },
+   {
+    "n": "ENESA ENGENHARIA S.A.",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyxqb",
+    "ativ": []
+   },
+   {
+    "n": "1TEAMCLOUD SOLUCOES EM INFORMATICA LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzuqby",
+    "ativ": []
+   },
+   {
+    "n": "GEOFIX ENGENHARIA FUNDACOES E ESTAQUEAMENTO SOCIEDADE EMPRESARIA LTDA (REFRIO)",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzuqdf",
+    "ativ": []
+   },
+   {
+    "n": "BMC MAQUINAS, EQUIP PESADOS, ENGENHARIA E LOCACOES LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzuqeu",
+    "ativ": []
+   },
+   {
+    "n": "MAGAZINE LUIZA S/A",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzuqg0",
+    "ativ": []
+   },
+   {
+    "n": "RADIO MONTE DA GAVEA LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzywb1",
+    "ativ": []
+   },
+   {
+    "n": "REFRIO ARMAZENS GERAIS LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyx04",
+    "ativ": []
+   },
+   {
+    "n": "GRUPO RAIZES - CUCINARE PRO ALIMENTACAO LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyx5t",
+    "ativ": []
+   },
+   {
+    "n": "SAT CONSULTORIA EM TELECOMUNICACOES LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyxgg",
+    "ativ": []
+   }
+  ]
  },
  {
   "num": 3,

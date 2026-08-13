@@ -1,5 +1,39 @@
 [
  {
+  "id": "86ak00hcn",
+  "name": "Atualizar as imagens de SO (Linux e Windows) no BCP",
+  "status": "aberto",
+  "assignees": [
+   "Leonardo Gomes Jorge Gonçalez"
+  ],
+  "url": "https://app.clickup.com/t/86ak00hcn"
+ },
+ {
+  "id": "86ajzzn6x",
+  "name": "Atualizar o Motor Do Kubernetes de Magnum para Rancher",
+  "status": "aberto",
+  "assignees": [
+   "Leonardo Gomes Jorge Gonçalez"
+  ],
+  "url": "https://app.clickup.com/t/86ajzzn6x"
+ },
+ {
+  "id": "86ajyuekd",
+  "name": "Cacluladora parou de funcionar,",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ajyuekd"
+ },
+ {
+  "id": "86ajycnwt",
+  "name": "Adicionar campo para confirmar resize ou migração",
+  "status": "aberto",
+  "assignees": [],
+  "url": "https://app.clickup.com/t/86ajycnwt"
+ },
+ {
   "id": "86ajxgg74",
   "name": "Poder adicionar o perfil load-balancer pela console do BCP",
   "status": "aberto",
@@ -237,48 +271,5 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/86aea8y0t"
- },
- {
-  "id": "86ak00hcn",
-  "name": "Atualizar as imagens de SO (Linux e Windows) no BCP",
-  "status": "aberto",
-  "assignees": [
-   "Leonardo Gomes Jorge Gonçalez"
-  ],
-  "url": "https://app.clickup.com/t/86ak00hcn"
- },
- {
-  "id": "86ajzzn6x",
-  "name": "Atualizar o Motor Do Kubernetes de Magnum para Rancher",
-  "status": "aberto",
-  "assignees": [
-   "Leonardo Gomes Jorge Gonçalez"
-  ],
-  "url": "https://app.clickup.com/t/86ajzzn6x"
- },
- {
-  "id": "86ajyuekd",
-  "name": "Cacluladora parou de funcionar,",
-  "status": "aberto",
-  "assignees": [
-   "Tiago Oliveira"
-  ],
-  "url": "https://app.clickup.com/t/86ajyuekd"
- },
- {
-  "id": "86ajycnwt",
-  "name": "Adicionar campo para confirmar resize ou migração",
-  "status": "aberto",
-  "assignees": [],
-  "url": "https://app.clickup.com/t/86ajycnwt"
- },
- {
-  "id": "86ajwp3vr",
-  "name": "Criar documento com exemplos para permissão para cada cenario",
-  "status": "aberto",
-  "assignees": [
-   "Joab de Araújo Silva"
-  ],
-  "url": "https://app.clickup.com/t/86ajwp3vr"
  }
 ]

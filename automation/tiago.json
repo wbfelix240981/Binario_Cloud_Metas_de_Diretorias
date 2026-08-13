@@ -699,7 +699,7 @@
      },
      {
       "n": "Recomendações de utilização por IA",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1787900400000,
       "id": "86ag4qew3"
      }
@@ -707,51 +707,51 @@
    },
    {
     "n": "FASE04 - Administrativo - Saúde Ambiente",
-    "status": "backlog",
+    "status": "in planning",
     "assignee": "Raphael Fogaça",
-    "due": 1787727600000,
+    "due": 1789369200000,
     "id": "86afcwtz3",
     "ativ": [
      {
       "n": "Visão de Capacity da nuvem",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4q8zn"
      },
      {
       "n": "Visão de Top usage VMS",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4q973"
      },
      {
       "n": "Visão de Top usage compute nodes",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4q9ju"
      },
      {
       "n": "Visão de discos mais utilizados",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4q9pp"
      },
      {
       "n": "Visão tráfego de rede dos computes",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4r31p"
      },
      {
       "n": "Geração de alertas administrativo",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4qqct"
      },
      {
       "n": "Recomendação de IA para o gestor da empresa",
       "status": "backlog",
-      "due": 1787727600000,
+      "due": 1788159600000,
       "id": "86ag4r4bv"
      }
     ]
@@ -760,7 +760,7 @@
     "n": "FASE05 - Esteira de QA",
     "status": "backlog",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1788159600000,
+    "due": 1789369200000,
     "id": "86ag4q559",
     "ativ": [
      {
@@ -808,19 +808,19 @@
      {
       "n": "Apresentação para o Board da Empresa",
       "status": "backlog",
-      "due": 1788159600000,
+      "due": 1789369200000,
       "id": "86ag4qp0m"
      },
      {
       "n": "Apresentação para o comercial",
       "status": "backlog",
-      "due": 1788159600000,
+      "due": 1788850800000,
       "id": "86ag4qp4z"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
       "status": "backlog",
-      "due": null,
+      "due": 1789369200000,
       "id": "86ag4qxax"
      },
      {
@@ -832,7 +832,7 @@
      {
       "n": "Plano de evolução para novas versões",
       "status": "backlog",
-      "due": 1788159600000,
+      "due": 1789974000000,
       "id": "86agdr2px"
      }
     ]
