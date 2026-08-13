@@ -86,6 +86,17 @@ EXCLUDE_NAMES_BY_LIST = {
     TIAGO_LIST_ID: {"ClaudIA no Suporte", "Observabilidade de BCloud 3.0"},
 }
 
+# Nomes de FASES/subtarefas que devem ficar sempre de fora de uma meta
+# específica (chave = id da meta no ClickUp), mesmo que existam como
+# subtarefas reais lá — normalmente porque poluem a visão sem agregar
+# valor de acompanhamento (ex.: virou uma lista de nomes de clientes).
+EXCLUDE_FASE_NAMES_BY_META = {
+    "86ajra8z1": {  # Migração Clientes 2.0 > 3.0
+        "QoS (Projeto 1)", "QoS (Projeto 2)",
+        "NETZA - PROMOCOES E EVENTOS LTDA", "ENESA ENGENHARIA S.A.",
+    },
+}
+
 
 def api_get(path):
     url = BASE + path
@@ -166,9 +177,13 @@ def build_phase(ph_full):
 def build_fases_for_task(task_id):
     """Busca e reconstrói as fases + atividades de uma tarefa (meta) do zero."""
     full = api_get(f"/task/{task_id}?include_subtasks=true")
+    excluidas = {n.lower() for n in EXCLUDE_FASE_NAMES_BY_META.get(task_id, set())}
     new_fases = []
     for ph in full.get("subtasks", []):
-        if ph.get("name", "").strip().lower() == "dummy":
+        nome_lower = ph.get("name", "").strip().lower()
+        if nome_lower == "dummy":
+            continue
+        if nome_lower in excluidas:
             continue
         if ph.get("subtasks_count", 0) > 0:
             ph_full = api_get(f"/task/{ph['id']}?include_subtasks=true")
