@@ -301,5 +301,25 @@
   ],
   "url": "https://app.clickup.com/t/86aea8y0t",
   "_missing_count": 0
+ },
+ {
+  "id": "86ak0fqm1",
+  "name": "Ajustar descrição da Console para Criação de Flavors de Banco de Dados",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ak0fqm1",
+  "_missing_count": 0
+ },
+ {
+  "id": "86ak0ffwt",
+  "name": "Roadmap de atualização das versões das aplicações do PaaS como por exemplo MariaDB",
+  "status": "aberto",
+  "assignees": [
+   "Leonardo Gomes Jorge Gonçalez"
+  ],
+  "url": "https://app.clickup.com/t/86ak0ffwt",
+  "_missing_count": 0
  }
 ]
