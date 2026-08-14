@@ -644,7 +644,7 @@
     "n": "PIRAMIDAL - NOVA PIRAMIDAL THERMOPLASTICS S.A.",
     "status": "in progress",
     "assignee": "—",
-    "due": null,
+    "due": 1786690800000,
     "id": "86ajzywez",
     "ativ": []
    },
@@ -654,6 +654,22 @@
     "assignee": "—",
     "due": null,
     "id": "86ajzuqt5",
+    "ativ": []
+   },
+   {
+    "n": "NETZA - PROMOCOES E EVENTOS LTDA",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyw6c",
+    "ativ": []
+   },
+   {
+    "n": "ENESA ENGENHARIA S.A.",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86ajzyxqb",
     "ativ": []
    },
    {
@@ -718,22 +734,6 @@
     "assignee": "—",
     "due": null,
     "id": "86ajzyxgg",
-    "ativ": []
-   },
-   {
-    "n": "NETZA - PROMOCOES E EVENTOS LTDA",
-    "status": "shipped",
-    "assignee": "—",
-    "due": null,
-    "id": "86ajzyw6c",
-    "ativ": []
-   },
-   {
-    "n": "ENESA ENGENHARIA S.A.",
-    "status": "shipped",
-    "assignee": "—",
-    "due": null,
-    "id": "86ajzyxqb",
     "ativ": []
    }
   ]
