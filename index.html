@@ -115,6 +115,7 @@
   .metas{max-width:1180px; margin:0 auto; padding:0 28px 60px; display:flex; flex-direction:column; gap:14px;}
   .meta-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; transition:border-color .15s;}
   .meta-card.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .meta-card.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
   .overdue-pill{
     font-family:var(--mono); font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em;
     color:#ffb3b3; background:rgba(255,90,90,.14); border:1px solid #5c1f1f; border-radius:999px;
@@ -3866,6 +3867,13 @@ function metaOverdueCount(m){
   }));
   return n;
 }
+function metaPendingCount(m){
+  let n = 0;
+  m.fases.forEach(f=>(f.ativ||[]).forEach(a=>{
+    if(ativDueState(a) === 'pendente') n++;
+  }));
+  return n;
+}
 
 function badge(status){
   const s = STATUS_META[status];
@@ -3942,14 +3950,15 @@ function renderMetas(){
 
     const pct = Math.round(metaProgress(m)*100);
     const overdueCount = metaOverdueCount(m);
+    const pendingCount = metaPendingCount(m);
     const card = document.createElement('div');
-    card.className = 'meta-card meta-card-link' + (overdueCount>0 ? ' meta-atrasada' : '');
+    card.className = 'meta-card meta-card-link' + (overdueCount>0 ? ' meta-atrasada' : (pendingCount>0 ? ' meta-pendente' : ''));
     card.innerHTML = `
       <div class="meta-head">
         <div class="meta-num">META<b>${String(m.num).padStart(2,'0')}</b></div>
         <div class="meta-name">
           <div class="n1">${m.short}${m.excludeFromIndex?' <span style="color:var(--text-mute); font-weight:400;">*</span>':''}</div>
-          <div class="n2">${m.tags.map(t=>`<span class="tag">${t}</span>`).join('')}${overdueCount>0?`<span class="overdue-pill">⚠ ${overdueCount} atrasada${overdueCount>1?'s':''}</span>`:''}</div>
+          <div class="n2">${m.tags.map(t=>`<span class="tag">${t}</span>`).join('')}${overdueCount>0?`<span class="overdue-pill">⚠ ${overdueCount} atrasada${overdueCount>1?'s':''}</span>`:(pendingCount>0?`<span class="overdue-pill" style="color:var(--amber); background:rgba(255,198,92,.14); border-color:#5c4a1f;">● ${pendingCount} pendente${pendingCount>1?'s':''} hoje</span>`:'')}</div>
         </div>
         ${badge(m.status)}
         <div class="meta-bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-pct">${pct}%</div></div>
@@ -4127,7 +4136,9 @@ function renderMetaDetailPage(tab, num){
     else ativCounts.naoIniciada++;
   });
 
-  const fasesFiltered = detailStatusFilter==='all' ? meta.fases : meta.fases.filter(f=>f.status===detailStatusFilter);
+  const fasesFiltered = detailStatusFilter==='all' ? meta.fases : meta.fases.filter(f=>
+    f.status===detailStatusFilter || (f.ativ||[]).some(a=>a.status===detailStatusFilter)
+  );
 
   const fasesHtml = fasesFiltered.length ? fasesFiltered.map((f)=>{
     const i = meta.fases.indexOf(f);
