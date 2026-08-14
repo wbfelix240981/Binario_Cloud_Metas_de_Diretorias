@@ -188,6 +188,9 @@
   .ativ-row.atrasada .ativ-dot{animation:blinkRed 1.1s ease-in-out infinite; background:var(--red) !important;}
   .ativ-row.atrasada .ativ-name{color:#ffb3b3; font-weight:600;}
   .ativ-row.atrasada .ativ-status{color:#ffb3b3; font-weight:700;}
+  .ativ-row.pendente .ativ-dot{background:var(--amber) !important;}
+  .ativ-row.pendente .ativ-name{color:var(--amber); font-weight:600;}
+  .ativ-row.pendente .ativ-status{color:var(--amber); font-weight:700;}
   .ativ-row.concluida .ativ-name{color:var(--green); font-weight:600;}
   .ativ-row.concluida .ativ-status{color:var(--green); font-weight:700;}
 
@@ -3780,6 +3783,23 @@ function fmtDate(ms){
   return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
 }
 
+// Regra: uma atividade só fica "atrasada" (vermelho) a partir do dia SEGUINTE
+// ao prazo — compara datas de calendário, não o horário exato. No próprio dia
+// do prazo, fica "pendente" (amarelo), não atrasada.
+function startOfDay(ms){
+  const d = new Date(Number(ms));
+  d.setHours(0,0,0,0);
+  return d.getTime();
+}
+function ativDueState(a){
+  if(!a.due || a.status === 'shipped') return null;
+  const hoje = startOfDay(Date.now());
+  const dia = startOfDay(a.due);
+  if(dia < hoje) return 'atrasada';
+  if(dia === hoje) return 'pendente';
+  return null;
+}
+
 const CRITERIOS = {
   "Solução de Backup em produção": ["Material técnico-comercial simples e vendável já disponível no Q1","Definição clara de RPO e RTO","Testes reais de restore executados e documentados","Garantia de que a nova arquitetura de backup esteja efetivamente em produção"],
   "Higiene de infraestrutura": ["Nenhum ativo parado ou subutilizado ao final do Q1/2026","Auditoria integral do parque instalado: hardware comprado x instalado x operacional","Normalização completa do ambiente até o final do trimestre","Mapeamento e correção das máquinas marcadas como \"disabled\", com identificação de causa raiz"]
@@ -3838,10 +3858,9 @@ function metaProgress(m){
   return w/m.fases.length;
 }
 function metaOverdueCount(m){
-  const now = Date.now();
   let n = 0;
   m.fases.forEach(f=>(f.ativ||[]).forEach(a=>{
-    if(a.due && a.due < now && a.status !== 'shipped') n++;
+    if(ativDueState(a) === 'atrasada') n++;
   }));
   return n;
 }
@@ -4096,12 +4115,12 @@ function renderMetaDetailPage(tab, num){
 
   // índice de atividades da meta (todas as atividades de todas as fases)
   const allAtiv = meta.fases.flatMap(f=>f.ativ||[]);
-  const now = Date.now();
-  const ativCounts = {concluida:0, atrasada:0, andamento:0, naoIniciada:0};
+  const ativCounts = {concluida:0, atrasada:0, pendente:0, andamento:0, naoIniciada:0};
   allAtiv.forEach(a=>{
-    const od = a.due && a.due<now && a.status!=='shipped';
+    const estado = ativDueState(a);
     if(a.status==='shipped') ativCounts.concluida++;
-    else if(od) ativCounts.atrasada++;
+    else if(estado==='atrasada') ativCounts.atrasada++;
+    else if(estado==='pendente') ativCounts.pendente++;
     else if(a.status==='in progress'||a.status==='in test'||a.status==='in review') ativCounts.andamento++;
     else ativCounts.naoIniciada++;
   });
@@ -4123,7 +4142,13 @@ function renderMetaDetailPage(tab, num){
         </a>
       </div>
       ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:flex">
-        ${f.ativ.map(a=>{const od=a.due&&a.due<Date.now()&&a.status!=='shipped'; const done=a.status==='shipped'; return `<div class="ativ-row${od?' atrasada':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${od?'var(--red)':STATUS_META[a.status].color}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${od?'ATRASADA':STATUS_META[a.status].label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;}).join('')}
+        ${f.ativ.map(a=>{
+          const estado = ativDueState(a);
+          const od = estado==='atrasada', pend = estado==='pendente', done = a.status==='shipped';
+          const cor = od?'var(--red)':pend?'var(--amber)':STATUS_META[a.status].color;
+          const label = od?'ATRASADA':pend?'PENDENTE':STATUS_META[a.status].label;
+          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
+        }).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
 
@@ -4167,6 +4192,7 @@ function renderMetaDetailPage(tab, num){
           <div class="kpi c-shipped"><div class="k-num">${ativCounts.concluida}</div><div class="k-label">Concluídas</div></div>
           <div class="kpi c-progress"><div class="k-num">${ativCounts.andamento}</div><div class="k-label">Em andamento</div></div>
           <div class="kpi c-backlog"><div class="k-num">${ativCounts.naoIniciada}</div><div class="k-label">Não iniciadas</div></div>
+          <div class="kpi" style="border-color:${ativCounts.pendente>0?'var(--amber)':'var(--border)'}"><div class="k-num" style="color:${ativCounts.pendente>0?'var(--amber)':'var(--text)'}">${ativCounts.pendente}</div><div class="k-label">Pendentes (hoje)</div></div>
           <div class="kpi" style="border-color:${ativCounts.atrasada>0?'var(--red)':'var(--border)'}"><div class="k-num" style="color:${ativCounts.atrasada>0?'var(--red)':'var(--text)'}">${ativCounts.atrasada}</div><div class="k-label">Atrasadas</div></div>
         </div>` : ''}
 
