@@ -93,7 +93,6 @@ EXCLUDE_NAMES_BY_LIST = {
 EXCLUDE_FASE_NAMES_BY_META = {
     "86ajra8z1": {  # Migração Clientes 2.0 > 3.0
         "QoS (Projeto 1)", "QoS (Projeto 2)",
-        "NETZA - PROMOCOES E EVENTOS LTDA", "ENESA ENGENHARIA S.A.",
     },
 }
 
