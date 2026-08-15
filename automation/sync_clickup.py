@@ -399,12 +399,14 @@ def sync_metas_file(json_path, list_id):
 def sync_roadmap_file(json_path, list_id):
     """Sincroniza o roadmap.json (lista flat, sem fases) com o ClickUp.
 
-    IMPORTANTE (corrigido em 13/08/2026): a busca da lista às vezes retorna
-    um item a menos numa chamada específica, de forma intermitente e sem
-    causa raiz identificada (não é paginação — já testado e não resolveu).
-    Por segurança, um item só é removido de verdade depois de ficar ausente
-    em 3 checagens seguidas (~3h) — uma única falha pontual não remove nada,
-    evitando o efeito 'item some e volta' a cada rodada.
+    IMPORTANTE (atualizado em 15/08/2026): a tentativa de remover itens após
+    3 ausências seguidas (ver histórico) não foi suficiente — um item real
+    ficou ausente da busca por mais de 30h seguidas (não é intermitência
+    pontual, é uma falha sistemática não diagnosticada só nesse item via
+    API REST) e acabou sendo removido por engano. Por segurança, a remoção
+    automática por ausência foi DESATIVADA — um item só sai do roadmap.json
+    se for removido manualmente. O contador de ausências é mantido só para
+    fins de diagnóstico/log, não aciona mais remoção.
     """
     with open(json_path, encoding="utf-8") as f:
         old_tasks = json.load(f)
@@ -432,10 +434,8 @@ def sync_roadmap_file(json_path, list_id):
             new_tasks.append(novo)
         else:
             faltas = task.get("_missing_count", 0) + 1
-            if faltas >= 3:
-                print(f"REMOVIDO do RoadMap (ausente em {faltas} checagens seguidas): '{task['name']}'", file=sys.stderr)
-                changed = True
-                continue
+            if faltas != task.get("_missing_count", 0):
+                print(f"AVISO: item ausente na busca ({faltas}x seguida(s), NÃO removido): '{task['name']}'", file=sys.stderr)
             task["_missing_count"] = faltas
             new_tasks.append(task)
 
