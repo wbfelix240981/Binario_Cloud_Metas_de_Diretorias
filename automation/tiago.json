@@ -1033,7 +1033,7 @@
   "due": 1797318000000,
   "name": "Estruturar o BC-Migration para descoberta, planejamento e migração assistida de workloads para o BCP",
   "short": "BCP - Migration como módulo do BCP",
-  "assignee": "Tiago Gomes de Oliveira",
+  "assignee": "Tiago Gomes de Oliveira / Nathan de Moraes Valim Francisco / Joab de Araújo Silva",
   "tags": [],
   "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de identificar ambientes de origem, inventariar workloads, avaliar compatibilidade e executar migrações assistidas para a plataforma BCP (escopo inicial: VMware, on-premises, outros OpenStack, BCOS 2.0, KVM, Red Hat e Canonical).\nEntregáveis: painel do BC-Migration no BCP, descoberta automática de infraestrutura, classificação de workloads por complexidade, avaliação de compatibilidade, geração de plano de migração por ondas, fluxo de migração assistida.\nCritério de aceite: módulo acessível no BCP, descoberta automática funcionando, pelo menos uma VM migrada com sucesso em ambiente controlado, documentação publicada e MVP validado por Produto, Engenharia, SRE e Operações.\nPrazo final: 15 de dezembro de 2026.\nRisco principal: tentar transformar o módulo em uma plataforma universal de migração antes de validar o fluxo mínimo de descoberta, inventário, planejamento e execução assistida.",
   "fases": [],
