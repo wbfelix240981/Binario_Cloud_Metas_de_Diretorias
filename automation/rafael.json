@@ -650,7 +650,7 @@
    },
    {
     "n": "PRUMO ENGENHARIA EIRELI",
-    "status": "backlog",
+    "status": "in progress",
     "assignee": "—",
     "due": null,
     "id": "86ajzuqt5",
@@ -658,7 +658,7 @@
    },
    {
     "n": "NETZA - PROMOCOES E EVENTOS LTDA",
-    "status": "shipped",
+    "status": "backlog",
     "assignee": "—",
     "due": null,
     "id": "86ajzyw6c",
@@ -666,7 +666,7 @@
    },
    {
     "n": "ENESA ENGENHARIA S.A.",
-    "status": "shipped",
+    "status": "backlog",
     "assignee": "—",
     "due": null,
     "id": "86ajzyxqb",
@@ -698,7 +698,7 @@
    },
    {
     "n": "MAGAZINE LUIZA S/A",
-    "status": "backlog",
+    "status": "in progress",
     "assignee": "—",
     "due": null,
     "id": "86ajzuqg0",
