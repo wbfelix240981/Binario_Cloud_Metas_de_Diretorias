@@ -837,11 +837,25 @@
       "id": "86ajuz7x4"
      },
      {
+      "n": "Definir plano de discovery",
+      "status": "shipped",
+      "due": null,
+      "original_due": null,
+      "id": "86ajuz7x5"
+     },
+     {
       "n": "Desenho da arquitetura As Is",
       "status": "shipped",
       "due": 1770274800000,
       "original_due": 1770274800000,
       "id": "86ajuz7y5"
+     },
+     {
+      "n": "Desenho da arquitetura ToBe",
+      "status": "shipped",
+      "due": 1770274800000,
+      "original_due": 1770274800000,
+      "id": "86ajuz7yd"
      },
      {
       "n": "Definir estratégia de integração e/ou migração",
@@ -856,20 +870,6 @@
       "due": 1782198000000,
       "original_due": 1782198000000,
       "id": "86ajuz801"
-     },
-     {
-      "n": "Definir plano de discovery",
-      "status": "shipped",
-      "due": null,
-      "original_due": null,
-      "id": "86ajuz7x5"
-     },
-     {
-      "n": "Desenho da arquitetura ToBe",
-      "status": "shipped",
-      "due": 1770274800000,
-      "original_due": 1770274800000,
-      "id": "86ajuz7yd"
      }
     ]
    },
@@ -1625,7 +1625,7 @@
      {
       "n": "br-sp-02-node08",
       "status": "in progress",
-      "due": 1787122800000,
+      "due": 1787295600000,
       "original_due": 1786690800000,
       "id": "86agc87n9"
      },
@@ -1674,7 +1674,7 @@
      {
       "n": "br-sp-02-node19",
       "status": "in progress",
-      "due": 1787209200000,
+      "due": 1787295600000,
       "original_due": 1786690800000,
       "id": "86agc885p"
      },
