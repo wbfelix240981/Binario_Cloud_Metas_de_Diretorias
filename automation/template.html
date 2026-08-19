@@ -181,6 +181,7 @@
   .ativ-dot{width:7px; height:7px; border-radius:50%; flex:none;}
   .ativ-name{flex:1; min-width:0;}
   .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
+  .ativ-due-new{font-family:var(--mono); font-size:10px; color:var(--cyan); white-space:nowrap; font-weight:600;}
   .ativ-status{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; white-space:nowrap;}
   .ativ-link{color:var(--text-mute); display:flex; align-items:center; opacity:.6; transition:.15s; flex:none; margin-left:4px;}
   .ativ-link:hover{color:var(--cyan); opacity:1;}
@@ -560,9 +561,10 @@ function startOfDay(ms){
   return d.getTime();
 }
 function ativDueState(a){
-  if(!a.due || a.status === 'shipped') return null;
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(!dataBase || a.status === 'shipped') return null;
   const hoje = startOfDay(Date.now());
-  const dia = startOfDay(a.due);
+  const dia = startOfDay(dataBase);
   if(dia < hoje) return 'atrasada';
   if(dia === hoje) return 'pendente';
   return null;
@@ -925,7 +927,9 @@ function renderMetaDetailPage(tab, num){
           const od = estado==='atrasada', pend = estado==='pendente', done = a.status==='shipped';
           const cor = od?'var(--red)':pend?'var(--amber)':STATUS_META[a.status].color;
           const label = od?'ATRASADA':pend?'PENDENTE':STATUS_META[a.status].label;
-          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${a.due?`<span class="ativ-due">${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
+          const dataOriginal = (a.original_due != null) ? a.original_due : a.due;
+          const dataMudou = a.original_due != null && a.due !== a.original_due;
+          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${dataOriginal?`<span class="ativ-due">${fmtDate(dataOriginal)}</span>`:''}${dataMudou?`<span class="ativ-due-new" title="Nova data no ClickUp">→ ${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
         }).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);

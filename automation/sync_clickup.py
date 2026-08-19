@@ -152,16 +152,25 @@ def map_status(raw_status):
     return STATUS_MAP.get(raw, "backlog")
 
 
-def build_activity(t):
+def build_activity(t, old_ativ_by_id=None):
+    old = (old_ativ_by_id or {}).get(t["id"])
+    new_due = to_ms(t.get("due_date"))
+    if old and old.get("original_due") is not None:
+        original_due = old["original_due"]
+    elif old and old.get("due") is not None:
+        original_due = old["due"]
+    else:
+        original_due = new_due
     return {
         "n": t["name"],
         "status": map_status(t["status"]["status"]),
-        "due": to_ms(t.get("due_date")),
+        "due": new_due,
+        "original_due": original_due,
         "id": t["id"],
     }
 
 
-def build_phase(ph_full):
+def build_phase(ph_full, old_ativ_by_id=None):
     subtasks = ph_full.get("subtasks", [])
     return {
         "n": ph_full["name"],
@@ -169,12 +178,19 @@ def build_phase(ph_full):
         "assignee": assignee_name(ph_full),
         "due": to_ms(ph_full.get("due_date")),
         "id": ph_full["id"],
-        "ativ": [build_activity(s) for s in subtasks],
+        "ativ": [build_activity(s, old_ativ_by_id) for s in subtasks],
     }
 
 
-def build_fases_for_task(task_id):
-    """Busca e reconstrói as fases + atividades de uma tarefa (meta) do zero."""
+def build_fases_for_task(task_id, old_fases=None):
+    """Busca e reconstrói as fases + atividades de uma tarefa (meta) do zero,
+    preservando a data original (original_due) de cada atividade já conhecida."""
+    old_ativ_by_id = {}
+    for f in (old_fases or []):
+        for a in f.get("ativ", []):
+            if a.get("id"):
+                old_ativ_by_id[a["id"]] = a
+
     full = api_get(f"/task/{task_id}?include_subtasks=true")
     excluidas = {n.lower() for n in EXCLUDE_FASE_NAMES_BY_META.get(task_id, set())}
     new_fases = []
@@ -188,7 +204,7 @@ def build_fases_for_task(task_id):
             ph_full = api_get(f"/task/{ph['id']}?include_subtasks=true")
         else:
             ph_full = ph
-        new_fases.append(build_phase(ph_full))
+        new_fases.append(build_phase(ph_full, old_ativ_by_id))
     return new_fases
 
 
@@ -339,7 +355,7 @@ def sync_metas_file(json_path, list_id):
                 meta.pop("excludeFromIndex", None)
                 continue
 
-            new_fases = build_fases_for_task(live["id"])
+            new_fases = build_fases_for_task(live["id"], meta.get("fases"))
             if meta.get("fases") != new_fases:
                 meta["fases"] = new_fases
                 changed = True
