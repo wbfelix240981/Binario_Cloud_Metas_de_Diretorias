@@ -24,36 +24,42 @@
       "n": "Instalar Galera",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc6ju"
      },
      {
       "n": "Instalar controller",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc6uw"
      },
      {
       "n": "instalar repositório",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc6z8"
      },
      {
       "n": "conectar ceph de backup",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc76p"
      },
      {
       "n": "validar features",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc7ac"
      },
      {
       "n": "gerar frontend personalizado",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86agtc7mp"
      }
     ]
@@ -69,18 +75,21 @@
       "n": "Tradução",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag6zv4v"
      },
      {
       "n": "Opção \"enable file system\"",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag6zvvx"
      },
      {
       "n": "Correção de bugs visuais",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag6zw1z"
      }
     ]
@@ -96,48 +105,56 @@
       "n": "Criar plano de teste - Equipe BinarioNet",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afcrzu6"
      },
      {
       "n": "Criar videos tutoriais para a equipe Suporte - N1/N2",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afct04e"
      },
      {
       "n": "Contratar licenças junto ao Fornecedor - Storware",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afct16a"
      },
      {
       "n": "Definir precificação",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afct1md"
      },
      {
       "n": "Subir SKU na Calculadora",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afct1u7"
      },
      {
       "n": "Definir 5 primeiro Clientes",
       "status": "in progress",
       "due": null,
+      "original_due": null,
       "id": "86afct2c8"
      },
      {
       "n": "Subir documentação - ClaudIA",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86afct37a"
      },
      {
       "n": "Disponibilização da FAQ",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag1nq0v"
      }
     ]
@@ -169,12 +186,14 @@
       "n": "Definição de codificação de token de acesso",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tmrv"
      },
      {
       "n": "Definição do tempo de vida do acesso gerado",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tn72"
      }
     ]
@@ -190,12 +209,14 @@
       "n": "Criar view no BCAPI para a geração de links",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tk0m"
      },
      {
       "n": "Desenvolvimento de API para geração de tokens de acesso a calculadora",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tkj8"
      }
     ]
@@ -211,12 +232,14 @@
       "n": "Desenvolvimento do encode/decoder de token de acesso",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tghv"
      },
      {
       "n": "Inserir na calculadora o envio deste token de acesso para a validação",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4thd7"
      }
     ]
@@ -232,12 +255,14 @@
       "n": "Desenvolver o redirecionamento",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4td2j"
      },
      {
       "n": "Criar página indicando com contato com a equipe comercial",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4td95"
      }
     ]
@@ -253,18 +278,21 @@
       "n": "Desenvolver tema de ativação do mfa na central do usuário",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4te63"
      },
      {
       "n": "Mecanismo de validação de token de acesso",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tebz"
      },
      {
       "n": "Desenvolvimento de tela de validação de acesso após o login",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4tf16"
      }
     ]
@@ -280,42 +308,49 @@
       "n": "Criação de esteira do módulo",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4t2t7"
      },
      {
       "n": "Testes e validações do produto",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4t2tw"
      },
      {
       "n": "Geração de documentação da operação",
       "status": "shipped",
       "due": 1785913200000,
+      "original_due": 1785913200000,
       "id": "86ag4t2v4"
      },
      {
       "n": "Geração de FAQ para o cliente",
       "status": "shipped",
       "due": 1785913200000,
+      "original_due": 1785913200000,
       "id": "86ag4t2vu"
      },
      {
       "n": "Passagem para produção",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4t2wh"
      },
      {
       "n": "Apresentação para a diretoria da Empresa",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4t2x6"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4t2y9"
      }
     ]
@@ -346,30 +381,35 @@
       "n": "Montagem da tela de consumo em tempo real",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86hcu"
      },
      {
       "n": "Criação de endpoint de consumo de tempo real - skyline",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86htg"
      },
      {
       "n": "Integração da tela de consumo com BCAPI",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86je5"
      },
      {
       "n": "Ajustes dos parametros da API de consumo(filtragem de dados por projeto)",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86k67"
      },
      {
       "n": "Deploy da solução em produção",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86kdu"
      }
     ]
@@ -385,24 +425,28 @@
       "n": "Exposição dos preços da calculadora por API no skyline",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86ncy"
      },
      {
       "n": "Construção de tela para consumo API de preços",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86npa"
      },
      {
       "n": "Filtragem de SKU's ausentes",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86p5m"
      },
      {
       "n": "validação em ambiente sandbox",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86px4"
      }
     ]
@@ -418,36 +462,42 @@
       "n": "Entendimento com o time financeiro sobre o rateio",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86rxr"
      },
      {
       "n": "Proposta de rateio automatizado pelo BCAPI",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86t3e"
      },
      {
       "n": "Desenvolvimento da tela de rateio BCAPI",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86t7d"
      },
      {
       "n": "Apresentação da estrutura para o time financeiro",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86tv1"
      },
      {
       "n": "testes em ambiente de desenvolvimento",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86u30"
      },
      {
       "n": "Deploy em ambiente de produção",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86uax"
      }
     ]
@@ -463,54 +513,63 @@
       "n": "Estudo do Faturamento atual",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag86wkh"
      },
      {
       "n": "Estudo do funcionamento do SaaS",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86x4m"
      },
      {
       "n": "Validação da criação de PaaS no consumo",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag86xb9"
      },
      {
       "n": "Desenvolvimento de API consumo PaaS/SaaS",
       "status": "in progress",
       "due": null,
+      "original_due": null,
       "id": "86ag86xya"
      },
      {
       "n": "Integração da API no sistema de faturamento atual",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag86yax"
      },
      {
       "n": "Cadastro dos SKU's na calculadora",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag86z3r"
      },
      {
       "n": "Cadastro dos SKU's no ERP",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag86znr"
      },
      {
       "n": "testes em ambiente de desenvolvimento",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag86yrc"
      },
      {
       "n": "teste de integração com ERP",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86ag87048"
      }
     ]
@@ -526,60 +585,70 @@
       "n": "Aplicação das roles de serviço da ferramenta",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce32z"
      },
      {
       "n": "Criação de esteira do módulo",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce333"
      },
      {
       "n": "Testes e validações do produto",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce339"
      },
      {
       "n": "Geração de documentação da operação",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce33e"
      },
      {
       "n": "Geração de FAQ para o cliente",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce33k"
      },
      {
       "n": "Passagem para produção",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce33x"
      },
      {
       "n": "Apresentação para o Board da Empresa",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce347"
      },
      {
       "n": "Apresentação para o comercial",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce34d"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce34h"
      },
      {
       "n": "Precificação do produto",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce34t"
      }
     ]
@@ -611,24 +680,28 @@
       "n": "Ver quais coletas já possuimos",
       "status": "shipped",
       "due": 1773990000000,
+      "original_due": 1773990000000,
       "id": "86ag4ppde"
      },
      {
       "n": "Gerar estrutura do que precisamos coletar",
       "status": "shipped",
       "due": 1773990000000,
+      "original_due": 1773990000000,
       "id": "86ag4ppyc"
      },
      {
       "n": "Gerar exporter das coletas restantes",
       "status": "shipped",
       "due": 1796022000000,
+      "original_due": 1796022000000,
       "id": "86ag4pqdv"
      },
      {
       "n": "Ajustar o fluxo de ingestão no click",
       "status": "shipped",
       "due": 1774594800000,
+      "original_due": 1774594800000,
       "id": "86ag4pqxb"
      }
     ]
@@ -644,24 +717,28 @@
       "n": "Gerar API para exportar os dados do Click",
       "status": "shipped",
       "due": 1775718000000,
+      "original_due": 1775718000000,
       "id": "86ag4px68"
      },
      {
       "n": "Montagem da área de Visão no FrontEnd",
       "status": "shipped",
       "due": 1776409200000,
+      "original_due": 1776409200000,
       "id": "86ag4py89"
      },
      {
       "n": "Analise da possibilidade do cliente Personalizar os seus dashboards",
       "status": "shipped",
       "due": 1775545200000,
+      "original_due": 1775545200000,
       "id": "86ag4qu9f"
      },
      {
       "n": "Integração da API X Telas",
       "status": "shipped",
       "due": 1777532400000,
+      "original_due": 1777532400000,
       "id": "86agzkwxv"
      }
     ]
@@ -677,30 +754,35 @@
       "n": "Expor informações por API Restrita por projeto para o cliente também",
       "status": "shipped",
       "due": null,
+      "original_due": null,
       "id": "86ag4qt5b"
      },
      {
       "n": "Adicao de intervalo de tempo na tela de graficos",
       "status": "shipped",
       "due": 1779433200000,
+      "original_due": 1779433200000,
       "id": "86ahdjpw2"
      },
      {
       "n": "Geração de alertas para os dados coletados no painel",
       "status": "shipped",
       "due": 1786086000000,
+      "original_due": 1786086000000,
       "id": "86ag4q1e7"
      },
      {
       "n": "Criação/Adequação da tela de Alertas",
       "status": "in progress",
       "due": 1787900400000,
+      "original_due": 1787900400000,
       "id": "86ah4ck30"
      },
      {
       "n": "Recomendações de utilização por IA",
       "status": "in progress",
       "due": 1787900400000,
+      "original_due": 1787900400000,
       "id": "86ag4qew3"
      }
     ]
@@ -716,42 +798,49 @@
       "n": "Visão de Capacity da nuvem",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4q8zn"
      },
      {
       "n": "Visão de Top usage VMS",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4q973"
      },
      {
       "n": "Visão de Top usage compute nodes",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4q9ju"
      },
      {
       "n": "Visão de discos mais utilizados",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4q9pp"
      },
      {
       "n": "Visão tráfego de rede dos computes",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4r31p"
      },
      {
       "n": "Geração de alertas administrativo",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4qqct"
      },
      {
       "n": "Recomendação de IA para o gestor da empresa",
       "status": "backlog",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4r4bv"
      }
     ]
@@ -767,72 +856,84 @@
       "n": "Aplicação das roles de serviço da ferramenta",
       "status": "backlog",
       "due": 1787900400000,
+      "original_due": 1787900400000,
       "id": "86ag4qkr0"
      },
      {
       "n": "Criação de esteira do módulo",
       "status": "backlog",
       "due": 1787900400000,
+      "original_due": 1787900400000,
       "id": "86ag4q0b5"
      },
      {
       "n": "Testes e validações do produto",
       "status": "in progress",
       "due": 1787900400000,
+      "original_due": 1787900400000,
       "id": "86ag4qmha"
      },
      {
       "n": "Geração de documentação da operação",
       "status": "shipped",
       "due": 1778050800000,
+      "original_due": 1778050800000,
       "id": "86ag4qmwx"
      },
      {
       "n": "Geração de FAQ para o cliente",
       "status": "shipped",
       "due": 1778223600000,
+      "original_due": 1778223600000,
       "id": "86ag4qn2n"
      },
      {
       "n": "Passagem para produção",
       "status": "in progress",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ag4qmny"
      },
      {
       "n": "Passagem de bastão Operacao",
       "status": "in progress",
       "due": 1788159600000,
+      "original_due": 1788159600000,
       "id": "86ahhnm0t"
      },
      {
       "n": "Apresentação para o Board da Empresa",
       "status": "backlog",
       "due": 1789369200000,
+      "original_due": 1789369200000,
       "id": "86ag4qp0m"
      },
      {
       "n": "Apresentação para o comercial",
       "status": "backlog",
       "due": 1788850800000,
+      "original_due": 1788850800000,
       "id": "86ag4qp4z"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
       "status": "backlog",
       "due": 1789369200000,
+      "original_due": 1789369200000,
       "id": "86ag4qxax"
      },
      {
       "n": "Precificação do produto",
       "status": "backlog",
       "due": 1790751600000,
+      "original_due": 1790751600000,
       "id": "86ag4qxhv"
      },
      {
       "n": "Plano de evolução para novas versões",
       "status": "backlog",
       "due": 1789974000000,
+      "original_due": 1789974000000,
       "id": "86agdr2px"
      }
     ]
@@ -927,60 +1028,70 @@
       "n": "Aplicação das roles de serviço da ferramenta",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8hv"
      },
      {
       "n": "Criação de esteira do módulo",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8j2"
      },
      {
       "n": "Testes e validações do produto",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8jh"
      },
      {
       "n": "Geração de documentação da operação",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8ju"
      },
      {
       "n": "Geração de FAQ para o cliente",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8k7"
      },
      {
       "n": "Passagem para produção",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8kk"
      },
      {
       "n": "Apresentação para o Board da Empresa",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8ku"
      },
      {
       "n": "Apresentação para o comercial",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8mc"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8mm"
      },
      {
       "n": "Precificação do produto",
       "status": "backlog",
       "due": null,
+      "original_due": null,
       "id": "86agce8n2"
      }
     ]
