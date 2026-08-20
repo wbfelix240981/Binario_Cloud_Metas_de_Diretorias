@@ -917,11 +917,12 @@ function renderMetaDetailPage(tab, num){
 
   const fasesHtml = fasesFiltered.length ? fasesFiltered.map((f)=>{
     const i = meta.fases.indexOf(f);
+    const ativExibir = detailStatusFilter==='all' ? (f.ativ||[]) : (f.ativ||[]).filter(a=>a.status===detailStatusFilter);
     return `
     <div class="fase-wrap open">
-      <div class="fase-row${f.ativ&&f.ativ.length?' has-ativ':''}" style="cursor:default;">
+      <div class="fase-row${ativExibir.length?' has-ativ':''}" style="cursor:default;">
         <div class="fase-idx">${String(i+1).padStart(2,'0')}</div>
-        <div class="fase-name">${f.n}${f.ativ&&f.ativ.length?`<small>${f.ativ.length} atividade(s)</small>`:''}</div>
+        <div class="fase-name">${f.n}${ativExibir.length?`<small>${ativExibir.length} atividade(s)${detailStatusFilter!=='all'&&f.ativ&&ativExibir.length!==f.ativ.length?` de ${f.ativ.length}`:''}</small>`:''}</div>
         <div class="fase-assignee">${f.assignee||'—'}</div>
         ${badge(f.status)}
         <span></span>
@@ -929,8 +930,8 @@ function renderMetaDetailPage(tab, num){
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
         </a>
       </div>
-      ${f.ativ&&f.ativ.length?`<div class="ativ-list" style="display:flex">
-        ${f.ativ.map(a=>{
+      ${ativExibir.length?`<div class="ativ-list" style="display:flex">
+        ${ativExibir.map(a=>{
           const estado = ativDueState(a);
           const od = estado==='atrasada', pend = estado==='pendente', done = a.status==='shipped';
           const cor = od?'var(--red)':pend?'var(--amber)':STATUS_META[a.status].color;
