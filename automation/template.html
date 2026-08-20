@@ -182,6 +182,7 @@
   .ativ-name{flex:1; min-width:0;}
   .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
   .ativ-due-new{font-family:var(--mono); font-size:10px; color:var(--cyan); white-space:nowrap; font-weight:600;}
+  .ativ-dias-atraso{font-family:var(--mono); font-size:8.5px; color:var(--red); white-space:nowrap; font-weight:700; background:rgba(255,90,90,.14); border:1px solid #5c1f1f; border-radius:999px; padding:1px 7px;}
   .ativ-status{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; white-space:nowrap;}
   .ativ-link{color:var(--text-mute); display:flex; align-items:center; opacity:.6; transition:.15s; flex:none; margin-left:4px;}
   .ativ-link:hover{color:var(--cyan); opacity:1;}
@@ -569,6 +570,13 @@ function ativDueState(a){
   if(dia === hoje) return 'pendente';
   return null;
 }
+function diasDeAtraso(a){
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(!dataBase) return 0;
+  const hoje = startOfDay(Date.now());
+  const dia = startOfDay(dataBase);
+  return Math.round((hoje - dia) / 86400000);
+}
 
 const CRITERIOS = {
   "Solução de Backup em produção": ["Material técnico-comercial simples e vendável já disponível no Q1","Definição clara de RPO e RTO","Testes reais de restore executados e documentados","Garantia de que a nova arquitetura de backup esteja efetivamente em produção"],
@@ -929,7 +937,8 @@ function renderMetaDetailPage(tab, num){
           const label = od?'ATRASADA':pend?'PENDENTE':STATUS_META[a.status].label;
           const dataOriginal = (a.original_due != null) ? a.original_due : a.due;
           const dataMudou = a.original_due != null && a.due !== a.original_due;
-          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${dataOriginal?`<span class="ativ-due">${fmtDate(dataOriginal)}</span>`:''}${dataMudou?`<span class="ativ-due-new" title="Nova data no ClickUp">→ ${fmtDate(a.due)}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
+          const dias = od ? diasDeAtraso(a) : 0;
+          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${dataOriginal?`<span class="ativ-due">${fmtDate(dataOriginal)}</span>`:''}${dataMudou?`<span class="ativ-due-new" title="Nova data no ClickUp">→ ${fmtDate(a.due)}</span>`:''}${od?`<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
         }).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
