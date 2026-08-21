@@ -1624,7 +1624,7 @@
      },
      {
       "n": "br-sp-02-node08",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1787295600000,
       "original_due": 1786690800000,
       "id": "86agc87n9"
@@ -1673,7 +1673,7 @@
      },
      {
       "n": "br-sp-02-node19",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1787295600000,
       "original_due": 1786690800000,
       "id": "86agc885p"
