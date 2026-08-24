@@ -414,11 +414,69 @@
     .board{padding:4px 16px 20px; grid-auto-columns:230px;}
   }
 
+  /* ===== Tela de login (decorativa) ===== */
+  #loginScreen{
+    position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center;
+    background:#0a0e14; background-image:
+      radial-gradient(1200px 600px at 15% -10%, rgba(45,217,245,.08) 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(183,155,251,.07) 0%, transparent 55%);
+  }
+  .login-card{
+    width:min(380px, 90vw); padding:36px 32px 32px; border-radius:20px;
+    background:linear-gradient(180deg, var(--panel-hi), var(--panel)); border:1px solid var(--border-hi);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+  }
+  .login-title{font-family:var(--disp); font-weight:700; font-size:20px; text-align:center; margin:0 0 4px;}
+  .login-sub{font-family:var(--mono); font-size:11.5px; color:var(--text-mute); text-align:center; margin:0 0 26px;}
+  .login-field{margin-bottom:14px;}
+  .login-field label{display:block; font-family:var(--mono); font-size:10.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.05em; margin-bottom:7px;}
+  .login-field input{
+    width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px; border:1px solid var(--border);
+    background:var(--bg2); color:var(--text); font-family:var(--body); font-size:14px; outline:none; transition:.15s;
+  }
+  .login-field input:focus{border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);}
+  .login-btn{
+    width:100%; padding:12px 14px; margin-top:6px; border-radius:10px; border:none; cursor:pointer;
+    background:var(--cyan); color:#03181c; font-family:var(--disp); font-weight:700; font-size:14px;
+    transition:.15s;
+  }
+  .login-btn:hover{filter:brightness(1.08);}
+  .login-error{
+    display:none; margin-top:14px; padding:9px 12px; border-radius:9px; background:rgba(255,90,90,.12);
+    border:1px solid #5c1f1f; color:#ffb3b3; font-family:var(--mono); font-size:11.5px; text-align:center;
+  }
+  .login-error.show{display:block; animation:loginShake .35s ease;}
+  @keyframes loginShake{
+    0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);}
+  }
+  .login-foot{margin-top:22px; text-align:center; font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+
 </style>
 </head>
 <body style="background:#0a0e14; margin:0;">
 
+<div id="loginScreen">
+  <div class="login-card">
+    <h1 class="login-title">Painel de Metas 2026</h1>
+    <p class="login-sub">BINÁRIO CLOUD · ACESSO RESTRITO</p>
+    <form id="loginForm" autocomplete="off">
+      <div class="login-field">
+        <label for="loginUser">E-mail</label>
+        <input type="email" id="loginUser" placeholder="seu.nome@binario.cloud" autocomplete="username">
+      </div>
+      <div class="login-field">
+        <label for="loginPass">Senha de acesso</label>
+        <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button type="submit" class="login-btn">Entrar</button>
+      <div class="login-error" id="loginError">Usuário ou senha incorretos. Tente novamente.</div>
+    </form>
+    <div class="login-foot">Rafael Alves · Tiago Oliveira · RoadMap</div>
+  </div>
+</div>
+
 <div class="topbar">
+
   <div class="tb-left">
     <div class="tb-mark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABFCAYAAACRzK44AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABgySURBVHhe3V15fFXF2X7m3CwkxCSEJUEWRRCVQqnW4reWopVFcaHiUqxarS27KHUD68baWvxUtGpFxSpaN5ai4gYqIsi+E7YQQhKyk9zc9c6d5f3+uCH3nHOTQAj4az/PJ8x958y8886ZM+edmXsuUZIkicagACIRPWQjaLZFqBuYMV3+/QsRNlwtkR1D4ZmEjmOCiZIswkypYPqH1A0x2XVVR2pk/AcwR+lK0rHhCBCI1pJPabbG6YAb5oiVthyUG656pmCC0n85nCsVadIsEP0Sowig0Q67CiL/SgO0HmviqOCg6o9GDNYISHdOOQKHEWiwwAUS0AFNiQ6QAL4xQKMPIuWAU5hPXLg63sA5lyFdsW24LzHabuToECERxSECqSkiRBuR2jLbMPwD6BMf5pyI43JophSQcxBtMjzLUQtg2oIWyxiEXFjb5MdwpRBEFotAQFyzyaB0wiJVJyMIRVY1B23HJLkFJSyaZrMd3QvDOZepIbDGZxEG6nMfE4ZGDdYw1KsraVay3H2CCURTlIHIwnD5MbgsVp+AQBZQTSE+GhpbNE2JCB2P4BLRyYfmzgpeeuIgLPGDygmK8GqEUJl0Iw+h+rijKMkIrvKBMO5hrLGcyDDH7xhvAK0jpYMOzZUVSG5hifsphptQLgy1LP4m1IzeAFCA6rH088A4K6yTxCIahrSepJoajr45KB+hRh+Km80RtuJ8WYQZ04HZEdSdVwXTahYBJ+0kT0A05NKY6uRRFmqUZpJb2FZ31XZmWxyGTgyYu0y9Q+VfAeC2dAQjkMTMEMnpP4bIO1oUsTlJH9QUiCmOSLuGSxQmEREOD0cRjFMkKoItTqTp/hnkBkJFk0oolqDBFUgkcSguMOtA3+FonJ+3zRq77gAAAABJRU5ErkJggg==" alt="Binário Cloud"></div>
     <span class="tb-title"><b id="tbTitleName">Metas 2026</b> · Binário Cloud</span>
@@ -4539,6 +4597,46 @@ function checkRoute(){
 }
 window.addEventListener('hashchange', checkRoute);
 checkRoute();
+
+// ================= LOGIN (tela decorativa) =================
+// Aviso: isto NÃO é segurança real — os dados já estão neste arquivo estático.
+// Serve só para desencorajar acesso casual por quem não tem o link/senha.
+(function(){
+  const CREDENCIAIS = [
+    { usuario: "gadorno@binario.cloud", senha: "gadorno@2026" },
+    { usuario: "ralves@binario.cloud", senha: "ralves@2026" },
+    { usuario: "toliveira@binario.cloud", senha: "toliveira@2026" },
+  ]; // ALTERAR antes de publicar de verdade
+  const CHAVE_STORAGE = "bcloud_metas_auth";
+
+  const tela = document.getElementById('loginScreen');
+  const form = document.getElementById('loginForm');
+  const inputUser = document.getElementById('loginUser');
+  const inputPass = document.getElementById('loginPass');
+  const erro = document.getElementById('loginError');
+
+  if(localStorage.getItem(CHAVE_STORAGE) === 'ok'){
+    tela.style.display = 'none';
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const usuario = inputUser.value.trim().toLowerCase();
+    const senha = inputPass.value;
+    const valido = CREDENCIAIS.some(c => c.usuario === usuario && c.senha === senha);
+    if(valido){
+      localStorage.setItem(CHAVE_STORAGE, 'ok');
+      tela.style.display = 'none';
+    } else {
+      erro.classList.remove('show');
+      void erro.offsetWidth;
+      erro.classList.add('show');
+      inputPass.value = '';
+      inputPass.focus();
+    }
+  });
+})();
+
 </script>
 </body>
 </html>
