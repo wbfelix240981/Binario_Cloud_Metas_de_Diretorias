@@ -340,7 +340,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 273
+  "_missing_count": 274
  },
  {
   "id": "86ak5qpxj",
@@ -348,6 +348,16 @@
   "status": "aberto",
   "assignees": [],
   "url": "https://app.clickup.com/t/86ak5qpxj",
+  "_missing_count": 0
+ },
+ {
+  "id": "86ak6m2qf",
+  "name": "Visualização de todos os projetos do mesmo dominio para visualização de Relatórios On-Demand",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ak6m2qf",
   "_missing_count": 0
  }
 ]
