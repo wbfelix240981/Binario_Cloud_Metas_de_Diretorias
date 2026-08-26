@@ -340,7 +340,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 274
+  "_missing_count": 275
  },
  {
   "id": "86ak5qpxj",
@@ -358,6 +358,16 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/86ak6m2qf",
+  "_missing_count": 0
+ },
+ {
+  "id": "86ak6n4qk",
+  "name": "Criarção de White Label via https://apicloud.zone/admin/ não funciona.",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/86ak6n4qk",
   "_missing_count": 0
  }
 ]
