@@ -7,7 +7,7 @@
    "Leonardo Gomes Jorge Gonçalez"
   ],
   "url": "https://app.clickup.com/t/86ak00hcn",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ajzzn6x",
@@ -17,12 +17,12 @@
    "Leonardo Gomes Jorge Gonçalez"
   ],
   "url": "https://app.clickup.com/t/86ajzzn6x",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ajyuekd",
   "name": "Cacluladora parou de funcionar,",
-  "status": "aberto",
+  "status": "fechado",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -42,7 +42,7 @@
  {
   "id": "86ajxgg74",
   "name": "Poder adicionar o perfil load-balancer pela console do BCP",
-  "status": "aberto",
+  "status": "fechado",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -62,7 +62,7 @@
  {
   "id": "86ajtjqck",
   "name": "URL gerada para S3 não está funcionando via console e existe outro bug quando bucket está publico via CLI ele ainda aparece como Privado",
-  "status": "revisando",
+  "status": "fechado",
   "assignees": [
    "Rodney Botelho"
   ],
@@ -129,7 +129,7 @@
    "Leonardo Gomes Jorge Gonçalez"
   ],
   "url": "https://app.clickup.com/t/86ajjnbmx",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ajjmp5y",
@@ -312,7 +312,7 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/86ak0fqm1",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ak0ffwt",
@@ -322,7 +322,7 @@
    "Leonardo Gomes Jorge Gonçalez"
   ],
   "url": "https://app.clickup.com/t/86ak0ffwt",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ak0g6zn",
@@ -332,7 +332,7 @@
    "Leonardo Gomes Jorge Gonçalez"
   ],
   "url": "https://app.clickup.com/t/86ak0g6zn",
-  "_missing_count": 8
+  "_missing_count": 9
  },
  {
   "id": "86ajwp3vr",
@@ -342,15 +342,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 286
- },
- {
-  "id": "86ak5qpxj",
-  "name": "teste",
-  "status": "aberto",
-  "assignees": [],
-  "url": "https://app.clickup.com/t/86ak5qpxj",
-  "_missing_count": 8
+  "_missing_count": 287
  },
  {
   "id": "86ak6m2qf",
