@@ -415,14 +415,19 @@ def sync_metas_file(json_path, list_id):
 def sync_roadmap_file(json_path, list_id):
     """Sincroniza o roadmap.json (lista flat, sem fases) com o ClickUp.
 
-    IMPORTANTE (atualizado em 15/08/2026): a tentativa de remover itens após
-    3 ausências seguidas (ver histórico) não foi suficiente — um item real
-    ficou ausente da busca por mais de 30h seguidas (não é intermitência
-    pontual, é uma falha sistemática não diagnosticada só nesse item via
-    API REST) e acabou sendo removido por engano. Por segurança, a remoção
-    automática por ausência foi DESATIVADA — um item só sai do roadmap.json
-    se for removido manualmente. O contador de ausências é mantido só para
-    fins de diagnóstico/log, não aciona mais remoção.
+    IMPORTANTE (atualizado em 31/08/2026): a busca em lote (/list/.../task)
+    já se mostrou não-confiável no passado (um item ficou ausente por 30h+
+    de forma intermitente, sem causa identificada). Por isso, quando um
+    item conhecido não aparece na busca em lote, NÃO assumimos que ele
+    saiu da lista — fazemos uma checagem DIRETA daquele item específico
+    (GET /task/{id}) e conferimos o campo 'list.id' dele:
+      - Se a busca individual confirma que o item está em OUTRA lista
+        (ou foi excluído/arquivado) -> remove de verdade, com certeza.
+      - Se a busca individual mostra que ele CONTINUA nesta lista (ou a
+        checagem falhar por instabilidade da API) -> mantém, só loga.
+    Isso resolve tanto o falso-positivo antigo (nunca mais remove por
+    engano) quanto o problema real reportado (itens que realmente saíram
+    da lista ficavam para sempre no painel).
     """
     with open(json_path, encoding="utf-8") as f:
         old_tasks = json.load(f)
@@ -449,9 +454,32 @@ def sync_roadmap_file(json_path, list_id):
             novo["_missing_count"] = 0
             new_tasks.append(novo)
         else:
+            # Não apareceu na busca em lote: confirma com uma busca direta
+            # do item antes de decidir qualquer coisa.
+            confirmado_fora = False
+            try:
+                detalhe = api_get(f"/task/{task['id']}")
+                lista_atual = detalhe.get("list", {}).get("id")
+                if lista_atual and lista_atual != list_id:
+                    confirmado_fora = True
+                    print(f"REMOVIDO do RoadMap (confirmado: moveu para outra lista): '{task['name']}'", file=sys.stderr)
+                elif detalhe.get("archived"):
+                    confirmado_fora = True
+                    print(f"REMOVIDO do RoadMap (confirmado: arquivado): '{task['name']}'", file=sys.stderr)
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    confirmado_fora = True
+                    print(f"REMOVIDO do RoadMap (confirmado: tarefa excluída, 404): '{task['name']}'", file=sys.stderr)
+                else:
+                    print(f"AVISO: não foi possível confirmar '{task['name']}' (erro {e.code}), mantendo por segurança", file=sys.stderr)
+            except Exception as e:
+                print(f"AVISO: não foi possível confirmar '{task['name']}' ({type(e).__name__}), mantendo por segurança", file=sys.stderr)
+
+            if confirmado_fora:
+                changed = True
+                continue
+
             faltas = task.get("_missing_count", 0) + 1
-            if faltas != task.get("_missing_count", 0):
-                print(f"AVISO: item ausente na busca ({faltas}x seguida(s), NÃO removido): '{task['name']}'", file=sys.stderr)
             task["_missing_count"] = faltas
             new_tasks.append(task)
 
