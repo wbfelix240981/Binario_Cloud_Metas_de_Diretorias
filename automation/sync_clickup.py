@@ -459,17 +459,29 @@ def sync_roadmap_file(json_path, list_id):
             confirmado_fora = False
             try:
                 detalhe = api_get(f"/task/{task['id']}")
-                lista_atual = detalhe.get("list", {}).get("id")
-                if lista_atual and lista_atual != list_id:
+                if detalhe.get("err") or "list" not in detalhe:
+                    # ClickUp às vezes devolve erro de permissão como HTTP 200 com
+                    # corpo de erro (ex.: {"err": "...", "ECODE": "..."}), em vez de
+                    # um código de erro HTTP de verdade. Trata igual a "sem acesso".
                     confirmado_fora = True
-                    print(f"REMOVIDO do RoadMap (confirmado: moveu para outra lista): '{task['name']}'", file=sys.stderr)
-                elif detalhe.get("archived"):
-                    confirmado_fora = True
-                    print(f"REMOVIDO do RoadMap (confirmado: arquivado): '{task['name']}'", file=sys.stderr)
+                    print(f"REMOVIDO do RoadMap (confirmado: sem acesso/campo 'list' ausente na resposta): '{task['name']}'", file=sys.stderr)
+                else:
+                    lista_atual = detalhe.get("list", {}).get("id")
+                    if lista_atual and lista_atual != list_id:
+                        confirmado_fora = True
+                        print(f"REMOVIDO do RoadMap (confirmado: moveu para outra lista): '{task['name']}'", file=sys.stderr)
+                    elif detalhe.get("archived"):
+                        confirmado_fora = True
+                        print(f"REMOVIDO do RoadMap (confirmado: arquivado): '{task['name']}'", file=sys.stderr)
             except urllib.error.HTTPError as e:
                 if e.code == 404:
                     confirmado_fora = True
                     print(f"REMOVIDO do RoadMap (confirmado: tarefa excluída, 404): '{task['name']}'", file=sys.stderr)
+                elif e.code in (401, 403):
+                    # Sem acesso ao espaço/lista onde a tarefa está agora — na prática,
+                    # ela saiu do escopo que este painel consegue enxergar/rastrear.
+                    confirmado_fora = True
+                    print(f"REMOVIDO do RoadMap (confirmado: tarefa moveu para área sem acesso, {e.code}): '{task['name']}'", file=sys.stderr)
                 else:
                     print(f"AVISO: não foi possível confirmar '{task['name']}' (erro {e.code}), mantendo por segurança", file=sys.stderr)
             except Exception as e:
