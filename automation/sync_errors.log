@@ -1,96 +1,3 @@
-[2026-08-12T22:29:18.897436+00:00] Tiago (geral)
-Traceback (most recent call last):
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 410, in main
-    if sync_metas_file(os.path.join(DIR, "tiago.json"), TIAGO_LIST_ID):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 257, in sync_metas_file
-    live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 96, in api_get
-    with urllib.request.urlopen(req, timeout=30) as resp:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 401: Unauthorized
-
-----------------------------------------------------------------------
-[2026-08-12T22:29:19.005126+00:00] RoadMap (geral)
-Traceback (most recent call last):
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 422, in main
-    if sync_roadmap_file(os.path.join(DIR, "roadmap.json"), ROADMAP_LIST_ID):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 371, in sync_roadmap_file
-    live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 96, in api_get
-    with urllib.request.urlopen(req, timeout=30) as resp:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 401: Unauthorized
-
-----------------------------------------------------------------------
-[2026-08-12T23:29:30.231531+00:00] Rafael (geral)
-Traceback (most recent call last):
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 398, in main
-    if sync_metas_file(os.path.join(DIR, "rafael.json"), RAFAEL_LIST_ID):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 257, in sync_metas_file
-    live_tasks = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true")["tasks"]
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 96, in api_get
-    with urllib.request.urlopen(req, timeout=30) as resp:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 401: Unauthorized
-
-----------------------------------------------------------------------
 [2026-08-12T23:29:30.389771+00:00] Tiago (geral)
 Traceback (most recent call last):
   File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 410, in main
@@ -1641,6 +1548,108 @@ urllib.error.HTTPError: HTTP Error 401: Unauthorized
 
 ----------------------------------------------------------------------
 [2026-09-01T00:53:24.136935+00:00] RoadMap (geral)
+Traceback (most recent call last):
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 551, in main
+    if sync_roadmap_file(os.path.join(DIR, "roadmap.json"), ROADMAP_LIST_ID):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 435, in sync_roadmap_file
+    live_tasks = api_get_all_tasks(list_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 128, in api_get_all_tasks
+    resp = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true&page={page}{extra_params}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 106, in api_get
+    with urllib.request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+----------------------------------------------------------------------
+[2026-09-01T05:50:48.076567+00:00] Rafael (geral)
+Traceback (most recent call last):
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 527, in main
+    if sync_metas_file(os.path.join(DIR, "rafael.json"), RAFAEL_LIST_ID):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 306, in sync_metas_file
+    live_tasks = api_get_all_tasks(list_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 128, in api_get_all_tasks
+    resp = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true&page={page}{extra_params}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 106, in api_get
+    with urllib.request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+----------------------------------------------------------------------
+[2026-09-01T05:50:48.162152+00:00] Tiago (geral)
+Traceback (most recent call last):
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 539, in main
+    if sync_metas_file(os.path.join(DIR, "tiago.json"), TIAGO_LIST_ID):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 306, in sync_metas_file
+    live_tasks = api_get_all_tasks(list_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 128, in api_get_all_tasks
+    resp = api_get(f"/list/{list_id}/task?subtasks=false&include_closed=true&page={page}{extra_params}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 106, in api_get
+    with urllib.request.urlopen(req, timeout=30) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+----------------------------------------------------------------------
+[2026-09-01T05:50:48.222018+00:00] RoadMap (geral)
 Traceback (most recent call last):
   File "/home/runner/work/Binario_Cloud_Metas_de_Diretorias/Binario_Cloud_Metas_de_Diretorias/automation/sync_clickup.py", line 551, in main
     if sync_roadmap_file(os.path.join(DIR, "roadmap.json"), ROADMAP_LIST_ID):
