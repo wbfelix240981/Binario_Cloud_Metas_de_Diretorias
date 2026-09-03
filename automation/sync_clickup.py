@@ -152,6 +152,20 @@ def map_status(raw_status):
     return STATUS_MAP.get(raw, "backlog")
 
 
+def get_custom_field_value(task_id, field_name):
+    """Busca o valor de um campo personalizado específico de uma tarefa.
+    A lista de subtarefas em lote não traz custom fields, por isso é
+    necessária uma busca individual por tarefa."""
+    try:
+        detalhe = api_get(f"/task/{task_id}")
+        for cf in detalhe.get("custom_fields", []):
+            if cf.get("name") == field_name and cf.get("value") is not None:
+                return cf["value"]
+    except Exception:
+        pass
+    return None
+
+
 def build_activity(t, old_ativ_by_id=None):
     old = (old_ativ_by_id or {}).get(t["id"])
     new_due = to_ms(t.get("due_date"))
@@ -161,11 +175,16 @@ def build_activity(t, old_ativ_by_id=None):
         original_due = old["due"]
     else:
         original_due = new_due
+
+    nova_previsao_raw = get_custom_field_value(t["id"], "Nova previsão")
+    nova_previsao = to_ms(nova_previsao_raw) if nova_previsao_raw else None
+
     return {
         "n": t["name"],
         "status": map_status(t["status"]["status"]),
         "due": new_due,
         "original_due": original_due,
+        "nova_previsao": nova_previsao,
         "id": t["id"],
     }
 
