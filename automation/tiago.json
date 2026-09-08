@@ -863,7 +863,7 @@
       "n": "Recomendações de utilização por IA",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1787900400000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qew3"
      }
@@ -880,7 +880,7 @@
       "n": "Visão de Capacity da nuvem",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1788159600000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q8zn"
      },
@@ -888,7 +888,7 @@
       "n": "Visão de Top usage VMS",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1788159600000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q973"
      },
@@ -896,7 +896,7 @@
       "n": "Visão de Top usage compute nodes",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1788159600000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q9ju"
      },
@@ -904,7 +904,7 @@
       "n": "Visão de discos mais utilizados",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1788159600000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q9pp"
      },
@@ -912,7 +912,7 @@
       "n": "Visão tráfego de rede dos computes",
       "status": "backlog",
       "due": 1790319600000,
-      "original_due": 1788159600000,
+      "original_due": 1790319600000,
       "nova_previsao": null,
       "id": "86ag4r31p"
      },
@@ -920,7 +920,7 @@
       "n": "Geração de alertas administrativo",
       "status": "backlog",
       "due": 1790319600000,
-      "original_due": 1788159600000,
+      "original_due": 1790319600000,
       "nova_previsao": null,
       "id": "86ag4qqct"
      },
@@ -928,7 +928,7 @@
       "n": "Recomendação de IA para o gestor da empresa",
       "status": "backlog",
       "due": 1790319600000,
-      "original_due": 1788159600000,
+      "original_due": 1790319600000,
       "nova_previsao": null,
       "id": "86ag4r4bv"
      }
@@ -945,7 +945,7 @@
       "n": "Aplicação das roles de serviço da ferramenta",
       "status": "backlog",
       "due": 1789714800000,
-      "original_due": 1787900400000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qkr0"
      },
@@ -953,7 +953,7 @@
       "n": "Criação de esteira do módulo",
       "status": "backlog",
       "due": 1789714800000,
-      "original_due": 1787900400000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q0b5"
      },
@@ -961,7 +961,7 @@
       "n": "Testes e validações do produto",
       "status": "in progress",
       "due": 1789714800000,
-      "original_due": 1787900400000,
+      "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qmha"
      },
@@ -985,7 +985,7 @@
       "n": "Passagem para produção",
       "status": "in progress",
       "due": 1790751600000,
-      "original_due": 1788159600000,
+      "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86ag4qmny"
      },
@@ -993,7 +993,7 @@
       "n": "Passagem de bastão Operacao",
       "status": "in progress",
       "due": 1790751600000,
-      "original_due": 1788159600000,
+      "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86ahhnm0t"
      },
@@ -1009,7 +1009,7 @@
       "n": "Apresentação para o comercial",
       "status": "backlog",
       "due": 1789542000000,
-      "original_due": 1788850800000,
+      "original_due": 1789542000000,
       "nova_previsao": null,
       "id": "86ag4qp4z"
      },
