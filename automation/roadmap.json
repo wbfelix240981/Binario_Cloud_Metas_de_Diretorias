@@ -12,7 +12,7 @@
  {
   "id": "86ajycnwt",
   "name": "Adicionar campo para confirmar resize ou migração",
-  "status": "aberto",
+  "status": "aguardando retorno",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -82,7 +82,7 @@
  {
   "id": "86ajtgv7h",
   "name": "Melhorar o permissionamento do S3 via console BCP, clientes questionam sobre granularidade",
-  "status": "aberto",
+  "status": "planejamento",
   "assignees": [
    "Tiago Gomes de Oliveira",
    "Joab de Araújo Silva"
@@ -136,7 +136,7 @@
  {
   "id": "86ahqbx3f",
   "name": "Billing por dominio dentro do BCP",
-  "status": "aberto",
+  "status": "revisando",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -146,7 +146,7 @@
  {
   "id": "86ahqbwyc",
   "name": "Billing no BCP API",
-  "status": "aberto",
+  "status": "em andamento",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -156,7 +156,7 @@
  {
   "id": "86ahpyjdy",
   "name": "Definição dos Modulos do BCP (Ex; BCOS, PaaS, Cost Management, Observabilidade)",
-  "status": "aberto",
+  "status": "aguardando retorno",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -206,7 +206,7 @@
  {
   "id": "86ah9yj6c",
   "name": "Faltou o item de monitoramento de disco no BCP (observ)",
-  "status": "aberto",
+  "status": "revisando",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -286,7 +286,7 @@
  {
   "id": "86ak6m2qf",
   "name": "Visualização de todos os projetos do mesmo dominio para visualização de Relatórios On-Demand",
-  "status": "aberto",
+  "status": "em andamento",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
