@@ -1456,7 +1456,7 @@
     "ativ": [
      {
       "n": "Adição node 07 ambiente novo",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1789369200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
@@ -1464,7 +1464,7 @@
      },
      {
       "n": "Adição node 05 ambiente novo",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792393200000,
       "original_due": 1792393200000,
       "nova_previsao": null,
