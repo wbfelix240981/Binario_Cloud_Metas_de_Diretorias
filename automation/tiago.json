@@ -862,7 +862,7 @@
      {
       "n": "Recomendações de utilização por IA",
       "status": "in progress",
-      "due": 1789714800000,
+      "due": 1790578800000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qew3"
@@ -901,22 +901,6 @@
       "id": "86ag4q9ju"
      },
      {
-      "n": "Visão de discos mais utilizados - Cards",
-      "status": "in progress",
-      "due": 1789714800000,
-      "original_due": 1789714800000,
-      "nova_previsao": null,
-      "id": "86ag4q9pp"
-     },
-     {
-      "n": "Visão tráfego de rede dos computes",
-      "status": "in progress",
-      "due": 1789714800000,
-      "original_due": 1790319600000,
-      "nova_previsao": null,
-      "id": "86ag4r31p"
-     },
-     {
       "n": "Geração de alertas administrativo",
       "status": "backlog",
       "due": 1790319600000,
@@ -931,6 +915,14 @@
       "original_due": 1790319600000,
       "nova_previsao": null,
       "id": "86ag4r4bv"
+     },
+     {
+      "n": "Criação de tela de alertas - BCP Admin (Hypervisors)",
+      "status": "backlog",
+      "due": 1789714800000,
+      "original_due": 1789714800000,
+      "nova_previsao": null,
+      "id": "86akfhrj5"
      }
     ]
    },
