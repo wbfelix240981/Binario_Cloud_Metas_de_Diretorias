@@ -1062,7 +1062,7 @@
       "id": "86ajutt87"
      },
      {
-      "n": "Agosto",
+      "n": "Agosto - Medição: 99,993%",
       "status": "shipped",
       "due": 1788764400000,
       "original_due": 1788159600000,
@@ -1070,15 +1070,15 @@
       "id": "86ajutt8c"
      },
      {
-      "n": "Setembro",
-      "status": "backlog",
+      "n": "Setembro - Medição: 00,000%",
+      "status": "in progress",
       "due": 1791270000000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86ajutt8d"
      },
      {
-      "n": "Outubro",
+      "n": "Outubro - Medição: 00,000%",
       "status": "backlog",
       "due": 1793948400000,
       "original_due": 1793430000000,
@@ -1086,7 +1086,7 @@
       "id": "86ajutt8e"
      },
      {
-      "n": "Novembro",
+      "n": "Novembro - Medição: 00,000%",
       "status": "backlog",
       "due": 1796454000000,
       "original_due": 1796022000000,
@@ -1094,7 +1094,7 @@
       "id": "86ajutt8f"
      },
      {
-      "n": "Dezembro",
+      "n": "Dezembro - Medição: 00,000%",
       "status": "backlog",
       "due": 1799478000000,
       "original_due": 1798700400000,
@@ -1167,7 +1167,7 @@
       "id": "86ajutt94"
      },
      {
-      "n": "Agosto",
+      "n": "Agosto - Medição: 97,7%",
       "status": "shipped",
       "due": 1788764400000,
       "original_due": 1788159600000,
@@ -1175,15 +1175,15 @@
       "id": "86ajutt97"
      },
      {
-      "n": "Setembro",
-      "status": "backlog",
+      "n": "Setembro - Medição: 00,0%",
+      "status": "in progress",
       "due": 1791615600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86ajutt98"
      },
      {
-      "n": "Outubro",
+      "n": "Outubro - Medição: 00,0%",
       "status": "backlog",
       "due": 1794034800000,
       "original_due": 1793430000000,
@@ -1191,7 +1191,7 @@
       "id": "86ajutt99"
      },
      {
-      "n": "Novembro",
+      "n": "Novembro - Medição: 00,0%",
       "status": "backlog",
       "due": 1796454000000,
       "original_due": 1796022000000,
@@ -1199,7 +1199,7 @@
       "id": "86ajutt9b"
      },
      {
-      "n": "Dezembro",
+      "n": "Dezembro - Medição: 00,0%",
       "status": "backlog",
       "due": 1799478000000,
       "original_due": 1798700400000,

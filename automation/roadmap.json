@@ -32,7 +32,7 @@
  {
   "id": "86ajvxt1p",
   "name": "Está correto esse valor do Win 11 - R$418,00 vCPUs/mês vs Win Server - R$64,68 vCPUs/mês",
-  "status": "aberto",
+  "status": "concluído",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 300
+  "_missing_count": 301
  },
  {
   "id": "86ak6m2qf",
