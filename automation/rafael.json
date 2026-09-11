@@ -1522,7 +1522,7 @@
      {
       "n": "Remoção dos últimos nodes do cluster",
       "status": "backlog",
-      "due": 1789110000000,
+      "due": null,
       "original_due": 1789110000000,
       "nova_previsao": null,
       "id": "86ag6zd62"
