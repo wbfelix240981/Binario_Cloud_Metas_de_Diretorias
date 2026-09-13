@@ -4573,9 +4573,20 @@ const ROADMAP_STATUS_META = {
   'aguardando retorno': {label:'Aguardando retorno', color:'#ffc53d'},
   'impedimento':        {label:'Impedimento',        color:'#d33d44'},
   'entregue':           {label:'Entregue',           color:'#1090e0'},
+  'concluído':          {label:'Concluído',          color:'#008844'},
   'fechado':            {label:'Fechado',            color:'#008844'}
 };
-const ROADMAP_DONE_STATUSES = ['entregue','fechado'];
+const ROADMAP_DONE_STATUSES = ['entregue','fechado','concluído'];
+
+// Blindagem: se aparecer um status novo do ClickUp que ainda não mapeamos
+// acima, ele nunca deve ficar invisível — entra com um estilo genérico em
+// vez de sumir silenciosamente da visão "Todas" e dos filtros.
+[...new Set(ROADMAP_TASKS.map(t=>t.status))].forEach(s=>{
+  if(!ROADMAP_STATUS_META[s]){
+    ROADMAP_STATUS_META[s] = {label: s.charAt(0).toUpperCase()+s.slice(1), color:'#8d8d8d'};
+    console.warn(`Status do RoadMap não mapeado, usando estilo genérico: "${s}"`);
+  }
+});
 
 function fmtDate(ms){
   if(!ms) return '—';
@@ -4593,7 +4604,8 @@ function startOfDay(ms){
 }
 function ativDueState(a){
   const dataBase = (a.original_due != null) ? a.original_due : a.due;
-  if(!dataBase || a.status === 'shipped') return null;
+  if(a.status === 'shipped') return null;
+  if(!dataBase) return 'sem_planejamento';
   const hoje = startOfDay(Date.now());
   const dia = startOfDay(dataBase);
   if(dia < hoje) return 'atrasada';
@@ -4937,6 +4949,7 @@ function renderMetaDetailPage(tab, num){
     if(a.status==='shipped') ativCounts.concluida++;
     else if(estado==='atrasada') ativCounts.atrasada++;
     else if(estado==='pendente') ativCounts.pendente++;
+    else if(estado==='sem_planejamento') ativCounts.semPlanejamento = (ativCounts.semPlanejamento||0)+1;
     else if(a.status==='in progress'||a.status==='in test'||a.status==='in review') ativCounts.andamento++;
     else ativCounts.naoIniciada++;
   });
@@ -4963,14 +4976,14 @@ function renderMetaDetailPage(tab, num){
       ${ativExibir.length?`<div class="ativ-list" style="display:flex">
         ${ativExibir.map(a=>{
           const estado = ativDueState(a);
-          const od = estado==='atrasada', pend = estado==='pendente', done = a.status==='shipped';
-          const cor = od?'var(--red)':pend?'var(--amber)':STATUS_META[a.status].color;
-          const label = od?'ATRASADA':pend?'PENDENTE':STATUS_META[a.status].label;
+          const od = estado==='atrasada', pend = estado==='pendente', semData = estado==='sem_planejamento', done = a.status==='shipped';
+          const cor = od?'var(--red)':(pend||semData)?'var(--amber)':STATUS_META[a.status].color;
+          const label = od?'ATRASADA':pend?'PENDENTE':semData?'PENDENTE PLANEJAMENTO':STATUS_META[a.status].label;
           const dataOriginal = (a.original_due != null) ? a.original_due : a.due;
           const dataAtualizada = (a.nova_previsao != null) ? a.nova_previsao : a.due;
           const dataMudou = dataOriginal != null && dataAtualizada !== dataOriginal;
           const dias = od ? diasDeAtraso(a) : 0;
-          return `<div class="ativ-row${od?' atrasada':''}${pend?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${dataOriginal?`<span class="ativ-due">${fmtDate(dataOriginal)}</span>`:''}${dataMudou?`<span class="ativ-due-new" title="${a.nova_previsao!=null?'Nova previsão (campo do ClickUp)':'Nova data no ClickUp'}">→ ${fmtDate(dataAtualizada)}</span>`:''}${od?`<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
+          return `<div class="ativ-row${od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${dataOriginal?`<span class="ativ-due">${fmtDate(dataOriginal)}</span>`:(semData?`<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>`:'')}${dataMudou?`<span class="ativ-due-new" title="${a.nova_previsao!=null?'Nova previsão (campo do ClickUp)':'Nova data no ClickUp'}">→ ${fmtDate(dataAtualizada)}</span>`:''}${od?`<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
         }).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
