@@ -1471,18 +1471,18 @@
       "id": "86ak7yjw1"
      },
      {
-      "n": "Retirada node 06 ambiente antigo",
+      "n": "Retirada node 02 ambiente antigo",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1792393200000,
+      "original_due": 1792393200000,
       "nova_previsao": null,
       "id": "86ak7y8wj"
      },
      {
-      "n": "Adição node 06 ambiente novo",
+      "n": "Adição node 02 ambiente novo",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1795417200000,
+      "original_due": 1795417200000,
       "nova_previsao": null,
       "id": "86ak7yme0"
      },
@@ -1536,7 +1536,7 @@
       "id": "86ak7yq5j"
      },
      {
-      "n": "Adição node 02 ambiente novo",
+      "n": "Adição node 04 ambiente novo",
       "status": "backlog",
       "due": null,
       "original_due": null,
