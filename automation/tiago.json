@@ -5,7 +5,7 @@
   "status": "shipped",
   "due": 1780210800000,
   "name": "Validação e entrada da solução de backup (BC-Backup) em produção",
-  "short": "Nova solução de Backup - BC-Backup",
+  "short": "BC-Backup ",
   "assignee": "Nathan de Moraes Valim Francisco",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -184,7 +184,7 @@
   "status": "shipped",
   "due": 1777532400000,
   "name": "Segurança e evolução do BCP",
-  "short": "BCP - Segurança",
+  "short": "Modulo BCP Segurança",
   "assignee": "Guilherme Lopes",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -398,7 +398,7 @@
   "status": "in progress",
   "due": 1796022000000,
   "name": "Módulo Financeiro do BCP",
-  "short": "BCP - Modulo Financeiro",
+  "short": "BCP - Financeiro",
   "assignee": "Guilherme Lopes",
   "tags": [
    "evolução da plataforma de nuvem"
@@ -561,7 +561,7 @@
     "ativ": [
      {
       "n": "Estudo do Faturamento atual",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -617,7 +617,7 @@
      },
      {
       "n": "testes em ambiente de desenvolvimento",
-      "status": "backlog",
+      "status": "in progress",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -730,7 +730,7 @@
   "status": "in progress",
   "due": 1790751600000,
   "name": "BCOS / Observabilidade como módulo do BCP",
-  "short": "BCP - Modulo Observabilidade",
+  "short": "BCP - Observabilidade",
   "assignee": "Nathan de Moraes Valim Francisco",
   "tags": [
    "evolução da plataforma de nuvem",
@@ -824,7 +824,7 @@
     "n": "FASE03 - Monitoramento de VM no painel cliente (BCP)",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1789714800000,
+    "due": 1790578800000,
     "id": "86afctdgt",
     "ativ": [
      {
@@ -879,7 +879,7 @@
      {
       "n": "Visão de Capacity da nuvem",
       "status": "in progress",
-      "due": 1789714800000,
+      "due": 1790319600000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q8zn"
@@ -895,7 +895,7 @@
      {
       "n": "Visão de Top usage compute nodes - Observabilidade do Hypervisor",
       "status": "in progress",
-      "due": 1789714800000,
+      "due": 1790233200000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q9ju"
@@ -918,8 +918,8 @@
      },
      {
       "n": "Criação de tela de alertas - BCP Admin (Hypervisors)",
-      "status": "backlog",
-      "due": 1789714800000,
+      "status": "in progress",
+      "due": 1790319600000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86akfhrj5"
@@ -930,21 +930,13 @@
     "n": "FASE05 - Esteira de QA",
     "status": "backlog",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1789369200000,
+    "due": 1790319600000,
     "id": "86ag4q559",
     "ativ": [
      {
-      "n": "Aplicação das roles de serviço da ferramenta",
-      "status": "backlog",
-      "due": 1789714800000,
-      "original_due": 1789714800000,
-      "nova_previsao": null,
-      "id": "86ag4qkr0"
-     },
-     {
       "n": "Criação de esteira do módulo",
-      "status": "backlog",
-      "due": 1789714800000,
+      "status": "shipped",
+      "due": 1790319600000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4q0b5"
@@ -952,7 +944,7 @@
      {
       "n": "Testes e validações do produto",
       "status": "in progress",
-      "due": 1789714800000,
+      "due": 1790578800000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qmha"
@@ -992,7 +984,7 @@
      {
       "n": "Apresentação para o Board da Empresa",
       "status": "backlog",
-      "due": 1789369200000,
+      "due": 1790665200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
       "id": "86ag4qp0m"
@@ -1000,7 +992,7 @@
      {
       "n": "Apresentação para o comercial",
       "status": "backlog",
-      "due": 1789542000000,
+      "due": 1790665200000,
       "original_due": 1789542000000,
       "nova_previsao": null,
       "id": "86ag4qp4z"
@@ -1024,7 +1016,7 @@
      {
       "n": "Plano de evolução para novas versões",
       "status": "backlog",
-      "due": 1789974000000,
+      "due": 1790233200000,
       "original_due": 1789974000000,
       "nova_previsao": null,
       "id": "86agdr2px"
@@ -1039,7 +1031,7 @@
   "status": "in progress",
   "due": 1796022000000,
   "name": "Evolução de UX do BCP",
-  "short": "BCP - UX (Reformulação identidade visual)",
+  "short": "Refatoração Identidade Visual (UX) - BCP",
   "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
   "tags": [
    "evolução da plataforma de nuvem"
@@ -1204,28 +1196,85 @@
  {
   "num": 6,
   "id": "86ajvr7d5",
-  "status": "in progress",
+  "status": "shipped",
   "due": 1785567600000,
   "name": "Estruturar o Marketplace de IA como catálogo de soluções inteligentes integradas ao BCP",
-  "short": "Marketplace IA",
+  "short": "Integração com plataforma aberta de IA",
   "assignee": "Tiago Gomes de Oliveira",
   "tags": [],
   "detail": "Objetivo: criar um marketplace dentro do BCP com soluções de Inteligência Artificial prontas para uso pelos clientes.\nStatus: em andamento, ainda sem fases detalhadas cadastradas no ClickUp.",
-  "fases": [],
-  "excludeFromIndex": true
+  "fases": [
+   {
+    "n": "LLama",
+    "status": "shipped",
+    "assignee": "—",
+    "due": 1785567600000,
+    "id": "86akmvnua",
+    "ativ": []
+   },
+   {
+    "n": "N8N",
+    "status": "shipped",
+    "assignee": "—",
+    "due": 1785567600000,
+    "id": "86akmvnye",
+    "ativ": []
+   }
+  ]
  },
  {
   "num": 7,
   "id": "86ajvr6zn",
   "status": "in progress",
-  "due": 1787295600000,
+  "due": 1791529200000,
   "name": "Estruturar o BCP-Multicloud para gerenciamento centralizado de ambientes de nuvem pública, privada e híbrida",
-  "short": "BCP - Modulo Multicloud",
+  "short": "BCP - Multicloud (AWS)",
   "assignee": "Tiago Gomes de Oliveira / Guilherme Lopes",
   "tags": [],
   "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de conectar, inventariar, monitorar e administrar recursos distribuídos entre diferentes provedores de nuvem (AWS, Azure e BCOS/OpenStack no escopo inicial), com experiência unificada de operação.\nEntregáveis: cadastro de provedores, descoberta automática de recursos, inventário consolidado, painel único de administração, pesquisa global de recursos.\nCritério de aceite: módulo disponível no BCP com AWS, Azure e BCOS integrados, recursos sincronizados automaticamente e MVP validado por Produto, Engenharia e Operações.\nPrazo final: 21 de agosto de 2026.\nRisco principal: transformar o módulo em uma plataforma completa de orquestração multicloud antes de validar a camada básica de inventário e sincronização.",
-  "fases": [],
-  "excludeFromIndex": true
+  "fases": [
+   {
+    "n": "Integração via API com a nuvem AWS",
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": 1789974000000,
+    "id": "86akmvgqf",
+    "ativ": [
+     {
+      "n": "Criação de Vms",
+      "status": "shipped",
+      "due": 1785567600000,
+      "original_due": 1785567600000,
+      "nova_previsao": null,
+      "id": "86akmvh35"
+     },
+     {
+      "n": "Exclusão de Vms",
+      "status": "shipped",
+      "due": 1785567600000,
+      "original_due": 1785567600000,
+      "nova_previsao": null,
+      "id": "86akmvh4v"
+     }
+    ]
+   },
+   {
+    "n": "Criação de telas para controlar nuvem AWS pelo BCP",
+    "status": "in progress",
+    "assignee": "—",
+    "due": 1790924400000,
+    "id": "86akmvhcm",
+    "ativ": []
+   },
+   {
+    "n": "Publicar modulo em produção",
+    "status": "backlog",
+    "assignee": "—",
+    "due": 1791529200000,
+    "id": "86akmvhmx",
+    "ativ": []
+   }
+  ]
  },
  {
   "num": 8,
@@ -1237,8 +1286,16 @@
   "assignee": "Tiago Gomes de Oliveira",
   "tags": [],
   "detail": "Objetivo: estruturar uma solução de Datalake como serviço (SaaS) dentro do portfólio do BCP.\nStatus: em planejamento, ainda sem fases detalhadas cadastradas no ClickUp.",
-  "fases": [],
-  "excludeFromIndex": true
+  "fases": [
+   {
+    "n": "Planejamento",
+    "status": "backlog",
+    "assignee": "—",
+    "due": 1790838000000,
+    "id": "86akmw04m",
+    "ativ": []
+   }
+  ]
  },
  {
   "num": 9,
@@ -1246,7 +1303,7 @@
   "status": "in progress",
   "due": 1797318000000,
   "name": "Estruturar o BC-Migration para descoberta, planejamento e migração assistida de workloads para o BCP",
-  "short": "BCP - Migration como módulo do BCP",
+  "short": "BCP - Migration",
   "assignee": "Tiago Gomes de Oliveira / Nathan de Moraes Valim Francisco / Joab de Araújo Silva",
   "tags": [],
   "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de identificar ambientes de origem, inventariar workloads, avaliar compatibilidade e executar migrações assistidas para a plataforma BCP (escopo inicial: VMware, on-premises, outros OpenStack, BCOS 2.0, KVM, Red Hat e Canonical).\nEntregáveis: painel do BC-Migration no BCP, descoberta automática de infraestrutura, classificação de workloads por complexidade, avaliação de compatibilidade, geração de plano de migração por ondas, fluxo de migração assistida.\nCritério de aceite: módulo acessível no BCP, descoberta automática funcionando, pelo menos uma VM migrada com sucesso em ambiente controlado, documentação publicada e MVP validado por Produto, Engenharia, SRE e Operações.\nPrazo final: 15 de dezembro de 2026.\nRisco principal: tentar transformar o módulo em uma plataforma universal de migração antes de validar o fluxo mínimo de descoberta, inventário, planejamento e execução assistida.",
