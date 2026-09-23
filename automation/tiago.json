@@ -1594,5 +1594,53 @@
     ]
    }
   ]
+ },
+ {
+  "num": 10,
+  "id": "86akn0yfm",
+  "status": "shipped",
+  "due": 1780038000000,
+  "name": "Billing On Demand",
+  "short": "Billing On Demand",
+  "assignee": "—",
+  "tags": [],
+  "detail": "Objetivo: disponibilizar o modelo de cobrança sob demanda (Billing On Demand) no BCP.\nStatus: concluído.",
+  "fases": []
+ },
+ {
+  "num": 11,
+  "id": "86akn0ynu",
+  "status": "shipped",
+  "due": 1786431600000,
+  "name": "SaaS BC-Cassandra",
+  "short": "SaaS BC-Cassandra",
+  "assignee": "—",
+  "tags": [],
+  "detail": "Objetivo: disponibilizar o Cassandra como serviço (SaaS) dentro do portfólio do BCP.\nStatus: concluído.",
+  "fases": []
+ },
+ {
+  "num": 12,
+  "id": "86akn0yhe",
+  "status": "shipped",
+  "due": 1782802800000,
+  "name": "NetBox",
+  "short": "NetBox",
+  "assignee": "—",
+  "tags": [],
+  "detail": "Objetivo: implantar o NetBox como solução de inventário e gestão de infraestrutura.\nStatus: concluído.",
+  "fases": []
+ },
+ {
+  "num": 13,
+  "id": "86akn0yn4",
+  "status": "shipped",
+  "due": 1782802800000,
+  "name": "Bidu",
+  "short": "Bidu",
+  "assignee": "—",
+  "tags": [],
+  "detail": "Status: concluído.",
+  "fases": []
  }
 ]
