@@ -1325,7 +1325,7 @@
      },
      {
       "n": "Subir ferramenta em ambiente de Lab",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1790319600000,
       "original_due": 1790319600000,
       "nova_previsao": null,
@@ -1333,7 +1333,7 @@
      },
      {
       "n": "Importar funcionalidades atuais entre openstack",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1790751600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
@@ -1341,7 +1341,7 @@
      },
      {
       "n": "Adicionar funcionalidade entre VMware",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1791356400000,
       "original_due": 1791356400000,
       "nova_previsao": null,
@@ -1349,7 +1349,7 @@
      },
      {
       "n": "Testar VMware -> Openstack",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
