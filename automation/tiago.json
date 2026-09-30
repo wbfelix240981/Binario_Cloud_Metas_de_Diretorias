@@ -1264,15 +1264,57 @@
     "assignee": "—",
     "due": 1790924400000,
     "id": "86akmvhcm",
-    "ativ": []
+    "ativ": [
+     {
+      "n": "Criar telas de gerenciamento de VM - AWS",
+      "status": "in progress",
+      "due": 1790838000000,
+      "original_due": 1790838000000,
+      "nova_previsao": null,
+      "id": "86akr3bzr"
+     },
+     {
+      "n": "Teste de Navegação e CRUD",
+      "status": "backlog",
+      "due": 1790924400000,
+      "original_due": 1790924400000,
+      "nova_previsao": null,
+      "id": "86akr3czy"
+     }
+    ]
    },
    {
     "n": "Publicar modulo em produção",
-    "status": "backlog",
+    "status": "in planning",
     "assignee": "—",
-    "due": 1791529200000,
+    "due": 1791874800000,
     "id": "86akmvhmx",
-    "ativ": []
+    "ativ": [
+     {
+      "n": "Publicar Atualização em SandBox",
+      "status": "backlog",
+      "due": 1791442800000,
+      "original_due": 1791442800000,
+      "nova_previsao": null,
+      "id": "86akr3dkn"
+     },
+     {
+      "n": "Abrir GMUD - Publicação em Produção",
+      "status": "backlog",
+      "due": 1791529200000,
+      "original_due": 1791529200000,
+      "nova_previsao": null,
+      "id": "86akr3de6"
+     },
+     {
+      "n": "Publicar Modulo em Produção",
+      "status": "backlog",
+      "due": 1791874800000,
+      "original_due": 1791874800000,
+      "nova_previsao": null,
+      "id": "86akr3eay"
+     }
+    ]
    }
   ]
  },
