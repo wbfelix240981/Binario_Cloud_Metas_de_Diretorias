@@ -2,8 +2,10 @@ name: Sincronizar com ClickUp
 
 on:
   schedule:
-    # De hora em hora (modo estável, até a automação externa - VM/cron-job.org - ficar pronta)
-    - cron: '0 * * * *'
+    # A cada 15 min: o schedule do GitHub Actions atrasa/pula execuções em repos
+    # de baixo tráfego (confirmado: gaps reais de 3-7h mesmo com "0 * * * *").
+    # Rodando a cada 15 min aumenta a chance de pelo menos 1 execução passar por hora.
+    - cron: '*/15 * * * *'
   workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
 
 permissions:
@@ -38,4 +40,5 @@ jobs:
           git config user.email "actions@github.com"
           git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json automation/sync_errors.log
           git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp"
+          git pull --rebase origin main || true
           git push
