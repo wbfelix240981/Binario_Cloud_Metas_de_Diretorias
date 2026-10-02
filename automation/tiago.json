@@ -395,7 +395,7 @@
  {
   "num": 3,
   "id": "86afcphue",
-  "status": "in progress",
+  "status": "shipped",
   "due": 1796022000000,
   "name": "Módulo Financeiro do BCP",
   "short": "BCP - Financeiro",
@@ -554,7 +554,7 @@
    },
    {
     "n": "FASE04 - Faturamento - PAAS|SAAS",
-    "status": "in planning",
+    "status": "shipped",
     "assignee": "Guilherme Lopes",
     "due": null,
     "id": "86afct8jh",
@@ -585,7 +585,7 @@
      },
      {
       "n": "Desenvolvimento de API consumo PaaS/SaaS",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -593,7 +593,7 @@
      },
      {
       "n": "Integração da API no sistema de faturamento atual",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -601,7 +601,7 @@
      },
      {
       "n": "Cadastro dos SKU's na calculadora",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -609,7 +609,7 @@
      },
      {
       "n": "Cadastro dos SKU's no ERP",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -617,7 +617,7 @@
      },
      {
       "n": "testes em ambiente de desenvolvimento",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -625,7 +625,7 @@
      },
      {
       "n": "teste de integração com ERP",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -635,14 +635,14 @@
    },
    {
     "n": "FASE05 - Esteira QA",
-    "status": "backlog",
+    "status": "shipped",
     "assignee": "Guilherme Lopes",
     "due": null,
     "id": "86ag5uhzf",
     "ativ": [
      {
       "n": "Aplicação das roles de serviço da ferramenta",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -650,7 +650,7 @@
      },
      {
       "n": "Criação de esteira do módulo",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -658,7 +658,7 @@
      },
      {
       "n": "Testes e validações do produto",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -666,7 +666,7 @@
      },
      {
       "n": "Geração de documentação da operação",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -674,7 +674,7 @@
      },
      {
       "n": "Geração de FAQ para o cliente",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -682,7 +682,7 @@
      },
      {
       "n": "Passagem para produção",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -690,7 +690,7 @@
      },
      {
       "n": "Apresentação para o Board da Empresa",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -698,7 +698,7 @@
      },
      {
       "n": "Apresentação para o comercial",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -706,7 +706,7 @@
      },
      {
       "n": "Implementação do módulo no BC-BOX",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -714,7 +714,7 @@
      },
      {
       "n": "Precificação do produto",
-      "status": "backlog",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -1267,7 +1267,7 @@
     "ativ": [
      {
       "n": "Criar telas de gerenciamento de VM - AWS",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1790838000000,
       "original_due": 1790838000000,
       "nova_previsao": null,
@@ -1280,6 +1280,30 @@
       "original_due": 1790924400000,
       "nova_previsao": null,
       "id": "86akr3czy"
+     },
+     {
+      "n": "Criar tela para controle de Conexões - Cloud",
+      "status": "shipped",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akrw5x1"
+     },
+     {
+      "n": "Criar tela de conexão - AWS",
+      "status": "shipped",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akrw7g6"
+     },
+     {
+      "n": "Adequar tela de instancia - Criação de nova coluna Provedores",
+      "status": "shipped",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akrw8w8"
      }
     ]
    },
@@ -1290,6 +1314,14 @@
     "due": 1791874800000,
     "id": "86akmvhmx",
     "ativ": [
+     {
+      "n": "Publicar Atualização em Develop",
+      "status": "shipped",
+      "due": 1790924400000,
+      "original_due": 1790924400000,
+      "nova_previsao": null,
+      "id": "86akrw5ht"
+     },
      {
       "n": "Publicar Atualização em SandBox",
       "status": "backlog",
@@ -1313,6 +1345,39 @@
       "original_due": 1791874800000,
       "nova_previsao": null,
       "id": "86akr3eay"
+     }
+    ]
+   },
+   {
+    "n": "Documentação",
+    "status": "backlog",
+    "assignee": "—",
+    "due": 1791788400000,
+    "id": "86akrwaru",
+    "ativ": [
+     {
+      "n": "Passagem Conhecimento - Operação",
+      "status": "backlog",
+      "due": 1791788400000,
+      "original_due": 1791788400000,
+      "nova_previsao": null,
+      "id": "86akrwb4d"
+     },
+     {
+      "n": "Criação de Videos - Demonstrativo",
+      "status": "backlog",
+      "due": 1791788400000,
+      "original_due": 1791788400000,
+      "nova_previsao": null,
+      "id": "86akrwb6m"
+     },
+     {
+      "n": "Montagem de manual - FAQ",
+      "status": "backlog",
+      "due": 1791788400000,
+      "original_due": 1791788400000,
+      "nova_previsao": null,
+      "id": "86akrwb8t"
      }
     ]
    }
@@ -1485,6 +1550,14 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbj6qt"
+     },
+     {
+      "n": "Criar tela de conexao de origem",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akry048"
      }
     ]
    },
