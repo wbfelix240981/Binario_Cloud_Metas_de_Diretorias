@@ -857,7 +857,7 @@ const ROADMAP_TASKS = [
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 447
+  "_missing_count": 448
  },
  {
   "id": "86ak6m2qf",
@@ -890,7 +890,7 @@ const ROADMAP_TASKS = [
   "_missing_count": 0
  }
 ];
-const LAST_SYNC_UTC = "2026-10-05T08:35:25.361412+00:00";
+const LAST_SYNC_UTC = "2026-10-05T17:29:28.391037+00:00";
 
 const RAFAEL_METAS = [
  {
@@ -4646,7 +4646,7 @@ const TIAGO_METAS = [
   "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de identificar ambientes de origem, inventariar workloads, avaliar compatibilidade e executar migrações assistidas para a plataforma BCP (escopo inicial: VMware, on-premises, outros OpenStack, BCOS 2.0, KVM, Red Hat e Canonical).\nEntregáveis: painel do BC-Migration no BCP, descoberta automática de infraestrutura, classificação de workloads por complexidade, avaliação de compatibilidade, geração de plano de migração por ondas, fluxo de migração assistida.\nCritério de aceite: módulo acessível no BCP, descoberta automática funcionando, pelo menos uma VM migrada com sucesso em ambiente controlado, documentação publicada e MVP validado por Produto, Engenharia, SRE e Operações.\nPrazo final: 15 de dezembro de 2026.\nRisco principal: tentar transformar o módulo em uma plataforma universal de migração antes de validar o fluxo mínimo de descoberta, inventário, planejamento e execução assistida.",
   "fases": [
    {
-    "n": "Fase 1 - Estudo e Testes",
+    "n": "Fase 1 - Estudo, Testes e v1",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1791529200000,
@@ -4695,10 +4695,173 @@ const TIAGO_METAS = [
     ]
    },
    {
-    "n": "Fase 2 - Criar Integrações Externas",
+    "n": "Fase 2 - Fazer integração no BCP",
+    "status": "in progress",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": 1796367600000,
+    "id": "86akbhubv",
+    "ativ": [
+     {
+      "n": "Verificar API existente",
+      "status": "backlog",
+      "due": 1792134000000,
+      "original_due": 1792134000000,
+      "nova_previsao": null,
+      "id": "86akt5up9"
+     },
+     {
+      "n": "Criar tela de migracao",
+      "status": "backlog",
+      "due": 1792738800000,
+      "original_due": 1792738800000,
+      "nova_previsao": null,
+      "id": "86akt5u8a"
+     },
+     {
+      "n": "Criar tela de conexao de origem",
+      "status": "in planning",
+      "due": 1792738800000,
+      "original_due": 1792738800000,
+      "nova_previsao": null,
+      "id": "86akry048"
+     },
+     {
+      "n": "Criar aba no painel da cloud",
+      "status": "backlog",
+      "due": 1792738800000,
+      "original_due": 1792738800000,
+      "nova_previsao": null,
+      "id": "86akt5tu4"
+     },
+     {
+      "n": "Adequar API",
+      "status": "backlog",
+      "due": 1792738800000,
+      "original_due": 1792738800000,
+      "nova_previsao": null,
+      "id": "86akt5zjy"
+     }
+    ]
+   },
+   {
+    "n": "Fase 3 - Arquitetura",
+    "status": "in progress",
+    "assignee": "—",
+    "due": 1796972400000,
+    "id": "86akbk1c0",
+    "ativ": [
+     {
+      "n": "Subir códigos no git",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akt5uu9"
+     },
+     {
+      "n": "Definir modelo de arquitetura",
+      "status": "in progress",
+      "due": 1792134000000,
+      "original_due": 1792134000000,
+      "nova_previsao": null,
+      "id": "86akbk1ua"
+     },
+     {
+      "n": "Desenhar arquitetura",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbk1y8"
+     },
+     {
+      "n": "Desenhar fluxo de utilização",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbk276"
+     }
+    ]
+   },
+   {
+    "n": "Fase 4 - Esteira de QA",
     "status": "backlog",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1794553200000,
+    "due": 1797577200000,
+    "id": "86akbhw3d",
+    "ativ": [
+     {
+      "n": "Criação de esteira do módulo",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw3k"
+     },
+     {
+      "n": "Testes e validações do produto",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw3r"
+     },
+     {
+      "n": "Geração de FAQ para o cliente",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw4v"
+     },
+     {
+      "n": "Passagem para produção",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw57"
+     },
+     {
+      "n": "Passagem de bastão Operacao",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw5e"
+     },
+     {
+      "n": "Apresentação para o Board da Empresa",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw66"
+     },
+     {
+      "n": "Apresentação para o comercial",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw68"
+     },
+     {
+      "n": "Precificação do produto",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86akbhw6d"
+     }
+    ]
+   },
+   {
+    "n": "Fase 5 - Criar Integrações Externas (Próximas Versões)",
+    "status": "backlog",
+    "assignee": "Nathan de Moraes Valim Francisco",
+    "due": null,
     "id": "86akbhu0v",
     "ativ": [
      {
@@ -4780,161 +4943,6 @@ const TIAGO_METAS = [
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbj6qt"
-     },
-     {
-      "n": "Criar tela de conexao de origem",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akry048"
-     }
-    ]
-   },
-   {
-    "n": "Fase 3 - Fazer integração no BCP",
-    "status": "backlog",
-    "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1796367600000,
-    "id": "86akbhubv",
-    "ativ": [
-     {
-      "n": "Criar telas de frontend do BCP integrado na API da ferramenta",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbj6vd"
-     }
-    ]
-   },
-   {
-    "n": "Fase 4 - Arquitetura",
-    "status": "backlog",
-    "assignee": "—",
-    "due": 1796972400000,
-    "id": "86akbk1c0",
-    "ativ": [
-     {
-      "n": "Definir modelo de arquitetura",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbk1ua"
-     },
-     {
-      "n": "Desenhar arquitetura",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbk1y8"
-     },
-     {
-      "n": "Desenhar fluxo de utilização",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbk276"
-     }
-    ]
-   },
-   {
-    "n": "Fase 5 - Esteira de QA",
-    "status": "backlog",
-    "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1797577200000,
-    "id": "86akbhw3d",
-    "ativ": [
-     {
-      "n": "Aplicação das roles de serviço da ferramenta",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw3m"
-     },
-     {
-      "n": "Criação de esteira do módulo",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw3k"
-     },
-     {
-      "n": "Testes e validações do produto",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw3r"
-     },
-     {
-      "n": "Geração de FAQ para o cliente",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw4v"
-     },
-     {
-      "n": "Passagem para produção",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw57"
-     },
-     {
-      "n": "Passagem de bastão Operacao",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw5e"
-     },
-     {
-      "n": "Apresentação para o Board da Empresa",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw66"
-     },
-     {
-      "n": "Apresentação para o comercial",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw68"
-     },
-     {
-      "n": "Implementação do módulo no BC-BOX",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw6c"
-     },
-     {
-      "n": "Precificação do produto",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw6d"
-     },
-     {
-      "n": "Plano de evolução para novas versões",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbhw6g"
      }
     ]
    }
