@@ -1630,7 +1630,7 @@
      {
       "n": "br-sp-02-node01",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1795762800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc8787"
@@ -1662,7 +1662,7 @@
      {
       "n": "br-sp-02-node05",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1791529200000,
       "original_due": 1793343600000,
       "nova_previsao": 1790751600000,
       "id": "86agc87g8"
@@ -1670,9 +1670,9 @@
      {
       "n": "br-sp-02-node06",
       "status": "blocked",
-      "due": 1790751600000,
+      "due": 1795762800000,
       "original_due": 1790751600000,
-      "nova_previsao": 1795158000000,
+      "nova_previsao": 1795762800000,
       "id": "86agc87hj"
      },
      {
@@ -1726,7 +1726,7 @@
      {
       "n": "br-sp-02-node17",
       "status": "blocked",
-      "due": 1790751600000,
+      "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86agc881a"
@@ -1734,7 +1734,7 @@
      {
       "n": "br-sp-02-node18",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1795762800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc8845"
@@ -1798,7 +1798,7 @@
      {
       "n": "srv-win-03",
       "status": "blocked",
-      "due": 1790751600000,
+      "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86agc8uvh"
@@ -1806,7 +1806,7 @@
      {
       "n": "srv-win-04",
       "status": "blocked",
-      "due": 1790751600000,
+      "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86agc8uxd"
@@ -1886,16 +1886,16 @@
      {
       "n": "srv-oraclenode-01",
       "status": "blocked",
-      "due": null,
-      "original_due": null,
+      "due": 1792134000000,
+      "original_due": 1792134000000,
       "nova_previsao": null,
       "id": "86ahapc09"
      },
      {
       "n": "srv-oraclenode-02",
       "status": "blocked",
-      "due": null,
-      "original_due": null,
+      "due": 1792134000000,
+      "original_due": 1792134000000,
       "nova_previsao": null,
       "id": "86ahapc0v"
      }
