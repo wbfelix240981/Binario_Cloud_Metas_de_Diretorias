@@ -1275,7 +1275,7 @@
      },
      {
       "n": "Teste de Navegação e CRUD",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
@@ -1378,6 +1378,14 @@
       "original_due": 1791788400000,
       "nova_previsao": null,
       "id": "86akrwb8t"
+     },
+     {
+      "n": "Apresentar funcionalidade Equipe Comercial",
+      "status": "backlog",
+      "due": 1791529200000,
+      "original_due": 1791529200000,
+      "nova_previsao": null,
+      "id": "86aktc3mb"
      }
     ]
    }
