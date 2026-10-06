@@ -409,7 +409,7 @@
     "n": "FASE01 - Extrato de Consumo - em tempo Real",
     "status": "shipped",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1775026800000,
     "id": "86afct8bu",
     "ativ": [
      {
@@ -458,7 +458,7 @@
     "n": "FASE02 - Integrar precificação no momento da criação de VM",
     "status": "shipped",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1777964400000,
     "id": "86afct7za",
     "ativ": [
      {
@@ -499,7 +499,7 @@
     "n": "FASE03 - Rateio de Notas Fiscais",
     "status": "shipped",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1778655600000,
     "id": "86afct8e7",
     "ativ": [
      {
@@ -556,7 +556,7 @@
     "n": "FASE04 - Faturamento - PAAS|SAAS",
     "status": "shipped",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1782802800000,
     "id": "86afct8jh",
     "ativ": [
      {
@@ -637,7 +637,7 @@
     "n": "FASE05 - Esteira QA",
     "status": "shipped",
     "assignee": "Guilherme Lopes",
-    "due": null,
+    "due": 1785826800000,
     "id": "86ag5uhzf",
     "ativ": [
      {
@@ -724,24 +724,24 @@
    },
    {
     "n": "FASE06 - Homologação Financeiro",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": 1787036400000,
     "id": "86aktf1td",
     "ativ": []
    },
    {
     "n": "FASE07 - CONTRATOS",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "shipped",
+    "assignee": "Guilherme Lopes",
+    "due": 1788159600000,
     "id": "86aktf2gc",
     "ativ": [
      {
       "n": "Informaçoes Financeiras - Faturamento",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "shipped",
+      "due": 1790146800000,
+      "original_due": 1790146800000,
       "nova_previsao": null,
       "id": "86aktf2mf"
      }
