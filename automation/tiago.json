@@ -721,6 +721,31 @@
       "id": "86agce34t"
      }
     ]
+   },
+   {
+    "n": "FASE06 - Homologação Financeiro",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86aktf1td",
+    "ativ": []
+   },
+   {
+    "n": "FASE07 - CONTRATOS",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "86aktf2gc",
+    "ativ": [
+     {
+      "n": "Informaçoes Financeiras - Faturamento",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86aktf2mf"
+     }
+    ]
    }
   ]
  },
