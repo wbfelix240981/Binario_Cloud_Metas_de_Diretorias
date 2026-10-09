@@ -1567,6 +1567,14 @@
       "original_due": 1792738800000,
       "nova_previsao": null,
       "id": "86akt5zjy"
+     },
+     {
+      "n": "Criar Integração OCI",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "86aku1ryv"
      }
     ]
    },
