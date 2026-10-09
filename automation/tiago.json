@@ -26,7 +26,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc6ju"
+      "id": "86agtc6ju",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Instalar controller",
@@ -34,7 +37,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc6uw"
+      "id": "86agtc6uw",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "instalar repositório",
@@ -42,7 +48,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc6z8"
+      "id": "86agtc6z8",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "conectar ceph de backup",
@@ -50,7 +59,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc76p"
+      "id": "86agtc76p",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "validar features",
@@ -58,7 +70,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc7ac"
+      "id": "86agtc7ac",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "gerar frontend personalizado",
@@ -66,7 +81,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agtc7mp"
+      "id": "86agtc7mp",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -83,7 +101,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag6zv4v"
+      "id": "86ag6zv4v",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Opção \"enable file system\"",
@@ -91,7 +112,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag6zvvx"
+      "id": "86ag6zvvx",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Correção de bugs visuais",
@@ -99,7 +123,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag6zw1z"
+      "id": "86ag6zw1z",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -116,7 +143,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afcrzu6"
+      "id": "86afcrzu6",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar videos tutoriais para a equipe Suporte - N1/N2",
@@ -124,7 +154,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct04e"
+      "id": "86afct04e",
+      "resp": "Matheus Ventura Alves Ferreira",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Contratar licenças junto ao Fornecedor - Storware",
@@ -132,7 +165,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct16a"
+      "id": "86afct16a",
+      "resp": "Leonardo Gomes Jorge Gonçalez",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Definir precificação",
@@ -140,7 +176,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct1md"
+      "id": "86afct1md",
+      "resp": "Tiago Gomes de Oliveira",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Subir SKU na Calculadora",
@@ -148,7 +187,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct1u7"
+      "id": "86afct1u7",
+      "resp": "Tiago Gomes de Oliveira",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Definir 5 primeiro Clientes",
@@ -156,7 +198,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct2c8"
+      "id": "86afct2c8",
+      "resp": "Rafael Alves / Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Subir documentação - ClaudIA",
@@ -164,7 +209,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afct37a"
+      "id": "86afct37a",
+      "resp": "Matheus Ventura Alves Ferreira",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Disponibilização da FAQ",
@@ -172,7 +220,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag1nq0v"
+      "id": "86ag1nq0v",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -205,7 +256,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tmrv"
+      "id": "86ag4tmrv",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Definição do tempo de vida do acesso gerado",
@@ -213,7 +267,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tn72"
+      "id": "86ag4tn72",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -230,7 +287,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tk0m"
+      "id": "86ag4tk0m",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenvolvimento de API para geração de tokens de acesso a calculadora",
@@ -238,7 +298,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tkj8"
+      "id": "86ag4tkj8",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -255,7 +318,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tghv"
+      "id": "86ag4tghv",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Inserir na calculadora o envio deste token de acesso para a validação",
@@ -263,7 +329,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4thd7"
+      "id": "86ag4thd7",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -280,7 +349,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4td2j"
+      "id": "86ag4td2j",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar página indicando com contato com a equipe comercial",
@@ -288,7 +360,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4td95"
+      "id": "86ag4td95",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -305,7 +380,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4te63"
+      "id": "86ag4te63",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Mecanismo de validação de token de acesso",
@@ -313,7 +391,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tebz"
+      "id": "86ag4tebz",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenvolvimento de tela de validação de acesso após o login",
@@ -321,7 +402,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4tf16"
+      "id": "86ag4tf16",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -338,7 +422,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4t2t7"
+      "id": "86ag4t2t7",
+      "resp": "lucas vinnicius paulino da silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testes e validações do produto",
@@ -346,7 +433,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4t2tw"
+      "id": "86ag4t2tw",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de documentação da operação",
@@ -354,7 +444,10 @@
       "due": 1785913200000,
       "original_due": 1785913200000,
       "nova_previsao": null,
-      "id": "86ag4t2v4"
+      "id": "86ag4t2v4",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de FAQ para o cliente",
@@ -362,7 +455,10 @@
       "due": 1785913200000,
       "original_due": 1785913200000,
       "nova_previsao": null,
-      "id": "86ag4t2vu"
+      "id": "86ag4t2vu",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem para produção",
@@ -370,7 +466,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4t2wh"
+      "id": "86ag4t2wh",
+      "resp": "lucas vinnicius paulino da silva / Guilherme Lopes / Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para a diretoria da Empresa",
@@ -378,7 +477,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4t2x6"
+      "id": "86ag4t2x6",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Implementação do módulo no BC-BOX",
@@ -386,7 +488,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4t2y9"
+      "id": "86ag4t2y9",
+      "resp": "Vitor Ribeiro",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -418,7 +523,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86hcu"
+      "id": "86ag86hcu",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação de endpoint de consumo de tempo real - skyline",
@@ -426,7 +534,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86htg"
+      "id": "86ag86htg",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Integração da tela de consumo com BCAPI",
@@ -434,7 +545,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86je5"
+      "id": "86ag86je5",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Ajustes dos parametros da API de consumo(filtragem de dados por projeto)",
@@ -442,7 +556,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86k67"
+      "id": "86ag86k67",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Deploy da solução em produção",
@@ -450,7 +567,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86kdu"
+      "id": "86ag86kdu",
+      "resp": "William Afonso Lemos Alonso / Vitor Ribeiro",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -467,7 +587,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86ncy"
+      "id": "86ag86ncy",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Construção de tela para consumo API de preços",
@@ -475,7 +598,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86npa"
+      "id": "86ag86npa",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Filtragem de SKU's ausentes",
@@ -483,7 +609,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86p5m"
+      "id": "86ag86p5m",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "validação em ambiente sandbox",
@@ -491,7 +620,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86px4"
+      "id": "86ag86px4",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -508,7 +640,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86rxr"
+      "id": "86ag86rxr",
+      "resp": "Guilherme Soares Gomes da Silva / Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Proposta de rateio automatizado pelo BCAPI",
@@ -516,7 +651,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86t3e"
+      "id": "86ag86t3e",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenvolvimento da tela de rateio BCAPI",
@@ -524,7 +662,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86t7d"
+      "id": "86ag86t7d",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação da estrutura para o time financeiro",
@@ -532,7 +673,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86tv1"
+      "id": "86ag86tv1",
+      "resp": "Guilherme Lopes / Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "testes em ambiente de desenvolvimento",
@@ -540,7 +684,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86u30"
+      "id": "86ag86u30",
+      "resp": "Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Deploy em ambiente de produção",
@@ -548,7 +695,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86uax"
+      "id": "86ag86uax",
+      "resp": "Vitor Ribeiro / Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -565,7 +715,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86wkh"
+      "id": "86ag86wkh",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Estudo do funcionamento do SaaS",
@@ -573,7 +726,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86x4m"
+      "id": "86ag86x4m",
+      "resp": "Gabriel Sezana / Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Validação da criação de PaaS no consumo",
@@ -581,7 +737,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86xb9"
+      "id": "86ag86xb9",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenvolvimento de API consumo PaaS/SaaS",
@@ -589,7 +748,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86xya"
+      "id": "86ag86xya",
+      "resp": "Guilherme Soares Gomes da Silva / Gabriel Sezana",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Integração da API no sistema de faturamento atual",
@@ -597,7 +759,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86yax"
+      "id": "86ag86yax",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Cadastro dos SKU's na calculadora",
@@ -605,7 +770,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86z3r"
+      "id": "86ag86z3r",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Cadastro dos SKU's no ERP",
@@ -613,7 +781,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86znr"
+      "id": "86ag86znr",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "testes em ambiente de desenvolvimento",
@@ -621,7 +792,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag86yrc"
+      "id": "86ag86yrc",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "teste de integração com ERP",
@@ -629,7 +803,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag87048"
+      "id": "86ag87048",
+      "resp": "Pedro Henrique Macedo",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -646,7 +823,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce32z"
+      "id": "86agce32z",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação de esteira do módulo",
@@ -654,7 +834,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce333"
+      "id": "86agce333",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testes e validações do produto",
@@ -662,7 +845,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce339"
+      "id": "86agce339",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de documentação da operação",
@@ -670,7 +856,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce33e"
+      "id": "86agce33e",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de FAQ para o cliente",
@@ -678,7 +867,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce33k"
+      "id": "86agce33k",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem para produção",
@@ -686,7 +878,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce33x"
+      "id": "86agce33x",
+      "resp": "Nathan de Moraes Valim Francisco / Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o Board da Empresa",
@@ -694,7 +889,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce347"
+      "id": "86agce347",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o comercial",
@@ -702,7 +900,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce34d"
+      "id": "86agce34d",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Implementação do módulo no BC-BOX",
@@ -710,7 +911,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce34h"
+      "id": "86agce34h",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Precificação do produto",
@@ -718,7 +922,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce34t"
+      "id": "86agce34t",
+      "resp": "Tiago Gomes de Oliveira",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -743,7 +950,10 @@
       "due": 1790146800000,
       "original_due": 1790146800000,
       "nova_previsao": null,
-      "id": "86aktf2mf"
+      "id": "86aktf2mf",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -776,7 +986,10 @@
       "due": 1773990000000,
       "original_due": 1773990000000,
       "nova_previsao": null,
-      "id": "86ag4ppde"
+      "id": "86ag4ppde",
+      "resp": "Matheus do Rosario de Almeida",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Gerar estrutura do que precisamos coletar",
@@ -784,7 +997,10 @@
       "due": 1773990000000,
       "original_due": 1773990000000,
       "nova_previsao": null,
-      "id": "86ag4ppyc"
+      "id": "86ag4ppyc",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Gerar exporter das coletas restantes",
@@ -792,7 +1008,10 @@
       "due": 1796022000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
-      "id": "86ag4pqdv"
+      "id": "86ag4pqdv",
+      "resp": "lucas vinnicius paulino da silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Ajustar o fluxo de ingestão no click",
@@ -800,7 +1019,10 @@
       "due": 1774594800000,
       "original_due": 1774594800000,
       "nova_previsao": null,
-      "id": "86ag4pqxb"
+      "id": "86ag4pqxb",
+      "resp": "Rafael J Santos",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -817,7 +1039,10 @@
       "due": 1775718000000,
       "original_due": 1775718000000,
       "nova_previsao": null,
-      "id": "86ag4px68"
+      "id": "86ag4px68",
+      "resp": "Guilherme Soares Gomes da Silva / Rafael J Santos",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Montagem da área de Visão no FrontEnd",
@@ -825,7 +1050,10 @@
       "due": 1776409200000,
       "original_due": 1776409200000,
       "nova_previsao": null,
-      "id": "86ag4py89"
+      "id": "86ag4py89",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Analise da possibilidade do cliente Personalizar os seus dashboards",
@@ -833,7 +1061,10 @@
       "due": 1775545200000,
       "original_due": 1775545200000,
       "nova_previsao": null,
-      "id": "86ag4qu9f"
+      "id": "86ag4qu9f",
+      "resp": "Raphael Fogaça / Matheus do Rosario de Almeida / William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Integração da API X Telas",
@@ -841,7 +1072,10 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86agzkwxv"
+      "id": "86agzkwxv",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -858,7 +1092,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag4qt5b"
+      "id": "86ag4qt5b",
+      "resp": "Guilherme Soares Gomes da Silva / Rafael J Santos",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Adicao de intervalo de tempo na tela de graficos",
@@ -866,7 +1103,10 @@
       "due": 1779433200000,
       "original_due": 1779433200000,
       "nova_previsao": null,
-      "id": "86ahdjpw2"
+      "id": "86ahdjpw2",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de alertas para os dados coletados no painel",
@@ -874,7 +1114,10 @@
       "due": 1786086000000,
       "original_due": 1786086000000,
       "nova_previsao": null,
-      "id": "86ag4q1e7"
+      "id": "86ag4q1e7",
+      "resp": "Guilherme Soares Gomes da Silva / Matheus do Rosario de Almeida",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação/Adequação da tela de Alertas",
@@ -882,7 +1125,10 @@
       "due": 1787900400000,
       "original_due": 1787900400000,
       "nova_previsao": null,
-      "id": "86ah4ck30"
+      "id": "86ah4ck30",
+      "resp": "Raphael Fogaça / Matheus do Rosario de Almeida / William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Recomendações de utilização por IA",
@@ -890,7 +1136,10 @@
       "due": 1790924400000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4qew3"
+      "id": "86ag4qew3",
+      "resp": "Guilherme Soares Gomes da Silva / Ayrton Marinho / Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -907,7 +1156,10 @@
       "due": 1791356400000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4q8zn"
+      "id": "86ag4q8zn",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Visão de Top usage VMS - Observabilidade Painel admin VMs",
@@ -915,7 +1167,10 @@
       "due": 1789110000000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4q973"
+      "id": "86ag4q973",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Visão de Top usage compute nodes - Observabilidade do Hypervisor",
@@ -923,7 +1178,10 @@
       "due": 1791270000000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4q9ju"
+      "id": "86ag4q9ju",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de alertas administrativo",
@@ -931,7 +1189,10 @@
       "due": 1791270000000,
       "original_due": 1790319600000,
       "nova_previsao": null,
-      "id": "86ag4qqct"
+      "id": "86ag4qqct",
+      "resp": "Rafael J Santos / Ayrton Marinho / Guilherme Soares Gomes da Silva / Matheus do Rosario de Almeida",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Recomendação de IA para o gestor da empresa",
@@ -939,7 +1200,10 @@
       "due": 1790665200000,
       "original_due": 1790319600000,
       "nova_previsao": null,
-      "id": "86ag4r4bv"
+      "id": "86ag4r4bv",
+      "resp": "Guilherme Lopes / Guilherme Soares Gomes da Silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação de tela de alertas - BCP Admin (Hypervisors)",
@@ -947,7 +1211,10 @@
       "due": 1791270000000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86akfhrj5"
+      "id": "86akfhrj5",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -964,7 +1231,10 @@
       "due": 1790319600000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4q0b5"
+      "id": "86ag4q0b5",
+      "resp": "lucas vinnicius paulino da silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testes e validações do produto",
@@ -972,7 +1242,10 @@
       "due": 1791529200000,
       "original_due": 1789714800000,
       "nova_previsao": null,
-      "id": "86ag4qmha"
+      "id": "86ag4qmha",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de documentação da operação",
@@ -980,7 +1253,10 @@
       "due": 1778050800000,
       "original_due": 1778050800000,
       "nova_previsao": null,
-      "id": "86ag4qmwx"
+      "id": "86ag4qmwx",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de FAQ para o cliente",
@@ -988,7 +1264,10 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ag4qn2n"
+      "id": "86ag4qn2n",
+      "resp": "Raphael Fogaça / William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem para produção",
@@ -996,7 +1275,10 @@
       "due": 1791874800000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86ag4qmny"
+      "id": "86ag4qmny",
+      "resp": "William Afonso Lemos Alonso / Guilherme Lopes / lucas vinnicius paulino da silva",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem de bastão Operacao",
@@ -1004,7 +1286,10 @@
       "due": 1791183600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86ahhnm0t"
+      "id": "86ahhnm0t",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o Board da Empresa",
@@ -1012,7 +1297,10 @@
       "due": 1791529200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
-      "id": "86ag4qp0m"
+      "id": "86ag4qp0m",
+      "resp": "Raphael Fogaça / Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o comercial",
@@ -1020,7 +1308,10 @@
       "due": 1791529200000,
       "original_due": 1789542000000,
       "nova_previsao": null,
-      "id": "86ag4qp4z"
+      "id": "86ag4qp4z",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Implementação do módulo no BC-BOX",
@@ -1028,7 +1319,10 @@
       "due": 1789369200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
-      "id": "86ag4qxax"
+      "id": "86ag4qxax",
+      "resp": "Raphael Fogaça / Vitor Ribeiro",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Precificação do produto",
@@ -1036,7 +1330,10 @@
       "due": 1791529200000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86ag4qxhv"
+      "id": "86ag4qxhv",
+      "resp": "Tiago Gomes de Oliveira",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Plano de evolução para novas versões",
@@ -1044,7 +1341,10 @@
       "due": 1791529200000,
       "original_due": 1789974000000,
       "nova_previsao": null,
-      "id": "86agdr2px"
+      "id": "86agdr2px",
+      "resp": "Raphael Fogaça",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -1140,7 +1440,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8hv"
+      "id": "86agce8hv",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação de esteira do módulo",
@@ -1148,7 +1451,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8j2"
+      "id": "86agce8j2",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testes e validações do produto",
@@ -1156,7 +1462,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8jh"
+      "id": "86agce8jh",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de documentação da operação",
@@ -1164,7 +1473,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8ju"
+      "id": "86agce8ju",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de FAQ para o cliente",
@@ -1172,7 +1484,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8k7"
+      "id": "86agce8k7",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem para produção",
@@ -1180,7 +1495,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8kk"
+      "id": "86agce8kk",
+      "resp": "Guilherme Lopes / Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o Board da Empresa",
@@ -1188,7 +1506,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8ku"
+      "id": "86agce8ku",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o comercial",
@@ -1196,7 +1517,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8mc"
+      "id": "86agce8mc",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Implementação do módulo no BC-BOX",
@@ -1204,7 +1528,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8mm"
+      "id": "86agce8mm",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Precificação do produto",
@@ -1212,7 +1539,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agce8n2"
+      "id": "86agce8n2",
+      "resp": "Tiago Gomes de Oliveira",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -1279,7 +1609,10 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86akmvh35"
+      "id": "86akmvh35",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Exclusão de Vms",
@@ -1287,7 +1620,10 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86akmvh4v"
+      "id": "86akmvh4v",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1304,7 +1640,10 @@
       "due": 1790838000000,
       "original_due": 1790838000000,
       "nova_previsao": null,
-      "id": "86akr3bzr"
+      "id": "86akr3bzr",
+      "resp": "Gabriel Sezana",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Teste de Navegação e CRUD",
@@ -1312,7 +1651,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86akr3czy"
+      "id": "86akr3czy",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar tela para controle de Conexões - Cloud",
@@ -1320,7 +1662,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86akrw5x1"
+      "id": "86akrw5x1",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar tela de conexão - AWS",
@@ -1328,7 +1673,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86akrw7g6"
+      "id": "86akrw7g6",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Adequar tela de instancia - Criação de nova coluna Provedores",
@@ -1336,7 +1684,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86akrw8w8"
+      "id": "86akrw8w8",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Incluir campo de Provedor - Lista de Instancias",
@@ -1344,7 +1695,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86aktd4ap"
+      "id": "86aktd4ap",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1361,7 +1715,10 @@
       "due": 1790924400000,
       "original_due": 1790924400000,
       "nova_previsao": null,
-      "id": "86akrw5ht"
+      "id": "86akrw5ht",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Publicar Atualização em SandBox",
@@ -1369,7 +1726,10 @@
       "due": 1791442800000,
       "original_due": 1791442800000,
       "nova_previsao": null,
-      "id": "86akr3dkn"
+      "id": "86akr3dkn",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Abrir GMUD - Publicação em Produção",
@@ -1377,7 +1737,10 @@
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
-      "id": "86akr3de6"
+      "id": "86akr3de6",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Publicar Modulo em Produção",
@@ -1385,7 +1748,10 @@
       "due": 1791874800000,
       "original_due": 1791874800000,
       "nova_previsao": null,
-      "id": "86akr3eay"
+      "id": "86akr3eay",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1402,7 +1768,10 @@
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
-      "id": "86akrwb4d"
+      "id": "86akrwb4d",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criação de Videos - Demonstrativo",
@@ -1410,7 +1779,10 @@
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
-      "id": "86akrwb6m"
+      "id": "86akrwb6m",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Montagem de manual - FAQ",
@@ -1418,7 +1790,10 @@
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
-      "id": "86akrwb8t"
+      "id": "86akrwb8t",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentar funcionalidade Equipe Comercial",
@@ -1426,7 +1801,10 @@
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
-      "id": "86aktc3mb"
+      "id": "86aktc3mb",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
@@ -1477,7 +1855,10 @@
       "due": 1788505200000,
       "original_due": 1788505200000,
       "nova_previsao": null,
-      "id": "86akbj8rx"
+      "id": "86akbj8rx",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Subir ferramenta em ambiente de Lab",
@@ -1485,7 +1866,10 @@
       "due": 1790319600000,
       "original_due": 1790319600000,
       "nova_previsao": null,
-      "id": "86akbj60d"
+      "id": "86akbj60d",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Importar funcionalidades atuais entre openstack",
@@ -1493,7 +1877,10 @@
       "due": 1790751600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86akbj60k"
+      "id": "86akbj60k",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Adicionar funcionalidade entre VMware",
@@ -1501,7 +1888,10 @@
       "due": 1791356400000,
       "original_due": 1791356400000,
       "nova_previsao": null,
-      "id": "86akbj60x"
+      "id": "86akbj60x",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testar VMware -> Openstack",
@@ -1509,7 +1899,10 @@
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
-      "id": "86akbj60z"
+      "id": "86akbj60z",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Analisar reutilização BC-Migration - Operação",
@@ -1517,7 +1910,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86aktdb5z"
+      "id": "86aktdb5z",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1534,7 +1930,10 @@
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
-      "id": "86akt5up9"
+      "id": "86akt5up9",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar tela de migracao",
@@ -1542,7 +1941,10 @@
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
-      "id": "86akt5u8a"
+      "id": "86akt5u8a",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar tela de conexao de origem",
@@ -1550,7 +1952,10 @@
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
-      "id": "86akry048"
+      "id": "86akry048",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar aba no painel da cloud",
@@ -1558,7 +1963,10 @@
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
-      "id": "86akt5tu4"
+      "id": "86akt5tu4",
+      "resp": "William Afonso Lemos Alonso",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Adequar API",
@@ -1566,7 +1974,10 @@
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
-      "id": "86akt5zjy"
+      "id": "86akt5zjy",
+      "resp": "Ayrton Marinho",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1583,7 +1994,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akt5uu9"
+      "id": "86akt5uu9",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Definir modelo de arquitetura",
@@ -1591,7 +2005,10 @@
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
-      "id": "86akbk1ua"
+      "id": "86akbk1ua",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenhar arquitetura",
@@ -1599,7 +2016,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbk1y8"
+      "id": "86akbk1y8",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Desenhar fluxo de utilização",
@@ -1607,7 +2027,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbk276"
+      "id": "86akbk276",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1624,7 +2047,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw3k"
+      "id": "86akbhw3k",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testes e validações do produto",
@@ -1632,7 +2058,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw3r"
+      "id": "86akbhw3r",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Geração de FAQ para o cliente",
@@ -1640,7 +2069,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw4v"
+      "id": "86akbhw4v",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem para produção",
@@ -1648,7 +2080,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw57"
+      "id": "86akbhw57",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Passagem de bastão Operacao",
@@ -1656,7 +2091,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw5e"
+      "id": "86akbhw5e",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o Board da Empresa",
@@ -1664,7 +2102,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw66"
+      "id": "86akbhw66",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Apresentação para o comercial",
@@ -1672,7 +2113,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw68"
+      "id": "86akbhw68",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Precificação do produto",
@@ -1680,7 +2124,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbhw6d"
+      "id": "86akbhw6d",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    },
@@ -1697,7 +2144,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6p5"
+      "id": "86akbj6p5",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testar RedHat -> Openstack",
@@ -1705,7 +2155,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6pd"
+      "id": "86akbj6pd",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar api de integração entre Canonical e a ferramenta",
@@ -1713,7 +2166,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6pk"
+      "id": "86akbj6pk",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testar Canonica -> Openstack",
@@ -1721,7 +2177,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6pn"
+      "id": "86akbj6pn",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar api de integração entre AWS e a ferramenta",
@@ -1729,7 +2188,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6pt"
+      "id": "86akbj6pt",
+      "resp": "Guilherme Lopes",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testar AWS -> Openstack",
@@ -1737,7 +2199,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6q1"
+      "id": "86akbj6q1",
+      "resp": "Nathan de Moraes Valim Francisco",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar api de integração entre GCP e a ferramenta",
@@ -1745,7 +2210,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6qa"
+      "id": "86akbj6qa",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testa GCP -> Openstack",
@@ -1753,7 +2221,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6qg"
+      "id": "86akbj6qg",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Criar api de integração entre Azzure e a ferramenta",
@@ -1761,7 +2232,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6qn"
+      "id": "86akbj6qn",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      },
      {
       "n": "Testar  Azzure -> Openstack",
@@ -1769,7 +2243,10 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86akbj6qt"
+      "id": "86akbj6qt",
+      "resp": "—",
+      "resp_org": null,
+      "resp_real": null
      }
     ]
    }
