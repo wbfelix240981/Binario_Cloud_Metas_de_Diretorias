@@ -175,7 +175,7 @@
       "original_due": 1777014000000,
       "nova_previsao": null,
       "id": "86agf9upp",
-      "resp": "Augusto César / Vinicius de Castro Ecard",
+      "resp": "Vinicius de Castro Ecard / Augusto César",
       "resp_org": null,
       "resp_real": null
      },
@@ -228,7 +228,7 @@
       "original_due": 1777532400000,
       "nova_previsao": null,
       "id": "86agg5jzj",
-      "resp": "Augusto César / Vinicius de Castro Ecard",
+      "resp": "Vinicius de Castro Ecard / Augusto César",
       "resp_org": null,
       "resp_real": null
      },
@@ -239,7 +239,7 @@
       "original_due": 1778223600000,
       "nova_previsao": null,
       "id": "86agjgqgu",
-      "resp": "Vinicius de Castro Ecard / Augusto César",
+      "resp": "Augusto César / Vinicius de Castro Ecard",
       "resp_org": null,
       "resp_real": null
      },
@@ -1937,7 +1937,7 @@
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc8787",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
+      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
       "resp_org": null,
       "resp_real": null
      },
@@ -2025,7 +2025,7 @@
       "original_due": 1769756400000,
       "nova_previsao": null,
       "id": "86agc87pw",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
+      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
       "resp_org": null,
       "resp_real": null
      },
@@ -2190,7 +2190,7 @@
       "original_due": 1784012400000,
       "nova_previsao": null,
       "id": "86agc8uz0",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
+      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
       "resp_org": null,
       "resp_real": null
      },
@@ -2212,7 +2212,7 @@
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc8v1h",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
+      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
       "resp_org": null,
       "resp_real": null
      },
@@ -2245,7 +2245,7 @@
       "original_due": 1777014000000,
       "nova_previsao": null,
       "id": "86agc9x78",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
+      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
       "resp_org": null,
       "resp_real": null
      },
@@ -2803,7 +2803,7 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86agc8zmr",
-      "resp": "Luiz Fernando Justino Silva / Guilherme Lopes / Nathan de Moraes Valim Francisco",
+      "resp": "Guilherme Lopes / Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva",
       "resp_org": null,
       "resp_real": null
      }
@@ -2856,7 +2856,7 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86afcr6df",
-      "resp": "Guilherme Lopes / Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva",
+      "resp": "Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva / Guilherme Lopes",
       "resp_org": null,
       "resp_real": null
      },
@@ -2867,7 +2867,7 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86agc954t",
-      "resp": "Guilherme Lopes / Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva",
+      "resp": "Luiz Fernando Justino Silva / Guilherme Lopes / Nathan de Moraes Valim Francisco",
       "resp_org": null,
       "resp_real": null
      }
