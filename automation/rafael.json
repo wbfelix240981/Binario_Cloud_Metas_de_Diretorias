@@ -26,10 +26,7 @@
       "due": 1770879600000,
       "original_due": 1770879600000,
       "nova_previsao": null,
-      "id": "86af4ah06",
-      "resp": "Gustavo Camargo",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4ah06"
      }
     ]
    },
@@ -46,10 +43,7 @@
       "due": 1770879600000,
       "original_due": 1770879600000,
       "nova_previsao": 1770015600000,
-      "id": "86af4ah1c",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4ah1c"
      },
      {
       "n": "Definição de Papeis e respsoabilidade",
@@ -57,17 +51,14 @@
       "due": 1770879600000,
       "original_due": 1770879600000,
       "nova_previsao": 1770015600000,
-      "id": "86af4ah1w",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4ah1w"
      }
     ]
    },
    {
     "n": "Fase 3 - Planejamento",
     "status": "shipped",
-    "assignee": "Diogo Lerison / Rafael Alves",
+    "assignee": "Rafael Alves / Diogo Lerison",
     "due": 1774249200000,
     "id": "86af4ah39",
     "ativ": [
@@ -77,10 +68,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86af4d4yr",
-      "resp": "Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4d4yr"
      },
      {
       "n": "Maiores Ofensores CCOE",
@@ -88,10 +76,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86af4ah3j",
-      "resp": "Gustavo Camargo",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4ah3j"
      },
      {
       "n": "Desenho da arquitetura",
@@ -99,10 +84,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86af4ah51",
-      "resp": "Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86af4ah51"
      },
      {
       "n": "Estudar estimativa de automatização",
@@ -110,10 +92,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afxat0c",
-      "resp": "Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afxat0c"
      },
      {
       "n": "Estudar o botão de identificar chamado sua retirada",
@@ -121,10 +100,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afxatp3",
-      "resp": "Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afxatp3"
      },
      {
       "n": "Estudar botar de TS e seus scripts",
@@ -132,10 +108,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afxb00w",
-      "resp": "Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afxb00w"
      },
      {
       "n": "Mapear do fluxo do e-mail até o ticket",
@@ -143,10 +116,7 @@
       "due": 1774594800000,
       "original_due": 1774594800000,
       "nova_previsao": null,
-      "id": "86afyhj6n",
-      "resp": "Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afyhj6n"
      }
     ]
    },
@@ -163,10 +133,7 @@
       "due": 1774594800000,
       "original_due": 1774594800000,
       "nova_previsao": null,
-      "id": "86agf9fxh",
-      "resp": "Augusto César / Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agf9fxh"
      },
      {
       "n": "Identificação e classificação automatica",
@@ -174,10 +141,7 @@
       "due": 1777014000000,
       "original_due": 1777014000000,
       "nova_previsao": null,
-      "id": "86agf9upp",
-      "resp": "Vinicius de Castro Ecard / Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agf9upp"
      },
      {
       "n": "Validar amostras classificadas pela IA",
@@ -185,10 +149,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86agg4g63",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86agg4g63"
      },
      {
       "n": "Fim da Fase 4 - Preparação",
@@ -196,10 +157,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86ah4y8g6",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86ah4y8g6"
      }
     ]
    },
@@ -216,10 +174,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86agfapfa",
-      "resp": "Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agfapfa"
      },
      {
       "n": "Iniciar o processo de primeira resposta automática",
@@ -227,10 +182,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86agg5jzj",
-      "resp": "Vinicius de Castro Ecard / Augusto César",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agg5jzj"
      },
      {
       "n": "Troubleshooting com base documental",
@@ -238,10 +190,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86agjgqgu",
-      "resp": "Augusto César / Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agjgqgu"
      },
      {
       "n": "Correção de erro ao abrir chamados",
@@ -249,10 +198,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcggkr",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86ahcggkr"
      },
      {
       "n": "Desativação de resposta automáticas do znunny",
@@ -260,10 +206,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcggx2",
-      "resp": "Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahcggx2"
      },
      {
       "n": "Refinamento na estruturação do texto de resposta",
@@ -271,10 +214,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcgh74",
-      "resp": "Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahcgh74"
      },
      {
       "n": "Criação do guia de categorização",
@@ -282,10 +222,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcghfv",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86ahcghfv"
      },
      {
       "n": "Correção de fuso horário para corrigir encerramento do chamado",
@@ -293,10 +230,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcghxa",
-      "resp": "Vinicius de Castro Ecard",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahcghxa"
      },
      {
       "n": "Configuração do portal",
@@ -304,10 +238,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcgj0k",
-      "resp": "Gustavo Camargo",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahcgj0k"
      },
      {
       "n": "Validação do funcionamento de chamados abertos pelo portal",
@@ -315,10 +246,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86ahcgjac",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86ahcgjac"
      },
      {
       "n": "Fim da Fase 5 - Entrega do MVP",
@@ -326,10 +254,7 @@
       "due": 1778482800000,
       "original_due": 1778482800000,
       "nova_previsao": null,
-      "id": "86agjcwev",
-      "resp": "Algar",
-      "resp_org": "Algar",
-      "resp_real": null
+      "id": "86agjcwev"
      }
     ]
    }
@@ -889,10 +814,7 @@
       "due": 1768460400000,
       "original_due": 1768460400000,
       "nova_previsao": null,
-      "id": "86ajuz7rg",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7rg"
      },
      {
       "n": "Avaliação tecnica",
@@ -900,10 +822,7 @@
       "due": 1770015600000,
       "original_due": 1770015600000,
       "nova_previsao": null,
-      "id": "86ajuz7rh",
-      "resp": "Tiago Gomes de Oliveira / Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7rh"
      }
     ]
    },
@@ -920,10 +839,7 @@
       "due": 1770015600000,
       "original_due": 1770015600000,
       "nova_previsao": 1770015600000,
-      "id": "86ajuz7rc",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7rc"
      },
      {
       "n": "Definição de Papeis e responsabilidade",
@@ -931,10 +847,7 @@
       "due": 1770015600000,
       "original_due": 1770015600000,
       "nova_previsao": 1770015600000,
-      "id": "86ajuz7rd",
-      "resp": "Rafael Alves / Tiago Gomes de Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7rd"
      }
     ]
    },
@@ -951,10 +864,7 @@
       "due": 1771657200000,
       "original_due": 1771657200000,
       "nova_previsao": null,
-      "id": "86ajuz7x4",
-      "resp": "Tiago Gomes de Oliveira / Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7x4"
      },
      {
       "n": "Definir plano de discovery",
@@ -962,10 +872,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ajuz7x5",
-      "resp": "Tiago Gomes de Oliveira / Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7x5"
      },
      {
       "n": "Desenho da arquitetura As Is",
@@ -973,10 +880,7 @@
       "due": 1770274800000,
       "original_due": 1770274800000,
       "nova_previsao": null,
-      "id": "86ajuz7y5",
-      "resp": "Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7y5"
      },
      {
       "n": "Desenho da arquitetura ToBe",
@@ -984,10 +888,7 @@
       "due": 1770274800000,
       "original_due": 1770274800000,
       "nova_previsao": null,
-      "id": "86ajuz7yd",
-      "resp": "Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7yd"
      },
      {
       "n": "Definir estratégia de integração e/ou migração",
@@ -995,10 +896,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ajuz7zv",
-      "resp": "Bruno Queiroz",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7zv"
      },
      {
       "n": "Inventario de cliente Gerenciados",
@@ -1006,10 +904,7 @@
       "due": 1782198000000,
       "original_due": 1782198000000,
       "nova_previsao": null,
-      "id": "86ajuz801",
-      "resp": "Priscila de Fatima Sotério Ferreira / Gustavo Camargo",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz801"
      }
     ]
    },
@@ -1026,10 +921,7 @@
       "due": 1774940400000,
       "original_due": 1774940400000,
       "nova_previsao": null,
-      "id": "86ajuz7vm",
-      "resp": "Gustavo Camargo",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7vm"
      },
      {
       "n": "Instalar e configurar  Prometheus + Grafana",
@@ -1037,10 +929,7 @@
       "due": 1773471600000,
       "original_due": 1773471600000,
       "nova_previsao": null,
-      "id": "86ajuz7ty",
-      "resp": "Bruno Queiroz / Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7ty"
      }
     ]
    },
@@ -1057,10 +946,7 @@
       "due": 1780470000000,
       "original_due": 1780470000000,
       "nova_previsao": null,
-      "id": "86ajuz7rf",
-      "resp": "Rafael Alves Lima / Cleber Almeida",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7rf"
      },
      {
       "n": "Painel de visualização do monitoramento - MVP",
@@ -1068,10 +954,7 @@
       "due": 1783321200000,
       "original_due": 1783321200000,
       "nova_previsao": null,
-      "id": "86ajuz7vh",
-      "resp": "Rafael Alves Lima / Bruno Queiroz",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7vh"
      },
      {
       "n": "Configuração do Novo Firewall",
@@ -1079,10 +962,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ajuz7x3",
-      "resp": "Cleber Almeida / Luiz Henrique",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7x3"
      },
      {
       "n": "Configuração - Alarmística",
@@ -1090,10 +970,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ajuz7y2",
-      "resp": "Cleber Almeida",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajuz7y2"
      }
     ]
    },
@@ -1134,10 +1011,7 @@
       "due": 1769842800000,
       "original_due": 1769842800000,
       "nova_previsao": null,
-      "id": "86ajutt7f",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt7f"
      },
      {
       "n": "Fevereiro - Medição: 99,980%",
@@ -1145,10 +1019,7 @@
       "due": 1772262000000,
       "original_due": 1772262000000,
       "nova_previsao": null,
-      "id": "86ajutt7h",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt7h"
      },
      {
       "n": "Março - Medição: 99,986%",
@@ -1156,10 +1027,7 @@
       "due": 1774940400000,
       "original_due": 1774940400000,
       "nova_previsao": null,
-      "id": "86ajutt7m",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt7m"
      },
      {
       "n": "Abril - Medição: 99,989%",
@@ -1167,10 +1035,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86ajutt7q",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt7q"
      },
      {
       "n": "Maio - Medição: 99,989%",
@@ -1178,10 +1043,7 @@
       "due": 1780210800000,
       "original_due": 1780210800000,
       "nova_previsao": null,
-      "id": "86ajutt7w",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt7w"
      },
      {
       "n": "Junho - Medição: 99,991%",
@@ -1189,10 +1051,7 @@
       "due": 1782802800000,
       "original_due": 1782802800000,
       "nova_previsao": null,
-      "id": "86ajutt81",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt81"
      },
      {
       "n": "Julho - Medição: 99,993%",
@@ -1200,10 +1059,7 @@
       "due": 1785481200000,
       "original_due": 1785481200000,
       "nova_previsao": null,
-      "id": "86ajutt87",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt87"
      },
      {
       "n": "Agosto - Medição: 99,993%",
@@ -1211,10 +1067,7 @@
       "due": 1788764400000,
       "original_due": 1788159600000,
       "nova_previsao": 1788850800000,
-      "id": "86ajutt8c",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8c"
      },
      {
       "n": "Setembro - Medição: 00,000%",
@@ -1222,10 +1075,7 @@
       "due": 1791270000000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86ajutt8d",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8d"
      },
      {
       "n": "Outubro - Medição: 00,000%",
@@ -1233,10 +1083,7 @@
       "due": 1793948400000,
       "original_due": 1793430000000,
       "nova_previsao": null,
-      "id": "86ajutt8e",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8e"
      },
      {
       "n": "Novembro - Medição: 00,000%",
@@ -1244,10 +1091,7 @@
       "due": 1796454000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
-      "id": "86ajutt8f",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8f"
      },
      {
       "n": "Dezembro - Medição: 00,000%",
@@ -1255,10 +1099,7 @@
       "due": 1799478000000,
       "original_due": 1798700400000,
       "nova_previsao": null,
-      "id": "86ajutt8g",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8g"
      }
     ]
    },
@@ -1275,10 +1116,7 @@
       "due": 1769842800000,
       "original_due": 1769842800000,
       "nova_previsao": null,
-      "id": "86ajutt8w",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8w"
      },
      {
       "n": "Fevereiro - Medição: 95%",
@@ -1286,10 +1124,7 @@
       "due": 1772262000000,
       "original_due": 1772262000000,
       "nova_previsao": null,
-      "id": "86ajutt8y",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt8y"
      },
      {
       "n": "Março - Medição: 97%",
@@ -1297,10 +1132,7 @@
       "due": 1774940400000,
       "original_due": 1774940400000,
       "nova_previsao": null,
-      "id": "86ajutt90",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt90"
      },
      {
       "n": "Abril - Medição: 99%",
@@ -1308,10 +1140,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86ajutt91",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt91"
      },
      {
       "n": "Maio - Medição: 99%",
@@ -1319,10 +1148,7 @@
       "due": 1780210800000,
       "original_due": 1780210800000,
       "nova_previsao": null,
-      "id": "86ajutt92",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt92"
      },
      {
       "n": "Junho - Medição: 97,5%",
@@ -1330,10 +1156,7 @@
       "due": 1782802800000,
       "original_due": 1782802800000,
       "nova_previsao": null,
-      "id": "86ajutt93",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt93"
      },
      {
       "n": "Julho - Medição: 95%",
@@ -1341,10 +1164,7 @@
       "due": 1785481200000,
       "original_due": 1785481200000,
       "nova_previsao": null,
-      "id": "86ajutt94",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt94"
      },
      {
       "n": "Agosto - Medição: 97,7%",
@@ -1352,10 +1172,7 @@
       "due": 1788764400000,
       "original_due": 1788159600000,
       "nova_previsao": 1788850800000,
-      "id": "86ajutt97",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt97"
      },
      {
       "n": "Setembro - Medição: 00,0%",
@@ -1363,10 +1180,7 @@
       "due": 1791615600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86ajutt98",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt98"
      },
      {
       "n": "Outubro - Medição: 00,0%",
@@ -1374,10 +1188,7 @@
       "due": 1794034800000,
       "original_due": 1793430000000,
       "nova_previsao": null,
-      "id": "86ajutt99",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt99"
      },
      {
       "n": "Novembro - Medição: 00,0%",
@@ -1385,10 +1196,7 @@
       "due": 1796454000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
-      "id": "86ajutt9b",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt9b"
      },
      {
       "n": "Dezembro - Medição: 00,0%",
@@ -1396,10 +1204,7 @@
       "due": 1799478000000,
       "original_due": 1798700400000,
       "nova_previsao": null,
-      "id": "86ajutt9c",
-      "resp": "Rafael Alves",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ajutt9c"
      }
     ]
    }
@@ -1432,10 +1237,7 @@
       "due": 1772434800000,
       "original_due": 1772434800000,
       "nova_previsao": null,
-      "id": "86agq9cpk",
-      "resp": "Joab de Araújo Silva / Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9cpk"
      },
      {
       "n": "Configuração do yaml central",
@@ -1443,10 +1245,7 @@
       "due": 1772607600000,
       "original_due": 1772607600000,
       "nova_previsao": null,
-      "id": "86agq9ddy",
-      "resp": "Joab de Araújo Silva / Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9ddy"
      },
      {
       "n": "Rodar préchecks",
@@ -1454,10 +1253,7 @@
       "due": 1772607600000,
       "original_due": 1772607600000,
       "nova_previsao": null,
-      "id": "86agq9dxj",
-      "resp": "Joab de Araújo Silva / Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9dxj"
      },
      {
       "n": "instalação da primeira versão",
@@ -1465,10 +1261,7 @@
       "due": 1772780400000,
       "original_due": 1772780400000,
       "nova_previsao": null,
-      "id": "86agq9e8h",
-      "resp": "Joab de Araújo Silva / Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9e8h"
      },
      {
       "n": "ajustes do yaml",
@@ -1476,10 +1269,7 @@
       "due": 1773385200000,
       "original_due": 1773385200000,
       "nova_previsao": null,
-      "id": "86agq9edx",
-      "resp": "Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9edx"
      },
      {
       "n": "aplicação do reconfigure",
@@ -1487,10 +1277,7 @@
       "due": 1773385200000,
       "original_due": 1773385200000,
       "nova_previsao": null,
-      "id": "86agq9ekr",
-      "resp": "Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9ekr"
      },
      {
       "n": "ajustes manuais",
@@ -1498,10 +1285,7 @@
       "due": 1773990000000,
       "original_due": 1773990000000,
       "nova_previsao": null,
-      "id": "86agq9er3",
-      "resp": "Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agq9er3"
      }
     ]
    },
@@ -1518,10 +1302,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqbzzr",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqbzzr"
      },
      {
       "n": "A senha de acesso criptografada",
@@ -1529,10 +1310,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqc005",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqc005"
      },
      {
       "n": "Alterar skyline de proxy para console",
@@ -1540,10 +1318,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqc00t",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqc00t"
      },
      {
       "n": "O Skyline customizado com rota nginx para cada serviço",
@@ -1551,10 +1326,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqc010",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqc010"
      },
      {
       "n": "Serviços específicos para adicionar (Magnum, Trove)",
@@ -1562,10 +1334,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqc01d",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqc01d"
      },
      {
       "n": "Tunnings do SO",
@@ -1573,10 +1342,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agqc022",
-      "resp": "—",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqc022"
      }
     ]
    }
@@ -1611,10 +1377,7 @@
       "due": 1768806000000,
       "original_due": 1768806000000,
       "nova_previsao": null,
-      "id": "86afzdfap",
-      "resp": "Joab de Araújo Silva / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdfap"
      },
      {
       "n": "Montagem do plano de Migração",
@@ -1622,10 +1385,7 @@
       "due": 1770361200000,
       "original_due": 1770361200000,
       "nova_previsao": null,
-      "id": "86afzdegz",
-      "resp": "Joab de Araújo Silva / Leonardo Gomes Jorge Gonçalez / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdegz"
      }
     ]
    },
@@ -1642,10 +1402,7 @@
       "due": 1780642800000,
       "original_due": 1780642800000,
       "nova_previsao": null,
-      "id": "86afzdggw",
-      "resp": "Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdggw"
      },
      {
       "n": "Fase 3",
@@ -1653,10 +1410,7 @@
       "due": 1775286000000,
       "original_due": 1775286000000,
       "nova_previsao": null,
-      "id": "86afzdmk8",
-      "resp": "Luiz Fernando Justino Silva / Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdmk8"
      },
      {
       "n": "Fase 4",
@@ -1664,10 +1418,7 @@
       "due": 1773212400000,
       "original_due": 1773212400000,
       "nova_previsao": null,
-      "id": "86afzdnuv",
-      "resp": "Joab de Araújo Silva / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdnuv"
      }
     ]
    },
@@ -1684,10 +1435,7 @@
       "due": 1785481200000,
       "original_due": 1785481200000,
       "nova_previsao": null,
-      "id": "86afzdqtq",
-      "resp": "Joab de Araújo Silva / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afzdqtq"
      },
      {
       "n": "Remoção do node 05",
@@ -1695,10 +1443,7 @@
       "due": 1785135600000,
       "original_due": 1785135600000,
       "nova_previsao": null,
-      "id": "86agqrkbv",
-      "resp": "Joab de Araújo Silva / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agqrkbv"
      }
     ]
    },
@@ -1715,10 +1460,7 @@
       "due": 1789369200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
-      "id": "86ak7y8qb",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7y8qb"
      },
      {
       "n": "Adição node 05 ambiente novo",
@@ -1726,10 +1468,7 @@
       "due": 1792393200000,
       "original_due": 1792393200000,
       "nova_previsao": null,
-      "id": "86ak7yjw1",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7yjw1"
      },
      {
       "n": "Retirada node 02 ambiente antigo",
@@ -1737,10 +1476,7 @@
       "due": 1792393200000,
       "original_due": 1792393200000,
       "nova_previsao": null,
-      "id": "86ak7y8wj",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7y8wj"
      },
      {
       "n": "Adição node 02 ambiente novo",
@@ -1748,10 +1484,7 @@
       "due": 1795417200000,
       "original_due": 1795417200000,
       "nova_previsao": null,
-      "id": "86ak7yme0",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7yme0"
      },
      {
       "n": "Migração backup de clientes ambiente novo",
@@ -1759,10 +1492,7 @@
       "due": 1797577200000,
       "original_due": 1797577200000,
       "nova_previsao": null,
-      "id": "86ak7y9vf",
-      "resp": "Bruno Queiroz",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7y9vf"
      },
      {
       "n": "Retirada node 04 ambiente antigo",
@@ -1770,10 +1500,7 @@
       "due": 1796022000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
-      "id": "86ak7ypvq",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7ypvq"
      },
      {
       "n": "Adição node 04 ambiente novo",
@@ -1781,10 +1508,7 @@
       "due": 1799391600000,
       "original_due": 1799391600000,
       "nova_previsao": null,
-      "id": "86ak7ypz9",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7ypz9"
      }
     ]
    },
@@ -1801,10 +1525,7 @@
       "due": null,
       "original_due": 1789110000000,
       "nova_previsao": null,
-      "id": "86ag6zd62",
-      "resp": "Luiz Fernando Justino Silva / Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ag6zd62"
      },
      {
       "n": "Adição node 03 ambiente novo",
@@ -1812,10 +1533,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ak7yq5j",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7yq5j"
      },
      {
       "n": "Adição node 04 ambiente novo",
@@ -1823,10 +1541,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ak7yqe5",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7yqe5"
      },
      {
       "n": "Adição node 01 ambiente novo",
@@ -1834,10 +1549,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ak7yqgg",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ak7yqgg"
      }
     ]
    }
@@ -1872,10 +1584,7 @@
       "due": 1772262000000,
       "original_due": 1772262000000,
       "nova_previsao": null,
-      "id": "86agc86fv",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc86fv"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - MAR",
@@ -1883,10 +1592,7 @@
       "due": 1774940400000,
       "original_due": 1774940400000,
       "nova_previsao": null,
-      "id": "86agca0x4",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agca0x4"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - ABR",
@@ -1894,10 +1600,7 @@
       "due": 1777532400000,
       "original_due": 1777532400000,
       "nova_previsao": null,
-      "id": "86agca11d",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agca11d"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - MAI",
@@ -1905,10 +1608,7 @@
       "due": 1780210800000,
       "original_due": 1780210800000,
       "nova_previsao": null,
-      "id": "86agca15q",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agca15q"
      },
      {
       "n": "Medir quantidade de VM's restantes na 2.0 - JUN",
@@ -1916,10 +1616,7 @@
       "due": 1782802800000,
       "original_due": 1782802800000,
       "nova_previsao": null,
-      "id": "86agca18w",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agca18w"
      }
     ]
    },
@@ -1936,10 +1633,7 @@
       "due": 1795762800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc8787",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8787"
      },
      {
       "n": "br-sp-02-node02",
@@ -1947,10 +1641,7 @@
       "due": 1778223600000,
       "original_due": 1778223600000,
       "nova_previsao": null,
-      "id": "86agc87a4",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87a4"
      },
      {
       "n": "br-sp-02-node03",
@@ -1958,10 +1649,7 @@
       "due": 1775545200000,
       "original_due": 1775545200000,
       "nova_previsao": null,
-      "id": "86agc87c9",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87c9"
      },
      {
       "n": "br-sp-02-node04",
@@ -1969,10 +1657,7 @@
       "due": 1783666800000,
       "original_due": 1783666800000,
       "nova_previsao": null,
-      "id": "86agc87e8",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87e8"
      },
      {
       "n": "br-sp-02-node05",
@@ -1980,10 +1665,7 @@
       "due": 1791529200000,
       "original_due": 1793343600000,
       "nova_previsao": 1790751600000,
-      "id": "86agc87g8",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87g8"
      },
      {
       "n": "br-sp-02-node06",
@@ -1991,10 +1673,7 @@
       "due": 1795762800000,
       "original_due": 1790751600000,
       "nova_previsao": 1795762800000,
-      "id": "86agc87hj",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87hj"
      },
      {
       "n": "br-sp-02-node07",
@@ -2002,10 +1681,7 @@
       "due": 1793343600000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc87k3",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87k3"
      },
      {
       "n": "br-sp-02-node08",
@@ -2013,10 +1689,7 @@
       "due": 1787295600000,
       "original_due": 1786690800000,
       "nova_previsao": 1787295600000,
-      "id": "86agc87n9",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87n9"
      },
      {
       "n": "br-sp-02-node09",
@@ -2024,10 +1697,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc87pw",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87pw"
      },
      {
       "n": "br-sp-02-node10",
@@ -2035,10 +1705,7 @@
       "due": 1793343600000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc87t5",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87t5"
      },
      {
       "n": "br-sp-02-node15",
@@ -2046,10 +1713,7 @@
       "due": 1786086000000,
       "original_due": 1786086000000,
       "nova_previsao": null,
-      "id": "86agc87wx",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87wx"
      },
      {
       "n": "br-sp-02-node16",
@@ -2057,10 +1721,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc87z1",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc87z1"
      },
      {
       "n": "br-sp-02-node17",
@@ -2068,10 +1729,7 @@
       "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86agc881a",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc881a"
      },
      {
       "n": "br-sp-02-node18",
@@ -2079,10 +1737,7 @@
       "due": 1795762800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc8845",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8845"
      },
      {
       "n": "br-sp-02-node19",
@@ -2090,10 +1745,7 @@
       "due": 1787295600000,
       "original_due": 1786690800000,
       "nova_previsao": 1787295600000,
-      "id": "86agc885p",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc885p"
      },
      {
       "n": "br-sp-02-node20",
@@ -2101,10 +1753,7 @@
       "due": 1786086000000,
       "original_due": 1786086000000,
       "nova_previsao": null,
-      "id": "86agc887m",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc887m"
      },
      {
       "n": "br-sp-02-node21",
@@ -2112,10 +1761,7 @@
       "due": 1786690800000,
       "original_due": 1786690800000,
       "nova_previsao": null,
-      "id": "86agc888z",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc888z"
      },
      {
       "n": "br-sp-02-node22",
@@ -2123,10 +1769,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc88ar",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc88ar"
      },
      {
       "n": "br-sp-02-node23",
@@ -2134,10 +1777,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc9v8z",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9v8z"
      },
      {
       "n": "srv-win-01",
@@ -2145,10 +1785,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc8ud0",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8ud0"
      },
      {
       "n": "srv-win-02",
@@ -2156,10 +1793,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc8utt",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8utt"
      },
      {
       "n": "srv-win-03",
@@ -2167,10 +1801,7 @@
       "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86agc8uvh",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8uvh"
      },
      {
       "n": "srv-win-04",
@@ -2178,10 +1809,7 @@
       "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
-      "id": "86agc8uxd",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8uxd"
      },
      {
       "n": "srv-win-05",
@@ -2189,10 +1817,7 @@
       "due": 1784012400000,
       "original_due": 1784012400000,
       "nova_previsao": null,
-      "id": "86agc8uz0",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8uz0"
      },
      {
       "n": "srv-win-06",
@@ -2200,10 +1825,7 @@
       "due": 1769756400000,
       "original_due": 1769756400000,
       "nova_previsao": null,
-      "id": "86agc8v07",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8v07"
      },
      {
       "n": "srv-win-07",
@@ -2211,10 +1833,7 @@
       "due": 1793343600000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc8v1h",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8v1h"
      },
      {
       "n": "srv-win-08",
@@ -2222,10 +1841,7 @@
       "due": 1793343600000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
-      "id": "86agc8v3a",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8v3a"
      },
      {
       "n": "srv-dentaluni-01",
@@ -2233,10 +1849,7 @@
       "due": 1777618800000,
       "original_due": 1777618800000,
       "nova_previsao": null,
-      "id": "86agc9wfu",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9wfu"
      },
      {
       "n": "srv-oracle-gimba-01",
@@ -2244,10 +1857,7 @@
       "due": 1777014000000,
       "original_due": 1777014000000,
       "nova_previsao": null,
-      "id": "86agc9x78",
-      "resp": "Vinicius Afonso Oliveira / Guilherme Gonçalves Guimarães",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9x78"
      },
      {
       "n": "srv-oracle-gimba-02",
@@ -2255,10 +1865,7 @@
       "due": 1777014000000,
       "original_due": 1777014000000,
       "nova_previsao": null,
-      "id": "86agc9x9h",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9x9h"
      },
      {
       "n": "srv-oracle-gimba-03",
@@ -2266,10 +1873,7 @@
       "due": 1777014000000,
       "original_due": 1777014000000,
       "nova_previsao": null,
-      "id": "86agc9xbw",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9xbw"
      },
      {
       "n": "srv-oracle-gimba-04",
@@ -2277,10 +1881,7 @@
       "due": 1777014000000,
       "original_due": 1777014000000,
       "nova_previsao": null,
-      "id": "86agc9xeb",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc9xeb"
      },
      {
       "n": "srv-oraclenode-01",
@@ -2288,10 +1889,7 @@
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
-      "id": "86ahapc09",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahapc09"
      },
      {
       "n": "srv-oraclenode-02",
@@ -2299,10 +1897,7 @@
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
-      "id": "86ahapc0v",
-      "resp": "Guilherme Gonçalves Guimarães / Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ahapc0v"
      }
     ]
    },
@@ -2319,10 +1914,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86aknxqc7",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqc7"
      },
      {
       "n": "srv-nvme-02",
@@ -2330,10 +1922,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86aknxqjx",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqjx"
      },
      {
       "n": "srv-nvme-03",
@@ -2341,10 +1930,7 @@
       "due": 1777618800000,
       "original_due": 1777618800000,
       "nova_previsao": null,
-      "id": "86aknxqm7",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqm7"
      },
      {
       "n": "srv-nvme-04",
@@ -2352,10 +1938,7 @@
       "due": 1777618800000,
       "original_due": 1777618800000,
       "nova_previsao": null,
-      "id": "86aknxqmx",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqmx"
      },
      {
       "n": "srv-nvme-05",
@@ -2363,10 +1946,7 @@
       "due": 1780297200000,
       "original_due": 1780297200000,
       "nova_previsao": null,
-      "id": "86aknxqnk",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqnk"
      },
      {
       "n": "srv-nvme-06",
@@ -2374,10 +1954,7 @@
       "due": 1780297200000,
       "original_due": 1780297200000,
       "nova_previsao": null,
-      "id": "86aknxqq1",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqq1"
      },
      {
       "n": "srv-nvme-07",
@@ -2385,10 +1962,7 @@
       "due": 1782889200000,
       "original_due": 1782889200000,
       "nova_previsao": null,
-      "id": "86aknxqqg",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqqg"
      },
      {
       "n": "srv-nvme-08",
@@ -2396,10 +1970,7 @@
       "due": 1782889200000,
       "original_due": 1782889200000,
       "nova_previsao": null,
-      "id": "86aknxqr0",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqr0"
      },
      {
       "n": "srv-nvme-09",
@@ -2407,10 +1978,7 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86aknxqrd",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqrd"
      },
      {
       "n": "srv-nvme-10",
@@ -2418,10 +1986,7 @@
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
-      "id": "86aknxqtm",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqtm"
      },
      {
       "n": "srv-nvme-11",
@@ -2429,10 +1994,7 @@
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
-      "id": "86aknxqu2",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqu2"
      },
      {
       "n": "srv-nvme-12",
@@ -2440,10 +2002,7 @@
       "due": 1793948400000,
       "original_due": 1793948400000,
       "nova_previsao": null,
-      "id": "86aknxqut",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqut"
      },
      {
       "n": "srv-nvme-13",
@@ -2451,10 +2010,7 @@
       "due": 1795158000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
-      "id": "86aknxqvz",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqvz"
      },
      {
       "n": "srv-nvme-14",
@@ -2462,10 +2018,7 @@
       "due": 1795158000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
-      "id": "86aknxqx6",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqx6"
      },
      {
       "n": "srv-nvme-15",
@@ -2473,10 +2026,7 @@
       "due": 1795158000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
-      "id": "86aknxqyc",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqyc"
      },
      {
       "n": "srv-nvme-16",
@@ -2484,10 +2034,7 @@
       "due": 1795158000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
-      "id": "86aknxqzy",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxqzy"
      },
      {
       "n": "srv-nvme-17",
@@ -2495,10 +2042,7 @@
       "due": 1780297200000,
       "original_due": 1780297200000,
       "nova_previsao": null,
-      "id": "86aknxr1h",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr1h"
      },
      {
       "n": "srv-nvme-18",
@@ -2506,10 +2050,7 @@
       "due": 1793948400000,
       "original_due": 1793948400000,
       "nova_previsao": null,
-      "id": "86aknxr2p",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr2p"
      },
      {
       "n": "srv-nvme-19",
@@ -2517,10 +2058,7 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86aknxr3w",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr3w"
      },
      {
       "n": "srv-nvme-20",
@@ -2528,10 +2066,7 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86aknxr4u",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr4u"
      },
      {
       "n": "srv-nvme-21",
@@ -2539,10 +2074,7 @@
       "due": 1788246000000,
       "original_due": 1788246000000,
       "nova_previsao": null,
-      "id": "86aknxr5n",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr5n"
      },
      {
       "n": "srv-nvme-22",
@@ -2550,10 +2082,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86aknxr6c",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxr6c"
      },
      {
       "n": "srv-nvme-23",
@@ -2561,10 +2090,7 @@
       "due": 1788246000000,
       "original_due": 1788246000000,
       "nova_previsao": null,
-      "id": "86akny0g3",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86akny0g3"
      },
      {
       "n": "srv-hdd-01",
@@ -2572,10 +2098,7 @@
       "due": 1797577200000,
       "original_due": 1797577200000,
       "nova_previsao": null,
-      "id": "86aknxx9t",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxx9t"
      },
      {
       "n": "srv-hdd-02",
@@ -2583,10 +2106,7 @@
       "due": 1796972400000,
       "original_due": 1796972400000,
       "nova_previsao": null,
-      "id": "86aknxxa8",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxa8"
      },
      {
       "n": "srv-hdd-03",
@@ -2594,10 +2114,7 @@
       "due": 1796367600000,
       "original_due": 1796367600000,
       "nova_previsao": null,
-      "id": "86aknxxar",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxar"
      },
      {
       "n": "srv-hdd-04",
@@ -2605,10 +2122,7 @@
       "due": 1795158000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
-      "id": "86aknxxb6",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxb6"
      },
      {
       "n": "srv-hdd-05",
@@ -2616,10 +2130,7 @@
       "due": 1793343600000,
       "original_due": 1793343600000,
       "nova_previsao": null,
-      "id": "86aknxxc6",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxc6"
      },
      {
       "n": "srv-hdd-06",
@@ -2627,10 +2138,7 @@
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
-      "id": "86aknxxda",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxda"
      },
      {
       "n": "srv-hdd-07",
@@ -2638,10 +2146,7 @@
       "due": 1785567600000,
       "original_due": 1785567600000,
       "nova_previsao": null,
-      "id": "86aknxxem",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxem"
      },
      {
       "n": "srv-hdd-08",
@@ -2649,10 +2154,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86aknxxg2",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxg2"
      },
      {
       "n": "srv-hdd-09",
@@ -2660,10 +2162,7 @@
       "due": 1775026800000,
       "original_due": 1775026800000,
       "nova_previsao": null,
-      "id": "86aknxxgz",
-      "resp": "Vinicius Afonso Oliveira",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86aknxxgz"
      }
     ]
    }
@@ -2696,10 +2195,7 @@
       "due": 1772175600000,
       "original_due": 1772175600000,
       "nova_previsao": null,
-      "id": "86afcrg76",
-      "resp": "Nathan de Moraes Valim Francisco",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcrg76"
      },
      {
       "n": "Criação de caderno de melhorias (Rede/Infra/Ceph)",
@@ -2707,10 +2203,7 @@
       "due": 1775199600000,
       "original_due": 1775199600000,
       "nova_previsao": null,
-      "id": "86afcrhmn",
-      "resp": "Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcrhmn"
      },
      {
       "n": "Plano de Expansão de Infraestrutura - a cada 3 meses",
@@ -2718,10 +2211,7 @@
       "due": 1775199600000,
       "original_due": 1775199600000,
       "nova_previsao": null,
-      "id": "86afcrn42",
-      "resp": "Leonardo Gomes Jorge Gonçalez",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcrn42"
      }
     ]
    },
@@ -2738,10 +2228,7 @@
       "due": 1795762800000,
       "original_due": 1795762800000,
       "nova_previsao": null,
-      "id": "86afcqdfv",
-      "resp": "Matheus do Rosario de Almeida",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcqdfv"
      },
      {
       "n": "Melhoria Whitelabel",
@@ -2749,10 +2236,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag1mmh5",
-      "resp": "Vitor Ribeiro",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ag1mmh5"
      },
      {
       "n": "Plano de backup Serviços internos de produção",
@@ -2760,10 +2244,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag1mh6e",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ag1mh6e"
      },
      {
       "n": "Aplicar plano de melhorias",
@@ -2771,10 +2252,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag1mb05",
-      "resp": "Luiz Fernando Justino Silva / Joab de Araújo Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ag1mb05"
      },
      {
       "n": "Testes de resiliência no ambiente de homologação",
@@ -2782,10 +2260,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86ag1mp1r",
-      "resp": "Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86ag1mp1r"
      }
     ]
    },
@@ -2802,10 +2277,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agc8zmr",
-      "resp": "Guilherme Lopes / Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc8zmr"
      }
     ]
    },
@@ -2822,10 +2294,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afcr47w",
-      "resp": "Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva / Guilherme Lopes",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcr47w"
      },
      {
       "n": "Capacidade - Windows",
@@ -2833,10 +2302,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afcr4qb",
-      "resp": "Nathan de Moraes Valim Francisco / Guilherme Lopes / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcr4qb"
      },
      {
       "n": "Capacidade de Storage - NVME",
@@ -2844,10 +2310,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afcr5u7",
-      "resp": "Nathan de Moraes Valim Francisco / Guilherme Lopes / Luiz Fernando Justino Silva",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcr5u7"
      },
      {
       "n": "Capacidade de Storage - HDD",
@@ -2855,10 +2318,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86afcr6df",
-      "resp": "Nathan de Moraes Valim Francisco / Luiz Fernando Justino Silva / Guilherme Lopes",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86afcr6df"
      },
      {
       "n": "Capacidade de Storage - BACKUP",
@@ -2866,10 +2326,7 @@
       "due": null,
       "original_due": null,
       "nova_previsao": null,
-      "id": "86agc954t",
-      "resp": "Luiz Fernando Justino Silva / Guilherme Lopes / Nathan de Moraes Valim Francisco",
-      "resp_org": null,
-      "resp_real": null
+      "id": "86agc954t"
      }
     ]
    }
