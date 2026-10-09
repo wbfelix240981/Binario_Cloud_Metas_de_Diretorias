@@ -896,14 +896,14 @@
    },
    {
     "n": "FASE04 - Administrativo - Saúde Ambiente",
-    "status": "in progress",
+    "status": "shipped",
     "assignee": "Raphael Fogaça",
     "due": 1791356400000,
     "id": "86afcwtz3",
     "ativ": [
      {
       "n": "Visão de Capacity da nuvem",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1791356400000,
       "original_due": 1789714800000,
       "nova_previsao": null,
@@ -954,7 +954,7 @@
    {
     "n": "FASE05 - Esteira de QA",
     "status": "backlog",
-    "assignee": "Nathan de Moraes Valim Francisco",
+    "assignee": "Nathan de Moraes Valim Francisco / Raphael Fogaça",
     "due": 1791529200000,
     "id": "86ag4q559",
     "ativ": [
