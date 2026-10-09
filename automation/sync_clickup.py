@@ -166,6 +166,47 @@ def get_custom_field_value(task_id, field_name):
     return None
 
 
+# Regra de responsabilidade (10/2026): atividade atribuída a alguém chamado "Diogo ..."
+# é de responsabilidade da ALGAR. O nome do responsável real vem de um comentário
+# da própria atividade (ex.: "Diogo Larison = Algar" -> responsável real "Diogo Larison").
+RESP_ALGAR_PREFIXOS = ("diogo",)
+
+
+def is_algar_assignee(nome):
+    return nome.strip().lower().startswith(RESP_ALGAR_PREFIXOS)
+
+
+def parse_responsavel_comentario(texto):
+    """Extrai o nome do responsável real de um comentário.
+    Aceita 'Nome = Algar' (usa o lado esquerdo) ou, sem '=', a primeira linha."""
+    linha = next((l.strip() for l in (texto or "").splitlines() if l.strip()), "")
+    if "=" in linha:
+        linha = linha.split("=", 1)[0].strip()
+    return linha[:80] or None
+
+
+def get_responsavel_real(task_id):
+    """Lê os comentários da atividade e devolve o nome do responsável real
+    (do comentário mais recente que tenha texto)."""
+    try:
+        resp = api_get(f"/task/{task_id}/comment")
+        comentarios = sorted(resp.get("comments", []), key=lambda c: int(c.get("date", 0)), reverse=True)
+        for c in comentarios:
+            nome = parse_responsavel_comentario(c.get("comment_text", ""))
+            if nome:
+                return nome
+    except Exception as e:
+        log_error(f"comentário da atividade {task_id}", e)
+    return None
+
+
+def build_responsavel(t):
+    nomes = [a["username"] for a in t.get("assignees", [])]
+    if any(is_algar_assignee(n) for n in nomes):
+        return {"resp": "Algar", "resp_org": "Algar", "resp_real": get_responsavel_real(t["id"])}
+    return {"resp": " / ".join(nomes) if nomes else "—", "resp_org": None, "resp_real": None}
+
+
 def build_activity(t, old_ativ_by_id=None):
     old = (old_ativ_by_id or {}).get(t["id"])
     new_due = to_ms(t.get("due_date"))
@@ -186,6 +227,7 @@ def build_activity(t, old_ativ_by_id=None):
         "original_due": original_due,
         "nova_previsao": nova_previsao,
         "id": t["id"],
+        **build_responsavel(t),
     }
 
 
