@@ -187,8 +187,8 @@
   "short": "Modulo BCP Segurança",
   "assignee": "Guilherme Lopes",
   "tags": [
-   "evolução da plataforma de nuvem",
-   "eficiência operacional"
+   "eficiência operacional",
+   "evolução da plataforma de nuvem"
   ],
   "detail": "Objetivo: aumentar segurança e confiabilidade do acesso à plataforma (calculadora e Console) com MFA e validação reforçada.\nEntregáveis: MFA implementado, validação por token, nova tela de validação de acesso, testes de uso e segurança.\nCritério de aceite: funcionalidade disponível, validada e documentada.\nRisco principal: competição com outras entregas de produto.",
   "fases": [
@@ -758,8 +758,8 @@
   "short": "BCP - Observabilidade",
   "assignee": "Nathan de Moraes Valim Francisco",
   "tags": [
-   "evolução da plataforma de nuvem",
-   "eficiência operacional"
+   "eficiência operacional",
+   "evolução da plataforma de nuvem"
   ],
   "detail": "Objetivo: evoluir o BCP com um módulo próprio de observabilidade (capacidade e alertas).\nEntregáveis: painel inicial do módulo, visão de capacidade, alertas priorizados, escopo funcional documentado.\nCritério de aceite: painel e visão mínima publicados para validação.\nRisco principal: tentar transformar tudo em produto antes de validar o mínimo viável.",
   "fases": [
