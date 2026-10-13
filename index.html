@@ -53,6 +53,8 @@
   .tb-right-top{display:flex; align-items:center; gap:18px;}
   .tb-right-sub{font-size:10.5px; color:var(--text-mute); opacity:.75;}
   .tb-live{display:flex; align-items:center; gap:6px;}
+  .tb-logoff{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; color:var(--text-dim); background:transparent; border:1px solid var(--border-hi); border-radius:999px; padding:4px 12px; cursor:pointer; transition:.15s;}
+  .tb-logoff:hover{color:var(--red); border-color:var(--red);}
   .dot-live{width:6px; height:6px; border-radius:50%; background:var(--green); box-shadow:0 0 0 3px var(--green-dim); animation:pulse 2s infinite;}
   @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
 
@@ -485,6 +487,10 @@
     <div class="tb-right-top">
       <div class="tb-live"><span class="dot-live"></span> Sincronizado com ClickUp</div>
       <span id="tb-date"></span>
+      <button type="button" class="tb-logoff" id="btnLogoff" title="Encerrar sessão">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        Sair
+      </button>
     </div>
     <div class="tb-right-sub" id="tb-gen"></div>
   </div>
@@ -5619,6 +5625,15 @@ checkRoute();
   // Pedir login a CADA carregamento/refresh da página: nada é lembrado entre recargas.
   // Remove a marca antiga (versões anteriores guardavam o login no navegador).
   try { localStorage.removeItem(CHAVE_STORAGE); sessionStorage.removeItem(CHAVE_STORAGE); } catch(e){}
+
+  document.getElementById('btnLogoff').addEventListener('click', function(){
+    inputUser.value = ''; inputPass.value = '';
+    erro.classList.remove('show');
+    location.hash = '';
+    window.scrollTo(0, 0);
+    tela.style.display = '';
+    inputUser.focus();
+  });
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
