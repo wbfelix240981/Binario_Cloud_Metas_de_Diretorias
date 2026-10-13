@@ -954,7 +954,7 @@
    {
     "n": "FASE05 - Esteira de QA",
     "status": "in test",
-    "assignee": "Raphael Fogaça / Nathan de Moraes Valim Francisco",
+    "assignee": "Nathan de Moraes Valim Francisco / Raphael Fogaça",
     "due": 1791874800000,
     "id": "86ag4q559",
     "ativ": [
@@ -1032,7 +1032,7 @@
      },
      {
       "n": "Precificação do produto",
-      "status": "shipped",
+      "status": "backlog",
       "due": 1791874800000,
       "original_due": 1790751600000,
       "nova_previsao": null,
@@ -1047,6 +1047,14 @@
       "id": "86agdr2px"
      }
     ]
+   },
+   {
+    "n": "Termo de aceite entrega",
+    "status": "in progress",
+    "assignee": "Rafael Alves",
+    "due": 1792479600000,
+    "id": "17ttbukvzvb",
+    "ativ": []
    }
   ]
  },
@@ -1570,7 +1578,7 @@
      },
      {
       "n": "Criar Integração OCI",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1578,7 +1586,7 @@
      },
      {
       "n": "Montagem do Fluxo da ferramenta",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
