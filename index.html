@@ -5616,9 +5616,9 @@ checkRoute();
   const inputPass = document.getElementById('loginPass');
   const erro = document.getElementById('loginError');
 
-  if(localStorage.getItem(CHAVE_STORAGE) === 'ok'){
-    tela.style.display = 'none';
-  }
+  // Pedir login a CADA carregamento/refresh da página: nada é lembrado entre recargas.
+  // Remove a marca antiga (versões anteriores guardavam o login no navegador).
+  try { localStorage.removeItem(CHAVE_STORAGE); sessionStorage.removeItem(CHAVE_STORAGE); } catch(e){}
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -5626,7 +5626,6 @@ checkRoute();
     const senha = inputPass.value;
     const valido = CREDENCIAIS.some(c => c.usuario === usuario && c.senha === senha);
     if(valido){
-      localStorage.setItem(CHAVE_STORAGE, 'ok');
       tela.style.display = 'none';
     } else {
       erro.classList.remove('show');
