@@ -1131,11 +1131,32 @@ checkRoute();
   // Opcional: "Gravar usuário e senha" guarda o acesso neste navegador para preencher o login.
   const CHAVE_CRED = "bcloud_metas_cred";
   const chkGravar = document.getElementById('loginRemember');
+  // Sessão guardada em 3 lugares (localStorage, sessionStorage e window.name) para
+  // sobreviver ao F5 mesmo quando o navegador bloqueia algum deles (aba privada, etc.).
   const store = {
-    get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
-    set(k,v){ try { localStorage.setItem(k,v); } catch(e){} },
-    del(k){ try { localStorage.removeItem(k); } catch(e){} },
+    get(k){
+      try { const v = localStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const v = sessionStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const m = (window.name || '').match(new RegExp('(?:^|;)' + k + '=([^;]*)')); if(m) return decodeURIComponent(m[1]); } catch(e){}
+      return null;
+    },
+    set(k,v){
+      try { localStorage.setItem(k,v); } catch(e){}
+      try { sessionStorage.setItem(k,v); } catch(e){}
+      try { store._wn(k, v); } catch(e){}
+    },
+    del(k){
+      try { localStorage.removeItem(k); } catch(e){}
+      try { sessionStorage.removeItem(k); } catch(e){}
+      try { store._wn(k, null); } catch(e){}
+    },
+    _wn(k, v){
+      const partes = (window.name || '').split(';').filter(x => x && !x.startsWith(k + '='));
+      if(v !== null) partes.push(k + '=' + encodeURIComponent(v));
+      window.name = partes.join(';');
+    },
   };
+
 
   function preencherSalvo(){
     let c = null;
