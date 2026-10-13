@@ -756,7 +756,7 @@
   "due": 1791874800000,
   "name": "BCOS / Observabilidade como módulo do BCP",
   "short": "BCP - Observabilidade",
-  "assignee": "Nathan de Moraes Valim Francisco",
+  "assignee": "Nathan de Moraes Valim Francisco / Raphael Fogaça",
   "tags": [
    "eficiência operacional",
    "evolução da plataforma de nuvem"
@@ -953,9 +953,9 @@
    },
    {
     "n": "FASE05 - Esteira de QA",
-    "status": "backlog",
-    "assignee": "Nathan de Moraes Valim Francisco / Raphael Fogaça",
-    "due": 1791529200000,
+    "status": "in test",
+    "assignee": "Raphael Fogaça / Nathan de Moraes Valim Francisco",
+    "due": 1791874800000,
     "id": "86ag4q559",
     "ativ": [
      {
@@ -968,8 +968,8 @@
      },
      {
       "n": "Testes e validações do produto",
-      "status": "in progress",
-      "due": 1791529200000,
+      "status": "shipped",
+      "due": 1791874800000,
       "original_due": 1789714800000,
       "nova_previsao": null,
       "id": "86ag4qmha"
@@ -1008,7 +1008,7 @@
      },
      {
       "n": "Apresentação para o Board da Empresa",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791529200000,
       "original_due": 1789369200000,
       "nova_previsao": null,
@@ -1016,8 +1016,8 @@
      },
      {
       "n": "Apresentação para o comercial",
-      "status": "backlog",
-      "due": 1791529200000,
+      "status": "shipped",
+      "due": 1791874800000,
       "original_due": 1789542000000,
       "nova_previsao": null,
       "id": "86ag4qp4z"
@@ -1032,16 +1032,16 @@
      },
      {
       "n": "Precificação do produto",
-      "status": "backlog",
-      "due": 1791529200000,
+      "status": "shipped",
+      "due": 1791874800000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86ag4qxhv"
      },
      {
       "n": "Plano de evolução para novas versões",
-      "status": "backlog",
-      "due": 1791529200000,
+      "status": "shipped",
+      "due": 1791874800000,
       "original_due": 1789974000000,
       "nova_previsao": null,
       "id": "86agdr2px"
@@ -1497,7 +1497,7 @@
      },
      {
       "n": "Adicionar funcionalidade entre VMware",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1791356400000,
       "original_due": 1791356400000,
       "nova_previsao": null,
@@ -1505,7 +1505,7 @@
      },
      {
       "n": "Testar VMware -> Openstack",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
@@ -1513,9 +1513,9 @@
      },
      {
       "n": "Analisar reutilização BC-Migration - Operação",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in progress",
+      "due": 1792738800000,
+      "original_due": 1792738800000,
       "nova_previsao": null,
       "id": "86aktdb5z"
      }
@@ -1530,7 +1530,7 @@
     "ativ": [
      {
       "n": "Verificar API existente",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
@@ -1538,7 +1538,7 @@
      },
      {
       "n": "Criar tela de migracao",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1546,7 +1546,7 @@
      },
      {
       "n": "Criar tela de conexao de origem",
-      "status": "in planning",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1554,7 +1554,7 @@
      },
      {
       "n": "Criar aba no painel da cloud",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1571,10 +1571,18 @@
      {
       "n": "Criar Integração OCI",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1792738800000,
+      "original_due": 1792738800000,
       "nova_previsao": null,
       "id": "86aku1ryv"
+     },
+     {
+      "n": "Montagem do Fluxo da ferramenta",
+      "status": "in progress",
+      "due": 1792134000000,
+      "original_due": 1792134000000,
+      "nova_previsao": null,
+      "id": "17ttbukvz9f"
      }
     ]
    },
@@ -1608,14 +1616,6 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbk1y8"
-     },
-     {
-      "n": "Desenhar fluxo de utilização",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "86akbk276"
      }
     ]
    },
@@ -1724,7 +1724,7 @@
       "id": "86akbj6pk"
      },
      {
-      "n": "Testar Canonica -> Openstack",
+      "n": "Testar Canonical -> Openstack",
       "status": "backlog",
       "due": null,
       "original_due": null,
@@ -1778,6 +1778,22 @@
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbj6qt"
+     },
+     {
+      "n": "Criar api integração api VMWare e a ferramenta",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukvzuk"
+     },
+     {
+      "n": "Testar VMware -> Openstack",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukvzv3"
      }
     ]
    }

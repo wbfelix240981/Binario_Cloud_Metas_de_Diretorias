@@ -1661,7 +1661,7 @@
      },
      {
       "n": "br-sp-02-node05",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1791529200000,
       "original_due": 1793343600000,
       "nova_previsao": 1790751600000,
@@ -1702,7 +1702,7 @@
      {
       "n": "br-sp-02-node10",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1792738800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc87t5"
@@ -1798,7 +1798,7 @@
      {
       "n": "srv-win-03",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1792134000000,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "id": "86agc8uvh"
@@ -1830,7 +1830,7 @@
      {
       "n": "srv-win-07",
       "status": "blocked",
-      "due": 1793343600000,
+      "due": 1792134000000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "id": "86agc8v1h"
