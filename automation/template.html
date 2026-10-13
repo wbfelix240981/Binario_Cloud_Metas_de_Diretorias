@@ -437,6 +437,8 @@
     background:var(--bg2); color:var(--text); font-family:var(--body); font-size:14px; outline:none; transition:.15s;
   }
   .login-field input:focus{border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);}
+  .login-remember{display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11px; color:var(--text-dim); margin:2px 0 14px; cursor:pointer; user-select:none;}
+  .login-remember input{accent-color:var(--cyan); width:14px; height:14px; margin:0;}
   .login-btn{
     width:100%; padding:12px 14px; margin-top:6px; border-radius:10px; border:none; cursor:pointer;
     background:var(--cyan); color:#03181c; font-family:var(--disp); font-weight:700; font-size:14px;
@@ -461,7 +463,7 @@
   <div class="login-card">
     <h1 class="login-title">Painel de Metas 2026</h1>
     <p class="login-sub">BINÁRIO CLOUD · ACESSO RESTRITO</p>
-    <form id="loginForm" autocomplete="off">
+    <form id="loginForm" autocomplete="on">
       <div class="login-field">
         <label for="loginUser">Usuário</label>
         <input type="text" id="loginUser" placeholder="e-mail ou usuário" autocomplete="username">
@@ -470,6 +472,7 @@
         <label for="loginPass">Senha de acesso</label>
         <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
       </div>
+      <label class="login-remember"><input type="checkbox" id="loginRemember"> Gravar usuário e senha neste navegador</label>
       <button type="submit" class="login-btn">Entrar</button>
       <div class="login-error" id="loginError">Usuário ou senha incorretos. Tente novamente.</div>
     </form>
@@ -1124,13 +1127,32 @@ checkRoute();
   const inputPass = document.getElementById('loginPass');
   const erro = document.getElementById('loginError');
 
-  // Pedir login a CADA carregamento/refresh da página: nada é lembrado entre recargas.
-  // Remove a marca antiga (versões anteriores guardavam o login no navegador).
-  try { localStorage.removeItem(CHAVE_STORAGE); sessionStorage.removeItem(CHAVE_STORAGE); } catch(e){}
+  // Sessão: depois de logar, o refresh (F5) mantém logado; só o botão "Sair" encerra.
+  // Opcional: "Gravar usuário e senha" guarda o acesso neste navegador para preencher o login.
+  const CHAVE_CRED = "bcloud_metas_cred";
+  const chkGravar = document.getElementById('loginRemember');
+  const store = {
+    get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+    set(k,v){ try { localStorage.setItem(k,v); } catch(e){} },
+    del(k){ try { localStorage.removeItem(k); } catch(e){} },
+  };
+
+  function preencherSalvo(){
+    let c = null;
+    try { c = JSON.parse(store.get(CHAVE_CRED) || 'null'); } catch(e){}
+    if(c && c.u){ inputUser.value = c.u; inputPass.value = c.p || ''; chkGravar.checked = true; }
+    else { inputUser.value = ''; inputPass.value = ''; chkGravar.checked = false; }
+  }
+  preencherSalvo();
+
+  if(store.get(CHAVE_STORAGE) === 'ok'){
+    tela.style.display = 'none';
+  }
 
   document.getElementById('btnLogoff').addEventListener('click', function(){
-    inputUser.value = ''; inputPass.value = '';
+    store.del(CHAVE_STORAGE);
     erro.classList.remove('show');
+    preencherSalvo();            // mantém o acesso gravado (se houver); senão limpa os campos
     location.hash = '';
     window.scrollTo(0, 0);
     tela.style.display = '';
@@ -1143,6 +1165,9 @@ checkRoute();
     const senha = inputPass.value;
     const valido = CREDENCIAIS.some(c => c.usuario === usuario && c.senha === senha);
     if(valido){
+      store.set(CHAVE_STORAGE, 'ok');
+      if(chkGravar.checked) store.set(CHAVE_CRED, JSON.stringify({u: usuario, p: senha}));
+      else store.del(CHAVE_CRED);
       tela.style.display = 'none';
     } else {
       erro.classList.remove('show');
