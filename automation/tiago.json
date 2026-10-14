@@ -1591,6 +1591,14 @@
       "original_due": 1792134000000,
       "nova_previsao": null,
       "id": "17ttbukvz9f"
+     },
+     {
+      "n": "Analisar frontend do Cross Stack e planejar port para o BCP",
+      "status": "in progress",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukwd6b"
      }
     ]
    },
