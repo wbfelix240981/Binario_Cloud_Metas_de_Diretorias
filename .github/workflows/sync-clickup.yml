@@ -2,11 +2,18 @@ name: Sincronizar com ClickUp
 
 on:
   schedule:
-    # A cada 15 min: o schedule do GitHub Actions atrasa/pula execuções em repos
-    # de baixo tráfego (confirmado: gaps reais de 3-7h mesmo com "0 * * * *").
-    # Rodando a cada 15 min aumenta a chance de pelo menos 1 execução passar por hora.
-    - cron: '*/15 * * * *'
+    # De 30 em 30 min, das 06:00 às 22:00 no horário de Brasília (UTC-3).
+    # O cron do GitHub roda em UTC: 06:00 BRT = 09:00 UTC ... 22:00 BRT = 01:00 UTC (dia seguinte).
+    # Obs.: o GitHub pode atrasar/pular execuções agendadas em repositórios de pouco tráfego.
+    - cron: '0,30 9-23 * * *'   # 06:00 -> 20:30 BRT
+    - cron: '0,30 0 * * *'      # 21:00 e 21:30 BRT
+    - cron: '0 1 * * *'         # 22:00 BRT
   workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
+
+# Evita duas sincronizações ao mesmo tempo (disputa no git push)
+concurrency:
+  group: sync-clickup
+  cancel-in-progress: false
 
 permissions:
   contents: write
