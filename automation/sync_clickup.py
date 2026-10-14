@@ -541,6 +541,13 @@ def main():
     any_changed = False
     houve_erro = False
 
+    # Identifica de qual conta é o token (só aparece no log da execução; nunca o token).
+    try:
+        u = api_get("/user").get("user", {})
+        print(f"Token do ClickUp pertence a: {u.get('username')} <{u.get('email')}> (id {u.get('id')})")
+    except Exception as e:
+        print(f"Não foi possível identificar a conta do token: {type(e).__name__}: {e}")
+
     print("Sincronizando Rafael...")
     try:
         if sync_metas_file(os.path.join(DIR, "rafael.json"), RAFAEL_LIST_ID):
