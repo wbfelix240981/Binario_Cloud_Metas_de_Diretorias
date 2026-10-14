@@ -541,10 +541,10 @@ def main():
     any_changed = False
     houve_erro = False
 
-    # Identifica de qual conta é o token (só aparece no log da execução; nunca o token).
+    # Identifica de qual conta é o token (aparece como anotação da execução no GitHub; só o nome, nunca o token nem o e-mail).
     try:
         u = api_get("/user").get("user", {})
-        print(f"Token do ClickUp pertence a: {u.get('username')} <{u.get('email')}> (id {u.get('id')})")
+        print(f"::notice title=Conta do token do ClickUp::{u.get('username')} (id {u.get('id')})")
     except Exception as e:
         print(f"Não foi possível identificar a conta do token: {type(e).__name__}: {e}")
 
