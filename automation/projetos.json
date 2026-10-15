@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-15T20:56:16.407370+00:00",
+ "last_sync_utc": "2026-10-15T21:40:50.876418+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3258,8 +3258,8 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "—",
-       "due": null,
-       "original_due": null,
+       "due": 1793602800000,
+       "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akkhrvq"
