@@ -953,7 +953,7 @@
    },
    {
     "n": "FASE05 - Esteira de QA",
-    "status": "in test",
+    "status": "shipped",
     "assignee": "Nathan de Moraes Valim Francisco / Raphael Fogaça",
     "due": 1791961200000,
     "id": "86ag4q559",
@@ -992,7 +992,7 @@
      },
      {
       "n": "Passagem para produção",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1791961200000,
       "original_due": 1790751600000,
       "nova_previsao": null,
@@ -1031,14 +1031,6 @@
       "id": "86ag4qxax"
      },
      {
-      "n": "Precificação do produto",
-      "status": "backlog",
-      "due": 1791961200000,
-      "original_due": 1790751600000,
-      "nova_previsao": null,
-      "id": "86ag4qxhv"
-     },
-     {
       "n": "Plano de evolução para novas versões",
       "status": "shipped",
       "due": 1791874800000,
@@ -1047,6 +1039,14 @@
       "id": "86agdr2px"
      }
     ]
+   },
+   {
+    "n": "Precificação do produto",
+    "status": "backlog",
+    "assignee": "Tiago Gomes de Oliveira",
+    "due": 1792134000000,
+    "id": "86ag4qxhv",
+    "ativ": []
    },
    {
     "n": "Termo de aceite entrega",
