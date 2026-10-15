@@ -1058,8 +1058,8 @@
      {
       "n": "Aceite da equipe de Operação",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1792479600000,
+      "original_due": 1792479600000,
       "nova_previsao": null,
       "id": "17ttbukwg18"
      }
