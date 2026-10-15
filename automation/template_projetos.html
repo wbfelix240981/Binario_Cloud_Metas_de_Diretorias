@@ -161,7 +161,6 @@
   <div class="tb-left">
     <div class="tb-mark">__LOGO_IMG__</div>
     <span class="tb-title"><b>Projetos</b> · Binário Cloud</span>
-    <nav class="pnav"><a href="./index.html">Metas 2026</a><a href="./projetos.html" class="active">Projetos</a></nav>
   </div>
   <div class="tb-right">
     <div class="tb-right-top">
@@ -217,7 +216,7 @@
 
     <div class="rules">
       <div class="rules-box">
-        <b>Regras de alarme</b> (as mesmas do painel de metas): <span style="color:var(--red)">ATRASADA</span> quando o prazo <b>original</b> da atividade já passou (a partir do dia seguinte ao prazo);
+        <b>Regras de alarme</b>: <span style="color:var(--red)">ATRASADA</span> quando o prazo <b>original</b> da atividade já passou (a partir do dia seguinte ao prazo);
         <span style="color:var(--amber)">PENDENTE</span> no próprio dia do prazo; <span style="color:var(--amber)">PENDENTE PLANEJAMENTO</span> quando a atividade não tem data preenchida no ClickUp.
         Mudança de data ou "Nova previsão" aparece como anotação (→ nova data) e não desliga o alarme. Atividades concluídas, fechadas ou canceladas não geram alarme.
       </div>
@@ -254,7 +253,7 @@ function fmtDate(ms){
   return new Date(Number(ms)).toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
 }
 
-// ===== Regras de alarme — idênticas ao painel de metas =====
+// ===== Regras de alarme =====
 // Atrasada (vermelho) só a partir do dia SEGUINTE ao prazo original (datas de calendário).
 // No próprio dia do prazo: pendente (amarelo). Sem data: pendente de planejamento (não preenchimento).
 function startOfDay(ms){ const d = new Date(Number(ms)); d.setHours(0,0,0,0); return d.getTime(); }
@@ -275,7 +274,7 @@ function diasDeAtraso(a){
   return Math.round((startOfDay(Date.now()) - startOfDay(dataBase)) / 86400000);
 }
 
-// ===== Progresso (mesma lógica das metas: só "Concluído" conta) =====
+// ===== Progresso (só "Concluído" conta) =====
 function faseProgress(f){
   if(f.status==='shipped') return 1;
   const validas = (f.ativ||[]).filter(a=>a.status!=='cancelled');
