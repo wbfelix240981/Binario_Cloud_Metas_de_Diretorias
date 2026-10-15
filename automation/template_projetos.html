@@ -349,7 +349,7 @@ function buildTabs(){
     return `<div class="ptab${p.finalizado?' done':''}" data-tab="${esc(p.key)}" style="--tc:${projColor(p)}" title="${esc(p.nome)} — ${esc(p.descricao)}">
       <span><span class="pt-name">${esc(p.nome)}</span><span class="pt-sub">${esc(p.descricao)}</span></span>${alarm}</div>`;
   };
-  bar.innerHTML = `<div class="ptab" data-tab="geral" style="--tc:var(--cyan)"><span><span class="pt-name">Visão geral</span><span class="pt-sub">${ativos.length} ativos · ${fin.length} finalizados</span></span></div>`
+  bar.innerHTML = `<div class="ptab" data-tab="geral" style="--tc:var(--cyan)"><span><span class="pt-name">Visão geral</span><span class="pt-sub">${ativos.length} projeto${ativos.length!==1?'s':''} ativo${ativos.length!==1?'s':''}${fin.length?` · ${fin.length} finalizados`:''}</span></span></div>`
     + ativos.map(tabHtml).join('')
     + (fin.length ? `<span class="ptab-sep">Finalizados</span>` + fin.map(tabHtml).join('') : '');
   bar.querySelectorAll('.ptab').forEach(t=>t.addEventListener('click', ()=>{ location.hash = t.dataset.tab==='geral' ? '#/' : '#/p/'+t.dataset.tab; }));
