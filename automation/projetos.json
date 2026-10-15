@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-15T13:59:25.069236+00:00",
+ "last_sync_utc": "2026-10-15T14:52:58.484495+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4853,8 +4853,8 @@
       },
       {
        "n": "Elaboração da TAP",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
@@ -4864,8 +4864,8 @@
       },
       {
        "n": "Envio/Assinatura da TAP",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
        "assignee": "Wagner Bento Felix / Diogo Lerison",
        "due": null,
        "original_due": null,
@@ -5092,8 +5092,8 @@
       },
       {
        "n": "Ajuste de casas decimais",
-       "status": "in review",
-       "raw_status": "revisando",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
