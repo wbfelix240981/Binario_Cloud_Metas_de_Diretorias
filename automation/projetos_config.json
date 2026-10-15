@@ -1,0 +1,15 @@
+[
+ {"key": "neugebauer",     "nome": "Neugebauer",               "descricao": "Nuvem Pública & Serviços Gerenciados",      "list_id": "901328018187", "finalizado": false},
+ {"key": "soprema-veeam",  "nome": "Soprema",                  "descricao": "Veeam Backup on premise",                    "list_id": "901328281164", "finalizado": false},
+ {"key": "pleion",         "nome": "Pleion",                   "descricao": "Indústria e Comércio de Plásticos LTDA.",    "list_id": "901328281869", "finalizado": false},
+ {"key": "btech",          "nome": "B-TECH CLOUD",             "descricao": "White Label",                                "list_id": "901329035922", "finalizado": false},
+ {"key": "apm",            "nome": "APM",                      "descricao": "Associação Paulista de Medicina",            "list_id": "901329011062", "finalizado": false},
+ {"key": "amigotech",      "nome": "AmigoTech",                "descricao": "Amigo Connecting LTDA",                      "list_id": "901329011044", "finalizado": false},
+ {"key": "abl",            "nome": "Grupo ABL",                "descricao": "Jornada",                                    "list_id": "901329133092", "finalizado": false},
+ {"key": "algar",          "nome": "Algar Telecom",            "descricao": "Projeto especial",                           "list_id": "901329196221", "finalizado": false},
+ {"key": "gimba-mfa",      "nome": "Gimba",                    "descricao": "MFA na conexão VPN de forma padrão",         "list_id": "901329173422", "finalizado": false},
+ {"key": "neovia",         "nome": "Neovia Solution",          "descricao": "Projeto finalizado",                         "list_id": "901328971347", "finalizado": true},
+ {"key": "soprema-fw",     "nome": "Soprema · Firewall",       "descricao": "BC-BR-SP-Firewall",                          "list_id": "901328361858", "finalizado": true},
+ {"key": "bestsmart",      "nome": "BC_Best Smart",            "descricao": "Best Smart Negócio e Tecnologia Ltda",       "list_id": "901329181833", "finalizado": true},
+ {"key": "psdovidro",      "nome": "PS do Vidro",              "descricao": "Nuvem Pública & Backup Veeam",               "list_id": "901327996026", "finalizado": true}
+]

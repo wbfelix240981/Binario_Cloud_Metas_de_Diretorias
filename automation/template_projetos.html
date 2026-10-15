@@ -1,0 +1,470 @@
+  /* ===================== PAINEL DE PROJETOS (extras) ===================== */
+  .pnav{display:flex; gap:6px; margin-left:14px;}
+  .pnav a{font-family:var(--mono); font-size:11px; padding:5px 12px; border-radius:999px; border:1px solid var(--border); color:var(--text-dim); text-decoration:none; transition:.15s; white-space:nowrap;}
+  .pnav a:hover{border-color:var(--border-hi); color:var(--text);}
+  .pnav a.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+
+  .ptabs-wrap{max-width:1180px; margin:26px auto 0; padding:0 28px;}
+  .ptabs{display:flex; align-items:flex-end; gap:6px; overflow-x:auto; padding-top:8px; scrollbar-width:thin; scrollbar-color:var(--border-hi) transparent;}
+  .ptabs::-webkit-scrollbar{height:6px;}
+  .ptabs::-webkit-scrollbar-thumb{background:var(--border-hi); border-radius:6px;}
+  .ptab{
+    --tc:var(--cyan); position:relative; flex:none; cursor:pointer; user-select:none;
+    padding:11px 16px 12px; border:2px solid var(--border-hi); border-bottom:none; border-radius:14px 14px 0 0;
+    background:linear-gradient(180deg,var(--panel-hi),var(--panel)); opacity:.62; transform:translateY(5px);
+    transition:transform .2s, opacity .2s, border-color .2s; display:flex; align-items:center; gap:8px;
+  }
+  .ptab:hover{opacity:.9;}
+  .ptab.active{opacity:1; transform:translateY(0); border-color:var(--tc); z-index:3;}
+  .ptab .pt-name{font-family:var(--disp); font-size:13px; font-weight:600; color:var(--text); white-space:nowrap;}
+  .ptab .pt-sub{display:block; font-family:var(--mono); font-size:9.5px; color:var(--text-mute); white-space:nowrap; margin-top:1px;}
+  .ptab.done .pt-name{color:var(--text-dim);}
+  .ptab .pt-alarm{font-family:var(--mono); font-size:9.5px; font-weight:700; border-radius:999px; padding:1px 7px; line-height:1.5;}
+  .ptab .pt-alarm.red{color:#ffb3b3; background:rgba(255,90,90,.16); border:1px solid #5c1f1f;}
+  .ptab .pt-alarm.amber{color:var(--amber); background:rgba(255,198,92,.14); border:1px solid #5c4a1f;}
+  .ptab-sep{flex:none; align-self:center; font-family:var(--mono); font-size:9.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-mute); padding:0 6px 0 12px; border-left:1px solid var(--border-hi); margin-left:4px;}
+  .ppanel{border:2px solid var(--panel-active, var(--cyan)); border-radius:0 20px 20px 20px; background:radial-gradient(1100px 500px at 90% -10%, rgba(45,217,245,.07) 0%, transparent 60%), var(--bg2); padding:8px 0 4px; position:relative; z-index:2;}
+  .ppanel .hero{padding-top:36px;}
+  .hero-desc{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); margin-top:6px;}
+  .hero-desc a{color:var(--cyan); text-decoration:none;}
+  .done-flag{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--green); background:var(--green-dim); border:1px solid #14523f; border-radius:999px; padding:3px 10px; margin-left:8px; vertical-align:middle;}
+
+  .kpis.k7{grid-template-columns:repeat(7,1fr);}
+  .kpi.alarm-red{border-color:var(--red);} .kpi.alarm-red .k-num{color:var(--red);}
+  .kpi.alarm-amber{border-color:var(--amber);} .kpi.alarm-amber .k-num{color:var(--amber);}
+
+  .fases{max-width:1180px; margin:0 auto; padding:0 28px 50px; display:flex; flex-direction:column; gap:12px;}
+  .fcard{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; transition:border-color .15s;}
+  .fcard.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .fcard.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
+  .fhead{display:grid; grid-template-columns:44px 1fr auto 170px 26px; align-items:center; gap:14px; padding:15px 18px; cursor:pointer;}
+  .fhead:hover{background:rgba(255,255,255,.015);}
+  .fidx{font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+  .fidx b{display:block; font-family:var(--disp); font-size:18px; color:var(--cyan); font-weight:700;}
+  .fname{min-width:0;}
+  .fname .n1{font-family:var(--disp); font-weight:600; font-size:15px; color:var(--text);}
+  .fname .n2{font-family:var(--mono); font-size:11px; color:var(--text-mute); margin-top:4px; display:flex; gap:6px; flex-wrap:wrap; align-items:center;}
+  .fcard .chev{transition:transform .2s;}
+  .fcard.open .chev{transform:rotate(180deg);}
+  .fbody{display:none; padding:4px 18px 18px; border-top:1px solid var(--border);}
+  .fcard.open .fbody{display:block;}
+  .fbody .ativ-list{margin:12px 0 0 0;}
+  .ativ-row .ativ-who{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap; max-width:150px; overflow:hidden; text-overflow:ellipsis;}
+  .ativ-row.cancelada .ativ-name{text-decoration:line-through; color:var(--text-mute);}
+  .ativ-row .ativ-name .ind{color:var(--text-mute); margin-right:4px;}
+  .pill-amber{color:var(--amber) !important; background:rgba(255,198,92,.14) !important; border-color:#5c4a1f !important;}
+  .b-waiting{color:var(--amber); background:var(--amber-dim); border:1px solid #5c4110;}
+  .b-cancelled{color:var(--text-mute); background:transparent; border:1px dashed var(--border-hi);}
+  .empty-msg{font-family:var(--mono); font-size:12.5px; color:var(--text-mute); padding:20px 0;}
+
+  .ov-grid{max-width:1180px; margin:0 auto; padding:0 28px 50px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px;}
+  .ov-title{max-width:1180px; margin:0 auto; padding:6px 28px 12px; font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-mute);}
+  .ov-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:18px; cursor:pointer; transition:border-color .15s, transform .15s; display:flex; gap:16px; align-items:center; min-width:0;}
+  .ov-card:hover{border-color:var(--cyan); transform:translateY(-1px);}
+  .ov-card.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .ov-card.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
+  .ov-card.done{opacity:.8;}
+  .ov-ring{position:relative; width:64px; height:64px; flex:none;}
+  .ov-ring svg{transform:rotate(-90deg); width:64px; height:64px;}
+  .ov-ring .ring-bg{stroke-width:6;} .ov-ring .ring-fg{stroke-width:6;}
+  .ov-ring b{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--disp); font-size:15px;}
+  .ov-info{min-width:0; flex:1;}
+  .ov-name{font-family:var(--disp); font-weight:600; font-size:15px; color:var(--text);}
+  .ov-desc{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); margin:2px 0 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .ov-pills{display:flex; flex-wrap:wrap; gap:5px;}
+  .ov-pills .overdue-pill{font-size:9.5px;}
+  .ok-pill{font-family:var(--mono); font-size:9.5px; font-weight:700; text-transform:uppercase; color:var(--green); background:var(--green-dim); border:1px solid #14523f; border-radius:999px; padding:2px 9px;}
+
+  .rules{max-width:1180px; margin:0 auto; padding:0 28px 40px;}
+  .rules-box{border:1px dashed var(--border-hi); border-radius:14px; padding:14px 18px; font-family:var(--mono); font-size:11.5px; color:var(--text-mute); line-height:1.7;}
+  .rules-box b{color:var(--text-dim);}
+
+  @media (max-width:900px){
+    .kpis.k7{grid-template-columns:repeat(3,1fr);}
+    .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr)); padding:0 20px 40px;}
+    .fases, .rules, .ov-title{padding-left:20px; padding-right:20px;}
+    .ptabs-wrap{padding:0 20px;}
+  }
+  @media (max-width:640px){
+    .pnav{display:none;}
+    .kpis.k7{grid-template-columns:repeat(2,1fr);}
+    .ov-grid{grid-template-columns:1fr; padding:0 16px 40px;}
+    .fases, .rules, .ov-title{padding-left:16px; padding-right:16px;}
+    .ptabs-wrap{padding:0 16px; margin-top:18px;}
+    .ptab{padding:9px 12px 10px;}
+    .ptab .pt-sub{display:none;}
+    .ppanel{border-radius:0 14px 14px 14px;}
+    .fhead{grid-template-columns:1fr auto; row-gap:8px; padding:13px 14px;}
+    .fidx{display:none;}
+    .fname{grid-column:1/-1;}
+    .fhead .meta-bar{grid-column:1/-1;}
+    .fbody{padding:4px 12px 14px;}
+    .ativ-row{flex-wrap:wrap;}
+    .ativ-row .ativ-name{flex-basis:100%;}
+    .ativ-row .ativ-who{display:none;}
+  }
+</style>
+</head>
+<body style="background:#0a0e14; margin:0;">
+
+<div id="loginScreen">
+  <div class="login-card">
+    <h1 class="login-title">Painel de Projetos</h1>
+    <p class="login-sub">BINÁRIO CLOUD · ACESSO RESTRITO</p>
+    <form id="loginForm" autocomplete="on">
+      <div class="login-field">
+        <label for="loginUser">Usuário</label>
+        <input type="text" id="loginUser" placeholder="e-mail ou usuário" autocomplete="username">
+      </div>
+      <div class="login-field">
+        <label for="loginPass">Senha de acesso</label>
+        <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <label class="login-remember"><input type="checkbox" id="loginRemember"> Gravar usuário e senha neste navegador</label>
+      <button type="submit" class="login-btn">Entrar</button>
+      <div class="login-error" id="loginError">Usuário ou senha incorretos. Tente novamente.</div>
+    </form>
+    <div class="login-foot">Controle de atividades de projetos · ClickUp</div>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="tb-left">
+    <div class="tb-mark">__LOGO_IMG__</div>
+    <span class="tb-title"><b>Projetos</b> · Binário Cloud</span>
+    <nav class="pnav"><a href="./index.html">Metas 2026</a><a href="./projetos.html" class="active">Projetos</a></nav>
+  </div>
+  <div class="tb-right">
+    <div class="tb-right-top">
+      <div class="tb-live"><span class="dot-live"></span> Sincronizado com ClickUp</div>
+      <span id="tb-date"></span>
+      <button type="button" class="tb-logoff" id="btnLogoff" title="Encerrar sessão">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        Sair
+      </button>
+    </div>
+    <div class="tb-right-sub" id="tb-gen"></div>
+  </div>
+</div>
+
+<div class="ptabs-wrap">
+  <div class="ptabs" id="tabBar"></div>
+  <div class="ppanel" id="panel">
+    <div class="hero">
+      <div class="hero-eyebrow" id="heroEyebrow">Controle de atividades de projetos</div>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title" id="heroTitle"></h1>
+          <div class="hero-desc" id="heroDesc"></div>
+        </div>
+        <div class="ring-card">
+          <div class="ring-wrap">
+            <svg width="112" height="112" viewBox="0 0 112 112">
+              <circle class="ring-bg" cx="56" cy="56" r="48"></circle>
+              <circle class="ring-fg" id="ringFg" cx="56" cy="56" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"></circle>
+            </svg>
+            <div class="ring-num"><b id="ringPct">0%</b><small>concluído</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpis k7" id="kpiStrip"></div>
+
+    <div class="controls" id="controls">
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="searchInput" placeholder="Buscar fase ou atividade…">
+      </div>
+      <div class="chips" id="filterChips"></div>
+    </div>
+
+    <div id="content"></div>
+
+    <div class="rules">
+      <div class="rules-box">
+        <b>Regras de alarme</b> (as mesmas do painel de metas): <span style="color:var(--red)">ATRASADA</span> quando o prazo <b>original</b> da atividade já passou (a partir do dia seguinte ao prazo);
+        <span style="color:var(--amber)">PENDENTE</span> no próprio dia do prazo; <span style="color:var(--amber)">PENDENTE PLANEJAMENTO</span> quando a atividade não tem data preenchida no ClickUp.
+        Mudança de data ou "Nova previsão" aparece como anotação (→ nova data) e não desliga o alarme. Atividades concluídas, fechadas ou canceladas não geram alarme.
+      </div>
+    </div>
+
+    <footer>
+      <span>Fonte: ClickUp · <a id="footerSourceLink" href="https://app.clickup.com/3080406/v/s/3162782" target="_blank">Projetos / Onboard BC</a></span>
+    </footer>
+  </div>
+</div>
+
+<script>
+// ================= DADOS =================
+const PROJETOS_DATA = /*__PROJETOS_DATA__*/;
+const PROJETOS = PROJETOS_DATA.projetos || [];
+
+const STATUS_META = {
+  'backlog':    {label:'Não iniciado', cls:'b-backlog',   color:'var(--slate)'},
+  'in planning':{label:'Planejamento', cls:'b-planning',  color:'var(--amber)'},
+  'in progress':{label:'Em andamento', cls:'b-progress',  color:'var(--blue)'},
+  'in test':    {label:'Em teste',     cls:'b-test',      color:'var(--violet)'},
+  'in review':  {label:'Em revisão',   cls:'b-review',    color:'var(--orange)'},
+  'waiting':    {label:'Aguardando retorno', cls:'b-waiting', color:'var(--amber)'},
+  'blocked':    {label:'Impedimento',  cls:'b-blocked',   color:'var(--red)'},
+  'cancelled':  {label:'Cancelado',    cls:'b-cancelled', color:'var(--text-mute)'},
+  'shipped':    {label:'Concluído',    cls:'b-shipped',   color:'var(--green)'}
+};
+function sm(s){ return STATUS_META[s] || STATUS_META['in progress']; }
+function badge(status){ const s = sm(status); return `<span class="badge ${s.cls}">${s.label}</span>`; }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function fmtDate(ms){
+  if(!ms) return '—';
+  return new Date(Number(ms)).toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+}
+
+// ===== Regras de alarme — idênticas ao painel de metas =====
+// Atrasada (vermelho) só a partir do dia SEGUINTE ao prazo original (datas de calendário).
+// No próprio dia do prazo: pendente (amarelo). Sem data: pendente de planejamento (não preenchimento).
+function startOfDay(ms){ const d = new Date(Number(ms)); d.setHours(0,0,0,0); return d.getTime(); }
+function encerrada(a){ return a.status === 'shipped' || a.status === 'cancelled'; }
+function ativDueState(a){
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(encerrada(a)) return null;
+  if(!dataBase) return 'sem_planejamento';
+  const hoje = startOfDay(Date.now());
+  const dia = startOfDay(dataBase);
+  if(dia < hoje) return 'atrasada';
+  if(dia === hoje) return 'pendente';
+  return null;
+}
+function diasDeAtraso(a){
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(!dataBase) return 0;
+  return Math.round((startOfDay(Date.now()) - startOfDay(dataBase)) / 86400000);
+}
+
+// ===== Progresso (mesma lógica das metas: só "Concluído" conta) =====
+function faseProgress(f){
+  if(f.status==='shipped') return 1;
+  const validas = (f.ativ||[]).filter(a=>a.status!=='cancelled');
+  if(!validas.length) return 0;
+  return validas.filter(a=>a.status==='shipped').length / validas.length;
+}
+function fasesValidas(p){ return p.fases.filter(f=>f.status!=='cancelled'); }
+function projProgress(p){
+  const fs = fasesValidas(p);
+  if(!fs.length) return 0;
+  return fs.reduce((s,f)=>s+faseProgress(f),0)/fs.length;
+}
+function contarAtiv(lista){
+  const c = {total:0, concluida:0, andamento:0, naoIniciada:0, pendente:0, semData:0, atrasada:0, cancelada:0};
+  lista.forEach(a=>{
+    if(a.status==='cancelled'){ c.cancelada++; return; }
+    c.total++;
+    const e = ativDueState(a);
+    if(a.status==='shipped') c.concluida++;
+    else if(e==='atrasada') c.atrasada++;
+    else if(e==='pendente') c.pendente++;
+    else if(e==='sem_planejamento') c.semData++;
+    else if(a.status==='backlog') c.naoIniciada++;
+    else c.andamento++;
+  });
+  return c;
+}
+function todasAtiv(p){ return p.fases.flatMap(f=>f.ativ||[]); }
+function alarmPills(c, compact){
+  let h = '';
+  if(c.atrasada) h += `<span class="overdue-pill">⚠ ${c.atrasada} atrasada${c.atrasada>1?'s':''}</span>`;
+  if(c.pendente) h += `<span class="overdue-pill pill-amber">● ${c.pendente} pendente${c.pendente>1?'s':''} hoje</span>`;
+  if(c.semData) h += `<span class="overdue-pill pill-amber">○ ${c.semData} sem data${compact?'':' (pendente planejamento)'}</span>`;
+  return h;
+}
+function alarmClass(c){ return c.atrasada ? ' meta-atrasada' : ((c.pendente||c.semData) ? ' meta-pendente' : ''); }
+
+// ================= ESTADO =================
+let activeTab = 'geral';
+let activeFilter = 'all';
+const openFases = new Set();
+
+const CIRC = 2*Math.PI*48;
+function setRing(pct){
+  const fg = document.getElementById('ringFg');
+  fg.style.strokeDasharray = CIRC.toFixed(1);
+  fg.style.strokeDashoffset = CIRC.toFixed(1);
+  requestAnimationFrame(()=>{ fg.style.strokeDashoffset = (CIRC*(1-pct/100)).toFixed(1); });
+  document.getElementById('ringPct').textContent = pct+'%';
+}
+function kpiHtml(c, labelTotal){
+  return `
+    <div class="kpi"><div class="k-num">${c.total}</div><div class="k-label">${labelTotal}</div></div>
+    <div class="kpi c-shipped"><div class="k-num">${c.concluida}</div><div class="k-label">Concluídas</div></div>
+    <div class="kpi c-progress"><div class="k-num">${c.andamento}</div><div class="k-label">Em andamento</div></div>
+    <div class="kpi c-backlog"><div class="k-num">${c.naoIniciada}</div><div class="k-label">Não iniciadas</div></div>
+    <div class="kpi${c.pendente?' alarm-amber':''}"><div class="k-num">${c.pendente}</div><div class="k-label">Pendentes (hoje)</div></div>
+    <div class="kpi${c.semData?' alarm-amber':''}"><div class="k-num">${c.semData}</div><div class="k-label">Sem data definida</div></div>
+    <div class="kpi${c.atrasada?' alarm-red':''}"><div class="k-num">${c.atrasada}</div><div class="k-label">Atrasadas</div></div>`;
+}
+
+// ================= ABAS =================
+const TAB_COLORS = ['var(--cyan)','var(--teal)','var(--violet)','var(--blue)','var(--orange)','var(--green)','var(--amber)'];
+function projColor(p){ return p.finalizado ? 'var(--slate)' : TAB_COLORS[PROJETOS.filter(x=>!x.finalizado).indexOf(p) % TAB_COLORS.length]; }
+
+function buildTabs(){
+  const bar = document.getElementById('tabBar');
+  const ativos = PROJETOS.filter(p=>!p.finalizado), fin = PROJETOS.filter(p=>p.finalizado);
+  const tabHtml = p=>{
+    const c = contarAtiv(todasAtiv(p));
+    const alarm = c.atrasada ? `<span class="pt-alarm red">${c.atrasada}</span>` : ((c.pendente+c.semData) ? `<span class="pt-alarm amber">${c.pendente+c.semData}</span>` : '');
+    return `<div class="ptab${p.finalizado?' done':''}" data-tab="${esc(p.key)}" style="--tc:${projColor(p)}" title="${esc(p.nome)} — ${esc(p.descricao)}">
+      <span><span class="pt-name">${esc(p.nome)}</span><span class="pt-sub">${esc(p.descricao)}</span></span>${alarm}</div>`;
+  };
+  bar.innerHTML = `<div class="ptab" data-tab="geral" style="--tc:var(--cyan)"><span><span class="pt-name">Visão geral</span><span class="pt-sub">${ativos.length} ativos · ${fin.length} finalizados</span></span></div>`
+    + ativos.map(tabHtml).join('')
+    + (fin.length ? `<span class="ptab-sep">Finalizados</span>` + fin.map(tabHtml).join('') : '');
+  bar.querySelectorAll('.ptab').forEach(t=>t.addEventListener('click', ()=>{ location.hash = t.dataset.tab==='geral' ? '#/' : '#/p/'+t.dataset.tab; }));
+}
+
+function selectTab(key){
+  if(key!=='geral' && !PROJETOS.find(p=>p.key===key)) key = 'geral';
+  if(key !== activeTab){ activeFilter = 'all'; openFases.clear(); document.getElementById('searchInput').value=''; }
+  activeTab = key;
+  document.querySelectorAll('.ptab').forEach(t=>t.classList.toggle('active', t.dataset.tab===key));
+  const at = document.querySelector('.ptab.active'); if(at) at.scrollIntoView({block:'nearest', inline:'nearest'});
+  if(key==='geral') renderGeral(); else renderProjeto(PROJETOS.find(p=>p.key===key));
+}
+
+// ================= VISÃO GERAL =================
+function renderGeral(){
+  document.getElementById('panel').style.setProperty('--panel-active','var(--cyan)');
+  document.getElementById('heroEyebrow').textContent = 'Controle de atividades de projetos · Visão geral';
+  document.getElementById('heroTitle').innerHTML = 'Painel de <span>Projetos</span>';
+  document.getElementById('heroDesc').textContent = `${PROJETOS.length} projetos acompanhados · clique em um projeto para abrir a aba dele`;
+  const ativos = PROJETOS.filter(p=>!p.finalizado);
+  const pct = ativos.length ? Math.round(ativos.reduce((s,p)=>s+projProgress(p),0)/ativos.length*100) : 0;
+  setRing(pct);
+  document.getElementById('kpiStrip').innerHTML = kpiHtml(contarAtiv(ativos.flatMap(todasAtiv)), 'Atividades (ativos)');
+  document.getElementById('controls').style.display = 'none';
+
+  const card = p=>{
+    const c = contarAtiv(todasAtiv(p));
+    const pc = Math.round(projProgress(p)*100);
+    const r = 26, circ = 2*Math.PI*r;
+    const pills = alarmPills(c, true) || (c.total ? `<span class="ok-pill">✓ sem alarmes</span>` : `<span class="overdue-pill pill-amber">sem atividades</span>`);
+    return `<div class="ov-card${alarmClass(c)}${p.finalizado?' done':''}" data-key="${esc(p.key)}">
+      <div class="ov-ring"><svg viewBox="0 0 64 64"><circle class="ring-bg" cx="32" cy="32" r="${r}"></circle><circle class="ring-fg" cx="32" cy="32" r="${r}" style="stroke:${projColor(p)}" stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${(circ*(1-pc/100)).toFixed(1)}"></circle></svg><b>${pc}%</b></div>
+      <div class="ov-info"><div class="ov-name">${esc(p.nome)}</div><div class="ov-desc">${esc(p.descricao)} · ${c.concluida}/${c.total} atividades</div><div class="ov-pills">${pills}</div></div>
+    </div>`;
+  };
+  const fin = PROJETOS.filter(p=>p.finalizado);
+  document.getElementById('content').innerHTML =
+    `<div class="ov-title">Projetos ativos</div><div class="ov-grid">${ativos.map(card).join('')}</div>` +
+    (fin.length ? `<div class="ov-title">Projetos finalizados</div><div class="ov-grid">${fin.map(card).join('')}</div>` : '');
+  document.querySelectorAll('.ov-card').forEach(el=>el.addEventListener('click', ()=>{ location.hash = '#/p/'+el.dataset.key; window.scrollTo(0,0); }));
+}
+
+// ================= ABA DE UM PROJETO =================
+const FILTROS = [['all','Todas'],['atrasada','Atrasadas'],['pendente','Pendentes hoje'],['sem_planejamento','Sem data'],['aberta','Em aberto'],['shipped','Concluídas']];
+function passaFiltro(a){
+  if(activeFilter==='all') return true;
+  if(activeFilter==='shipped') return a.status==='shipped';
+  if(activeFilter==='aberta') return !encerrada(a);
+  return ativDueState(a)===activeFilter;
+}
+function buildChips(){
+  const el = document.getElementById('filterChips');
+  el.innerHTML = FILTROS.map(([k,l])=>`<div class="chip${k===activeFilter?' active':''}" data-k="${k}">${l}</div>`).join('');
+  el.querySelectorAll('.chip').forEach(c=>c.addEventListener('click', ()=>{ activeFilter = c.dataset.k; buildChips(); renderFases(); }));
+}
+
+function ativRow(a){
+  const estado = ativDueState(a);
+  const od = estado==='atrasada', pend = estado==='pendente', semData = estado==='sem_planejamento', done = a.status==='shipped', canc = a.status==='cancelled';
+  const cor = od?'var(--red)':(pend||semData)?'var(--amber)':sm(a.status).color;
+  const label = od?'ATRASADA':pend?'PENDENTE':semData?'PENDENTE PLANEJAMENTO':sm(a.status).label;
+  const dataOriginal = (a.original_due != null) ? a.original_due : a.due;
+  const dataAtualizada = (a.nova_previsao != null) ? a.nova_previsao : a.due;
+  const dataMudou = dataOriginal != null && dataAtualizada != null && dataAtualizada !== dataOriginal;
+  const dias = od ? diasDeAtraso(a) : 0;
+  const ind = a.depth ? `<span class="ind">${'↳'.repeat(Math.min(a.depth,3))}</span>` : '';
+  return `<div class="ativ-row${od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}${canc?' cancelada':''}">`
+    + `<span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${ind}${esc(a.n)}</span>`
+    + (a.assignee && a.assignee!=='—' ? `<span class="ativ-who" title="${esc(a.assignee)}">${esc(a.assignee)}</span>` : '')
+    + (dataOriginal ? `<span class="ativ-due">${fmtDate(dataOriginal)}</span>` : (semData ? `<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>` : ''))
+    + (dataMudou ? `<span class="ativ-due-new" title="${a.nova_previsao!=null?'Nova previsão (campo do ClickUp)':'Nova data no ClickUp'}">→ ${fmtDate(dataAtualizada)}</span>` : '')
+    + (od ? `<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>` : '')
+    + `<span class="ativ-status">${label}</span>`
+    + (a.id ? `<a class="ativ-link" href="https://app.clickup.com/t/${esc(a.id)}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>` : '')
+    + `</div>`;
+}
+
+function renderFases(){
+  const p = PROJETOS.find(x=>x.key===activeTab);
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const out = [];
+  p.fases.forEach((f, i)=>{
+    const faseMatchQ = !q || f.n.toLowerCase().includes(q);
+    const ativ = (f.ativ||[]).filter(a=>passaFiltro(a) && (faseMatchQ || a.n.toLowerCase().includes(q)));
+    if(!ativ.length && (activeFilter!=='all' || !faseMatchQ)) return;
+    const c = contarAtiv(f.ativ||[]);
+    const pct = Math.round(faseProgress(f)*100);
+    const fkey = f.id || ('v'+i);
+    const aberto = openFases.has(fkey) || activeFilter!=='all' || !!q;
+    out.push(`<div class="fcard${alarmClass(c)}${aberto?' open':''}" data-f="${esc(fkey)}">
+      <div class="fhead">
+        <div class="fidx">${f.virtual?'AVUL':'FASE'}<b>${String(i+1).padStart(2,'0')}</b></div>
+        <div class="fname"><div class="n1">${esc(f.n)}</div>
+          <div class="n2"><span>${c.concluida}/${c.total} atividade(s)${c.cancelada?` · ${c.cancelada} cancelada(s)`:''}${f.assignee&&f.assignee!=='—'?' · '+esc(f.assignee):''}${f.due?' · prazo '+fmtDate(f.due):''}</span>${alarmPills(c)}</div></div>
+        ${f.virtual?'<span></span>':badge(f.status)}
+        <div class="meta-bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-pct">${pct}%</div></div>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="fbody">
+        ${f.id?`<div style="margin-top:12px;"><a class="fase-link" style="display:inline-flex; gap:6px; align-items:center; font-family:var(--mono); font-size:11px; text-decoration:none;" href="https://app.clickup.com/t/${esc(f.id)}" target="_blank">Abrir fase no ClickUp ↗</a></div>`:''}
+        <div class="ativ-list" style="display:flex">${ativ.length ? ativ.map(ativRow).join('') : '<span class="empty-msg">Nenhuma atividade.</span>'}</div>
+      </div>
+    </div>`);
+  });
+  document.getElementById('content').innerHTML = `<div class="fases">${out.length ? out.join('') : '<div class="empty-msg">Nenhuma fase ou atividade encontrada com esse filtro.</div>'}</div>`;
+  document.querySelectorAll('.fcard .fhead').forEach(h=>h.addEventListener('click', ()=>{
+    const card = h.parentElement, k = card.dataset.f;
+    card.classList.toggle('open');
+    card.classList.contains('open') ? openFases.add(k) : openFases.delete(k);
+  }));
+}
+
+function renderProjeto(p){
+  document.getElementById('panel').style.setProperty('--panel-active', projColor(p));
+  document.getElementById('heroEyebrow').textContent = 'Controle de atividades · ' + (p.finalizado ? 'Projeto finalizado' : 'Projeto em andamento');
+  document.getElementById('heroTitle').innerHTML = `<span>${esc(p.nome)}</span>${p.finalizado?'<span class="done-flag">Finalizado</span>':''}`;
+  document.getElementById('heroDesc').innerHTML = `${esc(p.descricao)} · ${p.fases.filter(f=>!f.virtual).length} fase(s) · <a href="${esc(p.url)}" target="_blank">abrir lista no ClickUp ↗</a>`;
+  setRing(Math.round(projProgress(p)*100));
+  document.getElementById('kpiStrip').innerHTML = kpiHtml(contarAtiv(todasAtiv(p)), 'Total de atividades');
+  document.getElementById('controls').style.display = '';
+  buildChips();
+  if(!p.fases.length){
+    document.getElementById('content').innerHTML = `<div class="fases"><div class="empty-msg">Este projeto ainda não tem tarefas na lista do ClickUp.</div></div>`;
+    return;
+  }
+  renderFases();
+}
+
+document.getElementById('searchInput').addEventListener('input', ()=>{ if(activeTab!=='geral') renderFases(); });
+
+function checkRoute(){
+  const m = location.hash.match(/^#\/p\/([\w-]+)$/);
+  selectTab(m ? m[1] : 'geral');
+}
+buildTabs();
+window.addEventListener('hashchange', checkRoute);
+checkRoute();
+
+// datas no topo
+const now = new Date();
+document.getElementById('tb-date').textContent = now.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+if(PROJETOS_DATA.last_sync_utc){
+  const f = new Date(PROJETOS_DATA.last_sync_utc).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo', day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'});
+  document.getElementById('tb-gen').textContent = 'Atualizado em ' + f + ' (horário de Brasília)';
+}
+
+/*__LOGIN_SCRIPT__*/
+</script>
+</body>
+</html>

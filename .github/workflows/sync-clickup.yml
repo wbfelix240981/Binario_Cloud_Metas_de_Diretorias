@@ -9,6 +9,13 @@ on:
     - cron: '0,30 0 * * *'      # 21:00 e 21:30 BRT
     - cron: '0 1 * * *'         # 22:00 BRT
   workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
+  push:
+    branches: [main]
+    paths:
+      - 'automation/projetos_config.json'
+      - 'automation/template_projetos.html'
+      - 'automation/sync_projetos.py'
+      - 'automation/build_projetos.js'
 
 # Evita duas sincronizações ao mesmo tempo (disputa no git push)
 concurrency:
@@ -41,11 +48,24 @@ jobs:
           node automation/build.js
           cp publish_out/index.html index.html
 
+      # Painel de Projetos (projetos.html) — isolado: se falhar, o painel de metas segue normalmente
+      - name: Sincronizar projetos com ClickUp
+        continue-on-error: true
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+        run: python3 automation/sync_projetos.py
+
+      - name: Reconstruir projetos.html
+        continue-on-error: true
+        run: |
+          node automation/build_projetos.js
+          cp publish_out/projetos.html projetos.html
+
       - name: Commit e push (se algo mudou)
         run: |
           git config user.name "ClickUp Sync Bot"
           git config user.email "actions@github.com"
-          git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json automation/sync_errors.log
+          git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json automation/sync_errors.log projetos.html automation/projetos.json
           git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp"
           git pull --rebase origin main || true
           git push
