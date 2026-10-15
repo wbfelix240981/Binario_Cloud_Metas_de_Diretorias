@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos · Binário Cloud</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAAEOUlEQVR4nKWYa2hURxTH/+dyS8zGmM3dxEQCiVITJaa29oNWUSyWUkF8VIgNyiqoqKjER6vYVlpL1dqWBEXEBygiWBTrC+uLJYIKQf2QDyKiaR4YjclGJQpCSYI7/bB37zzuzL48cPfOzD0z57dnzpm5cynglDGAQHDFK4hChvYMhHk/RgXbAyGmkOgAsiVibleSmmQ4gs11BEVSjZKGJRWYYIipuno422dAZ1DtmJaQpsiSwtm8gzxFObuva03Env+LoQP1GTAxwUmqh2U4WwbRTYcydm6+BG0WkxeEZ5I9BlsPksSInaOJKZ2QbFcHobTZGYGohgAMHzEcZaNGoSA/H73RKHqiLzA0OCioMn8/r0nOYFvWU7ykExbzihvWrsSun7+XHkf7XuDEqbM4efpvtLV36qeJBA8JYBbPoDRAACDGACLs/eNXHwgAlIwsxpb6NWiO/IOG3TswrqoyPq0kZirxyysSLD0IAbF3ehiLMGZ0OVYuW5yUORAYhtXLwzh2sBGlJSP5uEQKHAezeHcBhIB3LU16K0NDqKtdkBRElI9rqnH0QANy83Lh97oMZvkU3Gpk7Sw4nfd8Hor1tgMAeqN9aQPNnD4VR/b9KRgQL26Y8oormOoVgPA2Gjf6pKsbXc+eSYPPXhiWwAGgdsEcbN20DtVVY41QX86vQ/PdFrebkGUUr1qStia1K8rLMGPaFO+S/pzwD89cuILwqno8bG0zwsyb85WXQAwEpqS6JmZ8PAbxKz163I6dv+8z9vji8xngcQIXjEP5YyYtGgVcyJCLVyO43XxP26u6aixyhn0gdpSguGey2ZmJB6EpLFUpDAbVQTwoy6edLg/JEIlISP42BwSDBYa9jTQwKSQQCGhaNfuPQZyCEa4a+aCsdAYQpSjkKG8a4k6cepy+l6+U9zdey9gzRSEn1UwklafdPQBPag7EY0Z8X00+WF4gF6UlRVmBtHd2YXCAv17IfpRihgGIIRGEp85eNA46+dNJABiYRB4vT5o4AdOnTdb2a+voUPTjq0yibEnPhEqk6aYRZu+eHfjko2pfe2lJMX74dr2x3+lzl7Tt3pIg7U3CWhMsLMT9O01wfOsClyPHT+L85WsAgPGVlVixtA4146u0ug8eteKzWXO1z7wU8MO4BSJs37YZ2zauM8JkIj/91ojG/Ye1EAmxzE8Zdu5pxKGjJ94b5Nyla2jYf1haFnV5omSTcHeL3/34C/46c/69QMKrNyTRYACLX5RXXM68nVQ6SSSmLn7fumk9lixaiA/HVGQGsir9Ax+H4RRGIACo/Xo+loe/gRNyEAoGEXKC+G9gAP39b9D/+jWePO1G5MZNXL9xC897ommDxGGKypnxdCABGXTcOpOrWYnNwABGIO+TiHCwYoD3qUQs+06GyvLOSBugKWH4AMLYWiC4BzLxc4ayW3tNLCvn/A83iy8+3r4GUwAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080b10; --bg2:#0f1520; --panel:#141c29; --panel-hi:#1b2534; --border:#2a374a; --border-hi:#3c4f68;
+    --text:#f3f6fa; --text-dim:#c3cee0; --text-mute:#8a9ab0;
+    --cyan:#2dd9f5; --cyan-dim:#0d3d49;
+    --green:#4ade9c; --green-dim:#123527;
+    --blue:#4cc3fb; --blue-dim:#10324a;
+    --amber:#ffc65c; --amber-dim:#3a2907;
+    --violet:#b79bfb; --violet-dim:#2a2148;
+    --orange:#ff9052; --orange-dim:#3a2110;
+    --teal:#2dd4bf; --teal-dim:#0f3733;
+    --slate:#8695a8; --slate-dim:#212c3b;
+    --red:#ff8585;
+    --mono:'JetBrains Mono',monospace; --disp:'Space Grotesk',sans-serif; --body:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; color-scheme:dark;}
+  html, body{background:#0a0e14 !important;}
+  html,body{overflow-x:hidden; max-width:100%;}
+  body{
+    margin:0;
+    background-color:#0a0e14 !important;
+    background-image:
+      radial-gradient(1100px 600px at 85% -10%, #0e2733 0%, transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, #171029 0%, transparent 55%);
+    background-repeat:no-repeat;
+    min-height:100vh;
+    color:var(--text); font-family:var(--body); -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--cyan); color:#03181c;}
+
+  /* Topbar */
+  .topbar{
+    position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px; background:rgba(10,14,20,.82); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);
+  }
+  .tb-left{display:flex; align-items:center; gap:10px;}
+  .tb-mark{height:34px; display:flex; align-items:center; justify-content:center;}
+  .tb-mark img{height:100%; width:auto; object-fit:contain; display:block; border-radius:6px;}
+  .tb-title{font-family:var(--mono); font-size:13px; color:var(--text-dim); letter-spacing:.03em;}
+  .tb-title b{color:var(--text); font-weight:600;}
+  .tb-right{display:flex; flex-direction:column; align-items:flex-end; gap:3px; font-family:var(--mono); font-size:12px; color:var(--text-mute);}
+  .tb-right-top{display:flex; align-items:center; gap:18px;}
+  .tb-right-sub{font-size:10.5px; color:var(--text-mute); opacity:.75;}
+  .tb-live{display:flex; align-items:center; gap:6px;}
+  .tb-logoff{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; color:var(--text-dim); background:transparent; border:1px solid var(--border-hi); border-radius:999px; padding:4px 12px; cursor:pointer; transition:.15s;}
+  .tb-logoff:hover{color:var(--red); border-color:var(--red);}
+  .dot-live{width:6px; height:6px; border-radius:50%; background:var(--green); box-shadow:0 0 0 3px var(--green-dim); animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+
+  /* Hero */
+  .hero{padding:64px 28px 40px; max-width:1180px; margin:0 auto;}
+  .hero-eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan); margin-bottom:14px; display:flex; align-items:center; gap:10px;}
+  .hero-eyebrow::before{content:''; width:22px; height:1px; background:var(--cyan);}
+  .hero-grid{display:grid; grid-template-columns:1.3fr .8fr; gap:40px; align-items:end;}
+  .hero-title{font-family:var(--disp); font-weight:600; font-size:clamp(30px,4.2vw,50px); line-height:1.08; margin:0 0 16px; letter-spacing:-.01em;}
+  .hero-title span{color:var(--cyan);}
+  .hero-sub{color:var(--text-dim); font-size:15px; line-height:1.6; max-width:52ch; margin:0;}
+
+  .ring-card{
+    background:linear-gradient(180deg,var(--panel-hi),var(--panel)); border:1px solid var(--border-hi); border-radius:18px;
+    padding:22px; display:flex; align-items:center; justify-content:center; gap:20px;
+  }
+  .ring-wrap{position:relative; width:132px; height:132px; flex:none;}
+  .ring-wrap svg{transform:rotate(-90deg); width:132px; height:132px;}
+  .ring-bg{fill:none; stroke:var(--border); stroke-width:9;}
+  .ring-fg{fill:none; stroke:var(--cyan); stroke-width:9; stroke-linecap:round; transition:stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1);}
+  .ring-num{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; flex-direction:column;}
+  .ring-num b{font-family:var(--disp); font-size:30px; font-weight:700;}
+  .ring-num small{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.08em;}
+
+  /* KPI strip */
+  .kpis{max-width:1180px; margin:0 auto; padding:0 28px 36px; display:grid; grid-template-columns:repeat(5,1fr); gap:12px;}
+  .kpi{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px;}
+  .kpi .k-num{font-family:var(--disp); font-size:26px; font-weight:700;}
+  .kpi .k-label{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.06em; margin-top:2px;}
+  .kpi.c-shipped .k-num{color:var(--green);}
+  .kpi.c-progress .k-num{color:var(--blue);}
+  .kpi.c-planning .k-num{color:var(--violet);}
+  .kpi.c-backlog .k-num{color:var(--slate);}
+  .kpi.kpi-muted{background:transparent; border-style:dashed;}
+  .kpi.kpi-muted .k-num{color:var(--text-mute); font-size:20px;}
+
+  /* Controls */
+  .controls{max-width:1180px; margin:0 auto; padding:0 28px 20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;}
+  .search{position:relative; flex:1; min-width:220px; max-width:340px;}
+  .search input{
+    width:100%; background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:10px 12px 10px 34px;
+    color:var(--text); font-family:var(--body); font-size:13.5px; outline:none; transition:border-color .15s;
+    -webkit-appearance:none; appearance:none; -webkit-text-fill-color:var(--text); caret-color:var(--cyan);
+  }
+  .search input::placeholder{color:var(--text-mute); opacity:1;}
+  .search input:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 1000px var(--panel) inset; -webkit-text-fill-color:var(--text);
+  }
+  .search input:focus{border-color:var(--cyan);}
+  .search svg{position:absolute; left:11px; top:50%; transform:translateY(-50%); color:var(--text-mute);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-family:var(--mono); font-size:11px; padding:6px 12px; border-radius:999px; border:1px solid var(--border);
+    background:var(--panel); color:var(--text-dim); cursor:pointer; user-select:none; transition:.15s;
+  }
+  .chip:hover{border-color:var(--border-hi); color:var(--text);}
+  .chip.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+
+  /* Metas list */
+  .metas{max-width:1180px; margin:0 auto; padding:0 28px 60px; display:flex; flex-direction:column; gap:14px;}
+  .meta-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; transition:border-color .15s;}
+  .meta-card.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .meta-card.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
+  .overdue-pill{
+    font-family:var(--mono); font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em;
+    color:#ffb3b3; background:rgba(255,90,90,.14); border:1px solid #5c1f1f; border-radius:999px;
+    padding:2px 9px; white-space:nowrap;
+  }
+  .meta-card:hover{border-color:var(--border-hi);}
+  .meta-head{display:grid; grid-template-columns:56px 1fr auto 190px 30px; align-items:center; gap:16px; padding:16px 18px; cursor:pointer;}
+  .meta-card-link{cursor:pointer; transition:border-color .15s, transform .15s;}
+  .meta-card-link:hover{border-color:var(--cyan); transform:translateY(-1px);}
+  .meta-card-link:hover .chev-open{color:var(--cyan); transform:translateX(3px);}
+  .chev-open{transition:transform .15s, color .15s; color:var(--text-mute);}
+  .meta-num{font-family:var(--mono); font-size:11px; color:var(--text-mute);}
+  .meta-num b{display:block; font-family:var(--disp); font-size:20px; color:var(--cyan); font-weight:700;}
+  .meta-name{min-width:0;}
+  .meta-name .n1{font-family:var(--disp); font-weight:600; font-size:15.5px; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .meta-name .n2{font-family:var(--mono); font-size:11px; color:var(--text-mute); margin-top:3px; display:flex; gap:6px; flex-wrap:wrap;}
+  .tag{padding:2px 7px; border-radius:5px; font-size:9.5px; text-transform:uppercase; letter-spacing:.03em; background:var(--panel-hi); border:1px solid var(--border-hi); color:var(--text-dim);}
+  .badge{font-family:var(--mono); font-size:10.5px; font-weight:600; padding:5px 10px; border-radius:7px; white-space:nowrap; text-transform:uppercase; letter-spacing:.02em; text-align:center;}
+  .b-shipped{color:var(--green); background:var(--green-dim); border:1px solid #14523f;}
+  .b-progress{color:var(--blue); background:var(--blue-dim); border:1px solid #0f4560;}
+  .b-review{color:var(--orange); background:var(--orange-dim); border:1px solid #5c3419;}
+  .b-test{color:var(--violet); background:var(--violet-dim); border:1px solid #3d2f66;}
+  .b-planning{color:var(--amber); background:var(--amber-dim); border:1px solid #5c4110;}
+  .b-backlog{color:var(--slate); background:var(--slate-dim); border:1px solid #2a3444;}
+
+  .meta-bar{display:flex; align-items:center; gap:10px;}
+  .bar-track{flex:1; height:6px; border-radius:99px; background:var(--border); overflow:hidden;}
+  .bar-fill{height:100%; border-radius:99px; background:linear-gradient(90deg,var(--cyan),var(--green));}
+  .bar-pct{font-family:var(--mono); font-size:11.5px; color:var(--text-dim); width:36px; text-align:right;}
+
+  .chev{color:var(--text-mute); transition:transform .2s;}
+  .meta-card.open .chev{transform:rotate(180deg);}
+
+  .meta-body{max-height:0; overflow:hidden; transition:max-height .3s ease;}
+  .meta-body-in{padding:0 18px 20px; border-top:1px solid var(--border);}
+  .meta-detail{
+    font-family:var(--mono); font-size:12px; color:var(--text-dim); line-height:1.7; background:var(--bg2);
+    border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:16px 0; white-space:pre-wrap;
+  }
+  .meta-detail b{color:var(--cyan);}
+  .meta-toggle-detail{
+    font-family:var(--mono); font-size:10.5px; color:var(--text-mute); cursor:pointer; margin-top:14px; display:inline-flex;
+    align-items:center; gap:5px; text-transform:uppercase; letter-spacing:.05em;
+  }
+  .meta-toggle-detail:hover{color:var(--cyan);}
+
+  .fases-label{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); text-transform:uppercase; letter-spacing:.07em; margin:16px 0 8px;}
+  .fase-row{display:grid; grid-template-columns:26px 1fr auto 150px 16px auto; align-items:center; gap:12px; padding:10px 12px; border-radius:10px; background:var(--bg2); border:1px solid var(--border); margin-bottom:0; transition:border-color .15s;}
+  .fase-wrap{margin-bottom:7px;}
+  .fase-row:hover{border-color:var(--border-hi);}
+  .fase-idx{font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+  .fase-name{font-size:13px; color:var(--text);}
+  .fase-name small{display:block; font-family:var(--mono); font-size:10.5px; color:var(--text-mute); margin-top:2px;}
+  .fase-assignee{font-family:var(--mono); font-size:11px; color:var(--text-mute); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .fase-link{color:var(--text-mute); display:flex;}
+  .fase-link:hover{color:var(--cyan);}
+  .fase-row.has-ativ{cursor:pointer;}
+  .fase-row.has-ativ:hover{border-color:var(--cyan);}
+  .ativ-chev{color:var(--text-mute); transition:transform .2s; flex:none;}
+  .fase-wrap.open .ativ-chev{transform:rotate(180deg); color:var(--cyan);}
+  .ativ-list{margin:2px 0 10px 38px; padding:4px 0 4px 14px; border-left:2px solid var(--border-hi); display:flex; flex-direction:column; gap:6px;}
+  .ativ-row{display:flex; align-items:center; gap:9px; font-size:12px; color:var(--text-dim); padding:2px 0;}
+  .ativ-dot{width:7px; height:7px; border-radius:50%; flex:none;}
+  .ativ-name{flex:1; min-width:0;}
+  .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
+  .ativ-due-new{font-family:var(--mono); font-size:10px; color:var(--cyan); white-space:nowrap; font-weight:600;}
+  .ativ-dias-atraso{font-family:var(--mono); font-size:8.5px; color:var(--red); white-space:nowrap; font-weight:700; background:rgba(255,90,90,.14); border:1px solid #5c1f1f; border-radius:999px; padding:1px 7px;}
+  .ativ-status{font-family:var(--mono); font-size:10px; color:var(--text-mute); text-transform:uppercase; white-space:nowrap;}
+  .ativ-link{color:var(--text-mute); display:flex; align-items:center; opacity:.6; transition:.15s; flex:none; margin-left:4px;}
+  .ativ-link:hover{color:var(--cyan); opacity:1;}
+  @keyframes blinkRed{0%,100%{background:rgba(255,90,90,.10); box-shadow:0 0 0 rgba(255,90,90,0);}50%{background:rgba(255,60,60,.35); box-shadow:0 0 10px rgba(255,60,60,.35);}}
+  @keyframes blinkAmber{0%,100%{background:rgba(255,198,92,.10); box-shadow:0 0 0 rgba(255,198,92,0);}50%{background:rgba(255,198,92,.35); box-shadow:0 0 10px rgba(255,198,92,.35);}}
+  .ativ-row.atrasada{animation:blinkRed 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
+  .ativ-row.atrasada .ativ-dot{animation:blinkRed 1.1s ease-in-out infinite; background:var(--red) !important;}
+  .ativ-row.atrasada .ativ-name{color:#ffb3b3; font-weight:600;}
+  .ativ-row.atrasada .ativ-status{color:#ffb3b3; font-weight:700;}
+  .ativ-row.pendente{animation:blinkAmber 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
+  .ativ-row.pendente .ativ-dot{animation:blinkAmber 1.1s ease-in-out infinite; background:var(--amber) !important;}
+  .ativ-row.pendente .ativ-name{color:var(--amber); font-weight:600;}
+  .ativ-row.pendente .ativ-status{color:var(--amber); font-weight:700;}
+  .ativ-row.concluida .ativ-name{color:var(--green); font-weight:600;}
+  .ativ-row.concluida .ativ-status{color:var(--green); font-weight:700;}
+
+  .crit-section{max-width:1180px; margin:0 auto; padding:0 28px 70px;}
+  .crit-title{font-family:var(--disp); font-size:20px; font-weight:600; margin:0 0 6px;}
+  .crit-sub{font-family:var(--mono); font-size:12px; color:var(--text-mute); margin:0 0 20px;}
+  .crit-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .crit-card{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 20px;}
+  .crit-card h4{font-family:var(--disp); font-size:14.5px; margin:0 0 12px; display:flex; align-items:center; gap:8px;}
+  .crit-card h4 .sw{width:8px; height:8px; border-radius:2px;}
+  .crit-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px;}
+  .crit-list li{display:flex; align-items:flex-start; gap:9px; font-size:12.5px; color:var(--text-dim); line-height:1.5;}
+  .crit-list li .cb{width:14px; height:14px; border-radius:4px; border:1.5px solid var(--slate); flex:none; margin-top:2px;}
+
+  footer{max-width:1180px; margin:0 auto; padding:24px 28px 50px; border-top:1px solid var(--border); font-family:var(--mono); font-size:11px; color:var(--text-mute); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+  footer a{color:var(--text-mute);}
+
+  @media (max-width:900px){
+    .hero{padding:48px 20px 28px;}
+    .hero-grid{grid-template-columns:1fr; gap:26px;}
+    .ring-card{padding:18px;}
+    .kpis{grid-template-columns:repeat(2,1fr); padding:0 20px 28px;}
+    .controls{padding:0 20px 16px;}
+    .crit-section{padding:0 20px 50px;}
+    .metas{padding:0 20px 50px;}
+  }
+
+  @media (max-width:640px){
+    .topbar{padding:12px 16px;}
+    .tb-title{font-size:11.5px;}
+    .tb-right{gap:10px; font-size:10.5px;}
+    .tb-right #tb-date{display:none;}
+
+    .hero{padding:36px 16px 24px;}
+    .hero-eyebrow{font-size:10.5px; margin-bottom:10px;}
+    .hero-sub{font-size:13.5px;}
+    .ring-card{flex-direction:column; align-items:flex-start; gap:16px;}
+    .ring-wrap{width:96px; height:96px;}
+    .ring-wrap svg{width:96px; height:96px;}
+
+    .kpis{grid-template-columns:repeat(2,1fr); gap:10px; padding:0 16px 24px;}
+    .kpi{padding:12px 14px;}
+    .kpi .k-num{font-size:21px;}
+
+    .controls{flex-direction:column; align-items:stretch; padding:0 16px 16px; gap:12px;}
+    .search{max-width:none;}
+    .chips{gap:6px;}
+    .chip{font-size:10.5px; padding:7px 11px;}
+
+    .metas{padding:0 16px 50px; gap:10px;}
+    .meta-card{border-radius:14px;}
+    .meta-head{
+      grid-template-columns:1fr auto; column-gap:10px; row-gap:8px; padding:14px;
+    }
+    .meta-num{grid-column:1; order:1;}
+    .meta-name{grid-column:1/-1; order:2;}
+    .meta-head > .badge{order:3; justify-self:start;}
+    .meta-bar{grid-column:1/-1; order:4;}
+    .chev{order:3; justify-self:end; align-self:start;}
+    .meta-openpage{display:none !important;}
+    .meta-name .n1{white-space:normal; font-size:14.5px;}
+
+    .meta-body-in{padding:0 14px 16px;}
+    .fases-label{font-size:10px; line-height:1.5;}
+    .fase-row{
+      grid-template-columns:1fr auto; row-gap:6px; padding:11px;
+    }
+    .fase-idx{display:none;}
+    .fase-name{grid-column:1/-1; order:1;}
+    .fase-assignee{order:2; font-size:10.5px;}
+    .fase-row .badge{order:3;}
+    .ativ-chev{order:4;}
+    .fase-link{order:5; justify-self:end;}
+    .ativ-list{margin-left:0;}
+
+    .crit-section{padding:0 16px 50px;}
+    .crit-title{font-size:17px;}
+    .crit-grid{grid-template-columns:1fr; gap:10px;}
+    .crit-card{padding:15px 16px;}
+
+    footer{padding:20px 16px 40px; flex-direction:column;}
+  }
+
+  .page-nav{max-width:1180px; margin:14px auto 0; padding:0 28px; display:flex; gap:10px;}
+  .page-nav a{font-family:var(--mono); font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--border); background:var(--panel); color:var(--text-dim); text-decoration:none; transition:.15s;}
+  .page-nav a:hover{border-color:var(--border-hi); color:var(--text);}
+  .page-nav a.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+  @media (max-width:640px){.page-nav{padding:0 16px; margin-top:10px;}}
+  .b-blocked{color:var(--red); background:rgba(255,90,90,.12); border:1px solid #5c1f1f;}
+
+  /* ===== Folder tabs (duas diretorias sobrepostas, como no rascunho) ===== */
+  .folder-outer{max-width:1180px; margin:30px auto 0; padding:0 28px;}
+  .folder-tabs{display:flex; align-items:flex-end; position:relative; z-index:2;}
+  .folder-tab{
+    --tc:var(--cyan); --tc-dim:var(--cyan-dim);
+    position:relative; cursor:pointer; user-select:none;
+    padding:14px 22px 15px; margin-right:6px;
+    border:2px solid var(--tc); border-bottom:none;
+    border-radius:16px 16px 0 0;
+    background:linear-gradient(180deg, var(--panel-hi), var(--panel));
+    color:var(--text-dim);
+    font-family:var(--mono); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+    display:flex; align-items:center; gap:9px;
+    transition:transform .22s ease, opacity .22s ease, color .2s ease, box-shadow .2s ease;
+    z-index:1; opacity:.6; transform:translateY(6px);
+  }
+  .folder-tab:last-child{margin-right:0;}
+  .folder-tab .f-dot{width:8px; height:8px; border-radius:50%; background:var(--tc); flex:none; box-shadow:0 0 0 3px var(--tc-dim);}
+  .folder-tab .f-name{color:var(--text); font-family:var(--disp); font-size:13.5px; text-transform:none; letter-spacing:0; font-weight:600; white-space:nowrap;}
+  .folder-tab .f-role{display:block; font-size:9.5px; color:var(--text-mute); font-weight:600; margin-top:1px; white-space:nowrap;}
+  .folder-tab:hover{opacity:.85;}
+  .folder-tab.active{
+    z-index:3; opacity:1; transform:translateY(0);
+    box-shadow:0 -10px 24px -10px var(--tc-dim);
+  }
+  .folder-panel{
+    position:relative; z-index:2;
+    border:2px solid var(--panel-active, var(--cyan));
+    border-radius:0 20px 20px 20px;
+    background:radial-gradient(1100px 500px at 90% -10%, rgba(45,217,245,.07) 0%, transparent 60%), var(--bg2);
+    padding:8px 0 4px;
+    transition:border-color .25s ease;
+  }
+  .folder-panel .hero{padding-top:40px;}
+  @media (max-width:900px){
+    .folder-outer{padding:0 20px;}
+  }
+  @media (max-width:640px){
+    .folder-outer{padding:0 16px; margin-top:20px;}
+    .folder-tabs{flex-wrap:wrap; row-gap:6px;}
+    .folder-tab{padding:10px 13px 11px; margin-right:5px; border-radius:12px 12px 0 0;}
+    .folder-tab .f-role{display:none;}
+    .folder-tab .f-name{font-size:12px;}
+    .folder-panel{border-radius:0 14px 14px 14px;}
+  }
+
+  /* ===== Botão "abrir página da meta" no card ===== */
+  .meta-openpage{
+    display:flex; align-items:center; justify-content:center; flex:none;
+    width:30px; height:30px; border-radius:9px; color:var(--text-mute);
+    border:1px solid var(--border); background:var(--panel-hi); text-decoration:none;
+    transition:.15s;
+  }
+  .meta-openpage:hover{color:var(--cyan); border-color:var(--cyan); background:var(--panel);}
+
+  /* ===== Página de detalhe de uma meta ===== */
+  .detail-outer{max-width:1180px; margin:30px auto; padding:0 28px 60px;}
+  .detail-back{
+    display:inline-flex; align-items:center; gap:7px; font-family:var(--mono); font-size:12.5px; font-weight:600;
+    color:var(--text-dim); text-decoration:none; margin-bottom:18px; transition:.15s;
+  }
+  .detail-back:hover{color:var(--cyan);}
+  .detail-panel{
+    border:2px solid var(--detail-color, var(--cyan)); border-radius:20px;
+    background:radial-gradient(1100px 500px at 90% -10%, rgba(45,217,245,.07) 0%, transparent 60%), var(--bg2);
+    padding:36px 36px 44px;
+  }
+  .detail-eyebrow{font-family:var(--mono); font-size:12px; color:var(--detail-color, var(--cyan)); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px;}
+  .detail-top{display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap; margin-bottom:22px;}
+  .detail-title{font-family:var(--disp); font-weight:700; font-size:clamp(24px,3.2vw,36px); line-height:1.15; margin:0 0 12px;}
+  .detail-tags{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:6px;}
+  .detail-meta-row{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); margin-top:10px;}
+  .detail-ring-box{display:flex; flex-direction:column; align-items:center; gap:8px; flex:none;}
+  .detail-progress-bar{max-width:1180px; margin:0 0 30px;}
+  .detail-fases-title{font-family:var(--disp); font-weight:600; font-size:17px; margin:0 0 14px;}
+  .detail-text{
+    font-size:13.5px; line-height:1.7; color:var(--text-dim); white-space:pre-line;
+    background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 20px; margin-top:26px;
+  }
+  .detail-text h4{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-mute); margin:0 0 10px;}
+  @media (max-width:640px){
+    .detail-outer{padding:0 16px 40px; margin-top:20px;}
+    .detail-panel{padding:22px 18px 30px; border-radius:16px;}
+  }
+
+  /* ===== RoadMap board (Kanban) ===== */
+  .board{
+    display:grid; grid-auto-flow:column; grid-auto-columns:270px;
+    gap:14px; overflow-x:auto; padding:4px 28px 26px;
+    max-width:1180px; margin:0 auto;
+    scrollbar-width:thin; scrollbar-color:var(--border-hi) transparent;
+  }
+  .board::-webkit-scrollbar{height:8px;}
+  .board::-webkit-scrollbar-thumb{background:var(--border-hi); border-radius:8px;}
+  .board-col{
+    background:var(--panel); border:1px solid var(--border); border-radius:14px;
+    display:flex; flex-direction:column; min-height:80px; max-height:640px;
+  }
+  .board-col-head{
+    display:flex; align-items:center; gap:8px; padding:13px 14px 11px;
+    border-bottom:1px solid var(--border); font-family:var(--mono); font-size:11.5px;
+    font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--text-dim);
+    position:sticky; top:0; background:var(--panel); border-radius:14px 14px 0 0;
+  }
+  .board-col-head .bc-dot{width:8px; height:8px; border-radius:50%; flex:none;}
+  .board-col-head .bc-count{margin-left:auto; background:var(--panel-hi); color:var(--text-mute); border-radius:999px; padding:1px 8px; font-size:10.5px;}
+  .board-col-body{padding:10px; display:flex; flex-direction:column; gap:9px; overflow-y:auto;}
+  .board-card{
+    background:var(--panel-hi); border:1px solid var(--border); border-radius:11px;
+    padding:11px 12px; transition:.15s; position:relative;
+  }
+  .board-card:hover{border-color:var(--border-hi); transform:translateY(-1px);}
+  .board-card .bc-name{font-family:var(--body); font-size:12.5px; color:var(--text); line-height:1.42; margin-bottom:9px;}
+  .board-card .bc-foot{display:flex; align-items:center; justify-content:space-between; gap:8px;}
+  .board-card .bc-avatars{display:flex;}
+  .board-card .bc-av{
+    width:20px; height:20px; border-radius:50%; background:var(--panel); border:2px solid var(--panel-hi);
+    display:flex; align-items:center; justify-content:center; font-size:8.5px; font-weight:700; color:var(--text);
+    margin-left:-6px; flex:none;
+  }
+  .board-card .bc-av:first-child{margin-left:0;}
+  .board-card a.bc-link{color:var(--text-mute); display:flex; opacity:.7; transition:.15s;}
+  .board-card a.bc-link:hover{color:var(--text); opacity:1;}
+  .board-empty{padding:22px 12px; text-align:center; color:var(--text-mute); font-size:11.5px; font-family:var(--mono);}
+  @media (max-width:640px){
+    .board{padding:4px 16px 20px; grid-auto-columns:230px;}
+  }
+
+  /* ===== Tela de login (decorativa) ===== */
+  #loginScreen{
+    position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center;
+    background:#0a0e14; background-image:
+      radial-gradient(1200px 600px at 15% -10%, rgba(45,217,245,.08) 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(183,155,251,.07) 0%, transparent 55%);
+  }
+  .login-card{
+    width:min(380px, 90vw); padding:36px 32px 32px; border-radius:20px;
+    background:linear-gradient(180deg, var(--panel-hi), var(--panel)); border:1px solid var(--border-hi);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+  }
+  .login-title{font-family:var(--disp); font-weight:700; font-size:20px; text-align:center; margin:0 0 4px;}
+  .login-sub{font-family:var(--mono); font-size:11.5px; color:var(--text-mute); text-align:center; margin:0 0 26px;}
+  .login-field{margin-bottom:14px;}
+  .login-field label{display:block; font-family:var(--mono); font-size:10.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.05em; margin-bottom:7px;}
+  .login-field input{
+    width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px; border:1px solid var(--border);
+    background:var(--bg2); color:var(--text); font-family:var(--body); font-size:14px; outline:none; transition:.15s;
+  }
+  .login-field input:focus{border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);}
+  .login-remember{display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11px; color:var(--text-dim); margin:2px 0 14px; cursor:pointer; user-select:none;}
+  .login-remember input{accent-color:var(--cyan); width:14px; height:14px; margin:0;}
+  .login-btn{
+    width:100%; padding:12px 14px; margin-top:6px; border-radius:10px; border:none; cursor:pointer;
+    background:var(--cyan); color:#03181c; font-family:var(--disp); font-weight:700; font-size:14px;
+    transition:.15s;
+  }
+  .login-btn:hover{filter:brightness(1.08);}
+  .login-error{
+    display:none; margin-top:14px; padding:9px 12px; border-radius:9px; background:rgba(255,90,90,.12);
+    border:1px solid #5c1f1f; color:#ffb3b3; font-family:var(--mono); font-size:11.5px; text-align:center;
+  }
+  .login-error.show{display:block; animation:loginShake .35s ease;}
+  @keyframes loginShake{
+    0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);}
+  }
+  .login-foot{margin-top:22px; text-align:center; font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+
+  /* ===================== PAINEL DE PROJETOS (extras) ===================== */
+  .pnav{display:flex; gap:6px; margin-left:14px;}
+  .pnav a{font-family:var(--mono); font-size:11px; padding:5px 12px; border-radius:999px; border:1px solid var(--border); color:var(--text-dim); text-decoration:none; transition:.15s; white-space:nowrap;}
+  .pnav a:hover{border-color:var(--border-hi); color:var(--text);}
+  .pnav a.active{background:var(--cyan); border-color:var(--cyan); color:#03181c; font-weight:600;}
+
+  .ptabs-wrap{max-width:1180px; margin:26px auto 0; padding:0 28px;}
+  .ptabs{display:flex; align-items:flex-end; gap:6px; overflow-x:auto; padding-top:8px; scrollbar-width:thin; scrollbar-color:var(--border-hi) transparent;}
+  .ptabs::-webkit-scrollbar{height:6px;}
+  .ptabs::-webkit-scrollbar-thumb{background:var(--border-hi); border-radius:6px;}
+  .ptab{
+    --tc:var(--cyan); position:relative; flex:none; cursor:pointer; user-select:none;
+    padding:11px 16px 12px; border:2px solid var(--border-hi); border-bottom:none; border-radius:14px 14px 0 0;
+    background:linear-gradient(180deg,var(--panel-hi),var(--panel)); opacity:.62; transform:translateY(5px);
+    transition:transform .2s, opacity .2s, border-color .2s; display:flex; align-items:center; gap:8px;
+  }
+  .ptab:hover{opacity:.9;}
+  .ptab.active{opacity:1; transform:translateY(0); border-color:var(--tc); z-index:3;}
+  .ptab .pt-name{font-family:var(--disp); font-size:13px; font-weight:600; color:var(--text); white-space:nowrap;}
+  .ptab .pt-sub{display:block; font-family:var(--mono); font-size:9.5px; color:var(--text-mute); white-space:nowrap; margin-top:1px;}
+  .ptab.done .pt-name{color:var(--text-dim);}
+  .ptab .pt-alarm{font-family:var(--mono); font-size:9.5px; font-weight:700; border-radius:999px; padding:1px 7px; line-height:1.5;}
+  .ptab .pt-alarm.red{color:#ffb3b3; background:rgba(255,90,90,.16); border:1px solid #5c1f1f;}
+  .ptab .pt-alarm.amber{color:var(--amber); background:rgba(255,198,92,.14); border:1px solid #5c4a1f;}
+  .ptab-sep{flex:none; align-self:center; font-family:var(--mono); font-size:9.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-mute); padding:0 6px 0 12px; border-left:1px solid var(--border-hi); margin-left:4px;}
+  .ppanel{border:2px solid var(--panel-active, var(--cyan)); border-radius:0 20px 20px 20px; background:radial-gradient(1100px 500px at 90% -10%, rgba(45,217,245,.07) 0%, transparent 60%), var(--bg2); padding:8px 0 4px; position:relative; z-index:2;}
+  .ppanel .hero{padding-top:36px;}
+  .hero-desc{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); margin-top:6px;}
+  .hero-desc a{color:var(--cyan); text-decoration:none;}
+  .done-flag{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--green); background:var(--green-dim); border:1px solid #14523f; border-radius:999px; padding:3px 10px; margin-left:8px; vertical-align:middle;}
+
+  .kpis.k7{grid-template-columns:repeat(7,1fr);}
+  .kpi.alarm-red{border-color:var(--red);} .kpi.alarm-red .k-num{color:var(--red);}
+  .kpi.alarm-amber{border-color:var(--amber);} .kpi.alarm-amber .k-num{color:var(--amber);}
+
+  .fases{max-width:1180px; margin:0 auto; padding:0 28px 50px; display:flex; flex-direction:column; gap:12px;}
+  .fcard{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; transition:border-color .15s;}
+  .fcard.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .fcard.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
+  .fhead{display:grid; grid-template-columns:44px 1fr auto 170px 26px; align-items:center; gap:14px; padding:15px 18px; cursor:pointer;}
+  .fhead:hover{background:rgba(255,255,255,.015);}
+  .fidx{font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+  .fidx b{display:block; font-family:var(--disp); font-size:18px; color:var(--cyan); font-weight:700;}
+  .fname{min-width:0;}
+  .fname .n1{font-family:var(--disp); font-weight:600; font-size:15px; color:var(--text);}
+  .fname .n2{font-family:var(--mono); font-size:11px; color:var(--text-mute); margin-top:4px; display:flex; gap:6px; flex-wrap:wrap; align-items:center;}
+  .fcard .chev{transition:transform .2s;}
+  .fcard.open .chev{transform:rotate(180deg);}
+  .fbody{display:none; padding:4px 18px 18px; border-top:1px solid var(--border);}
+  .fcard.open .fbody{display:block;}
+  .fbody .ativ-list{margin:12px 0 0 0;}
+  .ativ-row .ativ-who{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap; max-width:150px; overflow:hidden; text-overflow:ellipsis;}
+  .ativ-row.cancelada .ativ-name{text-decoration:line-through; color:var(--text-mute);}
+  .ativ-row .ativ-name .ind{color:var(--text-mute); margin-right:4px;}
+  .pill-amber{color:var(--amber) !important; background:rgba(255,198,92,.14) !important; border-color:#5c4a1f !important;}
+  .b-waiting{color:var(--amber); background:var(--amber-dim); border:1px solid #5c4110;}
+  .b-cancelled{color:var(--text-mute); background:transparent; border:1px dashed var(--border-hi);}
+  .empty-msg{font-family:var(--mono); font-size:12.5px; color:var(--text-mute); padding:20px 0;}
+
+  .ov-grid{max-width:1180px; margin:0 auto; padding:0 28px 50px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px;}
+  .ov-title{max-width:1180px; margin:0 auto; padding:6px 28px 12px; font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-mute);}
+  .ov-card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:18px; cursor:pointer; transition:border-color .15s, transform .15s; display:flex; gap:16px; align-items:center; min-width:0;}
+  .ov-card:hover{border-color:var(--cyan); transform:translateY(-1px);}
+  .ov-card.meta-atrasada{border-color:var(--red); box-shadow:0 0 0 1px var(--red), 0 0 18px -6px rgba(255,90,90,.45);}
+  .ov-card.meta-pendente{border-color:var(--amber); box-shadow:0 0 0 1px var(--amber), 0 0 18px -6px rgba(255,198,92,.45);}
+  .ov-card.done{opacity:.8;}
+  .ov-ring{position:relative; width:64px; height:64px; flex:none;}
+  .ov-ring svg{transform:rotate(-90deg); width:64px; height:64px;}
+  .ov-ring .ring-bg{stroke-width:6;} .ov-ring .ring-fg{stroke-width:6;}
+  .ov-ring b{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--disp); font-size:15px;}
+  .ov-info{min-width:0; flex:1;}
+  .ov-name{font-family:var(--disp); font-weight:600; font-size:15px; color:var(--text);}
+  .ov-desc{font-family:var(--mono); font-size:10.5px; color:var(--text-mute); margin:2px 0 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .ov-pills{display:flex; flex-wrap:wrap; gap:5px;}
+  .ov-pills .overdue-pill{font-size:9.5px;}
+  .ok-pill{font-family:var(--mono); font-size:9.5px; font-weight:700; text-transform:uppercase; color:var(--green); background:var(--green-dim); border:1px solid #14523f; border-radius:999px; padding:2px 9px;}
+
+  .rules{max-width:1180px; margin:0 auto; padding:0 28px 40px;}
+  .rules-box{border:1px dashed var(--border-hi); border-radius:14px; padding:14px 18px; font-family:var(--mono); font-size:11.5px; color:var(--text-mute); line-height:1.7;}
+  .rules-box b{color:var(--text-dim);}
+
+  @media (max-width:900px){
+    .kpis.k7{grid-template-columns:repeat(3,1fr);}
+    .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr)); padding:0 20px 40px;}
+    .fases, .rules, .ov-title{padding-left:20px; padding-right:20px;}
+    .ptabs-wrap{padding:0 20px;}
+  }
+  @media (max-width:640px){
+    .pnav{display:none;}
+    .kpis.k7{grid-template-columns:repeat(2,1fr);}
+    .ov-grid{grid-template-columns:1fr; padding:0 16px 40px;}
+    .fases, .rules, .ov-title{padding-left:16px; padding-right:16px;}
+    .ptabs-wrap{padding:0 16px; margin-top:18px;}
+    .ptab{padding:9px 12px 10px;}
+    .ptab .pt-sub{display:none;}
+    .ppanel{border-radius:0 14px 14px 14px;}
+    .fhead{grid-template-columns:1fr auto; row-gap:8px; padding:13px 14px;}
+    .fidx{display:none;}
+    .fname{grid-column:1/-1;}
+    .fhead .meta-bar{grid-column:1/-1;}
+    .fbody{padding:4px 12px 14px;}
+    .ativ-row{flex-wrap:wrap;}
+    .ativ-row .ativ-name{flex-basis:100%;}
+    .ativ-row .ativ-who{display:none;}
+  }
+</style>
+</head>
+<body style="background:#0a0e14; margin:0;">
+
+<div id="loginScreen">
+  <div class="login-card">
+    <h1 class="login-title">Painel de Projetos</h1>
+    <p class="login-sub">BINÁRIO CLOUD · ACESSO RESTRITO</p>
+    <form id="loginForm" autocomplete="on">
+      <div class="login-field">
+        <label for="loginUser">Usuário</label>
+        <input type="text" id="loginUser" placeholder="e-mail ou usuário" autocomplete="username">
+      </div>
+      <div class="login-field">
+        <label for="loginPass">Senha de acesso</label>
+        <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <label class="login-remember"><input type="checkbox" id="loginRemember"> Gravar usuário e senha neste navegador</label>
+      <button type="submit" class="login-btn">Entrar</button>
+      <div class="login-error" id="loginError">Usuário ou senha incorretos. Tente novamente.</div>
+    </form>
+    <div class="login-foot">Controle de atividades de projetos · ClickUp</div>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="tb-left">
+    <div class="tb-mark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABFCAYAAACRzK44AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABgySURBVHhe3V15fFXF2X7m3CwkxCSEJUEWRRCVQqnW4reWopVFcaHiUqxarS27KHUD68baWvxUtGpFxSpaN5ai4gYqIsi+E7YQQhKyk9zc9c6d5f3+uCH3nHOTQAj4az/PJ8x958y8886ZM+edmXsuUZIkicagACIRPWQjaLZFqBuYMV3+/QsRNlwtkR1D4ZmEjmOCiZIswkypYPqH1A0x2XVVR2pk/AcwR+lK0rHhCBCI1pJPabbG6YAb5oiVthyUG656pmCC0n85nCsVadIsEP0Sowig0Q67CiL/SgO0HmviqOCg6o9GDNYISHdOOQKHEWiwwAUS0AFNiQ6QAL4xQKMPIuWAU5hPXLg63sA5lyFdsW24LzHabuToECERxSECqSkiRBuR2jLbMPwD6BMf5pyI43JophSQcxBtMjzLUQtg2oIWyxiEXFjb5MdwpRBEFotAQFyzyaB0wiJVJyMIRVY1B23HJLkFJSyaZrMd3QvDOZepIbDGZxEG6nMfE4ZGDdYw1KsraVay3H2CCURTlIHIwnD5MbgsVp+AQBZQTSE+GhpbNE2JCB2P4BLRyYfmzgpeeuIgLPGDygmK8GqEUJl0Iw+h+rijKMkIrvKBMO5hrLGcyDDH7xhvAK0jpYMOzZUVSG5hifsphptQLgy1LP4m1IzeAFCA6rH088A4K6yTxCIahrSepJoajr45KB+hRh+Km80RtuJ8WYQZ04HZEdSdVwXTahYBJ+0kT0A05NKY6uRRFmqUZpJb2FZ31XZmWxyGTgyYu0y9Q+VfAeC2dAQjkMTMEMnpP4bIO1oUsTlJH9QUiCmOSLuGSxQmEREOD0cRjFMkKoItTqTp/hnkBkJFk0oolqDBFUgkcSguMOtA3+FonJ+3zRq77gAAAABJRU5ErkJggg==" alt="Binário Cloud"></div>
+    <span class="tb-title"><b>Projetos</b> · Binário Cloud</span>
+    <nav class="pnav"><a href="./index.html">Metas 2026</a><a href="./projetos.html" class="active">Projetos</a></nav>
+  </div>
+  <div class="tb-right">
+    <div class="tb-right-top">
+      <div class="tb-live"><span class="dot-live"></span> Sincronizado com ClickUp</div>
+      <span id="tb-date"></span>
+      <button type="button" class="tb-logoff" id="btnLogoff" title="Encerrar sessão">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        Sair
+      </button>
+    </div>
+    <div class="tb-right-sub" id="tb-gen"></div>
+  </div>
+</div>
+
+<div class="ptabs-wrap">
+  <div class="ptabs" id="tabBar"></div>
+  <div class="ppanel" id="panel">
+    <div class="hero">
+      <div class="hero-eyebrow" id="heroEyebrow">Controle de atividades de projetos</div>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title" id="heroTitle"></h1>
+          <div class="hero-desc" id="heroDesc"></div>
+        </div>
+        <div class="ring-card">
+          <div class="ring-wrap">
+            <svg width="112" height="112" viewBox="0 0 112 112">
+              <circle class="ring-bg" cx="56" cy="56" r="48"></circle>
+              <circle class="ring-fg" id="ringFg" cx="56" cy="56" r="48" stroke-dasharray="301.6" stroke-dashoffset="301.6"></circle>
+            </svg>
+            <div class="ring-num"><b id="ringPct">0%</b><small>concluído</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpis k7" id="kpiStrip"></div>
+
+    <div class="controls" id="controls">
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="searchInput" placeholder="Buscar fase ou atividade…">
+      </div>
+      <div class="chips" id="filterChips"></div>
+    </div>
+
+    <div id="content"></div>
+
+    <div class="rules">
+      <div class="rules-box">
+        <b>Regras de alarme</b> (as mesmas do painel de metas): <span style="color:var(--red)">ATRASADA</span> quando o prazo <b>original</b> da atividade já passou (a partir do dia seguinte ao prazo);
+        <span style="color:var(--amber)">PENDENTE</span> no próprio dia do prazo; <span style="color:var(--amber)">PENDENTE PLANEJAMENTO</span> quando a atividade não tem data preenchida no ClickUp.
+        Mudança de data ou "Nova previsão" aparece como anotação (→ nova data) e não desliga o alarme. Atividades concluídas, fechadas ou canceladas não geram alarme.
+      </div>
+    </div>
+
+    <footer>
+      <span>Fonte: ClickUp · <a id="footerSourceLink" href="https://app.clickup.com/3080406/v/s/3162782" target="_blank">Projetos / Onboard BC</a></span>
+    </footer>
+  </div>
+</div>
+
+<script>
+// ================= DADOS =================
+const PROJETOS_DATA = {"last_sync_utc":"2026-10-15T13:31:45.332977+00:00","projetos":[{"key":"neugebauer","nome":"Neugebauer","descricao":"Nuvem Pública & Serviços Gerenciados","finalizado":false,"list_id":"901328018187","url":"https://app.clickup.com/3080406/v/li/901328018187","fases":[{"n":"Fase 5 — Encerramento e transição","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Lucas Federissis de Souza","due":1792134000000,"id":"86ajrf5d6","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Lucas Federissis de Souza","due":1791788400000,"original_due":1791788400000,"nova_previsao":null,"depth":0,"id":"86ak080ug"},{"n":"5.1 Transição para operação","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Lucas Federissis de Souza","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86ajrf5ee"},{"n":"Elaborar documentação as built","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf61r"},{"n":"Documentar topologia de rede","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf62b"},{"n":"Documentar rotinas de backup","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf62f"},{"n":"Realizar passagem para o CCOE","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf62u"},{"n":"Realizar reunião de transição","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf63c"},{"n":"5.2 Encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Lucas Federissis de Souza","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86ajrf5ef"},{"n":"Elaborar relatório final","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf63u"},{"n":"Realizar reunião de encerramento","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf63z"},{"n":"Enviar termo de aceite","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf63y"},{"n":"Obter aceite formal da Neugebauer","status":"backlog","raw_status":"aberto","assignee":"—","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf643"}]},{"n":"Fase 3.2 Migração NPROD - Neugebauer","status":"in progress","raw_status":"em andamento","assignee":"Lucas Federissis de Souza","due":1792738800000,"id":"86akn63gf","ativ":[{"n":"Validar conexão entre filiais SP x POA","status":"shipped","raw_status":"concluído","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akjg6z2"},{"n":"Disponibilização de imagens Compactadas","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":1792393200000,"original_due":1792393200000,"nova_previsao":null,"depth":0,"id":"86aknc0rm"},{"n":"Servidores ambiente não produtivo","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza","due":1792738800000,"original_due":1792738800000,"nova_previsao":null,"depth":0,"id":"86ajrf5xy"},{"n":"NGB-ABS-W12-V01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynp"},{"n":"NGB-ABS-W12-V02","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynq"},{"n":"NGB-ABS-W22-V02","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynr"},{"n":"NGBQUEOPS01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynu"},{"n":"NGBSWRH1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynv"},{"n":"NGDS","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynw"},{"n":"NGPPRDEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynx"},{"n":"NGPPRPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyny"},{"n":"NGSAPORA01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvynz"},{"n":"NGSLM","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp0"},{"n":"NGTSITS01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp1"},{"n":"SWINTRANET1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp2"},{"n":"SWMSF1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp4"},{"n":"SWMSF2","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp5"},{"n":"SWSADIG1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp6"},{"n":"ULTRAPARERP","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyp8"},{"n":"NGBHRC03","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypb"},{"n":"NGBERPPRDCI","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypc"},{"n":"NGBHNPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvype"},{"n":"NGBERPPRDA1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypf"},{"n":"NGBERPPRDA2","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyph"},{"n":"NGBFIOPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypj"},{"n":"NGBPOPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypm"},{"n":"NGBNFEPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypp"},{"n":"NGBWDPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypq"},{"n":"NGBSLM","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypr"},{"n":"NGBROUTER","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypt"},{"n":"NGBBOQAS","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypu"},{"n":"NGBFIOQAS","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypv"},{"n":"NGBWDDEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypx"},{"n":"NGBPODEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvypz"},{"n":"NGBBODEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq1"},{"n":"NGBFIODEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq2"},{"n":"NGBHNDEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq3"},{"n":"NGBNFEDEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq5"},{"n":"NGBSISROT01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq7"},{"n":"NGB_BB_TMV_W12_V01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq8"},{"n":"NGB_BB_TSS_W12_V01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyq9"},{"n":"NGBERPDEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqa"},{"n":"NGB_IFR_W12_V01_DEV","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqc"},{"n":"NGBWIN01","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqd"},{"n":"NGBWIN02","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqe"},{"n":"SWAPLMS1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqf"},{"n":"SWDBMS1","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqg"},{"n":"NGBBOPRD","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukvyqj"}]},{"n":"Fase 1 — Iniciação e planejamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ajrf5d1","ativ":[{"n":"1.1 Kickoff e formalização","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1785394800000,"original_due":1785394800000,"nova_previsao":null,"depth":0,"id":"86ajrf5df"},{"n":"Definir stakeholders","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5ew"},{"n":"Elaborar apresentação de kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":1,"id":"86ajrf5ex"},{"n":"Realizar reunião de kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1784790000000,"original_due":1784790000000,"nova_previsao":null,"depth":1,"id":"86ajrf5ey"},{"n":"Registrar decisões e pendências do kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1784790000000,"original_due":1784790000000,"nova_previsao":null,"depth":1,"id":"86ajrf5f5"},{"n":"Elaborar TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1784876400000,"original_due":1784876400000,"nova_previsao":null,"depth":1,"id":"86ajrf5f6"},{"n":"Enviar TAP para assinatura","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ajrf5f7"},{"n":"Obter assinatura da Binário Cloud","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ajrf5fm"},{"n":"Obter assinatura da Neugebauer","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ajrf5fp"},{"n":"Formalizar abertura do projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ajrf5fq"},{"n":"1.2 Refinamento do escopo","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajrf5de"},{"n":"Validar inventário de servidores","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5fv"},{"n":"Validar servidores ativos e desligados","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5g4"},{"n":"Identificar servidores que serão migrados","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5g7"},{"n":"Identificar servidores fora do escopo","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5ge"},{"n":"Levantar sistemas operacionais","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5gm"},{"n":"Levantar capacidade de disco por servidor","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5gr"},{"n":"Levantar serviços hospedados","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5gp"},{"n":"1.3 Planejamento do projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajrf5dc"},{"n":"Definir marcos do projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5k0"},{"n":"Definir responsáveis por frente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5jz"},{"n":"Elaborar plano de comunicação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5kq"},{"n":"Definir reuniões semanais de acompanhamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5kt"},{"n":"Criar registro de riscos e impedimentos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5kv"}]},{"n":"Fase 3 — Migração Piloto","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Diogo Lerison","due":1789974000000,"id":"86ajrf5cy","ativ":[{"n":"3 Migração piloto","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1789974000000,"original_due":1789974000000,"nova_previsao":null,"depth":0,"id":"86ajrf5dx"},{"n":"Migração de srv's via Veeam","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":1789023600000,"depth":1,"id":"86ajrf5x1"},{"n":"Registrar problemas encontrados","status":"shipped","raw_status":"fechado","assignee":"—","due":1788159600000,"original_due":1788159600000,"nova_previsao":1789110000000,"depth":2,"id":"86ajrf5xn"},{"n":"Executar teste funcional","status":"shipped","raw_status":"fechado","assignee":"—","due":1788159600000,"original_due":1788159600000,"nova_previsao":1789110000000,"depth":2,"id":"86ajrf5xf"},{"n":"NGBULTRAPARERP","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7x9r"},{"n":"NGBORAPRD01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7x9v"},{"n":"NGB-ABS-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xa9"},{"n":"NGB-IFR-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xag"},{"n":"NGBHRC04","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xap"},{"n":"NGB-RSW-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xav"},{"n":"NGB-ETL-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xb5"},{"n":"NGB-ETL-W22-V02","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xb9"},{"n":"NGB-ETL-W22-V03","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xbb"},{"n":"NGB-ELO-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xbx"},{"n":"NGBMAXDB01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xbz"},{"n":"NGBMAXDB02","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xc4"},{"n":"CNGB-IFR-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xc9"},{"n":"NGBCICLOPRD01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xcd"},{"n":"NGBERPQAS","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xcp"},{"n":"NGBSYBASE01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":2,"id":"86akq7xcw"},{"n":"NGB-RSW-W12-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xdb"},{"n":"CNGB-TMV-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xdg"},{"n":"NGBELO01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xdm"},{"n":"NGBELO02","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xdr"},{"n":"NGBORADEV01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xdv"},{"n":"NGBVONSAC2","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xe0"},{"n":"NGBCICLODEV01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1788505200000,"original_due":1788505200000,"nova_previsao":null,"depth":2,"id":"86akq7xe7"},{"n":"NGBHNQAS","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akq7xec"},{"n":"Migração Imagem QCOW2","status":"shipped","raw_status":"fechado","assignee":"—","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":1,"id":"86akhx6eg"},{"n":"NGBSITEDEV","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1789974000000,"original_due":1789974000000,"nova_previsao":null,"depth":2,"id":"86akm7azb"},{"n":"NGBSITEPRD","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":2,"id":"86akm7azh"},{"n":"NGBNEOGRID","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":2,"id":"86akm7azq"}]},{"n":"Fase 2 — Preparação e implementação","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1789714800000,"id":"86ajrf5cz","ativ":[{"n":"2.1 Preparação da Binário Cloud","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1787814000000,"original_due":1787814000000,"nova_previsao":null,"depth":0,"id":"86ajrf5dh"},{"n":"Criação de dominio","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ak6bqth"},{"n":"Criação de projeto","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1785481200000,"original_due":1785481200000,"nova_previsao":null,"depth":1,"id":"86ajrf5mb"},{"n":"Criar usuários e permissões","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1787814000000,"original_due":1787814000000,"nova_previsao":null,"depth":1,"id":"86ajrf5me"},{"n":"Hands-on BCP","status":"shipped","raw_status":"fechado","assignee":"—","due":1790578800000,"original_due":1790578800000,"nova_previsao":null,"depth":1,"id":"86akjfc3g"},{"n":"2.2 Rede e conectividade","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1788332400000,"original_due":1788332400000,"nova_previsao":null,"depth":0,"id":"86ajrf5dj"},{"n":"Criar segmentos de rede","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira","due":1787727600000,"original_due":1787727600000,"nova_previsao":null,"depth":1,"id":"86ak6chyn"},{"n":"Validar throughput disponível","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787727600000,"original_due":1787727600000,"nova_previsao":null,"depth":1,"id":"86ajrf5ph"},{"n":"Definir gateways","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787727600000,"original_due":1787727600000,"nova_previsao":null,"depth":1,"id":"86ajrf5nq"},{"n":"Definir modelo de conectividade entre ambientes","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787900400000,"original_due":1787900400000,"nova_previsao":null,"depth":1,"id":"86ajrf5nv"},{"n":"2.3 Firewall e segurança","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":0,"id":"86ajrf5dk"},{"n":"Criação do FORTIVM bc1-firewall-4-16","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787641200000,"original_due":1787641200000,"nova_previsao":null,"depth":1,"id":"86ajxt0gj"},{"n":"Levantamento FW Kosmo","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison / Alexandre Pereira","due":1788332400000,"original_due":1788332400000,"nova_previsao":null,"depth":1,"id":"86ak6cty1"},{"n":"Levantar objetos, grupos e serviços","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajrf5q3"},{"n":"Levantar políticas atuais","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajrf5q5"},{"n":"Configurar interfaces","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"original_due":1789369200000,"nova_previsao":null,"depth":1,"id":"86ajrf5qe"},{"n":"Configurar VPNs IPsec site to site","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"original_due":1789369200000,"nova_previsao":null,"depth":1,"id":"86ajrf5qv"},{"n":"Configurar regras NATs","status":"shipped","raw_status":"fechado","assignee":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"original_due":1789369200000,"nova_previsao":null,"depth":1,"id":"86ajrf5qw"},{"n":"Configurar regras de proxy reverso","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":1789369200000,"original_due":1789369200000,"nova_previsao":1789714800000,"depth":1,"id":"86ak7vzqq"},{"n":"Configurar roteamento","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":1,"id":"86ajrf5qg"},{"n":"Configurar políticas de segurança","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":1,"id":"86ajrf5qr"},{"n":"Testar conectividade entre ambientes","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"original_due":1789714800000,"nova_previsao":null,"depth":1,"id":"86ajrf5pm"},{"n":"2.4 Coleta de dados e configurações locais","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1787900400000,"original_due":1787900400000,"nova_previsao":null,"depth":0,"id":"86ajwq6ah"},{"n":"Levantar dependências entre aplicações","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5h1"},{"n":"Definir criticidade dos sistemas","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajrf5hb"},{"n":"Levantar dependência entre servidores e serviços.","status":"shipped","raw_status":"fechado","assignee":"—","due":1787900400000,"original_due":1787900400000,"nova_previsao":1788505200000,"depth":1,"id":"86ajrf5hu"},{"n":"Coleta de informações para inventario do ambiente NGB Kosmo","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1787900400000,"original_due":1787900400000,"nova_previsao":null,"depth":1,"id":"86ajwq728"},{"n":"2.5 Instalação do Agent de backup","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1789110000000,"original_due":1789110000000,"nova_previsao":1789110000000,"depth":0,"id":"86ajwq7dt"},{"n":"Servidores Windows","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1787900400000,"original_due":1787900400000,"nova_previsao":null,"depth":1,"id":"86ajwq7jc"},{"n":"NGB-ABS-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq7w5"},{"n":"NGB-IFR-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq7xa"},{"n":"NGB-IFR-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq815"},{"n":"CNGB-TMV-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq81y"},{"n":"NGB-RSW-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq832"},{"n":"NGB-ETL-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq83y"},{"n":"NGB-ETL-W22-V02","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq85q"},{"n":"NGB-ETL-W22-V03","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8a0"},{"n":"NGB-TSS-W12-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8am"},{"n":"NGB-RSW-W12-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8bn"},{"n":"NGB-ELO-W22-V01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8eh"},{"n":"Servidores Linux","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1787900400000,"original_due":1787900400000,"nova_previsao":null,"depth":1,"id":"86ajwq7nk"},{"n":"NGBNFS01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8h9"},{"n":"NGBHNPRD","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8j4"},{"n":"NGBERPPRDCI","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8kn"},{"n":"NGBORAPRD01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8nb"},{"n":"NGBULTRAPARERP","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8q4"},{"n":"NGBELO01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8qw"},{"n":"NGBVONSAC2","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1789110000000,"original_due":1789110000000,"nova_previsao":null,"depth":2,"id":"86ajwq8t3"},{"n":"NGBHRC04","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq8ux"},{"n":"NGBCICLOPRD01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq937"},{"n":"NGBERPQAS","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq96r"},{"n":"NGBHNQAS","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq98b"},{"n":"NGBORADEV01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq9ak"},{"n":"NGBCICLODEV01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq9cq"},{"n":"NGBELO02","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq9kt"},{"n":"NGBSYBASE01","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86ajwq9r3"}]},{"n":"Fase 4 — Go-live e estabilização","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison / Lucas Federissis de Souza","due":1792134000000,"id":"86ajrf5d3","ativ":[{"n":"4.2 Configurar Backup Binario","status":"in progress","raw_status":"em andamento","assignee":"Lucas Federissis de Souza","due":1791183600000,"original_due":1791183600000,"nova_previsao":null,"depth":0,"id":"86ajrf5dr"},{"n":"Criar tenant Veeam","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791183600000,"original_due":1791183600000,"nova_previsao":null,"depth":1,"id":"86ajrf5u0"},{"n":"Configurar repositório","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791183600000,"original_due":1791183600000,"nova_previsao":null,"depth":1,"id":"86ajrf5u4"},{"n":"Definir schedule e politica de retenção","status":"in progress","raw_status":"em andamento","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":1,"id":"86ak6dvc4"},{"n":"Executar primeiro backup","status":"shipped","raw_status":"concluído","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1791183600000,"original_due":1791183600000,"nova_previsao":null,"depth":1,"id":"86ajrf5uu"},{"n":"Executar teste de restauração","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1791183600000,"original_due":1791183600000,"nova_previsao":null,"depth":1,"id":"86ajrf5uw"},{"n":"4.3 Monitoramento","status":"in progress","raw_status":"em andamento","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86ajrf5dt"},{"n":"Configurar monitoramento das VMs","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf5v9"},{"n":"Configurar monitoramento do firewall","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf5vn"},{"n":"Configurar monitoramento dos backups","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf5vm"},{"n":"Validar geração automática de alertas","status":"backlog","raw_status":"aberto","assignee":"Lucas Federissis de Souza / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ajrf5vt"}]},{"n":"Fase 3.1 - Virada de chave - Neugebauer","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"id":"86akq7uxp","ativ":[{"n":"NGB-IFR-W22-V01 - 10.200.12.5","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7ar8"},{"n":"NGBNEOGRID - 10.200.12.207","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akqa8f0"},{"n":"NGBSITEPRD - 10.210.12.220","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akqa4fw"},{"n":"NGBORAPRD01 - 10.200.12.252","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aqw"},{"n":"NGB-ABS-W22-V01 - 10.200.12.223","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7ar1"},{"n":"NGBHRC04 10.200.12.220","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7arf"},{"n":"NGBMAXDB01 - 10.200.12.225","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7atw"},{"n":"NGBMAXDB02 - 10.200.12.218","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aua"},{"n":"NGBULTRAPARERP - 10.200.12.215","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aqu"},{"n":"NGBELO01 - 10.200.12.231","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7ax4"},{"n":"NGBELO02 - 10.200.12.232","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7axj"},{"n":"NGBVONSAC2 - 10.200.12.206","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aye"},{"n":"CNGB-IFR-W22-V01 - 10.200.160.5","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aux"},{"n":"CNGB-TMV-W22-V01 - 10.200.160.10","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7awy"},{"n":"NGB-RSW-W22-V01 - 10.200.12.246","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7art"},{"n":"NGB-ETL-W22-V01 - 10.200.12.238","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7ary"},{"n":"NGB-ETL-W22-V02 - 10.200.12.239","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7at2"},{"n":"NGB-ETL-W22-V03 - 10.200.12.233","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7atk"},{"n":"NGBCICLOPRD01 - 10.200.12.233","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7avm"},{"n":"NGBERPQAS - 10.200.12.62","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7avw"},{"n":"NGBHNQAS - 10.200.12.64","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7az1"},{"n":"NGBORADEV01 - 10.200.12.251","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7axw"},{"n":"NGBCICLODEV01 - 10.200.12.234","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7ayr"},{"n":"NGBSYBASE01 - 10.200.12.226","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7aw7"},{"n":"NGB-RSW-W12-V01 - 10.200.12.230","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7awn"},{"n":"NGB-ELO-W22-V01 - 10.200.12.247","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akm7att"},{"n":"NGBSITEDEV - 10.210.12.219","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akqa8qh"},{"n":"NGBDLM01 - \t10.200.12.217","status":"shipped","raw_status":"fechado","assignee":"Lucas Federissis de Souza","due":1791097200000,"original_due":1791097200000,"nova_previsao":null,"depth":0,"id":"86akqa8vf"}]},{"n":"Atividades sem fase","status":"in progress","raw_status":"","assignee":"—","due":null,"id":null,"virtual":true,"ativ":[{"n":"Encerramento Kosmo","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":1792998000000,"original_due":1792998000000,"nova_previsao":null,"depth":0,"id":"86akjgbjg"},{"n":"Liberação Link 500Mbp's - Neugebauer","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":0,"id":"86akpu58t"},{"n":"Envio do aviso previo entre Kosmo x NGB","status":"shipped","raw_status":"fechado","assignee":"—","due":1785222000000,"original_due":1785222000000,"nova_previsao":null,"depth":0,"id":"86akjg9f6"},{"n":"Comunicação entre Binario e Kosmo bloqueado","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1786518000000,"original_due":1786518000000,"nova_previsao":null,"depth":0,"id":"86ajwdywa"},{"n":"Incompatibilidade Servidores SUSE","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1789110000000,"original_due":1789110000000,"nova_previsao":null,"depth":0,"id":"86akce127"},{"n":"Liberação de portas/acessos no firewall da Kosmo (chamado 697)","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1792998000000,"original_due":1792998000000,"nova_previsao":null,"depth":0,"id":"86akmf6hm"},{"n":"Acesso direto da Binário ao firewall da Kosmo","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1792998000000,"original_due":1792998000000,"nova_previsao":null,"depth":0,"id":"86akmf6px"}]}]},{"key":"soprema-veeam","nome":"Soprema","descricao":"Veeam Backup on premise","finalizado":false,"list_id":"901328281164","url":"https://app.clickup.com/3080406/v/li/901328281164","fases":[{"n":"Fase 5 - Encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":1791961200000,"id":"86ak5e3dx","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ebre"},{"n":"Realizar contato de encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ebup"},{"n":"Documentação técnica final","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ebyb"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ec3z"}]},{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ak5e344","ativ":[{"n":"Elaboração da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e3u8"},{"n":"Reunião de Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e3vk"},{"n":"Definição de Stakeholders","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e3zq"}]},{"n":"Fase 3 - Soprema - Execução técnica","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva","due":null,"id":"86ak5e38y","ativ":[{"n":"Backup Gerenciado","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e6re"},{"n":"Definição de servidor para instalar o VBR","status":"shipped","raw_status":"concluído","assignee":"José Maria Ferreira da Silva / Diogo Lerison / Augusto Rossi","due":1788246000000,"original_due":1788246000000,"nova_previsao":null,"depth":1,"id":"86ak5e6z0"},{"n":"Instalação do VBR","status":"shipped","raw_status":"concluído","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5e70q"},{"n":"Configurar repositório (8Tb)","status":"shipped","raw_status":"concluído","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5e78d"},{"n":"Instalar Endpoint nos servidor","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":1,"id":"86ak5e7cy"},{"n":"WIN-64AA16BBGDE","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akq7j1m"},{"n":"SWSPR003","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akq7j4y"},{"n":"SWSPR002","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akq7j8f"},{"n":"Configurar Jobs de backup","status":"waiting","raw_status":"aguardando retorno","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":1791961200000,"original_due":1791961200000,"nova_previsao":1792134000000,"depth":1,"id":"86ak5e7f4"},{"n":"Validação de backup e restore","status":"in planning","raw_status":"planejamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ak5e7jr"},{"n":"Monitoramento do backup","status":"in planning","raw_status":"planejamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ak5ygpj"},{"n":"Documentação técnica","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ak5ec77"},{"n":"API de report de ferramenta para o cliente","status":"backlog","raw_status":"aberto","assignee":"Augusto Rossi / José Maria Ferreira da Silva","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86ak8quyy"}]},{"n":"Fase 2 - Planejamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ak5e34w","ativ":[{"n":"Realizar cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e436"},{"n":"Estimar recursos e tempo de execução","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison / José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5exf2"}]},{"n":"Fase 4 - Monitoramento e controle","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"id":"86ak5e3at","ativ":[{"n":"Validar entregas do Projeto","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e7pz"},{"n":"Acompanhamento do cronograma e status report","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5e7tq"}]}]},{"key":"pleion","nome":"Pleion","descricao":"Indústria e Comércio de Plásticos LTDA.","finalizado":false,"list_id":"901328281869","url":"https://app.clickup.com/3080406/v/li/901328281869","fases":[{"n":"Fase 5 - Encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":1791961200000,"id":"86ak5evuv","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5eyy7"},{"n":"Realizar contato de encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ez0e"},{"n":"Documentação técnica final","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ez25"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ez40"}]},{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ak5ev74","ativ":[{"n":"Elaboração da TAP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ew0r"},{"n":"Reunião de kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ew22"},{"n":"Elaboração da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5yy47"},{"n":"Definição de Stakeholders","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ew6y"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ew9h"}]},{"n":"Fase 2 - Planejamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ak5eva7","ativ":[{"n":"Realizar cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":0,"id":"86ak5ex8z"},{"n":"Estimar recursos e tempo de execução","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison / José Maria Ferreira da Silva / Augusto Rossi","due":1788159600000,"original_due":1788159600000,"nova_previsao":null,"depth":0,"id":"86ak5exe1"},{"n":"Registro de documentação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak8prta"}]},{"n":"Fase 4 - Controle","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"id":"86ak5evqw","ativ":[{"n":"Validar entregas do projeto","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5eykw"}]},{"n":"Fase 3 - Pleion - Execução técnica - Gerenciado","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"id":"86ak5evkm","ativ":[{"n":"Definir estratégia de migração","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1788418800000,"original_due":1788418800000,"nova_previsao":null,"depth":0,"id":"86ak5ewx4"},{"n":"Infraestrutura (Gerenciado)","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5ewf8"},{"n":"Criação do dominio","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5ewkr"},{"n":"Criação do Projeto","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5ewpn"},{"n":"Criação da Rede","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak8peu5"},{"n":"Levantamento de Usuarios (cliente)","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak8pfdz"},{"n":"Firewall (Gerenciado)","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5z7v9"},{"n":"Criação de firewall","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5z8tg"},{"n":"Configuração Inicial do FW","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5z8ze"},{"n":"Configuração de VPN site to site","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak8pmr5"},{"n":"Configuração de VPN client to site","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak8pn7r"},{"n":"Servidor","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5z83a"},{"n":"1 VM","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5zcrb"},{"n":"BC-Backup (Gerenciado)","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5exvf"},{"n":"Licenças","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak8q3ur"},{"n":"Configurar Jobs de backup","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5ey7n"},{"n":"Monitoramento","status":"in planning","raw_status":"planejamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5z856"},{"n":"Configurar monitoramento.","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak5zh01"},{"n":"Documentação Técnica","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak8rgfd"}]}]},{"key":"btech","nome":"B-TECH CLOUD","descricao":"White Label","finalizado":false,"list_id":"901329035922","url":"https://app.clickup.com/3080406/v/li/901329035922","fases":[{"n":"Fase 4 - Encerramento","status":"backlog","raw_status":"aberto","assignee":"—","due":1792825200000,"id":"86akg8t8g","ativ":[{"n":"Elaboração da TEP","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8t8p"},{"n":"Checklist de Readiness / Aceite Operacional","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akkhrvq"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8t8q"},{"n":"Envio da documentação técnica","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8t9g"},{"n":"Entrada oficial em produção","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhth0"},{"n":"Operação assistida","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhtpy"},{"n":"Reunião de acompanhamento pós-Go-Live","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhtvf"}]},{"n":"Fase 2 -  Kickoff","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"id":"86akg8t8h","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"—","due":1790060400000,"original_due":1790060400000,"nova_previsao":null,"depth":0,"id":"86akg8t8x"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8t9v"},{"n":"Assinatura da TAP","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8taa"}]},{"n":"Fase 3 - Execução B-Tech","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"id":"86akg8t8j","ativ":[{"n":"Configurar domínio oficial da BTECH","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhhr9"},{"n":"Aplicar identidade visual White Label","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhhwn"},{"n":"Desativar e ClaudIA para BTECH","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhhzg"},{"n":"Criar e validar usuários administrativos e perfis de acesso","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhj3x"},{"n":"Validar catálogo de serviços disponibilizados à BTECH","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhj6n"},{"n":"Cadastrar tabela de preços da BTECH","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhjae"},{"n":"Validar custos, consumo e fluxo de faturamento","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhjd1"},{"n":"Treinamento BCAPI","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhjw0"},{"n":"Hands-on / treinamento BCAPI","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhjwx"},{"n":"Hands-on técnico BCP / Console White Label","status":"shipped","raw_status":"fechado","assignee":"—","due":1790665200000,"original_due":1790665200000,"nova_previsao":null,"depth":0,"id":"86akkhpg3"},{"n":"Definir fluxo de atendimento e escalonamento N1/N2/N3","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhpq1"},{"n":"Elaborar e aprovar Matriz RACI","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhpww"},{"n":"Apresentar e validar SLA contratado","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhq1u"},{"n":"Cadastrar contatos e canais oficiais de suporte","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhq8p"},{"n":"Executar provisionamento ponta a ponta","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhqpy"},{"n":"Validar serviços específicos acordados na PoC","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhqzz"},{"n":"Visita técnica ao Data Center ODATA","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akkhr10"}]},{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Priscila de Fatima Sotério Ferreira","due":null,"id":"86akg8t8f","ativ":[{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"—","due":1790060400000,"original_due":1790060400000,"nova_previsao":null,"depth":0,"id":"86akg8t8r"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"—","due":1790060400000,"original_due":1790060400000,"nova_previsao":null,"depth":0,"id":"86akg8t9w"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8ta6"},{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8taf"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akg8tav"}]}]},{"key":"apm","nome":"APM","descricao":"Associação Paulista de Medicina","finalizado":false,"list_id":"901329011062","url":"https://app.clickup.com/3080406/v/li/901329011062","fases":[{"n":"Fase 4 - Encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":1791961200000,"id":"86akekhzb","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzv"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzw"},{"n":"Envio da documentação técnica","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj0k"}]},{"n":"Fase 2 -  Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekhza","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzu"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj0m"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj1e"}]},{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekhz9","ativ":[{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzn"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzp"},{"n":"Plano de Comunicação Inicial","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj0n"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj0q"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj1h"},{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj1j"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj2j"}]},{"n":"Fase 3 - Execução (APM) - Gerenciado","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"id":"86akekhzc","ativ":[{"n":"Infraestrutura","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akfztuf"},{"n":"Criação do dominio","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfztuj"},{"n":"Criação do Projeto","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfztuk"},{"n":"Criação da Rede","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfztuz"},{"n":"Levantamento de Usuarios (cliente)","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfztv0"},{"n":"Firewall","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzt"},{"n":"PFSENSE","status":"shipped","raw_status":"fechado","assignee":"Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj0a"},{"n":"IP Publico","status":"shipped","raw_status":"fechado","assignee":"Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj0b"},{"n":"Configuração","status":"shipped","raw_status":"fechado","assignee":"Antonio Junior / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj11"},{"n":"VPN","status":"shipped","raw_status":"fechado","assignee":"Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj13"},{"n":"Migração (Veeam)","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj18"},{"n":"Repositorio","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj1t"},{"n":"Tenant","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj2n"},{"n":"Configuração Jobs","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj2p"},{"n":"restauração dos servidores em nuvem","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akjbzva"},{"n":"SERVIDOR VBR LOCAL","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn50f7"},{"n":"VM's","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekhzr"},{"n":"APMSQL01","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj08"},{"n":"APMCRM1","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn505c"},{"n":"APMERP1","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn509j"},{"n":"AWS - APMSVRWEBAWS","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn50zg"},{"n":"SRV05?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj75c"},{"n":"SRV06?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj778"},{"n":"SRV07?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj77y"},{"n":"SRV08?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj789"},{"n":"SRV09?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj78f"},{"n":"SRV10?","status":"waiting","raw_status":"aguardando retorno","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktj790"},{"n":"BC-Backup","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj25"},{"n":"Configuração de politica","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj2q"},{"n":"Teste de backup","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekj2r"},{"n":"Documentação técnica","status":"in planning","raw_status":"planejamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj3a"},{"n":"Go-Live","status":"backlog","raw_status":"aberto","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekj3m"}]}]},{"key":"amigotech","nome":"AmigoTech","descricao":"Amigo Connecting LTDA","finalizado":false,"list_id":"901329011044","url":"https://app.clickup.com/3080406/v/li/901329011044","fases":[{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekg4x","ativ":[{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5f"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5e"},{"n":"Plano de Comunicação Inicial","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg6q"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg6r"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg7z"},{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg80"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg8z"}]},{"n":"Fase 2 -  Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekg4z","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5k"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg6p"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg7j"}]},{"n":"Fase 4 - Encerramento","status":"in progress","raw_status":"em andamento","assignee":"—","due":1791961200000,"id":"86akekg4y","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5m"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5n"},{"n":"Envio da documentação técnica","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg6g"},{"n":"Faturamento","status":"shipped","raw_status":"concluído","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akruatg"}]},{"n":"Fase 3 - Execução (AmigoTech) - Gerenciado","status":"blocked","raw_status":"impedimento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"id":"86akekg50","ativ":[{"n":"Infraestrutura","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akfzp4x"},{"n":"Criação do dominio","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfzp56"},{"n":"Criação do Projeto","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfzp57"},{"n":"Criação da Rede","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfzp5m"},{"n":"Levantamento de Usuarios (cliente)","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfzp5p"},{"n":"Firewall","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5h"},{"n":"Subir imagem Mikrotik","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Antonio Junior","due":1790060400000,"original_due":1790060400000,"nova_previsao":null,"depth":1,"id":"86akn3upp"},{"n":"1 IP Publico","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg68"},{"n":"Configuração","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg73"},{"n":"VPN","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg74"},{"n":"VM's","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg5g"},{"n":"SRV01 - AD/FileServer","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg65"},{"n":"SRV02 - DB","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn5y7f"},{"n":"SRV03 - Aplicação","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akn5y9j"},{"n":"SRV04 - Teste VPN","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akpku1y"},{"n":"BC-Backup","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg8j"},{"n":"Configuração de politica","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg96"},{"n":"Teste de backup","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akekg97"},{"n":"Monitoramento","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akfzp4v"},{"n":"Configurar monitoramento.","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akfzp4y"},{"n":"Documentação técnica","status":"in planning","raw_status":"planejamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi / Marcelo Santos / Antonio Junior","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekg9w"},{"n":"Go-Live","status":"in progress","raw_status":"em andamento","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekgad"}]}]},{"key":"abl","nome":"Grupo ABL","descricao":"Jornada","finalizado":false,"list_id":"901329133092","url":"https://app.clickup.com/3080406/v/li/901329133092","fases":[{"n":"Fase 4 - Encerramento","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":1791961200000,"id":"86akn4aeb","ativ":[{"n":"Elaboração da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4aet"},{"n":"Assinatura da TEP","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4aeu"},{"n":"Envio da documentação técnica","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4afc"}]},{"n":"Fase 2 -  Kickoff","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"id":"86akn4aea","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1790233200000,"original_due":1790233200000,"nova_previsao":null,"depth":0,"id":"86akn4aen"},{"n":"Envio da TAP","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4afg"},{"n":"Assinatura da TAP","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4agd"}]},{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akn4ae9","ativ":[{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4aeq"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4aep"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4afr"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4age"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akn4ah8"}]}]},{"key":"algar","nome":"Algar Telecom","descricao":"Projeto especial","finalizado":false,"list_id":"901329196221","url":"https://app.clickup.com/3080406/v/li/901329196221","fases":[{"n":"Fase 0 - Kickoff","status":"in progress","raw_status":"em andamento","assignee":"Wagner Bento Felix / Diogo Lerison","due":1792134000000,"id":"86aktjp00","ativ":[{"n":"Reunião de Kickoff 08/10 - 16h","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1791442800000,"original_due":1791442800000,"nova_previsao":null,"depth":0,"id":"86aktqg76"},{"n":"Validação de Marcos, responsáveis e datas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqg8z"},{"n":"Definir pontos focais e cadência de acompanhamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1791442800000,"original_due":1791442800000,"nova_previsao":null,"depth":0,"id":"86aktqga1"},{"n":"Publicar painel e liberar usuarios para acompanhamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqge2"},{"n":"Devolução da minuta contratual para Binario","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison / Wagner Bento Felix","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aktqgne"},{"n":"Elaboração da TAP","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aku13jv"},{"n":"Envio/Assinatura da TAP","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix / Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aku13k2"}]},{"n":"Fase 1 - SSO no portal B2B","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison / Wagner Bento Felix / Joab de Araújo Silva / Guilherme Lopes","due":1793343600000,"id":"86aktjp1b","ativ":[{"n":"Incluir a URL do BCP no trusted dashboard da federação do Keystone (stage SP) para validar o SSO","status":"shipped","raw_status":"concluído","assignee":"Diogo Lerison / Wagner Bento Felix","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqnym"},{"n":"Configurar Identity Provider e o mapping no Keystone","status":"in progress","raw_status":"em andamento","assignee":"Wagner Bento Felix","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":1,"id":"86aktnjgv"},{"n":"Validar os cenários de MFA, token expirado e usuário removido do grupo","status":"in progress","raw_status":"em andamento","assignee":"Joab de Araújo Silva","due":1793516400000,"original_due":1793516400000,"nova_previsao":null,"depth":1,"id":"86aktnjuf"},{"n":"Testar SSO no ambiente Sandbox","status":"in progress","raw_status":"em andamento","assignee":"Joab de Araújo Silva","due":1792738800000,"original_due":1792738800000,"nova_previsao":null,"depth":1,"id":"86aktnk69"},{"n":"Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Wagner Bento Felix","due":1792566000000,"original_due":1792566000000,"nova_previsao":null,"depth":0,"id":"86aktqnwv"},{"n":"Ajustes Mesa TI","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes / Tiago Gomes de Oliveira","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aktqp06"},{"n":"Levantamento de autenticação","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukw474"},{"n":"Liberar Usuario","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"17ttbukw475"},{"n":"Consolidar a federação do Keystone nos templates do director","status":"in progress","raw_status":"em andamento","assignee":"Wagner Bento Felix","due":1792566000000,"original_due":1792566000000,"nova_previsao":null,"depth":0,"id":"86aktqp1e"},{"n":"Documentar e alinhar virada para produção","status":"backlog","raw_status":"aberto","assignee":"Joab de Araújo Silva / Diogo Lerison","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86aktnk59"}]},{"n":"Fase 2 - Redirect do BCP API para o Portal B2B","status":"in progress","raw_status":"em andamento","assignee":"Guilherme Lopes / Guilherme Soares Gomes da Silva","due":1793343600000,"id":"86aktjp2r","ativ":[{"n":"Confirmar o sistema de destino","status":"shipped","raw_status":"concluído","assignee":"Diogo Lerison / Wagner Bento Felix","due":1791529200000,"original_due":1791529200000,"nova_previsao":null,"depth":0,"id":"86aktnkcj"},{"n":"Configurar a URL em redirect para produção","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":0,"id":"86aktnkpp"},{"n":"Publicar o painel na porta 443","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":0,"id":"86aktnkd2"},{"n":"Criar no front o botão com a rota que leva o usuário para a tela certa","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aktnke3"},{"n":"Exibir botão de custo apenas para perfil financeiro do Cloud Plus","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1792566000000,"original_due":1792566000000,"nova_previsao":null,"depth":0,"id":"86aktnkg1"},{"n":"Teste ponta a ponta","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Joab de Araújo Silva","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86aktnmwa"}]},{"n":"Fase 4 - Novas regiões","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison / Wagner Bento Felix","due":1793170800000,"id":"86aktjppg","ativ":[{"n":"Definir o ambiente inicial da coleta Canonical: staging SP, Fortaleza ou Porto Alegre","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqvyc"},{"n":"Ajuste de casas decimais","status":"in review","raw_status":"revisando","assignee":"Guilherme Soares Gomes da Silva","due":1792047600000,"original_due":1792047600000,"nova_previsao":null,"depth":0,"id":"86aktpwj6"},{"n":"Enviar as diretrizes de dimensionamento","status":"shipped","raw_status":"fechado","assignee":"Joab de Araújo Silva / Guilherme Lopes / Guilherme Soares Gomes da Silva","due":1791529200000,"original_due":1791529200000,"nova_previsao":null,"depth":0,"id":"86aktnyr0"},{"n":"Começar coleta Fortaleza","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva","due":1792738800000,"original_due":1792738800000,"nova_previsao":null,"depth":0,"id":"86aktp32q"},{"n":"Deploy + Validação","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktpv3n"},{"n":"Começar coleta Porto Alegre","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva","due":1792738800000,"original_due":1792738800000,"nova_previsao":null,"depth":0,"id":"86aktp32z"},{"n":"Deploy + Validação","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktpv8h"},{"n":"Criar o seletor de região no painel de consumo","status":"shipped","raw_status":"fechado","assignee":"Joab de Araújo Silva","due":1792998000000,"original_due":1792998000000,"nova_previsao":null,"depth":0,"id":"86aktp396"},{"n":"Definir a cobrança por roteador/projeto e por banda (avaliar aditivo contratual com Produtos)","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqw1d"},{"n":"Desabilitar o menu da calculadora da Binário na V1 ou apontá-lo para o endereço interno (VPN)","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktqw6q"},{"n":"Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1792738800000,"original_due":1792738800000,"nova_previsao":null,"depth":0,"id":"86aktqw82"},{"n":"Gerar a chave privada e o CSR e emitir um único certificado para os dois domínios","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1792566000000,"original_due":1792566000000,"nova_previsao":null,"depth":0,"id":"86aktqw9f"},{"n":"Liberar firewall e acesso externo conforme domínio e local de hospedagem","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix","due":1793170800000,"original_due":1793170800000,"nova_previsao":null,"depth":0,"id":"86aktqwaa"}]},{"n":"Fase 3 - API e SKU e Flavors","status":"in progress","raw_status":"em andamento","assignee":"Guilherme Lopes","due":1793343600000,"id":"86aktjp3x","ativ":[{"n":"Levantamento  necessidade de preço ou especificação","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktnvxa"},{"n":"Mapear de onde vêm os SKUs e como eles se ligam aos flavors do Nova","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1792047600000,"original_due":1792047600000,"nova_previsao":null,"depth":0,"id":"86aktnw78"},{"n":"Montar o contrato da API (OpenAPI) e validar com o consumidor","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1792479600000,"original_due":1792479600000,"nova_previsao":null,"depth":0,"id":"86aktnwh0"},{"n":"Definir a autenticação da API","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva","due":1792479600000,"original_due":1792479600000,"nova_previsao":null,"depth":0,"id":"86aktnwnx"},{"n":"Entendimento da demanda","status":"backlog","raw_status":"aberto","assignee":"Guilherme Soares Gomes da Silva / Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aktpn46"},{"n":"Implementar o endpoint com a transformação para o formato deles","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1793084400000,"original_due":1793084400000,"nova_previsao":null,"depth":0,"id":"86aktnwqw"},{"n":"Teste, documentação e deploy","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes","due":1793257200000,"original_due":1793257200000,"nova_previsao":null,"depth":0,"id":"86aktnwvd"},{"n":"Homologar","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix / Diogo Lerison / Guilherme Lopes / Joab de Araújo Silva","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86aktnwvw"},{"n":"Envio do Link da documentação","status":"backlog","raw_status":"aberto","assignee":"Guilherme Lopes / Diogo Lerison","due":1792134000000,"original_due":1792134000000,"nova_previsao":null,"depth":0,"id":"86aktnx74"},{"n":"Detalhar solicitações da API","status":"in progress","raw_status":"em andamento","assignee":"Guilherme Soares Gomes da Silva","due":1792047600000,"original_due":1792047600000,"nova_previsao":null,"depth":0,"id":"86aktqv0j"}]},{"n":"Atividades sem fase","status":"in progress","raw_status":"","assignee":"—","due":null,"id":null,"virtual":true,"ativ":[{"n":"Fase 5 - Relatório de utilização de VMs","status":"backlog","raw_status":"aberto","assignee":"Wagner Bento Felix / Diogo Lerison","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86aktjpk4"},{"n":"Fase 6 - Alarmística de coleta + chamados Jira","status":"backlog","raw_status":"aberto","assignee":"Diogo Lerison / Wagner Bento Felix","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86aktjpr4"}]}]},{"key":"gimba-mfa","nome":"Gimba","descricao":"MFA na conexão VPN de forma padrão","finalizado":false,"list_id":"901329173422","url":"https://app.clickup.com/3080406/v/li/901329173422","fases":[{"n":"Corrigir integração SAML no FortiGate","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"id":"86akqah6h","ativ":[{"n":"Analisar logs após a autenticação.","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqahk4"},{"n":"Validar a configuração de *Tunnel Client Mode* no portal VPN SSL","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqahpv"},{"n":"Retornar a análise para Márcio por e-mail","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqahtp"}]},{"n":"Preparação do Firewall","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"id":"86akq9k5a","ativ":[{"n":"Validar configurações do Firewall​","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9qmb"},{"n":"Ajustes e Atualização do firewall","status":"in progress","raw_status":"em andamento","assignee":"Priscila de Fatima Sotério Ferreira","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9k7w"},{"n":"Servidor de sincronização e grupos (perfil do AD)","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9kzz"},{"n":"GCDS e Password Sync para a sincronização​","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9r2e"},{"n":"Usuário piloto e grupo VPN SSL sincronizados no Workspace","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqafq4"},{"n":"Regras de acesso por perfil​","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9rpe"},{"n":"Teste de solicitação de MFA via Google Authenticator.","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqagg1"}]},{"n":"Piloto","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"id":"86akq9jjw","ativ":[{"n":"Homologação (Grupo de teste)","status":"in progress","raw_status":"em andamento","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9mh0"}]},{"n":"Acompanhamento","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"id":"86akq9jq9","ativ":[{"n":"Monitoramento","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9n7q"},{"n":"Ajustes Finos","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9nad"},{"n":"Desligar acesso antigo","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9ngr"}]},{"n":"Instalar Google Password Sync","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"id":"86akqamf0","ativ":[{"n":"Confirmar permissão/executável para instalação no ambiente Gimba","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqamgh"},{"n":"Agendar janela de manutenção","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqamgp"},{"n":"Instalar em todos os DCs","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqamgu"},{"n":"Orientar os usuários a trocar a senha após a instalação","status":"backlog","raw_status":"aberto","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqamgx"}]},{"n":"Implantação","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"id":"86akq9jp7","ativ":[{"n":"Configuração do MFA - Binário + GIMBA","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akq9jjf"}]},{"n":"Atividades sem fase","status":"in progress","raw_status":"","assignee":"—","due":null,"id":null,"virtual":true,"ativ":[{"n":"Enviar metadados e certificado SAML - Gimba","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqaj7k"},{"n":"Encerramento","status":"backlog","raw_status":"aberto","assignee":"—","due":1793343600000,"original_due":1793343600000,"nova_previsao":null,"depth":0,"id":"86akqd7h1"}]}]},{"key":"neovia","nome":"Neovia Solution","descricao":"Projeto finalizado","finalizado":true,"list_id":"901328971347","url":"https://app.clickup.com/3080406/v/li/901328971347","fases":[{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekjyb","ativ":[{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjym"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjyn"},{"n":"Plano de Comunicação Inicial","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjz8"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjza"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekk05"},{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekk08"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekk10"}]},{"n":"Fase 2 -  Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akekjyh","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjyw"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjzn"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekk0k"}]},{"n":"Fase 3 - Execução técnica (Neovia) - Gerenciado","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"id":"86akb7hyc","ativ":[{"n":"Infraestrutura","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb7w86"},{"n":"Criação de Dominio e Projeto","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akhr6qr"},{"n":"Criação de acesso ao ambiente","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akhr7r8"},{"n":"Firewall","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb7wfj"},{"n":"PFSense bc1-Firewall-4-16","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8w4j"},{"n":"IP Publico","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8wny"},{"n":"Configurar VPN site-to-site","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akk3hkx"},{"n":"Configurar VPN Client-to-server","status":"shipped","raw_status":"fechado","assignee":"Augusto Rossi / José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akk3hp3"},{"n":"Servidores (21 VMs)","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb7wk8"},{"n":"Bridge","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8555"},{"n":"Call Room","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8587"},{"n":"DNS Autoritativo Primário","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb85gn"},{"n":"DNS Resolver Primário","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb85nm"},{"n":"Backup Fortigate","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb85t6"},{"n":"Aquiles","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb85u2"},{"n":"Neozabbix","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb89mj"},{"n":"Zabbix Backbone","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb89q9"},{"n":"Unifi","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb89u3"},{"n":"AirControl","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb89vy"},{"n":"DNS Autoritativo Secundário","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8a0d"},{"n":"DNS Resolver Secundário","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8a4m"},{"n":"Aquiles Teste","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8a7u"},{"n":"Totvs DEV","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8aa4"},{"n":"PRTG","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8aav"},{"n":"Kaspersky","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8ade"},{"n":"AD","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8afe"},{"n":"5NMPC","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb8axw"},{"n":"Atlas (srv de vbr)","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1789455600000,"original_due":1789455600000,"nova_previsao":null,"depth":1,"id":"86akhxvt5"},{"n":"Backup Veeam","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akgf64j"},{"n":"Politica de backup","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf64m"},{"n":"Repositorio 15Tb","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf64n"},{"n":"Tenant","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf64v"},{"n":"Configuração Jobs","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf64w"},{"n":"Teste de Backup","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf651"},{"n":"Teste de Restore","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akgf652"},{"n":"Elaboração documentação téncica","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akgej6a"}]},{"n":"Fase 4 - Encerramento","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"id":"86akekjyr","ativ":[{"n":"Elaboração da TEP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjzg"},{"n":"Assinatura da TEP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekjzh"},{"n":"Envio da documentação técnica","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akekk07"}]}]},{"key":"soprema-fw","nome":"Soprema · Firewall","descricao":"BC-BR-SP-Firewall","finalizado":true,"list_id":"901328361858","url":"https://app.clickup.com/3080406/v/li/901328361858","fases":[{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86akb5qy5","ativ":[{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r2w"},{"n":"Elaboração TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r2j"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r0c"},{"n":"Plano de Comunicação Inicial","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r06"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5qyt"},{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5qyr"},{"n":"Documentação do cliente","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akbhkp3"}]},{"n":"Fase 2 -  Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1790924400000,"id":"86akb5qyh","ativ":[{"n":"Aquisições","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5qze"},{"n":"1 Unidade FortiGate-60F","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb5r0p"},{"n":"Licença","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akb5r4z"},{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5qzd"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1788937200000,"original_due":1788937200000,"nova_previsao":null,"depth":0,"id":"86akb63pe"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb63h5"}]},{"n":"Fase 3 - Execução (Soprema) - Gerenciado","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":1790924400000,"id":"86akb5qz5","ativ":[{"n":"Firewall Fisico","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akbhm4d"},{"n":"Instalação do equipamento fisico","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1790146800000,"original_due":1790146800000,"nova_previsao":null,"depth":1,"id":"86akb5r78"},{"n":"Compra do equipamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akbhnd3"},{"n":"Definir localidade para envio do Firewall","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb5r0d"},{"n":"Configuração do Firewall","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb5r35"},{"n":"Coletar politica de Firewall","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akb5r75"},{"n":"Criação da regra no Firewall","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akb5r4t"},{"n":"Configuração do Firewall","status":"shipped","raw_status":"fechado","assignee":"Alexandre Pereira / Marcelo Santos","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akb5r4r"},{"n":"Envio do Firewall","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akb5r5j"},{"n":"Documentação técnica","status":"shipped","raw_status":"fechado","assignee":"Marcelo Santos / Alexandre Pereira","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akbhh2m"},{"n":"Go-Live","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r8w"}]},{"n":"Fase 4 - Encerramento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1790924400000,"id":"86akb5r10","ativ":[{"n":"Elaboração da TEP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akbdgda"},{"n":"Assinatura da TEP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akb5r62"}]}]},{"key":"bestsmart","nome":"BC_Best Smart","descricao":"Best Smart Negócio e Tecnologia Ltda","finalizado":true,"list_id":"901329181833","url":"https://app.clickup.com/3080406/v/li/901329181833","fases":[{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"id":"86akqtnwf","ativ":[{"n":"Definir os objetivos do Projeto","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnwg"},{"n":"Identificar as partes Interessadas","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnwh"},{"n":"Plano de Comunicação Inicial","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnx9"},{"n":"Identificar os riscos","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnxe"}]},{"n":"Fase 2 -  Kickoff","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"id":"86akqtnwc","ativ":[{"n":"Reunião de Kick Off","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnwt"},{"n":"Envio da TAP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnxd"},{"n":"Assinatura da TAP","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnxv"}]},{"n":"Fase 3 - Execução BestSmart- Gerenciado","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"id":"86akqtnwe","ativ":[{"n":"Infraestrutura","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnwj"},{"n":"Criação do dominio","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnx0"},{"n":"Criação do Projeto","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnx1"},{"n":"Criação da Rede","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnxh"},{"n":"Levantamento de Usuarios (cliente)","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnxj"},{"n":"VM's","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnwk"},{"n":"SERVIDOR","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnx2"},{"n":"Backup Veeam","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtny2"},{"n":"Politica de backup","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnya"},{"n":"Repositorio","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtny9"},{"n":"Tenant","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnyf"},{"n":"Configuração Jobs","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnyg"},{"n":"Teste de Backup","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnym"},{"n":"Teste de Restore","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnyq"},{"n":"BC-Backup","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnyh"},{"n":"Configuração de politica","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnyn"},{"n":"Teste de backup","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnyp"},{"n":"Firewall Fisico","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnyx"},{"n":"Compra do equipamento","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnz2"},{"n":"Definir localidade para envio do Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnz1"},{"n":"Instalações do Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnz8"},{"n":"Criação da regra no Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akqtnzf"},{"n":"Configuração do Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akqtnze"},{"n":"Coletar politica de Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akqtnzp"},{"n":"Instalaçã local do firewall FGT-60F","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akqtnzv"},{"n":"Envio do Firewall","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86akqtnz9"},{"n":"Instalação do equipamento fisico com apoio ao cliente","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":2,"id":"86akqtnzg"},{"n":"Go-Live","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86akqtnz4"},{"n":"Infraestrutura","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aku4gcn"},{"n":"SRV1","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aku4gdg"},{"n":"SRV2","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aku4gdp"},{"n":"Backup","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86aku4geb"},{"n":"Aumento de Repositorio","status":"shipped","raw_status":"fechado","assignee":"—","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86aku4gj2"}]},{"n":"Atividades sem fase","status":"shipped","raw_status":"","assignee":"—","due":null,"id":null,"virtual":true,"ativ":[{"n":"Fase 4 - Encerramento","status":"shipped","raw_status":"fechado","assignee":"—","due":1791961200000,"original_due":1791961200000,"nova_previsao":null,"depth":0,"id":"86akqtnwd"}]}]},{"key":"psdovidro","nome":"PS do Vidro","descricao":"Nuvem Pública & Backup Veeam","finalizado":true,"list_id":"901327996026","url":"https://app.clickup.com/3080406/v/li/901327996026","fases":[{"n":"Fase 1 - Iniciação","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ajqk544","ativ":[{"n":"Elaboração do termo de abertura","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqk95v"},{"n":"Reunião de Kickoff","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":0,"id":"86ajqk98r"},{"n":"Definição de stakeholders","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqk9gj"}]},{"n":"Fase 2 - Planejamento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ajqk5mn","ativ":[{"n":"Realização do cronograma","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqk9r2"},{"n":"Estimar recursos e duração das atividades","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqk9uc"}]},{"n":"Fase 5 - Encerramento","status":"in progress","raw_status":"em andamento","assignee":"Diogo Lerison","due":null,"id":"86ajqk5ze","ativ":[{"n":"Documentação técnica final do ambiente","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqkavv"},{"n":"Realizar contato de encerramento","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqkayy"},{"n":"Elaboração da TEP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak081ex"},{"n":"Enviar termo de aceite do projeto TEP","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqkb2x"},{"n":"Assinatura da TEP","status":"waiting","raw_status":"aguardando retorno","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ak5upht"}]},{"n":"Fase 4 - Controle","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"id":"86ajqk5x0","ativ":[{"n":"Validar entregas do projeto","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqkaep"},{"n":"Acompanhamento do cronograma e Status report","status":"shipped","raw_status":"fechado","assignee":"Diogo Lerison","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqkaje"}]},{"n":"Fase 3 - Execução","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"id":"86ajqk5qu","ativ":[{"n":"Criação das VM's","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":0,"id":"86ajqka3d"},{"n":"VM bc1-standard-8-32","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":1,"id":"86ajr4avd"},{"n":"VM bc1-sql-4-32","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":1,"id":"86ajr4b1v"},{"n":"Firewall","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":0,"id":"86ajqka41"},{"n":"Pfsense bc1-firewall-2-4","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":1784703600000,"original_due":1784703600000,"nova_previsao":null,"depth":1,"id":"86ajr4c01"},{"n":"Backup","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqka5n"},{"n":"Configuração de repositorio","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajr4d12"},{"n":"Configuração de backup","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ajr4d4c"},{"n":"Teste de restore","status":"shipped","raw_status":"fechado","assignee":"Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":1,"id":"86ak07zz2"},{"n":"Consolidação da documentação técnica","status":"shipped","raw_status":"fechado","assignee":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"original_due":null,"nova_previsao":null,"depth":0,"id":"86ajqka87"}]}]}]};
+const PROJETOS = PROJETOS_DATA.projetos || [];
+
+const STATUS_META = {
+  'backlog':    {label:'Não iniciado', cls:'b-backlog',   color:'var(--slate)'},
+  'in planning':{label:'Planejamento', cls:'b-planning',  color:'var(--amber)'},
+  'in progress':{label:'Em andamento', cls:'b-progress',  color:'var(--blue)'},
+  'in test':    {label:'Em teste',     cls:'b-test',      color:'var(--violet)'},
+  'in review':  {label:'Em revisão',   cls:'b-review',    color:'var(--orange)'},
+  'waiting':    {label:'Aguardando retorno', cls:'b-waiting', color:'var(--amber)'},
+  'blocked':    {label:'Impedimento',  cls:'b-blocked',   color:'var(--red)'},
+  'cancelled':  {label:'Cancelado',    cls:'b-cancelled', color:'var(--text-mute)'},
+  'shipped':    {label:'Concluído',    cls:'b-shipped',   color:'var(--green)'}
+};
+function sm(s){ return STATUS_META[s] || STATUS_META['in progress']; }
+function badge(status){ const s = sm(status); return `<span class="badge ${s.cls}">${s.label}</span>`; }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function fmtDate(ms){
+  if(!ms) return '—';
+  return new Date(Number(ms)).toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+}
+
+// ===== Regras de alarme — idênticas ao painel de metas =====
+// Atrasada (vermelho) só a partir do dia SEGUINTE ao prazo original (datas de calendário).
+// No próprio dia do prazo: pendente (amarelo). Sem data: pendente de planejamento (não preenchimento).
+function startOfDay(ms){ const d = new Date(Number(ms)); d.setHours(0,0,0,0); return d.getTime(); }
+function encerrada(a){ return a.status === 'shipped' || a.status === 'cancelled'; }
+function ativDueState(a){
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(encerrada(a)) return null;
+  if(!dataBase) return 'sem_planejamento';
+  const hoje = startOfDay(Date.now());
+  const dia = startOfDay(dataBase);
+  if(dia < hoje) return 'atrasada';
+  if(dia === hoje) return 'pendente';
+  return null;
+}
+function diasDeAtraso(a){
+  const dataBase = (a.original_due != null) ? a.original_due : a.due;
+  if(!dataBase) return 0;
+  return Math.round((startOfDay(Date.now()) - startOfDay(dataBase)) / 86400000);
+}
+
+// ===== Progresso (mesma lógica das metas: só "Concluído" conta) =====
+function faseProgress(f){
+  if(f.status==='shipped') return 1;
+  const validas = (f.ativ||[]).filter(a=>a.status!=='cancelled');
+  if(!validas.length) return 0;
+  return validas.filter(a=>a.status==='shipped').length / validas.length;
+}
+function fasesValidas(p){ return p.fases.filter(f=>f.status!=='cancelled'); }
+function projProgress(p){
+  const fs = fasesValidas(p);
+  if(!fs.length) return 0;
+  return fs.reduce((s,f)=>s+faseProgress(f),0)/fs.length;
+}
+function contarAtiv(lista){
+  const c = {total:0, concluida:0, andamento:0, naoIniciada:0, pendente:0, semData:0, atrasada:0, cancelada:0};
+  lista.forEach(a=>{
+    if(a.status==='cancelled'){ c.cancelada++; return; }
+    c.total++;
+    const e = ativDueState(a);
+    if(a.status==='shipped') c.concluida++;
+    else if(e==='atrasada') c.atrasada++;
+    else if(e==='pendente') c.pendente++;
+    else if(e==='sem_planejamento') c.semData++;
+    else if(a.status==='backlog') c.naoIniciada++;
+    else c.andamento++;
+  });
+  return c;
+}
+function todasAtiv(p){ return p.fases.flatMap(f=>f.ativ||[]); }
+function alarmPills(c, compact){
+  let h = '';
+  if(c.atrasada) h += `<span class="overdue-pill">⚠ ${c.atrasada} atrasada${c.atrasada>1?'s':''}</span>`;
+  if(c.pendente) h += `<span class="overdue-pill pill-amber">● ${c.pendente} pendente${c.pendente>1?'s':''} hoje</span>`;
+  if(c.semData) h += `<span class="overdue-pill pill-amber">○ ${c.semData} sem data${compact?'':' (pendente planejamento)'}</span>`;
+  return h;
+}
+function alarmClass(c){ return c.atrasada ? ' meta-atrasada' : ((c.pendente||c.semData) ? ' meta-pendente' : ''); }
+
+// ================= ESTADO =================
+let activeTab = 'geral';
+let activeFilter = 'all';
+const openFases = new Set();
+
+const CIRC = 2*Math.PI*48;
+function setRing(pct){
+  const fg = document.getElementById('ringFg');
+  fg.style.strokeDasharray = CIRC.toFixed(1);
+  fg.style.strokeDashoffset = CIRC.toFixed(1);
+  requestAnimationFrame(()=>{ fg.style.strokeDashoffset = (CIRC*(1-pct/100)).toFixed(1); });
+  document.getElementById('ringPct').textContent = pct+'%';
+}
+function kpiHtml(c, labelTotal){
+  return `
+    <div class="kpi"><div class="k-num">${c.total}</div><div class="k-label">${labelTotal}</div></div>
+    <div class="kpi c-shipped"><div class="k-num">${c.concluida}</div><div class="k-label">Concluídas</div></div>
+    <div class="kpi c-progress"><div class="k-num">${c.andamento}</div><div class="k-label">Em andamento</div></div>
+    <div class="kpi c-backlog"><div class="k-num">${c.naoIniciada}</div><div class="k-label">Não iniciadas</div></div>
+    <div class="kpi${c.pendente?' alarm-amber':''}"><div class="k-num">${c.pendente}</div><div class="k-label">Pendentes (hoje)</div></div>
+    <div class="kpi${c.semData?' alarm-amber':''}"><div class="k-num">${c.semData}</div><div class="k-label">Sem data definida</div></div>
+    <div class="kpi${c.atrasada?' alarm-red':''}"><div class="k-num">${c.atrasada}</div><div class="k-label">Atrasadas</div></div>`;
+}
+
+// ================= ABAS =================
+const TAB_COLORS = ['var(--cyan)','var(--teal)','var(--violet)','var(--blue)','var(--orange)','var(--green)','var(--amber)'];
+function projColor(p){ return p.finalizado ? 'var(--slate)' : TAB_COLORS[PROJETOS.filter(x=>!x.finalizado).indexOf(p) % TAB_COLORS.length]; }
+
+function buildTabs(){
+  const bar = document.getElementById('tabBar');
+  const ativos = PROJETOS.filter(p=>!p.finalizado), fin = PROJETOS.filter(p=>p.finalizado);
+  const tabHtml = p=>{
+    const c = contarAtiv(todasAtiv(p));
+    const alarm = c.atrasada ? `<span class="pt-alarm red">${c.atrasada}</span>` : ((c.pendente+c.semData) ? `<span class="pt-alarm amber">${c.pendente+c.semData}</span>` : '');
+    return `<div class="ptab${p.finalizado?' done':''}" data-tab="${esc(p.key)}" style="--tc:${projColor(p)}" title="${esc(p.nome)} — ${esc(p.descricao)}">
+      <span><span class="pt-name">${esc(p.nome)}</span><span class="pt-sub">${esc(p.descricao)}</span></span>${alarm}</div>`;
+  };
+  bar.innerHTML = `<div class="ptab" data-tab="geral" style="--tc:var(--cyan)"><span><span class="pt-name">Visão geral</span><span class="pt-sub">${ativos.length} ativos · ${fin.length} finalizados</span></span></div>`
+    + ativos.map(tabHtml).join('')
+    + (fin.length ? `<span class="ptab-sep">Finalizados</span>` + fin.map(tabHtml).join('') : '');
+  bar.querySelectorAll('.ptab').forEach(t=>t.addEventListener('click', ()=>{ location.hash = t.dataset.tab==='geral' ? '#/' : '#/p/'+t.dataset.tab; }));
+}
+
+function selectTab(key){
+  if(key!=='geral' && !PROJETOS.find(p=>p.key===key)) key = 'geral';
+  if(key !== activeTab){ activeFilter = 'all'; openFases.clear(); document.getElementById('searchInput').value=''; }
+  activeTab = key;
+  document.querySelectorAll('.ptab').forEach(t=>t.classList.toggle('active', t.dataset.tab===key));
+  const at = document.querySelector('.ptab.active'); if(at) at.scrollIntoView({block:'nearest', inline:'nearest'});
+  if(key==='geral') renderGeral(); else renderProjeto(PROJETOS.find(p=>p.key===key));
+}
+
+// ================= VISÃO GERAL =================
+function renderGeral(){
+  document.getElementById('panel').style.setProperty('--panel-active','var(--cyan)');
+  document.getElementById('heroEyebrow').textContent = 'Controle de atividades de projetos · Visão geral';
+  document.getElementById('heroTitle').innerHTML = 'Painel de <span>Projetos</span>';
+  document.getElementById('heroDesc').textContent = `${PROJETOS.length} projetos acompanhados · clique em um projeto para abrir a aba dele`;
+  const ativos = PROJETOS.filter(p=>!p.finalizado);
+  const pct = ativos.length ? Math.round(ativos.reduce((s,p)=>s+projProgress(p),0)/ativos.length*100) : 0;
+  setRing(pct);
+  document.getElementById('kpiStrip').innerHTML = kpiHtml(contarAtiv(ativos.flatMap(todasAtiv)), 'Atividades (ativos)');
+  document.getElementById('controls').style.display = 'none';
+
+  const card = p=>{
+    const c = contarAtiv(todasAtiv(p));
+    const pc = Math.round(projProgress(p)*100);
+    const r = 26, circ = 2*Math.PI*r;
+    const pills = alarmPills(c, true) || (c.total ? `<span class="ok-pill">✓ sem alarmes</span>` : `<span class="overdue-pill pill-amber">sem atividades</span>`);
+    return `<div class="ov-card${alarmClass(c)}${p.finalizado?' done':''}" data-key="${esc(p.key)}">
+      <div class="ov-ring"><svg viewBox="0 0 64 64"><circle class="ring-bg" cx="32" cy="32" r="${r}"></circle><circle class="ring-fg" cx="32" cy="32" r="${r}" style="stroke:${projColor(p)}" stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${(circ*(1-pc/100)).toFixed(1)}"></circle></svg><b>${pc}%</b></div>
+      <div class="ov-info"><div class="ov-name">${esc(p.nome)}</div><div class="ov-desc">${esc(p.descricao)} · ${c.concluida}/${c.total} atividades</div><div class="ov-pills">${pills}</div></div>
+    </div>`;
+  };
+  const fin = PROJETOS.filter(p=>p.finalizado);
+  document.getElementById('content').innerHTML =
+    `<div class="ov-title">Projetos ativos</div><div class="ov-grid">${ativos.map(card).join('')}</div>` +
+    (fin.length ? `<div class="ov-title">Projetos finalizados</div><div class="ov-grid">${fin.map(card).join('')}</div>` : '');
+  document.querySelectorAll('.ov-card').forEach(el=>el.addEventListener('click', ()=>{ location.hash = '#/p/'+el.dataset.key; window.scrollTo(0,0); }));
+}
+
+// ================= ABA DE UM PROJETO =================
+const FILTROS = [['all','Todas'],['atrasada','Atrasadas'],['pendente','Pendentes hoje'],['sem_planejamento','Sem data'],['aberta','Em aberto'],['shipped','Concluídas']];
+function passaFiltro(a){
+  if(activeFilter==='all') return true;
+  if(activeFilter==='shipped') return a.status==='shipped';
+  if(activeFilter==='aberta') return !encerrada(a);
+  return ativDueState(a)===activeFilter;
+}
+function buildChips(){
+  const el = document.getElementById('filterChips');
+  el.innerHTML = FILTROS.map(([k,l])=>`<div class="chip${k===activeFilter?' active':''}" data-k="${k}">${l}</div>`).join('');
+  el.querySelectorAll('.chip').forEach(c=>c.addEventListener('click', ()=>{ activeFilter = c.dataset.k; buildChips(); renderFases(); }));
+}
+
+function ativRow(a){
+  const estado = ativDueState(a);
+  const od = estado==='atrasada', pend = estado==='pendente', semData = estado==='sem_planejamento', done = a.status==='shipped', canc = a.status==='cancelled';
+  const cor = od?'var(--red)':(pend||semData)?'var(--amber)':sm(a.status).color;
+  const label = od?'ATRASADA':pend?'PENDENTE':semData?'PENDENTE PLANEJAMENTO':sm(a.status).label;
+  const dataOriginal = (a.original_due != null) ? a.original_due : a.due;
+  const dataAtualizada = (a.nova_previsao != null) ? a.nova_previsao : a.due;
+  const dataMudou = dataOriginal != null && dataAtualizada != null && dataAtualizada !== dataOriginal;
+  const dias = od ? diasDeAtraso(a) : 0;
+  const ind = a.depth ? `<span class="ind">${'↳'.repeat(Math.min(a.depth,3))}</span>` : '';
+  return `<div class="ativ-row${od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}${canc?' cancelada':''}">`
+    + `<span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${ind}${esc(a.n)}</span>`
+    + (a.assignee && a.assignee!=='—' ? `<span class="ativ-who" title="${esc(a.assignee)}">${esc(a.assignee)}</span>` : '')
+    + (dataOriginal ? `<span class="ativ-due">${fmtDate(dataOriginal)}</span>` : (semData ? `<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>` : ''))
+    + (dataMudou ? `<span class="ativ-due-new" title="${a.nova_previsao!=null?'Nova previsão (campo do ClickUp)':'Nova data no ClickUp'}">→ ${fmtDate(dataAtualizada)}</span>` : '')
+    + (od ? `<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>` : '')
+    + `<span class="ativ-status">${label}</span>`
+    + (a.id ? `<a class="ativ-link" href="https://app.clickup.com/t/${esc(a.id)}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>` : '')
+    + `</div>`;
+}
+
+function renderFases(){
+  const p = PROJETOS.find(x=>x.key===activeTab);
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const out = [];
+  p.fases.forEach((f, i)=>{
+    const faseMatchQ = !q || f.n.toLowerCase().includes(q);
+    const ativ = (f.ativ||[]).filter(a=>passaFiltro(a) && (faseMatchQ || a.n.toLowerCase().includes(q)));
+    if(!ativ.length && (activeFilter!=='all' || !faseMatchQ)) return;
+    const c = contarAtiv(f.ativ||[]);
+    const pct = Math.round(faseProgress(f)*100);
+    const fkey = f.id || ('v'+i);
+    const aberto = openFases.has(fkey) || activeFilter!=='all' || !!q;
+    out.push(`<div class="fcard${alarmClass(c)}${aberto?' open':''}" data-f="${esc(fkey)}">
+      <div class="fhead">
+        <div class="fidx">${f.virtual?'AVUL':'FASE'}<b>${String(i+1).padStart(2,'0')}</b></div>
+        <div class="fname"><div class="n1">${esc(f.n)}</div>
+          <div class="n2"><span>${c.concluida}/${c.total} atividade(s)${c.cancelada?` · ${c.cancelada} cancelada(s)`:''}${f.assignee&&f.assignee!=='—'?' · '+esc(f.assignee):''}${f.due?' · prazo '+fmtDate(f.due):''}</span>${alarmPills(c)}</div></div>
+        ${f.virtual?'<span></span>':badge(f.status)}
+        <div class="meta-bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div class="bar-pct">${pct}%</div></div>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="fbody">
+        ${f.id?`<div style="margin-top:12px;"><a class="fase-link" style="display:inline-flex; gap:6px; align-items:center; font-family:var(--mono); font-size:11px; text-decoration:none;" href="https://app.clickup.com/t/${esc(f.id)}" target="_blank">Abrir fase no ClickUp ↗</a></div>`:''}
+        <div class="ativ-list" style="display:flex">${ativ.length ? ativ.map(ativRow).join('') : '<span class="empty-msg">Nenhuma atividade.</span>'}</div>
+      </div>
+    </div>`);
+  });
+  document.getElementById('content').innerHTML = `<div class="fases">${out.length ? out.join('') : '<div class="empty-msg">Nenhuma fase ou atividade encontrada com esse filtro.</div>'}</div>`;
+  document.querySelectorAll('.fcard .fhead').forEach(h=>h.addEventListener('click', ()=>{
+    const card = h.parentElement, k = card.dataset.f;
+    card.classList.toggle('open');
+    card.classList.contains('open') ? openFases.add(k) : openFases.delete(k);
+  }));
+}
+
+function renderProjeto(p){
+  document.getElementById('panel').style.setProperty('--panel-active', projColor(p));
+  document.getElementById('heroEyebrow').textContent = 'Controle de atividades · ' + (p.finalizado ? 'Projeto finalizado' : 'Projeto em andamento');
+  document.getElementById('heroTitle').innerHTML = `<span>${esc(p.nome)}</span>${p.finalizado?'<span class="done-flag">Finalizado</span>':''}`;
+  document.getElementById('heroDesc').innerHTML = `${esc(p.descricao)} · ${p.fases.filter(f=>!f.virtual).length} fase(s) · <a href="${esc(p.url)}" target="_blank">abrir lista no ClickUp ↗</a>`;
+  setRing(Math.round(projProgress(p)*100));
+  document.getElementById('kpiStrip').innerHTML = kpiHtml(contarAtiv(todasAtiv(p)), 'Total de atividades');
+  document.getElementById('controls').style.display = '';
+  buildChips();
+  if(!p.fases.length){
+    document.getElementById('content').innerHTML = `<div class="fases"><div class="empty-msg">Este projeto ainda não tem tarefas na lista do ClickUp.</div></div>`;
+    return;
+  }
+  renderFases();
+}
+
+document.getElementById('searchInput').addEventListener('input', ()=>{ if(activeTab!=='geral') renderFases(); });
+
+function checkRoute(){
+  const m = location.hash.match(/^#\/p\/([\w-]+)$/);
+  selectTab(m ? m[1] : 'geral');
+}
+buildTabs();
+window.addEventListener('hashchange', checkRoute);
+checkRoute();
+
+// datas no topo
+const now = new Date();
+document.getElementById('tb-date').textContent = now.toLocaleDateString('pt-BR',{day:'2-digit',month:'short',year:'numeric'});
+if(PROJETOS_DATA.last_sync_utc){
+  const f = new Date(PROJETOS_DATA.last_sync_utc).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo', day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'});
+  document.getElementById('tb-gen').textContent = 'Atualizado em ' + f + ' (horário de Brasília)';
+}
+
+// ================= LOGIN (tela decorativa) =================
+// Aviso: isto NÃO é segurança real — os dados já estão neste arquivo estático.
+// Serve só para desencorajar acesso casual por quem não tem o link/senha.
+(function(){
+  const CREDENCIAIS = [
+    { usuario: "gadorno@binario.cloud", senha: "gadorno@2026" },
+    { usuario: "ralves@binario.cloud", senha: "ralves@2026" },
+    { usuario: "toliveira@binario.cloud", senha: "toliveira@2026" },
+    { usuario: "rassad@binario.net", senha: "rassad@2026" },
+    { usuario: "binario", senha: "binario@2026" },
+  ]; // ALTERAR antes de publicar de verdade
+  const CHAVE_STORAGE = "bcloud_metas_auth";
+
+  const tela = document.getElementById('loginScreen');
+  const form = document.getElementById('loginForm');
+  const inputUser = document.getElementById('loginUser');
+  const inputPass = document.getElementById('loginPass');
+  const erro = document.getElementById('loginError');
+
+  // Sessão: depois de logar, o refresh (F5) mantém logado; só o botão "Sair" encerra.
+  // Opcional: "Gravar usuário e senha" guarda o acesso neste navegador para preencher o login.
+  const CHAVE_CRED = "bcloud_metas_cred";
+  const chkGravar = document.getElementById('loginRemember');
+  // Sessão guardada em 3 lugares (localStorage, sessionStorage e window.name) para
+  // sobreviver ao F5 mesmo quando o navegador bloqueia algum deles (aba privada, etc.).
+  const store = {
+    get(k){
+      try { const v = localStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const v = sessionStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const m = (window.name || '').match(new RegExp('(?:^|;)' + k + '=([^;]*)')); if(m) return decodeURIComponent(m[1]); } catch(e){}
+      return null;
+    },
+    set(k,v){
+      try { localStorage.setItem(k,v); } catch(e){}
+      try { sessionStorage.setItem(k,v); } catch(e){}
+      try { store._wn(k, v); } catch(e){}
+    },
+    del(k){
+      try { localStorage.removeItem(k); } catch(e){}
+      try { sessionStorage.removeItem(k); } catch(e){}
+      try { store._wn(k, null); } catch(e){}
+    },
+    _wn(k, v){
+      const partes = (window.name || '').split(';').filter(x => x && !x.startsWith(k + '='));
+      if(v !== null) partes.push(k + '=' + encodeURIComponent(v));
+      window.name = partes.join(';');
+    },
+  };
+
+
+  function preencherSalvo(){
+    let c = null;
+    try { c = JSON.parse(store.get(CHAVE_CRED) || 'null'); } catch(e){}
+    if(c && c.u){ inputUser.value = c.u; inputPass.value = c.p || ''; chkGravar.checked = true; }
+    else { inputUser.value = ''; inputPass.value = ''; chkGravar.checked = false; }
+  }
+  preencherSalvo();
+
+  if(store.get(CHAVE_STORAGE) === 'ok'){
+    tela.style.display = 'none';
+  }
+
+  document.getElementById('btnLogoff').addEventListener('click', function(){
+    store.del(CHAVE_STORAGE);
+    erro.classList.remove('show');
+    preencherSalvo();            // mantém o acesso gravado (se houver); senão limpa os campos
+    location.hash = '';
+    window.scrollTo(0, 0);
+    tela.style.display = '';
+    inputUser.focus();
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const usuario = inputUser.value.trim().toLowerCase();
+    const senha = inputPass.value;
+    const valido = CREDENCIAIS.some(c => c.usuario === usuario && c.senha === senha);
+    if(valido){
+      store.set(CHAVE_STORAGE, 'ok');
+      if(chkGravar.checked) store.set(CHAVE_CRED, JSON.stringify({u: usuario, p: senha}));
+      else store.del(CHAVE_CRED);
+      tela.style.display = 'none';
+    } else {
+      erro.classList.remove('show');
+      void erro.offsetWidth;
+      erro.classList.add('show');
+      inputPass.value = '';
+      inputPass.focus();
+    }
+  });
+})();
+
+
+</script>
+</body>
+</html>
