@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-16T13:48:31.957855+00:00",
+ "last_sync_utc": "2026-10-16T17:52:41.612585+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4748,8 +4748,8 @@
        "status": "shipped",
        "raw_status": "fechado",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1792047600000,
+       "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjw9"
@@ -4759,8 +4759,8 @@
        "status": "shipped",
        "raw_status": "fechado",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1792047600000,
+       "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwa"
@@ -4770,8 +4770,8 @@
        "status": "shipped",
        "raw_status": "fechado",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1792047600000,
+       "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwb"
@@ -4781,8 +4781,8 @@
        "status": "shipped",
        "raw_status": "fechado",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1792047600000,
+       "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwc"
