@@ -26,7 +26,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak080ug"
+       "id": "86ak080ug",
+       "alarme_limpo_due": null
       },
       {
        "n": "5.1 Transição para operação",
@@ -37,7 +38,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5ee"
+       "id": "86ajrf5ee",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar documentação as built",
@@ -48,7 +50,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf61r"
+       "id": "86ajrf61r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentar topologia de rede",
@@ -59,7 +62,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62b"
+       "id": "86ajrf62b",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentar rotinas de backup",
@@ -70,7 +74,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62f"
+       "id": "86ajrf62f",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar passagem para o CCOE",
@@ -81,7 +86,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62u"
+       "id": "86ajrf62u",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar reunião de transição",
@@ -92,7 +98,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63c"
+       "id": "86ajrf63c",
+       "alarme_limpo_due": null
       },
       {
        "n": "5.2 Encerramento",
@@ -100,10 +107,11 @@
        "raw_status": "aberto",
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5ef"
+       "id": "86ajrf5ef",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar relatório final",
@@ -111,10 +119,11 @@
        "raw_status": "aberto",
        "assignee": "—",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63u"
+       "id": "86ajrf63u",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar reunião de encerramento",
@@ -122,10 +131,11 @@
        "raw_status": "aberto",
        "assignee": "—",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63z"
+       "id": "86ajrf63z",
+       "alarme_limpo_due": null
       },
       {
        "n": "Enviar termo de aceite",
@@ -133,10 +143,11 @@
        "raw_status": "aberto",
        "assignee": "—",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63y"
+       "id": "86ajrf63y",
+       "alarme_limpo_due": null
       },
       {
        "n": "Obter aceite formal da Neugebauer",
@@ -144,10 +155,11 @@
        "raw_status": "aberto",
        "assignee": "—",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf643"
+       "id": "86ajrf643",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -168,7 +180,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjg6z2"
+       "id": "86akjg6z2",
+       "alarme_limpo_due": null
       },
       {
        "n": "Disponibilização de imagens Compactadas",
@@ -179,7 +192,8 @@
        "original_due": 1792393200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aknc0rm"
+       "id": "86aknc0rm",
+       "alarme_limpo_due": null
       },
       {
        "n": "Servidores ambiente não produtivo",
@@ -190,7 +204,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5xy"
+       "id": "86ajrf5xy",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W12-V01",
@@ -201,7 +216,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynp"
+       "id": "17ttbukvynp",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W12-V02",
@@ -212,7 +228,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynq"
+       "id": "17ttbukvynq",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W22-V02",
@@ -223,7 +240,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynr"
+       "id": "17ttbukvynr",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBQUEOPS01",
@@ -234,7 +252,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynu"
+       "id": "17ttbukvynu",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSWRH1",
@@ -245,7 +264,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynv"
+       "id": "17ttbukvynv",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGDS",
@@ -256,7 +276,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynw"
+       "id": "17ttbukvynw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGPPRDEV",
@@ -267,7 +288,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynx"
+       "id": "17ttbukvynx",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGPPRPRD",
@@ -278,7 +300,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyny"
+       "id": "17ttbukvyny",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGSAPORA01",
@@ -289,7 +312,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynz"
+       "id": "17ttbukvynz",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGSLM",
@@ -300,7 +324,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp0"
+       "id": "17ttbukvyp0",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGTSITS01",
@@ -311,7 +336,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp1"
+       "id": "17ttbukvyp1",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWINTRANET1",
@@ -322,7 +348,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp2"
+       "id": "17ttbukvyp2",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWMSF1",
@@ -333,7 +360,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp4"
+       "id": "17ttbukvyp4",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWMSF2",
@@ -344,7 +372,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp5"
+       "id": "17ttbukvyp5",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWSADIG1",
@@ -355,7 +384,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp6"
+       "id": "17ttbukvyp6",
+       "alarme_limpo_due": null
       },
       {
        "n": "ULTRAPARERP",
@@ -366,7 +396,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp8"
+       "id": "17ttbukvyp8",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHRC03",
@@ -377,7 +408,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypb"
+       "id": "17ttbukvypb",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPPRDCI",
@@ -388,7 +420,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypc"
+       "id": "17ttbukvypc",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNPRD",
@@ -399,7 +432,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvype"
+       "id": "17ttbukvype",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPPRDA1",
@@ -410,7 +444,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypf"
+       "id": "17ttbukvypf",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPPRDA2",
@@ -421,7 +456,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyph"
+       "id": "17ttbukvyph",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBFIOPRD",
@@ -432,7 +468,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypj"
+       "id": "17ttbukvypj",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBPOPRD",
@@ -443,7 +480,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypm"
+       "id": "17ttbukvypm",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBNFEPRD",
@@ -454,7 +492,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypp"
+       "id": "17ttbukvypp",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBWDPRD",
@@ -465,7 +504,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypq"
+       "id": "17ttbukvypq",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSLM",
@@ -476,7 +516,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypr"
+       "id": "17ttbukvypr",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBROUTER",
@@ -487,7 +528,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypt"
+       "id": "17ttbukvypt",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBBOQAS",
@@ -498,7 +540,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypu"
+       "id": "17ttbukvypu",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBFIOQAS",
@@ -509,7 +552,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypv"
+       "id": "17ttbukvypv",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBWDDEV",
@@ -520,7 +564,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypx"
+       "id": "17ttbukvypx",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBPODEV",
@@ -531,7 +576,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypz"
+       "id": "17ttbukvypz",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBBODEV",
@@ -542,7 +588,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq1"
+       "id": "17ttbukvyq1",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBFIODEV",
@@ -553,7 +600,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq2"
+       "id": "17ttbukvyq2",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNDEV",
@@ -564,7 +612,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq3"
+       "id": "17ttbukvyq3",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBNFEDEV",
@@ -575,7 +624,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq5"
+       "id": "17ttbukvyq5",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSISROT01",
@@ -586,7 +636,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq7"
+       "id": "17ttbukvyq7",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB_BB_TMV_W12_V01",
@@ -597,7 +648,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq8"
+       "id": "17ttbukvyq8",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB_BB_TSS_W12_V01",
@@ -608,7 +660,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq9"
+       "id": "17ttbukvyq9",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPDEV",
@@ -619,7 +672,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqa"
+       "id": "17ttbukvyqa",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB_IFR_W12_V01_DEV",
@@ -630,7 +684,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqc"
+       "id": "17ttbukvyqc",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBWIN01",
@@ -641,7 +696,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqd"
+       "id": "17ttbukvyqd",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBWIN02",
@@ -652,7 +708,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqe"
+       "id": "17ttbukvyqe",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWAPLMS1",
@@ -663,7 +720,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqf"
+       "id": "17ttbukvyqf",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWDBMS1",
@@ -674,7 +732,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqg"
+       "id": "17ttbukvyqg",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBBOPRD",
@@ -685,7 +744,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqj"
+       "id": "17ttbukvyqj",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -706,7 +766,8 @@
        "original_due": 1785394800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5df"
+       "id": "86ajrf5df",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir stakeholders",
@@ -717,7 +778,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ew"
+       "id": "86ajrf5ew",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar apresentação de kickoff",
@@ -728,7 +790,8 @@
        "original_due": 1784703600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ex"
+       "id": "86ajrf5ex",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar reunião de kickoff",
@@ -739,7 +802,8 @@
        "original_due": 1784790000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ey"
+       "id": "86ajrf5ey",
+       "alarme_limpo_due": null
       },
       {
        "n": "Registrar decisões e pendências do kickoff",
@@ -750,7 +814,8 @@
        "original_due": 1784790000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f5"
+       "id": "86ajrf5f5",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar TAP",
@@ -761,7 +826,8 @@
        "original_due": 1784876400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f6"
+       "id": "86ajrf5f6",
+       "alarme_limpo_due": null
       },
       {
        "n": "Enviar TAP para assinatura",
@@ -772,7 +838,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f7"
+       "id": "86ajrf5f7",
+       "alarme_limpo_due": null
       },
       {
        "n": "Obter assinatura da Binário Cloud",
@@ -783,7 +850,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fm"
+       "id": "86ajrf5fm",
+       "alarme_limpo_due": null
       },
       {
        "n": "Obter assinatura da Neugebauer",
@@ -794,7 +862,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fp"
+       "id": "86ajrf5fp",
+       "alarme_limpo_due": null
       },
       {
        "n": "Formalizar abertura do projeto",
@@ -805,7 +874,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fq"
+       "id": "86ajrf5fq",
+       "alarme_limpo_due": null
       },
       {
        "n": "1.2 Refinamento do escopo",
@@ -816,7 +886,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5de"
+       "id": "86ajrf5de",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar inventário de servidores",
@@ -827,7 +898,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fv"
+       "id": "86ajrf5fv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar servidores ativos e desligados",
@@ -838,7 +910,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5g4"
+       "id": "86ajrf5g4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar servidores que serão migrados",
@@ -849,7 +922,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5g7"
+       "id": "86ajrf5g7",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar servidores fora do escopo",
@@ -860,7 +934,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ge"
+       "id": "86ajrf5ge",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar sistemas operacionais",
@@ -871,7 +946,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gm"
+       "id": "86ajrf5gm",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar capacidade de disco por servidor",
@@ -882,7 +958,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gr"
+       "id": "86ajrf5gr",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar serviços hospedados",
@@ -893,7 +970,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gp"
+       "id": "86ajrf5gp",
+       "alarme_limpo_due": null
       },
       {
        "n": "1.3 Planejamento do projeto",
@@ -904,7 +982,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dc"
+       "id": "86ajrf5dc",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir marcos do projeto",
@@ -915,7 +994,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5k0"
+       "id": "86ajrf5k0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir responsáveis por frente",
@@ -926,7 +1006,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5jz"
+       "id": "86ajrf5jz",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar plano de comunicação",
@@ -937,7 +1018,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kq"
+       "id": "86ajrf5kq",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir reuniões semanais de acompanhamento",
@@ -948,7 +1030,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kt"
+       "id": "86ajrf5kt",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criar registro de riscos e impedimentos",
@@ -959,7 +1042,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kv"
+       "id": "86ajrf5kv",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -980,7 +1064,8 @@
        "original_due": 1789974000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dx"
+       "id": "86ajrf5dx",
+       "alarme_limpo_due": null
       },
       {
        "n": "Migração de srv's via Veeam",
@@ -991,7 +1076,8 @@
        "original_due": 1788159600000,
        "nova_previsao": 1789023600000,
        "depth": 1,
-       "id": "86ajrf5x1"
+       "id": "86ajrf5x1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Registrar problemas encontrados",
@@ -1002,7 +1088,8 @@
        "original_due": 1788159600000,
        "nova_previsao": 1789110000000,
        "depth": 2,
-       "id": "86ajrf5xn"
+       "id": "86ajrf5xn",
+       "alarme_limpo_due": null
       },
       {
        "n": "Executar teste funcional",
@@ -1013,7 +1100,8 @@
        "original_due": 1788159600000,
        "nova_previsao": 1789110000000,
        "depth": 2,
-       "id": "86ajrf5xf"
+       "id": "86ajrf5xf",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBULTRAPARERP",
@@ -1024,7 +1112,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7x9r"
+       "id": "86akq7x9r",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORAPRD01",
@@ -1035,7 +1124,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7x9v"
+       "id": "86akq7x9v",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W22-V01",
@@ -1046,7 +1136,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xa9"
+       "id": "86akq7xa9",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1057,7 +1148,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xag"
+       "id": "86akq7xag",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHRC04",
@@ -1068,7 +1160,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xap"
+       "id": "86akq7xap",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W22-V01",
@@ -1079,7 +1172,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xav"
+       "id": "86akq7xav",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V01",
@@ -1090,7 +1184,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xb5"
+       "id": "86akq7xb5",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V02",
@@ -1101,7 +1196,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xb9"
+       "id": "86akq7xb9",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V03",
@@ -1112,7 +1208,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbb"
+       "id": "86akq7xbb",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ELO-W22-V01",
@@ -1123,7 +1220,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbx"
+       "id": "86akq7xbx",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBMAXDB01",
@@ -1134,7 +1232,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbz"
+       "id": "86akq7xbz",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBMAXDB02",
@@ -1145,7 +1244,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xc4"
+       "id": "86akq7xc4",
+       "alarme_limpo_due": null
       },
       {
        "n": "CNGB-IFR-W22-V01",
@@ -1156,7 +1256,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xc9"
+       "id": "86akq7xc9",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLOPRD01",
@@ -1167,7 +1268,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcd"
+       "id": "86akq7xcd",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPQAS",
@@ -1178,7 +1280,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcp"
+       "id": "86akq7xcp",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSYBASE01",
@@ -1189,7 +1292,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcw"
+       "id": "86akq7xcw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W12-V01",
@@ -1200,7 +1304,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdb"
+       "id": "86akq7xdb",
+       "alarme_limpo_due": null
       },
       {
        "n": "CNGB-TMV-W22-V01",
@@ -1211,7 +1316,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdg"
+       "id": "86akq7xdg",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO01",
@@ -1222,7 +1328,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdm"
+       "id": "86akq7xdm",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO02",
@@ -1233,7 +1340,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdr"
+       "id": "86akq7xdr",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORADEV01",
@@ -1244,7 +1352,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdv"
+       "id": "86akq7xdv",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBVONSAC2",
@@ -1255,7 +1364,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xe0"
+       "id": "86akq7xe0",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLODEV01",
@@ -1266,7 +1376,8 @@
        "original_due": 1788505200000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xe7"
+       "id": "86akq7xe7",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNQAS",
@@ -1277,7 +1388,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xec"
+       "id": "86akq7xec",
+       "alarme_limpo_due": null
       },
       {
        "n": "Migração Imagem QCOW2",
@@ -1288,7 +1400,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akhx6eg"
+       "id": "86akhx6eg",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSITEDEV",
@@ -1299,7 +1412,8 @@
        "original_due": 1789974000000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azb"
+       "id": "86akm7azb",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSITEPRD",
@@ -1310,7 +1424,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azh"
+       "id": "86akm7azh",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBNEOGRID",
@@ -1321,7 +1436,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azq"
+       "id": "86akm7azq",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -1342,7 +1458,8 @@
        "original_due": 1787814000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dh"
+       "id": "86ajrf5dh",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação de dominio",
@@ -1353,7 +1470,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6bqth"
+       "id": "86ak6bqth",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação de projeto",
@@ -1364,7 +1482,8 @@
        "original_due": 1785481200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5mb"
+       "id": "86ajrf5mb",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criar usuários e permissões",
@@ -1375,7 +1494,8 @@
        "original_due": 1787814000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5me"
+       "id": "86ajrf5me",
+       "alarme_limpo_due": null
       },
       {
        "n": "Hands-on BCP",
@@ -1386,7 +1506,8 @@
        "original_due": 1790578800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akjfc3g"
+       "id": "86akjfc3g",
+       "alarme_limpo_due": null
       },
       {
        "n": "2.2 Rede e conectividade",
@@ -1397,7 +1518,8 @@
        "original_due": 1788332400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dj"
+       "id": "86ajrf5dj",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criar segmentos de rede",
@@ -1408,7 +1530,8 @@
        "original_due": 1787727600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6chyn"
+       "id": "86ak6chyn",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar throughput disponível",
@@ -1419,7 +1542,8 @@
        "original_due": 1787727600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ph"
+       "id": "86ajrf5ph",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir gateways",
@@ -1430,7 +1554,8 @@
        "original_due": 1787727600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5nq"
+       "id": "86ajrf5nq",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir modelo de conectividade entre ambientes",
@@ -1441,7 +1566,8 @@
        "original_due": 1787900400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5nv"
+       "id": "86ajrf5nv",
+       "alarme_limpo_due": null
       },
       {
        "n": "2.3 Firewall e segurança",
@@ -1452,7 +1578,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dk"
+       "id": "86ajrf5dk",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do FORTIVM bc1-firewall-4-16",
@@ -1463,7 +1590,8 @@
        "original_due": 1787641200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajxt0gj"
+       "id": "86ajxt0gj",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantamento FW Kosmo",
@@ -1474,7 +1602,8 @@
        "original_due": 1788332400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6cty1"
+       "id": "86ak6cty1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar objetos, grupos e serviços",
@@ -1485,7 +1614,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajrf5q3"
+       "id": "86ajrf5q3",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar políticas atuais",
@@ -1496,7 +1626,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajrf5q5"
+       "id": "86ajrf5q5",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar interfaces",
@@ -1507,7 +1638,8 @@
        "original_due": 1789369200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qe"
+       "id": "86ajrf5qe",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar VPNs IPsec site to site",
@@ -1518,7 +1650,8 @@
        "original_due": 1789369200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qv"
+       "id": "86ajrf5qv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar regras NATs",
@@ -1529,7 +1662,8 @@
        "original_due": 1789369200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qw"
+       "id": "86ajrf5qw",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar regras de proxy reverso",
@@ -1540,7 +1674,8 @@
        "original_due": 1789369200000,
        "nova_previsao": 1789714800000,
        "depth": 1,
-       "id": "86ak7vzqq"
+       "id": "86ak7vzqq",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar roteamento",
@@ -1551,7 +1686,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qg"
+       "id": "86ajrf5qg",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar políticas de segurança",
@@ -1562,7 +1698,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qr"
+       "id": "86ajrf5qr",
+       "alarme_limpo_due": null
       },
       {
        "n": "Testar conectividade entre ambientes",
@@ -1573,7 +1710,8 @@
        "original_due": 1789714800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5pm"
+       "id": "86ajrf5pm",
+       "alarme_limpo_due": null
       },
       {
        "n": "2.4 Coleta de dados e configurações locais",
@@ -1584,7 +1722,8 @@
        "original_due": 1787900400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajwq6ah"
+       "id": "86ajwq6ah",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar dependências entre aplicações",
@@ -1595,7 +1734,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5h1"
+       "id": "86ajrf5h1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir criticidade dos sistemas",
@@ -1606,7 +1746,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5hb"
+       "id": "86ajrf5hb",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantar dependência entre servidores e serviços.",
@@ -1617,7 +1758,8 @@
        "original_due": 1787900400000,
        "nova_previsao": 1788505200000,
        "depth": 1,
-       "id": "86ajrf5hu"
+       "id": "86ajrf5hu",
+       "alarme_limpo_due": null
       },
       {
        "n": "Coleta de informações para inventario do ambiente NGB Kosmo",
@@ -1628,7 +1770,8 @@
        "original_due": 1787900400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq728"
+       "id": "86ajwq728",
+       "alarme_limpo_due": null
       },
       {
        "n": "2.5 Instalação do Agent de backup",
@@ -1639,7 +1782,8 @@
        "original_due": 1789110000000,
        "nova_previsao": 1789110000000,
        "depth": 0,
-       "id": "86ajwq7dt"
+       "id": "86ajwq7dt",
+       "alarme_limpo_due": null
       },
       {
        "n": "Servidores Windows",
@@ -1650,7 +1794,8 @@
        "original_due": 1787900400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq7jc"
+       "id": "86ajwq7jc",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W22-V01",
@@ -1661,7 +1806,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq7w5"
+       "id": "86ajwq7w5",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1672,7 +1818,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq7xa"
+       "id": "86ajwq7xa",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1683,7 +1830,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq815"
+       "id": "86ajwq815",
+       "alarme_limpo_due": null
       },
       {
        "n": "CNGB-TMV-W22-V01",
@@ -1694,7 +1842,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq81y"
+       "id": "86ajwq81y",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W22-V01",
@@ -1705,7 +1854,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq832"
+       "id": "86ajwq832",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V01",
@@ -1716,7 +1866,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq83y"
+       "id": "86ajwq83y",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V02",
@@ -1727,7 +1878,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq85q"
+       "id": "86ajwq85q",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V03",
@@ -1738,7 +1890,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8a0"
+       "id": "86ajwq8a0",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-TSS-W12-V01",
@@ -1749,7 +1902,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8am"
+       "id": "86ajwq8am",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W12-V01",
@@ -1760,7 +1914,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8bn"
+       "id": "86ajwq8bn",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ELO-W22-V01",
@@ -1771,7 +1926,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8eh"
+       "id": "86ajwq8eh",
+       "alarme_limpo_due": null
       },
       {
        "n": "Servidores Linux",
@@ -1782,7 +1938,8 @@
        "original_due": 1787900400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq7nk"
+       "id": "86ajwq7nk",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBNFS01",
@@ -1793,7 +1950,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8h9"
+       "id": "86ajwq8h9",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNPRD",
@@ -1804,7 +1962,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8j4"
+       "id": "86ajwq8j4",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPPRDCI",
@@ -1815,7 +1974,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8kn"
+       "id": "86ajwq8kn",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORAPRD01",
@@ -1826,7 +1986,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8nb"
+       "id": "86ajwq8nb",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBULTRAPARERP",
@@ -1837,7 +1998,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8q4"
+       "id": "86ajwq8q4",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO01",
@@ -1848,7 +2010,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8qw"
+       "id": "86ajwq8qw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBVONSAC2",
@@ -1859,7 +2022,8 @@
        "original_due": 1789110000000,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8t3"
+       "id": "86ajwq8t3",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHRC04",
@@ -1870,7 +2034,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8ux"
+       "id": "86ajwq8ux",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLOPRD01",
@@ -1881,7 +2046,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq937"
+       "id": "86ajwq937",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPQAS",
@@ -1892,7 +2058,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq96r"
+       "id": "86ajwq96r",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNQAS",
@@ -1903,7 +2070,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq98b"
+       "id": "86ajwq98b",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORADEV01",
@@ -1914,7 +2082,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9ak"
+       "id": "86ajwq9ak",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLODEV01",
@@ -1925,7 +2094,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9cq"
+       "id": "86ajwq9cq",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO02",
@@ -1936,7 +2106,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9kt"
+       "id": "86ajwq9kt",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSYBASE01",
@@ -1947,7 +2118,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9r3"
+       "id": "86ajwq9r3",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -1968,7 +2140,8 @@
        "original_due": 1791183600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dr"
+       "id": "86ajrf5dr",
+       "alarme_limpo_due": 1791183600000
       },
       {
        "n": "Criar tenant Veeam",
@@ -1979,7 +2152,8 @@
        "original_due": 1791183600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5u0"
+       "id": "86ajrf5u0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar repositório",
@@ -1990,7 +2164,8 @@
        "original_due": 1791183600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5u4"
+       "id": "86ajrf5u4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir schedule e politica de retenção",
@@ -2001,7 +2176,8 @@
        "original_due": 1791961200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6dvc4"
+       "id": "86ak6dvc4",
+       "alarme_limpo_due": 1791961200000
       },
       {
        "n": "Executar primeiro backup",
@@ -2012,7 +2188,8 @@
        "original_due": 1791183600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5uu"
+       "id": "86ajrf5uu",
+       "alarme_limpo_due": null
       },
       {
        "n": "Executar teste de restauração",
@@ -2023,7 +2200,8 @@
        "original_due": 1791183600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5uw"
+       "id": "86ajrf5uw",
+       "alarme_limpo_due": 1791183600000
       },
       {
        "n": "4.3 Monitoramento",
@@ -2034,7 +2212,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dt"
+       "id": "86ajrf5dt",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Configurar monitoramento das VMs",
@@ -2045,7 +2224,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5v9"
+       "id": "86ajrf5v9",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Configurar monitoramento do firewall",
@@ -2056,7 +2236,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vn"
+       "id": "86ajrf5vn",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Configurar monitoramento dos backups",
@@ -2067,7 +2248,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vm"
+       "id": "86ajrf5vm",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Validar geração automática de alertas",
@@ -2078,7 +2260,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vt"
+       "id": "86ajrf5vt",
+       "alarme_limpo_due": 1792134000000
       }
      ]
     },
@@ -2099,7 +2282,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ar8"
+       "id": "86akm7ar8",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBNEOGRID - 10.200.12.207",
@@ -2110,7 +2294,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8f0"
+       "id": "86akqa8f0",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSITEPRD - 10.210.12.220",
@@ -2121,7 +2306,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa4fw"
+       "id": "86akqa4fw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORAPRD01 - 10.200.12.252",
@@ -2132,7 +2318,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aqw"
+       "id": "86akm7aqw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ABS-W22-V01 - 10.200.12.223",
@@ -2143,7 +2330,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ar1"
+       "id": "86akm7ar1",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHRC04 10.200.12.220",
@@ -2154,7 +2342,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7arf"
+       "id": "86akm7arf",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBMAXDB01 - 10.200.12.225",
@@ -2165,7 +2354,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7atw"
+       "id": "86akm7atw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBMAXDB02 - 10.200.12.218",
@@ -2176,7 +2366,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aua"
+       "id": "86akm7aua",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBULTRAPARERP - 10.200.12.215",
@@ -2187,7 +2378,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aqu"
+       "id": "86akm7aqu",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO01 - 10.200.12.231",
@@ -2198,7 +2390,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ax4"
+       "id": "86akm7ax4",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBELO02 - 10.200.12.232",
@@ -2209,7 +2402,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7axj"
+       "id": "86akm7axj",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBVONSAC2 - 10.200.12.206",
@@ -2220,7 +2414,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aye"
+       "id": "86akm7aye",
+       "alarme_limpo_due": null
       },
       {
        "n": "CNGB-IFR-W22-V01 - 10.200.160.5",
@@ -2231,7 +2426,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aux"
+       "id": "86akm7aux",
+       "alarme_limpo_due": null
       },
       {
        "n": "CNGB-TMV-W22-V01 - 10.200.160.10",
@@ -2242,7 +2438,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7awy"
+       "id": "86akm7awy",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W22-V01 - 10.200.12.246",
@@ -2253,7 +2450,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7art"
+       "id": "86akm7art",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V01 - 10.200.12.238",
@@ -2264,7 +2462,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ary"
+       "id": "86akm7ary",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V02 - 10.200.12.239",
@@ -2275,7 +2474,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7at2"
+       "id": "86akm7at2",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ETL-W22-V03 - 10.200.12.233",
@@ -2286,7 +2486,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7atk"
+       "id": "86akm7atk",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLOPRD01 - 10.200.12.233",
@@ -2297,7 +2498,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7avm"
+       "id": "86akm7avm",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBERPQAS - 10.200.12.62",
@@ -2308,7 +2510,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7avw"
+       "id": "86akm7avw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBHNQAS - 10.200.12.64",
@@ -2319,7 +2522,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7az1"
+       "id": "86akm7az1",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBORADEV01 - 10.200.12.251",
@@ -2330,7 +2534,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7axw"
+       "id": "86akm7axw",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBCICLODEV01 - 10.200.12.234",
@@ -2341,7 +2546,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ayr"
+       "id": "86akm7ayr",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSYBASE01 - 10.200.12.226",
@@ -2352,7 +2558,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aw7"
+       "id": "86akm7aw7",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-RSW-W12-V01 - 10.200.12.230",
@@ -2363,7 +2570,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7awn"
+       "id": "86akm7awn",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGB-ELO-W22-V01 - 10.200.12.247",
@@ -2374,7 +2582,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7att"
+       "id": "86akm7att",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBSITEDEV - 10.210.12.219",
@@ -2385,7 +2594,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8qh"
+       "id": "86akqa8qh",
+       "alarme_limpo_due": null
       },
       {
        "n": "NGBDLM01 - \t10.200.12.217",
@@ -2396,7 +2606,8 @@
        "original_due": 1791097200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8vf"
+       "id": "86akqa8vf",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2418,7 +2629,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjgbjg"
+       "id": "86akjgbjg",
+       "alarme_limpo_due": null
       },
       {
        "n": "Liberação Link 500Mbp's - Neugebauer",
@@ -2429,7 +2641,8 @@
        "original_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akpu58t"
+       "id": "86akpu58t",
+       "alarme_limpo_due": 1791961200000
       },
       {
        "n": "Envio do aviso previo entre Kosmo x NGB",
@@ -2440,7 +2653,8 @@
        "original_due": 1785222000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjg9f6"
+       "id": "86akjg9f6",
+       "alarme_limpo_due": null
       },
       {
        "n": "Comunicação entre Binario e Kosmo bloqueado",
@@ -2451,7 +2665,8 @@
        "original_due": 1786518000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajwdywa"
+       "id": "86ajwdywa",
+       "alarme_limpo_due": null
       },
       {
        "n": "Incompatibilidade Servidores SUSE",
@@ -2462,7 +2677,8 @@
        "original_due": 1789110000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akce127"
+       "id": "86akce127",
+       "alarme_limpo_due": null
       },
       {
        "n": "Liberação de portas/acessos no firewall da Kosmo (chamado 697)",
@@ -2473,7 +2689,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akmf6hm"
+       "id": "86akmf6hm",
+       "alarme_limpo_due": null
       },
       {
        "n": "Acesso direto da Binário ao firewall da Kosmo",
@@ -2484,7 +2701,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akmf6px"
+       "id": "86akmf6px",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -2515,7 +2733,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebre"
+       "id": "86ak5ebre",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar contato de encerramento",
@@ -2526,7 +2745,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebup"
+       "id": "86ak5ebup",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação técnica final",
@@ -2537,7 +2757,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebyb"
+       "id": "86ak5ebyb",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -2548,7 +2769,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ec3z"
+       "id": "86ak5ec3z",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2569,7 +2791,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3u8"
+       "id": "86ak5e3u8",
+       "alarme_limpo_due": null
       },
       {
        "n": "Reunião de Kickoff",
@@ -2580,7 +2803,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3vk"
+       "id": "86ak5e3vk",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definição de Stakeholders",
@@ -2591,7 +2815,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3zq"
+       "id": "86ak5e3zq",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2612,7 +2837,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e6re"
+       "id": "86ak5e6re",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definição de servidor para instalar o VBR",
@@ -2623,7 +2849,8 @@
        "original_due": 1788246000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e6z0"
+       "id": "86ak5e6z0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Instalação do VBR",
@@ -2634,7 +2861,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e70q"
+       "id": "86ak5e70q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar repositório (8Tb)",
@@ -2645,7 +2873,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e78d"
+       "id": "86ak5e78d",
+       "alarme_limpo_due": null
       },
       {
        "n": "Instalar Endpoint nos servidor",
@@ -2653,10 +2882,11 @@
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
-       "original_due": 1791961200000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e7cy"
+       "id": "86ak5e7cy",
+       "alarme_limpo_due": null
       },
       {
        "n": "WIN-64AA16BBGDE",
@@ -2667,7 +2897,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j1m"
+       "id": "86akq7j1m",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWSPR003",
@@ -2678,7 +2909,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j4y"
+       "id": "86akq7j4y",
+       "alarme_limpo_due": null
       },
       {
        "n": "SWSPR002",
@@ -2689,7 +2921,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j8f"
+       "id": "86akq7j8f",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar Jobs de backup",
@@ -2697,10 +2930,11 @@
        "raw_status": "aguardando retorno",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
-       "original_due": 1791961200000,
+       "original_due": 1792738800000,
        "nova_previsao": 1792134000000,
        "depth": 1,
-       "id": "86ak5e7f4"
+       "id": "86ak5e7f4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validação de backup e restore",
@@ -2708,10 +2942,11 @@
        "raw_status": "planejamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792393200000,
-       "original_due": 1792134000000,
+       "original_due": 1792393200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e7jr"
+       "id": "86ak5e7jr",
+       "alarme_limpo_due": null
       },
       {
        "n": "Monitoramento do backup",
@@ -2719,10 +2954,11 @@
        "raw_status": "planejamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
-       "original_due": 1792134000000,
+       "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ygpj"
+       "id": "86ak5ygpj",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação técnica",
@@ -2730,10 +2966,11 @@
        "raw_status": "aberto",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792393200000,
-       "original_due": 1792134000000,
+       "original_due": 1792393200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ec77"
+       "id": "86ak5ec77",
+       "alarme_limpo_due": null
       },
       {
        "n": "API de report de ferramenta para o cliente",
@@ -2741,10 +2978,11 @@
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792479600000,
-       "original_due": 1792134000000,
+       "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8quyy"
+       "id": "86ak8quyy",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2765,7 +3003,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e436"
+       "id": "86ak5e436",
+       "alarme_limpo_due": null
       },
       {
        "n": "Estimar recursos e tempo de execução",
@@ -2776,7 +3015,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exf2"
+       "id": "86ak5exf2",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2797,7 +3037,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e7pz"
+       "id": "86ak5e7pz",
+       "alarme_limpo_due": null
       },
       {
        "n": "Acompanhamento do cronograma e status report",
@@ -2808,7 +3049,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e7tq"
+       "id": "86ak5e7tq",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -2839,7 +3081,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5eyy7"
+       "id": "86ak5eyy7",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realizar contato de encerramento",
@@ -2850,7 +3093,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez0e"
+       "id": "86ak5ez0e",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação técnica final",
@@ -2861,7 +3105,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez25"
+       "id": "86ak5ez25",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -2872,7 +3117,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez40"
+       "id": "86ak5ez40",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2893,7 +3139,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew0r"
+       "id": "86ak5ew0r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Reunião de kickoff",
@@ -2904,7 +3151,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew22"
+       "id": "86ak5ew22",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaboração da TAP",
@@ -2915,7 +3163,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5yy47"
+       "id": "86ak5yy47",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definição de Stakeholders",
@@ -2926,7 +3175,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew6y"
+       "id": "86ak5ew6y",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TAP",
@@ -2937,7 +3187,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew9h"
+       "id": "86ak5ew9h",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -2958,7 +3209,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ex8z"
+       "id": "86ak5ex8z",
+       "alarme_limpo_due": null
       },
       {
        "n": "Estimar recursos e tempo de execução",
@@ -2969,7 +3221,8 @@
        "original_due": 1788159600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exe1"
+       "id": "86ak5exe1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Registro de documentação",
@@ -2980,7 +3233,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak8prta"
+       "id": "86ak8prta",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3001,7 +3255,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5eykw"
+       "id": "86ak5eykw",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3022,7 +3277,8 @@
        "original_due": 1788418800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ewx4"
+       "id": "86ak5ewx4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Infraestrutura (Gerenciado)",
@@ -3033,7 +3289,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ewf8"
+       "id": "86ak5ewf8",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do dominio",
@@ -3044,7 +3301,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ewkr"
+       "id": "86ak5ewkr",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do Projeto",
@@ -3055,7 +3313,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ewpn"
+       "id": "86ak5ewpn",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação da Rede",
@@ -3066,7 +3325,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8peu5"
+       "id": "86ak8peu5",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -3077,7 +3337,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pfdz"
+       "id": "86ak8pfdz",
+       "alarme_limpo_due": null
       },
       {
        "n": "Firewall (Gerenciado)",
@@ -3088,7 +3349,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z7v9"
+       "id": "86ak5z7v9",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação de firewall",
@@ -3099,7 +3361,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5z8tg"
+       "id": "86ak5z8tg",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração Inicial do FW",
@@ -3110,7 +3373,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5z8ze"
+       "id": "86ak5z8ze",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração de VPN site to site",
@@ -3121,7 +3385,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pmr5"
+       "id": "86ak8pmr5",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração de VPN client to site",
@@ -3132,7 +3397,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pn7r"
+       "id": "86ak8pn7r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Servidor",
@@ -3143,7 +3409,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z83a"
+       "id": "86ak5z83a",
+       "alarme_limpo_due": null
       },
       {
        "n": "1 VM",
@@ -3154,7 +3421,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5zcrb"
+       "id": "86ak5zcrb",
+       "alarme_limpo_due": null
       },
       {
        "n": "BC-Backup (Gerenciado)",
@@ -3165,7 +3433,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exvf"
+       "id": "86ak5exvf",
+       "alarme_limpo_due": null
       },
       {
        "n": "Licenças",
@@ -3176,7 +3445,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8q3ur"
+       "id": "86ak8q3ur",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar Jobs de backup",
@@ -3187,7 +3457,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ey7n"
+       "id": "86ak5ey7n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Monitoramento",
@@ -3198,7 +3469,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z856"
+       "id": "86ak5z856",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar monitoramento.",
@@ -3209,7 +3481,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5zh01"
+       "id": "86ak5zh01",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação Técnica",
@@ -3220,7 +3493,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak8rgfd"
+       "id": "86ak8rgfd",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -3251,7 +3525,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8p"
+       "id": "86akg8t8p",
+       "alarme_limpo_due": null
       },
       {
        "n": "Checklist de Readiness / Aceite Operacional",
@@ -3262,7 +3537,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akkhrvq"
+       "id": "86akkhrvq",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -3273,7 +3549,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8q"
+       "id": "86akg8t8q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da documentação técnica",
@@ -3284,7 +3561,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9g"
+       "id": "86akg8t9g",
+       "alarme_limpo_due": null
       },
       {
        "n": "Entrada oficial em produção",
@@ -3295,7 +3573,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhth0"
+       "id": "86akkhth0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Operação assistida",
@@ -3306,7 +3585,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhtpy"
+       "id": "86akkhtpy",
+       "alarme_limpo_due": null
       },
       {
        "n": "Reunião de acompanhamento pós-Go-Live",
@@ -3317,7 +3597,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhtvf"
+       "id": "86akkhtvf",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3338,7 +3619,8 @@
        "original_due": 1790060400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8x"
+       "id": "86akg8t8x",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da TAP",
@@ -3349,7 +3631,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9v"
+       "id": "86akg8t9v",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TAP",
@@ -3360,7 +3643,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8taa"
+       "id": "86akg8taa",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3381,7 +3665,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhr9"
+       "id": "86akkhhr9",
+       "alarme_limpo_due": null
       },
       {
        "n": "Aplicar identidade visual White Label",
@@ -3392,7 +3677,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhwn"
+       "id": "86akkhhwn",
+       "alarme_limpo_due": null
       },
       {
        "n": "Desativar e ClaudIA para BTECH",
@@ -3403,7 +3689,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhzg"
+       "id": "86akkhhzg",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criar e validar usuários administrativos e perfis de acesso",
@@ -3414,7 +3701,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhj3x"
+       "id": "86akkhj3x",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar catálogo de serviços disponibilizados à BTECH",
@@ -3425,7 +3713,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhj6n"
+       "id": "86akkhj6n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Cadastrar tabela de preços da BTECH",
@@ -3436,7 +3725,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjae"
+       "id": "86akkhjae",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar custos, consumo e fluxo de faturamento",
@@ -3447,7 +3737,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjd1"
+       "id": "86akkhjd1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Treinamento BCAPI",
@@ -3458,7 +3749,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjw0"
+       "id": "86akkhjw0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Hands-on / treinamento BCAPI",
@@ -3469,7 +3761,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjwx"
+       "id": "86akkhjwx",
+       "alarme_limpo_due": null
       },
       {
        "n": "Hands-on técnico BCP / Console White Label",
@@ -3480,7 +3773,8 @@
        "original_due": 1790665200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpg3"
+       "id": "86akkhpg3",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir fluxo de atendimento e escalonamento N1/N2/N3",
@@ -3491,7 +3785,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpq1"
+       "id": "86akkhpq1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaborar e aprovar Matriz RACI",
@@ -3502,7 +3797,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpww"
+       "id": "86akkhpww",
+       "alarme_limpo_due": null
       },
       {
        "n": "Apresentar e validar SLA contratado",
@@ -3513,7 +3809,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhq1u"
+       "id": "86akkhq1u",
+       "alarme_limpo_due": null
       },
       {
        "n": "Cadastrar contatos e canais oficiais de suporte",
@@ -3524,7 +3821,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhq8p"
+       "id": "86akkhq8p",
+       "alarme_limpo_due": null
       },
       {
        "n": "Executar provisionamento ponta a ponta",
@@ -3535,7 +3833,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhqpy"
+       "id": "86akkhqpy",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar serviços específicos acordados na PoC",
@@ -3546,7 +3845,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhqzz"
+       "id": "86akkhqzz",
+       "alarme_limpo_due": null
       },
       {
        "n": "Visita técnica ao Data Center ODATA",
@@ -3557,7 +3857,8 @@
        "original_due": 1793602800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhr10"
+       "id": "86akkhr10",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3578,7 +3879,8 @@
        "original_due": 1790060400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8r"
+       "id": "86akg8t8r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar os riscos",
@@ -3589,7 +3891,8 @@
        "original_due": 1790060400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9w"
+       "id": "86akg8t9w",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaboração TAP",
@@ -3600,7 +3903,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8ta6"
+       "id": "86akg8ta6",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realização do cronograma",
@@ -3611,7 +3915,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8taf"
+       "id": "86akg8taf",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação do cliente",
@@ -3622,7 +3927,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8tav"
+       "id": "86akg8tav",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -3653,7 +3959,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzv"
+       "id": "86akekhzv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -3664,7 +3971,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzw"
+       "id": "86akekhzw",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da documentação técnica",
@@ -3675,7 +3983,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0k"
+       "id": "86akekj0k",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3696,7 +4005,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzu"
+       "id": "86akekhzu",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da TAP",
@@ -3707,7 +4017,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0m"
+       "id": "86akekj0m",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TAP",
@@ -3718,7 +4029,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1e"
+       "id": "86akekj1e",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3739,7 +4051,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzn"
+       "id": "86akekhzn",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -3750,7 +4063,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzp"
+       "id": "86akekhzp",
+       "alarme_limpo_due": null
       },
       {
        "n": "Plano de Comunicação Inicial",
@@ -3761,7 +4075,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0n"
+       "id": "86akekj0n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar os riscos",
@@ -3772,7 +4087,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0q"
+       "id": "86akekj0q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaboração TAP",
@@ -3783,7 +4099,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1h"
+       "id": "86akekj1h",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realização do cronograma",
@@ -3794,7 +4111,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1j"
+       "id": "86akekj1j",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação do cliente",
@@ -3805,7 +4123,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj2j"
+       "id": "86akekj2j",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -3826,7 +4145,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfztuf"
+       "id": "86akfztuf",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do dominio",
@@ -3837,7 +4157,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuj"
+       "id": "86akfztuj",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do Projeto",
@@ -3848,7 +4169,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuk"
+       "id": "86akfztuk",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação da Rede",
@@ -3859,7 +4181,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuz"
+       "id": "86akfztuz",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -3870,7 +4193,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztv0"
+       "id": "86akfztv0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Firewall",
@@ -3881,7 +4205,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzt"
+       "id": "86akekhzt",
+       "alarme_limpo_due": null
       },
       {
        "n": "PFSENSE",
@@ -3892,7 +4217,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj0a"
+       "id": "86akekj0a",
+       "alarme_limpo_due": null
       },
       {
        "n": "IP Publico",
@@ -3903,7 +4229,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj0b"
+       "id": "86akekj0b",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração",
@@ -3914,7 +4241,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj11"
+       "id": "86akekj11",
+       "alarme_limpo_due": null
       },
       {
        "n": "VPN",
@@ -3925,7 +4253,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj13"
+       "id": "86akekj13",
+       "alarme_limpo_due": null
       },
       {
        "n": "Migração (Veeam)",
@@ -3936,7 +4265,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj18"
+       "id": "86akekj18",
+       "alarme_limpo_due": null
       },
       {
        "n": "Repositorio",
@@ -3947,7 +4277,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj1t"
+       "id": "86akekj1t",
+       "alarme_limpo_due": null
       },
       {
        "n": "Tenant",
@@ -3958,7 +4289,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2n"
+       "id": "86akekj2n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração Jobs",
@@ -3969,7 +4301,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2p"
+       "id": "86akekj2p",
+       "alarme_limpo_due": null
       },
       {
        "n": "restauração dos servidores em nuvem",
@@ -3980,7 +4313,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akjbzva"
+       "id": "86akjbzva",
+       "alarme_limpo_due": null
       },
       {
        "n": "SERVIDOR VBR LOCAL",
@@ -3991,7 +4325,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn50f7"
+       "id": "86akn50f7",
+       "alarme_limpo_due": null
       },
       {
        "n": "VM's",
@@ -4002,7 +4337,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzr"
+       "id": "86akekhzr",
+       "alarme_limpo_due": null
       },
       {
        "n": "APMSQL01",
@@ -4013,7 +4349,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj08"
+       "id": "86akekj08",
+       "alarme_limpo_due": null
       },
       {
        "n": "APMCRM1",
@@ -4024,7 +4361,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn505c"
+       "id": "86akn505c",
+       "alarme_limpo_due": null
       },
       {
        "n": "APMERP1",
@@ -4035,7 +4373,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn509j"
+       "id": "86akn509j",
+       "alarme_limpo_due": null
       },
       {
        "n": "AWS - APMSVRWEBAWS",
@@ -4046,7 +4385,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn50zg"
+       "id": "86akn50zg",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV05?",
@@ -4057,7 +4397,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj75c"
+       "id": "86aktj75c",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV06?",
@@ -4068,7 +4409,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj778"
+       "id": "86aktj778",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV07?",
@@ -4079,7 +4421,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj77y"
+       "id": "86aktj77y",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV08?",
@@ -4090,7 +4433,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj789"
+       "id": "86aktj789",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV09?",
@@ -4101,7 +4445,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj78f"
+       "id": "86aktj78f",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV10?",
@@ -4112,7 +4457,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj790"
+       "id": "86aktj790",
+       "alarme_limpo_due": null
       },
       {
        "n": "BC-Backup",
@@ -4123,7 +4469,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj25"
+       "id": "86akekj25",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração de politica",
@@ -4134,7 +4481,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2q"
+       "id": "86akekj2q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Teste de backup",
@@ -4145,7 +4493,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2r"
+       "id": "86akekj2r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação técnica",
@@ -4156,7 +4505,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj3a"
+       "id": "86akekj3a",
+       "alarme_limpo_due": null
       },
       {
        "n": "Go-Live",
@@ -4167,7 +4517,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj3m"
+       "id": "86akekj3m",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -4198,7 +4549,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5f"
+       "id": "86akekg5f",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -4209,7 +4561,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5e"
+       "id": "86akekg5e",
+       "alarme_limpo_due": null
       },
       {
        "n": "Plano de Comunicação Inicial",
@@ -4220,7 +4573,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6q"
+       "id": "86akekg6q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar os riscos",
@@ -4231,7 +4585,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6r"
+       "id": "86akekg6r",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaboração TAP",
@@ -4242,7 +4597,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg7z"
+       "id": "86akekg7z",
+       "alarme_limpo_due": null
       },
       {
        "n": "Realização do cronograma",
@@ -4253,7 +4609,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg80"
+       "id": "86akekg80",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação do cliente",
@@ -4264,7 +4621,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg8z"
+       "id": "86akekg8z",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4285,7 +4643,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5k"
+       "id": "86akekg5k",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da TAP",
@@ -4296,7 +4655,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6p"
+       "id": "86akekg6p",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TAP",
@@ -4307,7 +4667,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg7j"
+       "id": "86akekg7j",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4328,7 +4689,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5m"
+       "id": "86akekg5m",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -4339,7 +4701,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5n"
+       "id": "86akekg5n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da documentação técnica",
@@ -4350,7 +4713,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6g"
+       "id": "86akekg6g",
+       "alarme_limpo_due": null
       },
       {
        "n": "Faturamento",
@@ -4361,7 +4725,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akruatg"
+       "id": "86akruatg",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4382,7 +4747,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfzp4x"
+       "id": "86akfzp4x",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do dominio",
@@ -4393,7 +4759,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp56"
+       "id": "86akfzp56",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação do Projeto",
@@ -4404,7 +4771,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp57"
+       "id": "86akfzp57",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criação da Rede",
@@ -4415,7 +4783,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp5m"
+       "id": "86akfzp5m",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -4426,7 +4795,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp5p"
+       "id": "86akfzp5p",
+       "alarme_limpo_due": null
       },
       {
        "n": "Firewall",
@@ -4437,7 +4807,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5h"
+       "id": "86akekg5h",
+       "alarme_limpo_due": null
       },
       {
        "n": "Subir imagem Mikrotik",
@@ -4448,7 +4819,8 @@
        "original_due": 1790060400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn3upp"
+       "id": "86akn3upp",
+       "alarme_limpo_due": null
       },
       {
        "n": "1 IP Publico",
@@ -4459,7 +4831,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg68"
+       "id": "86akekg68",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração",
@@ -4470,7 +4843,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg73"
+       "id": "86akekg73",
+       "alarme_limpo_due": null
       },
       {
        "n": "VPN",
@@ -4481,7 +4855,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg74"
+       "id": "86akekg74",
+       "alarme_limpo_due": null
       },
       {
        "n": "VM's",
@@ -4492,7 +4867,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5g"
+       "id": "86akekg5g",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV01 - AD/FileServer",
@@ -4503,7 +4879,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg65"
+       "id": "86akekg65",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV02 - DB",
@@ -4514,7 +4891,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn5y7f"
+       "id": "86akn5y7f",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV03 - Aplicação",
@@ -4525,7 +4903,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn5y9j"
+       "id": "86akn5y9j",
+       "alarme_limpo_due": null
       },
       {
        "n": "SRV04 - Teste VPN",
@@ -4536,7 +4915,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akpku1y"
+       "id": "86akpku1y",
+       "alarme_limpo_due": null
       },
       {
        "n": "BC-Backup",
@@ -4547,7 +4927,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg8j"
+       "id": "86akekg8j",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configuração de politica",
@@ -4558,7 +4939,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg96"
+       "id": "86akekg96",
+       "alarme_limpo_due": null
       },
       {
        "n": "Teste de backup",
@@ -4569,7 +4951,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg97"
+       "id": "86akekg97",
+       "alarme_limpo_due": null
       },
       {
        "n": "Monitoramento",
@@ -4580,7 +4963,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfzp4v"
+       "id": "86akfzp4v",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar monitoramento.",
@@ -4591,7 +4975,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp4y"
+       "id": "86akfzp4y",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação técnica",
@@ -4602,7 +4987,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg9w"
+       "id": "86akekg9w",
+       "alarme_limpo_due": null
       },
       {
        "n": "Go-Live",
@@ -4613,7 +4999,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekgad"
+       "id": "86akekgad",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -4644,7 +5031,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aet"
+       "id": "86akn4aet",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TEP",
@@ -4655,7 +5043,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aeu"
+       "id": "86akn4aeu",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da documentação técnica",
@@ -4666,7 +5055,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afc"
+       "id": "86akn4afc",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4687,7 +5077,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aeq"
+       "id": "86akn4aeq",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -4698,7 +5089,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aep"
+       "id": "86akn4aep",
+       "alarme_limpo_due": null
       },
       {
        "n": "Identificar os riscos",
@@ -4709,7 +5101,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afr"
+       "id": "86akn4afr",
+       "alarme_limpo_due": null
       },
       {
        "n": "Elaboração TAP",
@@ -4720,7 +5113,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4age"
+       "id": "86akn4age",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentação do cliente",
@@ -4731,7 +5125,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4ah8"
+       "id": "86akn4ah8",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4752,7 +5147,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjw9"
+       "id": "17ttbukwjw9",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar 1 firewall",
@@ -4763,7 +5159,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwa"
+       "id": "17ttbukwjwa",
+       "alarme_limpo_due": null
       },
       {
        "n": "1 IP público",
@@ -4774,7 +5171,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwb"
+       "id": "17ttbukwjwb",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir Política de backup",
@@ -4785,7 +5183,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwc"
+       "id": "17ttbukwjwc",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar BC-Backup",
@@ -4796,7 +5195,8 @@
        "original_due": 1791961200000,
        "nova_previsao": 1792047600000,
        "depth": 0,
-       "id": "17ttbukwjwd"
+       "id": "17ttbukwjwd",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar monitoramento",
@@ -4807,7 +5207,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwe"
+       "id": "17ttbukwjwe",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -4828,7 +5229,8 @@
        "original_due": 1790233200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aen"
+       "id": "86akn4aen",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio da TAP",
@@ -4839,7 +5241,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afg"
+       "id": "86akn4afg",
+       "alarme_limpo_due": null
       },
       {
        "n": "Assinatura da TAP",
@@ -4850,7 +5253,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4agd"
+       "id": "86akn4agd",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -4881,7 +5285,8 @@
        "original_due": 1791442800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqg76"
+       "id": "86aktqg76",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validação de Marcos, responsáveis e datas",
@@ -4892,7 +5297,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqg8z"
+       "id": "86aktqg8z",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir pontos focais e cadência de acompanhamento",
@@ -4903,7 +5309,8 @@
        "original_due": 1791442800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqga1"
+       "id": "86aktqga1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Publicar painel e liberar usuarios para acompanhamento",
@@ -4914,7 +5321,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqge2"
+       "id": "86aktqge2",
+       "alarme_limpo_due": null
       },
       {
        "n": "Devolução da minuta contratual para Binario",
@@ -4925,7 +5333,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqgne"
+       "id": "86aktqgne",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Elaboração da TAP",
@@ -4936,7 +5345,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aku13jv"
+       "id": "86aku13jv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio/Assinatura da TAP",
@@ -4947,7 +5357,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aku13k2"
+       "id": "86aku13k2",
+       "alarme_limpo_due": 1792134000000
       }
      ]
     },
@@ -4968,7 +5379,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqnym"
+       "id": "86aktqnym",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar Identity Provider e o mapping no Keystone",
@@ -4979,7 +5391,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnjgv"
+       "id": "86aktnjgv",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Validar os cenários de MFA, token expirado e usuário removido do grupo",
@@ -4990,7 +5403,8 @@
        "original_due": 1793516400000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnjuf"
+       "id": "86aktnjuf",
+       "alarme_limpo_due": null
       },
       {
        "n": "Testar SSO no ambiente Sandbox",
@@ -5001,7 +5415,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnk69"
+       "id": "86aktnk69",
+       "alarme_limpo_due": null
       },
       {
        "n": "Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo",
@@ -5012,7 +5427,8 @@
        "original_due": 1792566000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqnwv"
+       "id": "86aktqnwv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Ajustes Mesa TI",
@@ -5023,7 +5439,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqp06"
+       "id": "86aktqp06",
+       "alarme_limpo_due": null
       },
       {
        "n": "Levantamento de autenticação",
@@ -5034,7 +5451,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukw474"
+       "id": "17ttbukw474",
+       "alarme_limpo_due": null
       },
       {
        "n": "Liberar Usuario",
@@ -5045,7 +5463,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukw475"
+       "id": "17ttbukw475",
+       "alarme_limpo_due": null
       },
       {
        "n": "Consolidar a federação do Keystone nos templates do director",
@@ -5056,7 +5475,8 @@
        "original_due": 1792566000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqp1e"
+       "id": "86aktqp1e",
+       "alarme_limpo_due": null
       },
       {
        "n": "Documentar e alinhar virada para produção",
@@ -5067,7 +5487,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnk59"
+       "id": "86aktnk59",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5088,7 +5509,8 @@
        "original_due": 1791529200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkcj"
+       "id": "86aktnkcj",
+       "alarme_limpo_due": null
       },
       {
        "n": "Configurar a URL em redirect para produção",
@@ -5099,7 +5521,8 @@
        "original_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkpp"
+       "id": "86aktnkpp",
+       "alarme_limpo_due": 1791961200000
       },
       {
        "n": "Publicar o painel na porta 443",
@@ -5110,7 +5533,8 @@
        "original_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkd2"
+       "id": "86aktnkd2",
+       "alarme_limpo_due": 1791961200000
       },
       {
        "n": "Criar no front o botão com a rota que leva o usuário para a tela certa",
@@ -5121,7 +5545,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnke3"
+       "id": "86aktnke3",
+       "alarme_limpo_due": null
       },
       {
        "n": "Exibir botão de custo apenas para perfil financeiro do Cloud Plus",
@@ -5132,7 +5557,8 @@
        "original_due": 1792566000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkg1"
+       "id": "86aktnkg1",
+       "alarme_limpo_due": null
       },
       {
        "n": "Teste ponta a ponta",
@@ -5143,7 +5569,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnmwa"
+       "id": "86aktnmwa",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5164,7 +5591,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqvyc"
+       "id": "86aktqvyc",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Ajuste de casas decimais",
@@ -5175,7 +5603,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktpwj6"
+       "id": "86aktpwj6",
+       "alarme_limpo_due": null
       },
       {
        "n": "Enviar as diretrizes de dimensionamento",
@@ -5186,7 +5615,8 @@
        "original_due": 1791529200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnyr0"
+       "id": "86aktnyr0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Começar coleta Fortaleza",
@@ -5197,7 +5627,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp32q"
+       "id": "86aktp32q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Deploy + Validação",
@@ -5208,7 +5639,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpv3n"
+       "id": "86aktpv3n",
+       "alarme_limpo_due": null
       },
       {
        "n": "Começar coleta Porto Alegre",
@@ -5219,7 +5651,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp32z"
+       "id": "86aktp32z",
+       "alarme_limpo_due": null
       },
       {
        "n": "Deploy + Validação",
@@ -5230,7 +5663,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpv8h"
+       "id": "86aktpv8h",
+       "alarme_limpo_due": null
       },
       {
        "n": "Criar o seletor de região no painel de consumo",
@@ -5241,7 +5675,8 @@
        "original_due": 1792998000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp396"
+       "id": "86aktp396",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir a cobrança por roteador/projeto e por banda (avaliar aditivo contratual com Produtos)",
@@ -5252,7 +5687,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw1d"
+       "id": "86aktqw1d",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Desabilitar o menu da calculadora da Binário na V1 ou apontá-lo para o endereço interno (VPN)",
@@ -5263,7 +5699,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw6q"
+       "id": "86aktqw6q",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)",
@@ -5274,7 +5711,8 @@
        "original_due": 1792738800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw82"
+       "id": "86aktqw82",
+       "alarme_limpo_due": null
       },
       {
        "n": "Gerar a chave privada e o CSR e emitir um único certificado para os dois domínios",
@@ -5285,7 +5723,8 @@
        "original_due": 1792566000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw9f"
+       "id": "86aktqw9f",
+       "alarme_limpo_due": null
       },
       {
        "n": "Liberar firewall e acesso externo conforme domínio e local de hospedagem",
@@ -5296,7 +5735,8 @@
        "original_due": 1793170800000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqwaa"
+       "id": "86aktqwaa",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5317,7 +5757,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnvxa"
+       "id": "86aktnvxa",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Mapear de onde vêm os SKUs e como eles se ligam aos flavors do Nova",
@@ -5328,7 +5769,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnw78"
+       "id": "86aktnw78",
+       "alarme_limpo_due": 1792047600000
       },
       {
        "n": "Montar o contrato da API (OpenAPI) e validar com o consumidor",
@@ -5339,7 +5781,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwh0"
+       "id": "86aktnwh0",
+       "alarme_limpo_due": null
       },
       {
        "n": "Definir a autenticação da API",
@@ -5350,7 +5793,8 @@
        "original_due": 1792479600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwnx"
+       "id": "86aktnwnx",
+       "alarme_limpo_due": null
       },
       {
        "n": "Entendimento da demanda",
@@ -5361,7 +5805,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpn46"
+       "id": "86aktpn46",
+       "alarme_limpo_due": null
       },
       {
        "n": "Implementar o endpoint com a transformação para o formato deles",
@@ -5372,7 +5817,8 @@
        "original_due": 1793084400000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwqw"
+       "id": "86aktnwqw",
+       "alarme_limpo_due": null
       },
       {
        "n": "Teste, documentação e deploy",
@@ -5383,7 +5829,8 @@
        "original_due": 1793257200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwvd"
+       "id": "86aktnwvd",
+       "alarme_limpo_due": null
       },
       {
        "n": "Homologar",
@@ -5394,7 +5841,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwvw"
+       "id": "86aktnwvw",
+       "alarme_limpo_due": null
       },
       {
        "n": "Envio do Link da documentação",
@@ -5405,7 +5853,8 @@
        "original_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnx74"
+       "id": "86aktnx74",
+       "alarme_limpo_due": 1792134000000
       },
       {
        "n": "Detalhar solicitações da API",
@@ -5416,7 +5865,8 @@
        "original_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqv0j"
+       "id": "86aktqv0j",
+       "alarme_limpo_due": 1792047600000
       }
      ]
     },
@@ -5438,7 +5888,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktjpk4"
+       "id": "86aktjpk4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Fase 6 - Alarmística de coleta + chamados Jira",
@@ -5449,7 +5900,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktjpr4"
+       "id": "86aktjpr4",
+       "alarme_limpo_due": null
       }
      ]
     }
@@ -5480,7 +5932,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahk4"
+       "id": "86akqahk4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Validar a configuração de *Tunnel Client Mode* no portal VPN SSL",
@@ -5491,7 +5944,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahpv"
+       "id": "86akqahpv",
+       "alarme_limpo_due": null
       },
       {
        "n": "Retornar a análise para Márcio por e-mail",
@@ -5502,7 +5956,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahtp"
+       "id": "86akqahtp",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5523,7 +5978,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9qmb"
+       "id": "86akq9qmb",
+       "alarme_limpo_due": null
       },
       {
        "n": "Ajustes e Atualização do firewall",
@@ -5534,7 +5990,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9k7w"
+       "id": "86akq9k7w",
+       "alarme_limpo_due": null
       },
       {
        "n": "Servidor de sincronização e grupos (perfil do AD)",
@@ -5545,7 +6002,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9kzz"
+       "id": "86akq9kzz",
+       "alarme_limpo_due": null
       },
       {
        "n": "GCDS e Password Sync para a sincronização​",
@@ -5556,7 +6014,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9r2e"
+       "id": "86akq9r2e",
+       "alarme_limpo_due": null
       },
       {
        "n": "Usuário piloto e grupo VPN SSL sincronizados no Workspace",
@@ -5567,7 +6026,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akqafq4"
+       "id": "86akqafq4",
+       "alarme_limpo_due": null
       },
       {
        "n": "Regras de acesso por perfil​",
@@ -5578,7 +6038,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9rpe"
+       "id": "86akq9rpe",
+       "alarme_limpo_due": null
       },
       {
        "n": "Teste de solicitação de MFA via Google Authenticator.",
@@ -5589,7 +6050,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqagg1"
+       "id": "86akqagg1",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5610,7 +6072,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9mh0"
+       "id": "86akq9mh0",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5631,7 +6094,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9n7q"
+       "id": "86akq9n7q",
+       "alarme_limpo_due": null
       },
       {
        "n": "Ajustes Finos",
@@ -5642,7 +6106,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9nad"
+       "id": "86akq9nad",
+       "alarme_limpo_due": null
       },
       {
        "n": "Desligar acesso antigo",
@@ -5653,7 +6118,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9ngr"
+       "id": "86akq9ngr",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5674,7 +6140,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgh"
+       "id": "86akqamgh",
+       "alarme_limpo_due": null
       },
       {
        "n": "Agendar janela de manutenção",
@@ -5685,7 +6152,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgp"
+       "id": "86akqamgp",
+       "alarme_limpo_due": null
       },
       {
        "n": "Instalar em todos os DCs",
@@ -5696,7 +6164,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgu"
+       "id": "86akqamgu",
+       "alarme_limpo_due": null
       },
       {
        "n": "Orientar os usuários a trocar a senha após a instalação",
@@ -5707,7 +6176,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgx"
+       "id": "86akqamgx",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5728,7 +6198,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9jjf"
+       "id": "86akq9jjf",
+       "alarme_limpo_due": null
       }
      ]
     },
@@ -5750,7 +6221,8 @@
        "original_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqaj7k"
+       "id": "86akqaj7k",
+       "alarme_limpo_due": null
       },
       {
        "n": "Encerramento",
@@ -5761,7 +6233,8 @@
        "original_due": 1793343600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqd7h1"
+       "id": "86akqd7h1",
+       "alarme_limpo_due": null
       }
      ]
     }

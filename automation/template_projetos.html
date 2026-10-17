@@ -218,7 +218,7 @@
       <div class="rules-box">
         <b>Regras de alarme</b>: <span style="color:var(--red)">ATRASADA</span> quando o prazo <b>original</b> da atividade já passou (a partir do dia seguinte ao prazo);
         <span style="color:var(--amber)">PENDENTE</span> no próprio dia do prazo; <span style="color:var(--amber)">PENDENTE PLANEJAMENTO</span> quando a atividade não tem data preenchida no ClickUp.
-        Mudança de data ou "Nova previsão" aparece como anotação (→ nova data) e não desliga o alarme. Atividades concluídas, fechadas ou canceladas não geram alarme.
+        O alarme segue sempre a data atual do ClickUp; "Nova previsão" aparece como anotação (→ data). Alarmes de atraso anteriores a 17/10/2026 foram limpos e só voltam se a data for alterada para uma data já vencida. Atividades concluídas, fechadas ou canceladas não geram alarme.
       </div>
     </div>
 
@@ -264,6 +264,8 @@ function ativDueState(a){
   if(!dataBase) return 'sem_planejamento';
   const hoje = startOfDay(Date.now());
   const dia = startOfDay(dataBase);
+  // Alarme limpo manualmente (17/10/2026): não fica vermelha enquanto a data no ClickUp for a mesma
+  if(dia < hoje && a.alarme_limpo_due != null && a.alarme_limpo_due === a.due) return null;
   if(dia < hoje) return 'atrasada';
   if(dia === hoje) return 'pendente';
   return null;
@@ -416,12 +418,14 @@ function ativRow(a){
   const dataAtualizada = (a.nova_previsao != null) ? a.nova_previsao : a.due;
   const dataMudou = dataOriginal != null && dataAtualizada != null && dataAtualizada !== dataOriginal;
   const dias = od ? diasDeAtraso(a) : 0;
+  const limpo = !estado && !encerrada(a) && a.alarme_limpo_due!=null && a.alarme_limpo_due===a.due;
   const ind = a.depth ? `<span class="ind">${'↳'.repeat(Math.min(a.depth,3))}</span>` : '';
   return `<div class="ativ-row${od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}${canc?' cancelada':''}">`
     + `<span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${ind}${esc(a.n)}</span>`
     + (a.assignee && a.assignee!=='—' ? `<span class="ativ-who" title="${esc(a.assignee)}">${esc(a.assignee)}</span>` : '')
     + (dataOriginal ? `<span class="ativ-due">${fmtDate(dataOriginal)}</span>` : (semData ? `<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>` : ''))
     + (dataMudou ? `<span class="ativ-due-new" title="${a.nova_previsao!=null?'Nova previsão (campo do ClickUp)':'Nova data no ClickUp'}">→ ${fmtDate(dataAtualizada)}</span>` : '')
+    + (limpo ? `<span class="ativ-due" title="Alarme de atraso limpo em 17/10/2026">alarme limpo</span>` : '')
     + (od ? `<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>` : '')
     + `<span class="ativ-status">${label}</span>`
     + (a.id ? `<a class="ativ-link" href="https://app.clickup.com/t/${esc(a.id)}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>` : '')

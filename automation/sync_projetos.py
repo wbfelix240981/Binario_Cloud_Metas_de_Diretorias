@@ -8,18 +8,20 @@ e vira uma aba no painel. Dentro da lista:
   nível, viram as atividades da fase)
 - tarefa de 1º nível SEM subtarefas  -> atividade do grupo "Atividades sem fase"
 
-As regras de alarme são as MESMAS do painel de metas (aplicadas no
-template, por atividade):
-- prazo ORIGINAL vencido (a partir do dia seguinte)  -> ATRASADA (vermelho)
-- prazo original = hoje                              -> PENDENTE (amarelo)
-- atividade sem data preenchida                      -> PENDENTE PLANEJAMENTO
-- "Nova previsão" (campo do ClickUp) e mudança de data só aparecem como
-  anotação ao lado; nunca desligam o alarme.
+Regras de alarme (aplicadas no template, por atividade):
+- prazo vencido (a partir do dia seguinte)  -> ATRASADA (vermelho)
+- prazo = hoje                              -> PENDENTE (amarelo)
+- atividade sem data preenchida             -> PENDENTE PLANEJAMENTO
+- "Nova previsão" (campo do ClickUp) só aparece como anotação ao lado.
 
-Por isso este script PRESERVA o "original_due" de cada atividade já
-conhecida (lido do projetos.json anterior): a primeira data que a
-atividade teve é a base do alarme, mesmo que a data mude no ClickUp
-depois. Atividades novas usam a data atual como original.
+Desde 17/10/2026 (pedido do usuário) o alarme segue SEMPRE a data ATUAL
+do ClickUp: se a data for alterada lá, o painel passa a contar pela nova
+data (original_due = due a cada sincronização).
+
+Na mesma data, os alarmes de atraso existentes foram limpos: cada
+atividade atrasada recebeu "alarme_limpo_due" = a data vencida que tinha.
+Enquanto a data no ClickUp continuar a mesma, ela não fica vermelha; se a
+data mudar, o campo é descartado e a regra normal volta a valer.
 """
 import json
 import os
@@ -140,19 +142,18 @@ def order_key(t):
 def build_activity(t, depth, old_by_id):
     due = to_ms(t.get("due_date"))
     old = old_by_id.get(t["id"])
-    if old and old.get("original_due") is not None:
-        original = old["original_due"]
-    elif old and old.get("due") is not None:
-        original = old["due"]
-    else:
-        original = due
+    # Alarme limpo manualmente: vale só enquanto a data no ClickUp não mudar
+    limpo = old.get("alarme_limpo_due") if old else None
+    if limpo is not None and limpo != due:
+        limpo = None
     return {
         "n": t.get("name", "").strip(),
         "status": map_status(t),
         "raw_status": (t.get("status") or {}).get("status", ""),
         "assignee": assignee_name(t),
         "due": due,
-        "original_due": original,
+        "original_due": due,
+        "alarme_limpo_due": limpo,
         "nova_previsao": nova_previsao(t),
         "depth": depth,
         "id": t["id"],
