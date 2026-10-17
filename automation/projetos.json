@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-17T18:05:58.775305+00:00",
+ "last_sync_utc": "2026-10-17T18:11:32.442575+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -24,10 +24,10 @@
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak080ug",
-       "alarme_limpo_due": null
+       "id": "86ak080ug"
       },
       {
        "n": "5.1 Transição para operação",
@@ -36,10 +36,10 @@
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5ee",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ee"
       },
       {
        "n": "Elaborar documentação as built",
@@ -48,10 +48,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf61r",
-       "alarme_limpo_due": null
+       "id": "86ajrf61r"
       },
       {
        "n": "Documentar topologia de rede",
@@ -60,10 +60,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62b",
-       "alarme_limpo_due": null
+       "id": "86ajrf62b"
       },
       {
        "n": "Documentar rotinas de backup",
@@ -72,10 +72,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62f",
-       "alarme_limpo_due": null
+       "id": "86ajrf62f"
       },
       {
        "n": "Realizar passagem para o CCOE",
@@ -84,10 +84,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf62u",
-       "alarme_limpo_due": null
+       "id": "86ajrf62u"
       },
       {
        "n": "Realizar reunião de transição",
@@ -96,10 +96,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63c",
-       "alarme_limpo_due": null
+       "id": "86ajrf63c"
       },
       {
        "n": "5.2 Encerramento",
@@ -108,10 +108,10 @@
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5ef",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ef"
       },
       {
        "n": "Elaborar relatório final",
@@ -120,10 +120,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63u",
-       "alarme_limpo_due": null
+       "id": "86ajrf63u"
       },
       {
        "n": "Realizar reunião de encerramento",
@@ -132,10 +132,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63z",
-       "alarme_limpo_due": null
+       "id": "86ajrf63z"
       },
       {
        "n": "Enviar termo de aceite",
@@ -144,10 +144,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf63y",
-       "alarme_limpo_due": null
+       "id": "86ajrf63y"
       },
       {
        "n": "Obter aceite formal da Neugebauer",
@@ -156,10 +156,10 @@
        "assignee": "—",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf643",
-       "alarme_limpo_due": null
+       "id": "86ajrf643"
       }
      ]
     },
@@ -178,10 +178,10 @@
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjg6z2",
-       "alarme_limpo_due": null
+       "id": "86akjg6z2"
       },
       {
        "n": "Disponibilização de imagens Compactadas",
@@ -190,10 +190,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792393200000,
        "original_due": 1792393200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aknc0rm",
-       "alarme_limpo_due": null
+       "id": "86aknc0rm"
       },
       {
        "n": "Servidores ambiente não produtivo",
@@ -202,10 +202,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5xy",
-       "alarme_limpo_due": null
+       "id": "86ajrf5xy"
       },
       {
        "n": "NGB-ABS-W12-V01",
@@ -214,10 +214,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynp",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynp"
       },
       {
        "n": "NGB-ABS-W12-V02",
@@ -226,10 +226,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynq",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynq"
       },
       {
        "n": "NGB-ABS-W22-V02",
@@ -238,10 +238,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynr",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynr"
       },
       {
        "n": "NGBQUEOPS01",
@@ -250,10 +250,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynu",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynu"
       },
       {
        "n": "NGBSWRH1",
@@ -262,10 +262,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynv",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynv"
       },
       {
        "n": "NGDS",
@@ -274,10 +274,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynw",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynw"
       },
       {
        "n": "NGPPRDEV",
@@ -286,10 +286,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynx",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynx"
       },
       {
        "n": "NGPPRPRD",
@@ -298,10 +298,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyny",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyny"
       },
       {
        "n": "NGSAPORA01",
@@ -310,10 +310,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvynz",
-       "alarme_limpo_due": null
+       "id": "17ttbukvynz"
       },
       {
        "n": "NGSLM",
@@ -322,10 +322,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp0",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp0"
       },
       {
        "n": "NGTSITS01",
@@ -334,10 +334,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp1",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp1"
       },
       {
        "n": "SWINTRANET1",
@@ -346,10 +346,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp2",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp2"
       },
       {
        "n": "SWMSF1",
@@ -358,10 +358,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp4",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp4"
       },
       {
        "n": "SWMSF2",
@@ -370,10 +370,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp5",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp5"
       },
       {
        "n": "SWSADIG1",
@@ -382,10 +382,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp6",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp6"
       },
       {
        "n": "ULTRAPARERP",
@@ -394,10 +394,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyp8",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyp8"
       },
       {
        "n": "NGBHRC03",
@@ -406,10 +406,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypb",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypb"
       },
       {
        "n": "NGBERPPRDCI",
@@ -418,10 +418,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypc",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypc"
       },
       {
        "n": "NGBHNPRD",
@@ -430,10 +430,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvype",
-       "alarme_limpo_due": null
+       "id": "17ttbukvype"
       },
       {
        "n": "NGBERPPRDA1",
@@ -442,10 +442,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypf",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypf"
       },
       {
        "n": "NGBERPPRDA2",
@@ -454,10 +454,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyph",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyph"
       },
       {
        "n": "NGBFIOPRD",
@@ -466,10 +466,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypj",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypj"
       },
       {
        "n": "NGBPOPRD",
@@ -478,10 +478,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypm",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypm"
       },
       {
        "n": "NGBNFEPRD",
@@ -490,10 +490,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypp",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypp"
       },
       {
        "n": "NGBWDPRD",
@@ -502,10 +502,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypq",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypq"
       },
       {
        "n": "NGBSLM",
@@ -514,10 +514,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypr",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypr"
       },
       {
        "n": "NGBROUTER",
@@ -526,10 +526,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypt",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypt"
       },
       {
        "n": "NGBBOQAS",
@@ -538,10 +538,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypu",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypu"
       },
       {
        "n": "NGBFIOQAS",
@@ -550,10 +550,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypv",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypv"
       },
       {
        "n": "NGBWDDEV",
@@ -562,10 +562,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypx",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypx"
       },
       {
        "n": "NGBPODEV",
@@ -574,10 +574,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvypz",
-       "alarme_limpo_due": null
+       "id": "17ttbukvypz"
       },
       {
        "n": "NGBBODEV",
@@ -586,10 +586,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq1",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq1"
       },
       {
        "n": "NGBFIODEV",
@@ -598,10 +598,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq2",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq2"
       },
       {
        "n": "NGBHNDEV",
@@ -610,10 +610,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq3",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq3"
       },
       {
        "n": "NGBNFEDEV",
@@ -622,10 +622,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq5",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq5"
       },
       {
        "n": "NGBSISROT01",
@@ -634,10 +634,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq7",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq7"
       },
       {
        "n": "NGB_BB_TMV_W12_V01",
@@ -646,10 +646,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq8",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq8"
       },
       {
        "n": "NGB_BB_TSS_W12_V01",
@@ -658,10 +658,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyq9",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyq9"
       },
       {
        "n": "NGBERPDEV",
@@ -670,10 +670,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqa",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqa"
       },
       {
        "n": "NGB_IFR_W12_V01_DEV",
@@ -682,10 +682,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqc",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqc"
       },
       {
        "n": "NGBWIN01",
@@ -694,10 +694,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqd",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqd"
       },
       {
        "n": "NGBWIN02",
@@ -706,10 +706,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqe",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqe"
       },
       {
        "n": "SWAPLMS1",
@@ -718,10 +718,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqf",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqf"
       },
       {
        "n": "SWDBMS1",
@@ -730,10 +730,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqg",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqg"
       },
       {
        "n": "NGBBOPRD",
@@ -742,10 +742,10 @@
        "assignee": "—",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukvyqj",
-       "alarme_limpo_due": null
+       "id": "17ttbukvyqj"
       }
      ]
     },
@@ -764,10 +764,10 @@
        "assignee": "Diogo Lerison",
        "due": 1785394800000,
        "original_due": 1785394800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5df",
-       "alarme_limpo_due": null
+       "id": "86ajrf5df"
       },
       {
        "n": "Definir stakeholders",
@@ -776,10 +776,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ew",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ew"
       },
       {
        "n": "Elaborar apresentação de kickoff",
@@ -788,10 +788,10 @@
        "assignee": "Diogo Lerison",
        "due": 1784703600000,
        "original_due": 1784703600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ex",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ex"
       },
       {
        "n": "Realizar reunião de kickoff",
@@ -800,10 +800,10 @@
        "assignee": "Diogo Lerison",
        "due": 1784790000000,
        "original_due": 1784790000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ey",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ey"
       },
       {
        "n": "Registrar decisões e pendências do kickoff",
@@ -812,10 +812,10 @@
        "assignee": "Diogo Lerison",
        "due": 1784790000000,
        "original_due": 1784790000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f5",
-       "alarme_limpo_due": null
+       "id": "86ajrf5f5"
       },
       {
        "n": "Elaborar TAP",
@@ -824,10 +824,10 @@
        "assignee": "Diogo Lerison",
        "due": 1784876400000,
        "original_due": 1784876400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f6",
-       "alarme_limpo_due": null
+       "id": "86ajrf5f6"
       },
       {
        "n": "Enviar TAP para assinatura",
@@ -836,10 +836,10 @@
        "assignee": "Diogo Lerison",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5f7",
-       "alarme_limpo_due": null
+       "id": "86ajrf5f7"
       },
       {
        "n": "Obter assinatura da Binário Cloud",
@@ -848,10 +848,10 @@
        "assignee": "Diogo Lerison",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fm",
-       "alarme_limpo_due": null
+       "id": "86ajrf5fm"
       },
       {
        "n": "Obter assinatura da Neugebauer",
@@ -860,10 +860,10 @@
        "assignee": "Diogo Lerison",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fp",
-       "alarme_limpo_due": null
+       "id": "86ajrf5fp"
       },
       {
        "n": "Formalizar abertura do projeto",
@@ -872,10 +872,10 @@
        "assignee": "Diogo Lerison",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fq",
-       "alarme_limpo_due": null
+       "id": "86ajrf5fq"
       },
       {
        "n": "1.2 Refinamento do escopo",
@@ -884,10 +884,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5de",
-       "alarme_limpo_due": null
+       "id": "86ajrf5de"
       },
       {
        "n": "Validar inventário de servidores",
@@ -896,10 +896,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5fv",
-       "alarme_limpo_due": null
+       "id": "86ajrf5fv"
       },
       {
        "n": "Validar servidores ativos e desligados",
@@ -908,10 +908,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5g4",
-       "alarme_limpo_due": null
+       "id": "86ajrf5g4"
       },
       {
        "n": "Identificar servidores que serão migrados",
@@ -920,10 +920,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5g7",
-       "alarme_limpo_due": null
+       "id": "86ajrf5g7"
       },
       {
        "n": "Identificar servidores fora do escopo",
@@ -932,10 +932,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ge",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ge"
       },
       {
        "n": "Levantar sistemas operacionais",
@@ -944,10 +944,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gm",
-       "alarme_limpo_due": null
+       "id": "86ajrf5gm"
       },
       {
        "n": "Levantar capacidade de disco por servidor",
@@ -956,10 +956,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gr",
-       "alarme_limpo_due": null
+       "id": "86ajrf5gr"
       },
       {
        "n": "Levantar serviços hospedados",
@@ -968,10 +968,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5gp",
-       "alarme_limpo_due": null
+       "id": "86ajrf5gp"
       },
       {
        "n": "1.3 Planejamento do projeto",
@@ -980,10 +980,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dc",
-       "alarme_limpo_due": null
+       "id": "86ajrf5dc"
       },
       {
        "n": "Definir marcos do projeto",
@@ -992,10 +992,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5k0",
-       "alarme_limpo_due": null
+       "id": "86ajrf5k0"
       },
       {
        "n": "Definir responsáveis por frente",
@@ -1004,10 +1004,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5jz",
-       "alarme_limpo_due": null
+       "id": "86ajrf5jz"
       },
       {
        "n": "Elaborar plano de comunicação",
@@ -1016,10 +1016,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kq",
-       "alarme_limpo_due": null
+       "id": "86ajrf5kq"
       },
       {
        "n": "Definir reuniões semanais de acompanhamento",
@@ -1028,10 +1028,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kt",
-       "alarme_limpo_due": null
+       "id": "86ajrf5kt"
       },
       {
        "n": "Criar registro de riscos e impedimentos",
@@ -1040,10 +1040,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5kv",
-       "alarme_limpo_due": null
+       "id": "86ajrf5kv"
       }
      ]
     },
@@ -1062,10 +1062,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": 1789974000000,
        "original_due": 1789974000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dx",
-       "alarme_limpo_due": null
+       "id": "86ajrf5dx"
       },
       {
        "n": "Migração de srv's via Veeam",
@@ -1074,10 +1074,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1789023600000,
        "depth": 1,
-       "id": "86ajrf5x1",
-       "alarme_limpo_due": null
+       "id": "86ajrf5x1"
       },
       {
        "n": "Registrar problemas encontrados",
@@ -1086,10 +1086,10 @@
        "assignee": "—",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1789110000000,
        "depth": 2,
-       "id": "86ajrf5xn",
-       "alarme_limpo_due": null
+       "id": "86ajrf5xn"
       },
       {
        "n": "Executar teste funcional",
@@ -1098,10 +1098,10 @@
        "assignee": "—",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1789110000000,
        "depth": 2,
-       "id": "86ajrf5xf",
-       "alarme_limpo_due": null
+       "id": "86ajrf5xf"
       },
       {
        "n": "NGBULTRAPARERP",
@@ -1110,10 +1110,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7x9r",
-       "alarme_limpo_due": null
+       "id": "86akq7x9r"
       },
       {
        "n": "NGBORAPRD01",
@@ -1122,10 +1122,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7x9v",
-       "alarme_limpo_due": null
+       "id": "86akq7x9v"
       },
       {
        "n": "NGB-ABS-W22-V01",
@@ -1134,10 +1134,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xa9",
-       "alarme_limpo_due": null
+       "id": "86akq7xa9"
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1146,10 +1146,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xag",
-       "alarme_limpo_due": null
+       "id": "86akq7xag"
       },
       {
        "n": "NGBHRC04",
@@ -1158,10 +1158,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xap",
-       "alarme_limpo_due": null
+       "id": "86akq7xap"
       },
       {
        "n": "NGB-RSW-W22-V01",
@@ -1170,10 +1170,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xav",
-       "alarme_limpo_due": null
+       "id": "86akq7xav"
       },
       {
        "n": "NGB-ETL-W22-V01",
@@ -1182,10 +1182,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xb5",
-       "alarme_limpo_due": null
+       "id": "86akq7xb5"
       },
       {
        "n": "NGB-ETL-W22-V02",
@@ -1194,10 +1194,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xb9",
-       "alarme_limpo_due": null
+       "id": "86akq7xb9"
       },
       {
        "n": "NGB-ETL-W22-V03",
@@ -1206,10 +1206,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbb",
-       "alarme_limpo_due": null
+       "id": "86akq7xbb"
       },
       {
        "n": "NGB-ELO-W22-V01",
@@ -1218,10 +1218,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbx",
-       "alarme_limpo_due": null
+       "id": "86akq7xbx"
       },
       {
        "n": "NGBMAXDB01",
@@ -1230,10 +1230,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xbz",
-       "alarme_limpo_due": null
+       "id": "86akq7xbz"
       },
       {
        "n": "NGBMAXDB02",
@@ -1242,10 +1242,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xc4",
-       "alarme_limpo_due": null
+       "id": "86akq7xc4"
       },
       {
        "n": "CNGB-IFR-W22-V01",
@@ -1254,10 +1254,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xc9",
-       "alarme_limpo_due": null
+       "id": "86akq7xc9"
       },
       {
        "n": "NGBCICLOPRD01",
@@ -1266,10 +1266,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcd",
-       "alarme_limpo_due": null
+       "id": "86akq7xcd"
       },
       {
        "n": "NGBERPQAS",
@@ -1278,10 +1278,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcp",
-       "alarme_limpo_due": null
+       "id": "86akq7xcp"
       },
       {
        "n": "NGBSYBASE01",
@@ -1290,10 +1290,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xcw",
-       "alarme_limpo_due": null
+       "id": "86akq7xcw"
       },
       {
        "n": "NGB-RSW-W12-V01",
@@ -1302,10 +1302,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdb",
-       "alarme_limpo_due": null
+       "id": "86akq7xdb"
       },
       {
        "n": "CNGB-TMV-W22-V01",
@@ -1314,10 +1314,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdg",
-       "alarme_limpo_due": null
+       "id": "86akq7xdg"
       },
       {
        "n": "NGBELO01",
@@ -1326,10 +1326,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdm",
-       "alarme_limpo_due": null
+       "id": "86akq7xdm"
       },
       {
        "n": "NGBELO02",
@@ -1338,10 +1338,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdr",
-       "alarme_limpo_due": null
+       "id": "86akq7xdr"
       },
       {
        "n": "NGBORADEV01",
@@ -1350,10 +1350,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xdv",
-       "alarme_limpo_due": null
+       "id": "86akq7xdv"
       },
       {
        "n": "NGBVONSAC2",
@@ -1362,10 +1362,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xe0",
-       "alarme_limpo_due": null
+       "id": "86akq7xe0"
       },
       {
        "n": "NGBCICLODEV01",
@@ -1374,10 +1374,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1788505200000,
        "original_due": 1788505200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xe7",
-       "alarme_limpo_due": null
+       "id": "86akq7xe7"
       },
       {
        "n": "NGBHNQAS",
@@ -1386,10 +1386,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7xec",
-       "alarme_limpo_due": null
+       "id": "86akq7xec"
       },
       {
        "n": "Migração Imagem QCOW2",
@@ -1398,10 +1398,10 @@
        "assignee": "—",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akhx6eg",
-       "alarme_limpo_due": null
+       "id": "86akhx6eg"
       },
       {
        "n": "NGBSITEDEV",
@@ -1410,10 +1410,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1789974000000,
        "original_due": 1789974000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azb",
-       "alarme_limpo_due": null
+       "id": "86akm7azb"
       },
       {
        "n": "NGBSITEPRD",
@@ -1422,10 +1422,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azh",
-       "alarme_limpo_due": null
+       "id": "86akm7azh"
       },
       {
        "n": "NGBNEOGRID",
@@ -1434,10 +1434,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akm7azq",
-       "alarme_limpo_due": null
+       "id": "86akm7azq"
       }
      ]
     },
@@ -1456,10 +1456,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": 1787814000000,
        "original_due": 1787814000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dh",
-       "alarme_limpo_due": null
+       "id": "86ajrf5dh"
       },
       {
        "n": "Criação de dominio",
@@ -1468,10 +1468,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6bqth",
-       "alarme_limpo_due": null
+       "id": "86ak6bqth"
       },
       {
        "n": "Criação de projeto",
@@ -1480,10 +1480,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1785481200000,
        "original_due": 1785481200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5mb",
-       "alarme_limpo_due": null
+       "id": "86ajrf5mb"
       },
       {
        "n": "Criar usuários e permissões",
@@ -1492,10 +1492,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1787814000000,
        "original_due": 1787814000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5me",
-       "alarme_limpo_due": null
+       "id": "86ajrf5me"
       },
       {
        "n": "Hands-on BCP",
@@ -1504,10 +1504,10 @@
        "assignee": "—",
        "due": 1790578800000,
        "original_due": 1790578800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akjfc3g",
-       "alarme_limpo_due": null
+       "id": "86akjfc3g"
       },
       {
        "n": "2.2 Rede e conectividade",
@@ -1516,10 +1516,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1788332400000,
        "original_due": 1788332400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dj",
-       "alarme_limpo_due": null
+       "id": "86ajrf5dj"
       },
       {
        "n": "Criar segmentos de rede",
@@ -1528,10 +1528,10 @@
        "assignee": "Alexandre Pereira",
        "due": 1787727600000,
        "original_due": 1787727600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6chyn",
-       "alarme_limpo_due": null
+       "id": "86ak6chyn"
       },
       {
        "n": "Validar throughput disponível",
@@ -1540,10 +1540,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1787727600000,
        "original_due": 1787727600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5ph",
-       "alarme_limpo_due": null
+       "id": "86ajrf5ph"
       },
       {
        "n": "Definir gateways",
@@ -1552,10 +1552,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1787727600000,
        "original_due": 1787727600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5nq",
-       "alarme_limpo_due": null
+       "id": "86ajrf5nq"
       },
       {
        "n": "Definir modelo de conectividade entre ambientes",
@@ -1564,10 +1564,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5nv",
-       "alarme_limpo_due": null
+       "id": "86ajrf5nv"
       },
       {
        "n": "2.3 Firewall e segurança",
@@ -1576,10 +1576,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dk",
-       "alarme_limpo_due": null
+       "id": "86ajrf5dk"
       },
       {
        "n": "Criação do FORTIVM bc1-firewall-4-16",
@@ -1588,10 +1588,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1787641200000,
        "original_due": 1787641200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajxt0gj",
-       "alarme_limpo_due": null
+       "id": "86ajxt0gj"
       },
       {
        "n": "Levantamento FW Kosmo",
@@ -1600,10 +1600,10 @@
        "assignee": "Diogo Lerison / Alexandre Pereira",
        "due": 1788332400000,
        "original_due": 1788332400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6cty1",
-       "alarme_limpo_due": null
+       "id": "86ak6cty1"
       },
       {
        "n": "Levantar objetos, grupos e serviços",
@@ -1612,10 +1612,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajrf5q3",
-       "alarme_limpo_due": null
+       "id": "86ajrf5q3"
       },
       {
        "n": "Levantar políticas atuais",
@@ -1624,10 +1624,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajrf5q5",
-       "alarme_limpo_due": null
+       "id": "86ajrf5q5"
       },
       {
        "n": "Configurar interfaces",
@@ -1636,10 +1636,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1789369200000,
        "original_due": 1789369200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qe",
-       "alarme_limpo_due": null
+       "id": "86ajrf5qe"
       },
       {
        "n": "Configurar VPNs IPsec site to site",
@@ -1648,10 +1648,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1789369200000,
        "original_due": 1789369200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qv",
-       "alarme_limpo_due": null
+       "id": "86ajrf5qv"
       },
       {
        "n": "Configurar regras NATs",
@@ -1660,10 +1660,10 @@
        "assignee": "Brunno Leonardo Borges Lopes / Alexandre Pereira",
        "due": 1789369200000,
        "original_due": 1789369200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qw",
-       "alarme_limpo_due": null
+       "id": "86ajrf5qw"
       },
       {
        "n": "Configurar regras de proxy reverso",
@@ -1672,10 +1672,10 @@
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": 1789369200000,
        "original_due": 1789369200000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1789714800000,
        "depth": 1,
-       "id": "86ak7vzqq",
-       "alarme_limpo_due": null
+       "id": "86ak7vzqq"
       },
       {
        "n": "Configurar roteamento",
@@ -1684,10 +1684,10 @@
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qg",
-       "alarme_limpo_due": null
+       "id": "86ajrf5qg"
       },
       {
        "n": "Configurar políticas de segurança",
@@ -1696,10 +1696,10 @@
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5qr",
-       "alarme_limpo_due": null
+       "id": "86ajrf5qr"
       },
       {
        "n": "Testar conectividade entre ambientes",
@@ -1708,10 +1708,10 @@
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": 1789714800000,
        "original_due": 1789714800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5pm",
-       "alarme_limpo_due": null
+       "id": "86ajrf5pm"
       },
       {
        "n": "2.4 Coleta de dados e configurações locais",
@@ -1720,10 +1720,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajwq6ah",
-       "alarme_limpo_due": null
+       "id": "86ajwq6ah"
       },
       {
        "n": "Levantar dependências entre aplicações",
@@ -1732,10 +1732,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5h1",
-       "alarme_limpo_due": null
+       "id": "86ajrf5h1"
       },
       {
        "n": "Definir criticidade dos sistemas",
@@ -1744,10 +1744,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5hb",
-       "alarme_limpo_due": null
+       "id": "86ajrf5hb"
       },
       {
        "n": "Levantar dependência entre servidores e serviços.",
@@ -1756,10 +1756,10 @@
        "assignee": "—",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1788505200000,
        "depth": 1,
-       "id": "86ajrf5hu",
-       "alarme_limpo_due": null
+       "id": "86ajrf5hu"
       },
       {
        "n": "Coleta de informações para inventario do ambiente NGB Kosmo",
@@ -1768,10 +1768,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq728",
-       "alarme_limpo_due": null
+       "id": "86ajwq728"
       },
       {
        "n": "2.5 Instalação do Agent de backup",
@@ -1780,10 +1780,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1789110000000,
        "original_due": 1789110000000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1789110000000,
        "depth": 0,
-       "id": "86ajwq7dt",
-       "alarme_limpo_due": null
+       "id": "86ajwq7dt"
       },
       {
        "n": "Servidores Windows",
@@ -1792,10 +1792,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq7jc",
-       "alarme_limpo_due": null
+       "id": "86ajwq7jc"
       },
       {
        "n": "NGB-ABS-W22-V01",
@@ -1804,10 +1804,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq7w5",
-       "alarme_limpo_due": null
+       "id": "86ajwq7w5"
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1816,10 +1816,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq7xa",
-       "alarme_limpo_due": null
+       "id": "86ajwq7xa"
       },
       {
        "n": "NGB-IFR-W22-V01",
@@ -1828,10 +1828,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq815",
-       "alarme_limpo_due": null
+       "id": "86ajwq815"
       },
       {
        "n": "CNGB-TMV-W22-V01",
@@ -1840,10 +1840,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq81y",
-       "alarme_limpo_due": null
+       "id": "86ajwq81y"
       },
       {
        "n": "NGB-RSW-W22-V01",
@@ -1852,10 +1852,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq832",
-       "alarme_limpo_due": null
+       "id": "86ajwq832"
       },
       {
        "n": "NGB-ETL-W22-V01",
@@ -1864,10 +1864,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq83y",
-       "alarme_limpo_due": null
+       "id": "86ajwq83y"
       },
       {
        "n": "NGB-ETL-W22-V02",
@@ -1876,10 +1876,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq85q",
-       "alarme_limpo_due": null
+       "id": "86ajwq85q"
       },
       {
        "n": "NGB-ETL-W22-V03",
@@ -1888,10 +1888,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8a0",
-       "alarme_limpo_due": null
+       "id": "86ajwq8a0"
       },
       {
        "n": "NGB-TSS-W12-V01",
@@ -1900,10 +1900,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8am",
-       "alarme_limpo_due": null
+       "id": "86ajwq8am"
       },
       {
        "n": "NGB-RSW-W12-V01",
@@ -1912,10 +1912,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8bn",
-       "alarme_limpo_due": null
+       "id": "86ajwq8bn"
       },
       {
        "n": "NGB-ELO-W22-V01",
@@ -1924,10 +1924,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8eh",
-       "alarme_limpo_due": null
+       "id": "86ajwq8eh"
       },
       {
        "n": "Servidores Linux",
@@ -1936,10 +1936,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1787900400000,
        "original_due": 1787900400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajwq7nk",
-       "alarme_limpo_due": null
+       "id": "86ajwq7nk"
       },
       {
        "n": "NGBNFS01",
@@ -1948,10 +1948,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8h9",
-       "alarme_limpo_due": null
+       "id": "86ajwq8h9"
       },
       {
        "n": "NGBHNPRD",
@@ -1960,10 +1960,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8j4",
-       "alarme_limpo_due": null
+       "id": "86ajwq8j4"
       },
       {
        "n": "NGBERPPRDCI",
@@ -1972,10 +1972,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8kn",
-       "alarme_limpo_due": null
+       "id": "86ajwq8kn"
       },
       {
        "n": "NGBORAPRD01",
@@ -1984,10 +1984,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8nb",
-       "alarme_limpo_due": null
+       "id": "86ajwq8nb"
       },
       {
        "n": "NGBULTRAPARERP",
@@ -1996,10 +1996,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8q4",
-       "alarme_limpo_due": null
+       "id": "86ajwq8q4"
       },
       {
        "n": "NGBELO01",
@@ -2008,10 +2008,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8qw",
-       "alarme_limpo_due": null
+       "id": "86ajwq8qw"
       },
       {
        "n": "NGBVONSAC2",
@@ -2020,10 +2020,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1789110000000,
        "original_due": 1789110000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8t3",
-       "alarme_limpo_due": null
+       "id": "86ajwq8t3"
       },
       {
        "n": "NGBHRC04",
@@ -2032,10 +2032,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq8ux",
-       "alarme_limpo_due": null
+       "id": "86ajwq8ux"
       },
       {
        "n": "NGBCICLOPRD01",
@@ -2044,10 +2044,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq937",
-       "alarme_limpo_due": null
+       "id": "86ajwq937"
       },
       {
        "n": "NGBERPQAS",
@@ -2056,10 +2056,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq96r",
-       "alarme_limpo_due": null
+       "id": "86ajwq96r"
       },
       {
        "n": "NGBHNQAS",
@@ -2068,10 +2068,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq98b",
-       "alarme_limpo_due": null
+       "id": "86ajwq98b"
       },
       {
        "n": "NGBORADEV01",
@@ -2080,10 +2080,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9ak",
-       "alarme_limpo_due": null
+       "id": "86ajwq9ak"
       },
       {
        "n": "NGBCICLODEV01",
@@ -2092,10 +2092,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9cq",
-       "alarme_limpo_due": null
+       "id": "86ajwq9cq"
       },
       {
        "n": "NGBELO02",
@@ -2104,10 +2104,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9kt",
-       "alarme_limpo_due": null
+       "id": "86ajwq9kt"
       },
       {
        "n": "NGBSYBASE01",
@@ -2116,10 +2116,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86ajwq9r3",
-       "alarme_limpo_due": null
+       "id": "86ajwq9r3"
       }
      ]
     },
@@ -2138,10 +2138,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791183600000,
        "original_due": 1791183600000,
+       "alarme_limpo_due": 1791183600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dr",
-       "alarme_limpo_due": 1791183600000
+       "id": "86ajrf5dr"
       },
       {
        "n": "Criar tenant Veeam",
@@ -2150,10 +2150,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791183600000,
        "original_due": 1791183600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5u0",
-       "alarme_limpo_due": null
+       "id": "86ajrf5u0"
       },
       {
        "n": "Configurar repositório",
@@ -2162,10 +2162,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791183600000,
        "original_due": 1791183600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5u4",
-       "alarme_limpo_due": null
+       "id": "86ajrf5u4"
       },
       {
        "n": "Definir schedule e politica de retenção",
@@ -2174,10 +2174,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1791961200000,
        "original_due": 1791961200000,
+       "alarme_limpo_due": 1791961200000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak6dvc4",
-       "alarme_limpo_due": 1791961200000
+       "id": "86ak6dvc4"
       },
       {
        "n": "Executar primeiro backup",
@@ -2186,10 +2186,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1791183600000,
        "original_due": 1791183600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5uu",
-       "alarme_limpo_due": null
+       "id": "86ajrf5uu"
       },
       {
        "n": "Executar teste de restauração",
@@ -2198,10 +2198,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1791183600000,
        "original_due": 1791183600000,
+       "alarme_limpo_due": 1791183600000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5uw",
-       "alarme_limpo_due": 1791183600000
+       "id": "86ajrf5uw"
       },
       {
        "n": "4.3 Monitoramento",
@@ -2210,10 +2210,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajrf5dt",
-       "alarme_limpo_due": 1792134000000
+       "id": "86ajrf5dt"
       },
       {
        "n": "Configurar monitoramento das VMs",
@@ -2222,10 +2222,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5v9",
-       "alarme_limpo_due": 1792134000000
+       "id": "86ajrf5v9"
       },
       {
        "n": "Configurar monitoramento do firewall",
@@ -2234,10 +2234,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vn",
-       "alarme_limpo_due": 1792134000000
+       "id": "86ajrf5vn"
       },
       {
        "n": "Configurar monitoramento dos backups",
@@ -2246,10 +2246,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vm",
-       "alarme_limpo_due": 1792134000000
+       "id": "86ajrf5vm"
       },
       {
        "n": "Validar geração automática de alertas",
@@ -2258,10 +2258,10 @@
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ajrf5vt",
-       "alarme_limpo_due": 1792134000000
+       "id": "86ajrf5vt"
       }
      ]
     },
@@ -2280,10 +2280,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ar8",
-       "alarme_limpo_due": null
+       "id": "86akm7ar8"
       },
       {
        "n": "NGBNEOGRID - 10.200.12.207",
@@ -2292,10 +2292,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8f0",
-       "alarme_limpo_due": null
+       "id": "86akqa8f0"
       },
       {
        "n": "NGBSITEPRD - 10.210.12.220",
@@ -2304,10 +2304,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa4fw",
-       "alarme_limpo_due": null
+       "id": "86akqa4fw"
       },
       {
        "n": "NGBORAPRD01 - 10.200.12.252",
@@ -2316,10 +2316,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aqw",
-       "alarme_limpo_due": null
+       "id": "86akm7aqw"
       },
       {
        "n": "NGB-ABS-W22-V01 - 10.200.12.223",
@@ -2328,10 +2328,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ar1",
-       "alarme_limpo_due": null
+       "id": "86akm7ar1"
       },
       {
        "n": "NGBHRC04 10.200.12.220",
@@ -2340,10 +2340,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7arf",
-       "alarme_limpo_due": null
+       "id": "86akm7arf"
       },
       {
        "n": "NGBMAXDB01 - 10.200.12.225",
@@ -2352,10 +2352,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7atw",
-       "alarme_limpo_due": null
+       "id": "86akm7atw"
       },
       {
        "n": "NGBMAXDB02 - 10.200.12.218",
@@ -2364,10 +2364,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aua",
-       "alarme_limpo_due": null
+       "id": "86akm7aua"
       },
       {
        "n": "NGBULTRAPARERP - 10.200.12.215",
@@ -2376,10 +2376,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aqu",
-       "alarme_limpo_due": null
+       "id": "86akm7aqu"
       },
       {
        "n": "NGBELO01 - 10.200.12.231",
@@ -2388,10 +2388,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ax4",
-       "alarme_limpo_due": null
+       "id": "86akm7ax4"
       },
       {
        "n": "NGBELO02 - 10.200.12.232",
@@ -2400,10 +2400,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7axj",
-       "alarme_limpo_due": null
+       "id": "86akm7axj"
       },
       {
        "n": "NGBVONSAC2 - 10.200.12.206",
@@ -2412,10 +2412,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aye",
-       "alarme_limpo_due": null
+       "id": "86akm7aye"
       },
       {
        "n": "CNGB-IFR-W22-V01 - 10.200.160.5",
@@ -2424,10 +2424,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aux",
-       "alarme_limpo_due": null
+       "id": "86akm7aux"
       },
       {
        "n": "CNGB-TMV-W22-V01 - 10.200.160.10",
@@ -2436,10 +2436,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7awy",
-       "alarme_limpo_due": null
+       "id": "86akm7awy"
       },
       {
        "n": "NGB-RSW-W22-V01 - 10.200.12.246",
@@ -2448,10 +2448,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7art",
-       "alarme_limpo_due": null
+       "id": "86akm7art"
       },
       {
        "n": "NGB-ETL-W22-V01 - 10.200.12.238",
@@ -2460,10 +2460,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ary",
-       "alarme_limpo_due": null
+       "id": "86akm7ary"
       },
       {
        "n": "NGB-ETL-W22-V02 - 10.200.12.239",
@@ -2472,10 +2472,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7at2",
-       "alarme_limpo_due": null
+       "id": "86akm7at2"
       },
       {
        "n": "NGB-ETL-W22-V03 - 10.200.12.233",
@@ -2484,10 +2484,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7atk",
-       "alarme_limpo_due": null
+       "id": "86akm7atk"
       },
       {
        "n": "NGBCICLOPRD01 - 10.200.12.233",
@@ -2496,10 +2496,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7avm",
-       "alarme_limpo_due": null
+       "id": "86akm7avm"
       },
       {
        "n": "NGBERPQAS - 10.200.12.62",
@@ -2508,10 +2508,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7avw",
-       "alarme_limpo_due": null
+       "id": "86akm7avw"
       },
       {
        "n": "NGBHNQAS - 10.200.12.64",
@@ -2520,10 +2520,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7az1",
-       "alarme_limpo_due": null
+       "id": "86akm7az1"
       },
       {
        "n": "NGBORADEV01 - 10.200.12.251",
@@ -2532,10 +2532,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7axw",
-       "alarme_limpo_due": null
+       "id": "86akm7axw"
       },
       {
        "n": "NGBCICLODEV01 - 10.200.12.234",
@@ -2544,10 +2544,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7ayr",
-       "alarme_limpo_due": null
+       "id": "86akm7ayr"
       },
       {
        "n": "NGBSYBASE01 - 10.200.12.226",
@@ -2556,10 +2556,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7aw7",
-       "alarme_limpo_due": null
+       "id": "86akm7aw7"
       },
       {
        "n": "NGB-RSW-W12-V01 - 10.200.12.230",
@@ -2568,10 +2568,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7awn",
-       "alarme_limpo_due": null
+       "id": "86akm7awn"
       },
       {
        "n": "NGB-ELO-W22-V01 - 10.200.12.247",
@@ -2580,10 +2580,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akm7att",
-       "alarme_limpo_due": null
+       "id": "86akm7att"
       },
       {
        "n": "NGBSITEDEV - 10.210.12.219",
@@ -2592,10 +2592,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8qh",
-       "alarme_limpo_due": null
+       "id": "86akqa8qh"
       },
       {
        "n": "NGBDLM01 - \t10.200.12.217",
@@ -2604,10 +2604,10 @@
        "assignee": "Lucas Federissis de Souza",
        "due": 1791097200000,
        "original_due": 1791097200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqa8vf",
-       "alarme_limpo_due": null
+       "id": "86akqa8vf"
       }
      ]
     },
@@ -2627,10 +2627,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjgbjg",
-       "alarme_limpo_due": null
+       "id": "86akjgbjg"
       },
       {
        "n": "Liberação Link 500Mbp's - Neugebauer",
@@ -2639,10 +2639,10 @@
        "assignee": "Diogo Lerison",
        "due": 1791961200000,
        "original_due": 1791961200000,
+       "alarme_limpo_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akpu58t",
-       "alarme_limpo_due": 1791961200000
+       "id": "86akpu58t"
       },
       {
        "n": "Envio do aviso previo entre Kosmo x NGB",
@@ -2651,10 +2651,10 @@
        "assignee": "—",
        "due": 1785222000000,
        "original_due": 1785222000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akjg9f6",
-       "alarme_limpo_due": null
+       "id": "86akjg9f6"
       },
       {
        "n": "Comunicação entre Binario e Kosmo bloqueado",
@@ -2663,10 +2663,10 @@
        "assignee": "Diogo Lerison",
        "due": 1786518000000,
        "original_due": 1786518000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ajwdywa",
-       "alarme_limpo_due": null
+       "id": "86ajwdywa"
       },
       {
        "n": "Incompatibilidade Servidores SUSE",
@@ -2675,10 +2675,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": 1789110000000,
        "original_due": 1789110000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akce127",
-       "alarme_limpo_due": null
+       "id": "86akce127"
       },
       {
        "n": "Liberação de portas/acessos no firewall da Kosmo (chamado 697)",
@@ -2687,10 +2687,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akmf6hm",
-       "alarme_limpo_due": null
+       "id": "86akmf6hm"
       },
       {
        "n": "Acesso direto da Binário ao firewall da Kosmo",
@@ -2699,10 +2699,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akmf6px",
-       "alarme_limpo_due": null
+       "id": "86akmf6px"
       }
      ]
     }
@@ -2731,10 +2731,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebre",
-       "alarme_limpo_due": null
+       "id": "86ak5ebre"
       },
       {
        "n": "Realizar contato de encerramento",
@@ -2743,10 +2743,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebup",
-       "alarme_limpo_due": null
+       "id": "86ak5ebup"
       },
       {
        "n": "Documentação técnica final",
@@ -2755,10 +2755,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ebyb",
-       "alarme_limpo_due": null
+       "id": "86ak5ebyb"
       },
       {
        "n": "Assinatura da TEP",
@@ -2767,10 +2767,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ec3z",
-       "alarme_limpo_due": null
+       "id": "86ak5ec3z"
       }
      ]
     },
@@ -2789,10 +2789,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3u8",
-       "alarme_limpo_due": null
+       "id": "86ak5e3u8"
       },
       {
        "n": "Reunião de Kickoff",
@@ -2801,10 +2801,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3vk",
-       "alarme_limpo_due": null
+       "id": "86ak5e3vk"
       },
       {
        "n": "Definição de Stakeholders",
@@ -2813,10 +2813,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e3zq",
-       "alarme_limpo_due": null
+       "id": "86ak5e3zq"
       }
      ]
     },
@@ -2835,10 +2835,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e6re",
-       "alarme_limpo_due": null
+       "id": "86ak5e6re"
       },
       {
        "n": "Definição de servidor para instalar o VBR",
@@ -2847,10 +2847,10 @@
        "assignee": "José Maria Ferreira da Silva / Diogo Lerison / Augusto Rossi",
        "due": 1788246000000,
        "original_due": 1788246000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e6z0",
-       "alarme_limpo_due": null
+       "id": "86ak5e6z0"
       },
       {
        "n": "Instalação do VBR",
@@ -2859,10 +2859,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e70q",
-       "alarme_limpo_due": null
+       "id": "86ak5e70q"
       },
       {
        "n": "Configurar repositório (8Tb)",
@@ -2871,10 +2871,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e78d",
-       "alarme_limpo_due": null
+       "id": "86ak5e78d"
       },
       {
        "n": "Instalar Endpoint nos servidor",
@@ -2883,10 +2883,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e7cy",
-       "alarme_limpo_due": null
+       "id": "86ak5e7cy"
       },
       {
        "n": "WIN-64AA16BBGDE",
@@ -2895,10 +2895,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j1m",
-       "alarme_limpo_due": null
+       "id": "86akq7j1m"
       },
       {
        "n": "SWSPR003",
@@ -2907,10 +2907,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j4y",
-       "alarme_limpo_due": null
+       "id": "86akq7j4y"
       },
       {
        "n": "SWSPR002",
@@ -2919,10 +2919,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
-       "id": "86akq7j8f",
-       "alarme_limpo_due": null
+       "id": "86akq7j8f"
       },
       {
        "n": "Configurar Jobs de backup",
@@ -2931,10 +2931,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1792134000000,
        "depth": 1,
-       "id": "86ak5e7f4",
-       "alarme_limpo_due": null
+       "id": "86ak5e7f4"
       },
       {
        "n": "Validação de backup e restore",
@@ -2943,10 +2943,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792393200000,
        "original_due": 1792393200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5e7jr",
-       "alarme_limpo_due": null
+       "id": "86ak5e7jr"
       },
       {
        "n": "Monitoramento do backup",
@@ -2955,10 +2955,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ygpj",
-       "alarme_limpo_due": null
+       "id": "86ak5ygpj"
       },
       {
        "n": "Documentação técnica",
@@ -2967,10 +2967,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792393200000,
        "original_due": 1792393200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ec77",
-       "alarme_limpo_due": null
+       "id": "86ak5ec77"
       },
       {
        "n": "API de report de ferramenta para o cliente",
@@ -2979,10 +2979,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8quyy",
-       "alarme_limpo_due": null
+       "id": "86ak8quyy"
       }
      ]
     },
@@ -3001,10 +3001,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e436",
-       "alarme_limpo_due": null
+       "id": "86ak5e436"
       },
       {
        "n": "Estimar recursos e tempo de execução",
@@ -3013,10 +3013,10 @@
        "assignee": "Diogo Lerison / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exf2",
-       "alarme_limpo_due": null
+       "id": "86ak5exf2"
       }
      ]
     },
@@ -3035,10 +3035,10 @@
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e7pz",
-       "alarme_limpo_due": null
+       "id": "86ak5e7pz"
       },
       {
        "n": "Acompanhamento do cronograma e status report",
@@ -3047,10 +3047,10 @@
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e7tq",
-       "alarme_limpo_due": null
+       "id": "86ak5e7tq"
       }
      ]
     }
@@ -3079,10 +3079,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5eyy7",
-       "alarme_limpo_due": null
+       "id": "86ak5eyy7"
       },
       {
        "n": "Realizar contato de encerramento",
@@ -3091,10 +3091,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez0e",
-       "alarme_limpo_due": null
+       "id": "86ak5ez0e"
       },
       {
        "n": "Documentação técnica final",
@@ -3103,10 +3103,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez25",
-       "alarme_limpo_due": null
+       "id": "86ak5ez25"
       },
       {
        "n": "Assinatura da TEP",
@@ -3115,10 +3115,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ez40",
-       "alarme_limpo_due": null
+       "id": "86ak5ez40"
       }
      ]
     },
@@ -3137,10 +3137,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew0r",
-       "alarme_limpo_due": null
+       "id": "86ak5ew0r"
       },
       {
        "n": "Reunião de kickoff",
@@ -3149,10 +3149,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew22",
-       "alarme_limpo_due": null
+       "id": "86ak5ew22"
       },
       {
        "n": "Elaboração da TAP",
@@ -3161,10 +3161,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5yy47",
-       "alarme_limpo_due": null
+       "id": "86ak5yy47"
       },
       {
        "n": "Definição de Stakeholders",
@@ -3173,10 +3173,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew6y",
-       "alarme_limpo_due": null
+       "id": "86ak5ew6y"
       },
       {
        "n": "Assinatura da TAP",
@@ -3185,10 +3185,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ew9h",
-       "alarme_limpo_due": null
+       "id": "86ak5ew9h"
       }
      ]
     },
@@ -3207,10 +3207,10 @@
        "assignee": "Diogo Lerison",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ex8z",
-       "alarme_limpo_due": null
+       "id": "86ak5ex8z"
       },
       {
        "n": "Estimar recursos e tempo de execução",
@@ -3219,10 +3219,10 @@
        "assignee": "Diogo Lerison / José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1788159600000,
        "original_due": 1788159600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exe1",
-       "alarme_limpo_due": null
+       "id": "86ak5exe1"
       },
       {
        "n": "Registro de documentação",
@@ -3231,10 +3231,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak8prta",
-       "alarme_limpo_due": null
+       "id": "86ak8prta"
       }
      ]
     },
@@ -3253,10 +3253,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5eykw",
-       "alarme_limpo_due": null
+       "id": "86ak5eykw"
       }
      ]
     },
@@ -3275,10 +3275,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": 1788418800000,
        "original_due": 1788418800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ewx4",
-       "alarme_limpo_due": null
+       "id": "86ak5ewx4"
       },
       {
        "n": "Infraestrutura (Gerenciado)",
@@ -3287,10 +3287,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5ewf8",
-       "alarme_limpo_due": null
+       "id": "86ak5ewf8"
       },
       {
        "n": "Criação do dominio",
@@ -3299,10 +3299,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ewkr",
-       "alarme_limpo_due": null
+       "id": "86ak5ewkr"
       },
       {
        "n": "Criação do Projeto",
@@ -3311,10 +3311,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ewpn",
-       "alarme_limpo_due": null
+       "id": "86ak5ewpn"
       },
       {
        "n": "Criação da Rede",
@@ -3323,10 +3323,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8peu5",
-       "alarme_limpo_due": null
+       "id": "86ak8peu5"
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -3335,10 +3335,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pfdz",
-       "alarme_limpo_due": null
+       "id": "86ak8pfdz"
       },
       {
        "n": "Firewall (Gerenciado)",
@@ -3347,10 +3347,10 @@
        "assignee": "Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z7v9",
-       "alarme_limpo_due": null
+       "id": "86ak5z7v9"
       },
       {
        "n": "Criação de firewall",
@@ -3359,10 +3359,10 @@
        "assignee": "Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5z8tg",
-       "alarme_limpo_due": null
+       "id": "86ak5z8tg"
       },
       {
        "n": "Configuração Inicial do FW",
@@ -3371,10 +3371,10 @@
        "assignee": "Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5z8ze",
-       "alarme_limpo_due": null
+       "id": "86ak5z8ze"
       },
       {
        "n": "Configuração de VPN site to site",
@@ -3383,10 +3383,10 @@
        "assignee": "Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pmr5",
-       "alarme_limpo_due": null
+       "id": "86ak8pmr5"
       },
       {
        "n": "Configuração de VPN client to site",
@@ -3395,10 +3395,10 @@
        "assignee": "Marcelo Santos",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8pn7r",
-       "alarme_limpo_due": null
+       "id": "86ak8pn7r"
       },
       {
        "n": "Servidor",
@@ -3407,10 +3407,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z83a",
-       "alarme_limpo_due": null
+       "id": "86ak5z83a"
       },
       {
        "n": "1 VM",
@@ -3419,10 +3419,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5zcrb",
-       "alarme_limpo_due": null
+       "id": "86ak5zcrb"
       },
       {
        "n": "BC-Backup (Gerenciado)",
@@ -3431,10 +3431,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5exvf",
-       "alarme_limpo_due": null
+       "id": "86ak5exvf"
       },
       {
        "n": "Licenças",
@@ -3443,10 +3443,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak8q3ur",
-       "alarme_limpo_due": null
+       "id": "86ak8q3ur"
       },
       {
        "n": "Configurar Jobs de backup",
@@ -3455,10 +3455,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5ey7n",
-       "alarme_limpo_due": null
+       "id": "86ak5ey7n"
       },
       {
        "n": "Monitoramento",
@@ -3467,10 +3467,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5z856",
-       "alarme_limpo_due": null
+       "id": "86ak5z856"
       },
       {
        "n": "Configurar monitoramento.",
@@ -3479,10 +3479,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86ak5zh01",
-       "alarme_limpo_due": null
+       "id": "86ak5zh01"
       },
       {
        "n": "Documentação Técnica",
@@ -3491,10 +3491,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak8rgfd",
-       "alarme_limpo_due": null
+       "id": "86ak8rgfd"
       }
      ]
     }
@@ -3523,10 +3523,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8p",
-       "alarme_limpo_due": null
+       "id": "86akg8t8p"
       },
       {
        "n": "Checklist de Readiness / Aceite Operacional",
@@ -3535,10 +3535,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akkhrvq",
-       "alarme_limpo_due": null
+       "id": "86akkhrvq"
       },
       {
        "n": "Assinatura da TEP",
@@ -3547,10 +3547,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8q",
-       "alarme_limpo_due": null
+       "id": "86akg8t8q"
       },
       {
        "n": "Envio da documentação técnica",
@@ -3559,10 +3559,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9g",
-       "alarme_limpo_due": null
+       "id": "86akg8t9g"
       },
       {
        "n": "Entrada oficial em produção",
@@ -3571,10 +3571,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhth0",
-       "alarme_limpo_due": null
+       "id": "86akkhth0"
       },
       {
        "n": "Operação assistida",
@@ -3583,10 +3583,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhtpy",
-       "alarme_limpo_due": null
+       "id": "86akkhtpy"
       },
       {
        "n": "Reunião de acompanhamento pós-Go-Live",
@@ -3595,10 +3595,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhtvf",
-       "alarme_limpo_due": null
+       "id": "86akkhtvf"
       }
      ]
     },
@@ -3617,10 +3617,10 @@
        "assignee": "—",
        "due": 1790060400000,
        "original_due": 1790060400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8x",
-       "alarme_limpo_due": null
+       "id": "86akg8t8x"
       },
       {
        "n": "Envio da TAP",
@@ -3629,10 +3629,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9v",
-       "alarme_limpo_due": null
+       "id": "86akg8t9v"
       },
       {
        "n": "Assinatura da TAP",
@@ -3641,10 +3641,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8taa",
-       "alarme_limpo_due": null
+       "id": "86akg8taa"
       }
      ]
     },
@@ -3663,10 +3663,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhr9",
-       "alarme_limpo_due": null
+       "id": "86akkhhr9"
       },
       {
        "n": "Aplicar identidade visual White Label",
@@ -3675,10 +3675,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhwn",
-       "alarme_limpo_due": null
+       "id": "86akkhhwn"
       },
       {
        "n": "Desativar e ClaudIA para BTECH",
@@ -3687,10 +3687,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhhzg",
-       "alarme_limpo_due": null
+       "id": "86akkhhzg"
       },
       {
        "n": "Criar e validar usuários administrativos e perfis de acesso",
@@ -3699,10 +3699,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhj3x",
-       "alarme_limpo_due": null
+       "id": "86akkhj3x"
       },
       {
        "n": "Validar catálogo de serviços disponibilizados à BTECH",
@@ -3711,10 +3711,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhj6n",
-       "alarme_limpo_due": null
+       "id": "86akkhj6n"
       },
       {
        "n": "Cadastrar tabela de preços da BTECH",
@@ -3723,10 +3723,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjae",
-       "alarme_limpo_due": null
+       "id": "86akkhjae"
       },
       {
        "n": "Validar custos, consumo e fluxo de faturamento",
@@ -3735,10 +3735,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjd1",
-       "alarme_limpo_due": null
+       "id": "86akkhjd1"
       },
       {
        "n": "Treinamento BCAPI",
@@ -3747,10 +3747,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjw0",
-       "alarme_limpo_due": null
+       "id": "86akkhjw0"
       },
       {
        "n": "Hands-on / treinamento BCAPI",
@@ -3759,10 +3759,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhjwx",
-       "alarme_limpo_due": null
+       "id": "86akkhjwx"
       },
       {
        "n": "Hands-on técnico BCP / Console White Label",
@@ -3771,10 +3771,10 @@
        "assignee": "—",
        "due": 1790665200000,
        "original_due": 1790665200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpg3",
-       "alarme_limpo_due": null
+       "id": "86akkhpg3"
       },
       {
        "n": "Definir fluxo de atendimento e escalonamento N1/N2/N3",
@@ -3783,10 +3783,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpq1",
-       "alarme_limpo_due": null
+       "id": "86akkhpq1"
       },
       {
        "n": "Elaborar e aprovar Matriz RACI",
@@ -3795,10 +3795,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhpww",
-       "alarme_limpo_due": null
+       "id": "86akkhpww"
       },
       {
        "n": "Apresentar e validar SLA contratado",
@@ -3807,10 +3807,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhq1u",
-       "alarme_limpo_due": null
+       "id": "86akkhq1u"
       },
       {
        "n": "Cadastrar contatos e canais oficiais de suporte",
@@ -3819,10 +3819,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhq8p",
-       "alarme_limpo_due": null
+       "id": "86akkhq8p"
       },
       {
        "n": "Executar provisionamento ponta a ponta",
@@ -3831,10 +3831,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhqpy",
-       "alarme_limpo_due": null
+       "id": "86akkhqpy"
       },
       {
        "n": "Validar serviços específicos acordados na PoC",
@@ -3843,10 +3843,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhqzz",
-       "alarme_limpo_due": null
+       "id": "86akkhqzz"
       },
       {
        "n": "Visita técnica ao Data Center ODATA",
@@ -3855,10 +3855,10 @@
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhr10",
-       "alarme_limpo_due": null
+       "id": "86akkhr10"
       }
      ]
     },
@@ -3877,10 +3877,10 @@
        "assignee": "—",
        "due": 1790060400000,
        "original_due": 1790060400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t8r",
-       "alarme_limpo_due": null
+       "id": "86akg8t8r"
       },
       {
        "n": "Identificar os riscos",
@@ -3889,10 +3889,10 @@
        "assignee": "—",
        "due": 1790060400000,
        "original_due": 1790060400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8t9w",
-       "alarme_limpo_due": null
+       "id": "86akg8t9w"
       },
       {
        "n": "Elaboração TAP",
@@ -3901,10 +3901,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8ta6",
-       "alarme_limpo_due": null
+       "id": "86akg8ta6"
       },
       {
        "n": "Realização do cronograma",
@@ -3913,10 +3913,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8taf",
-       "alarme_limpo_due": null
+       "id": "86akg8taf"
       },
       {
        "n": "Documentação do cliente",
@@ -3925,10 +3925,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8tav",
-       "alarme_limpo_due": null
+       "id": "86akg8tav"
       }
      ]
     }
@@ -3957,10 +3957,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzv",
-       "alarme_limpo_due": null
+       "id": "86akekhzv"
       },
       {
        "n": "Assinatura da TEP",
@@ -3969,10 +3969,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzw",
-       "alarme_limpo_due": null
+       "id": "86akekhzw"
       },
       {
        "n": "Envio da documentação técnica",
@@ -3981,10 +3981,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0k",
-       "alarme_limpo_due": null
+       "id": "86akekj0k"
       }
      ]
     },
@@ -4003,10 +4003,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzu",
-       "alarme_limpo_due": null
+       "id": "86akekhzu"
       },
       {
        "n": "Envio da TAP",
@@ -4015,10 +4015,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0m",
-       "alarme_limpo_due": null
+       "id": "86akekj0m"
       },
       {
        "n": "Assinatura da TAP",
@@ -4027,10 +4027,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1e",
-       "alarme_limpo_due": null
+       "id": "86akekj1e"
       }
      ]
     },
@@ -4049,10 +4049,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzn",
-       "alarme_limpo_due": null
+       "id": "86akekhzn"
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -4061,10 +4061,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzp",
-       "alarme_limpo_due": null
+       "id": "86akekhzp"
       },
       {
        "n": "Plano de Comunicação Inicial",
@@ -4073,10 +4073,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0n",
-       "alarme_limpo_due": null
+       "id": "86akekj0n"
       },
       {
        "n": "Identificar os riscos",
@@ -4085,10 +4085,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj0q",
-       "alarme_limpo_due": null
+       "id": "86akekj0q"
       },
       {
        "n": "Elaboração TAP",
@@ -4097,10 +4097,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1h",
-       "alarme_limpo_due": null
+       "id": "86akekj1h"
       },
       {
        "n": "Realização do cronograma",
@@ -4109,10 +4109,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj1j",
-       "alarme_limpo_due": null
+       "id": "86akekj1j"
       },
       {
        "n": "Documentação do cliente",
@@ -4121,10 +4121,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj2j",
-       "alarme_limpo_due": null
+       "id": "86akekj2j"
       }
      ]
     },
@@ -4143,10 +4143,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfztuf",
-       "alarme_limpo_due": null
+       "id": "86akfztuf"
       },
       {
        "n": "Criação do dominio",
@@ -4155,10 +4155,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuj",
-       "alarme_limpo_due": null
+       "id": "86akfztuj"
       },
       {
        "n": "Criação do Projeto",
@@ -4167,10 +4167,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuk",
-       "alarme_limpo_due": null
+       "id": "86akfztuk"
       },
       {
        "n": "Criação da Rede",
@@ -4179,10 +4179,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztuz",
-       "alarme_limpo_due": null
+       "id": "86akfztuz"
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -4191,10 +4191,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfztv0",
-       "alarme_limpo_due": null
+       "id": "86akfztv0"
       },
       {
        "n": "Firewall",
@@ -4203,10 +4203,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzt",
-       "alarme_limpo_due": null
+       "id": "86akekhzt"
       },
       {
        "n": "PFSENSE",
@@ -4215,10 +4215,10 @@
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj0a",
-       "alarme_limpo_due": null
+       "id": "86akekj0a"
       },
       {
        "n": "IP Publico",
@@ -4227,10 +4227,10 @@
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj0b",
-       "alarme_limpo_due": null
+       "id": "86akekj0b"
       },
       {
        "n": "Configuração",
@@ -4239,10 +4239,10 @@
        "assignee": "Antonio Junior / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj11",
-       "alarme_limpo_due": null
+       "id": "86akekj11"
       },
       {
        "n": "VPN",
@@ -4251,10 +4251,10 @@
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj13",
-       "alarme_limpo_due": null
+       "id": "86akekj13"
       },
       {
        "n": "Migração (Veeam)",
@@ -4263,10 +4263,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj18",
-       "alarme_limpo_due": null
+       "id": "86akekj18"
       },
       {
        "n": "Repositorio",
@@ -4275,10 +4275,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj1t",
-       "alarme_limpo_due": null
+       "id": "86akekj1t"
       },
       {
        "n": "Tenant",
@@ -4287,10 +4287,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2n",
-       "alarme_limpo_due": null
+       "id": "86akekj2n"
       },
       {
        "n": "Configuração Jobs",
@@ -4299,10 +4299,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2p",
-       "alarme_limpo_due": null
+       "id": "86akekj2p"
       },
       {
        "n": "restauração dos servidores em nuvem",
@@ -4311,10 +4311,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akjbzva",
-       "alarme_limpo_due": null
+       "id": "86akjbzva"
       },
       {
        "n": "SERVIDOR VBR LOCAL",
@@ -4323,10 +4323,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn50f7",
-       "alarme_limpo_due": null
+       "id": "86akn50f7"
       },
       {
        "n": "VM's",
@@ -4335,10 +4335,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekhzr",
-       "alarme_limpo_due": null
+       "id": "86akekhzr"
       },
       {
        "n": "APMSQL01",
@@ -4347,10 +4347,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj08",
-       "alarme_limpo_due": null
+       "id": "86akekj08"
       },
       {
        "n": "APMCRM1",
@@ -4359,10 +4359,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn505c",
-       "alarme_limpo_due": null
+       "id": "86akn505c"
       },
       {
        "n": "APMERP1",
@@ -4371,10 +4371,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn509j",
-       "alarme_limpo_due": null
+       "id": "86akn509j"
       },
       {
        "n": "AWS - APMSVRWEBAWS",
@@ -4383,10 +4383,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn50zg",
-       "alarme_limpo_due": null
+       "id": "86akn50zg"
       },
       {
        "n": "SRV05?",
@@ -4395,10 +4395,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj75c",
-       "alarme_limpo_due": null
+       "id": "86aktj75c"
       },
       {
        "n": "SRV06?",
@@ -4407,10 +4407,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj778",
-       "alarme_limpo_due": null
+       "id": "86aktj778"
       },
       {
        "n": "SRV07?",
@@ -4419,10 +4419,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj77y",
-       "alarme_limpo_due": null
+       "id": "86aktj77y"
       },
       {
        "n": "SRV08?",
@@ -4431,10 +4431,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj789",
-       "alarme_limpo_due": null
+       "id": "86aktj789"
       },
       {
        "n": "SRV09?",
@@ -4443,10 +4443,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj78f",
-       "alarme_limpo_due": null
+       "id": "86aktj78f"
       },
       {
        "n": "SRV10?",
@@ -4455,10 +4455,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktj790",
-       "alarme_limpo_due": null
+       "id": "86aktj790"
       },
       {
        "n": "BC-Backup",
@@ -4467,10 +4467,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj25",
-       "alarme_limpo_due": null
+       "id": "86akekj25"
       },
       {
        "n": "Configuração de politica",
@@ -4479,10 +4479,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2q",
-       "alarme_limpo_due": null
+       "id": "86akekj2q"
       },
       {
        "n": "Teste de backup",
@@ -4491,10 +4491,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekj2r",
-       "alarme_limpo_due": null
+       "id": "86akekj2r"
       },
       {
        "n": "Documentação técnica",
@@ -4503,10 +4503,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj3a",
-       "alarme_limpo_due": null
+       "id": "86akekj3a"
       },
       {
        "n": "Go-Live",
@@ -4515,10 +4515,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekj3m",
-       "alarme_limpo_due": null
+       "id": "86akekj3m"
       }
      ]
     }
@@ -4547,10 +4547,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5f",
-       "alarme_limpo_due": null
+       "id": "86akekg5f"
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -4559,10 +4559,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5e",
-       "alarme_limpo_due": null
+       "id": "86akekg5e"
       },
       {
        "n": "Plano de Comunicação Inicial",
@@ -4571,10 +4571,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6q",
-       "alarme_limpo_due": null
+       "id": "86akekg6q"
       },
       {
        "n": "Identificar os riscos",
@@ -4583,10 +4583,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6r",
-       "alarme_limpo_due": null
+       "id": "86akekg6r"
       },
       {
        "n": "Elaboração TAP",
@@ -4595,10 +4595,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg7z",
-       "alarme_limpo_due": null
+       "id": "86akekg7z"
       },
       {
        "n": "Realização do cronograma",
@@ -4607,10 +4607,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg80",
-       "alarme_limpo_due": null
+       "id": "86akekg80"
       },
       {
        "n": "Documentação do cliente",
@@ -4619,10 +4619,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg8z",
-       "alarme_limpo_due": null
+       "id": "86akekg8z"
       }
      ]
     },
@@ -4641,10 +4641,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5k",
-       "alarme_limpo_due": null
+       "id": "86akekg5k"
       },
       {
        "n": "Envio da TAP",
@@ -4653,10 +4653,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6p",
-       "alarme_limpo_due": null
+       "id": "86akekg6p"
       },
       {
        "n": "Assinatura da TAP",
@@ -4665,10 +4665,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg7j",
-       "alarme_limpo_due": null
+       "id": "86akekg7j"
       }
      ]
     },
@@ -4687,10 +4687,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5m",
-       "alarme_limpo_due": null
+       "id": "86akekg5m"
       },
       {
        "n": "Assinatura da TEP",
@@ -4699,10 +4699,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5n",
-       "alarme_limpo_due": null
+       "id": "86akekg5n"
       },
       {
        "n": "Envio da documentação técnica",
@@ -4711,10 +4711,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg6g",
-       "alarme_limpo_due": null
+       "id": "86akekg6g"
       },
       {
        "n": "Faturamento",
@@ -4723,10 +4723,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akruatg",
-       "alarme_limpo_due": null
+       "id": "86akruatg"
       }
      ]
     },
@@ -4745,10 +4745,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfzp4x",
-       "alarme_limpo_due": null
+       "id": "86akfzp4x"
       },
       {
        "n": "Criação do dominio",
@@ -4757,10 +4757,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp56",
-       "alarme_limpo_due": null
+       "id": "86akfzp56"
       },
       {
        "n": "Criação do Projeto",
@@ -4769,10 +4769,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp57",
-       "alarme_limpo_due": null
+       "id": "86akfzp57"
       },
       {
        "n": "Criação da Rede",
@@ -4781,10 +4781,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp5m",
-       "alarme_limpo_due": null
+       "id": "86akfzp5m"
       },
       {
        "n": "Levantamento de Usuarios (cliente)",
@@ -4793,10 +4793,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp5p",
-       "alarme_limpo_due": null
+       "id": "86akfzp5p"
       },
       {
        "n": "Firewall",
@@ -4805,10 +4805,10 @@
        "assignee": "Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5h",
-       "alarme_limpo_due": null
+       "id": "86akekg5h"
       },
       {
        "n": "Subir imagem Mikrotik",
@@ -4817,10 +4817,10 @@
        "assignee": "Marcelo Santos / Antonio Junior",
        "due": 1790060400000,
        "original_due": 1790060400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn3upp",
-       "alarme_limpo_due": null
+       "id": "86akn3upp"
       },
       {
        "n": "1 IP Publico",
@@ -4829,10 +4829,10 @@
        "assignee": "Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg68",
-       "alarme_limpo_due": null
+       "id": "86akekg68"
       },
       {
        "n": "Configuração",
@@ -4841,10 +4841,10 @@
        "assignee": "Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg73",
-       "alarme_limpo_due": null
+       "id": "86akekg73"
       },
       {
        "n": "VPN",
@@ -4853,10 +4853,10 @@
        "assignee": "Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg74",
-       "alarme_limpo_due": null
+       "id": "86akekg74"
       },
       {
        "n": "VM's",
@@ -4865,10 +4865,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg5g",
-       "alarme_limpo_due": null
+       "id": "86akekg5g"
       },
       {
        "n": "SRV01 - AD/FileServer",
@@ -4877,10 +4877,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg65",
-       "alarme_limpo_due": null
+       "id": "86akekg65"
       },
       {
        "n": "SRV02 - DB",
@@ -4889,10 +4889,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn5y7f",
-       "alarme_limpo_due": null
+       "id": "86akn5y7f"
       },
       {
        "n": "SRV03 - Aplicação",
@@ -4901,10 +4901,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akn5y9j",
-       "alarme_limpo_due": null
+       "id": "86akn5y9j"
       },
       {
        "n": "SRV04 - Teste VPN",
@@ -4913,10 +4913,10 @@
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akpku1y",
-       "alarme_limpo_due": null
+       "id": "86akpku1y"
       },
       {
        "n": "BC-Backup",
@@ -4925,10 +4925,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg8j",
-       "alarme_limpo_due": null
+       "id": "86akekg8j"
       },
       {
        "n": "Configuração de politica",
@@ -4937,10 +4937,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg96",
-       "alarme_limpo_due": null
+       "id": "86akekg96"
       },
       {
        "n": "Teste de backup",
@@ -4949,10 +4949,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akekg97",
-       "alarme_limpo_due": null
+       "id": "86akekg97"
       },
       {
        "n": "Monitoramento",
@@ -4961,10 +4961,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akfzp4v",
-       "alarme_limpo_due": null
+       "id": "86akfzp4v"
       },
       {
        "n": "Configurar monitoramento.",
@@ -4973,10 +4973,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akfzp4y",
-       "alarme_limpo_due": null
+       "id": "86akfzp4y"
       },
       {
        "n": "Documentação técnica",
@@ -4985,10 +4985,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi / Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekg9w",
-       "alarme_limpo_due": null
+       "id": "86akekg9w"
       },
       {
        "n": "Go-Live",
@@ -4997,10 +4997,10 @@
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akekgad",
-       "alarme_limpo_due": null
+       "id": "86akekgad"
       }
      ]
     }
@@ -5029,10 +5029,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aet",
-       "alarme_limpo_due": null
+       "id": "86akn4aet"
       },
       {
        "n": "Assinatura da TEP",
@@ -5041,10 +5041,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aeu",
-       "alarme_limpo_due": null
+       "id": "86akn4aeu"
       },
       {
        "n": "Envio da documentação técnica",
@@ -5053,10 +5053,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afc",
-       "alarme_limpo_due": null
+       "id": "86akn4afc"
       }
      ]
     },
@@ -5075,10 +5075,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aeq",
-       "alarme_limpo_due": null
+       "id": "86akn4aeq"
       },
       {
        "n": "Identificar as partes Interessadas",
@@ -5087,10 +5087,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aep",
-       "alarme_limpo_due": null
+       "id": "86akn4aep"
       },
       {
        "n": "Identificar os riscos",
@@ -5099,10 +5099,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afr",
-       "alarme_limpo_due": null
+       "id": "86akn4afr"
       },
       {
        "n": "Elaboração TAP",
@@ -5111,10 +5111,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4age",
-       "alarme_limpo_due": null
+       "id": "86akn4age"
       },
       {
        "n": "Documentação do cliente",
@@ -5123,10 +5123,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4ah8",
-       "alarme_limpo_due": null
+       "id": "86akn4ah8"
       }
      ]
     },
@@ -5145,10 +5145,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjw9",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjw9"
       },
       {
        "n": "Configurar 1 firewall",
@@ -5157,10 +5157,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwa",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjwa"
       },
       {
        "n": "1 IP público",
@@ -5169,10 +5169,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwb",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjwb"
       },
       {
        "n": "Definir Política de backup",
@@ -5181,10 +5181,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwc",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjwc"
       },
       {
        "n": "Configurar BC-Backup",
@@ -5193,10 +5193,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1791961200000,
        "original_due": 1791961200000,
+       "alarme_limpo_due": null,
        "nova_previsao": 1792047600000,
        "depth": 0,
-       "id": "17ttbukwjwd",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjwd"
       },
       {
        "n": "Configurar monitoramento",
@@ -5205,10 +5205,10 @@
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "17ttbukwjwe",
-       "alarme_limpo_due": null
+       "id": "17ttbukwjwe"
       }
      ]
     },
@@ -5227,10 +5227,10 @@
        "assignee": "Diogo Lerison",
        "due": 1790233200000,
        "original_due": 1790233200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4aen",
-       "alarme_limpo_due": null
+       "id": "86akn4aen"
       },
       {
        "n": "Envio da TAP",
@@ -5239,10 +5239,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4afg",
-       "alarme_limpo_due": null
+       "id": "86akn4afg"
       },
       {
        "n": "Assinatura da TAP",
@@ -5251,10 +5251,10 @@
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akn4agd",
-       "alarme_limpo_due": null
+       "id": "86akn4agd"
       }
      ]
     }
@@ -5283,10 +5283,10 @@
        "assignee": "Diogo Lerison",
        "due": 1791442800000,
        "original_due": 1791442800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqg76",
-       "alarme_limpo_due": null
+       "id": "86aktqg76"
       },
       {
        "n": "Validação de Marcos, responsáveis e datas",
@@ -5295,10 +5295,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqg8z",
-       "alarme_limpo_due": null
+       "id": "86aktqg8z"
       },
       {
        "n": "Definir pontos focais e cadência de acompanhamento",
@@ -5307,10 +5307,10 @@
        "assignee": "Diogo Lerison",
        "due": 1791442800000,
        "original_due": 1791442800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqga1",
-       "alarme_limpo_due": null
+       "id": "86aktqga1"
       },
       {
        "n": "Publicar painel e liberar usuarios para acompanhamento",
@@ -5319,10 +5319,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqge2",
-       "alarme_limpo_due": null
+       "id": "86aktqge2"
       },
       {
        "n": "Devolução da minuta contratual para Binario",
@@ -5331,10 +5331,10 @@
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqgne",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktqgne"
       },
       {
        "n": "Elaboração da TAP",
@@ -5343,10 +5343,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aku13jv",
-       "alarme_limpo_due": null
+       "id": "86aku13jv"
       },
       {
        "n": "Envio/Assinatura da TAP",
@@ -5355,10 +5355,10 @@
        "assignee": "Wagner Bento Felix / Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aku13k2",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aku13k2"
       }
      ]
     },
@@ -5377,10 +5377,10 @@
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqnym",
-       "alarme_limpo_due": null
+       "id": "86aktqnym"
       },
       {
        "n": "Configurar Identity Provider e o mapping no Keystone",
@@ -5389,10 +5389,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnjgv",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktnjgv"
       },
       {
        "n": "Validar os cenários de MFA, token expirado e usuário removido do grupo",
@@ -5401,10 +5401,10 @@
        "assignee": "Joab de Araújo Silva",
        "due": 1793516400000,
        "original_due": 1793516400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnjuf",
-       "alarme_limpo_due": null
+       "id": "86aktnjuf"
       },
       {
        "n": "Testar SSO no ambiente Sandbox",
@@ -5413,10 +5413,10 @@
        "assignee": "Joab de Araújo Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktnk69",
-       "alarme_limpo_due": null
+       "id": "86aktnk69"
       },
       {
        "n": "Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo",
@@ -5425,10 +5425,10 @@
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1792566000000,
        "original_due": 1792566000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqnwv",
-       "alarme_limpo_due": null
+       "id": "86aktqnwv"
       },
       {
        "n": "Ajustes Mesa TI",
@@ -5437,10 +5437,10 @@
        "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqp06",
-       "alarme_limpo_due": null
+       "id": "86aktqp06"
       },
       {
        "n": "Levantamento de autenticação",
@@ -5449,10 +5449,10 @@
        "assignee": "Wagner Bento Felix",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukw474",
-       "alarme_limpo_due": null
+       "id": "17ttbukw474"
       },
       {
        "n": "Liberar Usuario",
@@ -5461,10 +5461,10 @@
        "assignee": "Guilherme Lopes",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbukw475",
-       "alarme_limpo_due": null
+       "id": "17ttbukw475"
       },
       {
        "n": "Consolidar a federação do Keystone nos templates do director",
@@ -5473,10 +5473,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792566000000,
        "original_due": 1792566000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqp1e",
-       "alarme_limpo_due": null
+       "id": "86aktqp1e"
       },
       {
        "n": "Documentar e alinhar virada para produção",
@@ -5485,10 +5485,10 @@
        "assignee": "Joab de Araújo Silva / Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnk59",
-       "alarme_limpo_due": null
+       "id": "86aktnk59"
       }
      ]
     },
@@ -5507,10 +5507,10 @@
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1791529200000,
        "original_due": 1791529200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkcj",
-       "alarme_limpo_due": null
+       "id": "86aktnkcj"
       },
       {
        "n": "Configurar a URL em redirect para produção",
@@ -5519,10 +5519,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1791961200000,
        "original_due": 1791961200000,
+       "alarme_limpo_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkpp",
-       "alarme_limpo_due": 1791961200000
+       "id": "86aktnkpp"
       },
       {
        "n": "Publicar o painel na porta 443",
@@ -5531,10 +5531,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1791961200000,
        "original_due": 1791961200000,
+       "alarme_limpo_due": 1791961200000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkd2",
-       "alarme_limpo_due": 1791961200000
+       "id": "86aktnkd2"
       },
       {
        "n": "Criar no front o botão com a rota que leva o usuário para a tela certa",
@@ -5543,10 +5543,10 @@
        "assignee": "Wagner Bento Felix",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnke3",
-       "alarme_limpo_due": null
+       "id": "86aktnke3"
       },
       {
        "n": "Exibir botão de custo apenas para perfil financeiro do Cloud Plus",
@@ -5555,10 +5555,10 @@
        "assignee": "Diogo Lerison",
        "due": 1792566000000,
        "original_due": 1792566000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnkg1",
-       "alarme_limpo_due": null
+       "id": "86aktnkg1"
       },
       {
        "n": "Teste ponta a ponta",
@@ -5567,10 +5567,10 @@
        "assignee": "Diogo Lerison / Joab de Araújo Silva",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnmwa",
-       "alarme_limpo_due": null
+       "id": "86aktnmwa"
       }
      ]
     },
@@ -5589,10 +5589,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqvyc",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktqvyc"
       },
       {
        "n": "Ajuste de casas decimais",
@@ -5601,10 +5601,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktpwj6",
-       "alarme_limpo_due": null
+       "id": "86aktpwj6"
       },
       {
        "n": "Enviar as diretrizes de dimensionamento",
@@ -5613,10 +5613,10 @@
        "assignee": "Joab de Araújo Silva / Guilherme Lopes / Guilherme Soares Gomes da Silva",
        "due": 1791529200000,
        "original_due": 1791529200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnyr0",
-       "alarme_limpo_due": null
+       "id": "86aktnyr0"
       },
       {
        "n": "Começar coleta Fortaleza",
@@ -5625,10 +5625,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp32q",
-       "alarme_limpo_due": null
+       "id": "86aktp32q"
       },
       {
        "n": "Deploy + Validação",
@@ -5637,10 +5637,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpv3n",
-       "alarme_limpo_due": null
+       "id": "86aktpv3n"
       },
       {
        "n": "Começar coleta Porto Alegre",
@@ -5649,10 +5649,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp32z",
-       "alarme_limpo_due": null
+       "id": "86aktp32z"
       },
       {
        "n": "Deploy + Validação",
@@ -5661,10 +5661,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpv8h",
-       "alarme_limpo_due": null
+       "id": "86aktpv8h"
       },
       {
        "n": "Criar o seletor de região no painel de consumo",
@@ -5673,10 +5673,10 @@
        "assignee": "Joab de Araújo Silva",
        "due": 1792998000000,
        "original_due": 1792998000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktp396",
-       "alarme_limpo_due": null
+       "id": "86aktp396"
       },
       {
        "n": "Definir a cobrança por roteador/projeto e por banda (avaliar aditivo contratual com Produtos)",
@@ -5685,10 +5685,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw1d",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktqw1d"
       },
       {
        "n": "Desabilitar o menu da calculadora da Binário na V1 ou apontá-lo para o endereço interno (VPN)",
@@ -5697,10 +5697,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw6q",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktqw6q"
       },
       {
        "n": "Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)",
@@ -5709,10 +5709,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792738800000,
        "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw82",
-       "alarme_limpo_due": null
+       "id": "86aktqw82"
       },
       {
        "n": "Gerar a chave privada e o CSR e emitir um único certificado para os dois domínios",
@@ -5721,10 +5721,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1792566000000,
        "original_due": 1792566000000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqw9f",
-       "alarme_limpo_due": null
+       "id": "86aktqw9f"
       },
       {
        "n": "Liberar firewall e acesso externo conforme domínio e local de hospedagem",
@@ -5733,10 +5733,10 @@
        "assignee": "Wagner Bento Felix",
        "due": 1793170800000,
        "original_due": 1793170800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqwaa",
-       "alarme_limpo_due": null
+       "id": "86aktqwaa"
       }
      ]
     },
@@ -5755,10 +5755,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnvxa",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktnvxa"
       },
       {
        "n": "Mapear de onde vêm os SKUs e como eles se ligam aos flavors do Nova",
@@ -5767,10 +5767,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnw78",
-       "alarme_limpo_due": 1792047600000
+       "id": "86aktnw78"
       },
       {
        "n": "Montar o contrato da API (OpenAPI) e validar com o consumidor",
@@ -5779,10 +5779,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwh0",
-       "alarme_limpo_due": null
+       "id": "86aktnwh0"
       },
       {
        "n": "Definir a autenticação da API",
@@ -5791,10 +5791,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792479600000,
        "original_due": 1792479600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwnx",
-       "alarme_limpo_due": null
+       "id": "86aktnwnx"
       },
       {
        "n": "Entendimento da demanda",
@@ -5803,10 +5803,10 @@
        "assignee": "Guilherme Soares Gomes da Silva / Diogo Lerison",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86aktpn46",
-       "alarme_limpo_due": null
+       "id": "86aktpn46"
       },
       {
        "n": "Implementar o endpoint com a transformação para o formato deles",
@@ -5815,10 +5815,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1793084400000,
        "original_due": 1793084400000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwqw",
-       "alarme_limpo_due": null
+       "id": "86aktnwqw"
       },
       {
        "n": "Teste, documentação e deploy",
@@ -5827,10 +5827,10 @@
        "assignee": "Guilherme Lopes",
        "due": 1793257200000,
        "original_due": 1793257200000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwvd",
-       "alarme_limpo_due": null
+       "id": "86aktnwvd"
       },
       {
        "n": "Homologar",
@@ -5839,10 +5839,10 @@
        "assignee": "Wagner Bento Felix / Diogo Lerison / Guilherme Lopes / Joab de Araújo Silva",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnwvw",
-       "alarme_limpo_due": null
+       "id": "86aktnwvw"
       },
       {
        "n": "Envio do Link da documentação",
@@ -5851,10 +5851,10 @@
        "assignee": "Guilherme Lopes / Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
+       "alarme_limpo_due": 1792134000000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktnx74",
-       "alarme_limpo_due": 1792134000000
+       "id": "86aktnx74"
       },
       {
        "n": "Detalhar solicitações da API",
@@ -5863,10 +5863,10 @@
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1792047600000,
        "original_due": 1792047600000,
+       "alarme_limpo_due": 1792047600000,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktqv0j",
-       "alarme_limpo_due": 1792047600000
+       "id": "86aktqv0j"
       }
      ]
     },
@@ -5886,10 +5886,10 @@
        "assignee": "Wagner Bento Felix / Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktjpk4",
-       "alarme_limpo_due": null
+       "id": "86aktjpk4"
       },
       {
        "n": "Fase 6 - Alarmística de coleta + chamados Jira",
@@ -5898,10 +5898,10 @@
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86aktjpr4",
-       "alarme_limpo_due": null
+       "id": "86aktjpr4"
       }
      ]
     }
@@ -5930,10 +5930,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahk4",
-       "alarme_limpo_due": null
+       "id": "86akqahk4"
       },
       {
        "n": "Validar a configuração de *Tunnel Client Mode* no portal VPN SSL",
@@ -5942,10 +5942,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahpv",
-       "alarme_limpo_due": null
+       "id": "86akqahpv"
       },
       {
        "n": "Retornar a análise para Márcio por e-mail",
@@ -5954,10 +5954,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqahtp",
-       "alarme_limpo_due": null
+       "id": "86akqahtp"
       }
      ]
     },
@@ -5976,10 +5976,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9qmb",
-       "alarme_limpo_due": null
+       "id": "86akq9qmb"
       },
       {
        "n": "Ajustes e Atualização do firewall",
@@ -5988,10 +5988,10 @@
        "assignee": "Priscila de Fatima Sotério Ferreira",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9k7w",
-       "alarme_limpo_due": null
+       "id": "86akq9k7w"
       },
       {
        "n": "Servidor de sincronização e grupos (perfil do AD)",
@@ -6000,10 +6000,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9kzz",
-       "alarme_limpo_due": null
+       "id": "86akq9kzz"
       },
       {
        "n": "GCDS e Password Sync para a sincronização​",
@@ -6012,10 +6012,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9r2e",
-       "alarme_limpo_due": null
+       "id": "86akq9r2e"
       },
       {
        "n": "Usuário piloto e grupo VPN SSL sincronizados no Workspace",
@@ -6024,10 +6024,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "86akqafq4",
-       "alarme_limpo_due": null
+       "id": "86akqafq4"
       },
       {
        "n": "Regras de acesso por perfil​",
@@ -6036,10 +6036,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9rpe",
-       "alarme_limpo_due": null
+       "id": "86akq9rpe"
       },
       {
        "n": "Teste de solicitação de MFA via Google Authenticator.",
@@ -6048,10 +6048,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqagg1",
-       "alarme_limpo_due": null
+       "id": "86akqagg1"
       }
      ]
     },
@@ -6070,10 +6070,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9mh0",
-       "alarme_limpo_due": null
+       "id": "86akq9mh0"
       }
      ]
     },
@@ -6092,10 +6092,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9n7q",
-       "alarme_limpo_due": null
+       "id": "86akq9n7q"
       },
       {
        "n": "Ajustes Finos",
@@ -6104,10 +6104,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9nad",
-       "alarme_limpo_due": null
+       "id": "86akq9nad"
       },
       {
        "n": "Desligar acesso antigo",
@@ -6116,10 +6116,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9ngr",
-       "alarme_limpo_due": null
+       "id": "86akq9ngr"
       }
      ]
     },
@@ -6138,10 +6138,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgh",
-       "alarme_limpo_due": null
+       "id": "86akqamgh"
       },
       {
        "n": "Agendar janela de manutenção",
@@ -6150,10 +6150,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgp",
-       "alarme_limpo_due": null
+       "id": "86akqamgp"
       },
       {
        "n": "Instalar em todos os DCs",
@@ -6162,10 +6162,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgu",
-       "alarme_limpo_due": null
+       "id": "86akqamgu"
       },
       {
        "n": "Orientar os usuários a trocar a senha após a instalação",
@@ -6174,10 +6174,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqamgx",
-       "alarme_limpo_due": null
+       "id": "86akqamgx"
       }
      ]
     },
@@ -6196,10 +6196,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akq9jjf",
-       "alarme_limpo_due": null
+       "id": "86akq9jjf"
       }
      ]
     },
@@ -6219,10 +6219,10 @@
        "assignee": "—",
        "due": null,
        "original_due": null,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqaj7k",
-       "alarme_limpo_due": null
+       "id": "86akqaj7k"
       },
       {
        "n": "Encerramento",
@@ -6231,10 +6231,10 @@
        "assignee": "—",
        "due": 1793343600000,
        "original_due": 1793343600000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akqd7h1",
-       "alarme_limpo_due": null
+       "id": "86akqd7h1"
       }
      ]
     }
