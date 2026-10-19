@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-19T16:15:16.254858+00:00",
+ "last_sync_utc": "2026-10-19T21:15:54.085179+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -5161,9 +5161,9 @@
        "status": "waiting",
        "raw_status": "aguardando retorno",
        "assignee": "Wagner Bento Felix / Diogo Lerison",
-       "due": 1792134000000,
-       "original_due": 1792134000000,
-       "alarme_limpo_due": 1792134000000,
+       "due": 1792738800000,
+       "original_due": 1792738800000,
+       "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86aku13k2"
