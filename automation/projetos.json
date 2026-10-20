@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-20T14:09:01.075812+00:00",
+ "last_sync_utc": "2026-10-20T18:40:42.721656+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4365,13 +4365,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison / Priscila de Fatima Sotério Ferreira",
-       "due": null,
-       "original_due": null,
+       "due": 1792566000000,
+       "original_due": 1792566000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzv",
-       "u": 1792501819416,
+       "u": 1792518616801,
        "dc": null
       },
       {
@@ -4379,13 +4379,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzw",
-       "u": 1792501691549,
+       "u": 1792518661834,
        "dc": null
       },
       {
@@ -4393,13 +4393,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj0k",
-       "u": 1790020736513,
+       "u": 1792518639436,
        "dc": null
       }
      ]
@@ -4815,8 +4815,8 @@
       },
       {
        "n": "APMSQL01",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -4824,13 +4824,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj08",
-       "u": 1792432088751,
-       "dc": null
+       "u": 1792510025981,
+       "dc": 1792510024939
       },
       {
        "n": "APMCRM1",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -4838,13 +4838,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akn505c",
-       "u": 1792191485877,
-       "dc": null
+       "u": 1792510039492,
+       "dc": 1792510038073
       },
       {
        "n": "APMERP1",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -4852,13 +4852,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akn509j",
-       "u": 1792191489276,
-       "dc": null
+       "u": 1792518001444,
+       "dc": 1792518000165
       },
       {
        "n": "AWS - APMSVRWEBAWS",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -4866,8 +4866,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akn50zg",
-       "u": 1792191492998,
-       "dc": null
+       "u": 1792510050808,
+       "dc": 1792510049833
       },
       {
        "n": "SRV05?",
@@ -4958,13 +4958,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj25",
-       "u": 1792008621302,
+       "u": 1792518568167,
        "dc": null
       },
       {
@@ -4972,13 +4972,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1792008626965,
+       "u": 1792518572571,
        "dc": null
       },
       {
@@ -4986,13 +4986,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2r",
-       "u": 1792008631073,
+       "u": 1792518580460,
        "dc": null
       },
       {
@@ -5000,13 +5000,13 @@
        "status": "in planning",
        "raw_status": "planejamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3a",
-       "u": 1791206150769,
+       "u": 1792518584909,
        "dc": null
       },
       {
@@ -5014,13 +5014,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3m",
-       "u": 1792501676579,
+       "u": 1792518589154,
        "dc": null
       }
      ]
@@ -6085,6 +6085,20 @@
        "depth": 1,
        "id": "17ttbukxaz1",
        "u": 1792503717101,
+       "dc": null
+      },
+      {
+       "n": "Provisionamento 2 VMs para produção",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Wagner Bento Felix",
+       "due": 1792566000000,
+       "original_due": 1792566000000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "17ttbukxb9m",
+       "u": 1792506267856,
        "dc": null
       },
       {
