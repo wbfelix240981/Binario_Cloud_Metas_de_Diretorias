@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-20T12:27:06.667967+00:00",
+ "last_sync_utc": "2026-10-20T13:19:46.554827+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4362,22 +4362,22 @@
      "ativ": [
       {
        "n": "Elaboração da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Diogo Lerison",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Diogo Lerison / Priscila de Fatima Sotério Ferreira",
        "due": null,
        "original_due": null,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzv",
-       "u": 1790020736513,
+       "u": 1792501819416,
        "dc": null
       },
       {
        "n": "Assinatura da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
@@ -4385,7 +4385,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzw",
-       "u": 1790020736513,
+       "u": 1792501691549,
        "dc": null
       },
       {
@@ -4880,7 +4880,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj75c",
-       "u": 1792097591772,
+       "u": 1792501465014,
        "dc": null
       },
       {
@@ -5011,8 +5011,8 @@
       },
       {
        "n": "Go-Live",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
@@ -5020,7 +5020,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3m",
-       "u": 1790020719288,
+       "u": 1792501676579,
        "dc": null
       }
      ]
@@ -5604,30 +5604,30 @@
      "ativ": [
       {
        "n": "Elaboração da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Diogo Lerison",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Diogo Lerison / Priscila de Fatima Sotério Ferreira",
        "due": null,
        "original_due": null,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akn4aet",
-       "u": 1790107573837,
+       "u": 1792502210778,
        "dc": null
       },
       {
        "n": "Assinatura da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Diogo Lerison",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Diogo Lerison / Priscila de Fatima Sotério Ferreira",
        "due": null,
        "original_due": null,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akn4aeu",
-       "u": 1790107573837,
+       "u": 1792502243052,
        "dc": null
       },
       {
