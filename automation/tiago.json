@@ -1530,7 +1530,7 @@
      },
      {
       "n": "Analisar reutilização BC-Migration - Operação",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1547,7 +1547,7 @@
     "ativ": [
      {
       "n": "Verificar API existente",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
@@ -1579,7 +1579,7 @@
      },
      {
       "n": "Adequar API",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": null,
@@ -1614,13 +1614,13 @@
    {
     "n": "Fase 3 - Arquitetura",
     "status": "in progress",
-    "assignee": "—",
+    "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1796972400000,
     "id": "86akbk1c0",
     "ativ": [
      {
       "n": "Subir códigos no git",
-      "status": "backlog",
+      "status": "in progress",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -1628,7 +1628,7 @@
      },
      {
       "n": "Definir modelo de arquitetura",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": null,
@@ -1636,7 +1636,7 @@
      },
      {
       "n": "Desenhar arquitetura",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,

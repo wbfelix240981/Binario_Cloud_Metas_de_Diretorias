@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-20T18:40:42.721656+00:00",
+ "last_sync_utc": "2026-10-20T22:09:02.044096+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4491,7 +4491,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzp",
-       "u": 1790020698110,
+       "u": 1792532982653,
        "dc": 1789147973458
       },
       {
@@ -4968,7 +4968,7 @@
        "dc": null
       },
       {
-       "n": "Configuração de politica",
+       "n": "Configuração de política",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
@@ -4978,7 +4978,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1792518572571,
+       "u": 1792524195706,
        "dc": null
       },
       {
