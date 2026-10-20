@@ -157,6 +157,10 @@ def build_activity(t, depth, old_by_id):
         "nova_previsao": nova_previsao(t),
         "depth": depth,
         "id": t["id"],
+        # Para a Torre de Controle: última atualização (itens parados) e
+        # data de conclusão (ritmo de entregas / previsão de término).
+        "u": to_ms(t.get("date_updated")),
+        "dc": to_ms(t.get("date_closed")) or (to_ms(t.get("date_updated")) if map_status(t) == "shipped" else None),
     }
 
 
@@ -198,6 +202,7 @@ def build_project(cfg, tasks, old_project):
                 "raw_status": (r.get("status") or {}).get("status", ""),
                 "assignee": assignee_name(r),
                 "due": to_ms(r.get("due_date")),
+                "u": to_ms(r.get("date_updated")),
                 "id": r["id"],
                 "ativ": descendants(r["id"], 0),
             })
