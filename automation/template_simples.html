@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="noite">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controle Simples · Projetos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('cs_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+:root,[data-theme="noite"]{color-scheme:dark;--bg:#0b0e13;--surface:#141922;--surface-2:#1a202b;--line:#262d3a;--line-2:#344055;--ink:#eef1f6;--ink-2:#b7c0ce;--ink-3:#7f8a9c;--brand:#2dd9f5;--brand-ink:#04161a;--brand-soft:rgba(45,217,245,.12);--track:#262d3a;
+  --red:#ff7a7a;--red-bg:rgba(208,59,59,.16);--red-line:#d03b3b;--yel:#fab219;--yel-bg:rgba(250,178,25,.14);--yel-line:#fab219;--grn:#3fcf5f;--grn-bg:rgba(12,163,12,.15);--grn-line:#0ca30c;--shadow:0 12px 30px -16px rgba(0,0,0,.6);}
+[data-theme="dia"]{color-scheme:light;--bg:#f3f5f8;--surface:#fff;--surface-2:#f6f8fa;--line:#e2e6ec;--line-2:#cdd4de;--ink:#0f1520;--ink-2:#465165;--ink-3:#6b7587;--brand:#0a7f97;--brand-ink:#fff;--brand-soft:rgba(10,127,151,.10);--track:#e6e9ee;
+  --red:#b42222;--red-bg:rgba(208,59,59,.10);--yel:#8a5d00;--yel-bg:rgba(250,178,25,.18);--grn:#0a7f0a;--grn-bg:rgba(12,163,12,.10);--shadow:0 12px 30px -18px rgba(15,21,32,.25);}
+[data-theme="papel"]{color-scheme:light;--bg:#f6f1e7;--surface:#fffdf8;--surface-2:#fbf6ec;--line:#e3d9c6;--line-2:#cfc2a9;--ink:#23281f;--ink-2:#4f5547;--ink-3:#7c7f70;--brand:#a8552e;--brand-ink:#fff;--brand-soft:rgba(168,85,46,.10);--track:#ebe3d3;
+  --red:#a82424;--red-bg:rgba(168,36,36,.10);--yel:#8a5d00;--yel-bg:rgba(250,178,25,.18);--grn:#2f7a3e;--grn-bg:rgba(47,122,62,.10);--shadow:none;}
+[data-theme="contraste"]{color-scheme:dark;--bg:#000;--surface:#000;--surface-2:#111;--line:#fff;--line-2:#fff;--ink:#fff;--ink-2:#fff;--ink-3:#e6e6e6;--brand:#ffe600;--brand-ink:#000;--brand-soft:rgba(255,230,0,.18);--track:#333;
+  --red:#ff6b6b;--yel:#ffe600;--grn:#5dff7a;--shadow:none;}
+*{box-sizing:border-box;} html,body{margin:0;}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;-webkit-font-smoothing:antialiased;}
+a{color:inherit;} button,input,select{font:inherit;color:inherit;}
+.wrap{max-width:1080px;margin:0 auto;padding:22px 20px 70px;}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px;}
+header h1{margin:0 auto 0 0;font-size:24px;font-weight:800;letter-spacing:-.02em;}
+header h1 small{display:block;font-size:13px;font-weight:400;color:var(--ink-3);letter-spacing:0;margin-top:3px;}
+.themes{display:flex;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:4px;}
+.themes button{width:26px;height:26px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0;}
+.themes button.on{border-color:var(--brand);}
+.btn{height:38px;display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:0 14px;cursor:pointer;font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none;}
+.btn:hover{border-color:var(--line-2);}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink);}
+.btn.sm{height:32px;font-size:13px;padding:0 11px;border-radius:9px;}
+.btn.done{border-color:var(--grn);color:var(--grn);}
+h2{font-size:17px;margin:30px 0 4px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+h2 .n{font-size:12px;font-weight:700;background:var(--surface-2);border:1px solid var(--line);color:var(--ink-2);border-radius:99px;padding:2px 9px;}
+.hint{margin:0 0 14px;color:var(--ink-3);font-size:13px;}
+
+/* números grandes */
+.big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.bn{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;}
+.bn b{display:block;font-size:34px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;}
+.bn span{font-size:13.5px;color:var(--ink-2);font-weight:600;}
+.bn small{display:block;font-size:12px;color:var(--ink-3);margin-top:2px;}
+.bn.red{border-color:var(--red-line,var(--red));} .bn.red b{color:var(--red);}
+.bn.yel b{color:var(--yel);}
+
+/* semáforo dos projetos */
+.proj{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:12px;}
+.pc{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--grn-line,var(--grn));border-radius:14px;padding:14px 16px;cursor:pointer;display:flex;flex-direction:column;gap:8px;}
+.pc:hover{border-color:var(--line-2);}
+.pc.alto{border-left-color:var(--red-line,var(--red));} .pc.medio{border-left-color:var(--yel-line,var(--yel));}
+.pc-top{display:flex;align-items:center;gap:8px;}
+.pc-top b{font-size:15.5px;}
+.light{margin-left:auto;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;white-space:nowrap;}
+.light.alto{background:var(--red-bg);color:var(--red);} .light.medio{background:var(--yel-bg);color:var(--yel);} .light.baixo{background:var(--grn-bg);color:var(--grn);}
+.bar{height:6px;border-radius:99px;background:var(--track);overflow:hidden;} .bar span{display:block;height:100%;background:var(--brand);border-radius:99px;}
+.pc p{margin:0;font-size:13px;color:var(--ink-2);line-height:1.5;}
+.pc p b{color:var(--ink);}
+
+/* quem cobrar */
+.people{display:flex;flex-direction:column;gap:12px;}
+.pp{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+.pp-h{display:flex;align-items:center;gap:12px;padding:14px 16px;flex-wrap:wrap;}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:13px;flex:none;}
+.pp-h .who b{display:block;font-size:15.5px;} .pp-h .who small{color:var(--ink-3);font-size:12.5px;}
+.pp-h .acts{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;}
+.tag{font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;white-space:nowrap;}
+.tag.red{background:var(--red-bg);color:var(--red);} .tag.yel{background:var(--yel-bg);color:var(--yel);} .tag.gray{background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line);} .tag.grn{background:var(--grn-bg);color:var(--grn);}
+.items{border-top:1px solid var(--line);}
+.it{display:flex;align-items:center;gap:10px;padding:10px 16px;border-top:1px solid var(--line);font-size:13.5px;}
+.it:first-child{border-top:0;}
+.it .t{flex:1;min-width:0;}
+.it .t a{display:block;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;}
+.it .t a:hover{color:var(--brand);text-decoration:underline;}
+.it .t small{display:block;color:var(--ink-3);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.more{display:block;width:100%;border:0;border-top:1px solid var(--line);background:var(--surface-2);padding:9px;font-size:13px;color:var(--ink-2);cursor:pointer;font-weight:600;}
+.pp.cobrado{opacity:.6;}
+
+/* semana */
+.week{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+.day{border-top:1px solid var(--line);}
+.day:first-child{border-top:0;}
+.day-h{padding:10px 16px;background:var(--surface-2);font-size:13.5px;font-weight:700;display:flex;}
+.day-h span{margin-left:auto;color:var(--ink-3);font-weight:600;}
+.empty{padding:22px;text-align:center;color:var(--ink-3);font-size:14px;}
+
+/* painel do projeto */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:.2s;z-index:40;}
+.scrim.on{opacity:1;pointer-events:auto;}
+.sheet{position:fixed;top:0;right:0;height:100vh;width:min(560px,100vw);background:var(--surface);border-left:1px solid var(--line);z-index:50;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;box-shadow:var(--shadow);}
+.sheet.on{transform:none;}
+.sh-h{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.sh-h h3{margin:0;font-size:20px;font-weight:800;}
+.sh-h p{margin:4px 0 0;color:var(--ink-3);font-size:13px;}
+.sh-b{overflow-y:auto;padding:16px 20px 40px;}
+.sh-b p.say{font-size:14px;line-height:1.6;color:var(--ink-2);margin:0 0 14px;}
+.ph{margin-bottom:12px;}
+.ph-h{display:flex;justify-content:space-between;font-size:13.5px;font-weight:600;margin-bottom:5px;gap:10px;}
+.ph-h span{color:var(--ink-3);font-weight:500;white-space:nowrap;}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:12px;font-size:14px;font-weight:600;opacity:0;transition:.2s;z-index:300;pointer-events:none;max-width:90vw;text-align:center;}
+.toast.on{opacity:1;transform:translateX(-50%);}
+footer{margin-top:34px;color:var(--ink-3);font-size:12.5px;line-height:1.6;}
+@media (max-width:640px){
+  .wrap{padding:16px 14px 60px;} header h1{font-size:21px;}
+  .big{grid-template-columns:1fr 1fr 1fr;gap:8px;} .bn{padding:12px;} .bn b{font-size:26px;} .bn small{display:none;} .bn span{font-size:12px;}
+  .pp-h .acts{margin-left:0;width:100%;} .pp-h .acts .btn{flex:1;}
+  .it .tag{display:none;}
+}
+/*__LOGIN_CSS__*/
+</style>
+</head>
+<body>
+<!--__LOGIN_HTML__-->
+<div class="wrap">
+  <header>
+    <h1 id="hello">Projetos<small id="sub"></small></h1>
+    <div class="themes" id="themes" title="Tema"></div>
+    <button class="btn sm" id="btnLogoff" title="Sair">Sair</button>
+  </header>
+
+  <div class="big" id="big"></div>
+
+  <h2>1. Como estão os projetos <span class="n" id="nProj"></span></h2>
+  <p class="hint">Vermelho = vai atrasar se nada mudar · Amarelo = atenção · Verde = no ritmo. Toque no projeto para ver os detalhes.</p>
+  <div class="proj" id="proj"></div>
+
+  <h2>2. Quem cobrar hoje <span class="n" id="nPeople"></span></h2>
+  <p class="hint">Copie a mensagem, mande no Teams/WhatsApp e marque como cobrado. Quem já foi cobrado 2 vezes e continua atrasado aparece com “escalar”.</p>
+  <div class="people" id="people"></div>
+
+  <h2>3. O que vence nos próximos 7 dias <span class="n" id="nWeek"></span></h2>
+  <p class="hint">Só as entregas em aberto, por dia.</p>
+  <div class="week" id="week"></div>
+
+  <footer id="foot"></footer>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet"></aside>
+<div class="toast" id="toast"></div>
+
+<script>
+const DATA = /*__DATA__*/;
+const HIST = /*__HIST__*/;
+const DAY = 86400000;
+const sod = ms => { const d=new Date(Number(ms)); d.setHours(0,0,0,0); return d.getTime(); };
+const NOW = Date.now(), TODAY = sod(NOW);
+const fmt = ms => new Date(Number(ms)).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const daysAgo = ms => Math.floor((TODAY-sod(ms))/DAY);
+const first = n => (n||'').split(' ')[0];
+const pl = (n,s,p) => n===1?s:(p||s+'s');
+const clamp = (x,a=0,b=1) => Math.max(a,Math.min(b,x));
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }, set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} } };
+const link = id => `https://app.clickup.com/t/${id}`;
+const toast = m => { const t=document.getElementById('toast'); t.textContent=m; t.classList.add('on'); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('on'),2600); };
+async function copiar(txt){ try{ await navigator.clipboard.writeText(txt); return true; }catch(e){ const ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); let ok=false; try{ok=document.execCommand('copy');}catch(_){} ta.remove(); return ok; } }
+const nextBiz = () => { let d=TODAY+DAY; while([0,6].includes(new Date(d).getDay())) d+=DAY; return d; };
+
+/* gestores não são cobrados (seus itens ficam com eles); itens sem dono vão para o gerente do projeto */
+const MANAGERS = ['Wagner Bento Felix','Diogo Lerison'];
+const GP = 'Diogo Lerison';
+const ME = 'Wagner';
+
+const ACTS = [];
+DATA.p.forEach(p=>p.f.forEach(f=>f.a.forEach(a=>ACTS.push({...a,p,f,owners:(a.o&&a.o!=='—')?a.o.split(' / '):[]}))));
+let COB = store.get('cs_cob',{});   // id -> [timestamps]
+
+function analisar(a){
+  a.open = a.s!=='shipped' && a.s!=='cancelled'; a.why=[]; a.score=0; a.late=false;
+  a.cob = (COB[a.id]||[]).length; a.cobHoje = (COB[a.id]||[]).some(t=>NOW-t<DAY);
+  if(!a.open) return;
+  const due = a.due?sod(a.due):null;
+  if(due!=null && due<TODAY){ if(a.lim!=null && a.lim===a.due){ a.why.push(['gray','prazo vencido · pedir nova data']); a.score+=35; } else { a.why.push(['red',`atrasada ${daysAgo(a.due)}d`]); a.score+=100+daysAgo(a.due); a.late=true; } }
+  else if(due!=null && due<=TODAY+2*DAY){ const d=Math.round((due-TODAY)/DAY); a.why.push(['yel',d===0?'vence hoje':d===1?'vence amanhã':'vence em 2 dias']); a.score+=60-d; }
+  if((a.r||'').toLowerCase()==='aguardando retorno' && a.u && daysAgo(a.u)>=3){ a.why.push(['gray',`aguardando retorno ${daysAgo(a.u)}d`]); a.score+=25; }
+  else if(a.u && daysAgo(a.u)>=7){ a.why.push(['gray',`parada há ${daysAgo(a.u)}d`]); a.score+=18+Math.min(daysAgo(a.u),30); }
+  if(!a.due){ a.why.push(['gray','sem data']); a.score+=8; }
+  const exec = a.owners.filter(o=>!MANAGERS.includes(o));
+  a.target = exec.length ? exec : a.owners.includes(GP) || !a.owners.length ? [GP] : [];
+  a.escalar = a.cob>=2 && a.late;
+}
+ACTS.forEach(analisar);
+
+/* risco por projeto — mesma regra da Torre de Controle */
+const velocity = k => HIST.filter(([kk,ts])=>kk===k && ts>=NOW-28*DAY).reduce((x,[,,n])=>x+n,0)/4;
+function projStats(p){
+  const acts=ACTS.filter(a=>a.p===p), open=acts.filter(a=>a.open), n=open.length;
+  const has=k=>open.filter(a=>a.why.some(w=>w[1].startsWith(k))).length;
+  const late=open.filter(a=>a.late).length, novadata=has('prazo vencido'), soon=has('vence'), stale=has('parada'), wait=has('aguardando'), nodue=open.filter(a=>!a.due).length, noown=open.filter(a=>!a.owners.length).length;
+  const soon7=open.filter(a=>a.due&&sod(a.due)>=TODAY&&sod(a.due)<=TODAY+7*DAY).length;
+  const vel=velocity(p.k), deadline=Math.max(0,...open.filter(a=>a.due).map(a=>sod(a.due)))||null;
+  const weeks = vel>0 ? n/vel : null, fc = weeks!=null ? TODAY+Math.ceil(weeks*7)*DAY : null, slip=(fc&&deadline)?Math.round((fc-deadline)/DAY):null;
+  const fPrazo=n?clamp((late*3+novadata*2+soon*1.5+soon7*.5)/Math.max(6,n)):0, fParado=n?clamp((stale+wait*1.5)/n):0, fRitmo=!n?0:vel===0?1:slip==null?.3:clamp(slip/21), fPlan=n?clamp((nodue+noown)/(2*n)*1.4):0;
+  const risk=Math.round(100*(.35*fPrazo+.25*fParado+.25*fRitmo+.15*fPlan));
+  const all=acts.filter(a=>a.s!=='cancelled'), pct = all.length? all.filter(a=>a.s==='shipped').length/all.length : 0;
+  return {p, open:n, late, novadata, soon, stale, vel, fc, slip, deadline, risk, band: risk>=55?'alto':risk>=30?'medio':'baixo', pct};
+}
+
+function frase(s){
+  if(!s.open) return 'Sem atividades abertas.';
+  const bits=[];
+  if(s.late) bits.push(`<b>${s.late} ${pl(s.late,'atrasada')}</b>`);
+  if(s.soon) bits.push(`${s.soon} ${pl(s.soon,'vence','vencem')} em 2 dias`);
+  if(s.stale) bits.push(`${s.stale} ${pl(s.stale,'parada')}`);
+  let prev = !s.vel ? '<b>Sem entregas no último mês.</b>' : s.slip!=null && s.slip>3 ? `No ritmo atual termina <b>${s.slip>60?'mais de 2 meses':s.slip+' dias'} depois do prazo</b>.` : s.slip!=null ? 'No ritmo atual <b>termina no prazo</b>.' : `Termina por volta de ${fmt(s.fc)}.`;
+  return `${s.open} em aberto${bits.length?' · '+bits.join(' · '):''}. ${prev}`;
+}
+const LIGHT = {alto:'Vermelho',medio:'Amarelo',baixo:'Verde'};
+
+/* mensagem de cobrança */
+function msg(pessoa, itens, firme){
+  const byP={}; itens.forEach(a=>(byP[a.p.n]=byP[a.p.n]||[]).push(a));
+  const quando = new Date(nextBiz()).toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'2-digit'});
+  let t = firme ? `${first(pessoa)}, os itens abaixo já foram cobrados e seguem pendentes. Preciso de uma data firme para cada um ainda hoje:\n`
+                : `Olá ${first(pessoa)}, tudo bem? Seguem os pontos pendentes que dependem de você:\n`;
+  Object.entries(byP).forEach(([p,its])=>{ t+=`\n*${p}*\n`; its.forEach(a=>{ t+=`• ${a.n} — ${a.why.map(w=>w[1]).join(', ')}\n  ${link(a.id)}\n`; }); });
+  t += firme ? `\nSem retorno hoje, vou levar para alinhamento com a coordenação.\n— ${ME}` : `\nConsegue atualizar no ClickUp e me passar a previsão até ${quando}? Se tiver impedimento, me avisa que eu ajudo. Obrigado!\n— ${ME}`;
+  return t;
+}
+
+const COLORS=['#3987e5','#d95926','#199e70','#c98500','#d55181','#008300','#9085e9','#e66767'];
+const avColor = n => { let h=0; for(const ch of n) h=(h*31+ch.charCodeAt(0))>>>0; return COLORS[h%8]; };
+const av = n => `<span class="av" style="background:${avColor(n)}">${n.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase()}</span>`;
+
+function render(){
+  ACTS.forEach(analisar);
+  const open = ACTS.filter(a=>a.open);
+  const late = open.filter(a=>a.late).length, soon = open.filter(a=>a.why.some(w=>w[1].startsWith('vence'))).length, stale = open.filter(a=>a.why.some(w=>w[1].startsWith('parada'))).length;
+  const h=new Date().getHours();
+  document.getElementById('hello').firstChild.textContent = `${h<12?'Bom dia':h<18?'Boa tarde':'Boa noite'}, ${ME}`;
+  document.getElementById('sub').textContent = `${new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long'})} · ClickUp atualizado ${new Date(DATA.sync).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}`;
+  document.getElementById('big').innerHTML = `
+    <div class="bn ${late?'red':''}"><b>${late}</b><span>Atrasadas</span><small>prazo vencido no ClickUp</small></div>
+    <div class="bn ${soon?'yel':''}"><b>${soon}</b><span>Vencem em 2 dias</span><small>confirmar com quem faz</small></div>
+    <div class="bn"><b>${stale}</b><span>Paradas 7+ dias</span><small>sem atualização</small></div>`;
+
+  // 1. projetos
+  const S = DATA.p.map(projStats).sort((a,b)=>b.risk-a.risk);
+  document.getElementById('nProj').textContent = `${S.filter(s=>s.band==='alto').length} vermelho · ${S.filter(s=>s.band==='medio').length} amarelo · ${S.filter(s=>s.band==='baixo').length} verde`;
+  document.getElementById('proj').innerHTML = S.map(s=>`<div class="pc ${s.band}" data-k="${s.p.k}">
+    <div class="pc-top"><b>${esc(s.p.n)}</b><span class="light ${s.band}">${s.band==='alto'?'▲':s.band==='medio'?'◆':'●'} ${LIGHT[s.band]}</span></div>
+    <div class="bar" title="${Math.round(s.pct*100)}% das atividades concluídas"><span style="width:${Math.round(s.pct*100)}%"></span></div>
+    <p>${frase(s)}</p></div>`).join('');
+  document.querySelectorAll('.pc').forEach(c=>c.onclick=()=>abrir(c.dataset.k));
+
+  // 2. quem cobrar
+  const G={}; open.filter(a=>a.why.some(w=>w[0]!=='gray' || w[1].startsWith('parada') || w[1].startsWith('prazo') || w[1].startsWith('aguard'))).forEach(a=>a.target.forEach(t=>(G[t]=G[t]||[]).push(a)));
+  const people = Object.entries(G).map(([n,its])=>{ its.sort((x,y)=>y.score-x.score); return {n, its, score:its.reduce((x,a)=>x+a.score,0), late:its.filter(a=>a.late).length, soon:its.filter(a=>a.why.some(w=>w[1].startsWith('vence'))).length, esc:its.filter(a=>a.escalar).length, hoje:its.every(a=>a.cobHoje)}; })
+    .sort((a,b)=>(a.hoje-b.hoje)||(b.score-a.score));
+  document.getElementById('nPeople').textContent = `${people.filter(p=>!p.hoje).length} ${pl(people.filter(p=>!p.hoje).length,'pessoa')}`;
+  document.getElementById('people').innerHTML = people.map(g=>`<div class="pp ${g.hoje?'cobrado':''}" data-p="${esc(g.n)}">
+      <div class="pp-h">${av(g.n)}<div class="who"><b>${esc(g.n)}</b><small>${g.its.length} ${pl(g.its.length,'item','itens')}${g.n===GP?' · gerente (inclui itens sem dono)':''}</small></div>
+        ${g.late?`<span class="tag red">⚠ ${g.late} ${pl(g.late,'atrasada')}</span>`:''}${g.soon?`<span class="tag yel">◷ ${g.soon} em 2 dias</span>`:''}${g.esc?`<span class="tag red">↑ escalar</span>`:''}${g.hoje?'<span class="tag grn">✓ cobrado hoje</span>':''}
+        <div class="acts"><button class="btn sm primary" data-msg="${esc(g.n)}">Copiar mensagem</button><button class="btn sm ${g.hoje?'done':''}" data-cob="${esc(g.n)}">${g.hoje?'✓ Cobrado':'Marcar cobrado'}</button></div></div>
+      <div class="items">${g.its.slice(0,3).map(itemHtml).join('')}</div>
+      ${g.its.length>3?`<button class="more" data-more="${esc(g.n)}">Ver mais ${g.its.length-3} ${pl(g.its.length-3,'item','itens')}</button>`:''}
+    </div>`).join('') || '<div class="empty">Ninguém para cobrar hoje 🎉</div>';
+  document.querySelectorAll('[data-more]').forEach(b=>b.onclick=()=>{ const g=people.find(x=>x.n===b.dataset.more); b.previousElementSibling.innerHTML=g.its.map(itemHtml).join(''); b.remove(); });
+  document.querySelectorAll('[data-msg]').forEach(b=>b.onclick=async()=>{ const g=people.find(x=>x.n===b.dataset.msg); if(await copiar(msg(g.n,g.its,g.esc>0))) toast(`Mensagem para ${first(g.n)} copiada${g.esc?' (tom firme)':''} — cole no Teams/WhatsApp`); });
+  document.querySelectorAll('[data-cob]').forEach(b=>b.onclick=()=>{ const g=people.find(x=>x.n===b.dataset.cob);
+    if(g.hoje){ g.its.forEach(a=>{ const l=COB[a.id]||[]; while(l.length && NOW-l[l.length-1]<DAY) l.pop(); if(!l.length) delete COB[a.id]; }); toast('Cobrança desmarcada'); }
+    else { g.its.forEach(a=>(COB[a.id]=COB[a.id]||[]).push(Date.now())); toast(`${first(g.n)} marcado como cobrado`); }
+    store.set('cs_cob',COB); render(); });
+
+  // 3. semana
+  const days=[...Array(7)].map((_,i)=>TODAY+i*DAY);
+  const late7 = open.filter(a=>a.late);
+  const blocks = [];
+  if(late7.length) blocks.push(['⚠ Atrasadas', late7.sort((x,y)=>x.due-y.due)]);
+  days.forEach((d,i)=>{ const its=open.filter(a=>a.due&&sod(a.due)===d); if(its.length) blocks.push([i===0?'Hoje':i===1?'Amanhã':new Date(d).toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'2-digit'}), its]); });
+  document.getElementById('nWeek').textContent = `${open.filter(a=>a.due&&sod(a.due)>=TODAY&&sod(a.due)<TODAY+7*DAY).length} ${pl(open.filter(a=>a.due&&sod(a.due)>=TODAY&&sod(a.due)<TODAY+7*DAY).length,'entrega')}`;
+  document.getElementById('week').innerHTML = blocks.map(([h,its])=>`<div class="day"><div class="day-h">${h}<span>${its.length}</span></div>${its.slice(0,8).map(itemHtml).join('')}${its.length>8?`<div class="it" style="color:var(--ink-3)">+ ${its.length-8} ${pl(its.length-8,'item','itens')}</div>`:''}</div>`).join('') || '<div class="empty">Nada vence nos próximos 7 dias.</div>';
+  document.getElementById('foot').innerHTML = `Regras: <b>atrasada</b> = prazo do ClickUp passou · <b>parada</b> = sem atualização há 7+ dias · cor do projeto pela mesma nota de risco da Torre de Controle (prazo, itens parados, ritmo de entregas dos últimos 28 dias e planejamento). As marcações de “cobrado” ficam salvas neste navegador.`;
+}
+function itemHtml(a){
+  const tag = a.why[0] ? `<span class="tag ${a.why[0][0]}">${esc(a.why[0][1])}</span>` : '';
+  return `<div class="it"><div class="t"><a href="${link(a.id)}" target="_blank" title="${esc(a.n)}">${esc(a.n)}</a><small>${esc(a.p.n)}${a.due?' · prazo '+fmt(a.due):''}${a.owners.length?' · '+esc(a.owners.map(first).join(', ')):' · sem responsável'}${a.cob?` · cobrado ${a.cob}x`:''}</small></div>${tag}</div>`;
+}
+function abrir(k){
+  const s=projStats(DATA.p.find(p=>p.k===k)), p=s.p, sh=document.getElementById('sheet');
+  sh.innerHTML = `<div class="sh-h"><div style="flex:1;min-width:200px"><h3>${esc(p.n)}</h3><p>${esc(p.d)} · <span class="light ${s.band}" style="margin:0">${LIGHT[s.band]}</span></p></div><a class="btn sm" href="${esc(p.u)}" target="_blank">ClickUp ↗</a><button class="btn sm" id="shX">Fechar</button></div>
+    <div class="sh-b"><p class="say">${frase(s)}</p>
+    ${p.f.filter(f=>f.s!=='cancelled').map(f=>{ const v=f.a.filter(a=>a.s!=='cancelled'), c=v.filter(a=>a.s==='shipped').length, pc=f.s==='shipped'?100:v.length?Math.round(c/v.length*100):0; return `<div class="ph"><div class="ph-h">${esc(f.n)}<span>${c}/${v.length}</span></div><div class="bar"><span style="width:${pc}%"></span></div></div>`; }).join('')}
+    <h2 style="margin-top:22px;font-size:15px">Precisa de atenção</h2>
+    <div class="week">${ACTS.filter(a=>a.p===p&&a.open&&a.why.length).sort((x,y)=>y.score-x.score).slice(0,15).map(itemHtml).join('')||'<div class="empty">Nada pendente 👍</div>'}</div></div>`;
+  sh.classList.add('on'); document.getElementById('scrim').classList.add('on');
+  document.getElementById('shX').onclick=fechar;
+}
+function fechar(){ document.getElementById('sheet').classList.remove('on'); document.getElementById('scrim').classList.remove('on'); }
+document.getElementById('scrim').onclick=fechar;
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') fechar(); });
+
+const THEMES=[['noite','#0b0e13','#2dd9f5','Escuro'],['dia','#f3f5f8','#0a7f97','Claro'],['papel','#f6f1e7','#a8552e','Papel'],['contraste','#000','#ffe600','Alto contraste']];
+function themes(){ const cur=document.documentElement.getAttribute('data-theme'); const el=document.getElementById('themes');
+  el.innerHTML=THEMES.map(([k,bg,br,n])=>`<button class="${cur===k?'on':''}" data-th="${k}" title="${n}" style="background:linear-gradient(135deg,${bg} 50%,${br} 50%)"></button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{ document.documentElement.setAttribute('data-theme',b.dataset.th); try{localStorage.setItem('cs_theme',b.dataset.th);}catch(e){} themes(); }); }
+themes(); render();
+/*__LOGIN_SCRIPT__*/
+</script>
+</body>
+</html>

@@ -18,6 +18,8 @@ on:
       - 'automation/build_projetos.js'
       - 'automation/template_torre.html'
       - 'automation/build_torre.js'
+      - 'automation/template_simples.html'
+      - 'automation/build_simples.js'
 
 # Evita duas sincronizações ao mesmo tempo (disputa no git push)
 concurrency:
@@ -69,11 +71,17 @@ jobs:
           node automation/build_torre.js
           cp publish_out/torre.html torre.html
 
+      - name: Reconstruir simples.html (Controle Simples)
+        continue-on-error: true
+        run: |
+          node automation/build_simples.js
+          cp publish_out/simples.html simples.html
+
       - name: Commit e push (se algo mudou)
         run: |
           git config user.name "ClickUp Sync Bot"
           git config user.email "actions@github.com"
-          git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json automation/sync_errors.log projetos.html automation/projetos.json torre.html
+          git add index.html automation/rafael.json automation/tiago.json automation/roadmap.json automation/last_sync.json automation/sync_errors.log projetos.html automation/projetos.json torre.html simples.html
           git diff --cached --quiet && echo "Nada para commitar" || git commit -m "Sincronização automática com ClickUp"
           git pull --rebase origin main || true
           git push

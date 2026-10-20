@@ -13,4 +13,7 @@ Uma aba por projeto (cada projeto = uma lista do ClickUp, configurada em `automa
 ## Torre de Controle (`torre.html`)
 Visão de risco e cobrança dos mesmos projetos: plano de ação do dia, nota de risco por projeto com previsão de término (ritmo de entregas dos últimos 28 dias), fila de cobrança com mensagem pronta e registro de data prometida, pessoas, agenda, 6 temas e modo reunião. As cobranças registradas ficam salvas no navegador de quem usa. Mesmo login dos outros painéis.
 
+## Controle Simples (`simples.html`)
+Versão enxuta da Torre de Controle em uma tela só: semáforo dos projetos, quem cobrar hoje (com mensagem pronta) e o que vence nos próximos 7 dias. Mesmas regras de risco, 4 temas e o mesmo login.
+
 🔗 Publicado via GitHub Pages.
