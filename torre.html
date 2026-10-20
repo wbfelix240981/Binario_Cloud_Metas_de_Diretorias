@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="noite">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Torre de Controle · Projetos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('tc_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+/* ================= TEMAS ================= */
+:root, [data-theme="noite"]{
+  color-scheme:dark;
+  --bg:#0b0e13; --surface:#12161d; --surface-2:#171c25; --surface-3:#1f2531; --line:#262d3a; --line-2:#344055;
+  --ink:#eef1f6; --ink-2:#b7c0ce; --ink-3:#7f8a9c;
+  --brand:#2dd9f5; --brand-ink:#04161a; --brand-soft:rgba(45,217,245,.12);
+  --s1:#3987e5; --track:#262d3a; --muted-fill:#4a5262;
+  --good:#0ca30c; --warning:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --good-ink:#3fcf5f; --warning-ink:#fab219; --serious-ink:#f0946d; --critical-ink:#ff7a7a;
+  --good-soft:rgba(12,163,12,.15); --warning-soft:rgba(250,178,25,.14); --serious-soft:rgba(236,131,90,.15); --critical-soft:rgba(208,59,59,.17);
+  --glow:radial-gradient(1100px 600px at 85% -10%, rgba(45,217,245,.07), transparent 60%), radial-gradient(900px 500px at -10% 10%, rgba(124,108,240,.06), transparent 55%);
+  --shadow:0 12px 32px -14px rgba(0,0,0,.6);
+}
+[data-theme="grafite"]{
+  color-scheme:dark;
+  --bg:#141414; --surface:#1c1c1c; --surface-2:#222; --surface-3:#2b2b2b; --line:#313131; --line-2:#444;
+  --ink:#f2f2f0; --ink-2:#c4c4bf; --ink-3:#8d8d87;
+  --brand:#e8b44c; --brand-ink:#1b1405; --brand-soft:rgba(232,180,76,.13);
+  --s1:#6aa3e8; --track:#2f2f2f; --muted-fill:#5a5a57;
+  --glow:none;
+}
+[data-theme="oceano"]{
+  color-scheme:dark;
+  --bg:#061528; --surface:#0b1f38; --surface-2:#0f2644; --surface-3:#153055; --line:#1d3a61; --line-2:#2a4d7c;
+  --ink:#eaf3ff; --ink-2:#aac3e3; --ink-3:#7393bb;
+  --brand:#5eead4; --brand-ink:#032321; --brand-soft:rgba(94,234,212,.13);
+  --s1:#60a5fa; --track:#1d3a61; --muted-fill:#45618a;
+  --glow:radial-gradient(1200px 700px at 80% -20%, rgba(96,165,250,.12), transparent 60%);
+}
+[data-theme="contraste"]{
+  color-scheme:dark;
+  --bg:#000; --surface:#000; --surface-2:#0d0d0d; --surface-3:#1a1a1a; --line:#fff; --line-2:#fff;
+  --ink:#fff; --ink-2:#fff; --ink-3:#e6e6e6;
+  --brand:#ffe600; --brand-ink:#000; --brand-soft:rgba(255,230,0,.18);
+  --s1:#4fb3ff; --track:#333; --muted-fill:#9a9a9a;
+  --good-ink:#5dff7a; --warning-ink:#ffe600; --serious-ink:#ffab70; --critical-ink:#ff6b6b;
+  --glow:none; --shadow:none;
+}
+[data-theme="dia"]{
+  color-scheme:light;
+  --bg:#f3f5f8; --surface:#fff; --surface-2:#f8f9fb; --surface-3:#eef1f5; --line:#e2e6ec; --line-2:#cdd4de;
+  --ink:#0f1520; --ink-2:#465165; --ink-3:#6b7587;
+  --brand:#0a7f97; --brand-ink:#fff; --brand-soft:rgba(10,127,151,.10);
+  --s1:#2a78d6; --track:#e6e9ee; --muted-fill:#aab2bf;
+  --good-ink:#0a7f0a; --warning-ink:#8a5d00; --serious-ink:#b04e22; --critical-ink:#b42222;
+  --good-soft:rgba(12,163,12,.10); --warning-soft:rgba(250,178,25,.18); --serious-soft:rgba(236,131,90,.15); --critical-soft:rgba(208,59,59,.10);
+  --glow:radial-gradient(1100px 600px at 85% -10%, rgba(10,127,151,.08), transparent 60%);
+  --shadow:0 12px 30px -16px rgba(15,21,32,.25);
+}
+[data-theme="papel"]{
+  color-scheme:light;
+  --bg:#f6f1e7; --surface:#fffdf8; --surface-2:#fbf6ec; --surface-3:#f1eadb; --line:#e3d9c6; --line-2:#cfc2a9;
+  --ink:#23281f; --ink-2:#4f5547; --ink-3:#7c7f70;
+  --brand:#a8552e; --brand-ink:#fff; --brand-soft:rgba(168,85,46,.10);
+  --s1:#2c6aa8; --track:#ebe3d3; --muted-fill:#b7ad98;
+  --good-ink:#2f7a3e; --warning-ink:#8a5d00; --serious-ink:#a8552e; --critical-ink:#a82424;
+  --good-soft:rgba(47,122,62,.10); --warning-soft:rgba(250,178,25,.18); --serious-soft:rgba(168,85,46,.12); --critical-soft:rgba(168,36,36,.10);
+  --glow:none; --shadow:0 10px 26px -18px rgba(60,40,10,.3);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;}
+body{background:var(--bg); background-image:var(--glow); background-attachment:fixed; color:var(--ink); font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size:14px; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+a{color:inherit;}
+button,input,select,textarea{font:inherit; color:inherit;}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;}
+[data-theme="contraste"] .card, [data-theme="contraste"] .kpi{border-width:2px;}
+
+/* ================= LAYOUT ================= */
+.app{display:grid; grid-template-columns:236px minmax(0,1fr); min-height:100vh; background:linear-gradient(to right, var(--surface) 235px, var(--line) 235px 236px, transparent 236px);}
+.side{position:sticky; top:0; height:100vh; background:var(--surface); border-right:1px solid var(--line); padding:18px 14px; display:flex; flex-direction:column; gap:3px; z-index:20;}
+.brand{display:flex; align-items:center; gap:10px; padding:2px 8px 18px;}
+.brand-mark{width:32px; height:32px; border-radius:10px; background:conic-gradient(from 210deg, var(--brand), #7c6cf0, var(--brand)); display:grid; place-items:center; color:#fff; font-weight:800; font-size:13px; box-shadow:0 0 0 1px rgba(255,255,255,.08) inset;}
+.brand b{display:block; font-size:14px; letter-spacing:-.01em;}
+.brand small{display:block; color:var(--ink-3); font-size:11px;}
+.nav{display:flex; align-items:center; gap:10px; width:100%; padding:9px 10px; border-radius:9px; border:0; background:transparent; color:var(--ink-2); cursor:pointer; text-align:left; font-size:13.5px; font-weight:500;}
+.nav:hover{background:var(--surface-3); color:var(--ink);}
+.nav.active{background:var(--brand-soft); color:var(--brand); font-weight:600;}
+.nav .cnt{margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:10.5px; padding:1px 7px; border-radius:99px; background:var(--critical-soft); color:var(--critical-ink); font-weight:600;}
+.nav .cnt:empty{display:none;}
+.side-sep{height:1px; background:var(--line); margin:10px 6px;}
+.side-foot{margin-top:auto; padding:10px 8px 0; border-top:1px solid var(--line); font-size:11.5px; color:var(--ink-3); line-height:1.6;}
+.side-foot .dot{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--good); margin-right:6px; box-shadow:0 0 0 3px var(--good-soft);}
+
+.main{min-width:0; padding:20px 28px 70px;}
+.topbar{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:18px;}
+.topbar h1{font-size:22px; margin:0 auto 0 0; font-weight:800; letter-spacing:-.02em;}
+.topbar h1 small{display:block; font-size:12.5px; font-weight:400; color:var(--ink-3); margin-top:3px; letter-spacing:0;}
+.ctl{height:36px; border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:9px; padding:0 11px; font-size:13px; outline:none;}
+.ctl:focus{border-color:var(--brand);}
+.search{position:relative;}
+.search input{padding-left:32px; padding-right:30px; width:240px;}
+.search svg{position:absolute; left:10px; top:50%; transform:translateY(-50%); color:var(--ink-3);}
+.search kbd{position:absolute; right:8px; top:50%; transform:translateY(-50%); font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--ink-3); border:1px solid var(--line-2); border-radius:5px; padding:0 5px;}
+.btn{height:36px; display:inline-flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--surface); border-radius:9px; padding:0 12px; cursor:pointer; font-size:13px; font-weight:500; white-space:nowrap; text-decoration:none;}
+.btn:hover{border-color:var(--line-2); background:var(--surface-2);}
+.btn:disabled{opacity:.45; cursor:not-allowed;}
+.btn.icon{width:36px; padding:0; justify-content:center;}
+.btn.sm{height:30px; font-size:12px; padding:0 10px; border-radius:8px;}
+.btn.xs{height:26px; font-size:11.5px; padding:0 8px; border-radius:7px;}
+.btn.primary{background:var(--brand); border-color:var(--brand); color:var(--brand-ink); font-weight:600;}
+.btn.primary:hover{filter:brightness(1.07); background:var(--brand);}
+.btn.ghost{background:transparent; border-color:transparent;}
+.btn.ok{border-color:var(--good); color:var(--good-ink);}
+
+/* ================= CARDS / KPIs ================= */
+.grid{display:grid; gap:16px;}
+.g2{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.kpis{display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:12px; margin-bottom:16px;}
+.kpi{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px 16px; position:relative; overflow:hidden;}
+.kpi.click{cursor:pointer;} .kpi.click:hover{border-color:var(--line-2);}
+.kpi .lbl{font-size:12px; color:var(--ink-3);}
+.kpi .val{font-size:28px; font-weight:800; margin-top:4px; letter-spacing:-.03em; font-variant-numeric:tabular-nums;}
+.kpi .sub{font-size:11.5px; color:var(--ink-3); margin-top:2px;}
+.kpi.alert{border-color:var(--critical);}
+.kpi.alert::after{content:''; position:absolute; inset:0 auto 0 0; width:3px; background:var(--critical);}
+.kpi.warn::after{content:''; position:absolute; inset:0 auto 0 0; width:3px; background:var(--warning);}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:16px; margin-bottom:16px; overflow:hidden;}
+.card-h{display:flex; align-items:center; gap:10px; padding:14px 18px; border-bottom:1px solid var(--line); flex-wrap:wrap;}
+.card-h h2{font-size:14.5px; margin:0; font-weight:700;}
+.card-h p{margin:0; font-size:12px; color:var(--ink-3);}
+.card-h .right{margin-left:auto; display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+.card-b{padding:16px 18px;}
+.empty{padding:26px 18px; text-align:center; color:var(--ink-3); font-size:13px;}
+.n-crit{color:var(--critical-ink) !important;} .n-warn{color:var(--warning-ink) !important;} .n-good{color:var(--good-ink) !important;}
+.zero{color:var(--ink-3);}
+
+/* pills: icon + label, nunca só cor */
+.st{display:inline-flex; align-items:center; gap:5px; font-size:11.5px; font-weight:600; padding:3px 8px; border-radius:99px; white-space:nowrap;}
+.st i{font-style:normal; font-size:10px;}
+.st.good{background:var(--good-soft); color:var(--good-ink);}
+.st.warning{background:var(--warning-soft); color:var(--warning-ink);}
+.st.serious{background:var(--serious-soft); color:var(--serious-ink);}
+.st.critical{background:var(--critical-soft); color:var(--critical-ink);}
+.st.neutral{background:var(--surface-3); color:var(--ink-2);}
+.st.brand{background:var(--brand-soft); color:var(--brand);}
+.av{width:26px; height:26px; border-radius:50%; display:inline-grid; place-items:center; font-size:10px; font-weight:700; color:#fff; flex:none;}
+
+/* ================= HOJE ================= */
+.hero{display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:16px; margin-bottom:16px;}
+.brief{background:linear-gradient(135deg, var(--brand-soft), transparent 70%), var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px 22px;}
+.brief h2{margin:0 0 4px; font-size:20px; font-weight:800; letter-spacing:-.02em;}
+.brief .date{font-size:12px; color:var(--ink-3); margin-bottom:12px;}
+.brief p{margin:0 0 8px; font-size:14px; line-height:1.65; color:var(--ink-2);}
+.brief p b{color:var(--ink);}
+.pulse{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px 20px; display:flex; flex-direction:column; gap:12px;}
+.pulse h3{margin:0; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:600;}
+.gauge{display:flex; align-items:center; gap:16px;}
+.gauge svg{flex:none;}
+.gauge .g-txt b{display:block; font-size:22px; font-weight:800;}
+.gauge .g-txt small{color:var(--ink-3); font-size:12px;}
+.mini-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:8px;}
+.mini-stats div{background:var(--surface-2); border:1px solid var(--line); border-radius:10px; padding:8px 10px;}
+.mini-stats b{display:block; font-size:17px; font-variant-numeric:tabular-nums;}
+.mini-stats small{font-size:10.5px; color:var(--ink-3);}
+
+.actions{display:flex; flex-direction:column;}
+.act{display:grid; grid-template-columns:34px minmax(0,1fr) auto; gap:12px; align-items:center; padding:12px 18px; border-top:1px solid var(--line);}
+.act:first-child{border-top:0;}
+.act.done{opacity:.45;}
+.act.done .act-t b{text-decoration:line-through;}
+.act-ico{width:34px; height:34px; border-radius:10px; display:grid; place-items:center; font-size:15px; font-weight:700;}
+.act-ico.critical{background:var(--critical-soft); color:var(--critical-ink);}
+.act-ico.warning{background:var(--warning-soft); color:var(--warning-ink);}
+.act-ico.serious{background:var(--serious-soft); color:var(--serious-ink);}
+.act-ico.neutral{background:var(--surface-3); color:var(--ink-2);}
+.act-t b{display:block; font-size:13.5px; font-weight:600;}
+.act-t small{display:block; font-size:12px; color:var(--ink-3); margin-top:2px; line-height:1.45;}
+.act-b{display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end;}
+
+/* ================= RISCO ================= */
+.risk-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:14px;}
+.rcard{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:12px; cursor:pointer; transition:border-color .15s, transform .15s;}
+.rcard:hover{border-color:var(--line-2); transform:translateY(-1px);}
+.rcard.alto{border-color:color-mix(in srgb, var(--critical) 60%, var(--line));}
+.rc-top{display:flex; align-items:flex-start; gap:12px;}
+.rc-top b{font-size:15px; display:block;}
+.rc-top small{font-size:11.5px; color:var(--ink-3);}
+.score{margin-left:auto; text-align:right;}
+.score b{font-size:26px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:-.03em;}
+.score small{display:block;}
+.factors{display:flex; flex-direction:column; gap:6px;}
+.fac{display:grid; grid-template-columns:120px minmax(0,1fr) 34px; gap:8px; align-items:center; font-size:11.5px; color:var(--ink-2);}
+.fac .bar{height:6px; border-radius:99px; background:var(--track); overflow:hidden;}
+.fac .bar span{display:block; height:100%; border-radius:99px;}
+.fac em{font-style:normal; font-family:'JetBrains Mono',monospace; text-align:right; color:var(--ink-3);}
+.forecast{display:flex; gap:10px; align-items:center; background:var(--surface-2); border:1px solid var(--line); border-radius:11px; padding:10px 12px; font-size:12px; color:var(--ink-2); line-height:1.45;}
+.forecast b{color:var(--ink);}
+.spark{display:flex; align-items:flex-end; gap:3px; height:34px; flex:none;}
+.spark span{width:9px; background:var(--s1); border-radius:3px 3px 0 0; min-height:2px; opacity:.85;}
+.spark span.cur{opacity:.4;}
+.matrix{position:relative;}
+.matrix svg{display:block; width:100%; overflow:visible;}
+.matrix .ax{fill:var(--ink-3); font-size:11px;}
+.matrix .q{fill:var(--ink-3); font-size:11px; font-weight:600; opacity:.85;}
+
+/* ================= COBRANÇAS ================= */
+.q-tools{display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding:12px 18px; border-bottom:1px solid var(--line); background:var(--surface-2);}
+.q-tools label{display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--ink-2); cursor:pointer;}
+.q-tools input[type=checkbox]{accent-color:var(--brand);}
+.q-person{border-top:1px solid var(--line);}
+.q-ph{display:flex; align-items:center; gap:10px; padding:12px 18px; background:var(--surface-2); flex-wrap:wrap; position:sticky; top:0; z-index:2;}
+.q-ph .av{width:30px; height:30px;}
+.q-ph b{font-size:13.5px;}
+.q-ph small{color:var(--ink-3); font-size:11.5px; display:block;}
+.q-ph .right{margin-left:auto; display:flex; gap:6px; align-items:center; flex-wrap:wrap;}
+.q-item{display:grid; grid-template-columns:minmax(0,1fr) auto 170px; gap:12px; align-items:center; padding:10px 18px 10px 58px; border-top:1px solid var(--line);}
+.q-item.recent{opacity:.55;}
+.q-item .t{min-width:0;}
+.q-item .t b{display:block; font-size:13px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.q-item .t b a{text-decoration:none;} .q-item .t b a:hover{color:var(--brand); text-decoration:underline;}
+.q-item .t small{display:block; font-size:11.5px; color:var(--ink-3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.reasons{display:flex; gap:5px; flex-wrap:wrap; justify-content:flex-end;}
+.q-act{display:flex; flex-direction:column; align-items:flex-end; gap:3px;}
+.q-act small{font-size:10.5px; color:var(--ink-3); font-family:'JetBrains Mono',monospace; white-space:nowrap;}
+.reg{display:none; grid-column:1/-1; background:var(--surface-2); border:1px solid var(--line); border-radius:11px; padding:12px; gap:10px; align-items:end; flex-wrap:wrap;}
+.reg.on{display:flex;}
+.reg label{display:flex; flex-direction:column; gap:4px; font-size:11.5px; color:var(--ink-3);}
+.reg .ctl{height:32px;}
+.tone{display:inline-flex; border:1px solid var(--line); border-radius:9px; overflow:hidden;}
+.tone button{border:0; background:transparent; padding:6px 11px; font-size:12px; cursor:pointer; color:var(--ink-2);}
+.tone button.on{background:var(--brand); color:var(--brand-ink); font-weight:600;}
+
+/* ================= PESSOAS ================= */
+.people{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px;}
+.pc{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:12px;}
+.pc-top{display:flex; align-items:center; gap:10px;}
+.pc-top .av{width:36px; height:36px; font-size:12px;}
+.pc-top b{display:block; font-size:14px;}
+.pc-top small{font-size:11.5px; color:var(--ink-3);}
+.pc-top .st{margin-left:auto;}
+.load{display:flex; height:10px; gap:2px;}
+.load span{height:100%; min-width:3px;}
+.load span:first-child{border-radius:4px 0 0 4px;} .load span:last-child{border-radius:0 4px 4px 0;} .load span:only-child{border-radius:4px;}
+.pc-stats{display:grid; grid-template-columns:repeat(4,1fr); gap:6px;}
+.pc-stats div{background:var(--surface-2); border:1px solid var(--line); border-radius:9px; padding:7px 8px;}
+.pc-stats b{display:block; font-size:16px; font-variant-numeric:tabular-nums;}
+.pc-stats small{font-size:10px; color:var(--ink-3);}
+.pc-proj{display:flex; flex-wrap:wrap; gap:5px;}
+.legend{display:flex; flex-wrap:wrap; gap:14px; font-size:12px; color:var(--ink-2);}
+.legend span{display:inline-flex; align-items:center; gap:6px;}
+.legend i{width:10px; height:10px; border-radius:3px; display:inline-block;}
+.hatch{background:repeating-linear-gradient(45deg, var(--muted-fill) 0 3px, transparent 3px 6px) !important; box-shadow:inset 0 0 0 1px var(--muted-fill);}
+
+/* ================= PROJETOS ================= */
+.tbl-wrap{overflow-x:auto;}
+table{width:100%; border-collapse:collapse;}
+th{font-size:11.5px; font-weight:600; color:var(--ink-3); text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); white-space:nowrap; cursor:pointer; user-select:none;}
+th:hover{color:var(--ink);}
+th.num, td.num{text-align:right; font-variant-numeric:tabular-nums;}
+td{padding:11px 12px; border-bottom:1px solid var(--line); vertical-align:middle; font-size:13px;}
+tbody tr{cursor:pointer;}
+tbody tr:hover td{background:var(--surface-2);}
+tbody tr:last-child td{border-bottom:0;}
+.pname b{display:block; font-weight:600;}
+.pname small{color:var(--ink-3); font-size:11.5px;}
+.prog{display:flex; align-items:center; gap:9px; min-width:130px;}
+.prog .bar{flex:1; height:6px; border-radius:99px; background:var(--track); overflow:hidden;}
+.prog .bar span{display:block; height:100%; background:var(--s1); border-radius:99px;}
+.prog b{font-family:'JetBrains Mono',monospace; font-size:12px; width:36px; text-align:right;}
+.seg{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden;}
+.seg button{border:0; background:transparent; padding:5px 10px; font-size:12px; cursor:pointer; color:var(--ink-2);}
+.seg button.on{background:var(--surface-3); color:var(--ink); font-weight:600;}
+
+/* ================= AGENDA (calendário) ================= */
+.cal{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:1px; background:var(--line);}
+.cal-h{background:var(--surface-2); padding:8px 10px; font-size:11.5px; font-weight:600; color:var(--ink-3); text-transform:uppercase; letter-spacing:.04em;}
+.cal-d{background:var(--surface); min-height:132px; padding:8px; display:flex; flex-direction:column; gap:4px; min-width:0;}
+.cal-d.we{background:var(--surface-2);}
+.cal-d.today{box-shadow:inset 0 0 0 2px var(--brand);}
+.cal-d.past{opacity:.6;}
+.cal-n{font-size:12px; font-weight:700; color:var(--ink-2); display:flex; justify-content:space-between;}
+.cal-n em{font-style:normal; font-weight:500; font-size:10.5px; color:var(--ink-3); font-family:'JetBrains Mono',monospace;}
+.chip{display:block; font-size:11px; padding:3px 6px; border-radius:6px; background:var(--surface-3); color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-decoration:none; border-left:3px solid var(--s1);}
+.chip:hover{filter:brightness(1.15);}
+.chip.critical{border-left-color:var(--critical);} .chip.warning{border-left-color:var(--warning);} .chip.serious{border-left-color:var(--serious);} .chip.good{border-left-color:var(--good); opacity:.6;}
+.more{font-size:10.5px; color:var(--ink-3); cursor:pointer;}
+
+/* ================= DRAWER / MODAL / TIP / TOAST ================= */
+.scrim{position:fixed; inset:0; background:rgba(0,0,0,.45); opacity:0; pointer-events:none; transition:opacity .2s; z-index:40;}
+.scrim.on{opacity:1; pointer-events:auto;}
+.drawer{position:fixed; top:0; right:0; height:100vh; width:min(680px,100vw); background:var(--surface); border-left:1px solid var(--line); z-index:50; transform:translateX(100%); transition:transform .25s ease; display:flex; flex-direction:column; box-shadow:var(--shadow);}
+.drawer.on{transform:none;}
+.dr-h{padding:18px 20px; border-bottom:1px solid var(--line); display:flex; gap:8px; align-items:flex-start; flex-wrap:wrap;}
+.dr-h h3{margin:0; font-size:19px; font-weight:800;}
+.dr-h p{margin:4px 0 0; color:var(--ink-3); font-size:12.5px; display:flex; gap:6px; align-items:center; flex-wrap:wrap;}
+.dr-b{overflow-y:auto; padding:16px 20px 40px;}
+.dr-kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:14px;}
+.dr-kpis div{background:var(--surface-2); border:1px solid var(--line); border-radius:10px; padding:9px 11px;}
+.dr-kpis b{display:block; font-size:18px; font-variant-numeric:tabular-nums;}
+.dr-kpis small{color:var(--ink-3); font-size:11px;}
+details.ph{border:1px solid var(--line); border-radius:11px; margin-bottom:8px; overflow:hidden;}
+details.ph summary{list-style:none; display:grid; grid-template-columns:minmax(0,1fr) 150px 44px; gap:12px; align-items:center; padding:11px 13px; cursor:pointer;}
+details.ph summary::-webkit-details-marker{display:none;}
+details.ph summary b{font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+details.ph summary .prog{min-width:0;}
+details.ph summary .cnt{font-size:11.5px; color:var(--ink-3); font-family:'JetBrains Mono',monospace; text-align:right;}
+details.ph[open] summary{border-bottom:1px solid var(--line); background:var(--surface-2);}
+.item{display:grid; grid-template-columns:10px minmax(0,1fr) auto auto 22px; align-items:center; gap:12px; padding:9px 13px; border-top:1px solid var(--line);}
+.item:first-child{border-top:0;}
+.item .dot{width:8px; height:8px; border-radius:50%;}
+.item .t{min-width:0;}
+.item .t b{display:block; font-weight:500; font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.item .t small{display:block; color:var(--ink-3); font-size:11.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.who{font-size:11.5px; color:var(--ink-2); white-space:nowrap; max-width:150px; overflow:hidden; text-overflow:ellipsis;}
+.ext{color:var(--ink-3); display:grid; place-items:center;}
+.ext:hover{color:var(--brand);}
+.modal{position:fixed; inset:0; display:none; place-items:center; z-index:120; background:rgba(0,0,0,.5); padding:16px;}
+.modal.on{display:grid;}
+.modal-c{background:var(--surface); border:1px solid var(--line); border-radius:16px; width:min(780px,100%); max-height:88vh; display:flex; flex-direction:column; box-shadow:var(--shadow);}
+.modal-h{padding:16px 20px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:10px;}
+.modal-h h3{margin:0; font-size:16px;}
+.modal-b{padding:16px 20px; overflow-y:auto;}
+.modal-f{padding:12px 20px; border-top:1px solid var(--line); display:flex; gap:8px; justify-content:flex-end; align-items:center; font-size:12px; color:var(--ink-3); flex-wrap:wrap;}
+.modal-f span{margin-right:auto;}
+.cfg-cols{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+.cfg-cols h4{margin:0 0 10px; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3);}
+.cfg-row{display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid var(--line); font-size:13px;}
+.cfg-row span{flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.cfg-row select{height:30px; font-size:12px;}
+.themes{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px;}
+.th-card{border:2px solid var(--line); border-radius:14px; padding:10px; cursor:pointer; background:var(--surface-2); text-align:left;}
+.th-card:hover{border-color:var(--line-2);}
+.th-card.on{border-color:var(--brand);}
+.th-prev{height:74px; border-radius:9px; margin-bottom:8px; display:grid; grid-template-columns:22% 1fr; overflow:hidden; border:1px solid rgba(127,127,127,.25);}
+.th-prev .s{height:100%;}
+.th-prev .m{padding:8px; display:flex; flex-direction:column; gap:5px;}
+.th-prev .l{height:7px; border-radius:4px;}
+.th-card b{display:block; font-size:13px;}
+.th-card small{display:block; font-size:11.5px; color:var(--ink-3); margin-top:2px;}
+.tip{position:fixed; pointer-events:none; z-index:200; background:var(--surface); border:1px solid var(--line-2); border-radius:10px; padding:9px 11px; font-size:12px; box-shadow:var(--shadow); max-width:320px; opacity:0; transition:opacity .08s; color:var(--ink);}
+.tip b{display:block; margin-bottom:3px; font-size:12.5px;}
+.tip .r{display:flex; justify-content:space-between; gap:14px; color:var(--ink-2);}
+.tip .r em{font-style:normal; color:var(--ink); font-family:'JetBrains Mono',monospace;}
+.toast{position:fixed; bottom:22px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--bg); padding:10px 16px; border-radius:10px; font-size:13px; font-weight:600; opacity:0; transition:.2s; z-index:300; pointer-events:none; max-width:90vw; text-align:center;}
+.toast.on{opacity:1; transform:translateX(-50%);}
+
+/* ================= MODO APRESENTAÇÃO ================= */
+.app.tv{grid-template-columns:1fr; background:none;}
+.app.tv .side, .app.tv .topbar .ctl, .app.tv .topbar .search, .app.tv .topbar .btn:not(#btnTvExit){display:none !important;}
+.app.tv .main{zoom:1.18; padding-top:14px;}
+#btnTvExit{display:none;}
+.app.tv #btnTvExit{display:inline-flex;}
+.tvbar{position:fixed; top:0; left:0; height:3px; background:var(--brand); z-index:400; width:0; transition:width linear;}
+
+/* ================= RESPONSIVO / IMPRESSÃO ================= */
+@media (max-width:1180px){ .kpis{grid-template-columns:repeat(3,minmax(0,1fr));} .hero,.g2{grid-template-columns:1fr;} }
+@media (max-width:820px){
+  .app{grid-template-columns:1fr; background:none;}
+  .side{position:sticky; height:auto; flex-direction:row; overflow-x:auto; padding:8px 10px; border-right:0; border-bottom:1px solid var(--line);}
+  .brand,.side-foot,.side-sep{display:none;}
+  .nav{width:auto; white-space:nowrap;}
+  .main{padding:14px 14px 60px;}
+  .search{flex:1 1 100%;} .search input{width:100%;}
+  .topbar select.ctl{flex:1 1 40%; min-width:0;}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .act{grid-template-columns:34px minmax(0,1fr);}
+  .act-b{grid-column:1/-1; justify-content:flex-start;}
+  .q-item{grid-template-columns:minmax(0,1fr); padding:10px 14px; gap:6px;}
+  .reasons{justify-content:flex-start;}
+  .q-act{flex-direction:row; align-items:center; justify-content:space-between;}
+  .q-ph{position:static;}
+  .cfg-cols,.themes{grid-template-columns:1fr;}
+  .item{grid-template-columns:10px minmax(0,1fr) 22px;}
+  .item .who,.item .st{display:none;}
+  .cal{grid-template-columns:1fr;} .cal-h{display:none;} .cal-d{min-height:auto;} .cal-d.we:empty{display:none;}
+  .dr-kpis{grid-template-columns:repeat(2,1fr);}
+  .fac{grid-template-columns:100px minmax(0,1fr) 30px;}
+}
+@media print{
+  .side,.topbar .ctl,.topbar .search,.topbar .btn,.act-b,.q-act,.q-tools,.btn{display:none !important;}
+  .app{grid-template-columns:1fr;} body{background:#fff; color:#000;}
+  section[hidden]{display:none !important;}
+  .card,.kpi,.rcard,.pc{break-inside:avoid;}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+#loginScreen{--panel-hi:var(--surface-2);--panel:var(--surface);--border-hi:var(--line-2);--border:var(--line);--bg2:var(--surface-2);--text:var(--ink);--text-dim:var(--ink-2);--text-mute:var(--ink-3);--cyan:var(--brand);--cyan-dim:var(--brand-soft);--red:var(--critical-ink);--disp:'Inter',sans-serif;--mono:'JetBrains Mono',monospace;--body:'Inter',sans-serif;}
+/* ===== Tela de login (decorativa) ===== */
+  #loginScreen{
+    position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center;
+    background:#0a0e14; background-image:
+      radial-gradient(1200px 600px at 15% -10%, rgba(45,217,245,.08) 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(183,155,251,.07) 0%, transparent 55%);
+  }
+  .login-card{
+    width:min(380px, 90vw); padding:36px 32px 32px; border-radius:20px;
+    background:linear-gradient(180deg, var(--panel-hi), var(--panel)); border:1px solid var(--border-hi);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+  }
+  .login-title{font-family:var(--disp); font-weight:700; font-size:20px; text-align:center; margin:0 0 4px;}
+  .login-sub{font-family:var(--mono); font-size:11.5px; color:var(--text-mute); text-align:center; margin:0 0 26px;}
+  .login-field{margin-bottom:14px;}
+  .login-field label{display:block; font-family:var(--mono); font-size:10.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.05em; margin-bottom:7px;}
+  .login-field input{
+    width:100%; box-sizing:border-box; padding:12px 14px; border-radius:10px; border:1px solid var(--border);
+    background:var(--bg2); color:var(--text); font-family:var(--body); font-size:14px; outline:none; transition:.15s;
+  }
+  .login-field input:focus{border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-dim);}
+  .login-remember{display:flex; align-items:center; gap:8px; font-family:var(--mono); font-size:11px; color:var(--text-dim); margin:2px 0 14px; cursor:pointer; user-select:none;}
+  .login-remember input{accent-color:var(--cyan); width:14px; height:14px; margin:0;}
+  .login-btn{
+    width:100%; padding:12px 14px; margin-top:6px; border-radius:10px; border:none; cursor:pointer;
+    background:var(--cyan); color:#03181c; font-family:var(--disp); font-weight:700; font-size:14px;
+    transition:.15s;
+  }
+  .login-btn:hover{filter:brightness(1.08);}
+  .login-error{
+    display:none; margin-top:14px; padding:9px 12px; border-radius:9px; background:rgba(255,90,90,.12);
+    border:1px solid #5c1f1f; color:#ffb3b3; font-family:var(--mono); font-size:11.5px; text-align:center;
+  }
+  .login-error.show{display:block; animation:loginShake .35s ease;}
+  @keyframes loginShake{
+    0%,100%{transform:translateX(0);} 25%{transform:translateX(-6px);} 75%{transform:translateX(6px);}
+  }
+  .login-foot{margin-top:22px; text-align:center; font-family:var(--mono); font-size:10px; color:var(--text-mute);}
+
+
+#loginScreen{background:var(--bg) !important;}
+
+</style>
+</head>
+<body>
+<div id="loginScreen">
+  <div class="login-card">
+    <h1 class="login-title">Torre de Controle</h1>
+    <p class="login-sub">BINÁRIO CLOUD · ACESSO RESTRITO</p>
+    <form id="loginForm" autocomplete="on">
+      <div class="login-field">
+        <label for="loginUser">Usuário</label>
+        <input type="text" id="loginUser" placeholder="e-mail ou usuário" autocomplete="username">
+      </div>
+      <div class="login-field">
+        <label for="loginPass">Senha de acesso</label>
+        <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <label class="login-remember"><input type="checkbox" id="loginRemember"> Gravar usuário e senha neste navegador</label>
+      <button type="submit" class="login-btn">Entrar</button>
+      <div class="login-error" id="loginError">Usuário ou senha incorretos. Tente novamente.</div>
+    </form>
+    <div class="login-foot">Rafael Alves · Tiago Oliveira · RoadMap</div>
+  </div>
+</div>
+
+
+<div class="tvbar" id="tvbar"></div>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark">TC</div><div><b>Torre de Controle</b><small>Projetos · Binário Cloud</small></div></div>
+    <button class="nav active" data-view="hoje"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>Hoje<span class="cnt" id="cntHoje"></span></button>
+    <button class="nav" data-view="riscos"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>Riscos</button>
+    <button class="nav" data-view="cobrancas"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Cobranças<span class="cnt" id="cntCob"></span></button>
+    <button class="nav" data-view="pessoas"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><path d="M17 11a3 3 0 100-6M22 21c0-3-2-5-5-5.5"/></svg>Pessoas</button>
+    <button class="nav" data-view="projetos"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>Projetos</button>
+    <button class="nav" data-view="agenda"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agenda</button>
+    <div class="side-sep"></div>
+    <button class="nav" id="navTheme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 000 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.3A5.7 5.7 0 0022 9.7C22 5.4 17.5 2 12 2z"/></svg>Temas</button>
+    <button class="nav" id="navTv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Modo reunião</button>
+    <button class="nav" id="navPrint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Relatório PDF</button>
+    <button class="nav" id="btnLogoff"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>Sair</button>
+    <button class="nav" id="navCfg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>Configurar</button>
+    <div class="side-foot"><span class="dot"></span>Dados do ClickUp<br><span id="syncInfo"></span><br><span style="opacity:.8">Cobranças salvas neste navegador</span></div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1 id="viewTitle">Hoje<small id="viewSub"></small></h1>
+      <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="ctl" id="q" placeholder="Buscar atividade, projeto, pessoa…"><kbd>/</kbd></div>
+      <select class="ctl" id="fProj"><option value="">Todos os projetos</option></select>
+      <select class="ctl" id="fPessoa"><option value="">Todas as pessoas</option></select>
+      <button class="btn icon" id="btnTheme" title="Temas"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 000 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.3A5.7 5.7 0 0022 9.7C22 5.4 17.5 2 12 2z"/></svg></button>
+      <button class="btn" id="btnCsv" title="Exportar para Excel (CSV)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>CSV</button>
+      <button class="btn" id="btnTvExit">Sair do modo reunião (Esc)</button>
+    </div>
+
+    <section id="v-hoje">
+      <div class="hero">
+        <div class="brief" id="brief"></div>
+        <div class="pulse" id="pulse"></div>
+      </div>
+      <div class="kpis" id="kpis"></div>
+      <div class="grid g2">
+        <div class="card" style="margin:0">
+          <div class="card-h"><h2>Plano de ação de hoje</h2><p>o que fazer primeiro, em ordem de impacto</p><div class="right"><span style="font-size:12px;color:var(--ink-3)">Tom</span><div class="tone" data-tone></div></div></div>
+          <div class="actions" id="actions"></div>
+        </div>
+        <div class="card" style="margin:0">
+          <div class="card-h"><h2>Matriz de risco</h2><p>probabilidade de atraso × impacto</p></div>
+          <div class="card-b"><div class="matrix" id="matrixHoje"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="v-riscos" hidden>
+      <div class="card"><div class="card-h"><h2>Radar de risco por projeto</h2><p>nota de 0 a 100 explicada por fatores · previsão de término pelo ritmo das últimas 4 semanas</p>
+        <div class="right"><div class="seg" id="riskSort"><button data-s="risk" class="on">Maior risco</button><button data-s="slip">Maior atraso previsto</button><button data-s="name">A–Z</button></div></div></div></div>
+      <div class="risk-grid" id="riskGrid"></div>
+    </section>
+
+    <section id="v-cobrancas" hidden>
+      <div class="card" id="cobCard"></div>
+    </section>
+
+    <section id="v-pessoas" hidden>
+      <div class="card"><div class="card-h"><h2>Quem está segurando o quê</h2><p>carga aberta, risco, cobranças e compromissos de cada pessoa</p><div class="right legend" id="pLegend"></div></div></div>
+      <div class="people" id="people"></div>
+    </section>
+
+    <section id="v-projetos" hidden>
+      <div class="card">
+        <div class="card-h"><h2>Portfólio</h2><p>clique em um projeto para ver fases, previsão e copiar o status</p>
+          <div class="right"><span style="font-size:12px;color:var(--ink-3)">Progresso por</span><div class="seg" id="calcSeg"><button data-c="fases" class="on">Fases</button><button data-c="ativ">Atividades</button></div></div></div>
+        <div class="tbl-wrap"><table id="tbl"><thead><tr>
+          <th data-k="n">Projeto</th><th data-k="risk">Risco</th><th data-k="pct">Progresso</th><th data-k="fc">Previsão de término</th><th data-k="next">Próxima entrega</th>
+          <th class="num" data-k="open">Abertas</th><th class="num" data-k="late">Atrasadas</th><th class="num" data-k="stale">Paradas</th><th class="num" data-k="nodue">Sem data</th><th class="num" data-k="noown">Sem dono</th>
+        </tr></thead><tbody></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="v-agenda" hidden>
+      <div class="card">
+        <div class="card-h"><h2 id="calTitle">Próximas 2 semanas</h2><p>entregas abertas por dia · clique para abrir no ClickUp</p>
+          <div class="right"><button class="btn sm" id="calPrev">←</button><button class="btn sm" id="calToday">Hoje</button><button class="btn sm" id="calNext">→</button></div></div>
+        <div class="cal" id="cal"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"></aside>
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast"></div>
+
+<div class="modal" id="mTheme"><div class="modal-c">
+  <div class="modal-h"><h3>Escolha o tema</h3><button class="btn icon" data-close style="margin-left:auto">✕</button></div>
+  <div class="modal-b"><div class="themes" id="themes"></div></div>
+  <div class="modal-f"><span>Dica: “Alto contraste” e “Papel” funcionam melhor em projetor e impressão; o “Modo reunião” aumenta a fonte e gira as telas sozinho.</span></div>
+</div></div>
+
+<div class="modal" id="mCfg"><div class="modal-c">
+  <div class="modal-h"><h3>Configurar</h3><button class="btn icon" data-close style="margin-left:auto">✕</button></div>
+  <div class="modal-b">
+    <div class="cfg-cols">
+      <div><h4>Seu nome (aparece nas mensagens)</h4><div class="cfg-row"><input class="ctl" id="cfgMe" style="flex:1"></div>
+        <h4 style="margin-top:18px">Gerente de cada projeto</h4><div id="cfgProj"></div></div>
+      <div><h4>Papel de cada pessoa</h4><div id="cfgPeople"></div></div>
+    </div>
+  </div>
+  <div class="modal-f"><span>Fica salvo neste navegador.</span>
+    <button class="btn sm" id="cfgExport" title="Backup das cobranças e configurações">Exportar backup</button>
+    <label class="btn sm" style="cursor:pointer">Importar backup<input type="file" id="cfgImport" accept="application/json" hidden></label>
+    <button class="btn sm" id="cfgReset">Restaurar padrão</button><button class="btn sm primary" id="cfgOk">Aplicar</button></div>
+</div></div>
+
+<script>
+const DATA = {"sync":"2026-10-20T12:27:06.667967+00:00","p":[{"k":"neugebauer","n":"Neugebauer","d":"Nuvem Pública & Serviços Gerenciados","u":"https://app.clickup.com/3080406/v/li/901328018187","f":[{"n":"Fase 5 — Encerramento e transição","s":"backlog","id":"86ajrf5d6","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison / Lucas Federissis de Souza","due":1793343600000,"lim":null,"np":null,"id":"86ak080ug","u":1792192382285},{"n":"5.1 Transição para operação","s":"backlog","r":"aberto","o":"Diogo Lerison / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5ee","u":1792192469630},{"n":"Elaborar documentação as built","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf61r","u":1792192469630},{"n":"Documentar topologia de rede","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf62b","u":1792192469630},{"n":"Documentar rotinas de backup","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf62f","u":1792192469630},{"n":"Realizar passagem para o CCOE","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf62u","u":1792192469630},{"n":"Realizar reunião de transição","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf63c","u":1792192469630},{"n":"5.2 Encerramento","s":"backlog","r":"aberto","o":"Diogo Lerison / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5ef","u":1792192952550},{"n":"Elaborar relatório final","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf63u","u":1792192952550},{"n":"Realizar reunião de encerramento","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf63z","u":1792192952550},{"n":"Enviar termo de aceite","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf63y","u":1792192952550},{"n":"Obter aceite formal da Neugebauer","s":"backlog","r":"aberto","o":"—","due":1792738800000,"lim":null,"np":null,"id":"86ajrf643","u":1792192952550}]},{"n":"Fase 3.2 Migração NPROD - Neugebauer","s":"in progress","id":"86akn63gf","v":0,"a":[{"n":"Validar conexão entre filiais SP x POA","s":"shipped","r":"concluído","o":"Alexandre Pereira / Marcelo Santos","due":1791356400000,"lim":null,"np":null,"id":"86akjg6z2"},{"n":"Disponibilização de imagens e dados Compactados","s":"in progress","r":"em andamento","o":"Diogo Lerison","due":1792393200000,"lim":null,"np":null,"id":"86aknc0rm","u":1792415182866},{"n":"Transferencia de dados","s":"in progress","r":"em andamento","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5xy","u":1792415824764},{"n":"NGBORA01","s":"in progress","r":"em andamento","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2f7","u":1792416249995},{"n":"Transferência QCOW2","s":"shipped","r":"concluído","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792134000000,"lim":null,"np":null,"id":"17ttbukx2p2"},{"n":"Criação do VM","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2mr","u":1792415878031},{"n":"SYNC de dados","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2nw","u":1792415878031},{"n":"NGSAPORA01","s":"in progress","r":"em andamento","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2f9","u":1792416255208},{"n":"Transferência QCOW2","s":"shipped","r":"concluído","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792134000000,"lim":null,"np":null,"id":"17ttbukx2p3"},{"n":"criação do VM","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2nm","u":1792415878031},{"n":"SYNC de dados","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2nu","u":1792415878031},{"n":"Legado-21-20","s":"in progress","r":"em andamento","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2fa","u":1792416329805},{"n":"Disponibilização - Kosmo","s":"shipped","r":"concluído","o":"Diogo Lerison","due":1792047600000,"lim":null,"np":null,"id":"17ttbukx2pm"},{"n":"Transferência","s":"in progress","r":"em andamento","o":"Augusto Rossi","due":1792393200000,"lim":null,"np":null,"id":"17ttbukx2ve","u":1792416449051},{"n":"Validação Hashes","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2p5","u":1792415892471},{"n":"JAN-22","s":"in progress","r":"em andamento","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2kz","u":1792416325057},{"n":"Disponibilização - Kosmo","s":"shipped","r":"concluído","o":"Diogo Lerison","due":1792134000000,"lim":null,"np":null,"id":"17ttbukx2pv"},{"n":"Transferência","s":"in progress","r":"em andamento","o":"Augusto Rossi","due":1792393200000,"lim":null,"np":null,"id":"17ttbukx2vu","u":1792416546076},{"n":"Validação Hashes","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2p7","u":1792415902687},{"n":"JAN-23","s":"in progress","r":"em andamento","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2m1","u":1792416163351},{"n":"Disponibilização - Kosmo","s":"shipped","r":"concluído","o":"Diogo Lerison","due":1792134000000,"lim":null,"np":null,"id":"17ttbukx2px"},{"n":"Transferência","s":"backlog","r":"aberto","o":"Augusto Rossi","due":1792652400000,"lim":null,"np":null,"id":"17ttbukx2vw","u":1792416632606},{"n":"Validação Hashes","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2p9","u":1792415931455},{"n":"JAN-24","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2m2","u":1792415931455},{"n":"Disponibilização - Kosmo","s":"in progress","r":"em andamento","o":"Diogo Lerison","due":1792566000000,"lim":null,"np":null,"id":"17ttbukx2py","u":1792416583714},{"n":"Transferência","s":"backlog","r":"aberto","o":"Augusto Rossi","due":1792652400000,"lim":null,"np":null,"id":"17ttbukx2vz","u":1792416639021},{"n":"Validação Hashes","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2pa","u":1792415931455},{"n":"JAN-25","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2m3","u":1792415931455},{"n":"Disponibilização - Kosmo","s":"in progress","r":"em andamento","o":"Diogo Lerison","due":1792652400000,"lim":null,"np":null,"id":"17ttbukx2q0","u":1792416590847},{"n":"Transferência","s":"backlog","r":"aberto","o":"Augusto Rossi","due":1792652400000,"lim":null,"np":null,"id":"17ttbukx2w0","u":1792416643041},{"n":"Validação Hashes","s":"backlog","r":"aberto","o":"Augusto Rossi / Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"17ttbukx2pc","u":1792415931455}]},{"n":"Fase 1 — Iniciação e planejamento","s":"shipped","id":"86ajrf5d1","v":0,"a":[{"n":"1.1 Kickoff e formalização","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1785394800000,"lim":null,"np":null,"id":"86ajrf5df"},{"n":"Definir stakeholders","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5ew"},{"n":"Elaborar apresentação de kickoff","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1784703600000,"lim":null,"np":null,"id":"86ajrf5ex"},{"n":"Realizar reunião de kickoff","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1784790000000,"lim":null,"np":null,"id":"86ajrf5ey"},{"n":"Registrar decisões e pendências do kickoff","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1784790000000,"lim":null,"np":null,"id":"86ajrf5f5"},{"n":"Elaborar TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1784876400000,"lim":null,"np":null,"id":"86ajrf5f6"},{"n":"Enviar TAP para assinatura","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1785481200000,"lim":null,"np":null,"id":"86ajrf5f7"},{"n":"Obter assinatura da Binário Cloud","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1785481200000,"lim":null,"np":null,"id":"86ajrf5fm"},{"n":"Obter assinatura da Neugebauer","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1785481200000,"lim":null,"np":null,"id":"86ajrf5fp"},{"n":"Formalizar abertura do projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1785481200000,"lim":null,"np":null,"id":"86ajrf5fq"},{"n":"1.2 Refinamento do escopo","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5de"},{"n":"Validar inventário de servidores","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5fv"},{"n":"Validar servidores ativos e desligados","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5g4"},{"n":"Identificar servidores que serão migrados","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5g7"},{"n":"Identificar servidores fora do escopo","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5ge"},{"n":"Levantar sistemas operacionais","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5gm"},{"n":"Levantar capacidade de disco por servidor","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5gr"},{"n":"Levantar serviços hospedados","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86ajrf5gp"},{"n":"1.3 Planejamento do projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5dc"},{"n":"Definir marcos do projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5k0"},{"n":"Definir responsáveis por frente","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5jz"},{"n":"Elaborar plano de comunicação","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5kq"},{"n":"Definir reuniões semanais de acompanhamento","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5kt"},{"n":"Criar registro de riscos e impedimentos","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ajrf5kv"}]},{"n":"Fase 3 — Migração Piloto","s":"shipped","id":"86ajrf5cy","v":0,"a":[{"n":"3 Migração piloto","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":1789974000000,"lim":null,"np":null,"id":"86ajrf5dx"},{"n":"Migração de srv's via Veeam","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":1789023600000,"id":"86ajrf5x1"},{"n":"Registrar problemas encontrados","s":"shipped","r":"fechado","o":"—","due":1788159600000,"lim":null,"np":1789110000000,"id":"86ajrf5xn"},{"n":"Executar teste funcional","s":"shipped","r":"fechado","o":"—","due":1788159600000,"lim":null,"np":1789110000000,"id":"86ajrf5xf"},{"n":"NGBULTRAPARERP","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7x9r"},{"n":"NGBORAPRD01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7x9v"},{"n":"NGB-ABS-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xa9"},{"n":"NGB-IFR-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xag"},{"n":"NGBHRC04","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xap"},{"n":"NGB-RSW-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xav"},{"n":"NGB-ETL-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xb5"},{"n":"NGB-ETL-W22-V02","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xb9"},{"n":"NGB-ETL-W22-V03","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xbb"},{"n":"NGB-ELO-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xbx"},{"n":"NGBMAXDB01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xbz"},{"n":"NGBMAXDB02","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xc4"},{"n":"CNGB-IFR-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xc9"},{"n":"NGBCICLOPRD01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xcd"},{"n":"NGBERPQAS","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xcp"},{"n":"NGBSYBASE01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788159600000,"lim":null,"np":null,"id":"86akq7xcw"},{"n":"NGB-RSW-W12-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xdb"},{"n":"CNGB-TMV-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xdg"},{"n":"NGBELO01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xdm"},{"n":"NGBELO02","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xdr"},{"n":"NGBORADEV01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xdv"},{"n":"NGBVONSAC2","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xe0"},{"n":"NGBCICLODEV01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1788505200000,"lim":null,"np":null,"id":"86akq7xe7"},{"n":"NGBHNQAS","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86akq7xec"},{"n":"Migração Imagem QCOW2","s":"shipped","r":"fechado","o":"—","due":1789714800000,"lim":null,"np":null,"id":"86akhx6eg"},{"n":"NGBSITEDEV","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1789974000000,"lim":null,"np":null,"id":"86akm7azb"},{"n":"NGBSITEPRD","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1789714800000,"lim":null,"np":null,"id":"86akm7azh"},{"n":"NGBNEOGRID","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1789714800000,"lim":null,"np":null,"id":"86akm7azq"}]},{"n":"Fase 2 — Preparação e implementação","s":"shipped","id":"86ajrf5cz","v":0,"a":[{"n":"2.1 Preparação da Binário Cloud","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":1787814000000,"lim":null,"np":null,"id":"86ajrf5dh"},{"n":"Criação de dominio","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1785481200000,"lim":null,"np":null,"id":"86ak6bqth"},{"n":"Criação de projeto","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1785481200000,"lim":null,"np":null,"id":"86ajrf5mb"},{"n":"Criar usuários e permissões","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1787814000000,"lim":null,"np":null,"id":"86ajrf5me"},{"n":"Hands-on BCP","s":"shipped","r":"fechado","o":"—","due":1790578800000,"lim":null,"np":null,"id":"86akjfc3g"},{"n":"2.2 Rede e conectividade","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1788332400000,"lim":null,"np":null,"id":"86ajrf5dj"},{"n":"Criar segmentos de rede","s":"shipped","r":"fechado","o":"Alexandre Pereira","due":1787727600000,"lim":null,"np":null,"id":"86ak6chyn"},{"n":"Validar throughput disponível","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787727600000,"lim":null,"np":null,"id":"86ajrf5ph"},{"n":"Definir gateways","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787727600000,"lim":null,"np":null,"id":"86ajrf5nq"},{"n":"Definir modelo de conectividade entre ambientes","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787900400000,"lim":null,"np":null,"id":"86ajrf5nv"},{"n":"2.3 Firewall e segurança","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789714800000,"lim":null,"np":null,"id":"86ajrf5dk"},{"n":"Criação do FORTIVM bc1-firewall-4-16","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1787641200000,"lim":null,"np":null,"id":"86ajxt0gj"},{"n":"Levantamento FW Kosmo","s":"shipped","r":"fechado","o":"Diogo Lerison / Alexandre Pereira","due":1788332400000,"lim":null,"np":null,"id":"86ak6cty1"},{"n":"Levantar objetos, grupos e serviços","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":null,"lim":null,"np":null,"id":"86ajrf5q3"},{"n":"Levantar políticas atuais","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":null,"lim":null,"np":null,"id":"86ajrf5q5"},{"n":"Configurar interfaces","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"lim":null,"np":null,"id":"86ajrf5qe"},{"n":"Configurar VPNs IPsec site to site","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"lim":null,"np":null,"id":"86ajrf5qv"},{"n":"Configurar regras NATs","s":"shipped","r":"fechado","o":"Brunno Leonardo Borges Lopes / Alexandre Pereira","due":1789369200000,"lim":null,"np":null,"id":"86ajrf5qw"},{"n":"Configurar regras de proxy reverso","s":"shipped","r":"fechado","o":"Alexandre Pereira / Marcelo Santos","due":1789369200000,"lim":null,"np":1789714800000,"id":"86ak7vzqq"},{"n":"Configurar roteamento","s":"shipped","r":"fechado","o":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"lim":null,"np":null,"id":"86ajrf5qg"},{"n":"Configurar políticas de segurança","s":"shipped","r":"fechado","o":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"lim":null,"np":null,"id":"86ajrf5qr"},{"n":"Testar conectividade entre ambientes","s":"shipped","r":"fechado","o":"Alexandre Pereira / Marcelo Santos","due":1789714800000,"lim":null,"np":null,"id":"86ajrf5pm"},{"n":"2.4 Coleta de dados e configurações locais","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1787900400000,"lim":null,"np":null,"id":"86ajwq6ah"},{"n":"Levantar dependências entre aplicações","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86ajrf5h1"},{"n":"Definir criticidade dos sistemas","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86ajrf5hb"},{"n":"Levantar dependência entre servidores e serviços.","s":"shipped","r":"fechado","o":"—","due":1787900400000,"lim":null,"np":1788505200000,"id":"86ajrf5hu"},{"n":"Coleta de informações para inventario do ambiente NGB Kosmo","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1787900400000,"lim":null,"np":null,"id":"86ajwq728"},{"n":"2.5 Instalação do Agent de backup","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1789110000000,"lim":null,"np":1789110000000,"id":"86ajwq7dt"},{"n":"Servidores Windows","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1787900400000,"lim":null,"np":null,"id":"86ajwq7jc"},{"n":"NGB-ABS-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq7w5"},{"n":"NGB-IFR-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq7xa"},{"n":"NGB-IFR-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq815"},{"n":"CNGB-TMV-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq81y"},{"n":"NGB-RSW-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq832"},{"n":"NGB-ETL-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq83y"},{"n":"NGB-ETL-W22-V02","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq85q"},{"n":"NGB-ETL-W22-V03","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8a0"},{"n":"NGB-TSS-W12-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8am"},{"n":"NGB-RSW-W12-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8bn"},{"n":"NGB-ELO-W22-V01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8eh"},{"n":"Servidores Linux","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1787900400000,"lim":null,"np":null,"id":"86ajwq7nk"},{"n":"NGBNFS01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8h9"},{"n":"NGBHNPRD","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8j4"},{"n":"NGBERPPRDCI","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8kn"},{"n":"NGBORAPRD01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8nb"},{"n":"NGBULTRAPARERP","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8q4"},{"n":"NGBELO01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8qw"},{"n":"NGBVONSAC2","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1789110000000,"lim":null,"np":null,"id":"86ajwq8t3"},{"n":"NGBHRC04","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq8ux"},{"n":"NGBCICLOPRD01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq937"},{"n":"NGBERPQAS","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq96r"},{"n":"NGBHNQAS","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq98b"},{"n":"NGBORADEV01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq9ak"},{"n":"NGBCICLODEV01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq9cq"},{"n":"NGBELO02","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq9kt"},{"n":"NGBSYBASE01","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":null,"lim":null,"np":null,"id":"86ajwq9r3"}]},{"n":"Fase 4 — Go-live e estabilização","s":"in progress","id":"86ajrf5d3","v":0,"a":[{"n":"4.2 Configurar Backup Binario","s":"in progress","r":"em andamento","o":"Lucas Federissis de Souza","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5dr","u":1792416708204},{"n":"Criar tenant Veeam","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791183600000,"lim":null,"np":null,"id":"86ajrf5u0"},{"n":"Configurar repositório","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791183600000,"lim":null,"np":null,"id":"86ajrf5u4"},{"n":"Definir schedule e politica de retenção","s":"in progress","r":"em andamento","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak6dvc4","u":1792416718108},{"n":"Executar primeiro backup","s":"shipped","r":"concluído","o":"Lucas Federissis de Souza / Augusto Rossi","due":1791183600000,"lim":null,"np":null,"id":"86ajrf5uu"},{"n":"Executar teste de restauração","s":"backlog","r":"aberto","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5uw","u":1792416733320},{"n":"4.3 Monitoramento","s":"in progress","r":"em andamento","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5dt","u":1792416686178},{"n":"Configurar monitoramento das VMs","s":"backlog","r":"aberto","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5v9","u":1792416679574},{"n":"Configurar monitoramento do firewall","s":"backlog","r":"aberto","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5vn","u":1792416679574},{"n":"Configurar monitoramento dos backups","s":"backlog","r":"aberto","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5vm","u":1792416679574},{"n":"Validar geração automática de alertas","s":"backlog","r":"aberto","o":"Lucas Federissis de Souza / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ajrf5vt","u":1792416679574}]},{"n":"Fase 3.1 - Virada de chave - Neugebauer","s":"shipped","id":"86akq7uxp","v":0,"a":[{"n":"NGB-IFR-W22-V01 - 10.200.12.5","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7ar8"},{"n":"NGBNEOGRID - 10.200.12.207","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akqa8f0"},{"n":"NGBSITEPRD - 10.210.12.220","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akqa4fw"},{"n":"NGBORAPRD01 - 10.200.12.252","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aqw"},{"n":"NGB-ABS-W22-V01 - 10.200.12.223","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7ar1"},{"n":"NGBHRC04 10.200.12.220","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7arf"},{"n":"NGBMAXDB01 - 10.200.12.225","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7atw"},{"n":"NGBMAXDB02 - 10.200.12.218","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aua"},{"n":"NGBULTRAPARERP - 10.200.12.215","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aqu"},{"n":"NGBELO01 - 10.200.12.231","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7ax4"},{"n":"NGBELO02 - 10.200.12.232","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7axj"},{"n":"NGBVONSAC2 - 10.200.12.206","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aye"},{"n":"CNGB-IFR-W22-V01 - 10.200.160.5","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aux"},{"n":"CNGB-TMV-W22-V01 - 10.200.160.10","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7awy"},{"n":"NGB-RSW-W22-V01 - 10.200.12.246","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7art"},{"n":"NGB-ETL-W22-V01 - 10.200.12.238","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7ary"},{"n":"NGB-ETL-W22-V02 - 10.200.12.239","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7at2"},{"n":"NGB-ETL-W22-V03 - 10.200.12.233","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7atk"},{"n":"NGBCICLOPRD01 - 10.200.12.233","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7avm"},{"n":"NGBERPQAS - 10.200.12.62","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7avw"},{"n":"NGBHNQAS - 10.200.12.64","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7az1"},{"n":"NGBORADEV01 - 10.200.12.251","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7axw"},{"n":"NGBCICLODEV01 - 10.200.12.234","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7ayr"},{"n":"NGBSYBASE01 - 10.200.12.226","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7aw7"},{"n":"NGB-RSW-W12-V01 - 10.200.12.230","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7awn"},{"n":"NGB-ELO-W22-V01 - 10.200.12.247","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akm7att"},{"n":"NGBSITEDEV - 10.210.12.219","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akqa8qh"},{"n":"NGBDLM01 - \t10.200.12.217","s":"shipped","r":"fechado","o":"Lucas Federissis de Souza","due":1791097200000,"lim":null,"np":null,"id":"86akqa8vf"}]},{"n":"Atividades sem fase","s":"in progress","id":null,"v":1,"a":[{"n":"Envio do aviso previo entre Kosmo x NGB","s":"shipped","r":"fechado","o":"—","due":1785222000000,"lim":null,"np":null,"id":"86akjg9f6"},{"n":"Comunicação entre Binario e Kosmo bloqueado","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1786518000000,"lim":null,"np":null,"id":"86ajwdywa"},{"n":"Incompatibilidade Servidores SUSE","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":1789110000000,"lim":null,"np":null,"id":"86akce127"},{"n":"Liberação de portas/acessos no firewall da Kosmo (chamado 697)","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1792998000000,"lim":null,"np":null,"id":"86akmf6hm"},{"n":"Acesso direto da Binário ao firewall da Kosmo","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1792998000000,"lim":null,"np":null,"id":"86akmf6px"},{"n":"Liberação Link 500Mbp's - Neugebauer","s":"shipped","r":"concluído","o":"Diogo Lerison","due":1791961200000,"lim":1791961200000,"np":null,"id":"86akpu58t"},{"n":"Encerramento Kosmo","s":"in progress","r":"em andamento","o":"Diogo Lerison","due":1792998000000,"lim":null,"np":null,"id":"86akjgbjg","u":1792416282350}]}]},{"k":"soprema-veeam","n":"Soprema","d":"Veeam Backup on premise","u":"https://app.clickup.com/3080406/v/li/901328281164","f":[{"n":"Fase 5 - Encerramento","s":"backlog","id":"86ak5e3dx","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5ebre","u":1792421379176},{"n":"Realizar contato de encerramento","s":"backlog","r":"aberto","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5ebup","u":1792421389213},{"n":"Documentação técnica final","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1793170800000,"lim":null,"np":null,"id":"86ak5ebyb","u":1792421394612},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5ec3z","u":1792421401801}]},{"n":"Fase 1 - Iniciação","s":"shipped","id":"86ak5e344","v":0,"a":[{"n":"Elaboração da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5e3u8"},{"n":"Reunião de Kickoff","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5e3vk"},{"n":"Definição de Stakeholders","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5e3zq"}]},{"n":"Fase 3 - Soprema - Execução técnica","s":"in progress","id":"86ak5e38y","v":0,"a":[{"n":"Backup Gerenciado","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1793343600000,"lim":null,"np":null,"id":"86ak5e6re","u":1792193239963},{"n":"Definição de servidor para instalar o VBR","s":"shipped","r":"concluído","o":"José Maria Ferreira da Silva / Diogo Lerison / Augusto Rossi","due":1788246000000,"lim":null,"np":null,"id":"86ak5e6z0"},{"n":"Instalação do VBR","s":"shipped","r":"concluído","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1791529200000,"lim":null,"np":null,"id":"86ak5e70q"},{"n":"Configurar repositório (8Tb)","s":"shipped","r":"concluído","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1791356400000,"lim":null,"np":null,"id":"86ak5e78d"},{"n":"Criação SRV-VBR na Cloud","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1792566000000,"lim":null,"np":null,"id":"17ttbukx3rx","u":1792421288334},{"n":"Instalar Endpoint nos servidor","s":"shipped","r":"concluído","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak5e7cy"},{"n":"WIN-64AA16BBGDE","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1792738800000,"lim":null,"np":null,"id":"86akq7j1m","u":1792421319144},{"n":"SWSPR003","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1792738800000,"lim":null,"np":null,"id":"86akq7j4y","u":1792421324407},{"n":"SWSPR002","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1792738800000,"lim":null,"np":null,"id":"86akq7j8f","u":1792421328261},{"n":"Configurar Jobs de backup","s":"waiting","r":"aguardando retorno","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":1792134000000,"id":"86ak5e7f4","u":1792193013394},{"n":"Validação de backup e restore","s":"in planning","r":"planejamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak5e7jr","u":1792421334547},{"n":"Monitoramento do backup","s":"in planning","r":"planejamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak5ygpj","u":1792193105738},{"n":"Documentação técnica","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak5ec77","u":1792421339045},{"n":"API de report de ferramenta para o cliente","s":"backlog","r":"aberto","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1792738800000,"lim":null,"np":null,"id":"86ak8quyy","u":1792421343071}]},{"n":"Fase 2 - Planejamento","s":"shipped","id":"86ak5e34w","v":0,"a":[{"n":"Realizar cronograma","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5e436"},{"n":"Estimar recursos e tempo de execução","s":"shipped","r":"fechado","o":"Diogo Lerison / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5exf2"}]},{"n":"Fase 4 - Monitoramento e controle","s":"in progress","id":"86ak5e3at","v":0,"a":[{"n":"Validar entregas do Projeto","s":"backlog","r":"aberto","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5e7pz","u":1792421355762},{"n":"Acompanhamento do cronograma e status report","s":"backlog","r":"aberto","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5e7tq","u":1792421359163}]}]},{"k":"pleion","n":"Pleion","d":"Indústria e Comércio de Plásticos LTDA.","u":"https://app.clickup.com/3080406/v/li/901328281869","f":[{"n":"Fase 5 - Encerramento","s":"backlog","id":"86ak5evuv","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5eyy7","u":1787680938910},{"n":"Realizar contato de encerramento","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5ez0e","u":1787680938910},{"n":"Documentação técnica final","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5ez25","u":1787680943308},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5ez40","u":1787680938910}]},{"n":"Fase 1 - Iniciação","s":"shipped","id":"86ak5ev74","v":0,"a":[{"n":"Elaboração da TAP","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86ak5ew0r"},{"n":"Reunião de kickoff","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5ew22"},{"n":"Elaboração da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5yy47"},{"n":"Definição de Stakeholders","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5ew6y"},{"n":"Assinatura da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak5ew9h"}]},{"n":"Fase 2 - Planejamento","s":"shipped","id":"86ak5eva7","v":0,"a":[{"n":"Realizar cronograma","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1788159600000,"lim":null,"np":null,"id":"86ak5ex8z"},{"n":"Estimar recursos e tempo de execução","s":"shipped","r":"fechado","o":"Diogo Lerison / José Maria Ferreira da Silva / Augusto Rossi","due":1788159600000,"lim":null,"np":null,"id":"86ak5exe1"},{"n":"Registro de documentação","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak8prta"}]},{"n":"Fase 4 - Controle","s":"in progress","id":"86ak5evqw","v":0,"a":[{"n":"Validar entregas do projeto","s":"in progress","r":"em andamento","o":"Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86ak5eykw","u":1792269126902}]},{"n":"Fase 3 - Pleion - Execução técnica - Gerenciado","s":"in progress","id":"86ak5evkm","v":0,"a":[{"n":"Definir estratégia de migração","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":1788418800000,"lim":null,"np":null,"id":"86ak5ewx4"},{"n":"Infraestrutura (Gerenciado)","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86ak5ewf8"},{"n":"Criação do dominio","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5ewkr"},{"n":"Criação do Projeto","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5ewpn"},{"n":"Criação da Rede","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak8peu5"},{"n":"Levantamento de Usuarios (cliente)","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak8pfdz"},{"n":"Firewall (Gerenciado)","s":"shipped","r":"fechado","o":"Marcelo Santos","due":null,"lim":null,"np":null,"id":"86ak5z7v9"},{"n":"Criação de firewall","s":"shipped","r":"fechado","o":"Marcelo Santos","due":null,"lim":null,"np":null,"id":"86ak5z8tg"},{"n":"Configuração Inicial do FW","s":"shipped","r":"fechado","o":"Marcelo Santos","due":null,"lim":null,"np":null,"id":"86ak5z8ze"},{"n":"Configuração de VPN site to site","s":"shipped","r":"fechado","o":"Marcelo Santos","due":null,"lim":null,"np":null,"id":"86ak8pmr5"},{"n":"Configuração de VPN client to site","s":"shipped","r":"fechado","o":"Marcelo Santos","due":null,"lim":null,"np":null,"id":"86ak8pn7r"},{"n":"Servidor","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86ak5z83a"},{"n":"1 VM","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5zcrb"},{"n":"BC-Backup (Gerenciado)","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86ak5exvf"},{"n":"Licenças","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86ak8q3ur"},{"n":"Configurar Jobs de backup","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86ak5ey7n"},{"n":"Monitoramento","s":"in planning","r":"planejamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792738800000,"lim":null,"np":null,"id":"86ak5z856","u":1792269148823},{"n":"Configurar monitoramento.","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva","due":1793343600000,"lim":null,"np":null,"id":"86ak5zh01","u":1792269170127},{"n":"Documentação Técnica","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1793343600000,"lim":null,"np":null,"id":"86ak8rgfd","u":1792269179624}]}]},{"k":"btech","n":"B-TECH CLOUD","d":"White Label","u":"https://app.clickup.com/3080406/v/li/901329035922","f":[{"n":"Fase 4 - Encerramento","s":"backlog","id":"86akg8t8g","v":0,"a":[{"n":"Elaboração da TEP","s":"in progress","r":"em andamento","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akg8t8p","u":1792097419460},{"n":"Checklist de Readiness / Aceite Operacional","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akkhrvq","u":1792098211286},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akg8t8q","u":1792097419460},{"n":"Envio da documentação técnica","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akg8t9g","u":1792097419460},{"n":"Entrada oficial em produção","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akkhth0","u":1792097419460},{"n":"Operação assistida","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akkhtpy","u":1792097419460},{"n":"Reunião de acompanhamento pós-Go-Live","s":"backlog","r":"aberto","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akkhtvf","u":1792097419460}]},{"n":"Fase 2 -  Kickoff","s":"in progress","id":"86akg8t8h","v":0,"a":[{"n":"Reunião de Kick Off","s":"shipped","r":"fechado","o":"—","due":1790060400000,"lim":null,"np":null,"id":"86akg8t8x"},{"n":"Envio da TAP","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akg8t9v"},{"n":"Assinatura da TAP","s":"in progress","r":"em andamento","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akg8taa","u":1792097419460}]},{"n":"Fase 3 - Execução B-Tech","s":"in progress","id":"86akg8t8j","v":0,"a":[{"n":"Configurar domínio oficial da BTECH","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhhr9"},{"n":"Aplicar identidade visual White Label","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhhwn"},{"n":"Desativar e ClaudIA para BTECH","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhhzg"},{"n":"Criar e validar usuários administrativos e perfis de acesso","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhj3x"},{"n":"Validar catálogo de serviços disponibilizados à BTECH","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhj6n"},{"n":"Cadastrar tabela de preços da BTECH","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhjae"},{"n":"Validar custos, consumo e fluxo de faturamento","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhjd1"},{"n":"Treinamento BCAPI","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhjw0"},{"n":"Hands-on / treinamento BCAPI","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhjwx"},{"n":"Hands-on técnico BCP / Console White Label","s":"shipped","r":"fechado","o":"—","due":1790665200000,"lim":null,"np":null,"id":"86akkhpg3"},{"n":"Definir fluxo de atendimento e escalonamento N1/N2/N3","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhpq1"},{"n":"Elaborar e aprovar Matriz RACI","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhpww"},{"n":"Apresentar e validar SLA contratado","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhq1u"},{"n":"Cadastrar contatos e canais oficiais de suporte","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhq8p"},{"n":"Executar provisionamento ponta a ponta","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhqpy"},{"n":"Validar serviços específicos acordados na PoC","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akkhqzz"},{"n":"Visita técnica ao Data Center ODATA","s":"in progress","r":"em andamento","o":"—","due":1793602800000,"lim":null,"np":null,"id":"86akkhr10","u":1792097419460}]},{"n":"Fase 1 - Iniciação","s":"shipped","id":"86akg8t8f","v":0,"a":[{"n":"Identificar as partes Interessadas","s":"shipped","r":"fechado","o":"—","due":1790060400000,"lim":null,"np":null,"id":"86akg8t8r"},{"n":"Identificar os riscos","s":"shipped","r":"fechado","o":"—","due":1790060400000,"lim":null,"np":null,"id":"86akg8t9w"},{"n":"Elaboração TAP","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akg8ta6"},{"n":"Realização do cronograma","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akg8taf"},{"n":"Documentação do cliente","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akg8tav"}]}]},{"k":"apm","n":"APM","d":"Associação Paulista de Medicina","u":"https://app.clickup.com/3080406/v/li/901329011062","f":[{"n":"Fase 4 - Encerramento","s":"backlog","id":"86akekhzb","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekhzv","u":1790020736513},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekhzw","u":1790020736513},{"n":"Envio da documentação técnica","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj0k","u":1790020736513}]},{"n":"Fase 2 -  Kickoff","s":"shipped","id":"86akekhza","v":0,"a":[{"n":"Reunião de Kick Off","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekhzu"},{"n":"Envio da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj0m"},{"n":"Assinatura da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj1e"}]},{"n":"Fase 1 - Iniciação","s":"shipped","id":"86akekhz9","v":0,"a":[{"n":"Definir os objetivos do Projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekhzn"},{"n":"Identificar as partes Interessadas","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekhzp"},{"n":"Plano de Comunicação Inicial","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj0n"},{"n":"Identificar os riscos","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj0q"},{"n":"Elaboração TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj1h"},{"n":"Realização do cronograma","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj1j"},{"n":"Documentação do cliente","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekj2j"}]},{"n":"Fase 3 - Execução (APM) - Gerenciado","s":"in progress","id":"86akekhzc","v":0,"a":[{"n":"Infraestrutura","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfztuf"},{"n":"Criação do dominio","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akfztuj"},{"n":"Criação do Projeto","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akfztuk"},{"n":"Criação da Rede","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akfztuz"},{"n":"Levantamento de Usuarios (cliente)","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akfztv0"},{"n":"Firewall","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekhzt"},{"n":"PFSENSE","s":"shipped","r":"fechado","o":"Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekj0a"},{"n":"IP Publico","s":"shipped","r":"fechado","o":"Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekj0b"},{"n":"Configuração","s":"shipped","r":"fechado","o":"Antonio Junior / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj11"},{"n":"VPN","s":"shipped","r":"fechado","o":"Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekj13"},{"n":"Migração (Veeam)","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj18"},{"n":"Repositorio","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj1t"},{"n":"Tenant","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj2n"},{"n":"Configuração Jobs","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj2p"},{"n":"restauração dos servidores em nuvem","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akjbzva"},{"n":"SERVIDOR VBR LOCAL","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akn50f7"},{"n":"VM's","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekhzr","u":1792008656823},{"n":"APMSQL01","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792479600000,"lim":null,"np":null,"id":"86akekj08","u":1792432088751},{"n":"APMCRM1","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792479600000,"lim":null,"np":null,"id":"86akn505c","u":1792191485877},{"n":"APMERP1","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792479600000,"lim":null,"np":null,"id":"86akn509j","u":1792191489276},{"n":"AWS - APMSVRWEBAWS","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":1792479600000,"lim":null,"np":null,"id":"86akn50zg","u":1792191492998},{"n":"SRV05?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj75c","u":1792097591772},{"n":"SRV06?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj778","u":1792097591772},{"n":"SRV07?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj77y","u":1792097591772},{"n":"SRV08?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj789","u":1792097591772},{"n":"SRV09?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj78f","u":1792097591772},{"n":"SRV10?","s":"waiting","r":"aguardando retorno","o":"Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86aktj790","u":1792097591772},{"n":"BC-Backup","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj25","u":1792008621302},{"n":"Configuração de politica","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj2q","u":1792008626965},{"n":"Teste de backup","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj2r","u":1792008631073},{"n":"Documentação técnica","s":"in planning","r":"planejamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj3a","u":1791206150769},{"n":"Go-Live","s":"backlog","r":"aberto","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekj3m","u":1790020719288}]}]},{"k":"amigotech","n":"AmigoTech","d":"Amigo Connecting LTDA","u":"https://app.clickup.com/3080406/v/li/901329011044","f":[{"n":"Fase 1 - Iniciação","s":"shipped","id":"86akekg4x","v":0,"a":[{"n":"Definir os objetivos do Projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg5f"},{"n":"Identificar as partes Interessadas","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg5e"},{"n":"Plano de Comunicação Inicial","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg6q"},{"n":"Identificar os riscos","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg6r"},{"n":"Elaboração TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg7z"},{"n":"Realização do cronograma","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg80"},{"n":"Documentação do cliente","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg8z"}]},{"n":"Fase 2 -  Kickoff","s":"shipped","id":"86akekg4z","v":0,"a":[{"n":"Reunião de Kick Off","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg5k"},{"n":"Envio da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg6p"},{"n":"Assinatura da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akekg7j"}]},{"n":"Fase 4 - Encerramento","s":"in progress","id":"86akekg4y","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akekg5m","u":1788988610536},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akekg5n","u":1788988610536},{"n":"Envio da documentação técnica","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akekg6g","u":1788988610536},{"n":"Faturamento","s":"shipped","r":"concluído","o":"—","due":null,"lim":null,"np":null,"id":"86akruatg"}]},{"n":"Fase 3 - Execução (AmigoTech) - Gerenciado","s":"blocked","id":"86akekg50","v":0,"a":[{"n":"Infraestrutura","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfzp4x"},{"n":"Criação do dominio","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfzp56"},{"n":"Criação do Projeto","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfzp57"},{"n":"Criação da Rede","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfzp5m"},{"n":"Levantamento de Usuarios (cliente)","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akfzp5p"},{"n":"Firewall","s":"shipped","r":"fechado","o":"Marcelo Santos / Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekg5h"},{"n":"Subir imagem Mikrotik","s":"shipped","r":"fechado","o":"Marcelo Santos / Antonio Junior","due":1790060400000,"lim":null,"np":null,"id":"86akn3upp"},{"n":"1 IP Publico","s":"shipped","r":"fechado","o":"Marcelo Santos / Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekg68"},{"n":"Configuração","s":"shipped","r":"fechado","o":"Marcelo Santos / Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekg73"},{"n":"VPN","s":"shipped","r":"fechado","o":"Marcelo Santos / Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekg74"},{"n":"VM's","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekg5g"},{"n":"SRV01 - AD/FileServer","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekg65"},{"n":"SRV02 - DB","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akn5y7f"},{"n":"SRV03 - Aplicação","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akn5y9j"},{"n":"SRV04 - Teste VPN","s":"shipped","r":"fechado","o":"José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"86akpku1y"},{"n":"BC-Backup","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekg8j","u":1790601592706},{"n":"Configuração de politica","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akekg96"},{"n":"Teste de backup","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akekg97","u":1791204836545},{"n":"Monitoramento","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akfzp4v","u":1792003358627},{"n":"Configurar monitoramento.","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akfzp4y","u":1791204857996},{"n":"Documentação técnica","s":"in planning","r":"planejamento","o":"José Maria Ferreira da Silva / Augusto Rossi / Marcelo Santos / Antonio Junior","due":null,"lim":null,"np":null,"id":"86akekg9w","u":1791204873556},{"n":"Go-Live","s":"in progress","r":"em andamento","o":"José Maria Ferreira da Silva / Augusto Rossi","due":null,"lim":null,"np":null,"id":"86akekgad","u":1791204884955}]}]},{"k":"abl","n":"Grupo ABL","d":"Jornada","u":"https://app.clickup.com/3080406/v/li/901329133092","f":[{"n":"Fase 4 - Encerramento","s":"backlog","id":"86akn4aeb","v":0,"a":[{"n":"Elaboração da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4aet","u":1790107573837},{"n":"Assinatura da TEP","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4aeu","u":1790107573837},{"n":"Envio da documentação técnica","s":"backlog","r":"aberto","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4afc","u":1792096036318}]},{"n":"Fase 1 - Iniciação","s":"shipped","id":"86akn4ae9","v":0,"a":[{"n":"Definir os objetivos do Projeto","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4aeq"},{"n":"Identificar as partes Interessadas","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4aep"},{"n":"Identificar os riscos","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4afr"},{"n":"Elaboração TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4age"},{"n":"Documentação do cliente","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4ah8"}]},{"n":"Fase 3 - Execução","s":"in progress","id":"17ttbukwjw7","v":0,"a":[{"n":"Disponibilizar VMs","s":"shipped","r":"fechado","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1792047600000,"lim":null,"np":null,"id":"17ttbukwjw9"},{"n":"Configurar 1 firewall","s":"shipped","r":"fechado","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1792047600000,"lim":null,"np":null,"id":"17ttbukwjwa"},{"n":"1 IP público","s":"shipped","r":"fechado","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1792047600000,"lim":null,"np":null,"id":"17ttbukwjwb"},{"n":"Definir Política de backup","s":"shipped","r":"fechado","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1792047600000,"lim":null,"np":null,"id":"17ttbukwjwc"},{"n":"Configurar BC-Backup","s":"shipped","r":"fechado","o":"Augusto Rossi / José Maria Ferreira da Silva","due":1791961200000,"lim":null,"np":1792047600000,"id":"17ttbukwjwd"},{"n":"Configurar monitoramento","s":"backlog","r":"aberto","o":"Augusto Rossi / José Maria Ferreira da Silva","due":null,"lim":null,"np":null,"id":"17ttbukwjwe","u":1792096114672}]},{"n":"Fase 2 -  Kickoff","s":"shipped","id":"86akn4aea","v":0,"a":[{"n":"Reunião de Kick Off","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1790233200000,"lim":null,"np":null,"id":"86akn4aen"},{"n":"Envio da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4afg"},{"n":"Assinatura da TAP","s":"shipped","r":"fechado","o":"Diogo Lerison","due":null,"lim":null,"np":null,"id":"86akn4agd"}]}]},{"k":"algar","n":"Algar Telecom","d":"Projeto especial","u":"https://app.clickup.com/3080406/v/li/901329196221","f":[{"n":"Fase 0 - Kickoff","s":"in progress","id":"86aktjp00","v":0,"a":[{"n":"Reunião de Kickoff 08/10 - 16h","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1791442800000,"lim":null,"np":null,"id":"86aktqg76"},{"n":"Validação de Marcos, responsáveis e datas","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1792134000000,"lim":null,"np":null,"id":"86aktqg8z"},{"n":"Definir pontos focais e cadência de acompanhamento","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1791442800000,"lim":null,"np":null,"id":"86aktqga1"},{"n":"Publicar painel e liberar usuarios para acompanhamento","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1792134000000,"lim":null,"np":null,"id":"86aktqge2"},{"n":"Devolução da minuta contratual para Binario","s":"in progress","r":"em andamento","o":"Diogo Lerison / Wagner Bento Felix","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktqgne","u":1792092253067},{"n":"Elaboração da TAP","s":"shipped","r":"concluído","o":"Diogo Lerison","due":1792134000000,"lim":null,"np":null,"id":"86aku13jv"},{"n":"Envio/Assinatura da TAP","s":"waiting","r":"aguardando retorno","o":"Wagner Bento Felix / Diogo Lerison","due":1792738800000,"lim":null,"np":null,"id":"86aku13k2","u":1792438945746}]},{"n":"Fase 1 - SSO no portal B2B","s":"in progress","id":"86aktjp1b","v":0,"a":[{"n":"Incluir a URL do BCP no trusted dashboard da federação do Keystone (stage SP) para validar o SSO","s":"shipped","r":"concluído","o":"Diogo Lerison / Wagner Bento Felix","due":1792134000000,"lim":null,"np":null,"id":"86aktqnym"},{"n":"Configurar Identity Provider e o mapping no Keystone","s":"in progress","r":"em andamento","o":"Wagner Bento Felix","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktnjgv","u":1791980859676},{"n":"Validar os cenários de MFA, token expirado e usuário removido do grupo","s":"in progress","r":"em andamento","o":"Joab de Araújo Silva","due":1793516400000,"lim":null,"np":null,"id":"86aktnjuf","u":1791980858164},{"n":"Testar SSO no ambiente Sandbox","s":"in progress","r":"em andamento","o":"Joab de Araújo Silva","due":1792738800000,"lim":null,"np":null,"id":"86aktnk69","u":1791980858164},{"n":"Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo","s":"backlog","r":"aberto","o":"Diogo Lerison / Wagner Bento Felix","due":1792566000000,"lim":null,"np":null,"id":"86aktqnwv","u":1791915728822},{"n":"Ajustes Mesa TI","s":"backlog","r":"aberto","o":"Guilherme Lopes / Tiago Gomes de Oliveira","due":null,"lim":null,"np":null,"id":"86aktqp06","u":1791921680349},{"n":"Levantamento de autenticação","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":null,"lim":null,"np":null,"id":"17ttbukw474","u":1791921769727},{"n":"Liberar Usuario","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":null,"lim":null,"np":null,"id":"17ttbukw475","u":1791922085304},{"n":"Consolidar a federação do Keystone nos templates do director","s":"in progress","r":"em andamento","o":"Wagner Bento Felix","due":1792566000000,"lim":null,"np":null,"id":"86aktqp1e","u":1791920104246},{"n":"Documentar e alinhar virada para produção","s":"backlog","r":"aberto","o":"Joab de Araújo Silva / Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86aktnk59","u":1791920222293}]},{"n":"Fase 2 - Redirect do BCP API para o Portal B2B","s":"in progress","id":"86aktjp2r","v":0,"a":[{"n":"Confirmar o sistema de destino","s":"shipped","r":"concluído","o":"Diogo Lerison / Wagner Bento Felix","due":1791529200000,"lim":null,"np":null,"id":"86aktnkcj"},{"n":"Configurar a URL em redirect para produção","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1791961200000,"lim":1791961200000,"np":null,"id":"86aktnkpp","u":1791920470161},{"n":"Publicar o painel na porta 443","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1791961200000,"lim":1791961200000,"np":null,"id":"86aktnkd2","u":1791920478033},{"n":"Criar no front o botão com a rota que leva o usuário para a tela certa","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":null,"lim":null,"np":null,"id":"86aktnke3","u":1791920513874},{"n":"Exibir botão de custo apenas para perfil financeiro do Cloud Plus","s":"shipped","r":"fechado","o":"Diogo Lerison","due":1792566000000,"lim":null,"np":null,"id":"86aktnkg1"},{"n":"Teste ponta a ponta","s":"backlog","r":"aberto","o":"Diogo Lerison / Joab de Araújo Silva","due":1793343600000,"lim":null,"np":null,"id":"86aktnmwa","u":1791915728822}]},{"n":"Fase 4 - Novas regiões","s":"in progress","id":"86aktjppg","v":0,"a":[{"n":"Definir o ambiente inicial da coleta Canonical: staging SP, Fortaleza ou Porto Alegre","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktqvyc","u":1791920776512},{"n":"Ajuste de casas decimais","s":"shipped","r":"concluído","o":"Guilherme Soares Gomes da Silva","due":1792047600000,"lim":null,"np":null,"id":"86aktpwj6"},{"n":"Enviar as diretrizes de dimensionamento","s":"shipped","r":"fechado","o":"Joab de Araújo Silva / Guilherme Lopes / Guilherme Soares Gomes da Silva","due":1791529200000,"lim":null,"np":null,"id":"86aktnyr0"},{"n":"Começar coleta Fortaleza","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva","due":1792738800000,"lim":null,"np":null,"id":"86aktp32q","u":1791915728822},{"n":"Deploy + Validação","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva","due":null,"lim":null,"np":null,"id":"86aktpv3n","u":1791915728822},{"n":"Começar coleta Porto Alegre","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva","due":1792738800000,"lim":null,"np":null,"id":"86aktp32z","u":1791915728822},{"n":"Deploy + Validação","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva","due":null,"lim":null,"np":null,"id":"86aktpv8h","u":1791915728822},{"n":"Criar o seletor de região no painel de consumo","s":"shipped","r":"fechado","o":"Joab de Araújo Silva","due":1792998000000,"lim":null,"np":null,"id":"86aktp396"},{"n":"Definir a cobrança por roteador/projeto e por banda (avaliar aditivo contratual com Produtos)","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktqw1d","u":1791920792127},{"n":"Desabilitar o menu da calculadora da Binário na V1 ou apontá-lo para o endereço interno (VPN)","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktqw6q","u":1791920801026},{"n":"Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1792738800000,"lim":null,"np":null,"id":"86aktqw82","u":1791920856373},{"n":"Gerar a chave privada e o CSR e emitir um único certificado para os dois domínios","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1792566000000,"lim":null,"np":null,"id":"86aktqw9f","u":1791920880866},{"n":"Liberar firewall e acesso externo conforme domínio e local de hospedagem","s":"backlog","r":"aberto","o":"Wagner Bento Felix","due":1793170800000,"lim":null,"np":null,"id":"86aktqwaa","u":1791920888096}]},{"n":"Fase 3 - API e SKU e Flavors","s":"in progress","id":"86aktjp3x","v":0,"a":[{"n":"Levantamento  necessidade de preço ou especificação","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktnvxa","u":1791915756289},{"n":"Mapear de onde vêm os SKUs e como eles se ligam aos flavors do Nova","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1792047600000,"lim":1792047600000,"np":null,"id":"86aktnw78","u":1791915728822},{"n":"Montar o contrato da API (OpenAPI) e validar com o consumidor","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1792479600000,"lim":null,"np":null,"id":"86aktnwh0","u":1791915728822},{"n":"Definir a autenticação da API","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva","due":1792479600000,"lim":null,"np":null,"id":"86aktnwnx","u":1791915728822},{"n":"Entendimento da demanda","s":"backlog","r":"aberto","o":"Guilherme Soares Gomes da Silva / Diogo Lerison","due":null,"lim":null,"np":null,"id":"86aktpn46","u":1791915728822},{"n":"Implementar o endpoint com a transformação para o formato deles","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1793084400000,"lim":null,"np":null,"id":"86aktnwqw","u":1791915728822},{"n":"Teste, documentação e deploy","s":"backlog","r":"aberto","o":"Guilherme Lopes","due":1793257200000,"lim":null,"np":null,"id":"86aktnwvd","u":1791915728822},{"n":"Homologar","s":"backlog","r":"aberto","o":"Wagner Bento Felix / Diogo Lerison / Guilherme Lopes / Joab de Araújo Silva","due":1793343600000,"lim":null,"np":null,"id":"86aktnwvw","u":1791915728822},{"n":"Envio do Link da documentação","s":"backlog","r":"aberto","o":"Guilherme Lopes / Diogo Lerison","due":1792134000000,"lim":1792134000000,"np":null,"id":"86aktnx74","u":1791984714046},{"n":"Detalhar solicitações da API","s":"in progress","r":"em andamento","o":"Guilherme Soares Gomes da Silva","due":1792047600000,"lim":1792047600000,"np":null,"id":"86aktqv0j","u":1791487819350}]},{"n":"Atividades sem fase","s":"in progress","id":null,"v":1,"a":[{"n":"Fase 5 - Relatório de utilização de VMs","s":"backlog","r":"aberto","o":"Wagner Bento Felix / Diogo Lerison","due":1793343600000,"lim":null,"np":null,"id":"86aktjpk4","u":1791920948191},{"n":"Fase 6 - Alarmística de coleta + chamados Jira","s":"backlog","r":"aberto","o":"Diogo Lerison / Wagner Bento Felix","due":1793343600000,"lim":null,"np":null,"id":"86aktjpr4","u":1791920955713}]}]},{"k":"gimba-mfa","n":"Gimba","d":"MFA na conexão VPN de forma padrão","u":"https://app.clickup.com/3080406/v/li/901329173422","f":[{"n":"Corrigir integração SAML no FortiGate","s":"in progress","id":"86akqah6h","v":0,"a":[{"n":"Analisar logs após a autenticação.","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqahk4"},{"n":"Validar a configuração de *Tunnel Client Mode* no portal VPN SSL","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqahpv"},{"n":"Retornar a análise para Márcio por e-mail","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqahtp"}]},{"n":"Preparação do Firewall","s":"in progress","id":"86akq9k5a","v":0,"a":[{"n":"Validar configurações do Firewall​","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akq9qmb","u":1790705731615},{"n":"Ajustes e Atualização do firewall","s":"in progress","r":"em andamento","o":"Priscila de Fatima Sotério Ferreira","due":null,"lim":null,"np":null,"id":"86akq9k7w","u":1790705635628},{"n":"Servidor de sincronização e grupos (perfil do AD)","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akq9kzz","u":1790706059217},{"n":"GCDS e Password Sync para a sincronização​","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akq9r2e","u":1790607068594},{"n":"Usuário piloto e grupo VPN SSL sincronizados no Workspace","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqafq4"},{"n":"Regras de acesso por perfil​","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akq9rpe","u":1790705667011},{"n":"Teste de solicitação de MFA via Google Authenticator.","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqagg1"}]},{"n":"Piloto","s":"in progress","id":"86akq9jjw","v":0,"a":[{"n":"Homologação (Grupo de teste)","s":"in progress","r":"em andamento","o":"—","due":null,"lim":null,"np":null,"id":"86akq9mh0","u":1790705771643}]},{"n":"Acompanhamento","s":"backlog","id":"86akq9jq9","v":0,"a":[{"n":"Monitoramento","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akq9n7q","u":1790604867070},{"n":"Ajustes Finos","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akq9nad","u":1790604875486},{"n":"Desligar acesso antigo","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akq9ngr","u":1790604893105}]},{"n":"Instalar Google Password Sync","s":"backlog","id":"86akqamf0","v":0,"a":[{"n":"Confirmar permissão/executável para instalação no ambiente Gimba","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akqamgh","u":1790607761539},{"n":"Agendar janela de manutenção","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akqamgp","u":1790607757133},{"n":"Instalar em todos os DCs","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akqamgu","u":1790607629843},{"n":"Orientar os usuários a trocar a senha após a instalação","s":"backlog","r":"aberto","o":"—","due":null,"lim":null,"np":null,"id":"86akqamgx","u":1790607763250}]},{"n":"Implantação","s":"shipped","id":"86akq9jp7","v":0,"a":[{"n":"Configuração do MFA - Binário + GIMBA","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akq9jjf"}]},{"n":"Atividades sem fase","s":"in progress","id":null,"v":1,"a":[{"n":"Enviar metadados e certificado SAML - Gimba","s":"shipped","r":"fechado","o":"—","due":null,"lim":null,"np":null,"id":"86akqaj7k"},{"n":"Encerramento","s":"backlog","r":"aberto","o":"—","due":1793343600000,"lim":null,"np":null,"id":"86akqd7h1","u":1790617016397}]}]}]};
+const HIST = [["neugebauer",1792416240659,1],["neugebauer",1792415838512,1],["neugebauer",1792415850893,1],["neugebauer",1792416431575,1],["neugebauer",1792416607227,1],["neugebauer",1792416576064,1],["neugebauer",1785332251777,1],["neugebauer",1785272771160,1],["neugebauer",1785272771261,1],["neugebauer",1785272771200,1],["neugebauer",1785332211194,1],["neugebauer",1785272771737,1],["neugebauer",1785272771767,1],["neugebauer",1785332205768,1],["neugebauer",1785332218618,1],["neugebauer",1785332251777,1],["neugebauer",1787759359090,1],["neugebauer",1785789763800,1],["neugebauer",1785789766872,1],["neugebauer",1785961884674,1],["neugebauer",1785961888135,1],["neugebauer",1785789780549,1],["neugebauer",1785961895237,1],["neugebauer",1787752637285,1],["neugebauer",1787760079291,1],["neugebauer",1785522100997,1],["neugebauer",1785789403882,1],["neugebauer",1785522154817,1],["neugebauer",1785789426933,1],["neugebauer",1787760079291,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1788293749915,1],["neugebauer",1788293848686,1],["neugebauer",1788293798948,1],["neugebauer",1788293685938,1],["neugebauer",1790174871514,1],["neugebauer",1788532902652,1],["neugebauer",1788532905956,1],["neugebauer",1788294037398,1],["neugebauer",1788294035164,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1790174871514,1],["neugebauer",1787775960400,1],["neugebauer",1787747112267,1],["neugebauer",1785501369336,1],["neugebauer",1787775856478,1],["neugebauer",1790368169414,1],["neugebauer",1788186959091,1],["neugebauer",1787749786350,1],["neugebauer",1787750272568,1],["neugebauer",1787749981589,1],["neugebauer",1787933672383,1],["neugebauer",1790368152540,1],["neugebauer",1787750309109,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1790368169414,1],["neugebauer",1788554464515,1],["neugebauer",1787777759850,1],["neugebauer",1787777767527,1],["neugebauer",1788186970477,1],["neugebauer",1785962192109,1],["neugebauer",1789416929571,1],["neugebauer",1787836453125,1],["neugebauer",1786113811812,1],["neugebauer",1787836443370,1],["neugebauer",1786113873293,1],["neugebauer",1787836443370,1],["neugebauer",1786115906568,1],["neugebauer",1786115922837,1],["neugebauer",1786115934942,1],["neugebauer",1786115953657,1],["neugebauer",1789416929571,1],["neugebauer",1787836443370,1],["neugebauer",1786116182734,1],["neugebauer",1789416929571,1],["neugebauer",1786113603467,1],["neugebauer",1787750934260,1],["neugebauer",1787750934260,1],["neugebauer",1786113715820,1],["neugebauer",1786113828076,1],["neugebauer",1788447950047,1],["neugebauer",1789416929571,1],["neugebauer",1786115866189,1],["neugebauer",1786115985174,1],["neugebauer",1786116006721,1],["neugebauer",1786116024128,1],["neugebauer",1786116038158,1],["neugebauer",1786116055229,1],["neugebauer",1786116083076,1],["neugebauer",1786116163348,1],["neugebauer",1785502523006,1],["neugebauer",1785502550143,1],["neugebauer",1791565647224,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1791394547713,1],["neugebauer",1789851979595,1],["neugebauer",1789851988752,1],["neugebauer",1789852004684,1],["neugebauer",1791205164828,1],["neugebauer",1791205174289,1],["neugebauer",1792416220165,1],["soprema-veeam",1787612709710,1],["soprema-veeam",1787939442042,1],["soprema-veeam",1787666155949,1],["soprema-veeam",1791578993137,1],["soprema-veeam",1792421265951,1],["soprema-veeam",1792421275968,1],["soprema-veeam",1792453301386,1],["soprema-veeam",1788541071756,1],["soprema-veeam",1788541071756,1],["pleion",1787612789378,1],["pleion",1787836009075,1],["pleion",1787836004313,1],["pleion",1787836004313,1],["pleion",1787836004313,1],["pleion",1788988330204,1],["pleion",1788988330204,1],["pleion",1788988330204,1],["pleion",1792008209384,1],["pleion",1792008272007,1],["pleion",1792008272007,1],["pleion",1792008272007,1],["pleion",1792008272007,1],["pleion",1792008272007,1],["pleion",1792008287404,1],["pleion",1792008287404,1],["pleion",1792008287404,1],["pleion",1792008287404,1],["pleion",1792008287404,1],["pleion",1792008304149,1],["pleion",1792008304149,1],["pleion",1792096839679,1],["pleion",1792008336890,1],["pleion",1792096837449,1],["btech",1790105399677,1],["btech",1791206216196,1],["btech",1791206232455,1],["btech",1791206239182,1],["btech",1791206245856,1],["btech",1791206255466,1],["btech",1791395359468,1],["btech",1791206265867,1],["btech",1791206272608,1],["btech",1791395397107,1],["btech",1791307738338,1],["btech",1791307745330,1],["btech",1791206311296,1],["btech",1791206318530,1],["btech",1791206329021,1],["btech",1791206337349,1],["btech",1791206348884,1],["btech",1791206355881,1],["btech",1790105407972,1],["btech",1790105412254,1],["btech",1791206205473,1],["btech",1790698074040,1],["btech",1791206195108,1],["apm",1790256657877,1],["apm",1790256657877,1],["apm",1790256657877,1],["apm",1789147006368,1],["apm",1789147973458,1],["apm",1789147977390,1],["apm",1789148023729,1],["apm",1789148027539,1],["apm",1790256663208,1],["apm",1790256663208,1],["apm",1792008515733,1],["apm",1792008515733,1],["apm",1792008515733,1],["apm",1792008515733,1],["apm",1792008515733,1],["apm",1792008548948,1],["apm",1792008548948,1],["apm",1792008548948,1],["apm",1792008548948,1],["apm",1792008548948,1],["apm",1792008557689,1],["apm",1792008557689,1],["apm",1792008557689,1],["apm",1792008557689,1],["apm",1792008557689,1],["apm",1792008557689,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790175383189,1],["amigotech",1790597854057,1],["amigotech",1790597854057,1],["amigotech",1790597854057,1],["amigotech",1790950651376,1],["amigotech",1792008709106,1],["amigotech",1792008709106,1],["amigotech",1792008709106,1],["amigotech",1792008709106,1],["amigotech",1792008709106,1],["amigotech",1792008715661,1],["amigotech",1792008715661,1],["amigotech",1792008715661,1],["amigotech",1792008715661,1],["amigotech",1792008715661,1],["amigotech",1792008727992,1],["amigotech",1792008727992,1],["amigotech",1792008727992,1],["amigotech",1792008727992,1],["amigotech",1792008727992,1],["amigotech",1792008745518,1],["abl",1791204948693,1],["abl",1792008409795,1],["abl",1791204955550,1],["abl",1792008409795,1],["abl",1792008409795,1],["abl",1792096061590,1],["abl",1792096059400,1],["abl",1792096057107,1],["abl",1792096054879,1],["abl",1792097116461,1],["abl",1791205018026,1],["abl",1792096463653,1],["abl",1792096465821,1],["algar",1791487681914,1],["algar",1791919783565,1],["algar",1791511481880,1],["algar",1791919788844,1],["algar",1792073777100,1],["algar",1791918475826,1],["algar",1791920274395,1],["algar",1791556014972,1],["algar",1792073755154,1],["algar",1791552066795,1],["algar",1791921629538,1],["gimba-mfa",1790705910829,1],["gimba-mfa",1790705905900,1],["gimba-mfa",1790705883753,1],["gimba-mfa",1790607063837,1],["gimba-mfa",1790607129836,1],["gimba-mfa",1790705753331,1],["gimba-mfa",1790607312032,1]];
+const DAY = 86400000, WEEK = 7*DAY;
+const sod = ms => { const d = new Date(Number(ms)); d.setHours(0,0,0,0); return d.getTime(); };
+const NOW = Date.now(), TODAY = sod(NOW);
+const weekStart = ms => { const d = sod(ms), wd = (new Date(d).getDay()+6)%7; return d - wd*DAY; };
+const THIS_WEEK = weekStart(NOW);
+const fmt = ms => ms ? new Date(Number(ms)).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}) : '—';
+const fmtL = ms => new Date(Number(ms)).toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'short'});
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const daysAgo = ms => Math.floor((TODAY - sod(ms))/DAY);
+const first = n => (n||'').split(' ')[0];
+const short = n => { const w=(n||'').split(' ').filter(Boolean); if(w.length<2) return w[0]||''; const i = ['de','da','do','dos','das'].includes((w[1]||'').toLowerCase()) && w[2] ? 2 : 1; return w[0]+' '+w[i]; };
+const plural = (n,s,p) => n===1 ? s : (p || s+'s');
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }, set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} } };
+const clamp = (x,a=0,b=1) => Math.max(a, Math.min(b, x));
+
+/* ---------------- dados ---------------- */
+const ACTS = [];
+DATA.p.forEach(p => p.f.forEach(f => f.a.forEach(a => ACTS.push({...a, p, f, owners: (a.o && a.o!=='—') ? a.o.split(' / ') : []}))));
+const PEOPLE = [...new Set(ACTS.flatMap(a=>a.owners))].sort();
+
+/* ---------------- configuração ---------------- */
+const DEFAULT_ROLES = {'Wagner Bento Felix':'gestor','Diogo Lerison':'gp','Guilherme Lopes':'dev','Guilherme Soares Gomes da Silva':'dev','Joab de Araújo Silva':'dev','Tiago Gomes de Oliveira':'dev'};
+const ROLE_LBL = {gestor:'Gestor', gp:'Gerente de projeto', delivery:'Delivery', dev:'Desenvolvimento'};
+const defaultCfg = () => { const roles={}, pm={}; PEOPLE.forEach(p=>roles[p]=DEFAULT_ROLES[p]||'delivery'); DATA.p.forEach(p=>pm[p.k]='Diogo Lerison'); return {roles, pm, me:'Wagner'}; };
+let CFG = Object.assign(defaultCfg(), store.get('tc_cfg', {}));
+PEOPLE.forEach(p=>{ if(!CFG.roles[p]) CFG.roles[p]=DEFAULT_ROLES[p]||'delivery'; });
+DATA.p.forEach(p=>{ if(!CFG.pm[p.k]) CFG.pm[p.k]='Diogo Lerison'; });
+const gpOf = p => CFG.pm[p.k];
+const isManager = n => ['gp','gestor'].includes(CFG.roles[n]);
+
+/* ---------------- cobranças (com compromisso) ---------------- */
+let COB = store.get('tc_cob', {});          // id -> [{t, canal, prom, nota}]
+const cobOf = id => COB[id] || [];
+function registrar(ids, extra={}){ ids.forEach(id=>(COB[id]=COB[id]||[]).push({t:Date.now(), ...extra})); store.set('tc_cob', COB); }
+function desfazer(id){ const l=COB[id]; if(l&&l.length){ l.pop(); if(!l.length) delete COB[id]; store.set('tc_cob', COB); } }
+const todayKey = 'tc_done_'+new Date(TODAY).toISOString().slice(0,10);
+let DONE = store.get(todayKey, {});
+
+/* ---------------- regras por atividade ---------------- */
+function analisar(a){
+  a.open = a.s!=='shipped' && a.s!=='cancelled';
+  a.reasons=[]; a.score=0; a.late=false; a.stale=false;
+  const c = cobOf(a.id); a.cobN=c.length; a.cobLast=c.length?c[c.length-1]:null;
+  const lp = [...c].reverse().find(r=>r.prom); // promessa mais recente registrada (continua valendo até nova promessa)
+  a.prom = lp ? sod(new Date(lp.prom+'T00:00:00').getTime()) : null;
+  if(!a.open) return;
+  const due = a.due ? sod(a.due) : null;
+  if(a.prom!=null && a.prom < TODAY){ a.reasons.push({k:'broken', lbl:`Promessa vencida (${fmt(a.prom)})`, cls:'critical', ico:'✕'}); a.score += 140 + daysAgo(a.prom); a.broken = true; }
+  if(due!=null && due < TODAY){
+    if(a.lim!=null && a.lim===a.due){ a.reasons.push({k:'novadata', lbl:`Prazo ${fmt(a.due)} vencido · pedir nova data`, cls:'serious', ico:'↻'}); a.score += 35; }
+    else { const d=daysAgo(a.due); a.reasons.push({k:'late', lbl:`Atrasada ${d}d`, cls:'critical', ico:'⚠'}); a.score += 100+d; a.late=true; }
+  } else if(due!=null && due <= TODAY+2*DAY){
+    const d=Math.round((due-TODAY)/DAY); a.reasons.push({k:'soon', lbl:d===0?'Vence hoje':d===1?'Vence amanhã':'Vence em 2 dias', cls:'warning', ico:'◷'}); a.score += 60-d;
+  }
+  const waiting = (a.r||'').toLowerCase()==='aguardando retorno';
+  if(waiting && a.u && daysAgo(a.u)>=3){ a.reasons.push({k:'wait', lbl:`Aguardando retorno ${daysAgo(a.u)}d`, cls:'serious', ico:'⏳'}); a.score += 25+daysAgo(a.u); }
+  else if(a.u && daysAgo(a.u)>=7){ a.reasons.push({k:'stale', lbl:`Parada há ${daysAgo(a.u)}d`, cls:'neutral', ico:'⏸'}); a.score += 18+Math.min(daysAgo(a.u),30); a.stale=true; }
+  if(!a.due){ a.reasons.push({k:'nodue', lbl:'Sem data', cls:'neutral', ico:'?'}); a.score += 12; }
+  if(!a.owners.length){ a.reasons.push({k:'noown', lbl:'Sem responsável', cls:'neutral', ico:'∅'}); a.score += 12; }
+  const exec = a.owners.filter(o=>!isManager(o)), gps = a.owners.filter(o=>CFG.roles[o]==='gp'), ges = a.owners.filter(o=>CFG.roles[o]==='gestor');
+  a.target = !a.owners.length ? ['∅'] : exec.length?exec : gps.length?gps : ges.length?ges : [gpOf(a.p)];
+  a.mine = !exec.length && !gps.length && ges.length>0;
+  a.recent = a.cobLast && (NOW - a.cobLast.t) < DAY && !a.broken;
+  a.escalar = (a.cobN>=2 && (a.late || a.reasons.some(r=>r.k==='novadata'))) || a.broken;
+}
+const recompute = () => { ACTS.forEach(analisar); PSTATS = DATA.p.map(projStats); };
+
+/* ---------------- histórico e previsão ---------------- */
+const histBy = {};
+HIST.forEach(([k,ts,n])=>{ const w=weekStart(ts); (histBy[k]=histBy[k]||{}); histBy[k][w]=(histBy[k][w]||0)+n; });
+const WEEKS = [...Array(8)].map((_,i)=>THIS_WEEK-(7-i)*WEEK);
+const weekly = k => WEEKS.map(w=>(histBy[k]||{})[w]||0);
+const velocity = k => HIST.filter(([kk,ts])=>kk===k && ts>=NOW-28*DAY).reduce((x,[,,n])=>x+n,0)/4; // últimos 28 dias
+
+/* ---------------- progresso / risco por projeto ---------------- */
+let CALC='fases';
+function progress(p){
+  const acts = p.f.flatMap(f=>f.a).filter(a=>a.s!=='cancelled');
+  if(CALC==='ativ') return acts.length ? acts.filter(a=>a.s==='shipped').length/acts.length : 0;
+  const fs=p.f.filter(f=>f.s!=='cancelled'), fp=f=>{ if(f.s==='shipped') return 1; const v=f.a.filter(a=>a.s!=='cancelled'); return v.length?v.filter(a=>a.s==='shipped').length/v.length:0; };
+  return fs.length ? fs.reduce((s,f)=>s+fp(f),0)/fs.length : 0;
+}
+let PSTATS = [];
+function projStats(p){
+  const acts = ACTS.filter(a=>a.p===p), open = acts.filter(a=>a.open), n = open.length;
+  const cnt = k => open.filter(a=>a.reasons.some(r=>r.k===k)).length;
+  const late=cnt('late'), novadata=cnt('novadata'), soon=cnt('soon'), stale=cnt('stale'), wait=cnt('wait'), nodue=cnt('nodue'), noown=cnt('noown'), broken=cnt('broken');
+  const soon7 = open.filter(a=>a.due && sod(a.due)>=TODAY && sod(a.due)<=TODAY+7*DAY).length;
+  const vel = velocity(p.k);
+  const deadline = Math.max(0, ...open.filter(a=>a.due).map(a=>sod(a.due))) || null;
+  const weeksNeeded = vel>0 ? n/vel : null;
+  const fcDate = weeksNeeded!=null ? TODAY + Math.ceil(weeksNeeded*7)*DAY : null;
+  const slip = (fcDate && deadline) ? Math.round((fcDate-deadline)/DAY) : null;
+  const fPrazo = n ? clamp((late*3 + broken*3 + novadata*2 + soon*1.5 + soon7*.5) / Math.max(6, n)) : 0;
+  const fParado = n ? clamp((stale + wait*1.5) / n) : 0;
+  const fRitmo = !n ? 0 : vel===0 ? 1 : slip==null ? .3 : clamp(slip/21);
+  const fPlan = n ? clamp((nodue + noown) / (2*n) * 1.4) : 0;
+  const risk = Math.round(100*(0.35*fPrazo + 0.25*fParado + 0.25*fRitmo + 0.15*fPlan));
+  const band = risk>=55?'alto': risk>=30?'medio':'baixo';
+  const next = open.filter(a=>a.due && sod(a.due)>=TODAY).sort((x,y)=>x.due-y.due)[0];
+  const blocked = p.f.some(f=>f.s==='blocked');
+  return {p, k:p.k, n:p.n, gp:gpOf(p), pct:progress(p), open:n, late, novadata, soon, soon7, stale, wait, nodue, noown, broken, vel, deadline, fcDate, slip, weeksNeeded, fPrazo, fParado, fRitmo, fPlan, risk, band, next, blocked, cob: open.filter(a=>a.reasons.length).length};
+}
+const BAND = {alto:{lbl:'Risco alto',cls:'critical',ico:'▲'}, medio:{lbl:'Risco médio',cls:'warning',ico:'◆'}, baixo:{lbl:'Risco baixo',cls:'good',ico:'●'}};
+const bandPill = b => `<span class="st ${BAND[b].cls}"><i>${BAND[b].ico}</i>${BAND[b].lbl}</span>`;
+function fcText(s){
+  if(!s.open) return 'Sem atividades abertas.';
+  if(!s.vel) return `<b>Sem entregas nas últimas 4 semanas</b> — no ritmo atual o projeto não termina. ${s.open} ${plural(s.open,'atividade aberta','atividades abertas')}.`;
+  const sem = s.weeksNeeded<1 ? 'menos de 1 semana' : `~${Math.ceil(s.weeksNeeded)} ${plural(Math.ceil(s.weeksNeeded),'semana')}`;
+  let t = `Ritmo de <b>${s.vel.toFixed(1)}/semana</b> (últimos 28 dias) → faltam ${sem}, termina por volta de <b>${fmt(s.fcDate)}</b>`;
+  if(s.slip!=null) t += s.slip>60 ? `, <b class="n-crit">mais de 2 meses depois</b> do último prazo (${fmt(s.deadline)}).` : s.slip>3 ? `, <b class="n-crit">${s.slip} dias depois</b> do último prazo (${fmt(s.deadline)}).` : s.slip< -3 ? `, <b class="n-good">${-s.slip} dias de folga</b> para o último prazo (${fmt(s.deadline)}).` : `, em linha com o último prazo (${fmt(s.deadline)}).`;
+  else t += '.';
+  return t;
+}
+
+/* ---------------- filtros ---------------- */
+const F = {q:'', proj:'', pessoa:''};
+function pass(a){
+  if(F.proj && a.p.k!==F.proj) return false;
+  if(F.pessoa && !(a.owners.includes(F.pessoa) || (a.target||[]).includes(F.pessoa))) return false;
+  if(F.q){ const q=F.q; if(!(a.n.toLowerCase().includes(q)||a.f.n.toLowerCase().includes(q)||a.p.n.toLowerCase().includes(q)||(a.o||'').toLowerCase().includes(q))) return false; }
+  return true;
+}
+const fila = () => ACTS.filter(a=>a.open && a.reasons.length && pass(a));
+const projsF = () => PSTATS.filter(s=>!F.proj || s.k===F.proj);
+
+/* ---------------- utilidades ---------------- */
+const COLORS=['#3987e5','#d95926','#199e70','#c98500','#d55181','#008300','#9085e9','#e66767'];
+const avColor = n => { let h=0; for(const ch of n) h=(h*31+ch.charCodeAt(0))>>>0; return COLORS[h%8]; };
+const av = n => `<span class="av" style="background:${avColor(n)}" title="${esc(n)}">${n.split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase()}</span>`;
+const rpill = r => `<span class="st ${r.cls}"><i>${r.ico}</i>${esc(r.lbl)}</span>`;
+const link = id => `https://app.clickup.com/t/${id}`;
+const extIco = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>`;
+const toast = m => { const t=document.getElementById('toast'); t.textContent=m; t.classList.add('on'); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('on'),2600); };
+const tip = document.getElementById('tip');
+function hover(el, html){
+  el.addEventListener('mouseenter',()=>{ tip.innerHTML=html(); tip.style.opacity=1; });
+  el.addEventListener('mousemove',e=>{ const w=tip.offsetWidth,h=tip.offsetHeight; let x=e.clientX+14,y=e.clientY+14; if(x+w>innerWidth-8)x=e.clientX-w-14; if(y+h>innerHeight-8)y=e.clientY-h-14; tip.style.left=x+'px'; tip.style.top=y+'px'; });
+  el.addEventListener('mouseleave',()=>tip.style.opacity=0);
+  el.addEventListener('click',()=>tip.style.opacity=0);
+}
+async function copiar(txt){ try{ await navigator.clipboard.writeText(txt); return true; }catch(e){ const ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select(); let ok=false; try{ok=document.execCommand('copy');}catch(_){} ta.remove(); return ok; } }
+const nextBizDay = () => { let d=TODAY+DAY; while([0,6].includes(new Date(d).getDay())) d+=DAY; return d; };
+const ymd = ms => { const d=new Date(ms); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); };
+
+/* ---------------- mensagens com tom ---------------- */
+let TONE = store.get('tc_tone','cordial');
+const TONES = {cordial:'Cordial', direto:'Direto', escalar:'Escalonamento'};
+function msgPessoa(pessoa, itens, tone=TONE){
+  const byP={}; itens.forEach(a=>(byP[a.p.n]=byP[a.p.n]||[]).push(a));
+  const prazo = new Date(nextBizDay()).toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'2-digit'});
+  const head = {
+    cordial:`Olá ${first(pessoa)}, tudo bem? Passando para alinhar alguns pontos dos projetos que dependem de você:`,
+    direto:`${first(pessoa)}, preciso do seu retorno sobre os itens abaixo:`,
+    escalar:`${first(pessoa)}, os itens abaixo já foram cobrados e seguem sem retorno/conclusão. Precisamos resolver hoje:`
+  }[tone];
+  const tail = {
+    cordial:`Consegue atualizar o status no ClickUp e me passar a previsão até ${prazo}? Se tiver algum impedimento, me fala que eu ajudo a destravar. Obrigado!`,
+    direto:`Preciso de status atualizado no ClickUp e uma data de entrega para cada item até ${prazo}.`,
+    escalar:`Preciso de uma data firme para cada item ainda hoje. Sem retorno, vou levar para alinhamento com a coordenação e o gerente do projeto.`
+  }[tone];
+  let t = head+'\n';
+  Object.entries(byP).forEach(([proj,its])=>{ t += `\n*${proj}*\n`; its.forEach(a=>{ t += `• ${a.n} — ${a.reasons.map(r=>r.lbl).join(', ')}${a.cobN?` (já cobrado ${a.cobN}x)`:''}\n  ${link(a.id)}\n`; }); });
+  return t + '\n' + tail + (CFG.me?`\n— ${CFG.me}`:'');
+}
+function msgAtribuir(itens){
+  const byG={}; itens.forEach(a=>{ const g=gpOf(a.p); (byG[g]=byG[g]||{}); (byG[g][a.p.n]=byG[g][a.p.n]||[]).push(a); });
+  return Object.entries(byG).map(([g,bp])=>`Oi ${first(g)}, tudo bem? Estes itens estão sem responsável no ClickUp — consegue atribuir quem executa e a data de cada um até ${new Date(nextBizDay()).toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'2-digit'})}?\n`+Object.entries(bp).map(([proj,its])=>`\n*${proj}* (${its.length})\n`+its.slice(0,25).map(a=>`• ${a.n}${a.due?' — prazo '+fmt(a.due):' — sem data'}\n  ${link(a.id)}`).join('\n')+(its.length>25?`\n• +${its.length-25} itens na lista do projeto`:'')).join('\n')+(CFG.me?`\n\nObrigado!\n— ${CFG.me}`:'\n\nObrigado!')).join('\n\n---\n\n');
+}
+function msgStatus(s){
+  const p=s.p, acts=ACTS.filter(a=>a.p===p);
+  const semana=acts.filter(a=>a.open&&a.due&&sod(a.due)>=TODAY&&sod(a.due)<=TODAY+7*DAY).sort((x,y)=>x.due-y.due);
+  const crit=acts.filter(a=>a.open&&(a.late||a.broken));
+  let t=`*Status · ${p.n}* — ${new Date().toLocaleDateString('pt-BR')}\nGerente: ${s.gp} · Progresso: ${Math.round(s.pct*100)}% · ${BAND[s.band].lbl} (${s.risk}/100)\n`;
+  t+=`Previsão: ${fcText(s).replace(/<[^>]+>/g,'')}\n\nFases:\n`+p.f.filter(f=>!f.v).map(f=>{const v=f.a.filter(a=>a.s!=='cancelled');return `• ${f.n}: ${v.filter(a=>a.s==='shipped').length}/${v.length}`;}).join('\n');
+  if(crit.length) t+=`\n\n⚠ Críticos (${crit.length}):\n`+crit.map(a=>`• ${a.n} — ${a.reasons[0].lbl} (${a.owners.join(', ')||'sem responsável'})`).join('\n');
+  t+=`\n\nPróximos 7 dias (${semana.length}):\n`+(semana.length?semana.slice(0,12).map(a=>`• ${fmt(a.due)} — ${a.n} (${a.owners.map(short).join(', ')||'sem responsável'})`).join('\n')+(semana.length>12?`\n• +${semana.length-12} itens`:''):'• nenhuma entrega prevista');
+  t+=`\n\nAtenção: ${s.stale} parada(s) 7+ dias · ${s.wait} aguardando retorno · ${s.nodue} sem data · ${s.noown} sem responsável.`;
+  return t;
+}
+function toneHtml(){ return Object.entries(TONES).map(([k,l])=>`<button data-t="${k}" class="${TONE===k?'on':''}">${l}</button>`).join(''); }
+function bindTone(){ document.querySelectorAll('[data-tone]').forEach(el=>{ el.innerHTML=toneHtml(); el.querySelectorAll('button').forEach(b=>b.onclick=()=>{ TONE=b.dataset.t; store.set('tc_tone',TONE); bindTone(); }); }); }
+
+/* ================= VIEW: HOJE ================= */
+function gaugeSvg(v, color){
+  const r=34, c=2*Math.PI*r, off=c*(1-v/100);
+  return `<svg width="86" height="86" viewBox="0 0 86 86"><circle cx="43" cy="43" r="${r}" fill="none" stroke="var(--track)" stroke-width="9"/><circle cx="43" cy="43" r="${r}" fill="none" stroke="${color}" stroke-width="9" stroke-linecap="round" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" transform="rotate(-90 43 43)"/><text x="43" y="49" text-anchor="middle" style="fill:var(--ink);font-size:20px;font-weight:800">${v}</text></svg>`;
+}
+function renderHoje(){
+  const Q = fila(), S = projsF();
+  const h = new Date().getHours(), saud = h<12?'Bom dia':h<18?'Boa tarde':'Boa noite';
+  const alto = S.filter(s=>s.band==='alto'), late = Q.filter(a=>a.late).length, broken = Q.filter(a=>a.broken).length;
+  const soon = Q.filter(a=>a.reasons.some(r=>r.k==='soon'));
+  const per={}; Q.forEach(a=>a.owners.filter(o=>!isManager(o)).forEach(t=>(per[t]=per[t]||0, per[t]++)));
+  const top = Object.entries(per).sort((a,b)=>b[1]-a[1]);
+  const slipping = S.filter(s=>s.slip!=null && s.slip>7).sort((a,b)=>b.slip-a.slip);
+  const stuck = S.filter(s=>s.open && !s.vel);
+  const port = Math.round(S.reduce((x,s)=>x+s.risk,0)/Math.max(1,S.length));
+  let ps = [];
+  ps.push(alto.length ? `<b>${alto.length} ${plural(alto.length,'projeto')} em risco alto</b>: ${alto.map(s=>s.n).join(', ')}.` : `Nenhum projeto em risco alto hoje. 👍`);
+  if(late||broken) ps.push(`Há <b>${late} ${plural(late,'atividade atrasada','atividades atrasadas')}</b>${broken?` e <b>${broken} ${plural(broken,'promessa vencida','promessas vencidas')}</b>`:''} esperando cobrança.`);
+  if(soon.length) ps.push(`<b>${soon.length} ${plural(soon.length,'entrega vence','entregas vencem')} em até 2 dias</b> — vale confirmar agora com ${[...new Set(soon.flatMap(a=>a.target))].slice(0,3).map(first).join(', ')}.`);
+  if(top.length) ps.push(`No delivery, quem concentra mais pendências: <b>${short(top[0][0])}</b> (${top[0][1]})${top[1]?`, ${short(top[1][0])} (${top[1][1]})`:''}.`);
+  const sr=Q.filter(a=>!a.owners.length).length; if(sr) ps.push(`<b>${sr} ${plural(sr,'item','itens')} sem responsável</b> no ClickUp — cabe ao gerente atribuir.`);
+  if(slipping.length) ps.push(`No ritmo atual, ${slipping.length>1?`<b>${slipping.length} projetos</b> terminam depois do prazo — o pior é <b>${slipping[0].n}</b>`:`<b>${slipping[0].n}</b> termina depois do prazo`} (${slipping[0].slip>60?'mais de 2 meses':'~'+slipping[0].slip+' dias'} de atraso previsto).`);
+  if(stuck.length) ps.push(`${stuck.map(s=>s.n).join(', ')} ${stuck.length>1?'não tiveram':'não teve'} nenhuma entrega nas últimas 4 semanas.`);
+  document.getElementById('brief').innerHTML = `<h2>${saud}, ${esc(CFG.me||'gestor')}.</h2><div class="date">${new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'})} · dados do ClickUp de ${new Date(DATA.sync).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}</div>${ps.map(x=>`<p>${x}</p>`).join('')}`;
+  const col = port>=55?'var(--critical)':port>=30?'var(--warning)':'var(--good)';
+  const doneW = WEEKS.slice(-1)[0], thisW = DATA.p.reduce((x,p)=>x+((histBy[p.k]||{})[THIS_WEEK]||0),0), lastW = DATA.p.reduce((x,p)=>x+((histBy[p.k]||{})[THIS_WEEK-WEEK]||0),0);
+  document.getElementById('pulse').innerHTML = `<h3>Pulso do portfólio</h3>
+    <div class="gauge">${gaugeSvg(port,col)}<div class="g-txt"><b>${port>=55?'Risco alto':port>=30?'Risco moderado':'Sob controle'}</b><small>índice médio de risco (0–100) dos ${S.length} projetos</small></div></div>
+    <div class="mini-stats"><div><b>${lastW}</b><small>entregas semana passada</small></div><div><b>${thisW}</b><small>entregas nesta semana</small></div><div><b>${Object.values(COB).flat().filter(c=>NOW-c.t<7*DAY).length}</b><small>cobranças em 7 dias</small></div></div>`;
+
+  const kp = [
+    ['Atrasadas', late, `${Q.filter(a=>a.reasons.some(r=>r.k==='novadata')).length} com prazo vencido sem nova data`, late?'alert':'', 'cobrancas'],
+    ['Vencem em até 2 dias', soon.length, 'confirmar com o responsável', soon.length?'warn':'', 'agenda'],
+    ['Paradas 7+ dias', Q.filter(a=>a.stale).length, 'sem atualização no ClickUp', '', 'cobrancas'],
+    ['Promessas vencidas', broken, 'compromissos registrados não cumpridos', broken?'alert':'', 'cobrancas'],
+    ['Sem dono / sem data', `${Q.filter(a=>!a.owners.length).length} / ${Q.filter(a=>!a.due).length}`, 'planejamento incompleto', '', 'cobrancas'],
+    ['Projetos em risco alto', alto.length, `de ${S.length} ativos`, alto.length?'alert':'', 'riscos'],
+  ];
+  document.getElementById('kpis').innerHTML = kp.map(([l,v,s,c,go])=>`<div class="kpi click ${c}" data-go="${go}"><div class="lbl">${l}</div><div class="val">${v}</div><div class="sub">${s}</div></div>`).join('');
+  document.querySelectorAll('#kpis .kpi').forEach(k=>k.onclick=()=>setView(k.dataset.go));
+  renderActions(Q, S);
+  renderMatrix('matrixHoje', S, 330);
+  bindTone();
+}
+function buildActions(Q, S){
+  const A=[];
+  const byT = {}; Q.forEach(a=>a.target.forEach(t=>(byT[t]=byT[t]||[]).push(a)));
+  Object.entries(byT).forEach(([n,its])=>{
+    if(n==='∅') return;
+    const pend = its.filter(a=>!a.recent);
+    const mine = CFG.roles[n]==='gestor';
+    const br = pend.filter(a=>a.broken); if(br.length) A.push({id:'br|'+n, pr:200+br.length, cls:'critical', ico:'✕', t:`Escalar ${short(n)}: ${br.length} ${plural(br.length,'promessa vencida','promessas vencidas')}`, d:br.slice(0,3).map(a=>a.n).join(' · '), who:n, items:br, tone:'escalar'});
+    const lt = pend.filter(a=>a.late && !a.broken); if(lt.length) A.push({id:'lt|'+n, pr:150+lt.length*3, cls:'critical', ico:'⚠', t:`Cobrar ${short(n)}: ${lt.length} ${plural(lt.length,'atividade atrasada','atividades atrasadas')}`, d:[...new Set(lt.map(a=>a.p.n))].join(', ')+' — '+lt.slice(0,2).map(a=>a.n).join(' · '), who:n, items:lt, tone: lt.some(a=>a.cobN>=2)?'escalar':'direto'});
+    const sn = pend.filter(a=>a.reasons.some(r=>r.k==='soon')); if(sn.length) A.push({id:'sn|'+n, pr:(mine?95:110)+sn.length, cls:'warning', ico:'◷', t: mine?`Suas entregas: ${sn.length} ${plural(sn.length,'item vence','itens vencem')} em até 2 dias`:`Confirmar com ${short(n)}: ${sn.length} ${plural(sn.length,'entrega','entregas')} em até 2 dias`, d:sn.slice(0,3).map(a=>`${a.n} (${fmt(a.due)})`).join(' · '), who:mine?null:n, items:sn, tone:'cordial'});
+    const nd = pend.filter(a=>a.reasons.some(r=>r.k==='novadata')); if(nd.length) A.push({id:'nd|'+n, pr:90+nd.length, cls:'serious', ico:'↻', t:`Pedir nova data a ${short(n)}: ${nd.length} ${plural(nd.length,'item','itens')} com prazo vencido`, d:[...new Set(nd.map(a=>a.p.n))].join(', '), who:n, items:nd, tone:'direto'});
+    const st = pend.filter(a=>a.stale && a.u && daysAgo(a.u)>=14 && !a.late); if(st.length>=2) A.push({id:'st|'+n, pr:60+st.length, cls:'neutral', ico:'⏸', t:`Destravar com ${short(n)}: ${st.length} itens parados há 14+ dias`, d:st.slice(0,3).map(a=>`${a.n} (${daysAgo(a.u)}d)`).join(' · '), who:n, items:st, tone:'cordial'});
+  });
+  const wt = Q.filter(a=>a.reasons.some(r=>r.k==='wait')); if(wt.length){ const bp={}; wt.forEach(a=>bp[a.p.n]=(bp[a.p.n]||0)+1); A.push({id:'wt', pr:85, cls:'serious', ico:'⏳', t:`Cobrar retorno externo: ${wt.length} ${plural(wt.length,'item','itens')} aguardando retorno`, d:Object.entries(bp).map(([k,v])=>`${k} (${v})`).join(', ')+' — normalmente cliente/terceiro', items:wt}); }
+  S.forEach(s=>{
+    if(s.slip!=null && s.slip>7) A.push({id:'rp|'+s.k, pr:120+s.slip, cls:'critical', ico:'▲', t:`Replanejar ${s.n}: termina ${s.slip>60?'mais de 2 meses':'~'+s.slip+' dias'} após o prazo`, d:`Ritmo ${s.vel.toFixed(1)}/sem · ${s.open} abertas · último prazo ${fmt(s.deadline)}`, proj:s.k});
+    if(s.open && !s.vel) A.push({id:'nv|'+s.k, pr:100, cls:'serious', ico:'▼', t:`${s.n} sem entregas há 4 semanas`, d:`${s.open} atividades abertas — alinhar prioridade com ${short(s.gp)}`, proj:s.k});
+    if(s.noown>=3) A.push({id:'no|'+s.k, pr:70+Math.min(s.noown,20), cls:'neutral', ico:'∅', t:`Definir responsáveis em ${s.n}: ${s.noown} itens sem dono`, d:`Pedir para ${short(s.gp)} atribuir no ClickUp`, proj:s.k, who:s.gp, items:Q.filter(a=>a.p===s.p && !a.owners.length), tone:'cordial'});
+  });
+  return A.sort((a,b)=>b.pr-a.pr);
+}
+function renderActions(Q, S){
+  const A = buildActions(Q,S), el = document.getElementById('actions');
+  const open = A.filter(a=>!DONE[a.id]).length;
+  document.getElementById('cntHoje').textContent = open || '';
+  el.innerHTML = A.length ? A.slice(0,12).map(a=>`<div class="act ${DONE[a.id]?'done':''}">
+      <div class="act-ico ${a.cls}">${a.ico}</div>
+      <div class="act-t"><b>${esc(a.t)}</b><small>${esc(a.d)}</small></div>
+      <div class="act-b">${a.items&&a.who?`<button class="btn xs primary" data-amsg="${esc(a.id)}">Copiar mensagem</button>`:''}${a.proj?`<button class="btn xs" data-aproj="${esc(a.proj)}">Abrir projeto</button>`:''}${a.items&&!a.proj?`<button class="btn xs" data-aver="${esc(a.who||'')}">Ver itens</button>`:''}<button class="btn xs ${DONE[a.id]?'ok':''}" data-adone="${esc(a.id)}">${DONE[a.id]?'✓ Feito':'Marcar feito'}</button></div>
+    </div>`).join('') + (A.length>12?`<div class="empty" style="padding:12px">+${A.length-12} ações menores na aba Cobranças</div>`:'') : `<div class="empty">Nada urgente hoje. 🎉</div>`;
+  el.querySelectorAll('[data-amsg]').forEach(b=>b.onclick=async()=>{ const a=A.find(x=>x.id===b.dataset.amsg); if(await copiar(msgPessoa(a.who, a.items, TONE==='cordial'&&a.tone?a.tone:TONE))){ registrar(a.items.map(i=>i.id),{canal:'mensagem'}); DONE[a.id]=1; store.set(todayKey,DONE); recompute(); render(); toast(`Mensagem para ${first(a.who)} copiada e cobrança registrada`); } });
+  el.querySelectorAll('[data-aproj]').forEach(b=>b.onclick=()=>openDrawer(b.dataset.aproj));
+  el.querySelectorAll('[data-aver]').forEach(b=>b.onclick=()=>{ if(b.dataset.aver){ setPessoa(b.dataset.aver); } setView('cobrancas'); });
+  el.querySelectorAll('[data-adone]').forEach(b=>b.onclick=()=>{ const id=b.dataset.adone; if(DONE[id]) delete DONE[id]; else DONE[id]=1; store.set(todayKey,DONE); renderActions(Q,S); });
+}
+function renderMatrix(elId, S, H){
+  const el=document.getElementById(elId), W=el.clientWidth||520, pad={l:40,r:16,t:14,b:34};
+  const maxImp = Math.max(10, ...S.map(s=>s.open));
+  const X = s => clamp(0.6*s.fPrazo + 0.4*s.fRitmo), Y = s => clamp(s.open/maxImp*0.7 + s.fParado*0.3);
+  const x = v => pad.l + v*(W-pad.l-pad.r), y = v => pad.t + (1-v)*(H-pad.t-pad.b);
+  let svg = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="Matriz de risco dos projetos">`;
+  svg += `<rect x="${x(.5)}" y="${y(1)}" width="${x(1)-x(.5)}" height="${y(.5)-y(1)}" fill="var(--critical-soft)" rx="8"/>`;
+  svg += `<rect x="${x(0)}" y="${y(.5)}" width="${x(.5)-x(0)}" height="${y(0)-y(.5)}" fill="var(--good-soft)" rx="8"/>`;
+  svg += `<line x1="${x(.5)}" x2="${x(.5)}" y1="${y(1)}" y2="${y(0)}" stroke="var(--line-2)" stroke-dasharray="3 4"/><line x1="${x(0)}" x2="${x(1)}" y1="${y(.5)}" y2="${y(.5)}" stroke="var(--line-2)" stroke-dasharray="3 4"/>`;
+  svg += `<text class="q" x="${x(1)-6}" y="${y(1)+16}" text-anchor="end">Atenção imediata</text><text class="q" x="${x(0)+6}" y="${y(0)-8}">Sob controle</text><text class="q" x="${x(1)-6}" y="${y(0)-8}" text-anchor="end">Acompanhar de perto</text><text class="q" x="${x(0)+6}" y="${y(1)+16}">Grande, mas no ritmo</text>`;
+  svg += `<text class="ax" x="${x(.5)}" y="${H-6}" text-anchor="middle">probabilidade de atraso →</text><text class="ax" transform="translate(12 ${y(.5)}) rotate(-90)" text-anchor="middle">impacto →</text>`;
+  const pts = S.map(s=>({s, cx:x(X(s)), cy:y(Y(s)), r:7+Math.sqrt(s.open)*1.6}));
+  const placed = [[x(1)-110,y(1)+4,110,14],[x(0)+4,y(0)-20,90,14],[x(1)-130,y(0)-20,130,14],[x(0)+4,y(1)+4,140,14]];
+  const hit = (a,b) => !(a[0]+a[2]<b[0] || b[0]+b[2]<a[0] || a[1]+a[3]<b[1] || b[1]+b[3]<a[1]);
+  const bubbles = pts.map(p=>[p.cx-p.r,p.cy-p.r,2*p.r,2*p.r]);
+  pts.sort((a,b)=>b.r-a.r).forEach(p=>{
+    const c = p.s.band==='alto'?'var(--critical)':p.s.band==='medio'?'var(--warning)':'var(--good)';
+    svg += `<circle cx="${p.cx}" cy="${p.cy}" r="${p.r}" fill="${c}" fill-opacity=".85" stroke="var(--surface)" stroke-width="2"/>`;
+  });
+  pts.forEach(p=>{
+    const lbl = p.s.n.length>16?p.s.n.slice(0,15)+'…':p.s.n, w = lbl.length*6.4+4, h=13;
+    const cands = [[p.cx-w/2, p.cy-p.r-h-3],[p.cx-w/2, p.cy+p.r+3],[p.cx+p.r+4, p.cy-h/2],[p.cx-p.r-4-w, p.cy-h/2],[p.cx-w/2, p.cy-p.r-h-16],[p.cx-w/2, p.cy+p.r+16]]
+      .map(([lx,ly])=>[Math.max(pad.l, Math.min(W-pad.r-w, lx)), Math.max(0, Math.min(H-pad.b-h, ly)), w, h]);
+    const own = [p.cx-p.r,p.cy-p.r,2*p.r,2*p.r];
+    const pick = cands.find(r=>!placed.some(q=>hit(r,q)) && !bubbles.some(b=>b.join()!==own.join() && hit(r,b))) || cands.find(r=>!placed.some(q=>hit(r,q))) || cands[0];
+    placed.push(pick);
+    svg += `<text x="${pick[0]+w/2}" y="${pick[1]+h-3}" text-anchor="middle" style="fill:var(--ink);font-size:11px;font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:3px">${esc(lbl)}</text>`;
+  });
+  pts.forEach(p=>{ svg += `<circle cx="${p.cx}" cy="${p.cy}" r="${Math.max(p.r+6,14)}" fill="transparent" data-mk="${p.s.k}" style="cursor:pointer"/>`; });
+  el.innerHTML = svg+'</svg>';
+  const rk = S.slice().sort((a,b)=>b.risk-a.risk);
+  el.innerHTML += `<div style="margin-top:14px;border-top:1px solid var(--line);padding-top:10px">${rk.map(r=>`<div class="fac" data-rk="${r.k}" style="cursor:pointer;grid-template-columns:130px minmax(0,1fr) 34px;padding:3px 0" title="${esc(r.n)}"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(r.n)}</span><div class="bar"><span style="width:${r.risk}%;background:${r.band==='alto'?'var(--critical)':r.band==='medio'?'var(--warning)':'var(--good)'}"></span></div><em>${r.risk}</em></div>`).join('')}</div>`;
+  el.querySelectorAll('[data-rk]').forEach(r=>r.onclick=()=>openDrawer(r.dataset.rk));
+  el.querySelectorAll('[data-mk]').forEach(c=>{ const s=PSTATS.find(x=>x.k===c.dataset.mk); hover(c,()=>`<b>${esc(s.n)} · ${s.risk}/100</b><div class="r">Abertas<em>${s.open}</em></div><div class="r">Atrasadas / vencidas<em>${s.late+s.novadata}</em></div><div class="r">Paradas 7+ dias<em>${s.stale}</em></div><div class="r">Ritmo<em>${s.vel.toFixed(1)}/sem</em></div>`); c.onclick=()=>openDrawer(s.k); });
+}
+
+/* ================= VIEW: RISCOS ================= */
+let RSORT='risk';
+function facRow(lbl, v, why){ const c = v>=.55?'var(--critical)':v>=.3?'var(--warning)':'var(--good)'; return `<div class="fac" title="${esc(why)}"><span>${lbl}</span><div class="bar"><span style="width:${Math.round(v*100)}%;background:${c}"></span></div><em>${Math.round(v*100)}</em></div>`; }
+function sparkHtml(k){ const w=weekly(k), m=Math.max(1,...w); return `<div class="spark" data-sp="${k}">${w.map((v,i)=>`<span class="${i===7?'cur':''}" style="height:${Math.max(2,v/m*34)}px" data-i="${i}"></span>`).join('')}</div>`; }
+function bindSparks(root){ root.querySelectorAll('[data-sp]').forEach(sp=>{ const w=weekly(sp.dataset.sp); sp.querySelectorAll('span').forEach(b=>hover(b,()=>`<b>Semana de ${fmt(WEEKS[+b.dataset.i])}</b><div class="r">Atividades concluídas<em>${w[+b.dataset.i]}</em></div>${+b.dataset.i===7?'<div class="r">semana em andamento</div>':''}`)); }); }
+function renderRiscos(){
+  const S = projsF().slice().sort((a,b)=> RSORT==='risk'?b.risk-a.risk : RSORT==='slip'?(b.slip??-999)-(a.slip??-999) : a.n.localeCompare(b.n));
+  const g=document.getElementById('riskGrid');
+  g.innerHTML = S.map(s=>`<div class="rcard ${s.band}" data-k="${s.k}">
+    <div class="rc-top"><div><b>${esc(s.n)}</b><small>${esc(s.p.d)} · GP ${esc(short(s.gp))}</small><div style="margin-top:6px">${bandPill(s.band)}${s.blocked?' <span class="st neutral"><i>⛔</i>Impedimento</span>':''}</div></div>
+      <div class="score"><b class="${s.band==='alto'?'n-crit':s.band==='medio'?'n-warn':'n-good'}">${s.risk}</b><small class="zero">/100</small></div></div>
+    <div class="factors">
+      ${facRow('Pressão de prazo', s.fPrazo, `${s.late} atrasada(s), ${s.novadata} com prazo vencido, ${s.soon7} vencendo em 7 dias`)}
+      ${facRow('Itens parados', s.fParado, `${s.stale} parada(s) 7+ dias, ${s.wait} aguardando retorno`)}
+      ${facRow('Ritmo × prazo', s.fRitmo, s.vel? `ritmo ${s.vel.toFixed(1)}/semana; ${s.slip!=null?(s.slip>0?s.slip+' dias após':(-s.slip)+' dias antes de')+' o prazo':'sem prazo final'}` : 'sem entregas nas últimas 4 semanas')}
+      ${facRow('Planejamento', s.fPlan, `${s.nodue} sem data, ${s.noown} sem responsável`)}
+    </div>
+    <div class="forecast">${sparkHtml(s.k)}<div>${fcText(s)}</div></div>
+  </div>`).join('') || '<div class="empty">Nenhum projeto.</div>';
+  g.querySelectorAll('.rcard').forEach(c=>c.onclick=e=>{ if(!e.target.closest('[data-sp]')) openDrawer(c.dataset.k); });
+  bindSparks(g);
+}
+
+/* ================= VIEW: COBRANÇAS ================= */
+let SHOW_RECENT=false;
+function renderCob(){
+  const Q=fila(), groups={};
+  Q.forEach(a=>a.target.forEach(t=>(groups[t]=groups[t]||[]).push(a)));
+  const G = Object.entries(groups).map(([n,its])=>{ its.sort((x,y)=>(x.recent-y.recent)||(y.score-x.score)); const pend=its.filter(a=>!a.recent); return {n, its, pend, score:pend.reduce((s,a)=>s+a.score,0), role:n==='∅'?'none':(CFG.roles[n]||'delivery')}; })
+    .sort((a,b)=>((a.role==='none')-(b.role==='none')) || ((a.role==='gestor')-(b.role==='gestor')) || (b.score-a.score));
+  const recent=Q.filter(a=>a.recent).length;
+  document.getElementById('cntCob').textContent = Q.filter(a=>a.late||a.broken).length || '';
+  const card=document.getElementById('cobCard');
+  card.innerHTML = `<div class="card-h"><h2>Fila de cobrança</h2><p>${Q.length} itens · ${G.length} pessoas · ordenado por urgência</p><div class="right"><span style="font-size:12px;color:var(--ink-3)">Tom da mensagem</span><div class="tone" data-tone></div></div></div>
+    <div class="q-tools"><label><input type="checkbox" id="chkRecent" ${SHOW_RECENT?'checked':''}> Mostrar cobrados nas últimas 24h (${recent})</label><span style="font-size:12px;color:var(--ink-3)">Registre a cobrança com a <b>data prometida</b>: se passar e o item não for concluído, ele volta como <b>promessa vencida</b>.</span></div>` +
+  (G.length ? G.map(g=>{
+    const show = SHOW_RECENT?g.its:g.pend, late=g.its.filter(a=>a.late).length, esc2=g.its.filter(a=>a.escalar).length;
+    return `<div class="q-person" data-p="${esc(g.n)}"><div class="q-ph">${g.role==='none'?'<span class="av" style="background:var(--muted-fill)">∅</span>':av(g.n)}<div><b>${g.role==='none'?'Sem responsável no ClickUp':esc(g.n)}</b><small>${g.role==='none'?'o gerente precisa atribuir quem executa':g.role==='gestor'?'Você · itens só com você':ROLE_LBL[g.role]} · ${g.pend.length} a cobrar${g.its.length-g.pend.length?` · ${g.its.length-g.pend.length} cobrado(s) hoje`:''}</small></div>
+      <div class="right">${late?`<span class="st critical"><i>⚠</i>${late} atrasada(s)</span>`:''}${esc2?`<span class="st critical"><i>↑</i>${esc2} p/ escalar</span>`:''}${g.role==='gestor'?'':g.role==='none'?`<button class="btn sm primary" data-atrib="1" ${g.pend.length?'':'disabled'}>Copiar pedido p/ gerente</button>`:`<button class="btn sm primary" data-msg="${esc(g.n)}" ${g.pend.length?'':'disabled'}>Copiar cobrança</button>`}<button class="btn sm" data-all="${esc(g.n)}" ${g.pend.length?'':'disabled'}>Registrar todos</button></div></div>
+      ${show.map(a=>`<div class="q-item ${a.recent?'recent':''}" data-id="${a.id}">
+        <div class="t"><b><a href="${link(a.id)}" target="_blank" title="${esc(a.n)}">${esc(a.n)}</a></b><small>${esc(a.p.n)} · ${esc(a.f.n)}${a.due?' · prazo '+fmt(a.due):''}${a.u?' · atualizada há '+daysAgo(a.u)+'d':''}${a.owners.length>1?' · com '+esc(a.owners.filter(o=>o!==g.n).map(first).join(', ')):''}</small></div>
+        <div class="reasons">${a.escalar&&!a.broken?'<span class="st critical"><i>↑</i>ESCALAR</span>':''}${a.prom&&!a.broken?`<span class="st brand"><i>✓</i>Prometido p/ ${fmt(a.prom)}</span>`:''}${a.reasons.map(rpill).join('')}</div>
+        <div class="q-act">${a.recent?`<button class="btn sm ok" data-undo="${a.id}">✓ Cobrado</button>`:`<button class="btn sm" data-reg="${a.id}">Registrar cobrança</button>`}<small>${a.cobN?`${a.cobN}x · última ${daysAgo(a.cobLast.t)===0?'hoje':'há '+daysAgo(a.cobLast.t)+'d'}${a.cobLast.canal?' · '+esc(a.cobLast.canal):''}`:'nunca cobrado'}</small></div>
+        <div class="reg" data-reg-form="${a.id}">
+          <label>Canal<select class="ctl" data-f="canal"><option>Teams</option><option>WhatsApp</option><option>E-mail</option><option>Reunião</option><option>Ligação</option></select></label>
+          <label>Prometeu entregar em<input type="date" class="ctl" data-f="prom" value="${ymd(nextBizDay())}"></label>
+          <label style="flex:1;min-width:160px">Observação<input class="ctl" data-f="nota" placeholder="opcional"></label>
+          <button class="btn sm primary" data-save="${a.id}">Salvar</button><button class="btn sm ghost" data-cancel="${a.id}">Cancelar</button>
+        </div>
+      </div>`).join('') || '<div class="empty" style="padding:12px">Tudo cobrado nas últimas 24h ✓</div>'}</div>`;
+  }).join('') : '<div class="empty">Nada a cobrar com esses filtros 🎉</div>');
+  bindTone();
+  document.getElementById('chkRecent').onchange=e=>{ SHOW_RECENT=e.target.checked; renderCob(); };
+  card.querySelectorAll('[data-reg]').forEach(b=>b.onclick=()=>card.querySelector(`[data-reg-form="${b.dataset.reg}"]`).classList.add('on'));
+  card.querySelectorAll('[data-cancel]').forEach(b=>b.onclick=()=>card.querySelector(`[data-reg-form="${b.dataset.cancel}"]`).classList.remove('on'));
+  card.querySelectorAll('[data-save]').forEach(b=>b.onclick=()=>{ const f=card.querySelector(`[data-reg-form="${b.dataset.save}"]`), v=k=>f.querySelector(`[data-f="${k}"]`).value; registrar([b.dataset.save],{canal:v('canal'), prom:v('prom')||null, nota:v('nota')||null}); recompute(); render(); toast('Cobrança registrada'+(v('prom')?` · prometido para ${fmt(new Date(v('prom')+'T00:00:00').getTime())}`:'')); });
+  card.querySelectorAll('[data-undo]').forEach(b=>b.onclick=()=>{ desfazer(b.dataset.undo); recompute(); render(); toast('Registro desfeito'); });
+  card.querySelectorAll('[data-all]').forEach(b=>b.onclick=()=>{ const g=G.find(x=>x.n===b.dataset.all); registrar(g.pend.map(a=>a.id),{canal:'mensagem'}); recompute(); render(); toast(`${g.pend.length} cobrança(s) registrada(s) para ${first(g.n)}`); });
+  card.querySelectorAll('[data-atrib]').forEach(b=>b.onclick=async()=>{ const g=G.find(x=>x.n==='∅'); if(await copiar(msgAtribuir(g.pend))){ registrar(g.pend.map(a=>a.id),{canal:'mensagem'}); recompute(); render(); toast('Pedido de atribuição copiado para o gerente'); } });
+  card.querySelectorAll('[data-msg]').forEach(b=>b.onclick=async()=>{ const g=G.find(x=>x.n===b.dataset.msg); if(await copiar(msgPessoa(g.n,g.pend))){ registrar(g.pend.map(a=>a.id),{canal:'mensagem'}); recompute(); render(); toast(`Mensagem (${TONES[TONE]}) para ${first(g.n)} copiada e registrada — cole no Teams/WhatsApp`); } });
+}
+
+/* ================= VIEW: PESSOAS ================= */
+const SEG = [['late','Atrasada','var(--critical)'],['soon','Vence em 2 dias','var(--warning)'],['risk','Prazo vencido / parada','var(--serious)'],['ok','No prazo','var(--s1)'],['nodue','Sem data','var(--muted-fill)']];
+function catOf(a){ if(a.late||a.broken) return 'late'; if(a.reasons.some(r=>r.k==='soon')) return 'soon'; if(a.reasons.some(r=>['novadata','stale','wait'].includes(r.k))) return 'risk'; if(!a.due) return 'nodue'; return 'ok'; }
+function renderPessoas(){
+  document.getElementById('pLegend').innerHTML = SEG.map(([,l,c],i)=>`<span><i class="${i===4?'hatch':''}" style="background:${c}"></i>${l}</span>`).join('');
+  const open = ACTS.filter(a=>a.open && (!F.proj||a.p.k===F.proj) && (!F.q||a.n.toLowerCase().includes(F.q)));
+  const per={}; open.forEach(a=>(a.owners.length?a.owners:['—']).forEach(o=>(per[o]=per[o]||[]).push(a)));
+  const rows = Object.entries(per).filter(([n])=>!F.pessoa||n===F.pessoa).map(([n,its])=>{
+    const cob = its.filter(a=>a.cobN).length, proms = its.filter(a=>a.prom), broken = its.filter(a=>a.broken).length;
+    const atRisk = its.filter(a=>['late','soon','risk'].includes(catOf(a))).length;
+    return {n, its, cob, proms, broken, atRisk, max: its.length};
+  }).sort((a,b)=>(b.atRisk-a.atRisk)||(b.its.length-a.its.length));
+  const max = Math.max(1,...rows.map(r=>r.its.length));
+  document.getElementById('people').innerHTML = rows.map(r=>{
+    const parts = SEG.map(([k,,c],i)=>[k,c,r.its.filter(a=>catOf(a)===k).length,i]).filter(x=>x[2]);
+    const projs = [...new Set(r.its.map(a=>a.p.n))];
+    const lvl = r.its.filter(a=>catOf(a)==='late').length ? 'critical' : r.atRisk ? 'warning' : 'good';
+    const nm = r.n==='—'?'Sem responsável':r.n;
+    return `<div class="pc"><div class="pc-top">${r.n==='—'?'<span class="av" style="background:var(--muted-fill)">?</span>':av(r.n)}<div><b>${esc(nm)}</b><small>${r.n==='—'?'itens sem dono no ClickUp':ROLE_LBL[CFG.roles[r.n]]||''}</small></div><span class="st ${lvl}"><i>${lvl==='critical'?'⚠':lvl==='warning'?'!':'✓'}</i>${lvl==='critical'?'Atrasos':lvl==='warning'?'Atenção':'Em dia'}</span></div>
+      <div class="load" style="width:${Math.max(8,r.its.length/max*100)}%" data-pn="${esc(r.n)}">${parts.map(([k,c,v,i])=>`<span class="${i===4?'hatch':''}" data-k="${k}" data-v="${v}" style="flex:${v};background:${c}"></span>`).join('')}</div>
+      <div class="pc-stats"><div><b>${r.its.length}</b><small>abertas</small></div><div><b class="${r.atRisk?'n-warn':''}">${r.atRisk}</b><small>em risco</small></div><div><b>${r.cob}</b><small>já cobradas</small></div><div><b class="${r.broken?'n-crit':''}">${r.proms.length?`${r.proms.length-r.broken}/${r.proms.length}`:'—'}</b><small>promessas ok</small></div></div>
+      <div class="pc-proj">${projs.map(p=>`<span class="st neutral">${esc(p)}</span>`).join('')}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">${r.n!=='—'&&!isManager(r.n)?`<button class="btn sm primary" data-pmsg="${esc(r.n)}">Copiar cobrança</button>`:''}<button class="btn sm" data-pver="${esc(r.n)}">Ver itens</button></div></div>`;
+  }).join('') || '<div class="empty">Ninguém com itens abertos.</div>';
+  document.querySelectorAll('.load').forEach(l=>l.querySelectorAll('span').forEach(s=>hover(s,()=>`<b>${esc(l.dataset.pn==='—'?'Sem responsável':l.dataset.pn)}</b><div class="r">${SEG.find(x=>x[0]===s.dataset.k)[1]}<em>${s.dataset.v}</em></div>`)));
+  document.querySelectorAll('[data-pmsg]').forEach(b=>b.onclick=async()=>{ const its=fila().filter(a=>a.target.includes(b.dataset.pmsg) && !a.recent); if(!its.length) return toast('Nada pendente para cobrar'); if(await copiar(msgPessoa(b.dataset.pmsg,its))){ registrar(its.map(a=>a.id),{canal:'mensagem'}); recompute(); render(); toast(`Mensagem para ${first(b.dataset.pmsg)} copiada e registrada`); } });
+  document.querySelectorAll('[data-pver]').forEach(b=>b.onclick=()=>{ if(b.dataset.pver!=='—') setPessoa(b.dataset.pver); setView('cobrancas'); });
+}
+
+/* ================= VIEW: PROJETOS ================= */
+let sortK='risk', sortDir=-1;
+function renderProjetos(){
+  const S=projsF().slice();
+  const key={n:s=>s.n.toLowerCase(), risk:s=>s.risk, pct:s=>s.pct, fc:s=>s.slip??-999, next:s=>s.next?s.next.due:9e15, open:s=>s.open, late:s=>s.late+s.novadata, stale:s=>s.stale, nodue:s=>s.nodue, noown:s=>s.noown}[sortK];
+  S.sort((a,b)=>{ const x=key(a),y=key(b); return (x>y?1:x<y?-1:0)*sortDir; });
+  document.querySelectorAll('#tbl th').forEach(th=>{ th.querySelectorAll('.arr').forEach(x=>x.remove()); if(th.dataset.k===sortK) th.insertAdjacentHTML('beforeend',`<span class="arr"> ${sortDir>0?'↑':'↓'}</span>`); });
+  const num=(v,c)=>v?`<span class="${c||''}">${v}</span>`:'<span class="zero">0</span>';
+  document.querySelector('#tbl tbody').innerHTML = S.map(s=>`<tr data-k="${s.k}">
+    <td class="pname"><b>${esc(s.n)}</b><small>${esc(s.p.d)} · ${esc(short(s.gp))}</small></td>
+    <td>${bandPill(s.band)} <span class="mono zero" style="font-size:11px">${s.risk}</span></td>
+    <td><div class="prog"><div class="bar"><span style="width:${Math.round(s.pct*100)}%"></span></div><b>${Math.round(s.pct*100)}%</b></div></td>
+    <td style="font-size:12.5px">${!s.open?'—':!s.vel?'<span class="n-crit">sem ritmo</span>':`${fmt(s.fcDate)} ${s.slip!=null?(s.slip>3?`<span class="n-crit">(+${s.slip}d)</span>`:s.slip<-3?`<span class="n-good">(${s.slip}d)</span>`:'<span class="zero">(no prazo)</span>'):''}`}</td>
+    <td class="next" style="max-width:240px">${s.next?`<b style="display:block;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${esc(s.next.n)}">${esc(s.next.n)}</b><small class="mono zero">${fmt(s.next.due)}</small>`:'<small class="zero">—</small>'}</td>
+    <td class="num">${s.open}</td><td class="num">${num(s.late+s.novadata,'n-crit')}</td><td class="num">${num(s.stale,'n-warn')}</td><td class="num">${num(s.nodue)}</td><td class="num">${num(s.noown)}</td></tr>`).join('');
+  document.querySelectorAll('#tbl tbody tr').forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.k));
+}
+
+/* ================= VIEW: AGENDA ================= */
+let CAL0 = weekStart(NOW);
+function renderAgenda(){
+  const open = ACTS.filter(a=>a.due && pass(a) && (a.open || sod(a.due)>=CAL0));
+  const days=[...Array(14)].map((_,i)=>CAL0+i*DAY);
+  document.getElementById('calTitle').textContent = `${fmtL(days[0])} – ${fmtL(days[13])}`;
+  const hdr=['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map(d=>`<div class="cal-h">${d}</div>`).join('');
+  document.getElementById('cal').innerHTML = hdr + days.map(d=>{
+    const its = open.filter(a=>sod(a.due)===d).sort((x,y)=>(x.open-y.open)||(y.score-x.score));
+    const wd=new Date(d).getDay();
+    return `<div class="cal-d ${wd===0||wd===6?'we':''} ${d===TODAY?'today':''} ${d<TODAY?'past':''}"><div class="cal-n">${new Date(d).getDate()}/${new Date(d).getMonth()+1}<em>${its.length||''}</em></div>
+      ${its.slice(0,6).map(a=>{ const c=!a.open?'good':a.late?'critical':a.reasons.some(r=>r.k==='soon')?'warning':a.reasons.length?'serious':''; return `<a class="chip ${c}" href="${link(a.id)}" target="_blank" data-ci="${a.id}">${esc(a.p.n.split(' ')[0])} · ${esc(a.n)}</a>`; }).join('')}
+      ${its.length>6?`<span class="more" data-day="${d}">+${its.length-6} itens</span>`:''}</div>`;
+  }).join('');
+  document.querySelectorAll('.chip[data-ci]').forEach(c=>{ const a=ACTS.find(x=>x.id===c.dataset.ci); hover(c,()=>`<b>${esc(a.n)}</b><div class="r">${esc(a.p.n)}<em>${fmt(a.due)}</em></div><div class="r">${esc(a.owners.join(', ')||'sem responsável')}</div>${a.reasons.length?`<div class="r">${a.reasons.map(r=>r.lbl).join(' · ')}</div>`:''}`); });
+  document.querySelectorAll('.more[data-day]').forEach(m=>m.onclick=()=>{ const d=+m.dataset.day; const its=open.filter(a=>sod(a.due)===d); m.parentElement.insertAdjacentHTML('beforeend', its.slice(6).map(a=>`<a class="chip" href="${link(a.id)}" target="_blank">${esc(a.p.n.split(' ')[0])} · ${esc(a.n)}</a>`).join('')); m.remove(); });
+}
+
+/* ================= DRAWER ================= */
+function itemRow(a){
+  const st = !a.open ? (a.s==='shipped'?'<span class="st good"><i>✓</i>Concluída</span>':'<span class="st neutral"><i>–</i>Cancelada</span>') : (a.reasons[0]?rpill(a.reasons[0]):'<span class="st neutral"><i>○</i>No prazo</span>');
+  const c = !a.open?'var(--good)':a.late||a.broken?'var(--critical)':a.reasons.some(r=>r.k==='soon')?'var(--warning)':a.reasons.length?'var(--serious)':'var(--s1)';
+  return `<div class="item"><span class="dot" style="background:${c}"></span><div class="t"><b title="${esc(a.n)}">${esc(a.n)}</b><small>${a.due?fmt(a.due):'sem data'}${a.u&&a.open?' · atualizada há '+daysAgo(a.u)+'d':''}</small></div><span class="who">${a.owners.length?esc(a.owners.map(first).join(', ')):'<span class="zero">sem dono</span>'}</span>${st}<a class="ext" href="${link(a.id)}" target="_blank" title="Abrir no ClickUp">${extIco}</a></div>`;
+}
+function openDrawer(k){
+  const s=PSTATS.find(x=>x.k===k); if(!s) return; const p=s.p, dr=document.getElementById('drawer');
+  const fp=f=>{ const v=f.a.filter(a=>a.s!=='cancelled'); return f.s==='shipped'?1:(v.length?v.filter(a=>a.s==='shipped').length/v.length:0); };
+  dr.innerHTML=`<div class="dr-h"><div style="flex:1;min-width:220px"><h3>${esc(p.n)}</h3><p>${esc(p.d)} · GP ${esc(s.gp)} · ${bandPill(s.band)} <span class="mono zero">${s.risk}/100</span></p></div>
+    <button class="btn sm primary" id="drStatus">Copiar status</button><a class="btn sm" href="${esc(p.u)}" target="_blank">ClickUp ↗</a><button class="btn icon sm" id="drX" title="Fechar (Esc)">✕</button></div>
+    <div class="dr-b">
+      <div class="dr-kpis"><div><b>${Math.round(s.pct*100)}%</b><small>progresso</small></div><div><b>${s.open}</b><small>abertas</small></div><div><b class="${s.late+s.novadata?'n-crit':''}">${s.late+s.novadata}</b><small>atrasadas / vencidas</small></div><div><b class="${s.stale?'n-warn':''}">${s.stale}</b><small>paradas 7+ dias</small></div></div>
+      <div class="forecast" style="margin-bottom:12px">${sparkHtml(s.k)}<div>${fcText(s)}<br><small class="zero">Barras: atividades concluídas por semana (8 semanas).</small></div></div>
+      <div class="factors" style="margin-bottom:16px">${facRow('Pressão de prazo',s.fPrazo,'')}${facRow('Itens parados',s.fParado,'')}${facRow('Ritmo × prazo',s.fRitmo,'')}${facRow('Planejamento',s.fPlan,'')}</div>
+      ${p.f.map(f=>{ const v=f.a.filter(a=>a.s!=='cancelled'), pc=Math.round(fp(f)*100); const acts=f.a.map(a=>ACTS.find(x=>x.id===a.id)).sort((x,y)=>(y.open-x.open)||(y.score-x.score)||((x.due||9e15)-(y.due||9e15))); const hot=acts.some(a=>a.open&&a.reasons.length);
+        return `<details class="ph" ${hot?'open':''}><summary><b title="${esc(f.n)}">${esc(f.n)}</b><div class="prog"><div class="bar"><span style="width:${pc}%"></span></div><b>${pc}%</b></div><span class="cnt">${v.filter(a=>a.s==='shipped').length}/${v.length}</span></summary>${acts.map(itemRow).join('')}</details>`; }).join('')}
+    </div>`;
+  dr.classList.add('on'); dr.setAttribute('aria-hidden','false'); document.getElementById('scrim').classList.add('on');
+  bindSparks(dr);
+  document.getElementById('drX').onclick=closeDrawer;
+  document.getElementById('drStatus').onclick=async()=>{ if(await copiar(msgStatus(s))) toast('Status de '+p.n+' copiado'); };
+}
+function closeDrawer(){ const d=document.getElementById('drawer'); d.classList.remove('on'); d.setAttribute('aria-hidden','true'); document.getElementById('scrim').classList.remove('on'); }
+document.getElementById('scrim').onclick=closeDrawer;
+
+/* ================= TEMAS ================= */
+const THEMES = [
+  ['noite','Noite','Escuro azulado · uso diário','#0b0e13','#12161d','#2dd9f5','#3987e5'],
+  ['grafite','Grafite','Escuro neutro · menos cansativo','#141414','#1c1c1c','#e8b44c','#6aa3e8'],
+  ['oceano','Oceano','Azul profundo · telão e TV','#061528','#0b1f38','#5eead4','#60a5fa'],
+  ['dia','Dia','Claro · escritório iluminado','#f3f5f8','#ffffff','#0a7f97','#2a78d6'],
+  ['papel','Papel','Claro quente · impressão e PDF','#f6f1e7','#fffdf8','#a8552e','#2c6aa8'],
+  ['contraste','Alto contraste','Projetor e acessibilidade','#000000','#000000','#ffe600','#4fb3ff'],
+];
+function openThemes(){
+  const cur=document.documentElement.getAttribute('data-theme');
+  document.getElementById('themes').innerHTML = THEMES.map(([k,n,d,bg,sf,br,s1])=>`<button class="th-card ${cur===k?'on':''}" data-th="${k}"><div class="th-prev" style="background:${bg}"><div class="s" style="background:${sf}"></div><div class="m"><div class="l" style="background:${br};width:55%"></div><div class="l" style="background:${s1};width:80%"></div><div class="l" style="background:#d03b3b;width:35%"></div><div class="l" style="background:#fab219;width:62%"></div></div></div><b>${n}</b><small>${d}</small></button>`).join('');
+  document.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{ document.documentElement.setAttribute('data-theme',b.dataset.th); store.set('tc_theme',b.dataset.th); try{localStorage.setItem('tc_theme',b.dataset.th);}catch(e){} openThemes(); render(); });
+  document.getElementById('mTheme').classList.add('on');
+}
+
+/* ================= CONFIG ================= */
+function openCfg(){
+  document.getElementById('cfgMe').value = CFG.me||'';
+  const cands=[...new Set([...PEOPLE.filter(isManager), ...Object.values(CFG.pm)])];
+  document.getElementById('cfgProj').innerHTML = DATA.p.map(p=>`<div class="cfg-row"><span>${esc(p.n)}</span><select class="ctl" data-pk="${p.k}">${cands.map(n=>`<option ${CFG.pm[p.k]===n?'selected':''}>${esc(n)}</option>`).join('')}</select></div>`).join('');
+  document.getElementById('cfgPeople').innerHTML = PEOPLE.map(n=>`<div class="cfg-row">${av(n)}<span>${esc(n)}</span><select class="ctl" data-pp="${esc(n)}">${Object.entries(ROLE_LBL).map(([k,l])=>`<option value="${k}" ${CFG.roles[n]===k?'selected':''}>${l}</option>`).join('')}</select></div>`).join('');
+  document.querySelectorAll('[data-pp]').forEach(s=>s.onchange=()=>{ CFG.roles[s.dataset.pp]=s.value; openCfg(); });
+  document.getElementById('mCfg').classList.add('on');
+}
+document.getElementById('cfgOk').onclick=()=>{ CFG.me=document.getElementById('cfgMe').value.trim(); document.querySelectorAll('[data-pk]').forEach(s=>CFG.pm[s.dataset.pk]=s.value); store.set('tc_cfg',CFG); document.getElementById('mCfg').classList.remove('on'); recompute(); render(); toast('Configuração aplicada'); };
+document.getElementById('cfgReset').onclick=()=>{ CFG=defaultCfg(); openCfg(); };
+document.getElementById('cfgExport').onclick=()=>{ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify({cfg:CFG,cob:COB,exportado:new Date().toISOString()},null,1)],{type:'application/json'})); a.download='torre-de-controle-backup.json'; a.click(); };
+document.getElementById('cfgImport').onchange=e=>{ const f=e.target.files[0]; if(!f) return; f.text().then(t=>{ try{ const j=JSON.parse(t); if(j.cfg) CFG=Object.assign(defaultCfg(),j.cfg); if(j.cob) COB=j.cob; store.set('tc_cfg',CFG); store.set('tc_cob',COB); recompute(); render(); openCfg(); toast('Backup importado'); }catch(err){ toast('Arquivo inválido'); } }); };
+document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>b.closest('.modal').classList.remove('on'));
+document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{ if(e.target===m) m.classList.remove('on'); }));
+
+/* ================= MODO REUNIÃO ================= */
+let TV=null;
+function startTv(){
+  const app=document.getElementById('app'), bar=document.getElementById('tvbar'), seq=['hoje','riscos','pessoas','agenda']; let i=Math.max(0,seq.indexOf(VIEW));
+  app.classList.add('tv'); closeDrawer(); setView(seq[i]);
+  const step=()=>{ bar.style.transition='none'; bar.style.width='0'; requestAnimationFrame(()=>{ bar.style.transition='width 25s linear'; bar.style.width='100%'; }); };
+  step(); TV=setInterval(()=>{ i=(i+1)%seq.length; setView(seq[i]); step(); },25000);
+  toast('Modo reunião: as telas giram a cada 25s · Esc para sair');
+}
+function stopTv(){ clearInterval(TV); TV=null; document.getElementById('app').classList.remove('tv'); const bar=document.getElementById('tvbar'); bar.style.transition='none'; bar.style.width='0'; render(); }
+
+/* ================= NAVEGAÇÃO ================= */
+const VIEWS={hoje:['Hoje','Briefing, plano de ação e matriz de risco',renderHoje], riscos:['Riscos','Quem vai atrasar, por quê e quando termina',renderRiscos], cobrancas:['Cobranças','Quem cobrar, o quê e até quando',renderCob], pessoas:['Pessoas','Carga, risco e promessas de cada um',renderPessoas], projetos:['Projetos','Portfólio com previsão de término',renderProjetos], agenda:['Agenda','Calendário de entregas',renderAgenda]};
+let VIEW='hoje';
+function setView(v){ VIEW=v; document.querySelectorAll('.nav[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v)); Object.keys(VIEWS).forEach(k=>document.getElementById('v-'+k).hidden=k!==v); document.getElementById('viewTitle').firstChild.textContent=VIEWS[v][0]; document.getElementById('viewSub').textContent=VIEWS[v][1]; render(); if(!TV) window.scrollTo(0,0); }
+function render(){ tip.style.opacity=0; VIEWS[VIEW][2](); if(VIEW!=='hoje'){ const A=buildActions(fila(),projsF()); document.getElementById('cntHoje').textContent=A.filter(a=>!DONE[a.id]).length||''; } if(VIEW!=='cobrancas') document.getElementById('cntCob').textContent=fila().filter(a=>a.late||a.broken).length||''; }
+function setPessoa(p){ F.pessoa=p; document.getElementById('fPessoa').value=p; }
+document.querySelectorAll('.nav[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
+document.getElementById('navTheme').onclick=openThemes; document.getElementById('btnTheme').onclick=openThemes;
+document.getElementById('navCfg').onclick=openCfg;
+document.getElementById('navTv').onclick=startTv; document.getElementById('btnTvExit').onclick=stopTv;
+document.getElementById('navPrint').onclick=()=>{ toast('Dica: escolha “Salvar como PDF” na impressão'); setTimeout(()=>window.print(),400); };
+document.querySelectorAll('#tbl th').forEach(th=>th.onclick=()=>{ if(sortK===th.dataset.k) sortDir*=-1; else { sortK=th.dataset.k; sortDir=['n','next'].includes(sortK)?1:-1; } renderProjetos(); });
+document.querySelectorAll('#calcSeg button').forEach(b=>b.onclick=()=>{ CALC=b.dataset.c; document.querySelectorAll('#calcSeg button').forEach(x=>x.classList.toggle('on',x===b)); recompute(); render(); });
+document.querySelectorAll('#riskSort button').forEach(b=>b.onclick=()=>{ RSORT=b.dataset.s; document.querySelectorAll('#riskSort button').forEach(x=>x.classList.toggle('on',x===b)); renderRiscos(); });
+document.getElementById('calPrev').onclick=()=>{ CAL0-=WEEK; renderAgenda(); }; document.getElementById('calNext').onclick=()=>{ CAL0+=WEEK; renderAgenda(); }; document.getElementById('calToday').onclick=()=>{ CAL0=weekStart(NOW); renderAgenda(); };
+const qEl=document.getElementById('q'); qEl.oninput=()=>{ F.q=qEl.value.trim().toLowerCase(); render(); };
+const fp=document.getElementById('fProj'); DATA.p.forEach(p=>fp.insertAdjacentHTML('beforeend',`<option value="${p.k}">${esc(p.n)}</option>`)); fp.onchange=()=>{ F.proj=fp.value; render(); };
+const fpe=document.getElementById('fPessoa'); PEOPLE.forEach(n=>fpe.insertAdjacentHTML('beforeend',`<option>${esc(n)}</option>`)); fpe.onchange=()=>{ F.pessoa=fpe.value; render(); };
+document.addEventListener('keydown',e=>{ const tag=document.activeElement.tagName; if(e.key==='/'&&!['INPUT','SELECT','TEXTAREA'].includes(tag)){ e.preventDefault(); qEl.focus(); } if(e.key==='Escape'){ if(TV) stopTv(); closeDrawer(); document.querySelectorAll('.modal.on').forEach(m=>m.classList.remove('on')); } });
+document.getElementById('btnCsv').onclick=()=>{
+  const rows=[['Projeto','Gerente','Fase','Atividade','Responsáveis','Cobrar de','Motivos','Prazo','Última atualização','Cobranças','Prometido para','Link']].concat(
+    ACTS.filter(a=>a.open&&pass(a)).sort((x,y)=>y.score-x.score).map(a=>[a.p.n,gpOf(a.p),a.f.n,a.n,a.owners.join(', '),(a.target||[]).join(', '),a.reasons.map(r=>r.lbl).join(' | '),a.due?new Date(a.due).toLocaleDateString('pt-BR'):'',a.u?new Date(a.u).toLocaleDateString('pt-BR'):'',a.cobN,a.prom?new Date(a.prom).toLocaleDateString('pt-BR'):'',link(a.id)]));
+  const csv='﻿'+rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(';')).join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})); a.download='torre-de-controle-atividades.csv'; a.click();
+};
+document.getElementById('syncInfo').textContent='Atualizado '+new Date(DATA.sync).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+let rt; addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(render,150); });
+recompute(); setView('hoje');
+// ================= LOGIN (tela decorativa) =================
+// Aviso: isto NÃO é segurança real — os dados já estão neste arquivo estático.
+// Serve só para desencorajar acesso casual por quem não tem o link/senha.
+(function(){
+  const CREDENCIAIS = [
+    { usuario: "gadorno@binario.cloud", senha: "gadorno@2026" },
+    { usuario: "ralves@binario.cloud", senha: "ralves@2026" },
+    { usuario: "toliveira@binario.cloud", senha: "toliveira@2026" },
+    { usuario: "rassad@binario.net", senha: "rassad@2026" },
+    { usuario: "binario", senha: "binario@2026" },
+  ]; // ALTERAR antes de publicar de verdade
+  const CHAVE_STORAGE = "bcloud_metas_auth";
+
+  const tela = document.getElementById('loginScreen');
+  const form = document.getElementById('loginForm');
+  const inputUser = document.getElementById('loginUser');
+  const inputPass = document.getElementById('loginPass');
+  const erro = document.getElementById('loginError');
+
+  // Sessão: depois de logar, o refresh (F5) mantém logado; só o botão "Sair" encerra.
+  // Opcional: "Gravar usuário e senha" guarda o acesso neste navegador para preencher o login.
+  const CHAVE_CRED = "bcloud_metas_cred";
+  const chkGravar = document.getElementById('loginRemember');
+  // Sessão guardada em 3 lugares (localStorage, sessionStorage e window.name) para
+  // sobreviver ao F5 mesmo quando o navegador bloqueia algum deles (aba privada, etc.).
+  const store = {
+    get(k){
+      try { const v = localStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const v = sessionStorage.getItem(k); if(v !== null) return v; } catch(e){}
+      try { const m = (window.name || '').match(new RegExp('(?:^|;)' + k + '=([^;]*)')); if(m) return decodeURIComponent(m[1]); } catch(e){}
+      return null;
+    },
+    set(k,v){
+      try { localStorage.setItem(k,v); } catch(e){}
+      try { sessionStorage.setItem(k,v); } catch(e){}
+      try { store._wn(k, v); } catch(e){}
+    },
+    del(k){
+      try { localStorage.removeItem(k); } catch(e){}
+      try { sessionStorage.removeItem(k); } catch(e){}
+      try { store._wn(k, null); } catch(e){}
+    },
+    _wn(k, v){
+      const partes = (window.name || '').split(';').filter(x => x && !x.startsWith(k + '='));
+      if(v !== null) partes.push(k + '=' + encodeURIComponent(v));
+      window.name = partes.join(';');
+    },
+  };
+
+
+  function preencherSalvo(){
+    let c = null;
+    try { c = JSON.parse(store.get(CHAVE_CRED) || 'null'); } catch(e){}
+    if(c && c.u){ inputUser.value = c.u; inputPass.value = c.p || ''; chkGravar.checked = true; }
+    else { inputUser.value = ''; inputPass.value = ''; chkGravar.checked = false; }
+  }
+  preencherSalvo();
+
+  if(store.get(CHAVE_STORAGE) === 'ok'){
+    tela.style.display = 'none';
+  }
+
+  document.getElementById('btnLogoff').addEventListener('click', function(){
+    store.del(CHAVE_STORAGE);
+    erro.classList.remove('show');
+    preencherSalvo();            // mantém o acesso gravado (se houver); senão limpa os campos
+    location.hash = '';
+    window.scrollTo(0, 0);
+    tela.style.display = '';
+    inputUser.focus();
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const usuario = inputUser.value.trim().toLowerCase();
+    const senha = inputPass.value;
+    const valido = CREDENCIAIS.some(c => c.usuario === usuario && c.senha === senha);
+    if(valido){
+      store.set(CHAVE_STORAGE, 'ok');
+      if(chkGravar.checked) store.set(CHAVE_CRED, JSON.stringify({u: usuario, p: senha}));
+      else store.del(CHAVE_CRED);
+      tela.style.display = 'none';
+    } else {
+      erro.classList.remove('show');
+      void erro.offsetWidth;
+      erro.classList.add('show');
+      inputPass.value = '';
+      inputPass.focus();
+    }
+  });
+})();
+
+
+</script>
+</body>
+</html>
