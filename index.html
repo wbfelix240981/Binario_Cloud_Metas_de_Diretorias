@@ -866,7 +866,7 @@ const ROADMAP_TASKS = [
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 555
+  "_missing_count": 556
  },
  {
   "id": "86ak6m2qf",
@@ -899,7 +899,7 @@ const ROADMAP_TASKS = [
   "_missing_count": 0
  }
 ];
-const LAST_SYNC_UTC = "2026-10-21T05:43:35.471450+00:00";
+const LAST_SYNC_UTC = "2026-10-21T14:24:42.709560+00:00";
 
 const RAFAEL_METAS = [
  {
@@ -3186,7 +3186,7 @@ const RAFAEL_METAS = [
    },
    {
     "n": "FASE04 - Capacidade dentro do BCP",
-    "status": "in progress",
+    "status": "shipped",
     "assignee": "Leonardo Gomes Jorge Gonçalez",
     "due": 1798700400000,
     "id": "86afcr3n8",
@@ -3209,7 +3209,7 @@ const RAFAEL_METAS = [
      },
      {
       "n": "Capacidade de Storage - NVME",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -3217,7 +3217,7 @@ const RAFAEL_METAS = [
      },
      {
       "n": "Capacidade de Storage - HDD",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -3225,7 +3225,7 @@ const RAFAEL_METAS = [
      },
      {
       "n": "Capacidade de Storage - BACKUP",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -4721,12 +4721,20 @@ const TIAGO_METAS = [
   "detail": "Objetivo: desenvolver um módulo integrado ao BCP capaz de identificar ambientes de origem, inventariar workloads, avaliar compatibilidade e executar migrações assistidas para a plataforma BCP (escopo inicial: VMware, on-premises, outros OpenStack, BCOS 2.0, KVM, Red Hat e Canonical).\nEntregáveis: painel do BC-Migration no BCP, descoberta automática de infraestrutura, classificação de workloads por complexidade, avaliação de compatibilidade, geração de plano de migração por ondas, fluxo de migração assistida.\nCritério de aceite: módulo acessível no BCP, descoberta automática funcionando, pelo menos uma VM migrada com sucesso em ambiente controlado, documentação publicada e MVP validado por Produto, Engenharia, SRE e Operações.\nPrazo final: 15 de dezembro de 2026.\nRisco principal: tentar transformar o módulo em uma plataforma universal de migração antes de validar o fluxo mínimo de descoberta, inventário, planejamento e execução assistida.",
   "fases": [
    {
-    "n": "Fase 1 - Estudo, Testes e v1",
-    "status": "in progress",
+    "n": "Fase 1 - Estudo, Testes",
+    "status": "shipped",
     "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1791529200000,
     "id": "86akbht48",
     "ativ": [
+     {
+      "n": "Analisar frontend do Cross Stack e planejar port para o BCP",
+      "status": "in progress",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukwd6b"
+     },
      {
       "n": "Planejamento e Estudo das ferramentas atuais",
       "status": "shipped",
@@ -4778,7 +4786,7 @@ const TIAGO_METAS = [
     ]
    },
    {
-    "n": "Fase 2 - Fazer integração no BCP",
+    "n": "Fase 2 - Fazer integração no BCP v0",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1796367600000,
@@ -4791,22 +4799,6 @@ const TIAGO_METAS = [
       "original_due": 1792134000000,
       "nova_previsao": null,
       "id": "86akt5up9"
-     },
-     {
-      "n": "Criar tela de migracao",
-      "status": "in progress",
-      "due": 1792738800000,
-      "original_due": 1792738800000,
-      "nova_previsao": null,
-      "id": "86akt5u8a"
-     },
-     {
-      "n": "Criar tela de conexao de origem",
-      "status": "in progress",
-      "due": 1792738800000,
-      "original_due": 1792738800000,
-      "nova_previsao": null,
-      "id": "86akry048"
      },
      {
       "n": "Criar aba no painel da cloud",
@@ -4839,14 +4831,6 @@ const TIAGO_METAS = [
       "original_due": 1792134000000,
       "nova_previsao": null,
       "id": "17ttbukvz9f"
-     },
-     {
-      "n": "Analisar frontend do Cross Stack e planejar port para o BCP",
-      "status": "in progress",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "17ttbukwd6b"
      }
     ]
    },
@@ -4884,19 +4868,35 @@ const TIAGO_METAS = [
     ]
    },
    {
-    "n": "Fase 4 - Esteira de QA",
+    "n": "Fase 4 - v1 e Esteira de QA",
     "status": "backlog",
     "assignee": "Nathan de Moraes Valim Francisco",
     "due": 1797577200000,
     "id": "86akbhw3d",
     "ativ": [
      {
-      "n": "Criação de esteira do módulo",
+      "n": "Adequação do OCI de Imagem para Disco",
       "status": "backlog",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbhw3k"
+     },
+     {
+      "n": "Criar api integração api VMWare e a ferramenta",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukvzuk"
+     },
+     {
+      "n": "Testar VMware -> Openstack",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "id": "17ttbukvzv3"
      },
      {
       "n": "Testes e validações do produto",
@@ -5042,22 +5042,6 @@ const TIAGO_METAS = [
       "original_due": null,
       "nova_previsao": null,
       "id": "86akbj6qt"
-     },
-     {
-      "n": "Criar api integração api VMWare e a ferramenta",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "17ttbukvzuk"
-     },
-     {
-      "n": "Testar VMware -> Openstack",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "id": "17ttbukvzv3"
      }
     ]
    }

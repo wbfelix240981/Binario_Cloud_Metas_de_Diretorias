@@ -2283,7 +2283,7 @@
    },
    {
     "n": "FASE04 - Capacidade dentro do BCP",
-    "status": "in progress",
+    "status": "shipped",
     "assignee": "Leonardo Gomes Jorge Gonçalez",
     "due": 1798700400000,
     "id": "86afcr3n8",
@@ -2306,7 +2306,7 @@
      },
      {
       "n": "Capacidade de Storage - NVME",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -2314,7 +2314,7 @@
      },
      {
       "n": "Capacidade de Storage - HDD",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -2322,7 +2322,7 @@
      },
      {
       "n": "Capacidade de Storage - BACKUP",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
