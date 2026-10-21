@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-21T14:24:50.805091+00:00",
+ "last_sync_utc": "2026-10-21T18:53:17.077579+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -493,8 +493,8 @@
       },
       {
        "n": "Transferência",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
        "due": 1792652400000,
        "original_due": 1792652400000,
@@ -502,7 +502,7 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vw",
-       "u": 1792416632606,
+       "u": 1792608374647,
        "dc": null
       },
       {
@@ -521,8 +521,8 @@
       },
       {
        "n": "JAN-24",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -530,13 +530,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m2",
-       "u": 1792415931455,
+       "u": 1792608553992,
        "dc": null
       },
       {
        "n": "Disponibilização - Kosmo",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1792566000000,
        "original_due": 1792566000000,
@@ -544,8 +544,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2py",
-       "u": 1792416583714,
-       "dc": null
+       "u": 1792608546467,
+       "dc": 1792608546467
       },
       {
        "n": "Transferência",
@@ -3117,7 +3117,49 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx3rx",
-       "u": 1792421288334,
+       "u": 1792608521142,
+       "dc": null
+      },
+      {
+       "n": "Instalação do Veeam",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukxr5y",
+       "u": 1792608513825,
+       "dc": null
+      },
+      {
+       "n": "licenciamento Veeam",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukxr6d",
+       "u": 1792608650124,
+       "dc": null
+      },
+      {
+       "n": "Configuração",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukxr6m",
+       "u": 1792608656167,
        "dc": null
       },
       {
@@ -4810,7 +4852,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzr",
-       "u": 1792008656823,
+       "u": 1792606231230,
        "dc": null
       },
       {

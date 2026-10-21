@@ -1490,7 +1490,7 @@
     "ativ": [
      {
       "n": "Analisar frontend do Cross Stack e planejar port para o BCP",
-      "status": "in progress",
+      "status": "shipped",
       "due": null,
       "original_due": null,
       "nova_previsao": null,
@@ -1621,8 +1621,8 @@
      {
       "n": "Desenhar arquitetura",
       "status": "shipped",
-      "due": null,
-      "original_due": null,
+      "due": 1791874800000,
+      "original_due": 1791874800000,
       "nova_previsao": null,
       "id": "86akbk1y8"
      }
