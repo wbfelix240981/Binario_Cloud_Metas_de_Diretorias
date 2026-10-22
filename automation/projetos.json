@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-22T05:44:45.429116+00:00",
+ "last_sync_utc": "2026-10-22T12:01:56.872481+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3340,8 +3340,8 @@
      "ativ": [
       {
        "n": "Validar entregas do Projeto",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3349,13 +3349,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e7pz",
-       "u": 1792421355762,
+       "u": 1792668150247,
        "dc": null
       },
       {
        "n": "Acompanhamento do cronograma e status report",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3363,7 +3363,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e7tq",
-       "u": 1792421359163,
+       "u": 1792668154490,
        "dc": null
       }
      ]
@@ -3747,8 +3747,8 @@
       },
       {
        "n": "Monitoramento",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3756,7 +3756,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5z856",
-       "u": 1792269148823,
+       "u": 1792667868235,
        "dc": null
       },
       {
@@ -3775,8 +3775,8 @@
       },
       {
        "n": "Documentação Técnica",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3784,7 +3784,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak8rgfd",
-       "u": 1792269179624,
+       "u": 1792667873491,
        "dc": null
       }
      ]
@@ -3839,8 +3839,8 @@
       },
       {
        "n": "Realizar contato de encerramento",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
@@ -3848,13 +3848,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ez0e",
-       "u": 1787680938910,
-       "dc": null
+       "u": 1792667903132,
+       "dc": 1792667903132
       },
       {
        "n": "Documentação técnica final",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -3862,7 +3862,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ez25",
-       "u": 1787680943308,
+       "u": 1792667911683,
        "dc": null
       },
       {
@@ -3891,115 +3891,6 @@
    "list_id": "901329035922",
    "url": "https://app.clickup.com/3080406/v/li/901329035922",
    "fases": [
-    {
-     "n": "Fase 4 - Encerramento",
-     "status": "backlog",
-     "raw_status": "aberto",
-     "assignee": "—",
-     "due": 1793602800000,
-     "u": 1792097419460,
-     "id": "86akg8t8g",
-     "ativ": [
-      {
-       "n": "Elaboração da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t8p",
-       "u": 1792097419460,
-       "dc": null
-      },
-      {
-       "n": "Checklist de Readiness / Aceite Operacional",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 1,
-       "id": "86akkhrvq",
-       "u": 1792098211286,
-       "dc": null
-      },
-      {
-       "n": "Assinatura da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t8q",
-       "u": 1792097419460,
-       "dc": null
-      },
-      {
-       "n": "Envio da documentação técnica",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t9g",
-       "u": 1792097419460,
-       "dc": null
-      },
-      {
-       "n": "Entrada oficial em produção",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhth0",
-       "u": 1792097419460,
-       "dc": null
-      },
-      {
-       "n": "Operação assistida",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhtpy",
-       "u": 1792097419460,
-       "dc": null
-      },
-      {
-       "n": "Reunião de acompanhamento pós-Go-Live",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhtvf",
-       "u": 1792097419460,
-       "dc": null
-      }
-     ]
-    },
     {
      "n": "Fase 2 -  Kickoff",
      "status": "in progress",
@@ -4054,12 +3945,93 @@
      ]
     },
     {
+     "n": "Fase 1 - Iniciação",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Priscila de Fatima Sotério Ferreira",
+     "due": null,
+     "u": 1791307708603,
+     "id": "86akg8t8f",
+     "ativ": [
+      {
+       "n": "Identificar as partes Interessadas",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1790060400000,
+       "original_due": 1790060400000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8t8r",
+       "u": 1790105784133,
+       "dc": 1790105407972
+      },
+      {
+       "n": "Identificar os riscos",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1790060400000,
+       "original_due": 1790060400000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8t9w",
+       "u": 1790105790426,
+       "dc": 1790105412254
+      },
+      {
+       "n": "Elaboração TAP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8ta6",
+       "u": 1791206205473,
+       "dc": 1791206205473
+      },
+      {
+       "n": "Realização do cronograma",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8taf",
+       "u": 1790698074040,
+       "dc": 1790698074040
+      },
+      {
+       "n": "Documentação do cliente",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8tav",
+       "u": 1791206195108,
+       "dc": 1791206195108
+      }
+     ]
+    },
+    {
      "n": "Fase 3 - Execução B-Tech",
-     "status": "in progress",
-     "raw_status": "em andamento",
+     "status": "shipped",
+     "raw_status": "fechado",
      "assignee": "—",
      "due": null,
-     "u": 1790105901097,
+     "u": 1792667463384,
      "id": "86akg8t8j",
      "ativ": [
       {
@@ -4288,6 +4260,31 @@
       },
       {
        "n": "Visita técnica ao Data Center ODATA",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhr10",
+       "u": 1792667455039,
+       "dc": 1792667455039
+      }
+     ]
+    },
+    {
+     "n": "Fase 4 - Encerramento",
+     "status": "in progress",
+     "raw_status": "em andamento",
+     "assignee": "—",
+     "due": 1793602800000,
+     "u": 1792667505084,
+     "id": "86akg8t8g",
+     "ativ": [
+      {
+       "n": "Elaboração da TEP",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "—",
@@ -4296,90 +4293,93 @@
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akkhr10",
+       "id": "86akg8t8p",
        "u": 1792097419460,
        "dc": null
-      }
-     ]
-    },
-    {
-     "n": "Fase 1 - Iniciação",
-     "status": "shipped",
-     "raw_status": "fechado",
-     "assignee": "Priscila de Fatima Sotério Ferreira",
-     "due": null,
-     "u": 1791307708603,
-     "id": "86akg8t8f",
-     "ativ": [
-      {
-       "n": "Identificar as partes Interessadas",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1790060400000,
-       "original_due": 1790060400000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t8r",
-       "u": 1790105784133,
-       "dc": 1790105407972
       },
       {
-       "n": "Identificar os riscos",
-       "status": "shipped",
-       "raw_status": "fechado",
+       "n": "Checklist de Readiness / Aceite Operacional",
+       "status": "backlog",
+       "raw_status": "aberto",
        "assignee": "—",
-       "due": 1790060400000,
-       "original_due": 1790060400000,
+       "due": 1793602800000,
+       "original_due": 1793602800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t9w",
-       "u": 1790105790426,
-       "dc": 1790105412254
+       "depth": 1,
+       "id": "86akkhrvq",
+       "u": 1792098211286,
+       "dc": null
       },
       {
-       "n": "Elaboração TAP",
-       "status": "shipped",
-       "raw_status": "fechado",
+       "n": "Assinatura da TEP",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "—",
-       "due": null,
-       "original_due": null,
+       "due": 1793602800000,
+       "original_due": 1793602800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8ta6",
-       "u": 1791206205473,
-       "dc": 1791206205473
+       "id": "86akg8t8q",
+       "u": 1792667477736,
+       "dc": null
       },
       {
-       "n": "Realização do cronograma",
-       "status": "shipped",
-       "raw_status": "fechado",
+       "n": "Envio da documentação técnica",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "—",
-       "due": null,
-       "original_due": null,
+       "due": 1793602800000,
+       "original_due": 1793602800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8taf",
-       "u": 1790698074040,
-       "dc": 1790698074040
+       "id": "86akg8t9g",
+       "u": 1792667484038,
+       "dc": null
       },
       {
-       "n": "Documentação do cliente",
+       "n": "Entrada oficial em produção",
        "status": "shipped",
        "raw_status": "fechado",
        "assignee": "—",
-       "due": null,
-       "original_due": null,
+       "due": 1793602800000,
+       "original_due": 1793602800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86akg8tav",
-       "u": 1791206195108,
-       "dc": 1791206195108
+       "id": "86akkhth0",
+       "u": 1792667492785,
+       "dc": 1792667492785
+      },
+      {
+       "n": "Operação assistida",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhtpy",
+       "u": 1792667497550,
+       "dc": null
+      },
+      {
+       "n": "Reunião de acompanhamento pós-Go-Live",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhtvf",
+       "u": 1792097419460,
+       "dc": null
       }
      ]
     }
@@ -4860,8 +4860,8 @@
       },
       {
        "n": "SRV05?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4869,13 +4869,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj75c",
-       "u": 1792501465014,
+       "u": 1792667949645,
        "dc": null
       },
       {
        "n": "SRV06?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4883,13 +4883,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj778",
-       "u": 1792097591772,
+       "u": 1792667953904,
        "dc": null
       },
       {
        "n": "SRV07?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4897,13 +4897,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj77y",
-       "u": 1792097591772,
+       "u": 1792667958581,
        "dc": null
       },
       {
        "n": "SRV08?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4911,13 +4911,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj789",
-       "u": 1792097591772,
+       "u": 1792667966992,
        "dc": null
       },
       {
        "n": "SRV09?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4925,13 +4925,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj78f",
-       "u": 1792097591772,
+       "u": 1792667971482,
        "dc": null
       },
       {
        "n": "SRV10?",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -4939,7 +4939,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj790",
-       "u": 1792097591772,
+       "u": 1792667976038,
        "dc": null
       },
       {
@@ -5067,8 +5067,8 @@
       },
       {
        "n": "Envio da documentação técnica",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -5076,7 +5076,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj0k",
-       "u": 1792518639436,
+       "u": 1792667992335,
        "dc": null
       }
      ]
@@ -5322,11 +5322,11 @@
     },
     {
      "n": "Fase 3 - Execução (AmigoTech) - Gerenciado",
-     "status": "blocked",
-     "raw_status": "impedimento",
+     "status": "in progress",
+     "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
      "due": null,
-     "u": 1791204687079,
+     "u": 1792667556936,
      "id": "86akekg50",
      "ativ": [
       {
@@ -5611,8 +5611,8 @@
       },
       {
        "n": "Documentação técnica",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi / Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
@@ -5620,7 +5620,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekg9w",
-       "u": 1791204873556,
+       "u": 1792667569315,
        "dc": null
       },
       {
@@ -5811,8 +5811,8 @@
       },
       {
        "n": "Configurar monitoramento",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -5820,7 +5820,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwe",
-       "u": 1792096114672,
+       "u": 1792667682468,
        "dc": null
       }
      ]
@@ -5917,8 +5917,8 @@
       },
       {
        "n": "Envio da documentação técnica",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
@@ -5926,7 +5926,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akn4afc",
-       "u": 1792096036318,
+       "u": 1792667693884,
        "dc": null
       }
      ]
@@ -6722,8 +6722,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "—",
-     "due": null,
-     "u": 1790607239426,
+     "due": 1794121200000,
+     "u": 1792668072387,
      "id": "86akqah6h",
      "ativ": [
       {
@@ -6775,8 +6775,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "—",
-     "due": null,
-     "u": 1791295077241,
+     "due": 1794121200000,
+     "u": 1792668072387,
      "id": "86akq9k5a",
      "ativ": [
       {
@@ -6884,8 +6884,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "—",
-     "due": null,
-     "u": 1790607501096,
+     "due": 1794121200000,
+     "u": 1792668072387,
      "id": "86akq9jjw",
      "ativ": [
       {
@@ -6909,8 +6909,8 @@
      "status": "backlog",
      "raw_status": "aberto",
      "assignee": "—",
-     "due": null,
-     "u": 1790607515599,
+     "due": 1794121200000,
+     "u": 1792668072387,
      "id": "86akq9jq9",
      "ativ": [
       {
@@ -6962,8 +6962,8 @@
      "status": "backlog",
      "raw_status": "aberto",
      "assignee": "—",
-     "due": null,
-     "u": 1790607584411,
+     "due": 1794121200000,
+     "u": 1792668072387,
      "id": "86akqamf0",
      "ativ": [
       {
@@ -7077,13 +7077,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "—",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
+       "due": 1794121200000,
+       "original_due": 1794121200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akqd7h1",
-       "u": 1790617016397,
+       "u": 1792668072387,
        "dc": null
       }
      ]
