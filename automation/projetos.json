@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-22T14:24:04.046843+00:00",
+ "last_sync_utc": "2026-10-22T17:42:10.173057+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4369,8 +4369,8 @@
       },
       {
        "n": "Reunião de acompanhamento pós-Go-Live",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
@@ -4378,7 +4378,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akkhtvf",
-       "u": 1792097419460,
+       "u": 1792689213767,
        "dc": null
       }
      ]
@@ -6117,8 +6117,8 @@
       },
       {
        "n": "Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "blocked",
+       "raw_status": "bloqueada",
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1792566000000,
        "original_due": 1792566000000,
@@ -6126,13 +6126,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqnwv",
-       "u": 1792502872954,
+       "u": 1792680471010,
        "dc": null
       },
       {
-       "n": "Envio de credenciais",
-       "status": "blocked",
-       "raw_status": "impedimento",
+       "n": "Envio de credenciais de produção",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
        "assignee": "Wagner Bento Felix",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -6140,7 +6140,35 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxaz1",
-       "u": 1792503717101,
+       "u": 1792680516546,
+       "dc": null
+      },
+      {
+       "n": "Envio JWT",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
+       "assignee": "Wagner Bento Felix",
+       "due": 1792652400000,
+       "original_due": 1792652400000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbukxwhw",
+       "u": 1792680519236,
+       "dc": null
+      },
+      {
+       "n": "Criação de usuário de serviço",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
+       "assignee": "Wagner Bento Felix",
+       "due": 1792738800000,
+       "original_due": 1792738800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbukxwj2",
+       "u": 1792680603139,
        "dc": null
       },
       {
