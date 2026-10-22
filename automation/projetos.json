@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-22T18:45:49.368378+00:00",
+ "last_sync_utc": "2026-10-22T22:08:16.668810+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4637,7 +4637,7 @@
       {
        "n": "Firewall",
        "status": "shipped",
-       "raw_status": "fechado",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
@@ -4645,8 +4645,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzt",
-       "u": 1792008550056,
-       "dc": 1792008548948
+       "u": 1792702850833,
+       "dc": 1792702850833
       },
       {
        "n": "PFSENSE",
@@ -4679,7 +4679,7 @@
       {
        "n": "Configuração",
        "status": "shipped",
-       "raw_status": "fechado",
+       "raw_status": "concluído",
        "assignee": "Antonio Junior / Augusto Rossi",
        "due": null,
        "original_due": null,
@@ -4687,13 +4687,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj11",
-       "u": 1792008550159,
-       "dc": 1792008548948
+       "u": 1792702897052,
+       "dc": 1792702897052
       },
       {
        "n": "VPN",
        "status": "shipped",
-       "raw_status": "fechado",
+       "raw_status": "concluído",
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
@@ -4701,8 +4701,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj13",
-       "u": 1792008550028,
-       "dc": 1792008548948
+       "u": 1792702911871,
+       "dc": 1792702911871
       },
       {
        "n": "Migração (Veeam)",
@@ -5023,7 +5023,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukxtd8",
-       "u": 1792614722332,
+       "u": 1792697046992,
        "dc": null
       }
      ]
@@ -5620,7 +5620,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekg9w",
-       "u": 1792667569315,
+       "u": 1792702697212,
        "dc": null
       },
       {
@@ -6186,9 +6186,23 @@
        "dc": null
       },
       {
+       "n": "Ajustes da nomeclatura dos hosts",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Wagner Bento Felix",
+       "due": 1792998000000,
+       "original_due": 1792998000000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbuky0b9",
+       "u": 1792697026539,
+       "dc": null
+      },
+      {
        "n": "Ajustes Mesa TI",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -6196,7 +6210,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqp06",
-       "u": 1792673022076,
+       "u": 1792698093024,
        "dc": null
       },
       {
@@ -6210,7 +6224,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukw474",
-       "u": 1792673025595,
+       "u": 1792697717890,
        "dc": null
       },
       {
@@ -6225,6 +6239,20 @@
        "depth": 1,
        "id": "17ttbukw475",
        "u": 1792673029168,
+       "dc": null
+      },
+      {
+       "n": "Verificar com fornecedor Blazon",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Wagner Bento Felix",
+       "due": 1792998000000,
+       "original_due": 1792998000000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbuky0fe",
+       "u": 1792698143748,
        "dc": null
       },
       {
@@ -6362,62 +6390,6 @@
        "dc": null
       },
       {
-       "n": "Mapear de onde vêm os SKUs e como eles se ligam aos flavors do Nova",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Guilherme Lopes",
-       "due": 1792047600000,
-       "original_due": 1792047600000,
-       "alarme_limpo_due": 1792047600000,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86aktnw78",
-       "u": 1791915728822,
-       "dc": null
-      },
-      {
-       "n": "Montar o contrato da API (OpenAPI) e validar com o consumidor",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Guilherme Lopes",
-       "due": 1792479600000,
-       "original_due": 1792479600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86aktnwh0",
-       "u": 1791915728822,
-       "dc": null
-      },
-      {
-       "n": "Definir a autenticação da API",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Guilherme Soares Gomes da Silva",
-       "due": 1792479600000,
-       "original_due": 1792479600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86aktnwnx",
-       "u": 1791915728822,
-       "dc": null
-      },
-      {
-       "n": "Entendimento da demanda",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Guilherme Soares Gomes da Silva / Diogo Lerison",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 1,
-       "id": "86aktpn46",
-       "u": 1791915728822,
-       "dc": null
-      },
-      {
        "n": "Implementar o endpoint com a transformação para o formato deles",
        "status": "backlog",
        "raw_status": "aberto",
@@ -6471,20 +6443,6 @@
        "depth": 0,
        "id": "86aktnx74",
        "u": 1791984714046,
-       "dc": null
-      },
-      {
-       "n": "Detalhar solicitações da API",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "Guilherme Soares Gomes da Silva",
-       "due": 1792047600000,
-       "original_due": 1792047600000,
-       "alarme_limpo_due": 1792047600000,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86aktqv0j",
-       "u": 1791487819350,
        "dc": null
       }
      ]
