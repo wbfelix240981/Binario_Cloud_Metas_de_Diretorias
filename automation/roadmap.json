@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 562
+  "_missing_count": 563
  },
  {
   "id": "86ak6m2qf",
@@ -311,6 +311,16 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/86ak0fqm1",
+  "_missing_count": 0
+ },
+ {
+  "id": "17ttbukxwab",
+  "name": "Possível Autenticação Cruzada entre Consoles - Cloud",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/17ttbukxwab",
   "_missing_count": 0
  }
 ]
