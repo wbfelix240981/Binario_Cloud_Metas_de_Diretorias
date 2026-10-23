@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-22T22:08:16.668810+00:00",
+ "last_sync_utc": "2026-10-23T00:52:41.698697+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4327,8 +4327,8 @@
       },
       {
        "n": "Envio da documentação técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
@@ -4336,8 +4336,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akg8t9g",
-       "u": 1792667484038,
-       "dc": null
+       "u": 1792710532772,
+       "dc": 1792710532772
       },
       {
        "n": "Entrada oficial em produção",
@@ -4355,8 +4355,8 @@
       },
       {
        "n": "Operação assistida",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1793602800000,
        "original_due": 1793602800000,
@@ -4364,8 +4364,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akkhtpy",
-       "u": 1792667497550,
-       "dc": null
+       "u": 1792710519246,
+       "dc": 1792710519246
       },
       {
        "n": "Reunião de acompanhamento pós-Go-Live",
