@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-23T14:07:31.057403+00:00",
+ "last_sync_utc": "2026-10-23T18:40:24.895546+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -216,13 +216,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
-       "due": 1792393200000,
-       "original_due": 1792393200000,
+       "due": 1793084400000,
+       "original_due": 1793084400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86aknc0rm",
-       "u": 1792415182866,
+       "u": 1792774370138,
        "dc": null
       },
       {
@@ -269,8 +269,8 @@
       },
       {
        "n": "Criação do VM",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -278,7 +278,7 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2mr",
-       "u": 1792415878031,
+       "u": 1792774380534,
        "dc": null
       },
       {
@@ -286,13 +286,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1792911600000,
+       "original_due": 1792911600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2nw",
-       "u": 1792415878031,
+       "u": 1792774394140,
        "dc": null
       },
       {
@@ -325,8 +325,8 @@
       },
       {
        "n": "criação do VM",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -334,7 +334,7 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2nm",
-       "u": 1792415878031,
+       "u": 1792774385603,
        "dc": null
       },
       {
@@ -342,13 +342,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1792911600000,
+       "original_due": 1792911600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2nu",
-       "u": 1792415878031,
+       "u": 1792774398007,
        "dc": null
       },
       {
@@ -381,8 +381,8 @@
       },
       {
        "n": "Transferência",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Augusto Rossi",
        "due": 1792393200000,
        "original_due": 1792393200000,
@@ -390,13 +390,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2ve",
-       "u": 1792416449051,
-       "dc": null
+       "u": 1792774405917,
+       "dc": 1792774405917
       },
       {
        "n": "Validação Hashes",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -404,7 +404,7 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p5",
-       "u": 1792415892471,
+       "u": 1792774424303,
        "dc": null
       },
       {
@@ -437,8 +437,8 @@
       },
       {
        "n": "Transferência",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Augusto Rossi",
        "due": 1792393200000,
        "original_due": 1792393200000,
@@ -446,25 +446,11 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vu",
-       "u": 1792416546076,
-       "dc": null
+       "u": 1792774414249,
+       "dc": 1792774414249
       },
       {
        "n": "Validação Hashes",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 2,
-       "id": "17ttbukx2p7",
-       "u": 1792415902687,
-       "dc": null
-      },
-      {
-       "n": "JAN-23",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
@@ -472,9 +458,23 @@
        "original_due": 1792738800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukx2p7",
+       "u": 1792774420620,
+       "dc": null
+      },
+      {
+       "n": "JAN-23",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Augusto Rossi / Lucas Federissis de Souza",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m1",
-       "u": 1792416163351,
+       "u": 1792774461624,
        "dc": null
       },
       {
@@ -496,13 +496,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
-       "due": 1792652400000,
-       "original_due": 1792652400000,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vw",
-       "u": 1792608374647,
+       "u": 1792774535834,
        "dc": null
       },
       {
@@ -510,13 +510,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793170800000,
+       "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p9",
-       "u": 1792415931455,
+       "u": 1792774539702,
        "dc": null
       },
       {
@@ -524,13 +524,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m2",
-       "u": 1792608553992,
+       "u": 1792774474973,
        "dc": null
       },
       {
@@ -552,13 +552,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi",
-       "due": 1792652400000,
-       "original_due": 1792652400000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vz",
-       "u": 1792416639021,
+       "u": 1792780714167,
        "dc": null
       },
       {
@@ -566,13 +566,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pa",
-       "u": 1792415931455,
+       "u": 1792780714167,
        "dc": null
       },
       {
@@ -580,13 +580,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m3",
-       "u": 1792415931455,
+       "u": 1792774480303,
        "dc": null
       },
       {
@@ -594,13 +594,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
-       "due": 1792652400000,
-       "original_due": 1792652400000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2q0",
-       "u": 1792416590847,
+       "u": 1792780733180,
        "dc": null
       },
       {
@@ -608,13 +608,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi",
-       "due": 1792652400000,
-       "original_due": 1792652400000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2w0",
-       "u": 1792416643041,
+       "u": 1792780714167,
        "dc": null
       },
       {
@@ -622,13 +622,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pc",
-       "u": 1792415931455,
+       "u": 1792780714167,
        "dc": null
       }
      ]
@@ -2239,8 +2239,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Diogo Lerison / Lucas Federissis de Souza",
-     "due": 1792738800000,
-     "u": 1792416704108,
+     "due": 1793343600000,
+     "u": 1792774446651,
      "id": "86ajrf5d3",
      "ativ": [
       {
@@ -2248,13 +2248,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5dr",
-       "u": 1792416708204,
+       "u": 1792774443208,
        "dc": null
       },
       {
@@ -2332,13 +2332,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
+       "due": 1793343600000,
+       "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5dt",
-       "u": 1792416686178,
+       "u": 1792774439797,
        "dc": null
       },
       {
@@ -5023,7 +5023,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukxtd8",
-       "u": 1792697046992,
+       "u": 1792776525152,
        "dc": null
       }
      ]
