@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-23T05:45:05.350382+00:00",
+ "last_sync_utc": "2026-10-23T14:07:31.057403+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3136,8 +3136,8 @@
       },
       {
        "n": "licenciamento Veeam",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3145,8 +3145,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr6d",
-       "u": 1792619102825,
-       "dc": null
+       "u": 1792761556500,
+       "dc": 1792761556500
       },
       {
        "n": "Configuração",
@@ -5002,14 +5002,14 @@
        "n": "Go-Live",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "Priscila de Fatima Sotério Ferreira",
        "due": 1793343600000,
        "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3m",
-       "u": 1792518589154,
+       "u": 1792763433431,
        "dc": null
       },
       {
@@ -5307,7 +5307,7 @@
       {
        "n": "Faturamento",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Priscila de Fatima Sotério Ferreira",
        "due": 1792393200000,
        "original_due": 1792393200000,
@@ -5315,8 +5315,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akruatg",
-       "u": 1792611578121,
-       "dc": 1792611578121
+       "u": 1792763034672,
+       "dc": 1792763034672
       }
      ]
     },
@@ -5611,8 +5611,8 @@
       },
       {
        "n": "Documentação técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi / Marcelo Santos / Antonio Junior",
        "due": null,
        "original_due": null,
@@ -5620,8 +5620,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekg9w",
-       "u": 1792702697212,
-       "dc": null
+       "u": 1792763037989,
+       "dc": 1792763037054
       },
       {
        "n": "Go-Live",
@@ -5821,6 +5821,20 @@
        "depth": 0,
        "id": "17ttbukwjwe",
        "u": 1792667682468,
+       "dc": null
+      },
+      {
+       "n": "Documentação Técnica",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "17ttbukyhbq",
+       "u": 1792763287423,
        "dc": null
       }
      ]
