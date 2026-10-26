@@ -1677,7 +1677,7 @@
      },
      {
       "n": "br-sp-02-node07",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1792738800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
@@ -1701,7 +1701,7 @@
      },
      {
       "n": "br-sp-02-node10",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1792738800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
@@ -2046,7 +2046,7 @@
      },
      {
       "n": "srv-nvme-18",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792738800000,
       "original_due": 1793948400000,
       "nova_previsao": null,
@@ -2134,7 +2134,7 @@
      },
      {
       "n": "srv-hdd-06",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": 1792738800000,
