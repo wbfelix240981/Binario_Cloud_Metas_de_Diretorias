@@ -35,6 +35,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Sempre a ponta atual da main (e não o commit do momento do disparo): evita conflito
+          # quando duas execuções entram na fila juntas e a 2ª partiria de uma versão antiga.
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
