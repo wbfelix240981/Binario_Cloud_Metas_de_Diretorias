@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-27T20:15:15.765818+00:00",
+ "last_sync_utc": "2026-10-27T23:58:31.476412+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -2685,7 +2685,7 @@
      "raw_status": "em andamento",
      "assignee": "Diogo Lerison",
      "due": 1793343600000,
-     "u": 1793019213420,
+     "u": 1793135372520,
      "id": "86ajrf5d6",
      "ativ": [
       {
@@ -2727,8 +2727,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62b",
-       "u": 1793124246359,
-       "dc": 1793124246359
+       "u": 1793135415135,
+       "dc": 1793135415135
       },
       {
        "n": "Documentar rotinas de backup",
@@ -5695,17 +5695,31 @@
       },
       {
        "n": "Documentação técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukz3v4",
-       "u": 1793120484859,
-       "dc": null
+       "u": 1793137305098,
+       "dc": 1793137305098
+      },
+      {
+       "n": "Ajuste na configuração da Subnete - solicitada pelo cliente",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "17ttbukz6ht",
+       "u": 1793137478370,
+       "dc": 1793137477480
       }
      ]
     }
