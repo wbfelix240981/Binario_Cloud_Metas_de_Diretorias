@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-26T20:57:35.295026+00:00",
+ "last_sync_utc": "2026-10-27T00:20:15.052416+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3777,43 +3777,43 @@
        "n": "Monitoramento",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5z856",
-       "u": 1792790253428,
+       "u": 1793049209973,
        "dc": null
       },
       {
        "n": "Configurar monitoramento.",
        "status": "backlog",
        "raw_status": "aberto",
-       "assignee": "José Maria Ferreira da Silva",
+       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793343600000,
        "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5zh01",
-       "u": 1792269170127,
+       "u": 1793049541252,
        "dc": null
       },
       {
        "n": "Documentação Técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "José Maria Ferreira da Silva",
        "due": 1793343600000,
        "original_due": 1793343600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak8rgfd",
-       "u": 1792790300056,
-       "dc": null
+       "u": 1793049536918,
+       "dc": 1793049536918
       }
      ]
     },
