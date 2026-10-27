@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-27T00:20:15.052416+00:00",
+ "last_sync_utc": "2026-10-27T02:57:26.596183+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3201,8 +3201,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e7cy",
-       "u": 1792453301386,
-       "dc": 1792453301386
+       "u": 1793062440716,
+       "dc": 1793062440716
       },
       {
        "n": "WIN-64AA16BBGDE",
@@ -3220,8 +3220,8 @@
       },
       {
        "n": "SWSPR003",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -3229,13 +3229,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j4y",
-       "u": 1793028970203,
-       "dc": null
+       "u": 1793062454334,
+       "dc": 1793062454334
       },
       {
        "n": "SWSPR002",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -3243,8 +3243,22 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j8f",
-       "u": 1793028990798,
-       "dc": null
+       "u": 1793060514012,
+       "dc": 1793060514012
+      },
+      {
+       "n": "Configuração backup Veeam - Projeto Soprema - com o Cliente",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukz11h",
+       "u": 1793063301299,
+       "dc": 1793063301299
       },
       {
        "n": "Configurar Jobs de backup",
@@ -3306,14 +3320,14 @@
        "n": "API de report de ferramenta para o cliente",
        "status": "backlog",
        "raw_status": "aberto",
-       "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
+       "assignee": "Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak8quyy",
-       "u": 1792786834733,
+       "u": 1793063281328,
        "dc": null
       }
      ]
@@ -4673,7 +4687,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzt",
-       "u": 1792790818725,
+       "u": 1793063154367,
        "dc": null
       },
       {
@@ -4715,8 +4729,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj11",
-       "u": 1792702897052,
-       "dc": 1792702897052
+       "u": 1793063161294,
+       "dc": 1793063161294
       },
       {
        "n": "VPN",
@@ -4729,8 +4743,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj13",
-       "u": 1792702911871,
-       "dc": 1792702911871
+       "u": 1793063176273,
+       "dc": 1793063176273
       },
       {
        "n": "Verificação de regras e liberação dos firewall",
@@ -4841,7 +4855,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzr",
-       "u": 1792606231230,
+       "u": 1793063183054,
        "dc": null
       },
       {
@@ -4911,7 +4925,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj75c",
-       "u": 1792667949645,
+       "u": 1793063188676,
        "dc": null
       },
       {
@@ -4925,7 +4939,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj778",
-       "u": 1792667953904,
+       "u": 1793063194669,
        "dc": null
       },
       {
@@ -4939,7 +4953,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj77y",
-       "u": 1792667958581,
+       "u": 1793063202280,
        "dc": null
       },
       {
@@ -4953,7 +4967,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj789",
-       "u": 1792667966992,
+       "u": 1793063209473,
        "dc": null
       },
       {
@@ -4967,7 +4981,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj78f",
-       "u": 1792667971482,
+       "u": 1793063217127,
        "dc": null
       },
       {
@@ -4981,7 +4995,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj790",
-       "u": 1792667976038,
+       "u": 1793063223168,
        "dc": null
       },
       {
@@ -4995,7 +5009,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj25",
-       "u": 1792518568167,
+       "u": 1793063228827,
        "dc": null
       },
       {
@@ -5009,7 +5023,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1792524195706,
+       "u": 1793063235233,
        "dc": null
       },
       {
@@ -5023,7 +5037,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2r",
-       "u": 1792518580460,
+       "u": 1793063243647,
        "dc": null
       },
       {
@@ -5037,7 +5051,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3a",
-       "u": 1792518584909,
+       "u": 1793063086588,
        "dc": null
       },
       {
