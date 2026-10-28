@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-28T06:37:22.437620+00:00",
+ "last_sync_utc": "2026-10-28T15:47:38.826140+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -62,8 +62,8 @@
       },
       {
        "n": "NGBORA01",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -71,8 +71,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2f7",
-       "u": 1793035656345,
-       "dc": null
+       "u": 1793188886893,
+       "dc": 1793188885621
       },
       {
        "n": "Transferência QCOW2",
@@ -89,23 +89,9 @@
        "dc": 1792415838512
       },
       {
-       "n": "Criação do VM",
-       "status": "in review",
-       "raw_status": "revisando",
-       "assignee": "Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 2,
-       "id": "17ttbukx2mr",
-       "u": 1793035658313,
-       "dc": null
-      },
-      {
        "n": "SYNC de dados",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792998000000,
        "original_due": 1792998000000,
@@ -113,13 +99,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2nw",
-       "u": 1793035647164,
-       "dc": 1793035647164
+       "u": 1793189158628,
+       "dc": 1793189157594
       },
       {
        "n": "NGSAPORA01",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -127,13 +113,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2f9",
-       "u": 1793035664487,
-       "dc": null
+       "u": 1793188903520,
+       "dc": 1793188900460
       },
       {
        "n": "Transferência QCOW2",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza / Augusto Rossi",
        "due": 1792134000000,
        "original_due": 1792134000000,
@@ -141,27 +127,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p3",
-       "u": 1793035674851,
-       "dc": 1793035674851
-      },
-      {
-       "n": "criação do VM",
-       "status": "in review",
-       "raw_status": "revisando",
-       "assignee": "Lucas Federissis de Souza",
-       "due": 1792738800000,
-       "original_due": 1792738800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 2,
-       "id": "17ttbukx2nm",
-       "u": 1793035667083,
-       "dc": null
+       "u": 1793188905139,
+       "dc": 1793188900460
       },
       {
        "n": "SYNC de dados",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792998000000,
        "original_due": 1792998000000,
@@ -169,13 +141,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2nu",
-       "u": 1793035638980,
-       "dc": 1793035638980
+       "u": 1793188903409,
+       "dc": 1793188900460
       },
       {
        "n": "Legado-21-20",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -183,13 +155,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2fa",
-       "u": 1793035635133,
-       "dc": 1793035635133
+       "u": 1793189011504,
+       "dc": 1793188994887
       },
       {
        "n": "Disponibilização - Kosmo",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1792047600000,
        "original_due": 1792047600000,
@@ -197,13 +169,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pm",
-       "u": 1792416431575,
-       "dc": 1792416431575
+       "u": 1793189011475,
+       "dc": 1793188994887
       },
       {
        "n": "Transferência",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Augusto Rossi",
        "due": 1792393200000,
        "original_due": 1792393200000,
@@ -211,13 +183,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2ve",
-       "u": 1792774405917,
-       "dc": 1792774405917
+       "u": 1793189011449,
+       "dc": 1793188994887
       },
       {
        "n": "Validação Hashes",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Augusto Rossi / Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -225,13 +197,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p5",
-       "u": 1792774424303,
-       "dc": null
+       "u": 1793189012194,
+       "dc": 1793188994887
       },
       {
        "n": "JAN-22",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -239,13 +211,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2kz",
-       "u": 1793035632151,
-       "dc": 1793035632151
+       "u": 1793189148452,
+       "dc": 1793189147482
       },
       {
        "n": "Disponibilização - Kosmo",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
@@ -253,13 +225,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pv",
-       "u": 1792416607227,
-       "dc": 1792416607227
+       "u": 1793189148696,
+       "dc": 1793189147482
       },
       {
        "n": "Transferência",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792393200000,
        "original_due": 1792393200000,
@@ -267,13 +239,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vu",
-       "u": 1793035625981,
-       "dc": 1793035625981
+       "u": 1793189148569,
+       "dc": 1793189147482
       },
       {
        "n": "Validação Hashes",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -281,13 +253,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p7",
-       "u": 1793035617160,
-       "dc": null
+       "u": 1793189032207,
+       "dc": 1793189027296
       },
       {
        "n": "JAN-23",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -295,13 +267,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m1",
-       "u": 1793035615436,
-       "dc": null
+       "u": 1793189019278,
+       "dc": 1793189006956
       },
       {
        "n": "Disponibilização - Kosmo",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1792134000000,
        "original_due": 1792134000000,
@@ -309,13 +281,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2px",
-       "u": 1792416576064,
-       "dc": 1792416576064
+       "u": 1793189018932,
+       "dc": 1793189006956
       },
       {
        "n": "Transferência",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793170800000,
        "original_due": 1793170800000,
@@ -323,13 +295,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vw",
-       "u": 1793035612122,
-       "dc": 1793035612122
+       "u": 1793189018664,
+       "dc": 1793189006956
       },
       {
        "n": "Validação Hashes",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793170800000,
        "original_due": 1793170800000,
@@ -337,13 +309,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p9",
-       "u": 1793035602119,
-       "dc": null
+       "u": 1793189020009,
+       "dc": 1793189006956
       },
       {
        "n": "JAN-24",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -351,13 +323,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m2",
-       "u": 1793035600642,
-       "dc": null
+       "u": 1793189023941,
+       "dc": 1793189013871
       },
       {
        "n": "Disponibilização - Kosmo",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1792566000000,
        "original_due": 1792566000000,
@@ -365,13 +337,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2py",
-       "u": 1792608546467,
-       "dc": 1792608546467
+       "u": 1793189023920,
+       "dc": 1793189013871
       },
       {
        "n": "Transferência",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -379,13 +351,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2vz",
-       "u": 1793035597739,
-       "dc": 1793035597739
+       "u": 1793189023938,
+       "dc": 1793189013871
       },
       {
        "n": "Validação Hashes",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -393,13 +365,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pa",
-       "u": 1793035579212,
-       "dc": null
+       "u": 1793189024286,
+       "dc": 1793189013871
       },
       {
        "n": "JAN-25",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -407,13 +379,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx2m3",
-       "u": 1793035578302,
-       "dc": null
+       "u": 1793189028825,
+       "dc": 1793189020896
       },
       {
        "n": "Disponibilização - Kosmo",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -421,13 +393,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2q0",
-       "u": 1792780733180,
-       "dc": null
+       "u": 1793189029877,
+       "dc": 1793189020896
       },
       {
        "n": "Transferência",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -435,13 +407,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2w0",
-       "u": 1793035591843,
-       "dc": null
+       "u": 1793189028922,
+       "dc": 1793189020896
       },
       {
        "n": "Validação Hashes",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -449,8 +421,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2pc",
-       "u": 1793035574834,
-       "dc": null
+       "u": 1793189029162,
+       "dc": 1793189020896
       },
       {
        "n": "JAN-26",
@@ -478,34 +450,6 @@
        "depth": 2,
        "id": "17ttbukyxrp",
        "u": 1793035749408,
-       "dc": null
-      },
-      {
-       "n": "Transferencia",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Lucas Federissis de Souza",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 2,
-       "id": "17ttbukyxrq",
-       "u": 1793035735030,
-       "dc": null
-      },
-      {
-       "n": "Validação Hashes",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Lucas Federissis de Souza",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 2,
-       "id": "17ttbukyxrr",
-       "u": 1793035735030,
        "dc": null
       }
      ]
@@ -2727,8 +2671,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62b",
-       "u": 1793135415135,
-       "dc": 1793135415135
+       "u": 1793189429663,
+       "dc": 1793189429663
       },
       {
        "n": "Documentar rotinas de backup",
@@ -4731,8 +4675,8 @@
       },
       {
        "n": "Firewall",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": null,
        "original_due": null,
@@ -4740,8 +4684,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzt",
-       "u": 1793063154367,
-       "dc": null
+       "u": 1793193269418,
+       "dc": 1793193268136
       },
       {
        "n": "PFSENSE",
@@ -4774,7 +4718,7 @@
       {
        "n": "Configuração",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Antonio Junior / Augusto Rossi",
        "due": null,
        "original_due": null,
@@ -4782,13 +4726,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj11",
-       "u": 1793063161294,
-       "dc": 1793063161294
+       "u": 1793193264795,
+       "dc": 1793193263888
       },
       {
        "n": "VPN",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
@@ -4796,13 +4740,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj13",
-       "u": 1793063176273,
-       "dc": 1793063176273
+       "u": 1793193262555,
+       "dc": 1793193261565
       },
       {
        "n": "Verificação de regras e liberação dos firewall",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
@@ -4810,8 +4754,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxtd8",
-       "u": 1792790815335,
-       "dc": null
+       "u": 1793193261469,
+       "dc": 1793193260180
       },
       {
        "n": "Migração (Veeam)",
@@ -5095,8 +5039,8 @@
       },
       {
        "n": "Documentação técnica",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
@@ -5104,13 +5048,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3a",
-       "u": 1793127959917,
-       "dc": null
+       "u": 1793194421567,
+       "dc": 1793194420213
       },
       {
        "n": "Documentação FW APM",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Antonio Junior",
        "due": null,
        "original_due": null,
@@ -5118,8 +5062,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukz5fa",
-       "u": 1793128096678,
-       "dc": 1793128096678
+       "u": 1793194388548,
+       "dc": 1793194387167
       },
       {
        "n": "Go-Live",
@@ -5306,59 +5250,6 @@
        "id": "86akekg7j",
        "u": 1790597854057,
        "dc": 1790597854057
-      }
-     ]
-    },
-    {
-     "n": "Fase 4 - Encerramento",
-     "status": "in progress",
-     "raw_status": "em andamento",
-     "assignee": "Priscila de Fatima Sotério Ferreira",
-     "due": 1791961200000,
-     "u": 1792611376710,
-     "id": "86akekg4y",
-     "ativ": [
-      {
-       "n": "Elaboração da TEP",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Priscila de Fatima Sotério Ferreira",
-       "due": 1792393200000,
-       "original_due": 1792393200000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akekg5m",
-       "u": 1792611578121,
-       "dc": 1792611361476
-      },
-      {
-       "n": "Assinatura da TEP",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Priscila de Fatima Sotério Ferreira",
-       "due": 1792393200000,
-       "original_due": 1792393200000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akekg5n",
-       "u": 1793120396675,
-       "dc": 1793120396675
-      },
-      {
-       "n": "Faturamento",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Priscila de Fatima Sotério Ferreira",
-       "due": 1792393200000,
-       "original_due": 1792393200000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akruatg",
-       "u": 1792763034672,
-       "dc": 1792763034672
       }
      ]
     },
@@ -5696,7 +5587,7 @@
       {
        "n": "Documentação técnica",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": null,
        "original_due": null,
@@ -5704,8 +5595,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukz3v4",
-       "u": 1793137305098,
-       "dc": 1793137305098
+       "u": 1793195259297,
+       "dc": 1793195258088
       },
       {
        "n": "Ajuste na configuração da Subnete - solicitada pelo cliente",
@@ -5720,6 +5611,59 @@
        "id": "17ttbukz6ht",
        "u": 1793137478370,
        "dc": 1793137477480
+      }
+     ]
+    },
+    {
+     "n": "Fase 4 - Encerramento",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Priscila de Fatima Sotério Ferreira",
+     "due": 1791961200000,
+     "u": 1793195282833,
+     "id": "86akekg4y",
+     "ativ": [
+      {
+       "n": "Elaboração da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Priscila de Fatima Sotério Ferreira",
+       "due": 1792393200000,
+       "original_due": 1792393200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akekg5m",
+       "u": 1792611578121,
+       "dc": 1792611361476
+      },
+      {
+       "n": "Assinatura da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Priscila de Fatima Sotério Ferreira",
+       "due": 1792393200000,
+       "original_due": 1792393200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akekg5n",
+       "u": 1793120396675,
+       "dc": 1793120396675
+      },
+      {
+       "n": "Faturamento",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Priscila de Fatima Sotério Ferreira",
+       "due": 1792393200000,
+       "original_due": 1792393200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akruatg",
+       "u": 1792763034672,
+       "dc": 1792763034672
       }
      ]
     }
