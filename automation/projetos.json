@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-28T15:47:38.826140+00:00",
+ "last_sync_utc": "2026-10-28T20:49:30.086830+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -436,6 +436,34 @@
        "depth": 1,
        "id": "17ttbukyxr3",
        "u": 1793035744393,
+       "dc": null
+      },
+      {
+       "n": "Transferência",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukzbd8",
+       "u": 1793206693142,
+       "dc": null
+      },
+      {
+       "n": "Validação Hashes",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 2,
+       "id": "17ttbukzbd9",
+       "u": 1793206684422,
        "dc": null
       },
       {
