@@ -752,7 +752,7 @@
  {
   "num": 4,
   "id": "86afctd22",
-  "status": "in progress",
+  "status": "shipped",
   "due": 1791961200000,
   "name": "BCOS / Observabilidade como módulo do BCP",
   "short": "BCP - Observabilidade",
@@ -1050,7 +1050,7 @@
    },
    {
     "n": "Termo de aceite entrega",
-    "status": "in progress",
+    "status": "shipped",
     "assignee": "Rafael Alves",
     "due": 1792479600000,
     "id": "17ttbukvzvb",

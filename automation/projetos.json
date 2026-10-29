@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-29T15:54:58.262271+00:00",
+ "last_sync_utc": "2026-10-29T20:55:32.574185+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3248,8 +3248,8 @@
       },
       {
        "n": "Validação de backup e restore",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
@@ -3257,21 +3257,21 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e7jr",
-       "u": 1792786834733,
-       "dc": null
+       "u": 1793295783090,
+       "dc": 1793295782017
       },
       {
        "n": "Monitoramento do backup",
        "status": "in planning",
        "raw_status": "planejamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ygpj",
-       "u": 1792786834733,
+       "u": 1793295809439,
        "dc": null
       },
       {
@@ -5027,42 +5027,42 @@
        "n": "BC-Backup",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj25",
-       "u": 1793063228827,
+       "u": 1793296553813,
        "dc": null
       },
       {
        "n": "Configuração de política",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1793063235233,
+       "u": 1793296555510,
        "dc": null
       },
       {
        "n": "Teste de backup",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
+       "assignee": "Augusto Rossi",
        "due": 1793170800000,
        "original_due": 1793170800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2r",
-       "u": 1793063243647,
+       "u": 1793296560099,
        "dc": null
       },
       {
@@ -6201,8 +6201,8 @@
       },
       {
        "n": "Envio de credenciais de produção",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -6210,13 +6210,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxaz1",
-       "u": 1792680516546,
-       "dc": null
+       "u": 1793298306953,
+       "dc": 1793298306953
       },
       {
        "n": "Envio JWT",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1792652400000,
        "original_due": 1792652400000,
@@ -6224,8 +6224,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxwhw",
-       "u": 1792680519236,
-       "dc": null
+       "u": 1793298301652,
+       "dc": 1793298301652
       },
       {
        "n": "Criação de usuário de serviço",
@@ -6271,8 +6271,8 @@
       },
       {
        "n": "Ajustes Mesa TI",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "blocked",
+       "raw_status": "bloqueada",
        "assignee": "Guilherme Lopes / Tiago Gomes de Oliveira",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -6280,13 +6280,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqp06",
-       "u": 1792698093024,
+       "u": 1793298320319,
        "dc": null
       },
       {
        "n": "Levantamento de autenticação",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "blocked",
+       "raw_status": "bloqueada",
        "assignee": "Wagner Bento Felix",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -6294,13 +6294,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukw474",
-       "u": 1792697717890,
+       "u": 1793298324725,
        "dc": null
       },
       {
        "n": "Liberar Usuario",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "blocked",
+       "raw_status": "bloqueada",
        "assignee": "Guilherme Lopes",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -6308,13 +6308,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukw475",
-       "u": 1792673029168,
+       "u": 1793298327098,
        "dc": null
       },
       {
        "n": "Verificar com fornecedor Blazon",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
        "assignee": "Wagner Bento Felix",
        "due": 1792998000000,
        "original_due": 1792998000000,
@@ -6322,7 +6322,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbuky0fe",
-       "u": 1792698143748,
+       "u": 1793298316863,
        "dc": null
       },
       {
@@ -6668,8 +6668,8 @@
       },
       {
        "n": "Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -6677,8 +6677,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqw82",
-       "u": 1791920856373,
-       "dc": null
+       "u": 1793298866969,
+       "dc": 1793298866969
       },
       {
        "n": "Gerar a chave privada e o CSR e emitir um único certificado para os dois domínios",
