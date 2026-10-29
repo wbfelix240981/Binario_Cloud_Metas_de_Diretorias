@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-29T06:46:09.613633+00:00",
+ "last_sync_utc": "2026-10-29T15:54:58.262271+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4236,115 +4236,6 @@
      ]
     },
     {
-     "n": "Fase 4 - Encerramento",
-     "status": "in progress",
-     "raw_status": "em andamento",
-     "assignee": "—",
-     "due": 1793602800000,
-     "u": 1792667505084,
-     "id": "86akg8t8g",
-     "ativ": [
-      {
-       "n": "Elaboração da TEP",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t8p",
-       "u": 1792784017419,
-       "dc": 1792784017419
-      },
-      {
-       "n": "Checklist de Readiness / Aceite Operacional",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 1,
-       "id": "86akkhrvq",
-       "u": 1792784011250,
-       "dc": 1792784011250
-      },
-      {
-       "n": "Assinatura da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t8q",
-       "u": 1792667477736,
-       "dc": null
-      },
-      {
-       "n": "Envio da documentação técnica",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akg8t9g",
-       "u": 1792710532772,
-       "dc": 1792710532772
-      },
-      {
-       "n": "Entrada oficial em produção",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhth0",
-       "u": 1792667492785,
-       "dc": 1792667492785
-      },
-      {
-       "n": "Operação assistida",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhtpy",
-       "u": 1792710519246,
-       "dc": 1792710519246
-      },
-      {
-       "n": "Reunião de acompanhamento pós-Go-Live",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "—",
-       "due": 1793602800000,
-       "original_due": 1793602800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akkhtvf",
-       "u": 1792689213767,
-       "dc": null
-      }
-     ]
-    },
-    {
      "n": "Fase 2 -  Kickoff",
      "status": "shipped",
      "raw_status": "fechado",
@@ -4394,6 +4285,115 @@
        "id": "86akg8taa",
        "u": 1792783971834,
        "dc": 1792783971834
+      }
+     ]
+    },
+    {
+     "n": "Fase 4 - Encerramento",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "—",
+     "due": 1793602800000,
+     "u": 1793278707417,
+     "id": "86akg8t8g",
+     "ativ": [
+      {
+       "n": "Elaboração da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8t8p",
+       "u": 1792784017419,
+       "dc": 1792784017419
+      },
+      {
+       "n": "Checklist de Readiness / Aceite Operacional",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "86akkhrvq",
+       "u": 1792784011250,
+       "dc": 1792784011250
+      },
+      {
+       "n": "Assinatura da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8t8q",
+       "u": 1793278427365,
+       "dc": 1793278427365
+      },
+      {
+       "n": "Envio da documentação técnica",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akg8t9g",
+       "u": 1792710532772,
+       "dc": 1792710532772
+      },
+      {
+       "n": "Entrada oficial em produção",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhth0",
+       "u": 1792667492785,
+       "dc": 1792667492785
+      },
+      {
+       "n": "Operação assistida",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhtpy",
+       "u": 1792710519246,
+       "dc": 1792710519246
+      },
+      {
+       "n": "Reunião de acompanhamento pós-Go-Live",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": 1793602800000,
+       "original_due": 1793602800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akkhtvf",
+       "u": 1793278431823,
+       "dc": 1793278431823
       }
      ]
     }
@@ -4594,8 +4594,8 @@
       },
       {
        "n": "Assinatura da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -4603,8 +4603,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzw",
-       "u": 1792790892233,
-       "dc": null
+       "u": 1793281564044,
+       "dc": 1793281564044
       },
       {
        "n": "Envio da documentação técnica",
