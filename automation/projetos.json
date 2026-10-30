@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-10-29T20:55:32.574185+00:00",
+ "last_sync_utc": "2026-10-30T00:38:59.850102+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -2882,20 +2882,6 @@
        "dc": 1791205174289
       },
       {
-       "n": "Liberação Link 500Mbp's - Neugebauer",
-       "status": "shipped",
-       "raw_status": "concluído",
-       "assignee": "Diogo Lerison",
-       "due": 1791961200000,
-       "original_due": 1791961200000,
-       "alarme_limpo_due": 1791961200000,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akpu58t",
-       "u": 1792416220165,
-       "dc": 1792416220165
-      },
-      {
        "n": "Encerramento Kosmo",
        "status": "in progress",
        "raw_status": "em andamento",
@@ -2908,6 +2894,20 @@
        "id": "86akjgbjg",
        "u": 1792416282350,
        "dc": null
+      },
+      {
+       "n": "Liberação Link 500Mbp's - Neugebauer",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": 1791961200000,
+       "original_due": 1791961200000,
+       "alarme_limpo_due": 1791961200000,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akpu58t",
+       "u": 1793315892979,
+       "dc": 1793315891762
       }
      ]
     }
