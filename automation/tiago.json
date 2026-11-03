@@ -1632,7 +1632,7 @@
     "n": "Fase 4 - v1 e Esteira de QA",
     "status": "in progress",
     "assignee": "Nathan de Moraes Valim Francisco",
-    "due": 1797577200000,
+    "due": 1795762800000,
     "id": "86akbhw3d",
     "ativ": [
      {
@@ -1726,8 +1726,8 @@
      {
       "n": "Precificação do produto",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1795158000000,
+      "original_due": 1795158000000,
       "nova_previsao": null,
       "id": "86akbhw6d"
      }

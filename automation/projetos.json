@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-03T16:53:27.137089+00:00",
+ "last_sync_utc": "2026-11-03T18:04:38.881294+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3046,14 +3046,14 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva",
-     "due": 1793343600000,
-     "u": 1792459353016,
+     "due": 1796367600000,
+     "u": 1793728583334,
      "id": "86ak5e38y",
      "ativ": [
       {
        "n": "Backup Gerenciado",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3061,8 +3061,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e6re",
-       "u": 1792193239963,
-       "dc": null
+       "u": 1793727528985,
+       "dc": 1793727528985
       },
       {
        "n": "Definição de servidor para instalar o VBR",
@@ -3778,13 +3778,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
+       "due": 1794898800000,
+       "original_due": 1794898800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5zh01",
-       "u": 1793049541252,
+       "u": 1793727459776,
        "dc": null
       },
       {
@@ -5286,8 +5286,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-     "due": null,
-     "u": 1792667556936,
+     "due": 1795762800000,
+     "u": 1793728483717,
      "id": "86akekg50",
      "ativ": [
       {
@@ -5547,13 +5547,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1796972400000,
+       "original_due": 1796972400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akfzp4v",
-       "u": 1792790251586,
+       "u": 1793728498353,
        "dc": null
       },
       {
@@ -5561,13 +5561,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "—",
-       "due": null,
-       "original_due": null,
+       "due": 1797058800000,
+       "original_due": 1797058800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akfzp4y",
-       "u": 1791204857996,
+       "u": 1793728515854,
        "dc": null
       },
       {
@@ -6171,13 +6171,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqp06",
-       "u": 1793391660443,
+       "u": 1793728769774,
        "dc": null
       },
       {
        "n": "Definir fluxo de autenticação do Mesa TI via Blazon",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1793689200000,
        "original_due": 1793689200000,
@@ -6185,8 +6185,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukw474",
-       "u": 1793391557338,
-       "dc": null
+       "u": 1793728721535,
+       "dc": 1793728721535
       },
       {
        "n": "Liberar acesso dos usuários do Mesa TI",
