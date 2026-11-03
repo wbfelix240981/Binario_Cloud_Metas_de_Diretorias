@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-03T18:04:38.881294+00:00",
+ "last_sync_utc": "2026-11-03T22:16:55.001351+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -4627,8 +4627,8 @@
      "status": "shipped",
      "raw_status": "concluído",
      "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-     "due": null,
-     "u": 1793124418139,
+     "due": 1801551600000,
+     "u": 1793729580762,
      "id": "86akekhzc",
      "ativ": [
       {
@@ -4874,13 +4874,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzr",
-       "u": 1793063183054,
+       "u": 1793729604688,
        "dc": null
       },
       {
@@ -4944,13 +4944,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj75c",
-       "u": 1793063188676,
+       "u": 1793729612818,
        "dc": null
       },
       {
@@ -4958,13 +4958,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj778",
-       "u": 1793063194669,
+       "u": 1793737902277,
        "dc": null
       },
       {
@@ -4972,13 +4972,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj77y",
-       "u": 1793063202280,
+       "u": 1793737933233,
        "dc": null
       },
       {
@@ -4986,13 +4986,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj789",
-       "u": 1793063209473,
+       "u": 1793737966296,
        "dc": null
       },
       {
@@ -5000,13 +5000,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj78f",
-       "u": 1793063217127,
+       "u": 1793737993122,
        "dc": null
       },
       {
@@ -5014,13 +5014,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1801551600000,
+       "original_due": 1801551600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj790",
-       "u": 1793063223168,
+       "u": 1793738018251,
        "dc": null
       },
       {
@@ -5042,13 +5042,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1800428400000,
+       "original_due": 1800428400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1793296555510,
+       "u": 1793735610055,
        "dc": null
       },
       {
@@ -5056,13 +5056,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1800428400000,
+       "original_due": 1800428400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2r",
-       "u": 1793296560099,
+       "u": 1793735633495,
        "dc": null
       },
       {
@@ -6190,8 +6190,8 @@
       },
       {
        "n": "Liberar acesso dos usuários do Mesa TI",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Lopes",
        "due": 1794207600000,
        "original_due": 1794207600000,
@@ -6199,7 +6199,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukw475",
-       "u": 1793391670908,
+       "u": 1793729125438,
        "dc": null
       },
       {
@@ -7025,7 +7025,7 @@
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
      "due": 1794121200000,
-     "u": 1792674537194,
+     "u": 1793729628029,
      "id": "86akq9jjw",
      "ativ": [
       {
