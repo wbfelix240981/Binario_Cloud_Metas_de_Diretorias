@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-04T07:14:40.518725+00:00",
+ "last_sync_utc": "2026-11-04T16:54:38.256969+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -85,8 +85,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukx2p2",
-       "u": 1792415838512,
-       "dc": 1792415838512
+       "u": 1793803669051,
+       "dc": 1793803669051
       },
       {
        "n": "SYNC de dados",
@@ -2699,8 +2699,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62b",
-       "u": 1793189429663,
-       "dc": 1793189429663
+       "u": 1793797507745,
+       "dc": 1793797507745
       },
       {
        "n": "Documentar rotinas de backup",
@@ -2963,13 +2963,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "José Maria Ferreira da Silva",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1796194800000,
+       "original_due": 1796194800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebyb",
-       "u": 1793770194840,
+       "u": 1793808253533,
        "dc": null
       },
       {
@@ -3047,22 +3047,22 @@
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva",
      "due": 1796367600000,
-     "u": 1793728583334,
+     "u": 1793808249377,
      "id": "86ak5e38y",
      "ativ": [
       {
        "n": "Backup Gerenciado",
-       "status": "shipped",
-       "raw_status": "concluído",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
+       "due": 1794898800000,
+       "original_due": 1794898800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e6re",
-       "u": 1793727528985,
-       "dc": 1793727528985
+       "u": 1793811147864,
+       "dc": null
       },
       {
        "n": "Definição de servidor para instalar o VBR",
@@ -3075,8 +3075,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e6z0",
-       "u": 1791578993137,
-       "dc": 1791578993137
+       "u": 1793803658976,
+       "dc": 1793803658976
       },
       {
        "n": "Instalação do VBR",
@@ -3089,8 +3089,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e70q",
-       "u": 1792421265951,
-       "dc": 1792421265951
+       "u": 1793803655109,
+       "dc": 1793803655109
       },
       {
        "n": "Configurar repositório (8Tb)",
@@ -3103,8 +3103,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e78d",
-       "u": 1792421275968,
-       "dc": 1792421275968
+       "u": 1793803650260,
+       "dc": 1793803650260
       },
       {
        "n": "Criação SRV-VBR na Cloud",
@@ -3173,8 +3173,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e7cy",
-       "u": 1793062440716,
-       "dc": 1793062440716
+       "u": 1793803607637,
+       "dc": 1793803607637
       },
       {
        "n": "WIN-64AA16BBGDE",
@@ -3257,7 +3257,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e7jr",
-       "u": 1793295783090,
+       "u": 1793808517278,
        "dc": 1793295782017
       },
       {
@@ -3265,41 +3265,41 @@
        "status": "in planning",
        "raw_status": "planejamento",
        "assignee": "Augusto Rossi",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1794898800000,
+       "original_due": 1794898800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ygpj",
-       "u": 1793295809439,
+       "u": 1793799698582,
        "dc": null
       },
       {
        "n": "Documentação técnica",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794898800000,
+       "original_due": 1794898800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ec77",
-       "u": 1793770187735,
+       "u": 1793799777321,
        "dc": null
       },
       {
        "n": "API de report de ferramenta para o cliente",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1797145200000,
+       "original_due": 1797145200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak8quyy",
-       "u": 1793063281328,
+       "u": 1793799020872,
        "dc": null
       }
      ]
@@ -3527,12 +3527,104 @@
      ]
     },
     {
+     "n": "Fase 4 - Controle",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Diogo Lerison",
+     "due": null,
+     "u": 1792612050526,
+     "id": "86ak5evqw",
+     "ativ": [
+      {
+       "n": "Validar entregas do projeto",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5eykw",
+       "u": 1792612045919,
+       "dc": 1792612045919
+      }
+     ]
+    },
+    {
+     "n": "Fase 5 - Encerramento",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Diogo Lerison",
+     "due": 1791961200000,
+     "u": 1793120069865,
+     "id": "86ak5evuv",
+     "ativ": [
+      {
+       "n": "Elaboração da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5eyy7",
+       "u": 1792612075612,
+       "dc": 1792612075612
+      },
+      {
+       "n": "Realizar contato de encerramento",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ez0e",
+       "u": 1792667903132,
+       "dc": 1792667903132
+      },
+      {
+       "n": "Documentação técnica final",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": 1793775600000,
+       "original_due": 1793775600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ez25",
+       "u": 1793120067417,
+       "dc": 1793120067417
+      },
+      {
+       "n": "Assinatura da TEP",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ez40",
+       "u": 1793016238533,
+       "dc": 1793016238533
+      }
+     ]
+    },
+    {
      "n": "Fase 3 - Pleion - Execução técnica - Gerenciado",
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
      "due": 1797922800000,
-     "u": 1793762825981,
+     "u": 1793808234053,
      "id": "86ak5evkm",
      "ativ": [
       {
@@ -3770,13 +3862,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5z856",
-       "u": 1793770170924,
+       "u": 1793808257170,
        "dc": null
       },
       {
        "n": "Configurar monitoramento.",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1794898800000,
        "original_due": 1794898800000,
@@ -3784,8 +3876,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5zh01",
-       "u": 1793770176461,
-       "dc": null
+       "u": 1793803675621,
+       "dc": 1793803675621
       },
       {
        "n": "Documentação Técnica",
@@ -3800,98 +3892,6 @@
        "id": "86ak8rgfd",
        "u": 1793114976314,
        "dc": 1793114975344
-      }
-     ]
-    },
-    {
-     "n": "Fase 4 - Controle",
-     "status": "shipped",
-     "raw_status": "fechado",
-     "assignee": "Diogo Lerison",
-     "due": null,
-     "u": 1792612050526,
-     "id": "86ak5evqw",
-     "ativ": [
-      {
-       "n": "Validar entregas do projeto",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5eykw",
-       "u": 1792612045919,
-       "dc": 1792612045919
-      }
-     ]
-    },
-    {
-     "n": "Fase 5 - Encerramento",
-     "status": "shipped",
-     "raw_status": "fechado",
-     "assignee": "Diogo Lerison",
-     "due": 1791961200000,
-     "u": 1793120069865,
-     "id": "86ak5evuv",
-     "ativ": [
-      {
-       "n": "Elaboração da TEP",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5eyy7",
-       "u": 1792612075612,
-       "dc": 1792612075612
-      },
-      {
-       "n": "Realizar contato de encerramento",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ez0e",
-       "u": 1792667903132,
-       "dc": 1792667903132
-      },
-      {
-       "n": "Documentação técnica final",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "José Maria Ferreira da Silva",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ez25",
-       "u": 1793120067417,
-       "dc": 1793120067417
-      },
-      {
-       "n": "Assinatura da TEP",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ez40",
-       "u": 1793016238533,
-       "dc": 1793016238533
       }
      ]
     }
@@ -4624,11 +4624,11 @@
     },
     {
      "n": "Fase 3 - Execução (APM) - Gerenciado",
-     "status": "shipped",
-     "raw_status": "concluído",
+     "status": "in progress",
+     "raw_status": "em andamento",
      "assignee": "Priscila de Fatima Sotério Ferreira / Augusto Rossi / José Maria Ferreira da Silva",
      "due": 1801551600000,
-     "u": 1793729580762,
+     "u": 1793808229400,
      "id": "86akekhzc",
      "ativ": [
       {
@@ -4880,7 +4880,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekhzr",
-       "u": 1793729604688,
+       "u": 1793803353028,
        "dc": null
       },
       {
@@ -4950,7 +4950,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj75c",
-       "u": 1793729612818,
+       "u": 1793803356792,
        "dc": null
       },
       {
@@ -4964,7 +4964,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj778",
-       "u": 1793737902277,
+       "u": 1793803361372,
        "dc": null
       },
       {
@@ -4978,7 +4978,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj77y",
-       "u": 1793737933233,
+       "u": 1793803365638,
        "dc": null
       },
       {
@@ -4992,7 +4992,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj789",
-       "u": 1793737966296,
+       "u": 1793803369132,
        "dc": null
       },
       {
@@ -5006,7 +5006,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj78f",
-       "u": 1793737993122,
+       "u": 1793803373887,
        "dc": null
       },
       {
@@ -5020,7 +5020,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktj790",
-       "u": 1793738018251,
+       "u": 1793803377667,
        "dc": null
       },
       {
@@ -5028,13 +5028,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi",
-       "due": 1793170800000,
-       "original_due": 1793170800000,
+       "due": 1795590000000,
+       "original_due": 1795590000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj25",
-       "u": 1793296553813,
+       "u": 1793803342029,
        "dc": null
       },
       {
@@ -5048,7 +5048,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2q",
-       "u": 1793735610055,
+       "u": 1793803349622,
        "dc": null
       },
       {
@@ -5062,7 +5062,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86akekj2r",
-       "u": 1793735633495,
+       "u": 1793803346117,
        "dc": null
       },
       {
@@ -5287,7 +5287,7 @@
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
      "due": 1795762800000,
-     "u": 1793728483717,
+     "u": 1793803298541,
      "id": "86akekg50",
      "ativ": [
       {
@@ -5553,7 +5553,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akfzp4v",
-       "u": 1793770180555,
+       "u": 1793803302799,
        "dc": null
       },
       {
@@ -5791,8 +5791,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-     "due": null,
-     "u": 1793770285445,
+     "due": 1795158000000,
+     "u": 1793803253728,
      "id": "17ttbukwjw7",
      "ativ": [
       {
@@ -5870,13 +5870,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1795158000000,
+       "original_due": 1795158000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwe",
-       "u": 1793770291163,
+       "u": 1793803257067,
        "dc": null
       }
      ]
@@ -5990,13 +5990,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1795158000000,
+       "original_due": 1795158000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukyhbq",
-       "u": 1793770297153,
+       "u": 1793803260963,
        "dc": null
       }
      ]
