@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-04T18:33:16.730392+00:00",
+ "last_sync_utc": "2026-11-04T22:28:38.275102+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -6419,8 +6419,8 @@
       },
       {
        "n": "Validar endpoint Fortaleza;",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in review",
+       "raw_status": "revisando",
        "assignee": "Joab de Araújo Silva",
        "due": 1793775600000,
        "original_due": 1793775600000,
@@ -6428,7 +6428,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwen",
-       "u": 1793393550977,
+       "u": 1793818544472,
        "dc": null
       },
       {
@@ -6461,8 +6461,8 @@
       },
       {
        "n": "Validar Endpoint Porto Alegre;",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in review",
+       "raw_status": "revisando",
        "assignee": "Joab de Araújo Silva",
        "due": 1793775600000,
        "original_due": 1793775600000,
@@ -6470,7 +6470,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwep",
-       "u": 1793393541950,
+       "u": 1793818537876,
        "dc": null
       },
       {

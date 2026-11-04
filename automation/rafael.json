@@ -1465,7 +1465,7 @@
      {
       "n": "Adição node 05 ambiente novo",
       "status": "in progress",
-      "due": 1792393200000,
+      "due": 1793948400000,
       "original_due": 1792393200000,
       "nova_previsao": 1793948400000,
       "id": "86ak7yjw1"
@@ -1473,7 +1473,7 @@
      {
       "n": "Retirada node 02 ambiente antigo",
       "status": "backlog",
-      "due": 1792393200000,
+      "due": 1795158000000,
       "original_due": 1792393200000,
       "nova_previsao": 1793948400000,
       "id": "86ak7y8wj"
