@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-04T03:58:16.287711+00:00",
+ "last_sync_utc": "2026-11-04T07:14:40.518725+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -2969,7 +2969,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebyb",
-       "u": 1792421394612,
+       "u": 1793770194840,
        "dc": null
       },
       {
@@ -3285,7 +3285,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ec77",
-       "u": 1793029557736,
+       "u": 1793770187735,
        "dc": null
       },
       {
@@ -3770,7 +3770,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5z856",
-       "u": 1793111272803,
+       "u": 1793770170924,
        "dc": null
       },
       {
@@ -3784,7 +3784,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5zh01",
-       "u": 1793727459776,
+       "u": 1793770176461,
        "dc": null
       },
       {
@@ -5553,7 +5553,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akfzp4v",
-       "u": 1793728498353,
+       "u": 1793770180555,
        "dc": null
       },
       {
@@ -5792,7 +5792,7 @@
      "raw_status": "em andamento",
      "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
      "due": null,
-     "u": 1792170053075,
+     "u": 1793770285445,
      "id": "17ttbukwjw7",
      "ativ": [
       {
@@ -5876,7 +5876,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwe",
-       "u": 1792790249757,
+       "u": 1793770291163,
        "dc": null
       }
      ]
@@ -5996,7 +5996,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukyhbq",
-       "u": 1793120414310,
+       "u": 1793770297153,
        "dc": null
       }
      ]
