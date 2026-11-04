@@ -1632,7 +1632,7 @@
       "status": "blocked",
       "due": 1795762800000,
       "original_due": 1793343600000,
-      "nova_previsao": 1795158000000,
+      "nova_previsao": null,
       "id": "86agc8787"
      },
      {
@@ -1725,7 +1725,7 @@
      },
      {
       "n": "br-sp-02-node17",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
@@ -1805,7 +1805,7 @@
      },
      {
       "n": "srv-win-04",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1793343600000,
       "original_due": 1790751600000,
       "nova_previsao": null,
@@ -1885,7 +1885,7 @@
      },
      {
       "n": "srv-oraclenode-01",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1793343600000,
       "original_due": 1792134000000,
       "nova_previsao": null,
@@ -1893,7 +1893,7 @@
      },
      {
       "n": "srv-oraclenode-02",
-      "status": "blocked",
+      "status": "shipped",
       "due": 1793343600000,
       "original_due": 1792134000000,
       "nova_previsao": null,
@@ -1982,7 +1982,7 @@
      },
      {
       "n": "srv-nvme-10",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": 1793343600000,
@@ -1993,7 +1993,7 @@
       "status": "backlog",
       "due": 1792738800000,
       "original_due": 1792738800000,
-      "nova_previsao": 1793343600000,
+      "nova_previsao": 1794553200000,
       "id": "86aknxqu2"
      },
      {
@@ -2046,7 +2046,7 @@
      },
      {
       "n": "srv-nvme-18",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792738800000,
       "original_due": 1793948400000,
       "nova_previsao": null,
@@ -2134,7 +2134,7 @@
      },
      {
       "n": "srv-hdd-06",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1792134000000,
       "original_due": 1792134000000,
       "nova_previsao": 1792738800000,

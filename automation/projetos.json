@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-04T16:54:38.256969+00:00",
+ "last_sync_utc": "2026-11-04T18:33:16.730392+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3117,8 +3117,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx3rx",
-       "u": 1792616352569,
-       "dc": 1792616352569
+       "u": 1793812264229,
+       "dc": 1793812264229
       },
       {
        "n": "Instalação do Veeam",
@@ -3131,8 +3131,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr5y",
-       "u": 1792619091658,
-       "dc": 1792619091658
+       "u": 1793812278188,
+       "dc": 1793812278188
       },
       {
        "n": "licenciamento Veeam",
@@ -3145,8 +3145,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr6d",
-       "u": 1792761556500,
-       "dc": 1792761556500
+       "u": 1793812281914,
+       "dc": 1793812281914
       },
       {
        "n": "Configuração",
@@ -3159,8 +3159,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr6m",
-       "u": 1793029037678,
-       "dc": 1793029037678
+       "u": 1793812285759,
+       "dc": 1793812285759
       },
       {
        "n": "Instalar Endpoint nos servidor",
@@ -3187,8 +3187,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j1m",
-       "u": 1793039378528,
-       "dc": 1793039378528
+       "u": 1793812265996,
+       "dc": 1793812265996
       },
       {
        "n": "SWSPR003",
@@ -3201,8 +3201,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j4y",
-       "u": 1793062454334,
-       "dc": 1793062454334
+       "u": 1793812267835,
+       "dc": 1793812267835
       },
       {
        "n": "SWSPR002",
@@ -3215,22 +3215,22 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j8f",
-       "u": 1793060514012,
-       "dc": 1793060514012
+       "u": 1793812273104,
+       "dc": 1793812273104
       },
       {
        "n": "Configuração backup Veeam - Projeto Soprema - com o Cliente",
        "status": "shipped",
        "raw_status": "concluído",
        "assignee": "José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
+       "due": 1792738800000,
+       "original_due": 1792738800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukz11h",
-       "u": 1793063301299,
-       "dc": 1793063301299
+       "u": 1793812288368,
+       "dc": 1793812288368
       },
       {
        "n": "Configurar Jobs de backup",
@@ -3243,8 +3243,8 @@
        "nova_previsao": 1792134000000,
        "depth": 1,
        "id": "86ak5e7f4",
-       "u": 1793107690204,
-       "dc": 1793107690204
+       "u": 1793812274961,
+       "dc": 1793812274961
       },
       {
        "n": "Validação de backup e restore",
