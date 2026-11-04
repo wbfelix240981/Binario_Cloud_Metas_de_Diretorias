@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-04T02:36:01.729901+00:00",
+ "last_sync_utc": "2026-11-04T03:58:16.287711+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3531,8 +3531,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
-     "due": null,
-     "u": 1792207747742,
+     "due": 1797922800000,
+     "u": 1793762825981,
      "id": "86ak5evkm",
      "ativ": [
       {
