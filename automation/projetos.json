@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-05T17:09:32.173647+00:00",
+ "last_sync_utc": "2026-11-05T22:50:13.260704+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -21,7 +21,7 @@
       {
        "n": "Validar conexão entre filiais SP x POA",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Alexandre Pereira / Marcelo Santos",
        "due": 1791356400000,
        "original_due": 1791356400000,
@@ -29,8 +29,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akjg6z2",
-       "u": 1792416240659,
-       "dc": 1792416240659
+       "u": 1793911256208,
+       "dc": 1793911254840
       },
       {
        "n": "Disponibilização de imagens e dados Compactados",
@@ -2713,8 +2713,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62b",
-       "u": 1793797507745,
-       "dc": 1793797507745
+       "u": 1793914530306,
+       "dc": 1793914530306
       },
       {
        "n": "Documentar rotinas de backup",
