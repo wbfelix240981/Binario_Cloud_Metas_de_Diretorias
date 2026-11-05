@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-05T07:42:35.632705+00:00",
+ "last_sync_utc": "2026-11-05T17:09:32.173647+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -14,8 +14,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Lucas Federissis de Souza",
-     "due": 1793775600000,
-     "u": 1793705117771,
+     "due": 1794553200000,
+     "u": 1793891817669,
      "id": "86akn63gf",
      "ativ": [
       {
@@ -34,8 +34,8 @@
       },
       {
        "n": "Disponibilização de imagens e dados Compactados",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -43,21 +43,21 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aknc0rm",
-       "u": 1792774370138,
-       "dc": null
+       "u": 1793891648806,
+       "dc": 1793891648806
       },
       {
        "n": "Transferencia de dados",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794294000000,
+       "original_due": 1794294000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5xy",
-       "u": 1793705041211,
+       "u": 1793891644163,
        "dc": null
       },
       {
@@ -426,50 +426,50 @@
       },
       {
        "n": "JAN-26",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794294000000,
+       "original_due": 1794294000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukyxr3",
-       "u": 1793705090454,
-       "dc": null
+       "u": 1793891672467,
+       "dc": 1793891669765
       },
       {
        "n": "Transferência",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794207600000,
+       "original_due": 1794207600000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukzbd8",
-       "u": 1793705697428,
-       "dc": null
+       "u": 1793891671875,
+       "dc": 1793891669765
       },
       {
        "n": "Validação Hashes",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794294000000,
+       "original_due": 1794294000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukzbd9",
-       "u": 1793705697428,
-       "dc": null
+       "u": 1793891672459,
+       "dc": 1793891669765
       },
       {
        "n": "Disponibilização - Kosmo",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -477,7 +477,21 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukyxrp",
-       "u": 1793035749408,
+       "u": 1793891672793,
+       "dc": 1793891669765
+      },
+      {
+       "n": "Disponibilização dados retroativos 2026",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Diogo Lerison",
+       "due": 1794553200000,
+       "original_due": 1794553200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "17ttbum0w7f",
+       "u": 1793891703499,
        "dc": null
       }
      ]
@@ -2192,8 +2206,8 @@
       },
       {
        "n": "Configurar monitoramento das VMs",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2201,13 +2215,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5v9",
-       "u": 1793703598396,
+       "u": 1793891581837,
        "dc": null
       },
       {
        "n": "Configurar monitoramento do firewall",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2215,13 +2229,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5vn",
-       "u": 1793703583559,
+       "u": 1793891591693,
        "dc": null
       },
       {
        "n": "Configurar monitoramento dos backups",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2229,13 +2243,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5vm",
-       "u": 1793703583559,
+       "u": 1793891586160,
        "dc": null
       },
       {
        "n": "Validar geração automática de alertas",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2243,7 +2257,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5vt",
-       "u": 1793703583559,
+       "u": 1793891588386,
        "dc": null
       }
      ]
@@ -2656,8 +2670,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Diogo Lerison",
-     "due": 1793948400000,
-     "u": 1793703657538,
+     "due": 1794553200000,
+     "u": 1793891806558,
      "id": "86ajrf5d6",
      "ativ": [
       {
@@ -2721,13 +2735,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62u",
-       "u": 1793019271062,
+       "u": 1793891777211,
        "dc": null
       },
       {
@@ -2735,13 +2749,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf63c",
-       "u": 1793019278254,
+       "u": 1793891779468,
        "dc": null
       },
       {
@@ -2749,13 +2763,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5ef",
-       "u": 1793703635901,
+       "u": 1793891792646,
        "dc": null
       },
       {
@@ -2763,13 +2777,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf63z",
-       "u": 1793019181138,
+       "u": 1793891792646,
        "dc": null
       },
       {
@@ -2777,13 +2791,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf63y",
-       "u": 1793019181138,
+       "u": 1793891792646,
        "dc": null
       },
       {
@@ -2791,20 +2805,20 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Diogo Lerison",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf643",
-       "u": 1793019181138,
+       "u": 1793891792646,
        "dc": null
       }
      ]
     },
     {
      "n": "Atividades sem fase",
-     "status": "in progress",
+     "status": "shipped",
      "raw_status": "",
      "assignee": "—",
      "due": null,
@@ -2882,20 +2896,6 @@
        "dc": 1791205174289
       },
       {
-       "n": "Encerramento Kosmo",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "Diogo Lerison",
-       "due": 1792998000000,
-       "original_due": 1792998000000,
-       "alarme_limpo_due": null,
-       "nova_previsao": 1794726000000,
-       "depth": 0,
-       "id": "86akjgbjg",
-       "u": 1793705714728,
-       "dc": null
-      },
-      {
        "n": "Liberação Link 500Mbp's - Neugebauer",
        "status": "shipped",
        "raw_status": "fechado",
@@ -2908,6 +2908,20 @@
        "id": "86akpu58t",
        "u": 1793315892979,
        "dc": 1793315891762
+      },
+      {
+       "n": "Encerramento Kosmo",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "Diogo Lerison",
+       "due": 1792998000000,
+       "original_due": 1792998000000,
+       "alarme_limpo_due": null,
+       "nova_previsao": 1794726000000,
+       "depth": 0,
+       "id": "86akjgbjg",
+       "u": 1793891596369,
+       "dc": 1793891596369
       }
      ]
     }
@@ -6039,13 +6053,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Wagner Bento Felix",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794380400000,
+       "original_due": 1794380400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktnjgv",
-       "u": 1793391042116,
+       "u": 1793882935855,
        "dc": null
       },
       {
@@ -6053,13 +6067,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Joab de Araújo Silva",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794466800000,
+       "original_due": 1794466800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktnjuf",
-       "u": 1793391405062,
+       "u": 1793882939520,
        "dc": null
       },
       {
@@ -6067,27 +6081,27 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Joab de Araújo Silva",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794466800000,
+       "original_due": 1794466800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktnk69",
-       "u": 1793391399455,
+       "u": 1793882942596,
        "dc": null
       },
       {
        "n": "Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison / Wagner Bento Felix",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1793948400000,
+       "original_due": 1793948400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqnwv",
-       "u": 1793393725061,
+       "u": 1793883018534,
        "dc": null
       },
       {
@@ -6120,8 +6134,8 @@
       },
       {
        "n": "Disponibilizar usuários de serviço das regiões produtivas",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1793775600000,
        "original_due": 1793775600000,
@@ -6129,8 +6143,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxwj2",
-       "u": 1793391455053,
-       "dc": null
+       "u": 1793883014582,
+       "dc": 1793883014582
       },
       {
        "n": "Provisionamento 2 VMs para produção",
@@ -6391,6 +6405,34 @@
        "id": "86aktnx74",
        "u": 1793392193607,
        "dc": 1793392193607
+      },
+      {
+       "n": "Coleta de SKU/recursos não mapeados",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Guilherme Lopes / Guilherme Soares Gomes da Silva",
+       "due": 1794380400000,
+       "original_due": 1794380400000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "17ttbum0vf5",
+       "u": 1793886454625,
+       "dc": null
+      },
+      {
+       "n": "Snapshot",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum0vf7",
+       "u": 1793884235834,
+       "dc": null
       }
      ]
     },
@@ -6408,13 +6450,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Wagner Bento Felix / Joab de Araújo Silva",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794466800000,
+       "original_due": 1794466800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqvyc",
-       "u": 1793393904139,
+       "u": 1793887991464,
        "dc": null
       },
       {
@@ -6478,19 +6520,19 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Wagner Bento Felix",
-       "due": 1793775600000,
-       "original_due": 1793775600000,
+       "due": 1794466800000,
+       "original_due": 1794466800000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukzwft",
-       "u": 1793393927211,
+       "u": 1793887996655,
        "dc": null
       },
       {
        "n": "Validar conectividade BC Data API → MySQL",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "blocked",
+       "raw_status": "bloqueada",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -6498,7 +6540,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukzwfx",
-       "u": 1793393999818,
+       "u": 1793888004510,
        "dc": null
       },
       {

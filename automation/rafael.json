@@ -1629,8 +1629,8 @@
     "ativ": [
      {
       "n": "br-sp-02-node01",
-      "status": "blocked",
-      "due": 1795762800000,
+      "status": "backlog",
+      "due": null,
       "original_due": 1793343600000,
       "nova_previsao": null,
       "id": "86agc8787"
@@ -1669,10 +1669,10 @@
      },
      {
       "n": "br-sp-02-node06",
-      "status": "blocked",
-      "due": 1795762800000,
+      "status": "backlog",
+      "due": null,
       "original_due": 1790751600000,
-      "nova_previsao": 1795762800000,
+      "nova_previsao": null,
       "id": "86agc87hj"
      },
      {
@@ -1840,7 +1840,7 @@
       "status": "blocked",
       "due": 1793343600000,
       "original_due": 1793343600000,
-      "nova_previsao": 1795158000000,
+      "nova_previsao": 1796367600000,
       "id": "86agc8v3a"
      },
      {
@@ -2001,7 +2001,7 @@
       "status": "backlog",
       "due": 1793948400000,
       "original_due": 1793948400000,
-      "nova_previsao": null,
+      "nova_previsao": 1795158000000,
       "id": "86aknxqut"
      },
      {
@@ -2009,7 +2009,7 @@
       "status": "backlog",
       "due": 1795158000000,
       "original_due": 1795158000000,
-      "nova_previsao": null,
+      "nova_previsao": 1796367600000,
       "id": "86aknxqvz"
      },
      {
@@ -2017,13 +2017,13 @@
       "status": "backlog",
       "due": 1795158000000,
       "original_due": 1795158000000,
-      "nova_previsao": null,
+      "nova_previsao": 1796367600000,
       "id": "86aknxqx6"
      },
      {
       "n": "srv-nvme-15",
       "status": "backlog",
-      "due": 1795158000000,
+      "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "id": "86aknxqyc"
@@ -2031,7 +2031,7 @@
      {
       "n": "srv-nvme-16",
       "status": "backlog",
-      "due": 1795158000000,
+      "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "id": "86aknxqzy"
@@ -2097,7 +2097,7 @@
       "status": "backlog",
       "due": 1797577200000,
       "original_due": 1797577200000,
-      "nova_previsao": null,
+      "nova_previsao": 1798700400000,
       "id": "86aknxx9t"
      },
      {
@@ -2105,7 +2105,7 @@
       "status": "backlog",
       "due": 1796972400000,
       "original_due": 1796972400000,
-      "nova_previsao": null,
+      "nova_previsao": 1797577200000,
       "id": "86aknxxa8"
      },
      {
@@ -2113,7 +2113,7 @@
       "status": "backlog",
       "due": 1796367600000,
       "original_due": 1796367600000,
-      "nova_previsao": null,
+      "nova_previsao": 1796972400000,
       "id": "86aknxxar"
      },
      {
@@ -2121,7 +2121,7 @@
       "status": "backlog",
       "due": 1795158000000,
       "original_due": 1795158000000,
-      "nova_previsao": null,
+      "nova_previsao": 1796367600000,
       "id": "86aknxxb6"
      },
      {
@@ -2129,7 +2129,7 @@
       "status": "backlog",
       "due": 1793343600000,
       "original_due": 1793343600000,
-      "nova_previsao": 1794553200000,
+      "nova_previsao": 1795158000000,
       "id": "86aknxxc6"
      },
      {
