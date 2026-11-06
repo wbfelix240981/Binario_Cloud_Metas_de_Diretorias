@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-06T16:39:29.440864+00:00",
+ "last_sync_utc": "2026-11-06T21:59:44.243585+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -35,7 +35,7 @@
       {
        "n": "Disponibilização de imagens e dados Compactados",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -43,13 +43,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aknc0rm",
-       "u": 1793891648806,
-       "dc": 1793891648806
+       "u": 1793985177807,
+       "dc": 1793985176429
       },
       {
        "n": "Transferencia de dados",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Lucas Federissis de Souza",
        "due": 1794294000000,
        "original_due": 1794294000000,
@@ -57,8 +57,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5xy",
-       "u": 1793891644163,
-       "dc": null
+       "u": 1793985171536,
+       "dc": 1793985170479
       },
       {
        "n": "NGBORA01",
@@ -481,7 +481,7 @@
        "dc": 1793891669765
       },
       {
-       "n": "Disponibilização dados retroativos 2026",
+       "n": "Transferencia dados retroativos 2026",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
@@ -491,7 +491,77 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbum0w7f",
-       "u": 1793891703499,
+       "u": 1793985831385,
+       "dc": null
+      },
+      {
+       "n": "Maio PRD",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
+       "assignee": "—",
+       "due": 1794294000000,
+       "original_due": 1794294000000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12jd",
+       "u": 1793986527798,
+       "dc": null
+      },
+      {
+       "n": "Fevereiro/Março - 3.6Tb",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "—",
+       "due": 1793948400000,
+       "original_due": 1793948400000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12j7",
+       "u": 1793986474677,
+       "dc": 1793986474677
+      },
+      {
+       "n": "Junho",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
+       "assignee": "—",
+       "due": 1794553200000,
+       "original_due": 1794553200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12jf",
+       "u": 1793986480439,
+       "dc": null
+      },
+      {
+       "n": "Julho",
+       "status": "waiting",
+       "raw_status": "aguardando retorno",
+       "assignee": "—",
+       "due": 1794553200000,
+       "original_due": 1794553200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12je",
+       "u": 1793997187271,
+       "dc": null
+      },
+      {
+       "n": "Abril - 1.1Tb",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "—",
+       "due": 1794553200000,
+       "original_due": 1794553200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12j8",
+       "u": 1793986524366,
        "dc": null
       }
      ]
@@ -2108,8 +2178,8 @@
      "ativ": [
       {
        "n": "4.2 Configurar Backup Binario",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2117,8 +2187,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5dr",
-       "u": 1793703665639,
-       "dc": null
+       "u": 1793987786811,
+       "dc": 1793987786811
       },
       {
        "n": "Criar tenant Veeam",
@@ -2192,8 +2262,8 @@
       },
       {
        "n": "4.3 Monitoramento",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2201,13 +2271,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5dt",
-       "u": 1793703566767,
-       "dc": null
+       "u": 1793987804391,
+       "dc": 1793987804391
       },
       {
        "n": "Configurar monitoramento das VMs",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2215,8 +2285,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5v9",
-       "u": 1793891581837,
-       "dc": null
+       "u": 1793987795015,
+       "dc": 1793987795015
       },
       {
        "n": "Configurar monitoramento do firewall",
@@ -2234,8 +2304,8 @@
       },
       {
        "n": "Configurar monitoramento dos backups",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2243,13 +2313,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5vm",
-       "u": 1793891586160,
-       "dc": null
+       "u": 1793987802065,
+       "dc": 1793987802065
       },
       {
        "n": "Validar geração automática de alertas",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Lucas Federissis de Souza",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2257,8 +2327,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf5vt",
-       "u": 1793891588386,
-       "dc": null
+       "u": 1793987797616,
+       "dc": 1793987797616
       }
      ]
     },
@@ -2676,8 +2746,8 @@
      "ativ": [
       {
        "n": "Elaboração da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -2685,21 +2755,21 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak080ug",
-       "u": 1793703654131,
-       "dc": null
+       "u": 1793997165633,
+       "dc": 1793997165633
       },
       {
        "n": "5.1 Transição para operação",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
-       "due": 1793948400000,
-       "original_due": 1793948400000,
+       "due": 1794553200000,
+       "original_due": 1794553200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5ee",
-       "u": 1793703648050,
+       "u": 1793987819124,
        "dc": null
       },
       {
@@ -5637,7 +5707,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukz3v4",
-       "u": 1793195259297,
+       "u": 1793996898109,
        "dc": 1793195258088
       },
       {
@@ -5950,11 +6020,11 @@
     },
     {
      "n": "Fase 4 - Encerramento",
-     "status": "in progress",
-     "raw_status": "em andamento",
+     "status": "shipped",
+     "raw_status": "fechado",
      "assignee": "Diogo Lerison",
      "due": 1791961200000,
-     "u": 1792611649118,
+     "u": 1793997645635,
      "id": "86akn4aeb",
      "ativ": [
       {
@@ -5987,8 +6057,8 @@
       },
       {
        "n": "Envio da documentação técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": null,
        "original_due": null,
@@ -5996,13 +6066,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akn4afc",
-       "u": 1792667693884,
-       "dc": null
+       "u": 1793997616823,
+       "dc": 1793997616823
       },
       {
        "n": "Documentação Técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6010,8 +6080,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukyhbq",
-       "u": 1793803260963,
-       "dc": null
+       "u": 1793997606676,
+       "dc": 1793997606676
       }
      ]
     }
