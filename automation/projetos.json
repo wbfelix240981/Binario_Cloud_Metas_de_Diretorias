@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-10T16:50:09.158837+00:00",
+ "last_sync_utc": "2026-11-10T22:12:31.872398+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3131,7 +3131,7 @@
      "raw_status": "em andamento",
      "assignee": "José Maria Ferreira da Silva",
      "due": 1796367600000,
-     "u": 1793808249377,
+     "u": 1794343230166,
      "id": "86ak5e38y",
      "ativ": [
       {
@@ -6956,65 +6956,12 @@
    "url": "https://app.clickup.com/3080406/v/li/901329173422",
    "fases": [
     {
-     "n": "Corrigir integração SAML no FortiGate",
-     "status": "in progress",
-     "raw_status": "em andamento",
-     "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1794121200000,
-     "u": 1792674537194,
-     "id": "86akqah6h",
-     "ativ": [
-      {
-       "n": "Analisar logs após a autenticação.",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqahk4",
-       "u": 1790705910829,
-       "dc": 1790705910829
-      },
-      {
-       "n": "Validar a configuração de *Tunnel Client Mode* no portal VPN SSL",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqahpv",
-       "u": 1790705905900,
-       "dc": 1790705905900
-      },
-      {
-       "n": "Retornar a análise para Márcio por e-mail",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "—",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqahtp",
-       "u": 1790705883753,
-       "dc": 1790705883753
-      }
-     ]
-    },
-    {
      "n": "Piloto",
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1794121200000,
-     "u": 1793729628029,
+     "due": 1794553200000,
+     "u": 1794344581856,
      "id": "86akq9jjw",
      "ativ": [
       {
@@ -7063,8 +7010,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1794121200000,
-     "u": 1794227872055,
+     "due": 1795158000000,
+     "u": 1794344592609,
      "id": "86akq9jq9",
      "ativ": [
       {
@@ -7108,73 +7055,6 @@
        "id": "86akq9ngr",
        "u": 1792674537194,
        "dc": null
-      }
-     ]
-    },
-    {
-     "n": "Instalar Google Password Sync",
-     "status": "in progress",
-     "raw_status": "em andamento",
-     "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1794121200000,
-     "u": 1794227875688,
-     "id": "86akqamf0",
-     "ativ": [
-      {
-       "n": "Confirmar permissão/executável para instalação no ambiente Gimba",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Brunno Leonardo Borges Lopes",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqamgh",
-       "u": 1794229154172,
-       "dc": 1794229154172
-      },
-      {
-       "n": "Agendar janela de manutenção",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Brunno Leonardo Borges Lopes",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqamgp",
-       "u": 1794229154172,
-       "dc": 1794229154172
-      },
-      {
-       "n": "Instalar em todos os DCs",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Brunno Leonardo Borges Lopes",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqamgu",
-       "u": 1794229154172,
-       "dc": 1794229154172
-      },
-      {
-       "n": "Orientar os usuários a trocar a senha após a instalação",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Brunno Leonardo Borges Lopes",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86akqamgx",
-       "u": 1794229154172,
-       "dc": 1794229154172
       }
      ]
     },
@@ -7302,6 +7182,126 @@
      ]
     },
     {
+     "n": "Instalar Google Password Sync",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Brunno Leonardo Borges Lopes",
+     "due": 1794121200000,
+     "u": 1794344555781,
+     "id": "86akqamf0",
+     "ativ": [
+      {
+       "n": "Confirmar permissão/executável para instalação no ambiente Gimba",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Brunno Leonardo Borges Lopes",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqamgh",
+       "u": 1794229154172,
+       "dc": 1794229154172
+      },
+      {
+       "n": "Agendar janela de manutenção",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Brunno Leonardo Borges Lopes",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqamgp",
+       "u": 1794229154172,
+       "dc": 1794229154172
+      },
+      {
+       "n": "Instalar em todos os DCs",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Brunno Leonardo Borges Lopes",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqamgu",
+       "u": 1794229154172,
+       "dc": 1794229154172
+      },
+      {
+       "n": "Orientar os usuários a trocar a senha após a instalação",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Brunno Leonardo Borges Lopes",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqamgx",
+       "u": 1794229154172,
+       "dc": 1794229154172
+      }
+     ]
+    },
+    {
+     "n": "Corrigir integração SAML no FortiGate",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Brunno Leonardo Borges Lopes",
+     "due": 1794121200000,
+     "u": 1794344565066,
+     "id": "86akqah6h",
+     "ativ": [
+      {
+       "n": "Analisar logs após a autenticação.",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqahk4",
+       "u": 1790705910829,
+       "dc": 1790705910829
+      },
+      {
+       "n": "Validar a configuração de *Tunnel Client Mode* no portal VPN SSL",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqahpv",
+       "u": 1790705905900,
+       "dc": 1790705905900
+      },
+      {
+       "n": "Retornar a análise para Márcio por e-mail",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "—",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86akqahtp",
+       "u": 1790705883753,
+       "dc": 1790705883753
+      }
+     ]
+    },
+    {
      "n": "Atividades sem fase",
      "status": "in progress",
      "raw_status": "",
@@ -7335,7 +7335,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akqd7h1",
-       "u": 1792674537194,
+       "u": 1794344571320,
        "dc": null
       }
      ]
