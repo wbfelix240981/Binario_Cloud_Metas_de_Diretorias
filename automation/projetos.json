@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-10T11:48:05.455744+00:00",
+ "last_sync_utc": "2026-11-10T16:50:09.158837+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -523,9 +523,9 @@
        "dc": 1794227671066
       },
       {
-       "n": "Maio - 1.7Tb",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "n": "Maio - 1.9Tb",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "—",
        "due": 1794294000000,
        "original_due": 1794294000000,
@@ -533,25 +533,11 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12jd",
-       "u": 1794234168193,
-       "dc": null
+       "u": 1794313496331,
+       "dc": 1794313496331
       },
       {
-       "n": "Junho",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
-       "assignee": "—",
-       "due": 1794553200000,
-       "original_due": 1794553200000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 1,
-       "id": "17ttbum12jf",
-       "u": 1793986480439,
-       "dc": null
-      },
-      {
-       "n": "Julho - 1.6Tb",
+       "n": "Junho - 1.8Tb",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "—",
@@ -560,9 +546,23 @@
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
-       "id": "17ttbum12je",
-       "u": 1794234182373,
+       "id": "17ttbum12jf",
+       "u": 1794315807499,
        "dc": null
+      },
+      {
+       "n": "Julho - 1.7Tb",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "—",
+       "due": 1794553200000,
+       "original_due": 1794553200000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 1,
+       "id": "17ttbum12je",
+       "u": 1794313501340,
+       "dc": 1794313501340
       }
      ]
     },
@@ -3151,7 +3151,7 @@
       {
        "n": "Definição de servidor para instalar o VBR",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Diogo Lerison / Augusto Rossi",
        "due": 1788246000000,
        "original_due": 1788246000000,
@@ -3159,13 +3159,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e6z0",
-       "u": 1793803658976,
-       "dc": 1793803658976
+       "u": 1794319105240,
+       "dc": 1794319104187
       },
       {
        "n": "Instalação do VBR",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1791529200000,
        "original_due": 1791529200000,
@@ -3173,13 +3173,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e70q",
-       "u": 1793803655109,
-       "dc": 1793803655109
+       "u": 1794319108394,
+       "dc": 1794319107471
       },
       {
        "n": "Configurar repositório (8Tb)",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1791356400000,
        "original_due": 1791356400000,
@@ -3187,13 +3187,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e78d",
-       "u": 1793803650260,
-       "dc": 1793803650260
+       "u": 1794319114829,
+       "dc": 1794319113804
       },
       {
        "n": "Criação SRV-VBR na Cloud",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792566000000,
        "original_due": 1792566000000,
@@ -3201,13 +3201,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukx3rx",
-       "u": 1793812264229,
-       "dc": 1793812264229
+       "u": 1794319136407,
+       "dc": 1794319135151
       },
       {
        "n": "Instalação do Veeam",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3215,13 +3215,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr5y",
-       "u": 1793812278188,
-       "dc": 1793812278188
+       "u": 1794319136386,
+       "dc": 1794319135151
       },
       {
        "n": "licenciamento Veeam",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3229,13 +3229,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr6d",
-       "u": 1793812281914,
-       "dc": 1793812281914
+       "u": 1794319136396,
+       "dc": 1794319135151
       },
       {
        "n": "Configuração",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3243,8 +3243,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukxr6m",
-       "u": 1793812285759,
-       "dc": 1793812285759
+       "u": 1794319136301,
+       "dc": 1794319135151
       },
       {
        "n": "Instalar Endpoint nos servidor",
@@ -3319,7 +3319,7 @@
       {
        "n": "Configurar Jobs de backup",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1793170800000,
        "original_due": 1793170800000,
@@ -3327,8 +3327,8 @@
        "nova_previsao": 1792134000000,
        "depth": 1,
        "id": "86ak5e7f4",
-       "u": 1793812274961,
-       "dc": 1793812274961
+       "u": 1794319145148,
+       "dc": 1794319144060
       },
       {
        "n": "Validação de backup e restore",
