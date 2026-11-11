@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-11T13:35:43.028219+00:00",
+ "last_sync_utc": "2026-11-11T16:56:21.336552+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -482,8 +482,8 @@
       },
       {
        "n": "Transferencia dados retroativos 2026",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -491,13 +491,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbum0w7f",
-       "u": 1793985831385,
-       "dc": null
+       "u": 1794408524203,
+       "dc": 1794408522651
       },
       {
        "n": "Fevereiro/Março - 3.6Tb",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -505,13 +505,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12j7",
-       "u": 1794227678067,
-       "dc": 1794227678067
+       "u": 1794408524038,
+       "dc": 1794408522651
       },
       {
        "n": "Abril - 1.1Tb",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -519,13 +519,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12j8",
-       "u": 1794227671066,
-       "dc": 1794227671066
+       "u": 1794408524108,
+       "dc": 1794408522651
       },
       {
        "n": "Maio - 1.9Tb",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1794294000000,
        "original_due": 1794294000000,
@@ -533,13 +533,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12jd",
-       "u": 1794313496331,
-       "dc": 1794313496331
+       "u": 1794408524546,
+       "dc": 1794408522651
       },
       {
        "n": "Junho - 1.8Tb",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -547,13 +547,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12jf",
-       "u": 1794315807499,
-       "dc": null
+       "u": 1794408524030,
+       "dc": 1794408522651
       },
       {
        "n": "Julho - 1.7Tb",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -561,8 +561,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum12je",
-       "u": 1794313501340,
-       "dc": 1794313501340
+       "u": 1794408524211,
+       "dc": 1794408522651
       }
      ]
     },
