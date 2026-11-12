@@ -179,12 +179,22 @@ def build_activity(t, old_ativ_by_id=None):
     nova_previsao_raw = get_custom_field_value(t["id"], "Nova previsão")
     nova_previsao = to_ms(nova_previsao_raw) if nova_previsao_raw else None
 
+    # Histórico de datas: sequência original -> ... -> última data válida.
+    # A última data (Nova previsão, se houver; senão a data do ClickUp) é a verdade.
+    hist = [x for x in ((old or {}).get("date_history") or []) if x is not None]
+    if not hist and original_due is not None:
+        hist = [original_due]
+    vigente = nova_previsao if nova_previsao is not None else new_due
+    if vigente is not None and (not hist or hist[-1] != vigente):
+        hist.append(vigente)
+
     return {
         "n": t["name"],
         "status": map_status(t["status"]["status"]),
         "due": new_due,
         "original_due": original_due,
         "nova_previsao": nova_previsao,
+        "date_history": hist,
         "id": t["id"],
     }
 
