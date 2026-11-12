@@ -1212,8 +1212,8 @@
       "id": "86ajutt8d"
      },
      {
-      "n": "Outubro - Medição: 00,000%",
-      "status": "backlog",
+      "n": "Outubro - Medição: 99,992%",
+      "status": "shipped",
       "due": 1793948400000,
       "original_due": 1793430000000,
       "nova_previsao": null,
@@ -1358,8 +1358,8 @@
       "id": "86ajutt98"
      },
      {
-      "n": "Outubro - Medição: 00,0%",
-      "status": "backlog",
+      "n": "Outubro - Medição: 96%",
+      "status": "shipped",
       "due": 1794034800000,
       "original_due": 1793430000000,
       "nova_previsao": null,
