@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-12T17:24:53.501171+00:00",
+ "last_sync_utc": "2026-11-12T22:54:19.925982+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -6975,7 +6975,7 @@
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
      "due": 1794553200000,
-     "u": 1794344581856,
+     "u": 1794523588769,
      "id": "86akq9jjw",
      "ativ": [
       {
@@ -7343,13 +7343,13 @@
        "status": "backlog",
        "raw_status": "aberto",
        "assignee": "Brunno Leonardo Borges Lopes",
-       "due": 1794121200000,
-       "original_due": 1794121200000,
+       "due": 1797750000000,
+       "original_due": 1797750000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "86akqd7h1",
-       "u": 1794344571320,
+       "u": 1794508292586,
        "dc": null
       }
      ]
