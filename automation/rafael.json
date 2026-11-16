@@ -1702,7 +1702,7 @@
      },
      {
       "n": "Adição node 05 ambiente novo",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1793948400000,
       "original_due": 1792393200000,
       "nova_previsao": 1793948400000,
@@ -1714,13 +1714,14 @@
      },
      {
       "n": "Retirada node 02 ambiente antigo",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1795158000000,
       "original_due": 1792393200000,
-      "nova_previsao": 1793948400000,
+      "nova_previsao": 1795762800000,
       "date_history": [
        1792393200000,
-       1793948400000
+       1793948400000,
+       1795762800000
       ],
       "id": "86ak7y8wj"
      },
@@ -2415,7 +2416,7 @@
      },
      {
       "n": "srv-nvme-11",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1792738800000,
       "original_due": 1792738800000,
       "nova_previsao": 1794553200000,

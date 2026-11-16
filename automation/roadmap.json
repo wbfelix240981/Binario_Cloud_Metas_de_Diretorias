@@ -196,7 +196,7 @@
  {
   "id": "86ahavjx2",
   "name": "Criação de uma nova Aba na Calculadora para Ambientes Grandes > 50 VM",
-  "status": "aberto",
+  "status": "concluído",
   "assignees": [
    "Tiago Gomes de Oliveira"
   ],
@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 706
+  "_missing_count": 707
  },
  {
   "id": "86ak6m2qf",
@@ -328,7 +328,8 @@
   "name": "Console / Financeiro /Custo Acumulado /Custo médio valores que não estão claros e os calculos lineares não representa o consumo mensal.",
   "status": "aberto",
   "assignees": [
-   "Tiago Gomes de Oliveira"
+   "Tiago Gomes de Oliveira",
+   "Rodney Botelho"
   ],
   "url": "https://app.clickup.com/t/17ttbum1vdp",
   "_missing_count": 0

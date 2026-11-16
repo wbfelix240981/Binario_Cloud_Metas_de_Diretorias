@@ -1918,55 +1918,60 @@
      {
       "n": "Disponibilizar funcao Openstack -> Openstack",
       "status": "in progress",
-      "due": 1794380400000,
+      "due": 1794985200000,
       "original_due": 1794380400000,
       "nova_previsao": null,
       "date_history": [
-       1794380400000
+       1794380400000,
+       1794985200000
       ],
       "id": "17ttbum07b5"
      },
      {
       "n": "Criar api integração api VMWare e a ferramenta",
-      "status": "backlog",
-      "due": 1794985200000,
+      "status": "in progress",
+      "due": 1795158000000,
       "original_due": 1794985200000,
       "nova_previsao": null,
       "date_history": [
-       1794985200000
+       1794985200000,
+       1795158000000
       ],
       "id": "17ttbukvzuk"
      },
      {
       "n": "Testar função Openstack -> Openstack",
       "status": "backlog",
-      "due": 1794553200000,
+      "due": 1795158000000,
       "original_due": 1794553200000,
       "nova_previsao": null,
       "date_history": [
-       1794553200000
+       1794553200000,
+       1795158000000
       ],
       "id": "17ttbum07b6"
      },
      {
       "n": "Testar VMware -> Openstack",
       "status": "backlog",
-      "due": 1795158000000,
+      "due": 1795590000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
-       1795158000000
+       1795158000000,
+       1795590000000
       ],
       "id": "17ttbukvzv3"
      },
      {
       "n": "Adequação do OCI de Imagem para Disco",
       "status": "in progress",
-      "due": 1794380400000,
+      "due": 1795158000000,
       "original_due": 1794380400000,
       "nova_previsao": null,
       "date_history": [
-       1794380400000
+       1794380400000,
+       1795158000000
       ],
       "id": "86akbhw3k"
      },
@@ -1983,7 +1988,7 @@
      },
      {
       "n": "Passagem para produção",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1795417200000,
       "original_due": 1795417200000,
       "nova_previsao": null,
@@ -1995,11 +2000,12 @@
      {
       "n": "Testes e validações do produto",
       "status": "backlog",
-      "due": 1795503600000,
+      "due": 1795762800000,
       "original_due": 1795503600000,
       "nova_previsao": null,
       "date_history": [
-       1795503600000
+       1795503600000,
+       1795762800000
       ],
       "id": "86akbhw3r"
      },
