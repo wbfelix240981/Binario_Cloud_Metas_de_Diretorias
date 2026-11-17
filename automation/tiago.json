@@ -1248,7 +1248,7 @@
  {
   "num": 5,
   "id": "86afcphwr",
-  "status": "in progress",
+  "status": "in test",
   "due": 1796022000000,
   "name": "Evolução de UX do BCP",
   "short": "Refatoração Identidade Visual (UX) - BCP",
@@ -1260,163 +1260,172 @@
   "fases": [
    {
     "n": "FASE01 - Refatoração identidade visual",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in test",
+    "assignee": "Raphael Fogaça / Gabriel Sezana",
+    "due": 1795417200000,
     "id": "86afct9fr",
     "ativ": []
    },
    {
     "n": "FASE02 - Product Tour (Tour BCP, Tooltip)",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in planning",
+    "assignee": "Raphael Fogaça",
+    "due": 1795503600000,
     "id": "86afct9nj",
     "ativ": []
    },
    {
     "n": "FASE03 - Newsletter - (Home do BCP)",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in review",
+    "assignee": "Raphael Fogaça",
+    "due": 1795503600000,
     "id": "86afct9xj",
     "ativ": []
    },
    {
     "n": "FASE04-Analytics para audiência de plataforma",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in test",
+    "assignee": "Raphael Fogaça",
+    "due": 1795158000000,
     "id": "86ajvzkhd",
     "ativ": []
    },
    {
     "n": "FASE05 - Mapeamento das API's do console atual",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in progress",
+    "assignee": "Raphael Fogaça / Gabriel Sezana",
+    "due": 1795158000000,
     "id": "86ag1p795",
     "ativ": []
    },
    {
     "n": "FASE06 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in test",
+    "assignee": "Gabriel Sezana / Raphael Fogaça",
+    "due": 1795590000000,
     "id": "86ag1p7x1",
     "ativ": []
    },
    {
     "n": "FASE07 - Identidade visual para o BCP CLI",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in planning",
+    "assignee": "Raphael Fogaça",
+    "due": 1795503600000,
     "id": "86ag1p8m4",
     "ativ": []
    },
    {
     "n": "FASE08 - Expor visões por API (Ex: Consumo)",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in planning",
+    "assignee": "Gabriel Sezana / Raphael Fogaça",
+    "due": 1795590000000,
     "id": "86ag1p9gh",
     "ativ": []
    },
    {
     "n": "FASE09 - Esteira QA",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in progress",
+    "assignee": "Raphael Fogaça",
+    "due": 1796022000000,
     "id": "86ag5umm7",
     "ativ": [
      {
-      "n": "Aplicação das roles de serviço da ferramenta",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "n": "Criação de esteira do módulo CI/CD",
+      "status": "shipped",
+      "due": 1794898800000,
+      "original_due": 1794898800000,
       "nova_previsao": null,
-      "date_history": [],
-      "id": "86agce8hv"
-     },
-     {
-      "n": "Criação de esteira do módulo",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1794898800000
+      ],
       "id": "86agce8j2"
      },
      {
       "n": "Testes e validações do produto",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in test",
+      "due": 1795676400000,
+      "original_due": 1795676400000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1795676400000
+      ],
       "id": "86agce8jh"
      },
      {
       "n": "Geração de documentação da operação",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in progress",
+      "due": 1795762800000,
+      "original_due": 1795762800000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1795762800000
+      ],
       "id": "86agce8ju"
      },
      {
       "n": "Geração de FAQ para o cliente",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1795762800000,
+      "original_due": 1795762800000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1795762800000
+      ],
       "id": "86agce8k7"
      },
      {
       "n": "Passagem para produção",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1796022000000,
+      "original_due": 1796022000000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796022000000
+      ],
       "id": "86agce8kk"
      },
      {
       "n": "Apresentação para o Board da Empresa",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1796022000000,
+      "original_due": 1796022000000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796022000000
+      ],
       "id": "86agce8ku"
      },
      {
       "n": "Apresentação para o comercial",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1796022000000,
+      "original_due": 1796022000000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796022000000
+      ],
       "id": "86agce8mc"
      },
      {
       "n": "Implementação do módulo no BC-BOX",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1795676400000,
+      "original_due": 1795676400000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1795676400000
+      ],
       "id": "86agce8mm"
      },
      {
       "n": "Precificação do produto",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "status": "in planning",
+      "due": 1795158000000,
+      "original_due": 1795158000000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1795158000000
+      ],
       "id": "86agce8n2"
      }
     ]

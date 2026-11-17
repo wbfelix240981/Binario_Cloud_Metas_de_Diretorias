@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-17T08:48:57.847807+00:00",
+ "last_sync_utc": "2026-11-17T18:12:08.755633+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -2108,8 +2108,8 @@
       },
       {
        "n": "5.2 Encerramento",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -2117,7 +2117,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5ef",
-       "u": 1793891792646,
+       "u": 1794936126706,
        "dc": null
       },
       {
@@ -2982,7 +2982,7 @@
       {
        "n": "Encerramento Kosmo",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1792998000000,
        "original_due": 1792998000000,
@@ -2990,8 +2990,8 @@
        "nova_previsao": 1794726000000,
        "depth": 0,
        "id": "86akjgbjg",
-       "u": 1793891596369,
-       "dc": 1793891596369
+       "u": 1794936044473,
+       "dc": 1794936044473
       }
      ]
     }
@@ -3016,8 +3016,8 @@
      "ativ": [
       {
        "n": "Elaboração da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3025,13 +3025,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebre",
-       "u": 1792421379176,
+       "u": 1794936252037,
        "dc": null
       },
       {
        "n": "Realizar contato de encerramento",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3039,13 +3039,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebup",
-       "u": 1792421389213,
+       "u": 1794936259270,
        "dc": null
       },
       {
        "n": "Documentação técnica final",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1796194800000,
        "original_due": 1796194800000,
@@ -3053,7 +3053,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebyb",
-       "u": 1793808253533,
+       "u": 1794936270761,
        "dc": null
       },
       {
@@ -6587,8 +6587,8 @@
       },
       {
        "n": "Validar Endpoint Porto Alegre;",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "in review",
+       "raw_status": "revisando",
        "assignee": "Joab de Araújo Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6596,7 +6596,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwep",
-       "u": 1794422955925,
+       "u": 1794924889432,
        "dc": null
       },
       {
@@ -6797,8 +6797,8 @@
       },
       {
        "n": "Apresentar calculadora ao time do Portal",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison / Tiago Gomes de Oliveira",
        "due": 1794466800000,
        "original_due": 1794466800000,
@@ -6806,8 +6806,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukzwh5",
-       "u": 1794424065456,
-       "dc": null
+       "u": 1794924900569,
+       "dc": 1794924900569
       }
      ]
     },
@@ -7058,8 +7058,8 @@
       },
       {
        "n": "Desligar acesso antigo",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Brunno Leonardo Borges Lopes",
        "due": null,
        "original_due": null,
@@ -7067,7 +7067,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akq9ngr",
-       "u": 1792674537194,
+       "u": 1794936170429,
        "dc": null
       }
      ]
