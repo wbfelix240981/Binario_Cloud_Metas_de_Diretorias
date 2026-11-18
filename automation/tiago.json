@@ -1668,17 +1668,222 @@
   "due": 1797318000000,
   "name": "Estruturar o SAAS - BC Datalake",
   "short": "SAAS- BC Datalake",
-  "assignee": "Tiago Gomes de Oliveira",
+  "assignee": "Tiago Gomes de Oliveira / Raphael Fogaça",
   "tags": [],
   "detail": "Objetivo: estruturar uma solução de Datalake como serviço (SaaS) dentro do portfólio do BCP.\nStatus: em planejamento, ainda sem fases detalhadas cadastradas no ClickUp.",
   "fases": [
    {
     "n": "FASE01 - Planejamento",
+    "status": "in progress",
+    "assignee": "Raphael Fogaça",
+    "due": 1795158000000,
+    "id": "86akmw04m",
+    "ativ": [
+     {
+      "n": "Definir responsáveis e prazos",
+      "status": "shipped",
+      "due": 1794985200000,
+      "original_due": 1794985200000,
+      "nova_previsao": null,
+      "date_history": [
+       1794985200000
+      ],
+      "id": "17ttbum31df"
+     },
+     {
+      "n": "Levantar requisitos, fontes e volumes de dados",
+      "status": "in progress",
+      "due": 1795158000000,
+      "original_due": 1795158000000,
+      "nova_previsao": null,
+      "date_history": [
+       1795158000000
+      ],
+      "id": "17ttbum31dc"
+     },
+     {
+      "n": "Definir escopo do MVP e critérios de aceite",
+      "status": "backlog",
+      "due": 1795071600000,
+      "original_due": 1795071600000,
+      "nova_previsao": null,
+      "date_history": [
+       1795071600000
+      ],
+      "id": "17ttbum31de"
+     }
+    ]
+   },
+   {
+    "n": "FASE02 - Infraestrutura",
     "status": "backlog",
     "assignee": "—",
-    "due": 1790838000000,
-    "id": "86akmw04m",
-    "ativ": []
+    "due": null,
+    "id": "17ttbum31dg",
+    "ativ": [
+     {
+      "n": "Selecionar o template de cluster e flavors.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31dz"
+     },
+     {
+      "n": "Provisionar o cluster de homologação.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31e0"
+     },
+     {
+      "n": "Validar rede, acesso ao registro de imagens e conexão com o armazenamento.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31e1"
+     }
+    ]
+   },
+   {
+    "n": "FASE03 - Implantação do Datalake",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "17ttbum31e8",
+    "ativ": [
+     {
+      "n": "Versionar a configuração e automatizar o deploy no Kubernetes.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31eb"
+     },
+     {
+      "n": "Integrar ingestão, armazenamento e consulta.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31ec"
+     },
+     {
+      "n": "Configurar ativação de clientes e permissões de acesso.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31ed"
+     },
+     {
+      "n": "Integrar logs, métricas e alertas ao monitoramento existente.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31ee"
+     }
+    ]
+   },
+   {
+    "n": "FASE04 - QA e Homologação",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "17ttbum31em",
+    "ativ": [
+     {
+      "n": "Validar desempenho e persistência após recriação dos pods.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31eq"
+     },
+     {
+      "n": "Validar deploy do SaaS Marketplace",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31h6"
+     },
+     {
+      "n": "Testar da ativação do cliente à consulta dos dados.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31ep"
+     }
+    ]
+   },
+   {
+    "n": "FASE05 - Produção",
+    "status": "backlog",
+    "assignee": "—",
+    "due": null,
+    "id": "17ttbum31f5",
+    "ativ": [
+     {
+      "n": "Abrir GMUD para deploy",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31ha"
+     },
+     {
+      "n": "Validar Esteira de deploy CI/CD",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31hd"
+     },
+     {
+      "n": "Validar o cluster em produção.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31fa"
+     },
+     {
+      "n": "Validar recurso em produção",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31he"
+     },
+     {
+      "n": "Publicar a versão aprovada e validar a primeira ingestão e consulta.",
+      "status": "backlog",
+      "due": null,
+      "original_due": null,
+      "nova_previsao": null,
+      "date_history": [],
+      "id": "17ttbum31fb"
+     }
+    ]
    }
   ]
  },
