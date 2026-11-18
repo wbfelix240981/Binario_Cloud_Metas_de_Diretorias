@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-18T17:50:40.696813+00:00",
+ "last_sync_utc": "2026-11-18T23:56:11.913879+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -2038,8 +2038,8 @@
       },
       {
        "n": "5.1 Transição para operação",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison / Lucas Federissis de Souza",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -2047,8 +2047,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ajrf5ee",
-       "u": 1793987819124,
-       "dc": null
+       "u": 1795033351305,
+       "dc": 1795033351305
       },
       {
        "n": "Documentar topologia de rede",
@@ -2080,22 +2080,22 @@
       },
       {
        "n": "Realizar passagem para o CCOE",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
-       "due": 1794553200000,
-       "original_due": 1794553200000,
+       "due": 1796108400000,
+       "original_due": 1796108400000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf62u",
-       "u": 1793891777211,
+       "u": 1795033333987,
        "dc": null
       },
       {
        "n": "Realizar reunião de transição",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -2103,8 +2103,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf63c",
-       "u": 1793891779468,
-       "dc": null
+       "u": 1795033339995,
+       "dc": 1795033339995
       },
       {
        "n": "5.2 Encerramento",
@@ -2122,8 +2122,8 @@
       },
       {
        "n": "Realizar reunião de encerramento",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -2131,7 +2131,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ajrf63z",
-       "u": 1793891792646,
+       "u": 1795033305972,
        "dc": null
       },
       {
@@ -6974,8 +6974,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1794553200000,
-     "u": 1794944107289,
+     "due": 1796022000000,
+     "u": 1795044521265,
      "id": "86akq9jjw",
      "ativ": [
       {
