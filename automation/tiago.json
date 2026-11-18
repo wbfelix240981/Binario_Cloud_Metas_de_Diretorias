@@ -1248,7 +1248,7 @@
  {
   "num": 5,
   "id": "86afcphwr",
-  "status": "in test",
+  "status": "in progress",
   "due": 1796022000000,
   "name": "Evolução de UX do BCP",
   "short": "Refatoração Identidade Visual (UX) - BCP",
@@ -1260,94 +1260,52 @@
   "fases": [
    {
     "n": "FASE01 - Refatoração identidade visual",
-    "status": "in test",
+    "status": "shipped",
     "assignee": "Raphael Fogaça / Gabriel Sezana",
-    "due": 1795417200000,
+    "due": 1794812400000,
     "id": "86afct9fr",
     "ativ": []
    },
    {
-    "n": "FASE02 - Product Tour (Tour BCP, Tooltip)",
-    "status": "in planning",
+    "n": "FASE02-Analytics para audiência de plataforma",
+    "status": "shipped",
     "assignee": "Raphael Fogaça",
-    "due": 1795503600000,
-    "id": "86afct9nj",
-    "ativ": []
-   },
-   {
-    "n": "FASE03 - Newsletter - (Home do BCP)",
-    "status": "in review",
-    "assignee": "Raphael Fogaça",
-    "due": 1795503600000,
-    "id": "86afct9xj",
-    "ativ": []
-   },
-   {
-    "n": "FASE04-Analytics para audiência de plataforma",
-    "status": "in test",
-    "assignee": "Raphael Fogaça",
-    "due": 1795158000000,
+    "due": 1794553200000,
     "id": "86ajvzkhd",
     "ativ": []
    },
    {
-    "n": "FASE05 - Mapeamento das API's do console atual",
-    "status": "in progress",
-    "assignee": "Raphael Fogaça / Gabriel Sezana",
-    "due": 1795158000000,
+    "n": "FASE03 - Mapeamento das API's do console atual",
+    "status": "shipped",
+    "assignee": "Gabriel Sezana / Raphael Fogaça",
+    "due": 1794553200000,
     "id": "86ag1p795",
     "ativ": []
    },
    {
-    "n": "FASE06 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
-    "status": "in test",
+    "n": "FASE04 - Desenvolvimento do Frontend consumindo as api's na nova identidade",
+    "status": "shipped",
     "assignee": "Gabriel Sezana / Raphael Fogaça",
-    "due": 1795590000000,
+    "due": 1794553200000,
     "id": "86ag1p7x1",
     "ativ": []
    },
    {
-    "n": "FASE07 - Identidade visual para o BCP CLI",
-    "status": "in planning",
-    "assignee": "Raphael Fogaça",
-    "due": 1795503600000,
-    "id": "86ag1p8m4",
-    "ativ": []
-   },
-   {
-    "n": "FASE08 - Expor visões por API (Ex: Consumo)",
-    "status": "in planning",
-    "assignee": "Gabriel Sezana / Raphael Fogaça",
-    "due": 1795590000000,
-    "id": "86ag1p9gh",
-    "ativ": []
-   },
-   {
-    "n": "FASE09 - Esteira QA",
+    "n": "FASE05 - Esteira QA",
     "status": "in progress",
     "assignee": "Raphael Fogaça",
     "due": 1796022000000,
     "id": "86ag5umm7",
     "ativ": [
      {
-      "n": "Criação de esteira do módulo CI/CD",
-      "status": "shipped",
-      "due": 1794898800000,
-      "original_due": 1794898800000,
-      "nova_previsao": null,
-      "date_history": [
-       1794898800000
-      ],
-      "id": "86agce8j2"
-     },
-     {
       "n": "Testes e validações do produto",
-      "status": "in test",
-      "due": 1795676400000,
+      "status": "in progress",
+      "due": 1795158000000,
       "original_due": 1795676400000,
       "nova_previsao": null,
       "date_history": [
-       1795676400000
+       1795676400000,
+       1795158000000
       ],
       "id": "86agce8jh"
      },
@@ -1364,7 +1322,7 @@
      },
      {
       "n": "Geração de FAQ para o cliente",
-      "status": "in planning",
+      "status": "in progress",
       "due": 1795762800000,
       "original_due": 1795762800000,
       "nova_previsao": null,
@@ -1374,19 +1332,8 @@
       "id": "86agce8k7"
      },
      {
-      "n": "Passagem para produção",
-      "status": "in planning",
-      "due": 1796022000000,
-      "original_due": 1796022000000,
-      "nova_previsao": null,
-      "date_history": [
-       1796022000000
-      ],
-      "id": "86agce8kk"
-     },
-     {
       "n": "Apresentação para o Board da Empresa",
-      "status": "in planning",
+      "status": "backlog",
       "due": 1796022000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
@@ -1397,7 +1344,7 @@
      },
      {
       "n": "Apresentação para o comercial",
-      "status": "in planning",
+      "status": "backlog",
       "due": 1796022000000,
       "original_due": 1796022000000,
       "nova_previsao": null,
@@ -1405,28 +1352,48 @@
        1796022000000
       ],
       "id": "86agce8mc"
-     },
+     }
+    ]
+   },
+   {
+    "n": "FASE05 - Passagem para produção",
+    "status": "backlog",
+    "assignee": "Raphael Fogaça",
+    "due": 1796022000000,
+    "id": "17ttbum318z",
+    "ativ": [
      {
-      "n": "Implementação do módulo no BC-BOX",
-      "status": "in planning",
-      "due": 1795676400000,
-      "original_due": 1795676400000,
+      "n": "Validação da esteira CI/CD para deploy",
+      "status": "backlog",
+      "due": 1795762800000,
+      "original_due": 1795762800000,
       "nova_previsao": null,
       "date_history": [
-       1795676400000
+       1795762800000
       ],
-      "id": "86agce8mm"
+      "id": "17ttbum319f"
      },
      {
-      "n": "Precificação do produto",
-      "status": "in planning",
-      "due": 1795158000000,
-      "original_due": 1795158000000,
+      "n": "Abertura de GMUD",
+      "status": "backlog",
+      "due": 1795503600000,
+      "original_due": 1795503600000,
       "nova_previsao": null,
       "date_history": [
-       1795158000000
+       1795503600000
       ],
-      "id": "86agce8n2"
+      "id": "17ttbum319d"
+     },
+     {
+      "n": "Passagem para produção (deploy)",
+      "status": "backlog",
+      "due": 1796022000000,
+      "original_due": 1796022000000,
+      "nova_previsao": null,
+      "date_history": [
+       1796022000000
+      ],
+      "id": "86agce8kk"
      }
     ]
    }
@@ -1464,7 +1431,7 @@
  {
   "num": 7,
   "id": "86ajvr6zn",
-  "status": "in progress",
+  "status": "shipped",
   "due": 1792479600000,
   "name": "Estruturar o BCP-Multicloud para gerenciamento centralizado de ambientes de nuvem pública, privada e híbrida",
   "short": "BCP - Multicloud (AWS)",
@@ -1641,14 +1608,14 @@
    },
    {
     "n": "Documentação",
-    "status": "backlog",
+    "status": "shipped",
     "assignee": "—",
     "due": 1791788400000,
     "id": "86akrwaru",
     "ativ": [
      {
       "n": "Passagem Conhecimento - Operação",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
@@ -1659,7 +1626,7 @@
      },
      {
       "n": "Criação de Videos - Demonstrativo",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
@@ -1670,7 +1637,7 @@
      },
      {
       "n": "Montagem de manual - FAQ",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791788400000,
       "original_due": 1791788400000,
       "nova_previsao": null,
@@ -1681,7 +1648,7 @@
      },
      {
       "n": "Apresentar funcionalidade Equipe Comercial",
-      "status": "backlog",
+      "status": "shipped",
       "due": 1791529200000,
       "original_due": 1791529200000,
       "nova_previsao": null,
@@ -1697,8 +1664,8 @@
  {
   "num": 8,
   "id": "86ajw0v6q",
-  "status": "in planning",
-  "due": 1792479600000,
+  "status": "in progress",
+  "due": 1797318000000,
   "name": "Estruturar o SAAS - BC Datalake",
   "short": "SAAS- BC Datalake",
   "assignee": "Tiago Gomes de Oliveira",
@@ -1706,7 +1673,7 @@
   "detail": "Objetivo: estruturar uma solução de Datalake como serviço (SaaS) dentro do portfólio do BCP.\nStatus: em planejamento, ainda sem fases detalhadas cadastradas no ClickUp.",
   "fases": [
    {
-    "n": "Planejamento",
+    "n": "FASE01 - Planejamento",
     "status": "backlog",
     "assignee": "—",
     "due": 1790838000000,
