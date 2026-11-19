@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 719
+  "_missing_count": 720
  },
  {
   "id": "86ak6m2qf",
@@ -332,6 +332,16 @@
    "Rodney Botelho"
   ],
   "url": "https://app.clickup.com/t/17ttbum1vdp",
+  "_missing_count": 0
+ },
+ {
+  "id": "17ttbum2x62",
+  "name": "Desativar o Backup de Volume conforme orientação CSE como um \"modulo\" que não funciona.",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/17ttbum2x62",
   "_missing_count": 0
  }
 ]

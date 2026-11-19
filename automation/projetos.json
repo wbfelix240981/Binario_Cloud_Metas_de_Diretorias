@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-19T08:23:27.377962+00:00",
+ "last_sync_utc": "2026-11-19T18:01:21.837507+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3006,73 +3006,6 @@
    "url": "https://app.clickup.com/3080406/v/li/901328281164",
    "fases": [
     {
-     "n": "Fase 5 - Encerramento",
-     "status": "backlog",
-     "raw_status": "aberto",
-     "assignee": "Diogo Lerison",
-     "due": 1793343600000,
-     "u": 1792421374017,
-     "id": "86ak5e3dx",
-     "ativ": [
-      {
-       "n": "Elaboração da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ebre",
-       "u": 1794936252037,
-       "dc": null
-      },
-      {
-       "n": "Realizar contato de encerramento",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ebup",
-       "u": 1794936259270,
-       "dc": null
-      },
-      {
-       "n": "Documentação técnica final",
-       "status": "in progress",
-       "raw_status": "em andamento",
-       "assignee": "José Maria Ferreira da Silva",
-       "due": 1796194800000,
-       "original_due": 1796194800000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ebyb",
-       "u": 1794936270761,
-       "dc": null
-      },
-      {
-       "n": "Assinatura da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5ec3z",
-       "u": 1792421401801,
-       "dc": null
-      }
-     ]
-    },
-    {
      "n": "Fase 1 - Iniciação",
      "status": "shipped",
      "raw_status": "fechado",
@@ -3346,8 +3279,8 @@
       },
       {
        "n": "Monitoramento do backup",
-       "status": "in planning",
-       "raw_status": "planejamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Augusto Rossi",
        "due": 1794898800000,
        "original_due": 1794898800000,
@@ -3355,8 +3288,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ygpj",
-       "u": 1793799698582,
-       "dc": null
+       "u": 1795099567456,
+       "dc": 1795099567456
       },
       {
        "n": "Documentação técnica",
@@ -3373,17 +3306,17 @@
        "dc": null
       },
       {
-       "n": "API de report de ferramenta para o cliente",
+       "n": "Exportação da chave de API do Veeam",
        "status": "in progress",
        "raw_status": "em andamento",
-       "assignee": "Augusto Rossi",
+       "assignee": "Augusto Rossi / Bruno Queiroz",
        "due": 1797145200000,
        "original_due": 1797145200000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak8quyy",
-       "u": 1793799020872,
+       "u": 1795099553209,
        "dc": null
       }
      ]
@@ -3429,17 +3362,17 @@
     },
     {
      "n": "Fase 4 - Monitoramento e controle",
-     "status": "in progress",
-     "raw_status": "em andamento",
+     "status": "shipped",
+     "raw_status": "concluído",
      "assignee": "Diogo Lerison",
      "due": 1793343600000,
-     "u": 1792421352426,
+     "u": 1795099585110,
      "id": "86ak5e3at",
      "ativ": [
       {
        "n": "Validar entregas do Projeto",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3447,11 +3380,36 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e7pz",
-       "u": 1792668150247,
-       "dc": null
+       "u": 1795099585110,
+       "dc": 1795099585110
       },
       {
        "n": "Acompanhamento do cronograma e status report",
+       "status": "shipped",
+       "raw_status": "concluído",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5e7tq",
+       "u": 1795099585110,
+       "dc": 1795099585110
+      }
+     ]
+    },
+    {
+     "n": "Fase 5 - Encerramento",
+     "status": "in progress",
+     "raw_status": "em andamento",
+     "assignee": "Diogo Lerison",
+     "due": 1793343600000,
+     "u": 1795099588373,
+     "id": "86ak5e3dx",
+     "ativ": [
+      {
+       "n": "Elaboração da TEP",
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
@@ -3460,8 +3418,50 @@
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
-       "id": "86ak5e7tq",
-       "u": 1792668154490,
+       "id": "86ak5ebre",
+       "u": 1794936252037,
+       "dc": null
+      },
+      {
+       "n": "Realizar contato de encerramento",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ebup",
+       "u": 1794936259270,
+       "dc": null
+      },
+      {
+       "n": "Documentação técnica final",
+       "status": "in progress",
+       "raw_status": "em andamento",
+       "assignee": "José Maria Ferreira da Silva",
+       "due": 1796194800000,
+       "original_due": 1796194800000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ebyb",
+       "u": 1794936270761,
+       "dc": null
+      },
+      {
+       "n": "Assinatura da TEP",
+       "status": "backlog",
+       "raw_status": "aberto",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5ec3z",
+       "u": 1792421401801,
        "dc": null
       }
      ]
@@ -5179,8 +5179,8 @@
       },
       {
        "n": "Go-Live",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Priscila de Fatima Sotério Ferreira",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -5188,8 +5188,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86akekj3m",
-       "u": 1792763433431,
-       "dc": null
+       "u": 1795101067031,
+       "dc": 1795101065959
       }
      ]
     }
@@ -6975,7 +6975,7 @@
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
      "due": 1796022000000,
-     "u": 1795044521265,
+     "u": 1795098544944,
      "id": "86akq9jjw",
      "ativ": [
       {
