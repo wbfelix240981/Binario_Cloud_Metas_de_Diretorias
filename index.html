@@ -870,7 +870,7 @@ const ROADMAP_TASKS = [
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 737
+  "_missing_count": 738
  },
  {
   "id": "86ak6m2qf",
@@ -934,7 +934,7 @@ const ROADMAP_TASKS = [
   "_missing_count": 0
  }
 ];
-const LAST_SYNC_UTC = "2026-11-23T08:35:24.309242+00:00";
+const LAST_SYNC_UTC = "2026-11-23T20:55:27.930437+00:00";
 
 const RAFAEL_METAS = [
  {
@@ -5475,7 +5475,7 @@ const TIAGO_METAS = [
     "n": "FASE01 - Planejamento",
     "status": "in progress",
     "assignee": "Raphael Fogaça",
-    "due": 1795158000000,
+    "due": 1795762800000,
     "id": "86akmw04m",
     "ativ": [
      {
@@ -5490,197 +5490,120 @@ const TIAGO_METAS = [
       "id": "17ttbum31df"
      },
      {
-      "n": "Levantar requisitos, fontes e volumes de dados",
+      "n": "Levantar requisitos",
       "status": "in progress",
-      "due": 1795158000000,
+      "due": 1795762800000,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
-       1795158000000
+       1795158000000,
+       1795762800000
       ],
       "id": "17ttbum31dc"
-     },
-     {
-      "n": "Definir escopo do MVP e critérios de aceite",
-      "status": "backlog",
-      "due": 1795071600000,
-      "original_due": 1795071600000,
-      "nova_previsao": null,
-      "date_history": [
-       1795071600000
-      ],
-      "id": "17ttbum31de"
      }
     ]
    },
    {
     "n": "FASE02 - Infraestrutura",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "status": "in progress",
+    "assignee": "Guilherme Lopes / Raphael Fogaça",
+    "due": 1796022000000,
     "id": "17ttbum31dg",
     "ativ": [
      {
-      "n": "Selecionar o template de cluster e flavors.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "n": "Conversão do script terraform para yaml",
+      "status": "in progress",
+      "due": 1796022000000,
+      "original_due": 1796022000000,
       "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31dz"
-     },
-     {
-      "n": "Provisionar o cluster de homologação.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31e0"
-     },
-     {
-      "n": "Validar rede, acesso ao registro de imagens e conexão com o armazenamento.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31e1"
-     }
-    ]
-   },
-   {
-    "n": "FASE03 - Implantação do Datalake",
-    "status": "backlog",
-    "assignee": "—",
-    "due": null,
-    "id": "17ttbum31e8",
-    "ativ": [
-     {
-      "n": "Versionar a configuração e automatizar o deploy no Kubernetes.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31eb"
-     },
-     {
-      "n": "Integrar ingestão, armazenamento e consulta.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31ec"
-     },
-     {
-      "n": "Configurar ativação de clientes e permissões de acesso.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31ed"
-     },
-     {
-      "n": "Integrar logs, métricas e alertas ao monitoramento existente.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31ee"
+      "date_history": [
+       1796022000000
+      ],
+      "id": "17ttbum3tr3"
      }
     ]
    },
    {
     "n": "FASE04 - QA e Homologação",
     "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "assignee": "Raphael Fogaça",
+    "due": 1796367600000,
     "id": "17ttbum31em",
     "ativ": [
      {
-      "n": "Validar desempenho e persistência após recriação dos pods.",
+      "n": "Realizar testes de deploy do yaml (SaaS)",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796194800000,
+      "original_due": 1796194800000,
       "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31eq"
+      "date_history": [
+       1796194800000
+      ],
+      "id": "17ttbum3trg"
      },
      {
-      "n": "Validar deploy do SaaS Marketplace",
+      "n": "Realizar testes da primeira ingestão e consulta",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796367600000,
+      "original_due": 1796367600000,
       "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31h6"
-     },
-     {
-      "n": "Testar da ativação do cliente à consulta dos dados.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31ep"
+      "date_history": [
+       1796367600000
+      ],
+      "id": "17ttbum31fb"
      }
     ]
    },
    {
     "n": "FASE05 - Produção",
     "status": "backlog",
-    "assignee": "—",
-    "due": null,
+    "assignee": "Raphael Fogaça",
+    "due": 1796713200000,
     "id": "17ttbum31f5",
     "ativ": [
      {
       "n": "Abrir GMUD para deploy",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796626800000,
+      "original_due": 1796626800000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796626800000
+      ],
       "id": "17ttbum31ha"
      },
      {
       "n": "Validar Esteira de deploy CI/CD",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796713200000,
+      "original_due": 1796713200000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796713200000
+      ],
       "id": "17ttbum31hd"
      },
      {
-      "n": "Validar o cluster em produção.",
+      "n": "Validar o deploy saas datalake produção via marketplace",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796713200000,
+      "original_due": 1796713200000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796713200000
+      ],
       "id": "17ttbum31fa"
      },
      {
       "n": "Validar recurso em produção",
       "status": "backlog",
-      "due": null,
-      "original_due": null,
+      "due": 1796713200000,
+      "original_due": 1796713200000,
       "nova_previsao": null,
-      "date_history": [],
+      "date_history": [
+       1796713200000
+      ],
       "id": "17ttbum31he"
-     },
-     {
-      "n": "Publicar a versão aprovada e validar a primeira ingestão e consulta.",
-      "status": "backlog",
-      "due": null,
-      "original_due": null,
-      "nova_previsao": null,
-      "date_history": [],
-      "id": "17ttbum31fb"
      }
     ]
    }
@@ -5909,7 +5832,7 @@ const TIAGO_METAS = [
      },
      {
       "n": "Criar api integração api VMWare e a ferramenta",
-      "status": "in progress",
+      "status": "shipped",
       "due": 1795158000000,
       "original_due": 1794985200000,
       "nova_previsao": null,
@@ -5933,7 +5856,7 @@ const TIAGO_METAS = [
      },
      {
       "n": "Testar VMware -> Openstack",
-      "status": "backlog",
+      "status": "in progress",
       "due": 1795590000000,
       "original_due": 1795158000000,
       "nova_previsao": null,
@@ -5945,7 +5868,7 @@ const TIAGO_METAS = [
      },
      {
       "n": "Adequação do OCI de Imagem para Disco",
-      "status": "in test",
+      "status": "shipped",
       "due": 1795158000000,
       "original_due": 1794380400000,
       "nova_previsao": null,
