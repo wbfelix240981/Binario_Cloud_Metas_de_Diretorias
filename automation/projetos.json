@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-25T12:51:16.225728+00:00",
+ "last_sync_utc": "2026-11-25T19:01:59.622599+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -5875,8 +5875,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-     "due": 1795158000000,
-     "u": 1793803253728,
+     "due": 1797318000000,
+     "u": 1795613124412,
      "id": "17ttbukwjw7",
      "ativ": [
       {
@@ -5954,13 +5954,13 @@
        "status": "in progress",
        "raw_status": "em andamento",
        "assignee": "Augusto Rossi / José Maria Ferreira da Silva",
-       "due": 1795158000000,
-       "original_due": 1795158000000,
+       "due": 1797750000000,
+       "original_due": 1797750000000,
        "alarme_limpo_due": null,
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukwjwe",
-       "u": 1794605129322,
+       "u": 1795613282572,
        "dc": null
       }
      ]
@@ -6162,8 +6162,8 @@
       },
       {
        "n": "Concluir a configuração de OpenID Connect, Keycloak e Keystone e trocar o acesso de sandbox pelo fluxo produtivo",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison / Wagner Bento Felix",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -6171,13 +6171,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqnwv",
-       "u": 1794421845227,
-       "dc": null
+       "u": 1795629042402,
+       "dc": 1795629042402
       },
       {
        "n": "Envio de credenciais de produção",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Wagner Bento Felix",
        "due": 1792479600000,
        "original_due": 1792479600000,
@@ -6185,13 +6185,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxaz1",
-       "u": 1793298306953,
-       "dc": 1793298306953
+       "u": 1795629042402,
+       "dc": 1795629042402
       },
       {
        "n": "Envio JWT",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Wagner Bento Felix",
        "due": 1792652400000,
        "original_due": 1792652400000,
@@ -6199,13 +6199,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxwhw",
-       "u": 1793298301652,
-       "dc": 1793298301652
+       "u": 1795629042402,
+       "dc": 1795629042402
       },
       {
        "n": "Disponibilizar usuários de serviço das regiões produtivas",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Wagner Bento Felix",
        "due": 1793775600000,
        "original_due": 1793775600000,
@@ -6213,8 +6213,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukxwj2",
-       "u": 1793883014582,
-       "dc": 1793883014582
+       "u": 1795629042402,
+       "dc": 1795629042402
       },
       {
        "n": "Provisionamento 2 VMs para produção",
@@ -6316,8 +6316,8 @@
       },
       {
        "n": "Documentar e alinhar virada para produção",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Joab de Araújo Silva / Diogo Lerison",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6325,8 +6325,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktnk59",
-       "u": 1794421781429,
-       "dc": null
+       "u": 1795627589612,
+       "dc": 1795627589612
       }
      ]
     },
@@ -6492,8 +6492,8 @@
       },
       {
        "n": "Coleta de SKU/recursos não mapeados",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Guilherme Lopes / Guilherme Soares Gomes da Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6501,13 +6501,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbum0vf5",
-       "u": 1794421934630,
-       "dc": null
+       "u": 1795631541651,
+       "dc": 1795631541651
       },
       {
        "n": "Snapshot",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "—",
        "due": null,
        "original_due": null,
@@ -6515,8 +6515,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbum0vf7",
-       "u": 1793884235834,
-       "dc": null
+       "u": 1795631541651,
+       "dc": 1795631541651
       }
      ]
     },
@@ -6531,8 +6531,8 @@
      "ativ": [
       {
        "n": "Validar acessos e endpoints das regiões Canonical",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Wagner Bento Felix / Joab de Araújo Silva",
        "due": 1794466800000,
        "original_due": 1794466800000,
@@ -6540,13 +6540,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqvyc",
-       "u": 1794421967239,
+       "u": 1795631558192,
        "dc": null
       },
       {
        "n": "Validar endpoint Fortaleza;",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Joab de Araújo Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6554,8 +6554,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwen",
-       "u": 1794422955925,
-       "dc": null
+       "u": 1795631550877,
+       "dc": 1795631550877
       },
       {
        "n": "Validar endpoint São Paulo DR;",
@@ -6587,8 +6587,8 @@
       },
       {
        "n": "Validar Endpoint Porto Alegre;",
-       "status": "in review",
-       "raw_status": "revisando",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Joab de Araújo Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6596,13 +6596,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwep",
-       "u": 1794924889432,
-       "dc": null
+       "u": 1795631554207,
+       "dc": 1795631554207
       },
       {
        "n": "Liberar acesso externo ao MySQL para a BC Data API",
-       "status": "in review",
-       "raw_status": "revisando",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6610,13 +6610,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukzwft",
-       "u": 1794423711970,
-       "dc": null
+       "u": 1795631565210,
+       "dc": 1795631565210
       },
       {
        "n": "Validar conectividade BC Data API → MySQL",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6624,7 +6624,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "17ttbukzwfx",
-       "u": 1794423997322,
+       "u": 1795631572412,
        "dc": null
       },
       {
@@ -6657,8 +6657,8 @@
       },
       {
        "n": "Começar coleta Fortaleza",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6666,13 +6666,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktp32q",
-       "u": 1794424005244,
+       "u": 1795631580002,
        "dc": null
       },
       {
        "n": "Deploy + Validação",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -6680,13 +6680,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktpv3n",
-       "u": 1793394354296,
+       "u": 1795631584884,
        "dc": null
       },
       {
        "n": "Começar coleta Porto Alegre",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6694,13 +6694,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktp32z",
-       "u": 1794424007428,
+       "u": 1795631581679,
        "dc": null
       },
       {
        "n": "Deploy + Validação",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1794553200000,
        "original_due": 1794553200000,
@@ -6708,7 +6708,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktpv8h",
-       "u": 1793394361484,
+       "u": 1795631586420,
        "dc": null
       },
       {
@@ -6727,8 +6727,8 @@
       },
       {
        "n": "Validar regras de cobrança das novas regiões",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1794380400000,
        "original_due": 1794380400000,
@@ -6736,13 +6736,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqw1d",
-       "u": 1794424041398,
-       "dc": null
+       "u": 1795631592920,
+       "dc": 1795631592920
       },
       {
        "n": "Definir publicação e acesso da calculadora de consumo",
-       "status": "waiting",
-       "raw_status": "aguardando retorno",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Guilherme Lopes",
        "due": 1794466800000,
        "original_due": 1794466800000,
@@ -6750,8 +6750,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqw6q",
-       "u": 1794424019158,
-       "dc": null
+       "u": 1795631598249,
+       "dc": 1795631598249
       },
       {
        "n": "Ajustar as VMs da POC para produção (nomes, rede, recursos e isolamento dos serviços)",
@@ -6769,8 +6769,8 @@
       },
       {
        "n": "Validar certificado e HTTPS do ambiente produtivo",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in review",
+       "raw_status": "revisando",
        "assignee": "Wagner Bento Felix",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -6778,7 +6778,7 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqw9f",
-       "u": 1793394286809,
+       "u": 1795631609046,
        "dc": null
       },
       {
@@ -7024,8 +7024,8 @@
      "status": "in progress",
      "raw_status": "em andamento",
      "assignee": "Brunno Leonardo Borges Lopes",
-     "due": 1795158000000,
-     "u": 1794344592609,
+     "due": 1796972400000,
+     "u": 1795615055073,
      "id": "86akq9jq9",
      "ativ": [
       {
