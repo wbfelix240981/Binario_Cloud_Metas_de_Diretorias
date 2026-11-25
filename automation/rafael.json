@@ -1717,11 +1717,12 @@
       "status": "in progress",
       "due": 1795158000000,
       "original_due": 1792393200000,
-      "nova_previsao": 1795762800000,
+      "nova_previsao": 1797577200000,
       "date_history": [
        1792393200000,
        1793948400000,
-       1795762800000
+       1795762800000,
+       1797577200000
       ],
       "id": "86ak7y8wj"
      },
@@ -1730,15 +1731,16 @@
       "status": "backlog",
       "due": 1795417200000,
       "original_due": 1795417200000,
-      "nova_previsao": null,
+      "nova_previsao": 1801206000000,
       "date_history": [
-       1795417200000
+       1795417200000,
+       1801206000000
       ],
       "id": "86ak7yme0"
      },
      {
       "n": "Migração backup de clientes ambiente novo",
-      "status": "backlog",
+      "status": "in planning",
       "due": 1797577200000,
       "original_due": 1797577200000,
       "nova_previsao": null,
@@ -1752,9 +1754,10 @@
       "status": "backlog",
       "due": 1796022000000,
       "original_due": 1796022000000,
-      "nova_previsao": null,
+      "nova_previsao": 1801206000000,
       "date_history": [
-       1796022000000
+       1796022000000,
+       1801206000000
       ],
       "id": "86ak7ypvq"
      },
@@ -1763,9 +1766,10 @@
       "status": "backlog",
       "due": 1799391600000,
       "original_due": 1799391600000,
-      "nova_previsao": null,
+      "nova_previsao": 1804834800000,
       "date_history": [
-       1799391600000
+       1799391600000,
+       1804834800000
       ],
       "id": "86ak7ypz9"
      }

@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 741
+  "_missing_count": 742
  },
  {
   "id": "86ak6m2qf",
@@ -342,6 +342,16 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/17ttbum2x62",
+  "_missing_count": 0
+ },
+ {
+  "id": "17ttbum44j0",
+  "name": "Flavors com vcpu e ram iguais, porém com configurações de redes diferentes, porém todos com o mesmo valor",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/17ttbum44j0",
   "_missing_count": 0
  }
 ]
