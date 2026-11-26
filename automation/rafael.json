@@ -1913,12 +1913,13 @@
     "ativ": [
      {
       "n": "br-sp-02-node01",
-      "status": "blocked",
-      "due": null,
+      "status": "in progress",
+      "due": 1797577200000,
       "original_due": 1793343600000,
       "nova_previsao": null,
       "date_history": [
-       1793343600000
+       1793343600000,
+       1797577200000
       ],
       "id": "86agc8787"
      },
