@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-26T09:11:04.790528+00:00",
+ "last_sync_utc": "2026-11-26T13:23:46.009768+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -3059,18 +3059,57 @@
      ]
     },
     {
+     "n": "Fase 2 - Planejamento",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Diogo Lerison",
+     "due": null,
+     "u": 1788541071756,
+     "id": "86ak5e34w",
+     "ativ": [
+      {
+       "n": "Realizar cronograma",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5e436",
+       "u": 1788541071756,
+       "dc": 1788541071756
+      },
+      {
+       "n": "Estimar recursos e tempo de execução",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison / José Maria Ferreira da Silva",
+       "due": null,
+       "original_due": null,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5exf2",
+       "u": 1788541071756,
+       "dc": 1788541071756
+      }
+     ]
+    },
+    {
      "n": "Fase 3 - Soprema - Execução técnica",
-     "status": "in progress",
-     "raw_status": "em andamento",
+     "status": "shipped",
+     "raw_status": "fechado",
      "assignee": "José Maria Ferreira da Silva",
      "due": 1796367600000,
-     "u": 1794343230166,
+     "u": 1795694652286,
      "id": "86ak5e38y",
      "ativ": [
       {
        "n": "Backup Gerenciado",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1794898800000,
        "original_due": 1794898800000,
@@ -3078,8 +3117,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5e6re",
-       "u": 1793811147864,
-       "dc": null
+       "u": 1795694652262,
+       "dc": 1795694651088
       },
       {
        "n": "Definição de servidor para instalar o VBR",
@@ -3182,7 +3221,7 @@
       {
        "n": "Instalar Endpoint nos servidor",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3190,13 +3229,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5e7cy",
-       "u": 1793803607637,
-       "dc": 1793803607637
+       "u": 1795694652301,
+       "dc": 1795694651088
       },
       {
        "n": "WIN-64AA16BBGDE",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792998000000,
        "original_due": 1792998000000,
@@ -3204,13 +3243,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j1m",
-       "u": 1793812265996,
-       "dc": 1793812265996
+       "u": 1795694652275,
+       "dc": 1795694651088
       },
       {
        "n": "SWSPR003",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -3218,13 +3257,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j4y",
-       "u": 1793812267835,
-       "dc": 1793812267835
+       "u": 1795694652318,
+       "dc": 1795694651088
       },
       {
        "n": "SWSPR002",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1793084400000,
        "original_due": 1793084400000,
@@ -3232,13 +3271,13 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "86akq7j8f",
-       "u": 1793812273104,
-       "dc": 1793812273104
+       "u": 1795694652340,
+       "dc": 1795694651088
       },
       {
        "n": "Configuração backup Veeam - Projeto Soprema - com o Cliente",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1792738800000,
        "original_due": 1792738800000,
@@ -3246,8 +3285,8 @@
        "nova_previsao": null,
        "depth": 2,
        "id": "17ttbukz11h",
-       "u": 1793812288368,
-       "dc": 1793812288368
+       "u": 1795694652342,
+       "dc": 1795694651088
       },
       {
        "n": "Configurar Jobs de backup",
@@ -3280,7 +3319,7 @@
       {
        "n": "Monitoramento do backup",
        "status": "shipped",
-       "raw_status": "concluído",
+       "raw_status": "fechado",
        "assignee": "Augusto Rossi",
        "due": 1794898800000,
        "original_due": 1794898800000,
@@ -3288,13 +3327,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ygpj",
-       "u": 1795099567456,
-       "dc": 1795099567456
+       "u": 1795694652254,
+       "dc": 1795694651088
       },
       {
        "n": "Documentação técnica",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva / Augusto Rossi",
        "due": 1794898800000,
        "original_due": 1794898800000,
@@ -3302,8 +3341,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86ak5ec77",
-       "u": 1793799777321,
-       "dc": null
+       "u": 1795694652293,
+       "dc": 1795694651088
       },
       {
        "n": "Exportação da chave de API do Veeam",
@@ -3322,96 +3361,18 @@
      ]
     },
     {
-     "n": "Fase 2 - Planejamento",
+     "n": "Fase 5 - Encerramento",
      "status": "shipped",
      "raw_status": "fechado",
      "assignee": "Diogo Lerison",
-     "due": null,
-     "u": 1788541071756,
-     "id": "86ak5e34w",
-     "ativ": [
-      {
-       "n": "Realizar cronograma",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5e436",
-       "u": 1788541071756,
-       "dc": 1788541071756
-      },
-      {
-       "n": "Estimar recursos e tempo de execução",
-       "status": "shipped",
-       "raw_status": "fechado",
-       "assignee": "Diogo Lerison / José Maria Ferreira da Silva",
-       "due": null,
-       "original_due": null,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5exf2",
-       "u": 1788541071756,
-       "dc": 1788541071756
-      }
-     ]
-    },
-    {
-     "n": "Fase 4 - Monitoramento e controle",
-     "status": "shipped",
-     "raw_status": "concluído",
-     "assignee": "Diogo Lerison",
      "due": 1793343600000,
-     "u": 1795099585110,
-     "id": "86ak5e3at",
-     "ativ": [
-      {
-       "n": "Validar entregas do Projeto",
-       "status": "shipped",
-       "raw_status": "concluído",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5e7pz",
-       "u": 1795099585110,
-       "dc": 1795099585110
-      },
-      {
-       "n": "Acompanhamento do cronograma e status report",
-       "status": "shipped",
-       "raw_status": "concluído",
-       "assignee": "Diogo Lerison",
-       "due": 1793343600000,
-       "original_due": 1793343600000,
-       "alarme_limpo_due": null,
-       "nova_previsao": null,
-       "depth": 0,
-       "id": "86ak5e7tq",
-       "u": 1795099585110,
-       "dc": 1795099585110
-      }
-     ]
-    },
-    {
-     "n": "Fase 5 - Encerramento",
-     "status": "in progress",
-     "raw_status": "em andamento",
-     "assignee": "Diogo Lerison",
-     "due": 1793343600000,
-     "u": 1795099588373,
+     "u": 1795694697421,
      "id": "86ak5e3dx",
      "ativ": [
       {
        "n": "Elaboração da TEP",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3419,13 +3380,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebre",
-       "u": 1794936252037,
-       "dc": null
+       "u": 1795694697421,
+       "dc": 1795694697421
       },
       {
        "n": "Realizar contato de encerramento",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3433,13 +3394,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebup",
-       "u": 1794936259270,
-       "dc": null
+       "u": 1795694697421,
+       "dc": 1795694697421
       },
       {
        "n": "Documentação técnica final",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "fechado",
        "assignee": "José Maria Ferreira da Silva",
        "due": 1796194800000,
        "original_due": 1796194800000,
@@ -3447,13 +3408,13 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ebyb",
-       "u": 1794936270761,
-       "dc": null
+       "u": 1795694697421,
+       "dc": 1795694697421
       },
       {
        "n": "Assinatura da TEP",
-       "status": "backlog",
-       "raw_status": "aberto",
+       "status": "in progress",
+       "raw_status": "em andamento",
        "assignee": "Diogo Lerison",
        "due": 1793343600000,
        "original_due": 1793343600000,
@@ -3461,8 +3422,47 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86ak5ec3z",
-       "u": 1792421401801,
+       "u": 1795694710197,
        "dc": null
+      }
+     ]
+    },
+    {
+     "n": "Fase 4 - Monitoramento e controle",
+     "status": "shipped",
+     "raw_status": "fechado",
+     "assignee": "Diogo Lerison",
+     "due": 1793343600000,
+     "u": 1795694704147,
+     "id": "86ak5e3at",
+     "ativ": [
+      {
+       "n": "Validar entregas do Projeto",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5e7pz",
+       "u": 1795694704147,
+       "dc": 1795694704147
+      },
+      {
+       "n": "Acompanhamento do cronograma e status report",
+       "status": "shipped",
+       "raw_status": "fechado",
+       "assignee": "Diogo Lerison",
+       "due": 1793343600000,
+       "original_due": 1793343600000,
+       "alarme_limpo_due": null,
+       "nova_previsao": null,
+       "depth": 0,
+       "id": "86ak5e7tq",
+       "u": 1795694704147,
+       "dc": 1795694704147
       }
      ]
     }

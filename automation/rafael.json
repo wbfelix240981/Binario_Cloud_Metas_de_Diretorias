@@ -1913,7 +1913,7 @@
     "ativ": [
      {
       "n": "br-sp-02-node01",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1793343600000,
       "nova_previsao": null,
@@ -1969,14 +1969,16 @@
      },
      {
       "n": "br-sp-02-node06",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "date_history": [
        1790751600000
       ],
-      "id": "86agc87hj"
+      "id": "86agc87hj",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "br-sp-02-node07",
@@ -2062,7 +2064,7 @@
      {
       "n": "br-sp-02-node18",
       "status": "blocked",
-      "due": 1795762800000,
+      "due": 1797577200000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "date_history": [
@@ -2433,7 +2435,7 @@
      {
       "n": "srv-nvme-12",
       "status": "backlog",
-      "due": 1793948400000,
+      "due": 1797577200000,
       "original_due": 1793948400000,
       "nova_previsao": 1795158000000,
       "date_history": [
@@ -2468,25 +2470,29 @@
      },
      {
       "n": "srv-nvme-15",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
        1795158000000
       ],
-      "id": "86aknxqyc"
+      "id": "86aknxqyc",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "srv-nvme-16",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
        1795158000000
       ],
-      "id": "86aknxqzy"
+      "id": "86aknxqzy",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "srv-nvme-17",
@@ -2616,8 +2622,8 @@
      },
      {
       "n": "srv-hdd-05",
-      "status": "backlog",
-      "due": 1793343600000,
+      "status": "in progress",
+      "due": 1796626800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "date_history": [

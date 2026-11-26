@@ -182,6 +182,10 @@
   .ativ-row{display:flex; align-items:center; gap:9px; font-size:12px; color:var(--text-dim); padding:2px 0;}
   .ativ-dot{width:7px; height:7px; border-radius:50%; flex:none;}
   .ativ-name{flex:1; min-width:0;}
+  .ativ-nota{display:inline-block; margin-left:8px; font-family:var(--mono); font-size:10px; font-weight:700; color:var(--amber); border:1px solid var(--amber); border-radius:999px; padding:1px 8px; vertical-align:1px; white-space:nowrap}
+  @media (max-width:700px){.ativ-nota{display:block; margin:4px 0 0; white-space:normal; width:fit-content; max-width:100%; border-radius:10px; line-height:1.3}
+    .ativ-row.bloq{flex-wrap:wrap; row-gap:3px}
+    .ativ-row.bloq .ativ-name{flex:1 1 100%}}
   .ativ-due{font-family:var(--mono); font-size:10px; color:var(--text-mute); white-space:nowrap;}
   .ativ-arrow{color:var(--muted,#8b97b3);font-size:10px}
   .ativ-due-old{text-decoration:line-through;opacity:.65}
@@ -194,6 +198,13 @@
   .ativ-link:hover{color:var(--cyan); opacity:1;}
   @keyframes blinkRed{0%,100%{background:rgba(255,90,90,.10); box-shadow:0 0 0 rgba(255,90,90,0);}50%{background:rgba(255,60,60,.35); box-shadow:0 0 10px rgba(255,60,60,.35);}}
   @keyframes blinkAmber{0%,100%{background:rgba(255,198,92,.10); box-shadow:0 0 0 rgba(255,198,92,0);}50%{background:rgba(255,198,92,.35); box-shadow:0 0 10px rgba(255,198,92,.35);}}
+  @keyframes blinkBlue{0%,100%{background:rgba(76,195,251,.10); box-shadow:0 0 0 rgba(76,195,251,0);}50%{background:rgba(76,195,251,.35); box-shadow:0 0 10px rgba(76,195,251,.40);}}
+  .ativ-row.bloq{animation:blinkBlue 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
+  .ativ-row.bloq .ativ-dot{animation:blinkBlue 1.1s ease-in-out infinite; background:var(--blue) !important;}
+  .ativ-row.bloq .ativ-name{color:#bfe9ff; font-weight:600;}
+  .ativ-row.bloq .ativ-status{color:#bfe9ff; font-weight:700;}
+  .ativ-row.bloq .ativ-dias-atraso{color:var(--blue); background:rgba(76,195,251,.14); border-color:#1d4f6e;}
+  @media (prefers-reduced-motion:reduce){.ativ-row.bloq,.ativ-row.bloq .ativ-dot{animation:none; background:rgba(76,195,251,.22)}}
   .ativ-row.atrasada{animation:blinkRed 1.1s ease-in-out infinite; border-radius:6px; padding:2px 6px; margin:0 -6px;}
   .ativ-row.atrasada .ativ-dot{animation:blinkRed 1.1s ease-in-out infinite; background:var(--red) !important;}
   .ativ-row.atrasada .ativ-name{color:#ffb3b3; font-weight:600;}
@@ -870,7 +881,7 @@ const ROADMAP_TASKS = [
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 749
+  "_missing_count": 750
  },
  {
   "id": "86ak6m2qf",
@@ -954,7 +965,7 @@ const ROADMAP_TASKS = [
   "_missing_count": 0
  }
 ];
-const LAST_SYNC_UTC = "2026-11-26T09:10:24.272887+00:00";
+const LAST_SYNC_UTC = "2026-11-26T13:23:35.250527+00:00";
 
 const RAFAEL_METAS = [
  {
@@ -2871,7 +2882,7 @@ const RAFAEL_METAS = [
     "ativ": [
      {
       "n": "br-sp-02-node01",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1793343600000,
       "nova_previsao": null,
@@ -2927,14 +2938,16 @@ const RAFAEL_METAS = [
      },
      {
       "n": "br-sp-02-node06",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1790751600000,
       "nova_previsao": null,
       "date_history": [
        1790751600000
       ],
-      "id": "86agc87hj"
+      "id": "86agc87hj",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "br-sp-02-node07",
@@ -3020,7 +3033,7 @@ const RAFAEL_METAS = [
      {
       "n": "br-sp-02-node18",
       "status": "blocked",
-      "due": 1795762800000,
+      "due": 1797577200000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "date_history": [
@@ -3391,7 +3404,7 @@ const RAFAEL_METAS = [
      {
       "n": "srv-nvme-12",
       "status": "backlog",
-      "due": 1793948400000,
+      "due": 1797577200000,
       "original_due": 1793948400000,
       "nova_previsao": 1795158000000,
       "date_history": [
@@ -3426,25 +3439,29 @@ const RAFAEL_METAS = [
      },
      {
       "n": "srv-nvme-15",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
        1795158000000
       ],
-      "id": "86aknxqyc"
+      "id": "86aknxqyc",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "srv-nvme-16",
-      "status": "backlog",
+      "status": "blocked",
       "due": null,
       "original_due": 1795158000000,
       "nova_previsao": null,
       "date_history": [
        1795158000000
       ],
-      "id": "86aknxqzy"
+      "id": "86aknxqzy",
+      "nota": "Atendimento Magalu",
+      "fora_pct": true
      },
      {
       "n": "srv-nvme-17",
@@ -3574,8 +3591,8 @@ const RAFAEL_METAS = [
      },
      {
       "n": "srv-hdd-05",
-      "status": "backlog",
-      "due": 1793343600000,
+      "status": "in progress",
+      "due": 1796626800000,
       "original_due": 1793343600000,
       "nova_previsao": 1795158000000,
       "date_history": [
@@ -6256,9 +6273,11 @@ let detailStatusFilter = 'all';
 
 function faseProgress(f){
   if(f.status==='shipped') return 1;
-  if(!f.ativ || !f.ativ.length) return STATUS_WEIGHT[f.status] || 0;
-  const shipped = f.ativ.filter(a=>a.status==='shipped').length;
-  return shipped/f.ativ.length;
+  // atividades marcadas com fora_pct (ex.: "Atendimento Magalu") ficam fora do cálculo do %
+  const base = (f.ativ||[]).filter(a=>!a.fora_pct);
+  if(!base.length) return STATUS_WEIGHT[f.status] || 0;
+  const shipped = base.filter(a=>a.status==='shipped').length;
+  return shipped/base.length;
 }
 function metaProgress(m){
   if(m.status==='shipped') return 1;
@@ -6567,10 +6586,10 @@ function renderMetaDetailPage(tab, num){
           const estado = ativDueState(a);
           const od = estado==='atrasada', pend = estado==='pendente', semData = estado==='sem_planejamento', done = a.status==='shipped';
           const cor = od?'var(--red)':(pend||semData)?'var(--amber)':STATUS_META[a.status].color;
-          const label = od?'ATRASADA':pend?'PENDENTE':semData?'PENDENTE PLANEJAMENTO':STATUS_META[a.status].label;
+          const label = (a.nota&&!done)?'BLOQUEADA':od?'ATRASADA':pend?'PENDENTE':semData?'PENDENTE PLANEJAMENTO':STATUS_META[a.status].label;
           const hist = ativHist(a);
           const dias = od ? diasDeAtraso(a) : 0;
-          return `<div class="ativ-row${od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}</span>${hist.length?hist.map((x,k)=>k===0&&hist.length===1?`<span class="ativ-due">${fmtDate(x)}</span>`:`${k?'<span class="ativ-arrow">→</span>':''}<span class="ativ-due ${k===hist.length-1?'ativ-due-last':'ativ-due-old'}">${fmtDate(x)}</span>`).join(''):(semData?`<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>`:'')}${od?`<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>`:''}${(!od && !done && hist.length>1)?`<span class="ativ-replan">replanejada ×${hist.length-1}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
+          return `<div class="ativ-row${(a.nota&&!done)?' bloq':od?' atrasada':''}${(pend||semData)?' pendente':''}${done?' concluida':''}"><span class="ativ-dot" style="background:${cor}"></span><span class="ativ-name">${a.n}${a.nota?`<span class="ativ-nota">${a.nota}</span>`:''}</span>${hist.length?hist.map((x,k)=>k===0&&hist.length===1?`<span class="ativ-due">${fmtDate(x)}</span>`:`${k?'<span class="ativ-arrow">→</span>':''}<span class="ativ-due ${k===hist.length-1?'ativ-due-last':'ativ-due-old'}">${fmtDate(x)}</span>`).join(''):(semData?`<span class="ativ-due" style="color:var(--amber);">Sem data definida</span>`:'')}${od?`<span class="ativ-dias-atraso">${dias} dia${dias!==1?'s':''} de atraso</span>`:''}${(!od && !done && hist.length>1)?`<span class="ativ-replan">replanejada ×${hist.length-1}</span>`:''}<span class="ativ-status">${label}</span>${a.id?`<a class="ativ-link" href="https://app.clickup.com/t/${a.id}" target="_blank" title="Abrir no ClickUp"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>`:''}</div>`;
         }).join('')}
       </div>`:''}
     </div>`;}).join('') : (meta.fases.length ? `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Nenhuma fase com esse status.</p>` : `<p style="color:var(--text-mute); font-family:var(--mono); font-size:12.5px;">Esta meta não possui fases detalhadas — acompanhamento feito diretamente pelo status geral.</p>`);
