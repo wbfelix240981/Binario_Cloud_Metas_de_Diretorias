@@ -881,7 +881,7 @@ const ROADMAP_TASKS = [
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 751
+  "_missing_count": 752
  },
  {
   "id": "86ak6m2qf",
@@ -965,7 +965,7 @@ const ROADMAP_TASKS = [
   "_missing_count": 0
  }
 ];
-const LAST_SYNC_UTC = "2026-11-26T13:28:50.210660+00:00";
+const LAST_SYNC_UTC = "2026-11-26T13:34:27.378048+00:00";
 
 const RAFAEL_METAS = [
  {
@@ -6205,6 +6205,8 @@ function startOfDay(ms){
 }
 function ativHist(a){
   let h = Array.isArray(a.date_history) ? a.date_history.filter(x=>x!=null) : [];
+  // com histórico gravado pelo sync, a última data dele é a vigente (não reaplica campos antigos)
+  if(h.length) return h;
   if(!h.length){ const o=(a.original_due != null) ? a.original_due : a.due; if(o!=null) h.push(o); }
   const cur = (a.nova_previsao != null) ? a.nova_previsao : a.due;
   if(cur!=null && h.length && startOfDay(h[h.length-1])!==startOfDay(cur)) h.push(cur);
