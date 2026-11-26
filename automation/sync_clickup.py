@@ -204,7 +204,17 @@ def build_activity(t, old_ativ_by_id=None):
     hist = [x for x in ((old or {}).get("date_history") or []) if x is not None]
     if not hist and original_due is not None:
         hist = [original_due]
-    vigente = nova_previsao if nova_previsao is not None else new_due
+    # Quem mudou por último vence: se a data do ClickUp mudou desde o último sync, ela é a nova
+    # data vigente; se mudou o campo "Nova previsão", vale ele. Sem mudança, mantém a última.
+    if old:
+        if new_due is not None and new_due != old.get("due"):
+            vigente = new_due
+        elif nova_previsao is not None and nova_previsao != old.get("nova_previsao"):
+            vigente = nova_previsao
+        else:
+            vigente = None
+    else:
+        vigente = nova_previsao if nova_previsao is not None else new_due
     if vigente is not None and (not hist or hist[-1] != vigente):
         hist.append(vigente)
 
