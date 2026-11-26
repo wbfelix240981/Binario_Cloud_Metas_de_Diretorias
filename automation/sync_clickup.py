@@ -66,6 +66,7 @@ STATUS_MAP = {
     "revisando": "in review",
     "em revisão": "in review",
     "bloqueada": "blocked",
+    "impedimento": "blocked",
     "em planejamento": "in planning",
     "planejamento": "in planning",
     "em teste": "in test",
@@ -166,6 +167,25 @@ def get_custom_field_value(task_id, field_name):
     return None
 
 
+# Atividades que dependem de atendimento externo (cliente) e ficam FORA do cálculo do %.
+# Regra: a descrição da tarefa no ClickUp contém "Atendimento Magalu" (qualquer caixa/acento),
+# ou o id da tarefa está na lista fixa abaixo (usada enquanto a descrição não é preenchida no ClickUp).
+NOTA_MAGALU = "Atendimento Magalu"
+NOTA_MAGALU_IDS_FIXOS = {"86agc87hj", "86aknxqyc", "86aknxqzy"}  # br-sp-02-node06, srv-nvme-15, srv-nvme-16
+
+
+def _sem_acento(txt):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", txt or "") if unicodedata.category(c) != "Mn").lower()
+
+
+def nota_da_atividade(t):
+    desc = t.get("text_content") or t.get("description") or ""
+    if "atendimento magalu" in _sem_acento(desc) or t.get("id") in NOTA_MAGALU_IDS_FIXOS:
+        return NOTA_MAGALU
+    return None
+
+
 def build_activity(t, old_ativ_by_id=None):
     old = (old_ativ_by_id or {}).get(t["id"])
     new_due = to_ms(t.get("due_date"))
@@ -188,7 +208,7 @@ def build_activity(t, old_ativ_by_id=None):
     if vigente is not None and (not hist or hist[-1] != vigente):
         hist.append(vigente)
 
-    return {
+    ativ = {
         "n": t["name"],
         "status": map_status(t["status"]["status"]),
         "due": new_due,
@@ -197,6 +217,11 @@ def build_activity(t, old_ativ_by_id=None):
         "date_history": hist,
         "id": t["id"],
     }
+    nota = nota_da_atividade(t)
+    if nota:
+        ativ["nota"] = nota
+        ativ["fora_pct"] = True
+    return ativ
 
 
 def build_phase(ph_full, old_ativ_by_id=None):
