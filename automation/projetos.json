@@ -1,5 +1,5 @@
 {
- "last_sync_utc": "2026-11-26T14:19:48.666652+00:00",
+ "last_sync_utc": "2026-11-26T18:52:46.315231+00:00",
  "projetos": [
   {
    "key": "neugebauer",
@@ -6573,8 +6573,8 @@
       },
       {
        "n": "Validar endpoint São Paulo;",
-       "status": "blocked",
-       "raw_status": "bloqueada",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Joab de Araújo Silva",
        "due": 1795158000000,
        "original_due": 1795158000000,
@@ -6582,8 +6582,8 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "17ttbukzwer",
-       "u": 1794422955925,
-       "dc": null
+       "u": 1795712682390,
+       "dc": 1795712682390
       },
       {
        "n": "Validar Endpoint Porto Alegre;",
@@ -6657,8 +6657,8 @@
       },
       {
        "n": "Começar coleta Fortaleza",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6666,8 +6666,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktp32q",
-       "u": 1795631580002,
-       "dc": null
+       "u": 1795712666974,
+       "dc": 1795712666974
       },
       {
        "n": "Deploy + Validação",
@@ -6680,13 +6680,13 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktpv3n",
-       "u": 1795631584884,
+       "u": 1795713909326,
        "dc": null
       },
       {
        "n": "Começar coleta Porto Alegre",
-       "status": "in progress",
-       "raw_status": "em andamento",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Guilherme Soares Gomes da Silva",
        "due": 1795762800000,
        "original_due": 1795762800000,
@@ -6694,8 +6694,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktp32z",
-       "u": 1795631581679,
-       "dc": null
+       "u": 1795712666974,
+       "dc": 1795712666974
       },
       {
        "n": "Deploy + Validação",
@@ -6708,7 +6708,7 @@
        "nova_previsao": null,
        "depth": 1,
        "id": "86aktpv8h",
-       "u": 1795631586420,
+       "u": 1795713906440,
        "dc": null
       },
       {
@@ -6769,8 +6769,8 @@
       },
       {
        "n": "Validar certificado e HTTPS do ambiente produtivo",
-       "status": "in review",
-       "raw_status": "revisando",
+       "status": "shipped",
+       "raw_status": "concluído",
        "assignee": "Wagner Bento Felix",
        "due": 1793948400000,
        "original_due": 1793948400000,
@@ -6778,8 +6778,8 @@
        "nova_previsao": null,
        "depth": 0,
        "id": "86aktqw9f",
-       "u": 1795631609046,
-       "dc": null
+       "u": 1795713914814,
+       "dc": 1795713914814
       },
       {
        "n": "Liberar firewall e acesso externo conforme domínio e local de hospedagem",
