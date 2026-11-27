@@ -281,7 +281,7 @@
    "Joab de Araújo Silva"
   ],
   "url": "https://app.clickup.com/t/86ajwp3vr",
-  "_missing_count": 757
+  "_missing_count": 758
  },
  {
   "id": "86ak6m2qf",
@@ -362,6 +362,16 @@
    "Tiago Gomes de Oliveira"
   ],
   "url": "https://app.clickup.com/t/17ttbum4c6j",
+  "_missing_count": 0
+ },
+ {
+  "id": "17ttbum4w6m",
+  "name": "Segragação de funções de backup (SkyOne - Precisa que o operador não altere politica e nem schudele de backup)",
+  "status": "aberto",
+  "assignees": [
+   "Tiago Gomes de Oliveira"
+  ],
+  "url": "https://app.clickup.com/t/17ttbum4w6m",
   "_missing_count": 0
  }
 ]
